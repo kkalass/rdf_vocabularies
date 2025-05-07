@@ -1,0 +1,28 @@
+name: rdf_vocabularies
+description: A collection of well known RDF vocabularies as Dart constants, grouped in classes.
+version: 0.1.0-dev
+homepage: https://kkalass.github.io/rdf_vocabularies/
+repository: https://github.com/kkalass/rdf_vocabularies
+issue_tracker: https://github.com/kkalass/rdf_vocabularies/issues
+documentation: https://kkalass.github.io/rdf_vocabularies/
+topics:
+  - rdf
+  - linked-data
+  - semantic-web
+readme: README.md
+changelog: CHANGELOG.md
+license: LICENSE
+maintainers:
+  - "Klas Kalaß <habbatical@gmail.com>"
+environment:
+  sdk: ^3.7.0
+dependencies:
+  rdf_core: ^0.7.5
+  
+  
+dev_dependencies:
+  build_runner: ^2.4.15
+  rdf_vocabulary_to_dart:
+    path: ../rdf_vocabulary_to_dart
+  test: ^1.21.0
+
