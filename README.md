@@ -1,4 +1,4 @@
-# RDF Vocabulary to Dart - Type-safe RDF for Dart
+# RDF Vocabularies for Dart - Type-safe RDF Constants
 
 [![pub package](https://img.shields.io/pub/v/rdf_vocabularies.svg)](https://pub.dev/packages/rdf_vocabularies)
 [![build](https://github.com/kkalass/rdf_vocabularies/actions/workflows/ci.yml/badge.svg)](https://github.com/kkalass/rdf_vocabularies/actions)
@@ -9,15 +9,21 @@
 
 [🌐 **Official Homepage**](https://kkalass.github.io/rdf_vocabularies/)
 
-`rdf_vocabularies` is a collection of well known RDF vocabularies as Dart constants, grouped in classes. The library provides a type-safe way to work with RDF data in Dart applications, making it easier to build Semantic Web and Linked Data applications.
+`rdf_vocabularies` provides type-safe access to standard RDF vocabulary terms as Dart constants. The library is designed for both RDF newcomers and experts, offering structured ways to work with semantic data while maintaining compilation-time safety.
+
+## Package Characteristics
+
+- **Zero Runtime Overhead**: Nearly all content is composed of compile-time constants
+- **Small Binary Size**: Minimal impact on your application's size
+- **Type Safety**: Catch vocabulary usage errors at compile time
+- **IDE Assistance**: Get autocompletion and documentation directly in your editor
 
 ## Features
 
-- **Type-safe RDF terms**: Access common RDF vocabulary terms as typed Dart constants
-- **Comprehensive documentation**: Each term includes its original description from the vocabulary
-- **Two usage approaches**:
-  - For RDF beginners: Use generated class-specific constants (e.g., `SchemaPerson.name`)
-  - For RDF experts: Access the full vocabulary (e.g., `Schema.Person`, `Schema.name`)
+- **Dual Interface**: Choose between class-specific access for beginners or full vocabulary access for experts
+- **Comprehensive Coverage**: Access terms from popular RDF vocabularies (Schema.org, FOAF, Dublin Core, etc.)
+- **Rich Documentation**: Each term includes its original description from the vocabulary
+- **Seamless Integration**: Works perfectly with the `rdf_core` library
 
 ## Getting Started
 
@@ -29,96 +35,112 @@ dependencies:
   rdf_core: ^0.7.6  # Required for RDF data structures
 ```
 
-Then run:
-
-```bash
-dart pub get
-```
-
 ## Usage
 
-### For Dart Developers New to RDF
+### For RDF Newcomers: Class-Specific Approach
 
-If you're new to RDF but want to use RDF data with specific types of resources (like a Person), the library provides convenient class-specific constants:
-
-```dart
-import 'package:rdf_core/rdf_core.dart';
-import 'package:rdf_vocabularies/schema.dart';
-import 'package:rdf_vocabularies/src/generated/schema/classes/person.dart';
-
-void main() {
-  // Create a person using blank node and class-specific constants
-  final personNode = BlankNode();
-  final graph = MemoryGraph();
-  
-  // Use SchemaPerson.classIri to specify the type
-  graph.add(Triple(
-    personNode,
-    RdfTerms.type,  // rdf:type from rdf_core
-    SchemaPerson.classIri,
-  ));
-  
-  // Use class-specific property constants for better discoverability
-  graph.add(Triple(
-    personNode,
-    SchemaPerson.name,
-    LiteralNode.fromString('Jane Doe'),
-  ));
-  
-  graph.add(Triple(
-    personNode,
-    SchemaPerson.email,
-    LiteralNode.fromString('jane.doe@example.com'),
-  ));
-}
-```
-
-### For Experienced RDF Developers
-
-If you're already familiar with RDF and know exactly which vocabulary terms you need, you can use the full vocabulary classes:
+If you're new to RDF, the class-specific approach guides you to use the correct properties for each type of resource:
 
 ```dart
 import 'package:rdf_core/rdf_core.dart';
 import 'package:rdf_vocabularies/schema.dart';
+import 'package:rdf_vocabularies/xsd.dart';
 
 void main() {
-  // Create a person with a specific IRI and use full vocabulary terms
-  final personIri = IriNode.fromString('http://example.org/person/jane_doe');
-  final graph = MemoryGraph();
+  final personIri = IriTerm('http://example.org/person/jane_doe');
+  final addressNode = BlankNodeTerm();
   
-  // Use Schema.Person to specify the type
-  graph.add(Triple(
-    personIri,
-    RdfTerms.type,  // rdf:type from rdf_core
-    Schema.Person,
-  ));
-  
-  // Use full vocabulary property constants
-  graph.add(Triple(
-    personIri,
-    Schema.name,
-    LiteralNode.fromString('Jane Doe'),
-  ));
-  
-  // Create a complex structure: a postal address
-  final addressNode = BlankNode();
-  graph.add(Triple(personIri, Schema.address, addressNode));
-  graph.add(Triple(addressNode, RdfTerms.type, Schema.PostalAddress));
-  graph.add(Triple(
-    addressNode,
-    Schema.streetAddress,
-    LiteralNode.fromString('123 Main St'),
-  ));
+  // Create a graph with triples using class-specific constants
+  final graph = RdfGraph.fromTriples([
+    // Declare the resource type using SchemaPerson constants
+    Triple(personIri, SchemaPerson.rdfType, SchemaPerson.classIri),
+    
+    // Use properties specific to Person - your IDE will help you discover valid properties
+    Triple(personIri, SchemaPerson.name, LiteralTerm.string('Jane Doe')),
+    Triple(personIri, SchemaPerson.email, LiteralTerm.string('jane.doe@example.com')),
+    Triple(personIri, SchemaPerson.birthDate, LiteralTerm('1990-01-01', datatype: Xsd.date)),
+    
+    // Create a complex structure with an address
+    Triple(personIri, SchemaPerson.address, addressNode),
+    Triple(addressNode, SchemaPostalAddress.rdfType, SchemaPostalAddress.classIri),
+    Triple(addressNode, SchemaPostalAddress.streetAddress, LiteralTerm.string('123 Main St')),
+    Triple(addressNode, SchemaPostalAddress.addressLocality, LiteralTerm.string('Anytown')),
+  ]);
 }
 ```
+
+**Benefits of this approach:**
+- Your IDE shows only relevant properties for each class
+- Compile-time type safety prevents mixing incompatible vocabulary terms
+- Discoverability through autocomplete helps you learn the vocabulary structure
+
+### For RDF Experts: Full Vocabulary Approach
+
+Experienced RDF developers who know exactly which vocabulary terms they need can use the more direct full vocabulary classes:
+
+```dart
+import 'package:rdf_core/rdf_core.dart';
+import 'package:rdf_vocabularies/schema.dart';
+import 'package:rdf_vocabularies/rdf.dart';
+import 'package:rdf_vocabularies/foaf.dart';
+import 'package:rdf_vocabularies/xsd.dart';
+
+void main() {
+  final personIri = IriTerm('http://example.org/person/jane_doe');
+  final addressNode = BlankNodeTerm();
+  
+  // Create a graph with direct vocabulary access
+  final graph = RdfGraph.fromTriples([
+    Triple(personIri, Rdf.type, Schema.Person),
+    
+    // Mix properties from different vocabularies freely
+    Triple(personIri, Schema.name, LiteralTerm.string('Jane Doe')),
+    Triple(personIri, Foaf.age, LiteralTerm.integer(42)),
+    Triple(personIri, Schema.email, LiteralTerm.string('jane.doe@example.com')),
+    
+    // Create a complex structure with an address
+    Triple(personIri, Schema.address, addressNode),
+    Triple(addressNode, Rdf.type, Schema.PostalAddress),
+    Triple(addressNode, Schema.streetAddress, LiteralTerm.string('123 Main St')),
+  ]);
+}
+```
+
+**Benefits of this approach:**
+- Maximally flexible - combine terms from any vocabulary
+- More concise syntax for those who know exactly what they need
+- Natural for developers coming from other RDF environments
 
 ## Supported Vocabularies
 
-Currently, the following vocabularies are supported:
+This package includes constants for these vocabularies:
 
-- **Schema.org** (`schema`): A collaborative, community activity to create, maintain, and promote schemas for structured data
+- **ACL**: Web Access Control vocabulary
+- **Contact**: Contact information vocabulary
+- **DC**: Dublin Core basic elements
+- **DCMIType**: Dublin Core type vocabulary
+- **DCTerms**: Dublin Core terms
+- **EventOwl**: Event vocabulary
+- **FOAF**: Friend of a Friend vocabulary
+- **GEO**: Geospatial vocabulary
+- **LDP**: Linked Data Platform vocabulary
+- **OWL**: Web Ontology Language
+- **RDF**: Resource Description Framework base vocabulary
+- **RDFS**: RDF Schema vocabulary
+- **Schema**: Schema.org vocabulary
+- **SKOS**: Simple Knowledge Organization System
+- **Solid**: Solid platform vocabulary
+- **VCard**: vCard ontology for contacts
+- **VS**: Vocabulary Status ontology
+- **XSD**: XML Schema Datatypes
 
-More vocabularies will be added in future releases.
+## Performance Impact
+
+Including `rdf_vocabularies` in your project:
+- **Package Size**: Minimal impact on package size as it consists primarily of constants
+- **Runtime Performance**: Zero runtime overhead since values are compile-time constants
+- **Memory Usage**: Negligible increase in memory usage
+- **Build Time**: May slightly increase initial build time, but no impact on runtime performance
 
 ## 🤝 Contributing
 

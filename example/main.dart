@@ -15,6 +15,9 @@ import 'package:rdf_vocabularies/xsd.dart';
 /// Your IDE will help you to find the right predicates and
 /// you will get compile time errors if you use a predicate
 /// that is not available for the class you are using.
+///
+/// Just play around with the code and let your IDE show you the documentation
+/// for the predicates to get a better understanding of the vocabulary.
 void main() {
   // Create a person with a specific IRI
   final personIri = IriTerm('http://example.org/person/jane_doe');

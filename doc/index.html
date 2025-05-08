@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDF Vocabularies for Dart - Type-safe RDF Constants</title>
+    <link rel="icon" href="../logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <style>
+        :root {
+            --primary-color: #0175C2;
+            --secondary-color: #02569B;
+            --background-color: #f8f9fa;
+            --code-background: #f5f5f5;
+            --border-color: #e0e0e0;
+            --text-color: #333;
+            --heading-color: #02569B;
+            --link-color: #0175C2;
+            --link-hover-color: #01579B;
+            --code-color: #D32F2F;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+        }
+
+        header {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--heading-color);
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 1.5rem;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--link-hover-color);
+            text-decoration: underline;
+        }
+
+        .logo {
+            max-width: 120px;
+            margin-bottom: 1rem;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: var(--link-hover-color);
+            text-decoration: none;
+        }
+
+        .button-secondary {
+            background-color: white;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .button-secondary:hover {
+            background-color: #f0f0f0;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        pre {
+            background-color: var(--code-background);
+            border-radius: 4px;
+            padding: 0;
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+            margin: 1.5rem 0;
+        }
+
+        pre code {
+            padding: 1.5rem;
+            display: block;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: var(--code-color);
+            background-color: var(--code-background);
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        .hljs {
+            background-color: #282c34;
+            border-radius: 4px;
+            padding: 1.5rem;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        .tab-container {
+            margin-top: 2rem;
+        }
+
+        .tab-buttons {
+            display: flex;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .tab-button {
+            padding: 0.75rem 1.5rem;
+            background-color: transparent;
+            border: none;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-right: 0.5rem;
+        }
+
+        .tab-button.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--primary-color);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 1rem;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+
+            .tab-buttons {
+                flex-wrap: wrap;
+            }
+
+            .tab-button {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .vocabulary-list {
+            column-count: 3;
+            column-gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .vocabulary-list {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .vocabulary-list {
+                column-count: 1;
+            }
+        }
+
+        .vocabulary-list li {
+            break-inside: avoid-column;
+            margin-bottom: 0.5rem;
+        }
+
+        .note {
+            background-color: #e8f4fd;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .warning {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .headline {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #ffffff;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            color: white;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            color: white;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="../logo.svg" alt="RDF Vocabularies Logo" class="logo">
+            <h1>RDF Vocabularies for Dart</h1>
+            <p class="headline">Type-safe RDF vocabulary constants for both newcomers and experts</p>
+            <div>
+                <a href="https://pub.dev/packages/rdf_vocabularies" class="button">View on pub.dev</a>
+                <a href="https://github.com/kkalass/rdf_vocabularies" class="button button-secondary">GitHub Repository</a>
+            </div>
+            <div style="margin-top: 1rem;">
+                <a href="https://pub.dev/packages/rdf_vocabularies" class="badge"><img src="https://img.shields.io/pub/v/rdf_vocabularies.svg" alt="pub package"></a>
+                <a href="https://github.com/kkalass/rdf_vocabularies/actions/workflows/ci.yml" class="badge"><img src="https://github.com/kkalass/rdf_vocabularies/actions/workflows/ci.yml/badge.svg" alt="build status"></a>
+                <a href="https://codecov.io/gh/kkalass/rdf_vocabularies" class="badge"><img src="https://codecov.io/gh/kkalass/rdf_vocabularies/branch/main/graph/badge.svg" alt="codecov"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>What is RDF Vocabularies for Dart?</h2>
+            <p>
+                <code>rdf_vocabularies</code> provides a type-safe, ergonomic way to work with RDF vocabularies in Dart applications. 
+                Instead of dealing with string literals for IRIs, this package offers compile-time constants organized in an 
+                intuitive class structure, making RDF development in Dart more productive and less error-prone.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">📦</div>
+                    <h3>Zero Runtime Overhead</h3>
+                    <p>Nearly all content is composed of compile-time constants, resulting in no runtime performance penalty.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔍</div>
+                    <h3>IDE Discovery</h3>
+                    <p>Explore vocabularies through IDE autocompletion - no more guessing which predicates you can use.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📝</div>
+                    <h3>Documentation Built-in</h3>
+                    <p>Each vocabulary term includes its original description, accessible right in your editor.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Type Safety</h3>
+                    <p>Catch vocabulary errors at compile time, not at runtime when it's too late.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Two Usage Patterns</h3>
+                    <p>Use class-specific terms for guided development or full vocabulary access for flexibility.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Comprehensive</h3>
+                    <p>Includes constants for the most widely used RDF vocabularies in the Semantic Web.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Getting Started</h2>
+            <p>
+                To use <code>rdf_vocabularies</code> in your Dart project, you'll need to add it to your dependencies in <code>pubspec.yaml</code>:
+            </p>
+            <pre><code class="language-yaml">dependencies:
+  rdf_vocabularies: ^0.1.0-dev
+  rdf_core: ^0.7.6  # Required for RDF data structures</code></pre>
+            
+            <p>Then run:</p>
+            <pre><code class="language-bash">dart pub get</code></pre>
+
+            <p>Import the vocabularies you need in your Dart files:</p>
+            <pre><code class="language-dart">// For beginners using class-specific approach
+import 'package:rdf_vocabularies/schema.dart';
+import 'package:rdf_vocabularies/src/generated/schema/classes/person.dart';
+import 'package:rdf_vocabularies/src/generated/schema/classes/postal_address.dart';
+
+// For experts using full vocabulary approach
+import 'package:rdf_vocabularies/schema.dart';
+import 'package:rdf_vocabularies/rdf.dart';
+import 'package:rdf_vocabularies/foaf.dart';</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>Two Usage Patterns</h2>
+            
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active" onclick="openTab(event, 'beginners')">For Beginners</button>
+                    <button class="tab-button" onclick="openTab(event, 'experts')">For Experts</button>
+                </div>
+                
+                <div id="beginners" class="tab-content active">
+                    <h3>Class-Specific Approach</h3>
+                    <p>
+                        If you're new to RDF or prefer guided development, the class-specific approach provides:
+                    </p>
+                    <ul>
+                        <li>Focused access to properties relevant for a specific resource type</li>
+                        <li>Better discoverability through IDE autocompletion</li>
+                        <li>Protection from using incompatible terms</li>
+                    </ul>
+
+                    <div class="note">
+                        <strong>Tip:</strong> When you import a class-specific file like <code>SchemaPerson</code>, your IDE will only show 
+                        relevant properties for Person objects, making discovery easier.
+                    </div>
+
+                    <h4>Example: Creating a Person with Address</h4>
+                    <pre><code class="language-dart">import 'package:rdf_core/rdf_core.dart';
+import 'package:rdf_vocabularies/schema.dart';
+import 'package:rdf_vocabularies/src/generated/schema/classes/person.dart';
+import 'package:rdf_vocabularies/src/generated/schema/classes/postal_address.dart';
+import 'package:rdf_vocabularies/xsd.dart';
+
+void main() {
+  final personIri = IriTerm('http://example.org/person/jane_doe');
+  final addressNode = BlankNodeTerm();
+  
+  // Create a graph with triples using class-specific constants
+  final graph = RdfGraph.fromTriples([
+    // Declare the resource type
+    Triple(personIri, SchemaPerson.rdfType, SchemaPerson.classIri),
+    
+    // Use properties specific to Person
+    Triple(personIri, SchemaPerson.name, LiteralTerm.string('Jane Doe')),
+    Triple(personIri, SchemaPerson.email, LiteralTerm.string('jane.doe@example.com')),
+    Triple(personIri, SchemaPerson.birthDate, LiteralTerm('1990-01-01', datatype: Xsd.date)),
+    
+    // Create a complex structure with an address
+    Triple(personIri, SchemaPerson.address, addressNode),
+    Triple(addressNode, SchemaPostalAddress.rdfType, SchemaPostalAddress.classIri),
+    Triple(addressNode, SchemaPostalAddress.streetAddress, LiteralTerm.string('123 Main St')),
+    Triple(addressNode, SchemaPostalAddress.addressLocality, LiteralTerm.string('Anytown')),
+    Triple(addressNode, SchemaPostalAddress.postalCode, LiteralTerm.string('12345')),
+  ]);
+  
+  // Your IDE will help you discover valid properties for each class
+}</code></pre>
+                </div>
+                
+                <div id="experts" class="tab-content">
+                    <h3>Full Vocabulary Approach</h3>
+                    <p>
+                        For experienced RDF developers who know exactly which vocabulary terms they need, the full vocabulary 
+                        approach provides:
+                    </p>
+                    <ul>
+                        <li>Direct access to all terms in a vocabulary</li>
+                        <li>Flexibility to mix terms from multiple vocabularies freely</li>
+                        <li>More concise import patterns</li>
+                    </ul>
+
+                    <div class="warning">
+                        <strong>Note:</strong> With this approach, it's up to you to know which predicates are 
+                        appropriate for which types of resources. The library won't restrict your choices.
+                    </div>
+
+                    <h4>Example: Creating a Person with Multiple Vocabulary Terms</h4>
+                    <pre><code class="language-dart">import 'package:rdf_core/rdf_core.dart';
+import 'package:rdf_vocabularies/schema.dart';
+import 'package:rdf_vocabularies/rdf.dart';
+import 'package:rdf_vocabularies/foaf.dart';
+import 'package:rdf_vocabularies/xsd.dart';
+
+void main() {
+  final personIri = IriTerm('http://example.org/person/jane_doe');
+  final addressNode = BlankNodeTerm();
+  
+  // Create a graph with direct vocabulary access
+  final graph = RdfGraph.fromTriples([
+    Triple(personIri, Rdf.type, Schema.Person),
+    
+    // Mix properties from different vocabularies freely
+    Triple(personIri, Schema.name, LiteralTerm.string('Jane Doe')),
+    Triple(personIri, Foaf.age, LiteralTerm.integer(42)),
+    Triple(personIri, Schema.email, LiteralTerm.string('jane.doe@example.com')),
+    
+    // Create a complex structure with an address
+    Triple(personIri, Schema.address, addressNode),
+    Triple(addressNode, Rdf.type, Schema.PostalAddress),
+    Triple(addressNode, Schema.streetAddress, LiteralTerm.string('123 Main St')),
+    Triple(addressNode, Schema.addressLocality, LiteralTerm.string('Anytown')),
+    Triple(addressNode, Schema.postalCode, LiteralTerm.string('12345')),
+  ]);
+}</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Performance Impact</h2>
+            <p>
+                Including <code>rdf_vocabularies</code> in your project has minimal impact on performance and size:
+            </p>
+            
+            <ul>
+                <li><strong>Package Size</strong>: Minimal impact as it consists primarily of constants</li>
+                <li><strong>Runtime Performance</strong>: Zero runtime overhead since values are compile-time constants</li>
+                <li><strong>Memory Usage</strong>: Negligible increase in memory usage</li>
+                <li><strong>Build Time</strong>: May slightly increase initial build time, but no impact on runtime performance</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Supported Vocabularies</h2>
+            <p>
+                This package includes constants for many popular RDF vocabularies:
+            </p>
+            
+            <ul class="vocabulary-list">
+                <li><strong>ACL</strong>: Web Access Control vocabulary</li>
+                <li><strong>Contact</strong>: Contact information vocabulary</li>
+                <li><strong>DC</strong>: Dublin Core basic elements</li>
+                <li><strong>DCMIType</strong>: Dublin Core type vocabulary</li>
+                <li><strong>DCTerms</strong>: Dublin Core terms</li>
+                <li><strong>EventOwl</strong>: Event vocabulary</li>
+                <li><strong>FOAF</strong>: Friend of a Friend vocabulary</li>
+                <li><strong>GEO</strong>: Geospatial vocabulary</li>
+                <li><strong>LDP</strong>: Linked Data Platform vocabulary</li>
+                <li><strong>OWL</strong>: Web Ontology Language</li>
+                <li><strong>RDF</strong>: Resource Description Framework base vocabulary</li>
+                <li><strong>RDFS</strong>: RDF Schema vocabulary</li>
+                <li><strong>Schema</strong>: Schema.org vocabulary</li>
+                <li><strong>SKOS</strong>: Simple Knowledge Organization System</li>
+                <li><strong>Solid</strong>: Solid platform vocabulary</li>
+                <li><strong>VCard</strong>: vCard ontology for contacts</li>
+                <li><strong>VS</strong>: Vocabulary Status ontology</li>
+                <li><strong>XSD</strong>: XML Schema Datatypes</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Advanced Use Cases</h2>
+            
+            <h3>RDF Graph Queries</h3>
+            <p>
+                Using the vocabulary constants makes query patterns both safer and more readable:
+            </p>
+
+            <pre><code class="language-dart">// Find all schema:Person objects in a graph
+final allPersons = graph.findTriples(
+  predicate: Rdf.type,
+  object: Schema.Person
+).map((triple) => triple.subject);
+
+// Query for all email addresses of a person
+final emails = graph.findTriples(
+  subject: personIri,
+  predicate: Schema.email
+).map((triple) => triple.object);
+
+// Find a person by name
+final janeNode = graph.findTriples(
+  predicate: Schema.name,
+  object: LiteralTerm.string('Jane Doe')
+).map((triple) => triple.subject).firstOrNull;</code></pre>
+
+            <h3>Multi-Vocabulary Integration</h3>
+            <p>
+                The library excels at helping you integrate data from multiple sources:
+            </p>
+
+            <pre><code class="language-dart">// Create a person using both Schema.org and FOAF terms
+graph.addAll([
+  Triple(personIri, Rdf.type, Schema.Person),
+  Triple(personIri, Schema.name, LiteralTerm.string('Jane Doe')),
+  Triple(personIri, Foaf.mbox, IriTerm('mailto:jane.doe@example.com')),
+  Triple(personIri, Foaf.knows, IriTerm('http://example.org/person/john_smith')),
+  Triple(personIri, Dc.creator, LiteralTerm.string('System')),
+]);</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>Contributing</h2>
+            <p>
+                Contributions, bug reports, and feature requests are welcome! Here's how you can contribute:
+            </p>
+            
+            <ul>
+                <li>Fork the repository on <a href="https://github.com/kkalass/rdf_vocabularies">GitHub</a></li>
+                <li>Create a branch for your changes (<code>git checkout -b feature/amazing-feature</code>)</li>
+                <li>Commit your changes (<code>git commit -m 'Add some amazing feature'</code>)</li>
+                <li>Push to the branch (<code>git push origin feature/amazing-feature</code>)</li>
+                <li>Open a pull request</li>
+            </ul>
+            
+            <p>
+                For more details, see the <a href="https://github.com/kkalass/rdf_vocabularies/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> file.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Klas Kalaß. Licensed under the MIT License.</p>
+            <div class="footer-links">
+                <a href="https://github.com/kkalass/rdf_vocabularies">GitHub</a>
+                <a href="https://pub.dev/packages/rdf_vocabularies">pub.dev</a>
+                <a href="https://github.com/kkalass/rdf_vocabularies/blob/main/LICENSE">License</a>
+                <a href="https://github.com/kkalass/rdf_vocabularies/issues">Report Issues</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/dart.min.js"></script>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tabbuttons;
+            
+            // Hide all tab content
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            
+            // Remove "active" class from all tab buttons
+            tabbuttons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].classList.remove("active");
+            }
+            
+            // Show the current tab and add "active" class to the button
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        // Initialize syntax highlighting
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('pre code').forEach((block) => {
+                hljs.highlightElement(block);
+            });
+        });
+    </script>
+</body>
+</html>
