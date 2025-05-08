@@ -4,14 +4,19 @@
 import 'package:rdf_core/rdf_core.dart';
 import 'package:rdf_vocabularies/schema.dart';
 import 'package:rdf_vocabularies/rdf.dart';
+import 'package:rdf_vocabularies/src/generated/foaf.dart';
 import 'package:rdf_vocabularies/xsd.dart';
 
+/// Example for experienced RDF developers who basically
+/// know which predicates from which vocabulary to use and
+/// who do not need or want further guidance.
+///
+/// If you happen to wonder which predicates you can use where and
+/// why we say it is a Schema.Person but then use Foaf.age, you
+/// might want to check out the [main.dart] example.
 void main() {
   // Create a person with a specific IRI
   final personIri = IriTerm('http://example.org/person/jane_doe');
-
-  // Note: In a real world scenario, we could mix vocabularies.
-  // For demonstration purposes, we're only using Schema vocabulary here.
 
   final addressNode = BlankNodeTerm();
 
@@ -23,6 +28,7 @@ void main() {
       Schema.Person, // Using Schema.Person from the full vocabulary
     ),
     Triple(personIri, Schema.name, LiteralTerm.string('Jane Doe')),
+    Triple(personIri, Foaf.age, LiteralTerm.integer(42)),
     Triple(personIri, Schema.email, LiteralTerm.string('jane.doe@example.com')),
     Triple(
       personIri,
