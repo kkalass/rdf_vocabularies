@@ -17,7 +17,8 @@ maintainers:
 environment:
   sdk: ^3.7.0
 dependencies:
-  rdf_core: ^0.7.5
+  rdf_core: 
+    path: ../rdf_core
   
   
 dev_dependencies:
@@ -25,4 +26,3 @@ dev_dependencies:
   rdf_vocabulary_to_dart:
     path: ../rdf_vocabulary_to_dart
   test: ^1.21.0
-
