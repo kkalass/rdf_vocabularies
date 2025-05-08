@@ -35,6 +35,14 @@ class Contact {
     'http://www.w3.org/2000/10/swap/pim/contact#ContactLocation',
   );
 
+  /// IRI for contact:Fax
+  ///
+  ///
+  ///
+  static const Fax = IriTerm.prevalidated(
+    'http://www.w3.org/2000/10/swap/pim/contact#Fax',
+  );
+
   /// IRI for contact:Female
   ///
   ///
@@ -59,30 +67,6 @@ class Contact {
     'http://www.w3.org/2000/10/swap/pim/contact#Male',
   );
 
-  /// IRI for contact:Phone
-  ///
-  /// An end-point in the public swiitched telephone system. Anything identified by a URI with tel: scheme is in this class.
-  ///
-  static const Phone = IriTerm.prevalidated(
-    'http://www.w3.org/2000/10/swap/pim/contact#Phone',
-  );
-
-  /// IRI for contact:SocialEntity
-  ///
-  /// The sort of thing which can have a phone number. Typically a person or an incorporated company, or unincorporated group.
-  ///
-  static const SocialEntity = IriTerm.prevalidated(
-    'http://www.w3.org/2000/10/swap/pim/contact#SocialEntity',
-  );
-
-  /// IRI for contact:Fax
-  ///
-  ///
-  ///
-  static const Fax = IriTerm.prevalidated(
-    'http://www.w3.org/2000/10/swap/pim/contact#Fax',
-  );
-
   /// IRI for contact:MobilePhone
   ///
   ///
@@ -105,6 +89,22 @@ class Contact {
   ///
   static const Person = IriTerm.prevalidated(
     'http://www.w3.org/2000/10/swap/pim/contact#Person',
+  );
+
+  /// IRI for contact:Phone
+  ///
+  /// An end-point in the public swiitched telephone system. Anything identified by a URI with tel: scheme is in this class.
+  ///
+  static const Phone = IriTerm.prevalidated(
+    'http://www.w3.org/2000/10/swap/pim/contact#Phone',
+  );
+
+  /// IRI for contact:SocialEntity
+  ///
+  /// The sort of thing which can have a phone number. Typically a person or an incorporated company, or unincorporated group.
+  ///
+  static const SocialEntity = IriTerm.prevalidated(
+    'http://www.w3.org/2000/10/swap/pim/contact#SocialEntity',
   );
 
   /// IRI for contact:address

@@ -14,11 +14,16 @@ import 'package:rdf_core/rdf_core.dart';
 /// Inherits from:
 /// - CreativeWork (https://schema.org/CreativeWork)
 /// - Dataset (http://www.w3.org/ns/dcat#Dataset)
+/// - Resource (http://www.w3.org/2000/01/rdf-schema#Resource)
 /// - Resource (http://www.w3.org/ns/dcat#Resource)
 /// - Thing (https://schema.org/Thing)
+/// - Thing (http://www.w3.org/2002/07/owl#Thing)
 ///
 /// Equivalent to:
 /// - Catalog (http://www.w3.org/ns/dcat#Catalog)
+/// - Dataset (https://schema.org/Dataset)
+/// - Dataset (http://purl.org/dc/dcmitype/Dataset)
+/// - Dataset (http://rdfs.org/ns/void#Dataset)
 ///
 /// This class provides access to all properties that can be used with DataCatalog.
 /// [Class Reference](https://schema.org/DataCatalog)
@@ -215,6 +220,14 @@ class SchemaDataCatalog {
   ///
   static const awards = IriTerm.prevalidated('https://schema.org/awards');
 
+  /// catalog [Expects: https://schema.org/DataCatalog]
+  ///
+  /// A data catalog which contains this dataset.
+  ///
+  /// Can be used on: https://schema.org/Dataset
+  ///
+  static const catalog = IriTerm.prevalidated('https://schema.org/catalog');
+
   /// character [Expects: https://schema.org/Person]
   ///
   /// Fictional person connected with a creative work.
@@ -363,6 +376,16 @@ class SchemaDataCatalog {
     'https://schema.org/creditText',
   );
 
+  /// datasetTimeInterval [Expects: https://schema.org/DateTime]
+  ///
+  /// The range of temporal applicability of a dataset, e.g. for a 2011 census dataset, the year 2011 (in ISO 8601 time interval format).
+  ///
+  /// Can be used on: https://schema.org/Dataset
+  ///
+  static const datasetTimeInterval = IriTerm.prevalidated(
+    'https://schema.org/datasetTimeInterval',
+  );
+
   /// dateModified [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
   /// The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.
@@ -411,6 +434,16 @@ class SchemaDataCatalog {
   ///
   static const discussionUrl = IriTerm.prevalidated(
     'https://schema.org/discussionUrl',
+  );
+
+  /// distribution [Expects: https://schema.org/DataDownload]
+  ///
+  /// A downloadable form of this dataset, at a specific location, in a specific format. This property can be repeated if different variations are available. There is no expectation that different downloadable distributions must contain exactly equivalent information (see also [DCAT](https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution) on this point). Different distributions might include or exclude different subsets of the entire dataset, for example.
+  ///
+  /// Can be used on: https://schema.org/Dataset
+  ///
+  static const distribution = IriTerm.prevalidated(
+    'https://schema.org/distribution',
   );
 
   /// editEIDR [Expects: https://schema.org/Text, https://schema.org/URL]
@@ -508,6 +541,16 @@ class SchemaDataCatalog {
   ///
   static const headline = IriTerm.prevalidated('https://schema.org/headline');
 
+  /// includedDataCatalog [Expects: https://schema.org/DataCatalog]
+  ///
+  /// A data catalog which contains this dataset (this property was previously 'catalog', preferred name is now 'includedInDataCatalog').
+  ///
+  /// Can be used on: https://schema.org/Dataset
+  ///
+  static const includedDataCatalog = IriTerm.prevalidated(
+    'https://schema.org/includedDataCatalog',
+  );
+
   /// interactionCount
   ///
   /// This property is deprecated, alongside the UserInteraction types on which it depended.
@@ -557,6 +600,14 @@ class SchemaDataCatalog {
   static const isFamilyFriendly = IriTerm.prevalidated(
     'https://schema.org/isFamilyFriendly',
   );
+
+  /// issn [Expects: https://schema.org/Text]
+  ///
+  /// The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial publication.
+  ///
+  /// Can be used on: https://schema.org/Blog, https://schema.org/CreativeWorkSeries, https://schema.org/Dataset, https://schema.org/WebSite
+  ///
+  static const issn = IriTerm.prevalidated('https://schema.org/issn');
 
   /// keywords [Expects: https://schema.org/DefinedTerm, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -868,6 +919,16 @@ class SchemaDataCatalog {
   /// Can be used on: https://schema.org/Thing
   ///
   static const url = IriTerm.prevalidated('https://schema.org/url');
+
+  /// variableMeasured [Expects: https://schema.org/Property, https://schema.org/PropertyValue, https://schema.org/StatisticalVariable, https://schema.org/Text]
+  ///
+  /// The variableMeasured property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue, or more explicitly as a {[StatisticalVariable]}.
+  ///
+  /// Can be used on: https://schema.org/Dataset, https://schema.org/Observation
+  ///
+  static const variableMeasured = IriTerm.prevalidated(
+    'https://schema.org/variableMeasured',
+  );
 
   /// version [Expects: https://schema.org/Number, https://schema.org/Text]
   ///
@@ -1200,6 +1261,16 @@ class SchemaDataCatalog {
     'https://schema.org/spatialCoverage',
   );
 
+  /// includedInDataCatalog [Expects: https://schema.org/DataCatalog]
+  ///
+  /// A data catalog which contains this dataset.
+  ///
+  /// Can be used on: https://schema.org/Dataset
+  ///
+  static const includedInDataCatalog = IriTerm.prevalidated(
+    'https://schema.org/includedInDataCatalog',
+  );
+
   /// workExample [Expects: https://schema.org/CreativeWork]
   ///
   /// Example/instance/realization/derivation of the concept of this creative work. E.g. the paperback edition, first edition, or e-book.
@@ -1284,6 +1355,277 @@ class SchemaDataCatalog {
   ///
   static const source = IriTerm.prevalidated('https://schema.org/source');
 
+  /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
+  ///
+  /// The subject is an instance of a class.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfType = IriTerm.prevalidated(
+    'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
+  );
+
+  /// value from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// Idiomatic property used for structured values.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfValue = IriTerm.prevalidated(
+    'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
+  );
+
+  /// comment from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A description of the subject resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsComment = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#comment',
+  );
+
+  /// label from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A human-readable name for the subject.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsLabel = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#label',
+  );
+
+  /// seeAlso from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// Further information about the subject resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsSeeAlso = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#seeAlso',
+  );
+
+  /// isDefinedBy from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The definition of the subject resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
+  );
+
+  /// member from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// A member of the subject resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsMember = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#member',
+  );
+
+  /// annotatedProperty from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The property that determines the predicate of an annotated axiom or annotated annotation.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlAnnotatedProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#annotatedProperty',
+  );
+
+  /// annotatedSource from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The property that determines the subject of an annotated axiom or annotated annotation.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlAnnotatedSource = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#annotatedSource',
+  );
+
+  /// annotatedTarget from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The property that determines the object of an annotated axiom or annotated annotation.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlAnnotatedTarget = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#annotatedTarget',
+  );
+
+  /// bottomDataProperty from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// The data property that does not relate any individual to any data value.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlBottomDataProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#bottomDataProperty',
+  );
+
+  /// bottomObjectProperty from owl vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// The object property that does not relate any two individuals.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlBottomObjectProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#bottomObjectProperty',
+  );
+
+  /// deprecated from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The annotation property that indicates that a given entity has been deprecated.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlDeprecated = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#deprecated',
+  );
+
+  /// differentFrom from owl vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// The property that determines that two given individuals are different.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlDifferentFrom = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#differentFrom',
+  );
+
+  /// members from owl vocabulary [Expects: http://www.w3.org/1999/02/22-rdf-syntax-ns#List]
+  ///
+  /// The property that determines the collection of members in either a owl:AllDifferent, owl:AllDisjointClasses or owl:AllDisjointProperties axiom.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlMembers = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#members',
+  );
+
+  /// sameAs from owl vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// The property that determines that two given individuals are equal.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlSameAs = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#sameAs',
+  );
+
+  /// topDataProperty from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// The data property that relates every individual to every data value.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlTopDataProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#topDataProperty',
+  );
+
+  /// topObjectProperty from owl vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// The object property that relates every two individuals.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlTopObjectProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#topObjectProperty',
+  );
+
+  /// versionInfo from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The annotation property that provides version information for an ontology or another OWL construct.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlVersionInfo = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#versionInfo',
+  );
+
+  /// name from foaf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A name for some thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafName = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/name',
+  );
+
+  /// homepage from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
+  ///
+  /// A homepage for some thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafHomepage = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/homepage',
+  );
+
+  /// maker from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Agent]
+  ///
+  /// An agent that
+  /// made this thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafMaker = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/maker',
+  );
+
+  /// depiction from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Image]
+  ///
+  /// A depiction of some thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafDepiction = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/depiction',
+  );
+
+  /// fundedBy from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// An organization funding a project or person.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafFundedBy = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/fundedBy',
+  );
+
+  /// logo from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// A logo representing some thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafLogo = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/logo',
+  );
+
+  /// page from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
+  ///
+  /// A page or document about this thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafPage = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/page',
+  );
+
+  /// theme from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// A theme.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafTheme = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/theme',
+  );
+
   /// catalog from dcat vocabulary [Expects: http://www.w3.org/ns/dcat#Catalog]
   ///
   /// A catalog that is listed in the catalog.
@@ -1362,5 +1704,15 @@ class SchemaDataCatalog {
   ///
   static const dcatThemeTaxonomy = IriTerm.prevalidated(
     'http://www.w3.org/ns/dcat#themeTaxonomy',
+  );
+
+  /// abstract_ from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A summary of the resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const biboAbstract_ = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/abstract',
   );
 }

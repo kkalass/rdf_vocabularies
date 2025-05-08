@@ -19,6 +19,36 @@ class Rdf {
   static const String namespace = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
   static const String prefix = 'rdf';
 
+  /// IRI for rdf:HTML
+  ///
+  /// The datatype of RDF literals storing fragments of HTML content
+  ///
+  /// [See also](http://www.w3.org/TR/rdf11-concepts/#section-html)
+  ///
+  static const HTML = IriTerm.prevalidated(
+    'http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML',
+  );
+
+  /// IRI for rdf:langString
+  ///
+  /// The datatype of language-tagged string values
+  ///
+  /// [See also](http://www.w3.org/TR/rdf11-concepts/#section-Graph-Literal)
+  ///
+  static const langString = IriTerm.prevalidated(
+    'http://www.w3.org/1999/02/22-rdf-syntax-ns#langString',
+  );
+
+  /// IRI for rdf:PlainLiteral
+  ///
+  /// The class of plain (i.e. untyped) literal values, as used in RIF and OWL 2
+  ///
+  /// [See also](http://www.w3.org/TR/rdf-plain-literal/)
+  ///
+  static const PlainLiteral = IriTerm.prevalidated(
+    'http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral',
+  );
+
   /// IRI for rdf:Property
   ///
   /// The class of RDF properties.
@@ -67,46 +97,6 @@ class Rdf {
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#List',
   );
 
-  /// IRI for rdf:CompoundLiteral
-  ///
-  /// A class representing a compound literal.
-  ///
-  /// [See also](https://www.w3.org/TR/json-ld11/#the-rdf-compoundliteral-class-and-the-rdf-language-and-rdf-direction-properties)
-  ///
-  static const CompoundLiteral = IriTerm.prevalidated(
-    'http://www.w3.org/1999/02/22-rdf-syntax-ns#CompoundLiteral',
-  );
-
-  /// IRI for rdf:HTML
-  ///
-  /// The datatype of RDF literals storing fragments of HTML content
-  ///
-  /// [See also](http://www.w3.org/TR/rdf11-concepts/#section-html)
-  ///
-  static const HTML = IriTerm.prevalidated(
-    'http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML',
-  );
-
-  /// IRI for rdf:langString
-  ///
-  /// The datatype of language-tagged string values
-  ///
-  /// [See also](http://www.w3.org/TR/rdf11-concepts/#section-Graph-Literal)
-  ///
-  static const langString = IriTerm.prevalidated(
-    'http://www.w3.org/1999/02/22-rdf-syntax-ns#langString',
-  );
-
-  /// IRI for rdf:PlainLiteral
-  ///
-  /// The class of plain (i.e. untyped) literal values, as used in RIF and OWL 2
-  ///
-  /// [See also](http://www.w3.org/TR/rdf-plain-literal/)
-  ///
-  static const PlainLiteral = IriTerm.prevalidated(
-    'http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral',
-  );
-
   /// IRI for rdf:XMLLiteral
   ///
   /// The datatype of XML literal values.
@@ -123,6 +113,16 @@ class Rdf {
   ///
   static const JSON = IriTerm.prevalidated(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON',
+  );
+
+  /// IRI for rdf:CompoundLiteral
+  ///
+  /// A class representing a compound literal.
+  ///
+  /// [See also](https://www.w3.org/TR/json-ld11/#the-rdf-compoundliteral-class-and-the-rdf-language-and-rdf-direction-properties)
+  ///
+  static const CompoundLiteral = IriTerm.prevalidated(
+    'http://www.w3.org/1999/02/22-rdf-syntax-ns#CompoundLiteral',
   );
 
   /// IRI for rdf:nil

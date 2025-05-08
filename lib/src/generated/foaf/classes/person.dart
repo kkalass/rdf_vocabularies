@@ -13,10 +13,14 @@ import 'package:rdf_core/rdf_core.dart';
 ///
 /// Inherits from:
 /// - Agent (http://xmlns.com/foaf/0.1/Agent)
+/// - Resource (http://www.w3.org/2000/01/rdf-schema#Resource)
+/// - SocialEntity (http://www.w3.org/2000/10/swap/pim/contact#SocialEntity)
 /// - SpatialThing (http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing)
+/// - Thing (http://www.w3.org/2002/07/owl#Thing)
 /// - Thing (http://schema.org/Thing)
 ///
 /// Equivalent to:
+/// - Agent (http://purl.org/dc/terms/Agent)
 /// - Person (http://schema.org/Person)
 /// - Person (http://www.w3.org/2000/10/swap/pim/contact#Person)
 ///
@@ -169,6 +173,14 @@ class FoafPerson {
     'http://xmlns.com/foaf/0.1/msnChatID',
   );
 
+  /// name [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A name for some thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const name = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/name');
+
   /// firstName [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
   /// The first name of a person.
@@ -247,6 +259,16 @@ class FoafPerson {
   ///
   static const phone = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/phone');
 
+  /// homepage [Expects: http://xmlns.com/foaf/0.1/Document]
+  ///
+  /// A homepage for some thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const homepage = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/homepage',
+  );
+
   /// weblog [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
   /// A weblog of some thing (whether person, group, company etc.).
@@ -293,6 +315,15 @@ class FoafPerson {
   ///
   static const made = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/made');
 
+  /// maker [Expects: http://xmlns.com/foaf/0.1/Agent]
+  ///
+  /// An agent that
+  /// made this thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const maker = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/maker');
+
   /// img [Expects: http://xmlns.com/foaf/0.1/Image]
   ///
   /// An image that can be used to represent some thing (ie. those depictions which are particularly representative of something, eg. one's photo on a homepage).
@@ -300,6 +331,16 @@ class FoafPerson {
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
   static const img = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/img');
+
+  /// depiction [Expects: http://xmlns.com/foaf/0.1/Image]
+  ///
+  /// A depiction of some thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const depiction = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/depiction',
+  );
 
   /// myersBriggs [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -399,6 +440,40 @@ class FoafPerson {
     'http://xmlns.com/foaf/0.1/pastProject',
   );
 
+  /// fundedBy [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// An organization funding a project or person.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const fundedBy = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/fundedBy',
+  );
+
+  /// logo [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// A logo representing some thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const logo = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/logo');
+
+  /// page [Expects: http://xmlns.com/foaf/0.1/Document]
+  ///
+  /// A page or document about this thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const page = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/page');
+
+  /// theme [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// A theme.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const theme = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/theme');
+
   /// account [Expects: http://xmlns.com/foaf/0.1/OnlineAccount]
   ///
   /// Indicates an account held by this agent.
@@ -455,6 +530,226 @@ class FoafPerson {
   ///
   static const status = IriTerm.prevalidated(
     'http://xmlns.com/foaf/0.1/status',
+  );
+
+  /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
+  ///
+  /// The subject is an instance of a class.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfType = IriTerm.prevalidated(
+    'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
+  );
+
+  /// value from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// Idiomatic property used for structured values.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfValue = IriTerm.prevalidated(
+    'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
+  );
+
+  /// comment from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A description of the subject resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsComment = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#comment',
+  );
+
+  /// label from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A human-readable name for the subject.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsLabel = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#label',
+  );
+
+  /// seeAlso from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// Further information about the subject resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsSeeAlso = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#seeAlso',
+  );
+
+  /// isDefinedBy from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The definition of the subject resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
+  );
+
+  /// member from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// A member of the subject resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsMember = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#member',
+  );
+
+  /// annotatedProperty from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The property that determines the predicate of an annotated axiom or annotated annotation.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlAnnotatedProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#annotatedProperty',
+  );
+
+  /// annotatedSource from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The property that determines the subject of an annotated axiom or annotated annotation.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlAnnotatedSource = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#annotatedSource',
+  );
+
+  /// annotatedTarget from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The property that determines the object of an annotated axiom or annotated annotation.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlAnnotatedTarget = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#annotatedTarget',
+  );
+
+  /// bottomDataProperty from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// The data property that does not relate any individual to any data value.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlBottomDataProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#bottomDataProperty',
+  );
+
+  /// bottomObjectProperty from owl vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// The object property that does not relate any two individuals.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlBottomObjectProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#bottomObjectProperty',
+  );
+
+  /// deprecated from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The annotation property that indicates that a given entity has been deprecated.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlDeprecated = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#deprecated',
+  );
+
+  /// differentFrom from owl vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// The property that determines that two given individuals are different.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlDifferentFrom = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#differentFrom',
+  );
+
+  /// members from owl vocabulary [Expects: http://www.w3.org/1999/02/22-rdf-syntax-ns#List]
+  ///
+  /// The property that determines the collection of members in either a owl:AllDifferent, owl:AllDisjointClasses or owl:AllDisjointProperties axiom.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlMembers = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#members',
+  );
+
+  /// sameAs from owl vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// The property that determines that two given individuals are equal.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlSameAs = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#sameAs',
+  );
+
+  /// topDataProperty from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// The data property that relates every individual to every data value.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlTopDataProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#topDataProperty',
+  );
+
+  /// topObjectProperty from owl vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// The object property that relates every two individuals.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlTopObjectProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#topObjectProperty',
+  );
+
+  /// versionInfo from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The annotation property that provides version information for an ontology or another OWL construct.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlVersionInfo = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#versionInfo',
+  );
+
+  /// emailAddress from contact vocabulary [Expects: http://www.w3.org/2000/10/swap/pim/contact#_EmailAddress]
+  ///
+  /// emailAddress is a string. Use of this is discouraged. Use :mailbox instead
+  ///
+  /// Can be used on: http://www.w3.org/2000/10/swap/pim/contact#SocialEntity
+  ///
+  static const contactEmailAddress = IriTerm.prevalidated(
+    'http://www.w3.org/2000/10/swap/pim/contact#emailAddress',
+  );
+
+  /// mailbox from contact vocabulary [Expects: http://www.w3.org/2000/10/swap/pim/contact#Mailbox]
+  ///
+  ///
+  ///
+  /// Can be used on: http://www.w3.org/2000/10/swap/pim/contact#SocialEntity
+  ///
+  static const contactMailbox = IriTerm.prevalidated(
+    'http://www.w3.org/2000/10/swap/pim/contact#mailbox',
+  );
+
+  /// mailboxURI from contact vocabulary [Expects: http://www.w3.org/2000/10/swap/pim/contact#_URI]
+  ///
+  /// mailboxURI is a string. Use of this is discouraged. Use :mailbox instead
+  ///
+  /// Can be used on: http://www.w3.org/2000/10/swap/pim/contact#SocialEntity
+  ///
+  static const contactMailboxURI = IriTerm.prevalidated(
+    'http://www.w3.org/2000/10/swap/pim/contact#mailboxURI',
   );
 
   /// additionalName from schemahttp vocabulary [Expects: http://schema.org/Text]
@@ -1252,6 +1547,16 @@ class FoafPerson {
   ///
   static const biboInterviewer = IriTerm.prevalidated(
     'http://purl.org/ontology/bibo/interviewer',
+  );
+
+  /// abstract_ from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A summary of the resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const biboAbstract_ = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/abstract',
   );
 
   /// prefixName from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]

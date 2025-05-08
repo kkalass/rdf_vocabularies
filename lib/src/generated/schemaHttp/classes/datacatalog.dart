@@ -14,11 +14,18 @@ import 'package:rdf_core/rdf_core.dart';
 /// Inherits from:
 /// - CreativeWork (http://schema.org/CreativeWork)
 /// - Dataset (http://www.w3.org/ns/dcat#Dataset)
+/// - Resource (http://www.w3.org/2000/01/rdf-schema#Resource)
 /// - Resource (http://www.w3.org/ns/dcat#Resource)
 /// - Thing (http://schema.org/Thing)
+/// - Thing (http://www.w3.org/2002/07/owl#Thing)
 ///
 /// Equivalent to:
 /// - Catalog (http://www.w3.org/ns/dcat#Catalog)
+/// - Dataset (https://schema.org/Dataset)
+/// - Dataset (http://purl.org/dc/dcmitype/Dataset)
+/// - Dataset (http://rdfs.org/ns/void#Dataset)
+/// - Document (http://xmlns.com/foaf/0.1/Document)
+/// - Document (http://purl.org/ontology/bibo/Document)
 ///
 /// This class provides access to all properties that can be used with DataCatalog.
 /// [Class Reference](http://schema.org/DataCatalog)
@@ -1282,6 +1289,401 @@ class SchemaHttpDataCatalog {
   ///
   static const source = IriTerm.prevalidated('http://schema.org/source');
 
+  /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
+  ///
+  /// The subject is an instance of a class.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfType = IriTerm.prevalidated(
+    'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
+  );
+
+  /// value from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// Idiomatic property used for structured values.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfValue = IriTerm.prevalidated(
+    'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
+  );
+
+  /// comment from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A description of the subject resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsComment = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#comment',
+  );
+
+  /// label from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A human-readable name for the subject.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsLabel = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#label',
+  );
+
+  /// seeAlso from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// Further information about the subject resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsSeeAlso = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#seeAlso',
+  );
+
+  /// isDefinedBy from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The definition of the subject resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
+  );
+
+  /// member from rdfs vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// A member of the subject resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const rdfsMember = IriTerm.prevalidated(
+    'http://www.w3.org/2000/01/rdf-schema#member',
+  );
+
+  /// annotatedProperty from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The property that determines the predicate of an annotated axiom or annotated annotation.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlAnnotatedProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#annotatedProperty',
+  );
+
+  /// annotatedSource from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The property that determines the subject of an annotated axiom or annotated annotation.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlAnnotatedSource = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#annotatedSource',
+  );
+
+  /// annotatedTarget from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The property that determines the object of an annotated axiom or annotated annotation.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlAnnotatedTarget = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#annotatedTarget',
+  );
+
+  /// bottomDataProperty from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// The data property that does not relate any individual to any data value.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlBottomDataProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#bottomDataProperty',
+  );
+
+  /// bottomObjectProperty from owl vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// The object property that does not relate any two individuals.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlBottomObjectProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#bottomObjectProperty',
+  );
+
+  /// deprecated from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The annotation property that indicates that a given entity has been deprecated.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlDeprecated = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#deprecated',
+  );
+
+  /// differentFrom from owl vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// The property that determines that two given individuals are different.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlDifferentFrom = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#differentFrom',
+  );
+
+  /// members from owl vocabulary [Expects: http://www.w3.org/1999/02/22-rdf-syntax-ns#List]
+  ///
+  /// The property that determines the collection of members in either a owl:AllDifferent, owl:AllDisjointClasses or owl:AllDisjointProperties axiom.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlMembers = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#members',
+  );
+
+  /// sameAs from owl vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// The property that determines that two given individuals are equal.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlSameAs = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#sameAs',
+  );
+
+  /// topDataProperty from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// The data property that relates every individual to every data value.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlTopDataProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#topDataProperty',
+  );
+
+  /// topObjectProperty from owl vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// The object property that relates every two individuals.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const owlTopObjectProperty = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#topObjectProperty',
+  );
+
+  /// versionInfo from owl vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// The annotation property that provides version information for an ontology or another OWL construct.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const owlVersionInfo = IriTerm.prevalidated(
+    'http://www.w3.org/2002/07/owl#versionInfo',
+  );
+
+  /// sha1 from foaf vocabulary
+  ///
+  /// A sha1sum hash, in hex.
+  ///
+  /// Can be used on: http://xmlns.com/foaf/0.1/Document
+  ///
+  static const foafSha1 = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/sha1',
+  );
+
+  /// name from foaf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A name for some thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafName = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/name',
+  );
+
+  /// homepage from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
+  ///
+  /// A homepage for some thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafHomepage = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/homepage',
+  );
+
+  /// maker from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Agent]
+  ///
+  /// An agent that
+  /// made this thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafMaker = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/maker',
+  );
+
+  /// depiction from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Image]
+  ///
+  /// A depiction of some thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafDepiction = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/depiction',
+  );
+
+  /// fundedBy from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// An organization funding a project or person.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafFundedBy = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/fundedBy',
+  );
+
+  /// logo from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// A logo representing some thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafLogo = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/logo',
+  );
+
+  /// topic from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// A topic of some page or document.
+  ///
+  /// Can be used on: http://xmlns.com/foaf/0.1/Document
+  ///
+  static const foafTopic = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/topic',
+  );
+
+  /// primaryTopic from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// The primary topic of some page or document.
+  ///
+  /// Can be used on: http://xmlns.com/foaf/0.1/Document
+  ///
+  static const foafPrimaryTopic = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/primaryTopic',
+  );
+
+  /// page from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
+  ///
+  /// A page or document about this thing.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafPage = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/page',
+  );
+
+  /// theme from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
+  ///
+  /// A theme.
+  ///
+  /// Can be used on: http://www.w3.org/2002/07/owl#Thing
+  ///
+  static const foafTheme = IriTerm.prevalidated(
+    'http://xmlns.com/foaf/0.1/theme',
+  );
+
+  /// catalog from schema vocabulary [Expects: https://schema.org/DataCatalog]
+  ///
+  /// A data catalog which contains this dataset.
+  ///
+  /// Can be used on: https://schema.org/Dataset
+  ///
+  static const schemaCatalog = IriTerm.prevalidated(
+    'https://schema.org/catalog',
+  );
+
+  /// datasetTimeInterval from schema vocabulary [Expects: https://schema.org/DateTime]
+  ///
+  /// The range of temporal applicability of a dataset, e.g. for a 2011 census dataset, the year 2011 (in ISO 8601 time interval format).
+  ///
+  /// Can be used on: https://schema.org/Dataset
+  ///
+  static const schemaDatasetTimeInterval = IriTerm.prevalidated(
+    'https://schema.org/datasetTimeInterval',
+  );
+
+  /// distribution from schema vocabulary [Expects: https://schema.org/DataDownload]
+  ///
+  /// A downloadable form of this dataset, at a specific location, in a specific format. This property can be repeated if different variations are available. There is no expectation that different downloadable distributions must contain exactly equivalent information (see also [DCAT](https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution) on this point). Different distributions might include or exclude different subsets of the entire dataset, for example.
+  ///
+  /// Can be used on: https://schema.org/Dataset
+  ///
+  static const schemaDistribution = IriTerm.prevalidated(
+    'https://schema.org/distribution',
+  );
+
+  /// includedDataCatalog from schema vocabulary [Expects: https://schema.org/DataCatalog]
+  ///
+  /// A data catalog which contains this dataset (this property was previously 'catalog', preferred name is now 'includedInDataCatalog').
+  ///
+  /// Can be used on: https://schema.org/Dataset
+  ///
+  static const schemaIncludedDataCatalog = IriTerm.prevalidated(
+    'https://schema.org/includedDataCatalog',
+  );
+
+  /// issn from schema vocabulary [Expects: https://schema.org/Text]
+  ///
+  /// The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial publication.
+  ///
+  /// Can be used on: https://schema.org/Blog, https://schema.org/CreativeWorkSeries, https://schema.org/Dataset, https://schema.org/WebSite
+  ///
+  static const schemaIssn = IriTerm.prevalidated('https://schema.org/issn');
+
+  /// measurementMethod from schema vocabulary [Expects: https://schema.org/DefinedTerm, https://schema.org/MeasurementMethodEnum, https://schema.org/Text, https://schema.org/URL]
+  ///
+  /// A subproperty of {[measurementTechnique]} that can be used for specifying specific methods, in particular via {[MeasurementMethodEnum]}.
+  ///
+  /// Can be used on: https://schema.org/DataCatalog, https://schema.org/DataDownload, https://schema.org/Dataset, https://schema.org/Observation, https://schema.org/PropertyValue, https://schema.org/StatisticalVariable
+  ///
+  static const schemaMeasurementMethod = IriTerm.prevalidated(
+    'https://schema.org/measurementMethod',
+  );
+
+  /// variableMeasured from schema vocabulary [Expects: https://schema.org/Property, https://schema.org/PropertyValue, https://schema.org/StatisticalVariable, https://schema.org/Text]
+  ///
+  /// The variableMeasured property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue, or more explicitly as a {[StatisticalVariable]}.
+  ///
+  /// Can be used on: https://schema.org/Dataset, https://schema.org/Observation
+  ///
+  static const schemaVariableMeasured = IriTerm.prevalidated(
+    'https://schema.org/variableMeasured',
+  );
+
+  /// measurementTechnique from schema vocabulary [Expects: https://schema.org/DefinedTerm, https://schema.org/MeasurementMethodEnum, https://schema.org/Text, https://schema.org/URL]
+  ///
+  /// A technique, method or technology used in an {[Observation]}, {[StatisticalVariable]} or {[Dataset]} (or {[DataDownload]}, {[DataCatalog]}), corresponding to the method used for measuring the corresponding variable(s) (for datasets, described using {[variableMeasured]}; for {[Observation]}, a {[StatisticalVariable]}). Often but not necessarily each {[variableMeasured]} will have an explicit representation as (or mapping to) an property such as those defined in Schema.org, or other RDF vocabularies and "knowledge graphs". In that case the subproperty of {[variableMeasured]} called {[measuredProperty]} is applicable.
+  ///
+  /// The {[measurementTechnique]} property helps when extra clarification is needed about how a {[measuredProperty]} was measured. This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but can often serve as a high level summary for dataset discovery.
+  ///
+  /// For example, if {[variableMeasured]} is: molecule concentration, {[measurementTechnique]} could be: "mass spectrometry" or "nmr spectroscopy" or "colorimetry" or "immunofluorescence". If the {[variableMeasured]} is "depression rating", the {[measurementTechnique]} could be "Zung Scale" or "HAM-D" or "Beck Depression Inventory".
+  ///
+  /// If there are several {[variableMeasured]} properties recorded for some given data object, use a {[PropertyValue]} for each {[variableMeasured]} and attach the corresponding {[measurementTechnique]}. The value can also be from an enumeration, organized as a {[MeasurementMetholdEnumeration]}.
+  ///
+  /// Can be used on: https://schema.org/DataCatalog, https://schema.org/DataDownload, https://schema.org/Dataset, https://schema.org/Observation, https://schema.org/PropertyValue, https://schema.org/StatisticalVariable
+  ///
+  static const schemaMeasurementTechnique = IriTerm.prevalidated(
+    'https://schema.org/measurementTechnique',
+  );
+
+  /// includedInDataCatalog from schema vocabulary [Expects: https://schema.org/DataCatalog]
+  ///
+  /// A data catalog which contains this dataset.
+  ///
+  /// Can be used on: https://schema.org/Dataset
+  ///
+  static const schemaIncludedInDataCatalog = IriTerm.prevalidated(
+    'https://schema.org/includedInDataCatalog',
+  );
+
   /// catalog from dcat vocabulary [Expects: http://www.w3.org/ns/dcat#Catalog]
   ///
   /// A catalog that is listed in the catalog.
@@ -1360,5 +1762,248 @@ class SchemaHttpDataCatalog {
   ///
   static const dcatThemeTaxonomy = IriTerm.prevalidated(
     'http://www.w3.org/ns/dcat#themeTaxonomy',
+  );
+
+  /// authorList from bibo vocabulary
+  ///
+  /// An ordered list of authors. Normally, this list is seen as a priority list that order authors by importance.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboAuthorList = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/authorList',
+  );
+
+  /// citedBy from bibo vocabulary [Expects: http://purl.org/ontology/bibo/Document]
+  ///
+  /// Relates a document to another document that cites the
+  /// first document.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboCitedBy = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/citedBy',
+  );
+
+  /// cites from bibo vocabulary [Expects: http://purl.org/ontology/bibo/Document]
+  ///
+  /// Relates a document to another document that is cited
+  /// by the first document as reference, comment, review, quotation or for
+  /// another purpose.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboCites = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/cites',
+  );
+
+  /// contributorList from bibo vocabulary
+  ///
+  /// An ordered list of contributors. Normally, this list is seen as a priority list that order contributors by importance.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboContributorList = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/contributorList',
+  );
+
+  /// editorList from bibo vocabulary
+  ///
+  /// An ordered list of editors. Normally, this list is seen as a priority list that order editors by importance.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboEditorList = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/editorList',
+  );
+
+  /// presentedAt from bibo vocabulary [Expects: http://purl.org/ontology/bibo/Event]
+  ///
+  /// Relates a document to an event; for example, a paper to a conference.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboPresentedAt = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/presentedAt',
+  );
+
+  /// reproducedIn from bibo vocabulary [Expects: http://purl.org/ontology/bibo/Document]
+  ///
+  /// The resource in which another resource is reproduced.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboReproducedIn = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/reproducedIn',
+  );
+
+  /// reviewOf from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// Relates a review document to a reviewed thing (resource, item, etc.).
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboReviewOf = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/reviewOf',
+  );
+
+  /// status from bibo vocabulary [Expects: http://purl.org/ontology/bibo/DocumentStatus]
+  ///
+  /// The publication status of (typically academic) content.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboStatus = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/status',
+  );
+
+  /// transcriptOf from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
+  ///
+  /// Relates a document to some transcribed original.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboTranscriptOf = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/transcriptOf',
+  );
+
+  /// translationOf from bibo vocabulary [Expects: http://purl.org/ontology/bibo/Document]
+  ///
+  /// Relates a translated document to the original document.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboTranslationOf = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/translationOf',
+  );
+
+  /// abstract_ from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A summary of the resource.
+  ///
+  /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
+  ///
+  static const biboAbstract_ = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/abstract',
+  );
+
+  /// content from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// This property is for a plain-text rendering of the content of a Document. While the plain-text content of an entire document could be described by this property.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboContent = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/content',
+  );
+
+  /// edition from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// The name defining a special edition of a document. Normally its a literal value composed of a version number and words.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboEdition = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/edition',
+  );
+
+  /// locator from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A description (often numeric) that locates an item within a containing document or collection.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboLocator = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/locator',
+  );
+
+  /// numPages from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// The number of pages contained in a document
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboNumPages = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/numPages',
+  );
+
+  /// number from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A generic item or document number. Not to be confused with issue number.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboNumber = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/number',
+  );
+
+  /// pageEnd from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// Ending page number within a continuous page range.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboPageEnd = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/pageEnd',
+  );
+
+  /// pageStart from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// Starting page number within a continuous page range.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboPageStart = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/pageStart',
+  );
+
+  /// pages from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A string of non-contiguous page spans that locate a Document within a Collection. Example: 23-25, 34, 54-56. For continuous page ranges, use the pageStart and pageEnd properties.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboPages = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/pages',
+  );
+
+  /// section from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A section number
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboSection = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/section',
+  );
+
+  /// shortDescription from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  ///
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboShortDescription = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/shortDescription',
+  );
+
+  /// shortTitle from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// The abbreviation of a title.
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboShortTitle = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/shortTitle',
+  );
+
+  /// volume from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
+  ///
+  /// A volume number
+  ///
+  /// Can be used on: http://purl.org/ontology/bibo/Document
+  ///
+  static const biboVolume = IriTerm.prevalidated(
+    'http://purl.org/ontology/bibo/volume',
   );
 }

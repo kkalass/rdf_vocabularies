@@ -8,7 +8,12 @@
 export 'classes/alt.dart';
 export 'classes/bag.dart';
 export 'classes/compoundliteral.dart';
+export 'classes/html.dart';
+export 'classes/json.dart';
 export 'classes/list.dart';
+export 'classes/plainliteral.dart';
 export 'classes/property.dart';
 export 'classes/seq.dart';
 export 'classes/statement.dart';
+export 'classes/xmlliteral.dart';
+export 'classes/langstring.dart';

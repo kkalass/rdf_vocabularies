@@ -7,8 +7,12 @@
 
 export 'classes/address.dart';
 export 'classes/contactlocation.dart';
+export 'classes/fax.dart';
 export 'classes/female.dart';
 export 'classes/languagecode.dart';
 export 'classes/male.dart';
+export 'classes/mobilephone.dart';
+export 'classes/pager.dart';
+export 'classes/person.dart';
 export 'classes/phone.dart';
 export 'classes/socialentity.dart';

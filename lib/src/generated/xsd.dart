@@ -19,30 +19,6 @@ class Xsd {
   static const String namespace = 'http://www.w3.org/2001/XMLSchema#';
   static const String prefix = 'xsd';
 
-  /// IRI for xsd:string
-  ///
-  /// String datatype
-  ///
-  static const string = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#string',
-  );
-
-  /// IRI for xsd:boolean
-  ///
-  /// Boolean datatype (true/false)
-  ///
-  static const boolean = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#boolean',
-  );
-
-  /// IRI for xsd:decimal
-  ///
-  /// Decimal datatype
-  ///
-  static const decimal = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#decimal',
-  );
-
   /// IRI for xsd:integer
   ///
   /// Integer datatype
@@ -147,100 +123,12 @@ class Xsd {
     'http://www.w3.org/2001/XMLSchema#unsignedByte',
   );
 
-  /// IRI for xsd:float
-  ///
-  /// 32-bit floating point
-  ///
-  static const float = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#float',
-  );
-
-  /// IRI for xsd:double
-  ///
-  /// 64-bit floating point
-  ///
-  static const double = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#double',
-  );
-
-  /// IRI for xsd:date
-  ///
-  /// Date value (YYYY-MM-DD)
-  ///
-  static const date = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#date',
-  );
-
-  /// IRI for xsd:time
-  ///
-  /// Time value (hh:mm:ss)
-  ///
-  static const time = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#time',
-  );
-
-  /// IRI for xsd:dateTime
-  ///
-  /// Date and time value (YYYY-MM-DDThh:mm:ss)
-  ///
-  static const dateTime = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#dateTime',
-  );
-
   /// IRI for xsd:dateTimeStamp
   ///
   /// Date and time with required timezone
   ///
   static const dateTimeStamp = IriTerm.prevalidated(
     'http://www.w3.org/2001/XMLSchema#dateTimeStamp',
-  );
-
-  /// IRI for xsd:gYear
-  ///
-  /// Gregorian calendar year (YYYY)
-  ///
-  static const gYear = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#gYear',
-  );
-
-  /// IRI for xsd:gMonth
-  ///
-  /// Gregorian calendar month (--MM--)
-  ///
-  static const gMonth = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#gMonth',
-  );
-
-  /// IRI for xsd:gDay
-  ///
-  /// Gregorian calendar day of month (---DD)
-  ///
-  static const gDay = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#gDay',
-  );
-
-  /// IRI for xsd:gYearMonth
-  ///
-  /// Gregorian calendar year and month (YYYY-MM)
-  ///
-  static const gYearMonth = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#gYearMonth',
-  );
-
-  /// IRI for xsd:gMonthDay
-  ///
-  /// Gregorian calendar month and day (--MM-DD)
-  ///
-  static const gMonthDay = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#gMonthDay',
-  );
-
-  /// IRI for xsd:duration
-  ///
-  /// Duration value (PnYnMnDTnHnMnS)
-  ///
-  static const duration = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#duration',
   );
 
   /// IRI for xsd:yearMonthDuration
@@ -257,38 +145,6 @@ class Xsd {
   ///
   static const dayTimeDuration = IriTerm.prevalidated(
     'http://www.w3.org/2001/XMLSchema#dayTimeDuration',
-  );
-
-  /// IRI for xsd:hexBinary
-  ///
-  /// Hex-encoded binary data
-  ///
-  static const hexBinary = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#hexBinary',
-  );
-
-  /// IRI for xsd:base64Binary
-  ///
-  /// Base64-encoded binary data
-  ///
-  static const base64Binary = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#base64Binary',
-  );
-
-  /// IRI for xsd:anyURI
-  ///
-  /// Uniform Resource Identifier
-  ///
-  static const anyURI = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#anyURI',
-  );
-
-  /// IRI for xsd:language
-  ///
-  /// Language tag (as per BCP 47)
-  ///
-  static const language = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#language',
   );
 
   /// IRI for xsd:normalizedString
@@ -343,5 +199,149 @@ class Xsd {
   ///
   static const IDREF = IriTerm.prevalidated(
     'http://www.w3.org/2001/XMLSchema#IDREF',
+  );
+
+  /// IRI for xsd:string
+  ///
+  /// String datatype
+  ///
+  static const string = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#string',
+  );
+
+  /// IRI for xsd:boolean
+  ///
+  /// Boolean datatype (true/false)
+  ///
+  static const boolean = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#boolean',
+  );
+
+  /// IRI for xsd:decimal
+  ///
+  /// Decimal datatype
+  ///
+  static const decimal = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#decimal',
+  );
+
+  /// IRI for xsd:float
+  ///
+  /// 32-bit floating point
+  ///
+  static const float = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#float',
+  );
+
+  /// IRI for xsd:double
+  ///
+  /// 64-bit floating point
+  ///
+  static const double = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#double',
+  );
+
+  /// IRI for xsd:date
+  ///
+  /// Date value (YYYY-MM-DD)
+  ///
+  static const date = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#date',
+  );
+
+  /// IRI for xsd:time
+  ///
+  /// Time value (hh:mm:ss)
+  ///
+  static const time = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#time',
+  );
+
+  /// IRI for xsd:dateTime
+  ///
+  /// Date and time value (YYYY-MM-DDThh:mm:ss)
+  ///
+  static const dateTime = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#dateTime',
+  );
+
+  /// IRI for xsd:gYear
+  ///
+  /// Gregorian calendar year (YYYY)
+  ///
+  static const gYear = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#gYear',
+  );
+
+  /// IRI for xsd:gMonth
+  ///
+  /// Gregorian calendar month (--MM--)
+  ///
+  static const gMonth = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#gMonth',
+  );
+
+  /// IRI for xsd:gDay
+  ///
+  /// Gregorian calendar day of month (---DD)
+  ///
+  static const gDay = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#gDay',
+  );
+
+  /// IRI for xsd:gYearMonth
+  ///
+  /// Gregorian calendar year and month (YYYY-MM)
+  ///
+  static const gYearMonth = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#gYearMonth',
+  );
+
+  /// IRI for xsd:gMonthDay
+  ///
+  /// Gregorian calendar month and day (--MM-DD)
+  ///
+  static const gMonthDay = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#gMonthDay',
+  );
+
+  /// IRI for xsd:duration
+  ///
+  /// Duration value (PnYnMnDTnHnMnS)
+  ///
+  static const duration = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#duration',
+  );
+
+  /// IRI for xsd:hexBinary
+  ///
+  /// Hex-encoded binary data
+  ///
+  static const hexBinary = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#hexBinary',
+  );
+
+  /// IRI for xsd:base64Binary
+  ///
+  /// Base64-encoded binary data
+  ///
+  static const base64Binary = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#base64Binary',
+  );
+
+  /// IRI for xsd:anyURI
+  ///
+  /// Uniform Resource Identifier
+  ///
+  static const anyURI = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#anyURI',
+  );
+
+  /// IRI for xsd:language
+  ///
+  /// Language tag (as per BCP 47)
+  ///
+  static const language = IriTerm.prevalidated(
+    'http://www.w3.org/2001/XMLSchema#language',
   );
 }

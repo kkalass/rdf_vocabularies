@@ -7134,6 +7134,150 @@ class SchemaHttp {
   ///
   static const Zoo = IriTerm.prevalidated('http://schema.org/Zoo');
 
+  /// IRI for schemahttp:CommunityHealth
+  ///
+  /// A field of public health focusing on improving health characteristics of a defined population in relation with their geographical or environment areas.
+  ///
+  static const CommunityHealth = IriTerm.prevalidated(
+    'http://schema.org/CommunityHealth',
+  );
+
+  /// IRI for schemahttp:DietNutrition
+  ///
+  /// Dietetics and nutrition as a medical specialty.
+  ///
+  static const DietNutrition = IriTerm.prevalidated(
+    'http://schema.org/DietNutrition',
+  );
+
+  /// IRI for schemahttp:Emergency
+  ///
+  /// A specific branch of medical science that deals with the evaluation and initial treatment of medical conditions caused by trauma or sudden illness.
+  ///
+  static const Emergency = IriTerm.prevalidated('http://schema.org/Emergency');
+
+  /// IRI for schemahttp:Geriatric
+  ///
+  /// A specific branch of medical science that is concerned with the diagnosis and treatment of diseases, debilities and provision of care to the aged.
+  ///
+  static const Geriatric = IriTerm.prevalidated('http://schema.org/Geriatric');
+
+  /// IRI for schemahttp:Gynecologic
+  ///
+  /// A specific branch of medical science that pertains to the health care of women, particularly in the diagnosis and treatment of disorders affecting the female reproductive system.
+  ///
+  static const Gynecologic = IriTerm.prevalidated(
+    'http://schema.org/Gynecologic',
+  );
+
+  /// IRI for schemahttp:Midwifery
+  ///
+  /// A nurse-like health profession that deals with pregnancy, childbirth, and the postpartum period (including care of the newborn), besides sexual and reproductive health of women throughout their lives.
+  ///
+  static const Midwifery = IriTerm.prevalidated('http://schema.org/Midwifery');
+
+  /// IRI for schemahttp:Nursing
+  ///
+  /// A health profession of a person formally educated and trained in the care of the sick or infirm person.
+  ///
+  static const Nursing = IriTerm.prevalidated('http://schema.org/Nursing');
+
+  /// IRI for schemahttp:Obstetric
+  ///
+  /// A specific branch of medical science that specializes in the care of women during the prenatal and postnatal care and with the delivery of the child.
+  ///
+  static const Obstetric = IriTerm.prevalidated('http://schema.org/Obstetric');
+
+  /// IRI for schemahttp:Oncologic
+  ///
+  /// A specific branch of medical science that deals with benign and malignant tumors, including the study of their development, diagnosis, treatment and prevention.
+  ///
+  static const Oncologic = IriTerm.prevalidated('http://schema.org/Oncologic');
+
+  /// IRI for schemahttp:Optometric
+  ///
+  /// The science or practice of testing visual acuity and prescribing corrective lenses.
+  ///
+  static const Optometric = IriTerm.prevalidated(
+    'http://schema.org/Optometric',
+  );
+
+  /// IRI for schemahttp:Otolaryngologic
+  ///
+  /// A specific branch of medical science that is concerned with the ear, nose and throat and their respective disease states.
+  ///
+  static const Otolaryngologic = IriTerm.prevalidated(
+    'http://schema.org/Otolaryngologic',
+  );
+
+  /// IRI for schemahttp:Pediatric
+  ///
+  /// A specific branch of medical science that specializes in the care of infants, children and adolescents.
+  ///
+  static const Pediatric = IriTerm.prevalidated('http://schema.org/Pediatric');
+
+  /// IRI for schemahttp:Physiotherapy
+  ///
+  /// The practice of treatment of disease, injury, or deformity by physical methods such as massage, heat treatment, and exercise rather than by drugs or surgery.
+  ///
+  static const Physiotherapy = IriTerm.prevalidated(
+    'http://schema.org/Physiotherapy',
+  );
+
+  /// IRI for schemahttp:PlasticSurgery
+  ///
+  /// A specific branch of medical science that pertains to therapeutic or cosmetic repair or re-formation of missing, injured or malformed tissues or body parts by manual and instrumental means.
+  ///
+  static const PlasticSurgery = IriTerm.prevalidated(
+    'http://schema.org/PlasticSurgery',
+  );
+
+  /// IRI for schemahttp:Podiatric
+  ///
+  /// Podiatry is the care of the human foot, especially the diagnosis and treatment of foot disorders.
+  ///
+  static const Podiatric = IriTerm.prevalidated('http://schema.org/Podiatric');
+
+  /// IRI for schemahttp:PrimaryCare
+  ///
+  /// The medical care by a physician, or other health-care professional, who is the patient's first contact with the health-care system and who may recommend a specialist if necessary.
+  ///
+  static const PrimaryCare = IriTerm.prevalidated(
+    'http://schema.org/PrimaryCare',
+  );
+
+  /// IRI for schemahttp:Psychiatric
+  ///
+  /// A specific branch of medical science that is concerned with the study, treatment, and prevention of mental illness, using both medical and psychological therapies.
+  ///
+  static const Psychiatric = IriTerm.prevalidated(
+    'http://schema.org/Psychiatric',
+  );
+
+  /// IRI for schemahttp:PublicHealth
+  ///
+  /// Branch of medicine that pertains to the health services to improve and protect community health, especially epidemiology, sanitation, immunization, and preventive medicine.
+  ///
+  static const PublicHealth = IriTerm.prevalidated(
+    'http://schema.org/PublicHealth',
+  );
+
+  /// IRI for schemahttp:RespiratoryTherapy
+  ///
+  /// The therapy that is concerned with the maintenance or improvement of respiratory function (as in patients with pulmonary disease).
+  ///
+  static const RespiratoryTherapy = IriTerm.prevalidated(
+    'http://schema.org/RespiratoryTherapy',
+  );
+
+  /// IRI for schemahttp:Dermatology
+  ///
+  /// A specific branch of medical science that pertains to diagnosis and treatment of disorders of skin.
+  ///
+  static const Dermatology = IriTerm.prevalidated(
+    'http://schema.org/Dermatology',
+  );
+
   /// IRI for schemahttp:Abdomen
   ///
   /// Abdomen clinical examination.
@@ -7582,14 +7726,6 @@ class SchemaHttp {
     'http://schema.org/CommentPermission',
   );
 
-  /// IRI for schemahttp:CommunityHealth
-  ///
-  /// A field of public health focusing on improving health characteristics of a defined population in relation with their geographical or environment areas.
-  ///
-  static const CommunityHealth = IriTerm.prevalidated(
-    'http://schema.org/CommunityHealth',
-  );
-
   /// IRI for schemahttp:CompilationAlbum
   ///
   /// CompilationAlbum.
@@ -7775,14 +7911,6 @@ class SchemaHttp {
   ///
   static const Diagnostic = IriTerm.prevalidated(
     'http://schema.org/Diagnostic',
-  );
-
-  /// IRI for schemahttp:DietNutrition
-  ///
-  /// Dietetics and nutrition as a medical specialty.
-  ///
-  static const DietNutrition = IriTerm.prevalidated(
-    'http://schema.org/DietNutrition',
   );
 
   /// IRI for schemahttp:DigitalArtDigitalSource
@@ -7995,12 +8123,6 @@ class SchemaHttp {
   static const EffectivenessHealthAspect = IriTerm.prevalidated(
     'http://schema.org/EffectivenessHealthAspect',
   );
-
-  /// IRI for schemahttp:Emergency
-  ///
-  /// A specific branch of medical science that deals with the evaluation and initial treatment of medical conditions caused by trauma or sudden illness.
-  ///
-  static const Emergency = IriTerm.prevalidated('http://schema.org/Emergency');
 
   /// IRI for schemahttp:Endocrine
   ///
@@ -8308,12 +8430,6 @@ class SchemaHttp {
     'http://schema.org/Genitourinary',
   );
 
-  /// IRI for schemahttp:Geriatric
-  ///
-  /// A specific branch of medical science that is concerned with the diagnosis and treatment of diseases, debilities and provision of care to the aged.
-  ///
-  static const Geriatric = IriTerm.prevalidated('http://schema.org/Geriatric');
-
   /// IRI for schemahttp:GettingAccessHealthAspect
   ///
   /// Content that discusses practical and policy aspects for getting access to specific kinds of healthcare (e.g. distribution mechanisms for vaccines).
@@ -8344,14 +8460,6 @@ class SchemaHttp {
   ///
   static const GroupBoardingPolicy = IriTerm.prevalidated(
     'http://schema.org/GroupBoardingPolicy',
-  );
-
-  /// IRI for schemahttp:Gynecologic
-  ///
-  /// A specific branch of medical science that pertains to the health care of women, particularly in the diagnosis and treatment of disorders affecting the female reproductive system.
-  ///
-  static const Gynecologic = IriTerm.prevalidated(
-    'http://schema.org/Gynecologic',
   );
 
   /// IRI for schemahttp:HalalDiet
@@ -8851,12 +8959,6 @@ class SchemaHttp {
     'http://schema.org/MerchantReturnUnspecified',
   );
 
-  /// IRI for schemahttp:Midwifery
-  ///
-  /// A nurse-like health profession that deals with pregnancy, childbirth, and the postpartum period (including care of the newborn), besides sexual and reproductive health of women throughout their lives.
-  ///
-  static const Midwifery = IriTerm.prevalidated('http://schema.org/Midwifery');
-
   /// IRI for schemahttp:MinimumAdvertisedPrice
   ///
   /// Represents the minimum advertised price ("MAP") (as dictated by the manufacturer) of an offered product.
@@ -9338,12 +9440,6 @@ class SchemaHttp {
     'http://schema.org/NotYetRecruiting',
   );
 
-  /// IRI for schemahttp:Nursing
-  ///
-  /// A health profession of a person formally educated and trained in the care of the sick or infirm person.
-  ///
-  static const Nursing = IriTerm.prevalidated('http://schema.org/Nursing');
-
   /// IRI for schemahttp:OTC
   ///
   /// The character of a medical substance, typically a medicine, of being available over the counter or not.
@@ -9357,12 +9453,6 @@ class SchemaHttp {
   static const Observational = IriTerm.prevalidated(
     'http://schema.org/Observational',
   );
-
-  /// IRI for schemahttp:Obstetric
-  ///
-  /// A specific branch of medical science that specializes in the care of women during the prenatal and postnatal care and with the delivery of the child.
-  ///
-  static const Obstetric = IriTerm.prevalidated('http://schema.org/Obstetric');
 
   /// IRI for schemahttp:OccupationalActivity
   ///
@@ -9412,12 +9502,6 @@ class SchemaHttp {
     'http://schema.org/OnSitePickup',
   );
 
-  /// IRI for schemahttp:Oncologic
-  ///
-  /// A specific branch of medical science that deals with benign and malignant tumors, including the study of their development, diagnosis, treatment and prevention.
-  ///
-  static const Oncologic = IriTerm.prevalidated('http://schema.org/Oncologic');
-
   /// IRI for schemahttp:OneTimePayments
   ///
   /// OneTimePayments: this is a benefit for one-time payments for individuals.
@@ -9461,14 +9545,6 @@ class SchemaHttp {
   /// A trial design in which the researcher knows the full details of the treatment, and so does the patient.
   ///
   static const OpenTrial = IriTerm.prevalidated('http://schema.org/OpenTrial');
-
-  /// IRI for schemahttp:Optometric
-  ///
-  /// The science or practice of testing visual acuity and prescribing corrective lenses.
-  ///
-  static const Optometric = IriTerm.prevalidated(
-    'http://schema.org/Optometric',
-  );
 
   /// IRI for schemahttp:OrderCancelled
   ///
@@ -9565,14 +9641,6 @@ class SchemaHttp {
   ///
   static const Osteopathic = IriTerm.prevalidated(
     'http://schema.org/Osteopathic',
-  );
-
-  /// IRI for schemahttp:Otolaryngologic
-  ///
-  /// A specific branch of medical science that is concerned with the ear, nose and throat and their respective disease states.
-  ///
-  static const Otolaryngologic = IriTerm.prevalidated(
-    'http://schema.org/Otolaryngologic',
   );
 
   /// IRI for schemahttp:OutOfStock
@@ -9696,12 +9764,6 @@ class SchemaHttp {
     'http://schema.org/PaymentPastDue',
   );
 
-  /// IRI for schemahttp:Pediatric
-  ///
-  /// A specific branch of medical science that specializes in the care of infants, children and adolescents.
-  ///
-  static const Pediatric = IriTerm.prevalidated('http://schema.org/Pediatric');
-
   /// IRI for schemahttp:PercutaneousProcedure
   ///
   /// A type of medical procedure that involves percutaneous techniques, where access to organs or tissue is achieved via needle-puncture of the skin. For example, catheter-based procedures like stent delivery.
@@ -9726,14 +9788,6 @@ class SchemaHttp {
     'http://schema.org/PhoneCarrierPayment',
   );
 
-  /// IRI for schemahttp:Physiotherapy
-  ///
-  /// The practice of treatment of disease, injury, or deformity by physical methods such as massage, heat treatment, and exercise rather than by drugs or surgery.
-  ///
-  static const Physiotherapy = IriTerm.prevalidated(
-    'http://schema.org/Physiotherapy',
-  );
-
   /// IRI for schemahttp:PlaceboControlledTrial
   ///
   /// A placebo-controlled trial design.
@@ -9741,20 +9795,6 @@ class SchemaHttp {
   static const PlaceboControlledTrial = IriTerm.prevalidated(
     'http://schema.org/PlaceboControlledTrial',
   );
-
-  /// IRI for schemahttp:PlasticSurgery
-  ///
-  /// A specific branch of medical science that pertains to therapeutic or cosmetic repair or re-formation of missing, injured or malformed tissues or body parts by manual and instrumental means.
-  ///
-  static const PlasticSurgery = IriTerm.prevalidated(
-    'http://schema.org/PlasticSurgery',
-  );
-
-  /// IRI for schemahttp:Podiatric
-  ///
-  /// Podiatry is the care of the human foot, especially the diagnosis and treatment of foot disorders.
-  ///
-  static const Podiatric = IriTerm.prevalidated('http://schema.org/Podiatric');
 
   /// IRI for schemahttp:PositiveFilmDigitalSource
   ///
@@ -9808,14 +9848,6 @@ class SchemaHttp {
     'http://schema.org/PreventionHealthAspect',
   );
 
-  /// IRI for schemahttp:PrimaryCare
-  ///
-  /// The medical care by a physician, or other health-care professional, who is the patient's first contact with the health-care system and who may recommend a specialist if necessary.
-  ///
-  static const PrimaryCare = IriTerm.prevalidated(
-    'http://schema.org/PrimaryCare',
-  );
-
   /// IRI for schemahttp:PrintDigitalSource
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/print">print</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
@@ -9843,22 +9875,6 @@ class SchemaHttp {
   /// Single-celled organism that causes an infection.
   ///
   static const Protozoa = IriTerm.prevalidated('http://schema.org/Protozoa');
-
-  /// IRI for schemahttp:Psychiatric
-  ///
-  /// A specific branch of medical science that is concerned with the study, treatment, and prevention of mental illness, using both medical and psychological therapies.
-  ///
-  static const Psychiatric = IriTerm.prevalidated(
-    'http://schema.org/Psychiatric',
-  );
-
-  /// IRI for schemahttp:PublicHealth
-  ///
-  /// Branch of medicine that pertains to the health services to improve and protect community health, especially epidemiology, sanitation, immunization, and preventive medicine.
-  ///
-  static const PublicHealth = IriTerm.prevalidated(
-    'http://schema.org/PublicHealth',
-  );
 
   /// IRI for schemahttp:PublicHolidays
   ///
@@ -10051,14 +10067,6 @@ class SchemaHttp {
   /// Indicates that the item is reserved and therefore not available.
   ///
   static const Reserved = IriTerm.prevalidated('http://schema.org/Reserved');
-
-  /// IRI for schemahttp:RespiratoryTherapy
-  ///
-  /// The therapy that is concerned with the maintenance or improvement of respiratory function (as in patients with pulmonary disease).
-  ///
-  static const RespiratoryTherapy = IriTerm.prevalidated(
-    'http://schema.org/RespiratoryTherapy',
-  );
 
   /// IRI for schemahttp:RestockingFees
   ///
@@ -11159,14 +11167,6 @@ class SchemaHttp {
   ///
   static const ZoneBoardingPolicy = IriTerm.prevalidated(
     'http://schema.org/ZoneBoardingPolicy',
-  );
-
-  /// IRI for schemahttp:Dermatology
-  ///
-  /// A specific branch of medical science that pertains to diagnosis and treatment of disorders of skin.
-  ///
-  static const Dermatology = IriTerm.prevalidated(
-    'http://schema.org/Dermatology',
   );
 
   /// IRI for schemahttp:docs_collab_STI_Accommodation_Ontology
