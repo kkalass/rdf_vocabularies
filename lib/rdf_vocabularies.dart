@@ -5,4 +5,4 @@
 /// This library exposes the generated RDF vocabularies.
 library rdf_vocabularies;
 
-export 'src/generated/_index.dart';
+export 'generated/_index.dart';
