@@ -289,6 +289,7 @@ void main(List<String> args) async {
       await _ensureNoDevVersionStrings(releaseVersion);
     }
 
+    /*
     // Generate API documentation using dartdoc
     print('\nGenerating API documentation...');
     try {
@@ -302,6 +303,7 @@ void main(List<String> args) async {
       print('Warning: Failed to generate API documentation');
       print('  $e');
     }
+    */
   } else {
     print('  (dry run) Would update documentation and version references');
   }
