@@ -4,6 +4,7 @@
 import 'package:rdf_core/rdf_core.dart';
 import 'package:rdf_vocabularies/schema.dart';
 import 'package:rdf_vocabularies/rdf.dart';
+import 'package:rdf_vocabularies/src/generated/_index.dart';
 import 'package:rdf_vocabularies/src/generated/foaf.dart';
 import 'package:rdf_vocabularies/xsd.dart';
 
@@ -35,6 +36,7 @@ void main() {
       Schema.birthDate,
       LiteralTerm('1990-01-01', datatype: Xsd.date),
     ),
+    Triple(personIri, Dc.creator, LiteralTerm.string('System')),
 
     // Create a complex structure: a postal address
     Triple(personIri, Schema.address, addressNode),

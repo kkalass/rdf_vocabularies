@@ -59,7 +59,15 @@ void main() {
     Triple(personIri, SchemaPerson.name, LiteralTerm.string('Jane Doe')),
     Triple(personIri, SchemaPerson.email, LiteralTerm.string('jane.doe@example.com')),
     Triple(personIri, SchemaPerson.birthDate, LiteralTerm('1990-01-01', datatype: Xsd.date)),
-    
+
+    // Even those defined in other vocabularies, if their relationship is known to the library
+    Triple(personIri, SchemaPerson.foafAge, LiteralTerm.integer(42)),
+
+    // For properties from foreign vocabularies that are not restricted to a specific class, 
+    // but are designed to be used universally, you can use the generated UniversalProperties
+    // classes. 
+    Triple(personIri, DcUniversalProperties.creator, LiteralTerm.string('System')),
+
     // Create a complex structure with an address
     Triple(personIri, SchemaPerson.address, addressNode),
     Triple(addressNode, SchemaPostalAddress.rdfType, SchemaPostalAddress.classIri),

@@ -3,6 +3,7 @@
 
 import 'package:rdf_core/rdf_core.dart';
 import 'package:rdf_vocabularies/schema.dart';
+import 'package:rdf_vocabularies/src/generated/_index.dart';
 import 'package:rdf_vocabularies/xsd.dart';
 
 /// Example how our rdf:class specific dart classes can be used to
@@ -31,6 +32,16 @@ void main() {
     Triple(personIri, SchemaPerson.foafAge, LiteralTerm.integer(42)),
     Triple(
       personIri,
+      SchemaPerson.foafMbox,
+      IriTerm('mailto:jane.doe@example.com'),
+    ),
+    Triple(
+      personIri,
+      SchemaPerson.foafKnows,
+      IriTerm('http://example.org/person/john_smith'),
+    ),
+    Triple(
+      personIri,
       SchemaPerson.email,
       LiteralTerm.string('jane.doe@example.com'),
     ),
@@ -38,6 +49,14 @@ void main() {
       personIri,
       SchemaPerson.birthDate,
       LiteralTerm('1990-01-01', datatype: Xsd.date),
+    ),
+
+    // For properties that are not restricted to a specific class, you can use
+    // the generated UniversalProperties classes.
+    Triple(
+      personIri,
+      DcUniversalProperties.creator,
+      LiteralTerm.string('System'),
     ),
 
     // Create a complex structure: a postal address
