@@ -9,7 +9,9 @@
 
 [🌐 **Official Homepage**](https://kkalass.github.io/rdf_vocabularies/)
 
-`rdf_vocabularies` provides type-safe access to standard RDF vocabulary terms as Dart constants. The library is designed for both RDF newcomers and experts, offering structured ways to work with semantic data while maintaining compilation-time safety.
+`rdf_vocabularies` provides type-safe access to standard RDF vocabulary terms as Dart constants for use with [`rdf_core`](https://pub.dev/packages/rdf_core). 
+
+The library is designed for both RDF newcomers and experts, offering structured ways to work with semantic data while maintaining compilation-time safety.
 
 ## Package Characteristics
 
