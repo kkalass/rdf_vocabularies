@@ -13,6 +13,19 @@
 
 The library is designed for both RDF newcomers and experts, offering structured ways to work with semantic data while maintaining compilation-time safety.
 
+---
+
+## Part of a whole family of projects
+
+If you are looking for more rdf-related functionality, have a look at our companion projects:
+
+* basic graph classes as well as turtle/jsonld/n-triple serialization and parsing: [rdf_core](https://github.com/kkalass/rdf_core) 
+* parse and serialize rdf/xml format: [rdf_xml](https://github.com/kkalass/rdf_xml) 
+* generate your own easy-to-use constants for other vocabularies with a build_runner: [rdf_vocabulary_to_dart](https://github.com/kkalass/rdf_vocabulary_to_dart)
+* map Dart Objects ↔️ RDF: [rdf_mapper](https://github.com/kkalass/rdf_mapper)
+
+---
+
 ## Package Characteristics
 
 - **Zero Runtime Overhead**: Nearly all content is composed of compile-time constants
