@@ -2,11 +2,7 @@
 // This example shows how to use the full Schema vocabulary
 
 import 'package:rdf_core/rdf_core.dart';
-import 'package:rdf_vocabularies/schema.dart';
-import 'package:rdf_vocabularies/rdf.dart';
 import 'package:rdf_vocabularies/src/generated/_index.dart';
-import 'package:rdf_vocabularies/src/generated/foaf.dart';
-import 'package:rdf_vocabularies/xsd.dart';
 
 /// Example for experienced RDF developers who basically
 /// know which predicates from which vocabulary to use and

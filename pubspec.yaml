@@ -24,3 +24,4 @@ dev_dependencies:
   rdf_vocabulary_to_dart:
     path: ../rdf_vocabulary_to_dart
   test: ^1.21.0
+  lints: ^5.1.1

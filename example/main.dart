@@ -2,9 +2,7 @@
 // This example shows how to use the full Schema vocabulary
 
 import 'package:rdf_core/rdf_core.dart';
-import 'package:rdf_vocabularies/schema.dart';
 import 'package:rdf_vocabularies/src/generated/_index.dart';
-import 'package:rdf_vocabularies/xsd.dart';
 
 /// Example how our rdf:class specific dart classes can be used to
 /// guide you through the vocabulary.
