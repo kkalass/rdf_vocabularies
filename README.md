@@ -165,6 +165,10 @@ Including `rdf_vocabularies` in your project:
 - **Memory Usage**: Negligible increase in memory usage
 - **Build Time**: May slightly increase initial build time, but no impact on runtime performance
 
+## 🛣️ Roadmap / Next Steps
+
+- ...
+
 ## 🤝 Contributing
 
 Contributions, bug reports, and feature requests are welcome!

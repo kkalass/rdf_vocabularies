@@ -944,4 +944,4 @@ export 'classes/writeaction.dart';
 export 'classes/xpathtype.dart';
 export 'classes/zoo.dart';
 export 'classes/n3dmodel.dart';
-export 'schemaHttp_universal.dart';
+export 'schema_http_universal.dart';

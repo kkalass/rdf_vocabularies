@@ -8,4 +8,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2025-05-06
 
 ### Added
-- Initial generation of 12 well-known vocabularies
+- Initial generation of 19 well-known vocabularies

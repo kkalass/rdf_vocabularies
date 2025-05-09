@@ -322,7 +322,7 @@ packages:
     source: hosted
     version: "2.2.0"
   path:
-    dependency: transitive
+    dependency: "direct dev"
     description:
       name: path
       sha256: "75cca69d1490965be98c73ceaea117e8a04dd21217b37b292c9ddbec0d955bc5"
@@ -372,10 +372,11 @@ packages:
   rdf_vocabulary_to_dart:
     dependency: "direct dev"
     description:
-      path: "../rdf_vocabulary_to_dart"
-      relative: true
-    source: path
-    version: "0.7.2-dev"
+      name: rdf_vocabulary_to_dart
+      sha256: dc05ba99966299ce2b563c63545f2027a2bdffa0bd7c10b68e8180e4b2609f75
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.7.2"
   rdf_xml:
     dependency: transitive
     description:
@@ -585,7 +586,7 @@ packages:
     source: hosted
     version: "6.5.0"
   yaml:
-    dependency: transitive
+    dependency: "direct dev"
     description:
       name: yaml
       sha256: b9da305ac7c39faa3f030eccd175340f968459dae4af175130b3fc47e40d76ce
