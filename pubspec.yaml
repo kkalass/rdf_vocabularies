@@ -1,6 +1,6 @@
 name: rdf_vocabularies
 description: A collection of well known RDF vocabularies as Dart constants, grouped in classes.
-version: 0.2.0
+version: 0.2.1-dev
 homepage: https://kkalass.github.io/rdf_vocabularies/
 repository: https://github.com/kkalass/rdf_vocabularies
 issue_tracker: https://github.com/kkalass/rdf_vocabularies/issues
