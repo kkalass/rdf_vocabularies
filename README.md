@@ -18,8 +18,8 @@ The library is designed for both RDF newcomers and experts, offering structured 
 
 If you are looking for more rdf-related functionality, have a look at our companion projects:
 
-* basic graph classes as well as turtle/jsonld/n-triple serialization and parsing: [rdf_core](https://github.com/kkalass/rdf_core) 
-* parse and serialize rdf/xml format: [rdf_xml](https://github.com/kkalass/rdf_xml) 
+* basic graph classes as well as turtle/jsonld/n-triple encoding and decoding: [rdf_core](https://github.com/kkalass/rdf_core) 
+* encode and decode rdf/xml format: [rdf_xml](https://github.com/kkalass/rdf_xml) 
 * generate your own easy-to-use constants for other vocabularies with a build_runner: [rdf_vocabulary_to_dart](https://github.com/kkalass/rdf_vocabulary_to_dart)
 * map Dart Objects ↔️ RDF: [rdf_mapper](https://github.com/kkalass/rdf_mapper)
 
@@ -45,8 +45,8 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  rdf_vocabularies: ^0.1.0
-  rdf_core: ^0.7.6  # Required for RDF data structures
+  rdf_vocabularies: ^0.2.0
+  rdf_core: ^0.8.1  # Required for RDF data structures
 ```
 
 ## Usage

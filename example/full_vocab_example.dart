@@ -49,8 +49,8 @@ void main() {
 
   // Print the RDF data
   print('Person data using the full Schema vocabulary:');
-  var ntriples = NTriplesFormat().createSerializer().write(graph);
-  print(ntriples);
+  var ntriplesContent = ntriples.encode(graph);
+  print(ntriplesContent);
 
   // Accessing data using query patterns
   final janesAddressNode =

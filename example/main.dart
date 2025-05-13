@@ -88,5 +88,5 @@ void main() {
 
   // Print the RDF data
   print('Person data using the specific Schema Class vocabulary:');
-  print(RdfCore.withStandardFormats().serialize(graph));
+  print(RdfCore.withStandardCodecs().encode(graph));
 }
