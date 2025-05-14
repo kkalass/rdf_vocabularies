@@ -45,8 +45,8 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  rdf_vocabularies: ^0.2.0
-  rdf_core: ^0.8.1  # Required for RDF data structures
+  rdf_vocabularies: ^0.3.0
+  rdf_core: ^0.9.0  # Required for RDF data structures
 ```
 
 ## Usage
