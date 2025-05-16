@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the incentiveAmount constant from the SchemaFinancialIncentive class, for the Dart programming language.">
+  <title>incentiveAmount constant - SchemaFinancialIncentive class - schema library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">rdf_vocabularies</a></li>
+    <li><a href="../../schema">schema.dart</a></li>
+    <li><a href="../../schema/SchemaFinancialIncentive-class.html">SchemaFinancialIncentive</a></li>
+    <li class="self-crumb">incentiveAmount constant</li>
+  </ol>
+  <div class="self-name">incentiveAmount</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="schema&#47;SchemaFinancialIncentive-class-sidebar.html"
+    data-below-sidebar="">
+    <div>
+<h1><span class="kind-property">incentiveAmount</span> constant 
+</h1></div>
+
+    
+      <section class="multi-line-signature">
+        
+        <a href="https://pub.dev/documentation/rdf_core/0.9.0/rdf/IriTerm-class.html">IriTerm</a>
+        const <span class="name ">incentiveAmount</span>
+        
+
+      </section>
+      
+<section class="desc markdown">
+  <p>incentiveAmount [Expects: <a href="https://schema.org/LoanOrCredit">https://schema.org/LoanOrCredit</a>, <a href="https://schema.org/QuantitativeValue">https://schema.org/QuantitativeValue</a>, <a href="https://schema.org/UnitPriceSpecification%5D">https://schema.org/UnitPriceSpecification]</a></p>
+<p>Describes the amount that can be redeemed from this incentive.</p>
+<p>{[QuantitativeValue]}: Use this for incentives based on price (either raw amount or percentage-based). For a raw amount example, "You can claim $2,500 - $7,500 from the total cost of installation" would be represented as the following:</p>
+{
+"@type": "QuantitativeValue",
+“minValue”: 2500,
+“maxValue”: 7500,
+"unitCode": "USD"
+}
+<p>{[QuantitivateValue]} can also be used for percentage amounts. In such cases, value is used to represent the incentive’s percentage, while maxValue represents a limit (if one exists) to that incentive. The unitCode should be 'P1' and the unitText should be '%', while valueReference should be used for holding the currency type. For example, "You can claim up to 30% of the total cost of installation, up to a maximum of $7,500" would be:</p>
+{
+"@type": "QuantitativeValue",
+"value": 30,
+"unitCode": "P1",
+"unitText": "%",
+“maxValue”: 7500,
+“valueReference”: “USD”
+}
+<p>{[UnitPriceSpecification]}: Use this for incentives that are based on amounts rather than price. For example, a net metering rebate that pays $10/kWh, up to $1,000:</p>
+{
+"@type": "UnitPriceSpecification",
+"price": 10,
+"priceCurrency": "USD",
+"referenceQuantity": 1,
+"unitCode": "DO3",
+"unitText": "kw/h",
+"maxPrice": 1000,
+"description": "$10 / kwh up to $1000"
+}
+<p>{[LoanOrCredit]}: Use for incentives that are loan based. For example, a loan of $4,000 - $50,000 with a repayment term of 10 years, interest free would look like:</p>
+{
+"@type": "LoanOrCredit",
+"loanTerm": {
+"@type":"QuantitativeValue",
+"value":"10",
+"unitCode": "ANN"
+},
+"amount":[
+{
+"@type": "QuantitativeValue",
+"Name":"fixed interest rate",
+"value":"0",
+},
+],
+"amount":[
+{
+"@type": "MonetaryAmount",
+"Name":"min loan amount",
+"value":"4000",
+"currency":"CAD"
+},
+{
+"@type": "MonetaryAmount",
+"Name":"max loan amount",
+"value":"50000",
+"currency":"CAD"
+}
+],
+}
+<p>In summary: </p><ul><li>Use {<code>QuantitativeValue</code>} for absolute/percentage-based incentives applied on the price of a good/service.</li><p></p>
+<li>Use {[UnitPriceSpecification]} for incentives based on a per-unit basis (e.g. net metering).</li>
+<li>Use {[LoanOrCredit]} for loans/credits.</li>
+</ul>.
+<p>Can be used on: <a href="https://schema.org/FinancialIncentive">https://schema.org/FinancialIncentive</a></p>
+</section>
+
+      
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">static const incentiveAmount = IriTerm.prevalidated(
+  &#39;https:&#47;&#47;schema.org&#47;incentiveAmount&#39;,
+);</code></pre>
+</section>
+
+
+    
+</div> <!-- /.main-content -->
+<div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+  <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">rdf_vocabularies</a></li>
+    <li><a href="../../schema">schema</a></li>
+    <li><a href="../../schema/SchemaFinancialIncentive-class.html">SchemaFinancialIncentive</a></li>
+    <li class="self-crumb">incentiveAmount constant</li>
+</ol>
+
+  <h5>SchemaFinancialIncentive class</h5>
+  <div id="dartdoc-sidebar-left-content"></div>
+</div><!--/.sidebar-offcanvas-->
+<div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+</div><!--/.sidebar-offcanvas-->
+</main>
+<footer>
+  <span class="no-break">
+    rdf_vocabularies
+      0.3.1-dev
+  </span>
+  
+</footer>
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+

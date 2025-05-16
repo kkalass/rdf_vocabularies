@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the StatisticalVariable constant from the SchemaHttp class, for the Dart programming language.">
+  <title>StatisticalVariable constant - SchemaHttp class - schema_http library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">rdf_vocabularies</a></li>
+    <li><a href="../../schema_http">schema_http.dart</a></li>
+    <li><a href="../../schema_http/SchemaHttp-class.html">SchemaHttp</a></li>
+    <li class="self-crumb">StatisticalVariable constant</li>
+  </ol>
+  <div class="self-name">StatisticalVariable</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="schema_http&#47;SchemaHttp-class-sidebar.html"
+    data-below-sidebar="">
+    <div>
+<h1><span class="kind-property">StatisticalVariable</span> constant 
+</h1></div>
+
+    
+      <section class="multi-line-signature">
+        
+        <a href="https://pub.dev/documentation/rdf_core/0.9.0/rdf/IriTerm-class.html">IriTerm</a>
+        const <span class="name ">StatisticalVariable</span>
+        
+
+      </section>
+      
+<section class="desc markdown">
+  <p>IRI for schemahttp:StatisticalVariable</p>
+<p>{<a href="../../schema_http/SchemaHttp/StatisticalVariable-constant.html">StatisticalVariable</a>} represents any type of statistical metric that can be measured at a place and time. The usage pattern for {<a href="../../schema_http/SchemaHttp/StatisticalVariable-constant.html">StatisticalVariable</a>} is typically expressed using {<a href="../../schema_http/SchemaHttp/Observation-constant.html">Observation</a>} with an explicit {<a href="../../schema_http/SchemaHttp/populationType-constant.html">populationType</a>}, which is a type, typically drawn from Schema.org. Each {<a href="../../schema_http/SchemaHttp/StatisticalVariable-constant.html">StatisticalVariable</a>} is marked as a {<a href="../../schema_http/SchemaHttp/ConstraintNode-constant.html">ConstraintNode</a>}, meaning that some properties (those listed using {<a href="../../schema_http/SchemaHttp/constraintProperty-constant.html">constraintProperty</a>}) serve in this setting solely to define the statistical variable rather than literally describe a specific person, place or thing. For example, a {<a href="../../schema_http/SchemaHttp/StatisticalVariable-constant.html">StatisticalVariable</a>} Median_Height_Person_Female representing the median height of women, could be written as follows: the population type is {<a href="../../schema_http/SchemaHttp/Person-constant.html">Person</a>}; the measuredProperty {<a href="../../schema_http/SchemaHttp/height-constant.html">height</a>}; the {<a href="../../schema_http/SchemaHttp/statType-constant.html">statType</a>} {<a href="../../schema_http/SchemaHttp/median-constant.html">median</a>}; the {<a href="../../schema_http/SchemaHttp/gender-constant.html">gender</a>} {<a href="../../schema_http/SchemaHttp/Female-constant.html">Female</a>}. It is important to note that there are many kinds of scientific quantitative observation which are not fully, perfectly or unambiguously described following this pattern, or with solely Schema.org terminology. The approach taken here is designed to allow partial, incremental or minimal description of {<a href="../../schema_http/SchemaHttp/StatisticalVariable-constant.html">StatisticalVariable</a>}s, and the use of detailed sets of entity and property IDs from external repositories. The {<a href="../../schema_http/SchemaHttp/measurementMethod-constant.html">measurementMethod</a>}, {<a href="../../schema_http/SchemaHttp/unitCode-constant.html">unitCode</a>} and {<a href="../../schema_http/SchemaHttp/unitText-constant.html">unitText</a>} properties can also be used to clarify the specific nature and notation of an observed measurement.</p>
+</section>
+
+      
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">static const StatisticalVariable = IriTerm.prevalidated(
+  &#39;http:&#47;&#47;schema.org&#47;StatisticalVariable&#39;,
+);</code></pre>
+</section>
+
+
+    
+</div> <!-- /.main-content -->
+<div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+  <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">rdf_vocabularies</a></li>
+    <li><a href="../../schema_http">schema_http</a></li>
+    <li><a href="../../schema_http/SchemaHttp-class.html">SchemaHttp</a></li>
+    <li class="self-crumb">StatisticalVariable constant</li>
+</ol>
+
+  <h5>SchemaHttp class</h5>
+  <div id="dartdoc-sidebar-left-content"></div>
+</div><!--/.sidebar-offcanvas-->
+<div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+</div><!--/.sidebar-offcanvas-->
+</main>
+<footer>
+  <span class="no-break">
+    rdf_vocabularies
+      0.3.1-dev
+  </span>
+  
+</footer>
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+

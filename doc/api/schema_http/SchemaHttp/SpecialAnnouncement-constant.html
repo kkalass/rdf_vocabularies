@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the SpecialAnnouncement constant from the SchemaHttp class, for the Dart programming language.">
+  <title>SpecialAnnouncement constant - SchemaHttp class - schema_http library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">rdf_vocabularies</a></li>
+    <li><a href="../../schema_http">schema_http.dart</a></li>
+    <li><a href="../../schema_http/SchemaHttp-class.html">SchemaHttp</a></li>
+    <li class="self-crumb">SpecialAnnouncement constant</li>
+  </ol>
+  <div class="self-name">SpecialAnnouncement</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="schema_http&#47;SchemaHttp-class-sidebar.html"
+    data-below-sidebar="">
+    <div>
+<h1><span class="kind-property">SpecialAnnouncement</span> constant 
+</h1></div>
+
+    
+      <section class="multi-line-signature">
+        
+        <a href="https://pub.dev/documentation/rdf_core/0.9.0/rdf/IriTerm-class.html">IriTerm</a>
+        const <span class="name ">SpecialAnnouncement</span>
+        
+
+      </section>
+      
+<section class="desc markdown">
+  <p>IRI for schemahttp:SpecialAnnouncement</p>
+<p>A SpecialAnnouncement combines a simple date-stamped textual information update
+with contextualized Web links and other structured data.  It represents an information update made by a
+locally-oriented organization, for example schools, pharmacies, healthcare providers,  community groups, police,
+local government.</p>
+<p>For work in progress guidelines on Coronavirus-related markup see <a href="https://docs.google.com/document/d/14ikaGCKxo50rRM7nvKSlbUpjyIk2WMQd3IkB1lItlrM/edit#">this doc</a>.</p>
+<p>The motivating scenario for SpecialAnnouncement is the <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic">Coronavirus pandemic</a>, and the initial vocabulary is oriented to this urgent situation. Schema.org
+expect to improve the markup iteratively as it is deployed and as feedback emerges from use. In addition to our
+usual <a href="https://github.com/schemaorg/schemaorg/issues/2490">Github entry</a>, feedback comments can also be provided in <a href="https://docs.google.com/document/d/1fpdFFxk8s87CWwACs53SGkYv3aafSxz_DTtOQxMrBJQ/edit#">this document</a>.</p>
+<p>While this schema is designed to communicate urgent crisis-related information, it is not the same as an emergency warning technology like <a href="https://en.wikipedia.org/wiki/Common_Alerting_Protocol">CAP</a>, although there may be overlaps. The intent is to cover
+the kinds of everyday practical information being posted to existing websites during an emergency situation.</p>
+<p>Several kinds of information can be provided:</p>
+<p>We encourage the provision of "name", "text", "datePosted", "expires" (if appropriate), "category" and
+"url" as a simple baseline. It is important to provide a value for "category" where possible, most ideally as a well known
+URL from Wikipedia or Wikidata. In the case of the 2019-2020 Coronavirus pandemic, this should be "https://en.wikipedia.org/w/index.php?title=2019-20_coronavirus_pandemic" or "https://www.wikidata.org/wiki/Q81068910".</p>
+<p>For many of the possible properties, values can either be simple links or an inline description, depending on whether a summary is available. For a link, provide just the URL of the appropriate page as the property's value. For an inline description, use a {<a href="../../schema_http/SchemaHttp/WebContent-constant.html">WebContent</a>} type, and provide the url as a property of that, alongside at least a simple "{<a href="../../schema_http/SchemaHttp/text-constant.html">text</a>}" summary of the page. It is
+unlikely that a single SpecialAnnouncement will need all of the possible properties simultaneously.</p>
+<p>We expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, {<a href="../../schema_http/SchemaHttp/openingHours-constant.html">openingHours</a>}, {<a href="../../schema_http/SchemaHttp/Event-constant.html">Event</a>}, {<a href="../../schema_http/SchemaHttp/FAQPage-constant.html">FAQPage</a>} etc. By linking to those pages from a {<a href="../../schema_http/SchemaHttp/SpecialAnnouncement-constant.html">SpecialAnnouncement</a>} you can help make it clearer that the events are related to the situation (e.g. Coronavirus) indicated by the {<a href="../../schema_http/SchemaHttp/category-constant.html">category</a>} property of the {<a href="../../schema_http/SchemaHttp/SpecialAnnouncement-constant.html">SpecialAnnouncement</a>}.</p>
+<p>Many {<a href="../../schema_http/SchemaHttp/SpecialAnnouncement-constant.html">SpecialAnnouncement</a>}s will relate to particular regions and to identifiable local organizations. Use {<a href="../../schema_http/SchemaHttp/spatialCoverage-constant.html">spatialCoverage</a>} for the region, and {<a href="../../schema_http/SchemaHttp/announcementLocation-constant.html">announcementLocation</a>} to indicate specific {<a href="../../schema_http/SchemaHttp/LocalBusiness-constant.html">LocalBusiness</a>}es and {<a href="../../schema_http/SchemaHttp/CivicStructure-constant.html">CivicStructure</a>}s. If the announcement affects both a particular region and a specific location (for example, a library closure that serves an entire region), use both {<a href="../../schema_http/SchemaHttp/spatialCoverage-constant.html">spatialCoverage</a>} and {<a href="../../schema_http/SchemaHttp/announcementLocation-constant.html">announcementLocation</a>}.</p>
+<p>The {<a href="../../schema_http/SchemaHttp/about-constant.html">about</a>} property can be used to indicate entities that are the focus of the announcement. We now recommend using {<a href="../../schema_http/SchemaHttp/about-constant.html">about</a>} only
+for representing non-location entities (e.g. a {<a href="../../schema_http/SchemaHttp/Course-constant.html">Course</a>} or a {<a href="../../schema_http/SchemaHttp/RadioStation-constant.html">RadioStation</a>}). For places, use {<a href="../../schema_http/SchemaHttp/announcementLocation-constant.html">announcementLocation</a>} and {<a href="../../schema_http/SchemaHttp/spatialCoverage-constant.html">spatialCoverage</a>}. Consumers of this markup should be aware that the initial design encouraged the use of {<a href="../../schema_http/SchemaHttp/about-constant.html">about</a>} for locations too.</p>
+<p>The basic content of {<a href="../../schema_http/SchemaHttp/SpecialAnnouncement-constant.html">SpecialAnnouncement</a>} is similar to that of an <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> or <a href="https://en.wikipedia.org/wiki/Atom_(Web_standard)">Atom</a> feed. For publishers without such feeds, basic feed-like information can be shared by posting
+{<a href="../../schema_http/SchemaHttp/SpecialAnnouncement-constant.html">SpecialAnnouncement</a>} updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed
+with the {<a href="../../schema_http/SchemaHttp/webFeed-constant.html">webFeed</a>} property. This can be a simple URL, or an inline {<a href="../../schema_http/SchemaHttp/DataFeed-constant.html">DataFeed</a>} object, with {<a href="../../schema_http/SchemaHttp/encodingFormat-constant.html">encodingFormat</a>} providing
+media type information, e.g. "application/rss+xml" or "application/atom+xml".</p>
+</section>
+
+      
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">static const SpecialAnnouncement = IriTerm.prevalidated(
+  &#39;http:&#47;&#47;schema.org&#47;SpecialAnnouncement&#39;,
+);</code></pre>
+</section>
+
+
+    
+</div> <!-- /.main-content -->
+<div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+  <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">rdf_vocabularies</a></li>
+    <li><a href="../../schema_http">schema_http</a></li>
+    <li><a href="../../schema_http/SchemaHttp-class.html">SchemaHttp</a></li>
+    <li class="self-crumb">SpecialAnnouncement constant</li>
+</ol>
+
+  <h5>SchemaHttp class</h5>
+  <div id="dartdoc-sidebar-left-content"></div>
+</div><!--/.sidebar-offcanvas-->
+<div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+</div><!--/.sidebar-offcanvas-->
+</main>
+<footer>
+  <span class="no-break">
+    rdf_vocabularies
+      0.3.1-dev
+  </span>
+  
+</footer>
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+

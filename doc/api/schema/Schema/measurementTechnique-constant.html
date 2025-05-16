@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the measurementTechnique constant from the Schema class, for the Dart programming language.">
+  <title>measurementTechnique constant - Schema class - schema library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">rdf_vocabularies</a></li>
+    <li><a href="../../schema">schema.dart</a></li>
+    <li><a href="../../schema/Schema-class.html">Schema</a></li>
+    <li class="self-crumb">measurementTechnique constant</li>
+  </ol>
+  <div class="self-name">measurementTechnique</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button" title="Toggle brightness">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        dark_mode
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        light_mode
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+<div
+    id="dartdoc-main-content"
+    class="main-content"
+    data-above-sidebar="schema&#47;Schema-class-sidebar.html"
+    data-below-sidebar="">
+    <div>
+<h1><span class="kind-property">measurementTechnique</span> constant 
+</h1></div>
+
+    
+      <section class="multi-line-signature">
+        
+        <a href="https://pub.dev/documentation/rdf_core/0.9.0/rdf/IriTerm-class.html">IriTerm</a>
+        const <span class="name ">measurementTechnique</span>
+        
+
+      </section>
+      
+<section class="desc markdown">
+  <p>IRI for schema:measurementTechnique [Expects: <a href="https://schema.org/DefinedTerm">https://schema.org/DefinedTerm</a>, <a href="https://schema.org/MeasurementMethodEnum">https://schema.org/MeasurementMethodEnum</a>, <a href="https://schema.org/Text">https://schema.org/Text</a>, <a href="https://schema.org/URL%5D">https://schema.org/URL]</a></p>
+<p>A technique, method or technology used in an {<a href="../../schema/Schema/Observation-constant.html">Observation</a>}, {<a href="../../schema/Schema/StatisticalVariable-constant.html">StatisticalVariable</a>} or {<a href="../../schema/Schema/Dataset-constant.html">Dataset</a>} (or {<a href="../../schema/Schema/DataDownload-constant.html">DataDownload</a>}, {<a href="../../schema/Schema/DataCatalog-constant.html">DataCatalog</a>}), corresponding to the method used for measuring the corresponding variable(s) (for datasets, described using {<a href="../../schema/Schema/variableMeasured-constant.html">variableMeasured</a>}; for {<a href="../../schema/Schema/Observation-constant.html">Observation</a>}, a {<a href="../../schema/Schema/StatisticalVariable-constant.html">StatisticalVariable</a>}). Often but not necessarily each {<a href="../../schema/Schema/variableMeasured-constant.html">variableMeasured</a>} will have an explicit representation as (or mapping to) an property such as those defined in Schema.org, or other RDF vocabularies and "knowledge graphs". In that case the subproperty of {<a href="../../schema/Schema/variableMeasured-constant.html">variableMeasured</a>} called {<a href="../../schema/Schema/measuredProperty-constant.html">measuredProperty</a>} is applicable.</p>
+<p>The {<a href="../../schema/Schema/measurementTechnique-constant.html">measurementTechnique</a>} property helps when extra clarification is needed about how a {<a href="../../schema/Schema/measuredProperty-constant.html">measuredProperty</a>} was measured. This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but can often serve as a high level summary for dataset discovery.</p>
+<p>For example, if {<a href="../../schema/Schema/variableMeasured-constant.html">variableMeasured</a>} is: molecule concentration, {<a href="../../schema/Schema/measurementTechnique-constant.html">measurementTechnique</a>} could be: "mass spectrometry" or "nmr spectroscopy" or "colorimetry" or "immunofluorescence". If the {<a href="../../schema/Schema/variableMeasured-constant.html">variableMeasured</a>} is "depression rating", the {<a href="../../schema/Schema/measurementTechnique-constant.html">measurementTechnique</a>} could be "Zung Scale" or "HAM-D" or "Beck Depression Inventory".</p>
+<p>If there are several {<a href="../../schema/Schema/variableMeasured-constant.html">variableMeasured</a>} properties recorded for some given data object, use a {<a href="../../schema/Schema/PropertyValue-constant.html">PropertyValue</a>} for each {<a href="../../schema/Schema/variableMeasured-constant.html">variableMeasured</a>} and attach the corresponding {<a href="../../schema/Schema/measurementTechnique-constant.html">measurementTechnique</a>}. The value can also be from an enumeration, organized as a {<code>MeasurementMetholdEnumeration</code>}.</p>
+<p>Can be used on: <a href="https://schema.org/DataCatalog">https://schema.org/DataCatalog</a>, <a href="https://schema.org/DataDownload">https://schema.org/DataDownload</a>, <a href="https://schema.org/Dataset">https://schema.org/Dataset</a>, <a href="https://schema.org/Observation">https://schema.org/Observation</a>, <a href="https://schema.org/PropertyValue">https://schema.org/PropertyValue</a>, <a href="https://schema.org/StatisticalVariable">https://schema.org/StatisticalVariable</a></p>
+</section>
+
+      
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">static const measurementTechnique = IriTerm.prevalidated(
+  &#39;https:&#47;&#47;schema.org&#47;measurementTechnique&#39;,
+);</code></pre>
+</section>
+
+
+    
+</div> <!-- /.main-content -->
+<div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+  <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">rdf_vocabularies</a></li>
+    <li><a href="../../schema">schema</a></li>
+    <li><a href="../../schema/Schema-class.html">Schema</a></li>
+    <li class="self-crumb">measurementTechnique constant</li>
+</ol>
+
+  <h5>Schema class</h5>
+  <div id="dartdoc-sidebar-left-content"></div>
+</div><!--/.sidebar-offcanvas-->
+<div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+</div><!--/.sidebar-offcanvas-->
+</main>
+<footer>
+  <span class="no-break">
+    rdf_vocabularies
+      0.3.1-dev
+  </span>
+  
+</footer>
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+
