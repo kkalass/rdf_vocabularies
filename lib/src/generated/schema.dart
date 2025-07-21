@@ -13663,6 +13663,16 @@ class Schema {
     'https://schema.org/commentTime',
   );
 
+  /// IRI for schema:companyRegistration [Expects: https://schema.org/Certification]
+  ///
+  /// The official registration number of a business including the organization that issued it such as Company House or Chamber of Commerce.
+  ///
+  /// Can be used on: https://schema.org/Organization
+  ///
+  static const companyRegistration = IriTerm.prevalidated(
+    'https://schema.org/companyRegistration',
+  );
+
   /// IRI for schema:competencyRequired [Expects: https://schema.org/DefinedTerm, https://schema.org/Text, https://schema.org/URL]
   ///
   /// Knowledge, skill, ability or personal attribute that must be demonstrated by a person or other entity in order to do something such as earn an Educational Occupational Credential or understand a LearningResource.
@@ -16219,7 +16229,7 @@ class Schema {
 
   /// IRI for schema:gender [Expects: https://schema.org/GenderType, https://schema.org/Text]
   ///
-  /// Gender of something, typically a {[Person]}, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender. The {[gender]} property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender {[SportsTeam]} can be indicated with a text value of "Mixed".
+  /// Gender of something, typically a {[Person]}, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings are also acceptable for people who are not a binary gender. The {[gender]} property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender {[SportsTeam]} can be indicated with a text value of "Mixed".
   ///
   /// Can be used on: https://schema.org/Person, https://schema.org/SportsTeam
   ///
@@ -18094,6 +18104,16 @@ class Schema {
     'https://schema.org/leaseLength',
   );
 
+  /// IRI for schema:legalAddress [Expects: https://schema.org/PostalAddress]
+  ///
+  /// The legal address of an organization which acts as the officially registered address used for legal and tax purposes. The legal address can be different from the place of operations of a business and other addresses can be part of an organization.
+  ///
+  /// Can be used on: https://schema.org/Organization
+  ///
+  static const legalAddress = IriTerm.prevalidated(
+    'https://schema.org/legalAddress',
+  );
+
   /// IRI for schema:legalName [Expects: https://schema.org/Text]
   ///
   /// The official name of the organization, e.g. the registered company name.
@@ -18101,6 +18121,16 @@ class Schema {
   /// Can be used on: https://schema.org/Organization
   ///
   static const legalName = IriTerm.prevalidated('https://schema.org/legalName');
+
+  /// IRI for schema:legalRepresentative [Expects: https://schema.org/Person]
+  ///
+  /// One or multiple persons who represent this organization legally such as CEO or sole administrator.
+  ///
+  /// Can be used on: https://schema.org/Organization
+  ///
+  static const legalRepresentative = IriTerm.prevalidated(
+    'https://schema.org/legalRepresentative',
+  );
 
   /// IRI for schema:legalStatus [Expects: https://schema.org/DrugLegalStatus, https://schema.org/MedicalEnumeration, https://schema.org/Text]
   ///
@@ -20872,6 +20902,17 @@ class Schema {
   static const programmingModel = IriTerm.prevalidated(
     'https://schema.org/programmingModel',
   );
+
+  /// IRI for schema:pronouns [Expects: https://schema.org/DefinedTerm, https://schema.org/StructuredValue, https://schema.org/Text]
+  ///
+  /// A short string listing or describing pronouns for a person. Typically the person concerned is the best authority as pronouns are a critical part of personal identity and expression. Publishers and consumers of this information are reminded to treat this data responsibly, take country-specific laws related to gender expression into account, and be wary of out-of-date data and drawing unwarranted inferences about the person being described.
+  ///
+  /// In English, formulations such as "they/them", "she/her", and "he/him" are commonly used online and can also be used here. We do not intend to enumerate all possible micro-syntaxes in all languages. More structured and well-defined external values for pronouns can be referenced using the {[StructuredValue]} or {[DefinedTerm]} values.
+  ///
+  ///
+  /// Can be used on: https://schema.org/Person
+  ///
+  static const pronouns = IriTerm.prevalidated('https://schema.org/pronouns');
 
   /// IRI for schema:propertyID [Expects: https://schema.org/Text, https://schema.org/URL]
   ///

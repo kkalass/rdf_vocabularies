@@ -181,6 +181,16 @@ class SchemaCampground {
     'https://schema.org/checkoutTime',
   );
 
+  /// companyRegistration [Expects: https://schema.org/Certification]
+  ///
+  /// The official registration number of a business including the organization that issued it such as Company House or Chamber of Commerce.
+  ///
+  /// Can be used on: https://schema.org/Organization
+  ///
+  static const companyRegistration = IriTerm.prevalidated(
+    'https://schema.org/companyRegistration',
+  );
+
   /// contactPoints [Expects: https://schema.org/ContactPoint]
   ///
   /// A contact point for a person or organization.
@@ -621,6 +631,16 @@ class SchemaCampground {
   ///
   static const latitude = IriTerm.prevalidated('https://schema.org/latitude');
 
+  /// legalAddress [Expects: https://schema.org/PostalAddress]
+  ///
+  /// The legal address of an organization which acts as the officially registered address used for legal and tax purposes. The legal address can be different from the place of operations of a business and other addresses can be part of an organization.
+  ///
+  /// Can be used on: https://schema.org/Organization
+  ///
+  static const legalAddress = IriTerm.prevalidated(
+    'https://schema.org/legalAddress',
+  );
+
   /// legalName [Expects: https://schema.org/Text]
   ///
   /// The official name of the organization, e.g. the registered company name.
@@ -628,6 +648,16 @@ class SchemaCampground {
   /// Can be used on: https://schema.org/Organization
   ///
   static const legalName = IriTerm.prevalidated('https://schema.org/legalName');
+
+  /// legalRepresentative [Expects: https://schema.org/Person]
+  ///
+  /// One or multiple persons who represent this organization legally such as CEO or sole administrator.
+  ///
+  /// Can be used on: https://schema.org/Organization
+  ///
+  static const legalRepresentative = IriTerm.prevalidated(
+    'https://schema.org/legalRepresentative',
+  );
 
   /// leiCode [Expects: https://schema.org/Text]
   ///

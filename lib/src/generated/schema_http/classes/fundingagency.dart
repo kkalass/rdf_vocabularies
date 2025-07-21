@@ -111,6 +111,16 @@ class SchemaHttpFundingAgency {
   ///
   static const brand = IriTerm.prevalidated('http://schema.org/brand');
 
+  /// companyRegistration [Expects: http://schema.org/Certification]
+  ///
+  /// The official registration number of a business including the organization that issued it such as Company House or Chamber of Commerce.
+  ///
+  /// Can be used on: http://schema.org/Organization
+  ///
+  static const companyRegistration = IriTerm.prevalidated(
+    'http://schema.org/companyRegistration',
+  );
+
   /// contactPoints [Expects: http://schema.org/ContactPoint]
   ///
   /// A contact point for a person or organization.
@@ -411,6 +421,16 @@ class SchemaHttpFundingAgency {
     'http://schema.org/knowsLanguage',
   );
 
+  /// legalAddress [Expects: http://schema.org/PostalAddress]
+  ///
+  /// The legal address of an organization which acts as the officially registered address used for legal and tax purposes. The legal address can be different from the place of operations of a business and other addresses can be part of an organization.
+  ///
+  /// Can be used on: http://schema.org/Organization
+  ///
+  static const legalAddress = IriTerm.prevalidated(
+    'http://schema.org/legalAddress',
+  );
+
   /// legalName [Expects: http://schema.org/Text]
   ///
   /// The official name of the organization, e.g. the registered company name.
@@ -418,6 +438,16 @@ class SchemaHttpFundingAgency {
   /// Can be used on: http://schema.org/Organization
   ///
   static const legalName = IriTerm.prevalidated('http://schema.org/legalName');
+
+  /// legalRepresentative [Expects: http://schema.org/Person]
+  ///
+  /// One or multiple persons who represent this organization legally such as CEO or sole administrator.
+  ///
+  /// Can be used on: http://schema.org/Organization
+  ///
+  static const legalRepresentative = IriTerm.prevalidated(
+    'http://schema.org/legalRepresentative',
+  );
 
   /// leiCode [Expects: http://schema.org/Text]
   ///
