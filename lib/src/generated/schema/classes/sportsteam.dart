@@ -120,6 +120,16 @@ class SchemaSportsTeam {
   ///
   static const coach = IriTerm.prevalidated('https://schema.org/coach');
 
+  /// companyRegistration [Expects: https://schema.org/Certification]
+  ///
+  /// The official registration number of a business including the organization that issued it such as Company House or Chamber of Commerce.
+  ///
+  /// Can be used on: https://schema.org/Organization
+  ///
+  static const companyRegistration = IriTerm.prevalidated(
+    'https://schema.org/companyRegistration',
+  );
+
   /// contactPoints [Expects: https://schema.org/ContactPoint]
   ///
   /// A contact point for a person or organization.
@@ -278,7 +288,7 @@ class SchemaSportsTeam {
 
   /// gender [Expects: https://schema.org/GenderType, https://schema.org/Text]
   ///
-  /// Gender of something, typically a {[Person]}, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender. The {[gender]} property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender {[SportsTeam]} can be indicated with a text value of "Mixed".
+  /// Gender of something, typically a {[Person]}, but possibly also fictional characters, animals, etc. While https://schema.org/Male and https://schema.org/Female may be used, text strings are also acceptable for people who are not a binary gender. The {[gender]} property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender {[SportsTeam]} can be indicated with a text value of "Mixed".
   ///
   /// Can be used on: https://schema.org/Person, https://schema.org/SportsTeam
   ///
@@ -428,6 +438,16 @@ class SchemaSportsTeam {
     'https://schema.org/knowsLanguage',
   );
 
+  /// legalAddress [Expects: https://schema.org/PostalAddress]
+  ///
+  /// The legal address of an organization which acts as the officially registered address used for legal and tax purposes. The legal address can be different from the place of operations of a business and other addresses can be part of an organization.
+  ///
+  /// Can be used on: https://schema.org/Organization
+  ///
+  static const legalAddress = IriTerm.prevalidated(
+    'https://schema.org/legalAddress',
+  );
+
   /// legalName [Expects: https://schema.org/Text]
   ///
   /// The official name of the organization, e.g. the registered company name.
@@ -435,6 +455,16 @@ class SchemaSportsTeam {
   /// Can be used on: https://schema.org/Organization
   ///
   static const legalName = IriTerm.prevalidated('https://schema.org/legalName');
+
+  /// legalRepresentative [Expects: https://schema.org/Person]
+  ///
+  /// One or multiple persons who represent this organization legally such as CEO or sole administrator.
+  ///
+  /// Can be used on: https://schema.org/Organization
+  ///
+  static const legalRepresentative = IriTerm.prevalidated(
+    'https://schema.org/legalRepresentative',
+  );
 
   /// leiCode [Expects: https://schema.org/Text]
   ///

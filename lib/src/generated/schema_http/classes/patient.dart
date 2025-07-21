@@ -267,7 +267,7 @@ class SchemaHttpPatient {
 
   /// gender [Expects: http://schema.org/GenderType, http://schema.org/Text]
   ///
-  /// Gender of something, typically a {[Person]}, but possibly also fictional characters, animals, etc. While http://schema.org/Male and http://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender. The {[gender]} property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender {[SportsTeam]} can be indicated with a text value of "Mixed".
+  /// Gender of something, typically a {[Person]}, but possibly also fictional characters, animals, etc. While http://schema.org/Male and http://schema.org/Female may be used, text strings are also acceptable for people who are not a binary gender. The {[gender]} property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender {[SportsTeam]} can be indicated with a text value of "Mixed".
   ///
   /// Can be used on: http://schema.org/Person, http://schema.org/SportsTeam
   ///
@@ -520,6 +520,17 @@ class SchemaHttpPatient {
   static const potentialAction = IriTerm.prevalidated(
     'http://schema.org/potentialAction',
   );
+
+  /// pronouns [Expects: http://schema.org/DefinedTerm, http://schema.org/StructuredValue, http://schema.org/Text]
+  ///
+  /// A short string listing or describing pronouns for a person. Typically the person concerned is the best authority as pronouns are a critical part of personal identity and expression. Publishers and consumers of this information are reminded to treat this data responsibly, take country-specific laws related to gender expression into account, and be wary of out-of-date data and drawing unwarranted inferences about the person being described.
+  ///
+  /// In English, formulations such as "they/them", "she/her", and "he/him" are commonly used online and can also be used here. We do not intend to enumerate all possible micro-syntaxes in all languages. More structured and well-defined external values for pronouns can be referenced using the {[StructuredValue]} or {[DefinedTerm]} values.
+  ///
+  ///
+  /// Can be used on: http://schema.org/Person
+  ///
+  static const pronouns = IriTerm.prevalidated('http://schema.org/pronouns');
 
   /// relatedTo [Expects: http://schema.org/Person]
   ///
