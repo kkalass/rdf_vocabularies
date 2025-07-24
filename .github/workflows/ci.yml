@@ -60,6 +60,7 @@ jobs:
           flags: ${{ matrix.package }}
           name: ${{ matrix.package }}-coverage
           fail_ci_if_error: false
+          verbose: true
 
   # Additional job to run workspace-level operations
   workspace:
