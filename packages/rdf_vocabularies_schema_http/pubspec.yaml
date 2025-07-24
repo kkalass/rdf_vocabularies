@@ -1,6 +1,6 @@
 name: rdf_vocabularies_schema_http
 description: Schema.org vocabulary (HTTP variant) as Dart constants for legacy system compatibility
-version: 0.4.1-dev
+version: 0.4.1
 homepage: https://kkalass.github.io/rdf_vocabularies/
 repository: https://github.com/kkalass/rdf_vocabularies
 issue_tracker: https://github.com/kkalass/rdf_vocabularies/issues
