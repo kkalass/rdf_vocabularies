@@ -86,14 +86,14 @@ void main(List<String> args) async {
       await _createReleaseCommit(releaseVersion);
     }
 
-    // Step 8: Publish packages 
+    // Step 8: Publish packages
     if (!skipPublish && !dryRun) {
       await _publishToPublicRegistry(releaseVersion);
     } else if (dryRun) {
       print('🚀 Would publish packages to pub.dev (skipped in dry run)');
     } else {
       print('🚀 Publishing skipped (--no-publish flag)');
-    }    // Step 9: Set next development version (dependencies stay at current version)
+    } // Step 9: Set next development version (dependencies stay at current version)
     if (!dryRun) {
       final nextDevVersion = _incrementToNextDevVersion(releaseVersion);
       print('🔄 Setting next development version: $nextDevVersion');
@@ -206,10 +206,10 @@ Future<void> _runCorePackageTests() async {
   // Test only core packages (not meta-package which has unresolved dependencies)
   final corePackages = [
     'packages/rdf_vocabularies_core',
-    'packages/rdf_vocabularies_schema', 
+    'packages/rdf_vocabularies_schema',
     'packages/rdf_vocabularies_schema_http',
   ];
-  
+
   for (final packagePath in corePackages) {
     print('   Testing $packagePath...');
 
@@ -227,14 +227,14 @@ Future<void> _runCorePackageTests() async {
 
 Future<void> _runMetaPackageTests() async {
   final metaPackage = 'packages/rdf_vocabularies';
-  
+
   print('   Testing $metaPackage...');
   print('     Getting dependencies...');
   await _runProcessChecked('dart', ['pub', 'get'], metaPackage);
-  
+
   print('     Running tests...');
   await _runProcessChecked('dart', ['test'], metaPackage);
-  
+
   print('   ✓ Meta-package tests passed');
 }
 
@@ -346,7 +346,10 @@ Future<void> _publishToPublicRegistry(String version) async {
 
   // Step 7: Create final commit with updated dependencies
   print('   📝 Committing updated meta-package dependencies...');
-  await _commitVersionChange(version, 'Update meta-package dependencies for release');
+  await _commitVersionChange(
+    version,
+    'Update meta-package dependencies for release',
+  );
 
   print('   🎉 All packages published successfully!');
 }
