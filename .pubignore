@@ -1,8 +1,21 @@
 # This workspace root should not be published
 # The actual packages are in packages/ directory
 
-# Ignore everything by default
-*
-!README.md
-!LICENSE
-!CHANGELOG.md
+# Development and workspace files
+.dart_tool/
+.packages
+build/
+tool/
+doc/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keep package directories accessible
+!packages/
