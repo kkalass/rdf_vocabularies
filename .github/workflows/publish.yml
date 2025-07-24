@@ -4,26 +4,105 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+    inputs:
+      package:
+        description: 'Package to publish (or "all" for all packages)'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - rdf_vocabularies_core
+          - rdf_vocabularies_schema
+          - rdf_vocabularies_schema_http
+          - rdf_vocabularies
 
 jobs:
-  publish:
+  # First job: Publish core packages
+  publish-core:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package: 
+          - name: rdf_vocabularies_core
+            path: packages/rdf_vocabularies_core
+          - name: rdf_vocabularies_schema
+            path: packages/rdf_vocabularies_schema
+          - name: rdf_vocabularies_schema_http
+            path: packages/rdf_vocabularies_schema_http
     steps:
       - uses: actions/checkout@v4
       - uses: dart-lang/setup-dart@v1
         with:
           sdk: stable
-      - name: Install dependencies
-        run: dart pub get
-      - name: Publish dry run
-        run: dart pub publish --dry-run
-      - name: Publish (manual)
-        if: github.event_name == 'workflow_dispatch'
+      
+      # Skip this package if manual dispatch and specific package selected
+      - name: Check if package should be published
+        id: should_publish
         run: |
-          echo "To publish, run 'dart pub publish' manually with credentials."
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            if [[ "${{ github.event.inputs.package }}" == "all" || "${{ github.event.inputs.package }}" == "${{ matrix.package.name }}" ]]; then
+              echo "publish=true" >> $GITHUB_OUTPUT
+            else
+              echo "publish=false" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "publish=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Install dependencies for ${{ matrix.package.name }}
+        if: steps.should_publish.outputs.publish == 'true'
+        working-directory: ${{ matrix.package.path }}
+        run: dart pub get
+      
+      - name: Publish dry run for ${{ matrix.package.name }}
+        if: steps.should_publish.outputs.publish == 'true'
+        working-directory: ${{ matrix.package.path }}
+        run: dart pub publish --dry-run
+      
+      - name: Publish ${{ matrix.package.name }} (manual)
+        if: steps.should_publish.outputs.publish == 'true' && github.event_name == 'workflow_dispatch'
+        working-directory: ${{ matrix.package.path }}
+        run: |
+          echo "To publish ${{ matrix.package.name }}, run 'dart pub publish' manually with credentials in ${{ matrix.package.path }}"
+      
       # To enable auto-publishing, uncomment below and add PUB_CREDENTIALS secret
-      # - name: Publish
+      # - name: Publish ${{ matrix.package.name }}
+      #   if: steps.should_publish.outputs.publish == 'true' && github.event_name == 'release'
+      #   working-directory: ${{ matrix.package.path }}
+      #   env:
+      #     PUB_CREDENTIALS: ${{ secrets.PUB_CREDENTIALS }}
+      #   run: echo "$PUB_CREDENTIALS" > ~/.pub-cache/credentials.json && dart pub publish -f
+
+  # Second job: Publish meta-package (depends on core packages)
+  publish-meta:
+    runs-on: ubuntu-latest
+    needs: publish-core  # Wait for core packages to be published
+    if: always() && (github.event.inputs.package == 'all' || github.event.inputs.package == 'rdf_vocabularies' || github.event_name == 'release')
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+      
+      - name: Install dependencies for rdf_vocabularies
+        working-directory: packages/rdf_vocabularies
+        run: dart pub get
+      
+      - name: Publish dry run for rdf_vocabularies
+        working-directory: packages/rdf_vocabularies
+        run: dart pub publish --dry-run
+      
+      - name: Publish rdf_vocabularies (manual)
+        if: github.event_name == 'workflow_dispatch'
+        working-directory: packages/rdf_vocabularies
+        run: |
+          echo "To publish rdf_vocabularies, run 'dart pub publish' manually with credentials in packages/rdf_vocabularies"
+      
+      # To enable auto-publishing, uncomment below and add PUB_CREDENTIALS secret
+      # - name: Publish rdf_vocabularies
       #   if: github.event_name == 'release'
+      #   working-directory: packages/rdf_vocabularies
       #   env:
       #     PUB_CREDENTIALS: ${{ secrets.PUB_CREDENTIALS }}
       #   run: echo "$PUB_CREDENTIALS" > ~/.pub-cache/credentials.json && dart pub publish -f

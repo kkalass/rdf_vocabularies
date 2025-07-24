@@ -1,13 +1,15 @@
-name: Deploy GitHub Pages from doc/
+name: Build and Deploy Documentation to GitHub Pages
 
 on:
   push:
     branches: [main]
     paths:
+      - 'packages/*/lib/**'
+      - 'packages/*/README.md'
       - 'doc/**'
       - '.github/workflows/pages.yml'
-      - 'pubspec.yaml'
-      - 'README.md'
+      - 'tool/aggregate_docs.dart'
+  workflow_dispatch:
 
 permissions:
   id-token: write
@@ -15,7 +17,7 @@ permissions:
   pages: write
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -24,18 +26,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+
+      - name: Get workspace dependencies
+        run: dart pub get
+
+      - name: Generate API documentation for all packages
+        run: dart run tool/all.dart doc
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
-      - name: Copy doc/ to docs/
-        run: |
-          rm -rf docs
-          cp -r doc docs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs
+          path: doc
 
       - name: Deploy to GitHub Pages
         id: deployment

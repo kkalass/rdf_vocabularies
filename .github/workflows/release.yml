@@ -1,4 +1,4 @@
-name: Create GitHub Release on Tag
+name: Create Multipackage Release
 
 on:
   push:
@@ -11,24 +11,50 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Get release notes from CHANGELOG.md
-        id: changelog
+      - name: Extract version from tag
+        id: version
         run: |
           VERSION=${GITHUB_REF#refs/tags/v}
-          RELEASE_NOTES=$(awk "/^## \[$VERSION\]/ {flag=1; next} /^## / {flag=0} flag" CHANGELOG.md | sed '/^$/d')
-          echo "release_notes<<EOF" >> $GITHUB_OUTPUT
-          echo "$RELEASE_NOTES" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.ref_name }}
-          name: Release ${{ github.ref_name }}
-          body: ${{ steps.changelog.outputs.release_notes }}
+          name: Release ${{ github.ref_name }} - All Packages
+          body: |
+            # RDF Vocabularies Release ${{ steps.version.outputs.version }}
+            
+            This release includes all packages with synchronized versions.
+            
+            ## 📦 Packages Released
+            
+            | Package | Version | Size | Content |
+            |---------|---------|------|---------|
+            | [`rdf_vocabularies_core`](https://pub.dev/packages/rdf_vocabularies_core) | ${{ steps.version.outputs.version }} | ~5MB | Core RDF vocabularies |
+            | [`rdf_vocabularies_schema`](https://pub.dev/packages/rdf_vocabularies_schema) | ${{ steps.version.outputs.version }} | ~35MB | Schema.org (HTTPS) |
+            | [`rdf_vocabularies_schema_http`](https://pub.dev/packages/rdf_vocabularies_schema_http) | ${{ steps.version.outputs.version }} | ~36MB | Schema.org (HTTP) |
+            | [`rdf_vocabularies`](https://pub.dev/packages/rdf_vocabularies) | ${{ steps.version.outputs.version }} | ~77MB | Meta-package (all vocabularies) |
+            
+            ## 🚀 Installation
+            
+            ```sh
+            # Core vocabularies (recommended for most projects)
+            dart pub add rdf_vocabularies_core
+            
+            # Or full package for backward compatibility
+            dart pub add rdf_vocabularies
+            ```
+            
+            ## 📚 Documentation
+            
+            - [Official Homepage](https://kkalass.github.io/rdf_vocabularies/)
+            - [Package Documentation](https://pub.dev/documentation/rdf_vocabularies/latest/)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

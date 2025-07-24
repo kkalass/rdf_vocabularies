@@ -1,8 +1,9 @@
 # RDF Vocabularies for Dart - Type-safe RDF Constants
 
-[![pub package](https://img.shields.io/pub/v/rdf_vocabularies.svg)](https://pub.dev/packages/rdf_vocabularies)
 [![build](https://github.com/kkalass/rdf_vocabularies/actions/workflows/ci.yml/badge.svg)](https://github.com/kkalass/rdf_vocabularies/actions)
+[![codecov](https://codecov.io/gh/kkalass/rdf_vocabularies/branch/main/graph/badge.svg)](https://codecov.io/gh/kkalass/rdf_vocabularies)
 [![license](https://img.shields.io/github/license/kkalass/rdf_vocabularies.svg)](https://github.com/kkalass/rdf_vocabularies/blob/main/LICENSE)
+
 
 ## Overview
 
@@ -10,7 +11,33 @@
 
 `rdf_vocabularies` provides type-safe access to standard RDF vocabulary terms as Dart constants for use with [`rdf_core`](https://pub.dev/packages/rdf_core). 
 
-The library is designed for both RDF newcomers and experts, offering structured ways to work with semantic data while maintaining compilation-time safety.
+The library uses a **multi-package architecture** for optimal package size while maintaining full backward compatibility.
+
+> **Note**: This repository contains the workspace root. The actual publishable packages are in the `packages/` directory.
+
+---
+
+## Package Architecture
+
+Starting with version 0.4.0, this project uses a multi-package architecture to optimize package sizes:
+
+### 📦 Available Packages
+
+| Package | Version | Size | Content | Use Case | Source |
+|---------|---------|------|---------|----------|---------|
+| **[`rdf_vocabularies`](https://pub.dev/packages/rdf_vocabularies)** | [![pub package](https://img.shields.io/pub/v/rdf_vocabularies.svg)](https://pub.dev/packages/rdf_vocabularies) | ~77MB | All vocabularies | Full compatibility | [📁 Source](packages/rdf_vocabularies/) |
+| **[`rdf_vocabularies_core`](https://pub.dev/packages/rdf_vocabularies_core)** | [![pub package](https://img.shields.io/pub/v/rdf_vocabularies_core.svg)](https://pub.dev/packages/rdf_vocabularies_core) | ~5MB | Core RDF vocabularies | Most use cases | [📁 Source](packages/rdf_vocabularies_core/) |
+| **[`rdf_vocabularies_schema`](https://pub.dev/packages/rdf_vocabularies_schema)** | [![pub package](https://img.shields.io/pub/v/rdf_vocabularies_schema.svg)](https://pub.dev/packages/rdf_vocabularies_schema) | ~35MB | Schema.org (HTTPS) | Schema.org apps | [📁 Source](packages/rdf_vocabularies_schema/) |
+| **[`rdf_vocabularies_schema_http`](https://pub.dev/packages/rdf_vocabularies_schema_http)** | [![pub package](https://img.shields.io/pub/v/rdf_vocabularies_schema_http.svg)](https://pub.dev/packages/rdf_vocabularies_schema_http) | ~36MB | Schema.org (HTTP) | Legacy compatibility | [📁 Source](packages/rdf_vocabularies_schema_http/) |
+
+> **💡 Size Note**: The `rdf_vocabularies` meta-package automatically downloads all other packages as dependencies, resulting in a total download of ~77MB. For size optimization, use individual packages.
+
+### 🎯 Choose Your Package
+
+- **For full compatibility**: Use `rdf_vocabularies` (meta-package) - **downloads all vocabularies (~77MB total)**
+- **For size optimization**: Use `rdf_vocabularies_core` (~5MB) for common vocabularies only
+- **For Schema.org apps**: Use `rdf_vocabularies_core` + `rdf_vocabularies_schema` (~40MB total)
+- **For legacy support**: Add `rdf_vocabularies_schema_http` for HTTP Schema.org URIs
 
 ---
 
@@ -25,148 +52,142 @@ If you are looking for more rdf-related functionality, have a look at our compan
 
 ---
 
-## Package Characteristics
-
-- **Zero Runtime Overhead**: Nearly all content is composed of compile-time constants
-- **Small Binary Size**: Minimal impact on your application's size
-- **Type Safety**: Catch vocabulary usage errors at compile time
-- **IDE Assistance**: Get autocompletion and documentation directly in your editor
-
-## Features
-
-- **Dual Interface**: Choose between class-specific access for beginners or full vocabulary access for experts
-- **Comprehensive Coverage**: Access terms from popular RDF vocabularies (Schema.org, FOAF, Dublin Core, etc.)
-- **Rich Documentation**: Each term includes its original description from the vocabulary
-- **Seamless Integration**: Works perfectly with the `rdf_core` library
-
 ## Getting Started
 
-Add the package to your `pubspec.yaml`:
+### Installation
 
-```yaml
-dependencies:
-  rdf_vocabularies: ^0.3.1
-  rdf_core: ^0.9.0  # Required for RDF data structures
+Add one or more packages to your `pubspec.yaml`:
+
+```sh
+# Option 1: Meta-package with all vocabularies (⚠️ ~77MB total download)
+dart pub add rdf_vocabularies rdf_core
+
+# Option 2: Individual packages for size optimization (recommended)
+
+# Core vocabularies (~5MB)
+dart pub add rdf_vocabularies_core rdf_core        
+
+# Add only if you need Schema.org (+35MB)
+dart pub add rdf_vocabularies_schema rdf_core        
 ```
 
-## Usage
+### Basic Usage
 
-### For RDF Newcomers: Class-Specific Approach
+The library is designed for both RDF newcomers and experts, offering structured ways to work with semantic data while maintaining compilation-time safety.
 
-If you're new to RDF, the class-specific approach guides you to use the correct properties for each type of resource:
+#### For RDF Newcomers: Class-Specific Approach
+
+Use class-specific constants that guide you to the correct properties:
 
 ```dart
 import 'package:rdf_core/rdf_core.dart';
-import 'package:rdf_vocabularies/schema.dart';
+import 'package:rdf_vocabularies/foaf.dart';
+import 'package:rdf_vocabularies/rdf.dart';
 import 'package:rdf_vocabularies/xsd.dart';
 
 void main() {
   final personIri = IriTerm('http://example.org/person/jane_doe');
-  final addressNode = BlankNodeTerm();
   
-  // Create a graph with triples using class-specific constants
+  // Create a graph using class-specific constants
   final graph = RdfGraph.fromTriples([
-    // Declare the resource type using SchemaPerson constants
-    Triple(personIri, SchemaPerson.rdfType, SchemaPerson.classIri),
-    
-    // Use properties specific to Person - your IDE will help you discover valid properties
-    Triple(personIri, SchemaPerson.name, LiteralTerm.string('Jane Doe')),
-    Triple(personIri, SchemaPerson.email, LiteralTerm.string('jane.doe@example.com')),
-    Triple(personIri, SchemaPerson.birthDate, LiteralTerm('1990-01-01', datatype: Xsd.date)),
-
-    // Even those defined in other vocabularies, if their relationship is known to the library
-    Triple(personIri, SchemaPerson.foafAge, LiteralTerm.integer(42)),
-
-    // For properties from foreign vocabularies that are not restricted to a specific class, 
-    // but are designed to be used universally, you can use the generated UniversalProperties
-    // classes. 
-    Triple(personIri, DcUniversalProperties.creator, LiteralTerm.string('System')),
-
-    // Create a complex structure with an address
-    Triple(personIri, SchemaPerson.address, addressNode),
-    Triple(addressNode, SchemaPostalAddress.rdfType, SchemaPostalAddress.classIri),
-    Triple(addressNode, SchemaPostalAddress.streetAddress, LiteralTerm.string('123 Main St')),
-    Triple(addressNode, SchemaPostalAddress.addressLocality, LiteralTerm.string('Anytown')),
+    // Use FoafPerson class for type-safe property access
+    Triple(personIri, Rdf.type, FoafPerson.classIri),
+    Triple(personIri, FoafPerson.name, LiteralTerm.string('Jane Doe')),
+    Triple(personIri, FoafPerson.givenName, LiteralTerm.string('Jane')),
+    Triple(personIri, FoafPerson.familyName, LiteralTerm.string('Doe')),
+    Triple(personIri, FoafPerson.age, LiteralTerm.integer(42)),
+    Triple(personIri, FoafPerson.mbox, IriTerm('mailto:jane.doe@example.com')),
   ]);
+  
+  print(RdfCore.withStandardCodecs().encode(graph));
 }
 ```
 
-**Benefits of this approach:**
-- Your IDE shows only relevant properties for each class
-- Compile-time type safety prevents mixing incompatible vocabulary terms
-- Discoverability through autocomplete helps you learn the vocabulary structure
+**Benefits**: IDE autocompletion, compile-time validation, guided vocabulary discovery.
 
-### For RDF Experts: Full Vocabulary Approach
+#### For RDF Experts: Direct Vocabulary Approach
 
-Experienced RDF developers who know exactly which vocabulary terms they need can use the more direct full vocabulary classes:
+Use vocabulary classes directly for maximum flexibility:
 
 ```dart
 import 'package:rdf_core/rdf_core.dart';
-import 'package:rdf_vocabularies/schema.dart';
-import 'package:rdf_vocabularies/rdf.dart';
 import 'package:rdf_vocabularies/foaf.dart';
-import 'package:rdf_vocabularies/xsd.dart';
+import 'package:rdf_vocabularies/rdf.dart';
+import 'package:rdf_vocabularies/dc.dart';
 
 void main() {
   final personIri = IriTerm('http://example.org/person/jane_doe');
-  final addressNode = BlankNodeTerm();
   
   // Create a graph with direct vocabulary access
   final graph = RdfGraph.fromTriples([
-    Triple(personIri, Rdf.type, Schema.Person),
-    
-    // Mix properties from different vocabularies freely
-    Triple(personIri, Schema.name, LiteralTerm.string('Jane Doe')),
+    Triple(personIri, Rdf.type, Foaf.Person),
+    Triple(personIri, Foaf.name, LiteralTerm.string('Jane Doe')),
     Triple(personIri, Foaf.age, LiteralTerm.integer(42)),
-    Triple(personIri, Schema.email, LiteralTerm.string('jane.doe@example.com')),
-    
-    // Create a complex structure with an address
-    Triple(personIri, Schema.address, addressNode),
-    Triple(addressNode, Rdf.type, Schema.PostalAddress),
-    Triple(addressNode, Schema.streetAddress, LiteralTerm.string('123 Main St')),
+    Triple(personIri, Dc.creator, LiteralTerm.string('System')),
   ]);
+  
+  print(RdfCore.withStandardCodecs().encode(graph));
 }
 ```
 
-**Benefits of this approach:**
-- Maximally flexible - combine terms from any vocabulary
-- More concise syntax for those who know exactly what they need
-- Natural for developers coming from other RDF environments
+**Benefits**: Maximum flexibility, concise syntax, mix vocabularies freely.
 
 ## Supported Vocabularies
 
-This package includes constants for these vocabularies:
-
+### Core Package (`rdf_vocabularies_core`)
+- **RDF**: Resource Description Framework base vocabulary
+- **RDFS**: RDF Schema vocabulary  
+- **OWL**: Web Ontology Language
+- **FOAF**: Friend of a Friend vocabulary
+- **DC/DCTerms**: Dublin Core vocabularies
+- **SKOS**: Simple Knowledge Organization System
+- **VCard**: vCard ontology for contacts
+- **XSD**: XML Schema Datatypes
 - **ACL**: Web Access Control vocabulary
 - **Contact**: Contact information vocabulary
-- **DC**: Dublin Core basic elements
-- **DCMIType**: Dublin Core type vocabulary
-- **DCTerms**: Dublin Core terms
 - **EventOwl**: Event vocabulary
-- **FOAF**: Friend of a Friend vocabulary
 - **GEO**: Geospatial vocabulary
 - **LDP**: Linked Data Platform vocabulary
-- **OWL**: Web Ontology Language
-- **RDF**: Resource Description Framework base vocabulary
-- **RDFS**: RDF Schema vocabulary
-- **Schema**: Schema.org vocabulary
-- **SKOS**: Simple Knowledge Organization System
 - **Solid**: Solid platform vocabulary
-- **VCard**: vCard ontology for contacts
 - **VS**: Vocabulary Status ontology
-- **XSD**: XML Schema Datatypes
 
-## Performance Impact
+### Schema.org Packages
+- **`rdf_vocabularies_schema`**: Schema.org with HTTPS URIs (modern)
+- **`rdf_vocabularies_schema_http`**: Schema.org with HTTP URIs (legacy)
 
-Including `rdf_vocabularies` in your project:
-- **Package Size**: Minimal impact on package size as it consists primarily of constants
-- **Runtime Performance**: Zero runtime overhead since values are compile-time constants
-- **Memory Usage**: Negligible increase in memory usage
-- **Build Time**: May slightly increase initial build time, but no impact on runtime performance
+## Migration Guide
 
-## 🛣️ Roadmap / Next Steps
+### From v0.3.x to v0.4.x
 
-- ...
+The API remains **100% backward compatible**. You can:
+
+1. **Continue using the meta-package** (⚠️ now downloads ~77MB total):
+   ```yaml
+   dependencies:
+     rdf_vocabularies: ^0.4.0  # Same import, but larger download
+   ```
+
+2. **Optimize package size** by switching to specific packages (recommended):
+   ```yaml
+   dependencies:
+     rdf_vocabularies_core: ^0.4.0      # Only ~5MB instead of ~77MB
+     # Add rdf_vocabularies_schema: ^0.4.0 only if you need Schema.org
+   ```
+
+All import statements and API usage remain exactly the same.
+
+## Performance Characteristics
+
+- **Zero Runtime Overhead**: Nearly all content consists of compile-time constants
+- **Optimized Package Sizes**: Choose only the vocabularies you need
+- **Type Safety**: Catch vocabulary usage errors at compile time
+- **IDE Integration**: Get autocompletion and documentation directly in your editor
+
+## 🛣️ Roadmap
+
+- Additional vocabulary support based on community requests
+- Enhanced tooling for custom vocabulary generation
+- Performance optimizations for large-scale applications
 
 ## 🤝 Contributing
 

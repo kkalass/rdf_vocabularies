@@ -5,7 +5,29 @@
 
 version: 2
 updates:
-  - package-ecosystem: "pub" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  # Monitor workspace root
+  - package-ecosystem: "pub"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  
+  # Monitor individual packages
+  - package-ecosystem: "pub"
+    directory: "/packages/rdf_vocabularies_core"
+    schedule:
+      interval: "weekly"
+  
+  - package-ecosystem: "pub"
+    directory: "/packages/rdf_vocabularies_schema"
+    schedule:
+      interval: "weekly"
+  
+  - package-ecosystem: "pub"
+    directory: "/packages/rdf_vocabularies_schema_http"
+    schedule:
+      interval: "weekly"
+  
+  - package-ecosystem: "pub"
+    directory: "/packages/rdf_vocabularies"
     schedule:
       interval: "weekly"

@@ -1,0 +1,8 @@
+# This workspace root should not be published
+# The actual packages are in packages/ directory
+
+# Ignore everything by default
+*
+!README.md
+!LICENSE
+!CHANGELOG.md

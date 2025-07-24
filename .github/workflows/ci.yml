@@ -9,27 +9,68 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package: 
+          - packages/rdf_vocabularies_core
+          - packages/rdf_vocabularies_schema
+          - packages/rdf_vocabularies_schema_http
+          - packages/rdf_vocabularies
     steps:
       - uses: actions/checkout@v4
       - uses: dart-lang/setup-dart@v1
         with:
           sdk: stable
-      - name: Install dependencies
+      
+      - name: Install dependencies for ${{ matrix.package }}
+        working-directory: ${{ matrix.package }}
         run: dart pub get
-      - name: Analyze
+      
+      - name: Analyze ${{ matrix.package }}
+        working-directory: ${{ matrix.package }}
         run: dart analyze
-      - name: Run tests with coverage
+      
+      - name: Run tests for ${{ matrix.package }}
+        working-directory: ${{ matrix.package }}
         run: dart test --coverage=coverage
-
-      # Convert coverage to lcov.info (even if only test/ exists)
-      - name: Convert coverage to lcov.info
+      
+      # Convert coverage to lcov.info 
+      - name: Convert coverage to lcov.info for ${{ matrix.package }}
+        working-directory: ${{ matrix.package }}
         run: |
-          dart pub global activate coverage
-          dart pub global run coverage:format_coverage \
-            --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
-
-      - name: Upload coverage to Codecov
+          if [ -d "lib" ]; then
+            dart pub global activate coverage
+            dart pub global run coverage:format_coverage \
+              --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
+          fi
+      
+      - name: Upload coverage to Codecov for ${{ matrix.package }}
+        if: hashFiles('${{ matrix.package }}/coverage/lcov.info') != ''
         uses: codecov/codecov-action@v4
         with:
-          files: coverage/lcov.info
-          fail_ci_if_error: true
+          files: ${{ matrix.package }}/coverage/lcov.info
+          flags: ${{ matrix.package }}
+          fail_ci_if_error: false
+
+  # Additional job to run workspace-level operations
+  workspace:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+      
+      - name: Install workspace dependencies
+        run: dart pub get
+      
+      - name: Run workspace tests (if any)
+        run: |
+          if [ -d "test" ]; then
+            dart test
+          else
+            echo "No workspace-level tests found"
+          fi
+      
+      - name: Run all package operations via tool
+        run: dart run tool/all.dart test

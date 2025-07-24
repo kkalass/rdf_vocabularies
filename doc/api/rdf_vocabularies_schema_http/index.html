@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="rdf_vocabularies_schema_http API docs, for the Dart programming language.">
+  <title>rdf_vocabularies_schema_http - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="https://kkalass.github.io/rdf_vocabularies/">rdf_vocabularies_schema_http package</a></li>
+  </ol>
+  <div class="self-name">rdf_vocabularies_schema_http</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <button class="toggle" id="theme-button" title="Toggle between light and dark mode" aria-label="Light and dark mode toggle">
+    <span id="dark-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      dark_mode
+    </span>
+    <span id="light-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      light_mode
+    </span>
+  </button>
+</header>
+<main>
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 id="pub-packagehttpsimgshieldsiopubvrdf_vocabularies_schema_httpsvghttpspubdevpackagesrdf_vocabularies_schema_http"><a href="https://pub.dev/packages/rdf_vocabularies_schema_http"><img src="https://img.shields.io/pub/v/rdf_vocabularies_schema_http.svg" alt="pub package"></a></h1>
+<p><a href="https://github.com/kkalass/rdf_vocabularies/actions"><img src="https://github.com/kkalass/rdf_vocabularies/actions/workflows/ci.yml/badge.svg" alt="build"></a>
+<a href="https://codecov.io/gh/kkalass/rdf_vocabularies"><img src="https://codecov.io/gh/kkalass/rdf_vocabularies/branch/main/graph/badge.svg" alt="codecov"></a>
+<a href="https://github.com/kkalass/rdf_vocabularies/blob/main/LICENSE"><img src="https://img.shields.io/github/license/kkalass/rdf_vocabularies.svg" alt="license"></a> Vocabularies Schema HTTP - Schema.org HTTP Vocabulary</p>
+<p><a href="https://pub.dev/packages/rdf_vocabularies_schema_http"><img src="https://img.shields.io/pub/v/rdf_vocabularies_schema_http.svg" alt="pub package"></a>
+<a href="https://github.com/kkalass/rdf_vocabularies/actions"><img src="https://github.com/kkalass/rdf_vocabularies/actions/workflows/ci.yml/badge.svg" alt="build"></a>
+<a href="https://github.com/kkalass/rdf_vocabularies/blob/main/LICENSE"><img src="https://img.shields.io/github/license/kkalass/rdf_vocabularies.svg" alt="license"></a></p>
+<h2 id="overview">Overview</h2>
+<p><a href="https://kkalass.github.io/rdf_vocabularies/">🌐 <strong>Official Homepage</strong></a></p>
+<p><code>rdf_vocabularies_schema_http</code> provides type-safe access to the <strong>Schema.org vocabulary with HTTP URIs</strong> as Dart constants for use with <a href="https://pub.dev/packages/rdf_core"><code>rdf_core</code></a>.</p>
+<p>This package contains the <strong>legacy Schema.org vocabulary</strong> (~36MB) using HTTP URIs (<code>http://schema.org/...</code>) for compatibility with existing data and systems.</p>
+<h2 id="-package-selection-guide">📦 Package Selection Guide</h2>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Download Size</th>
+<th>Content</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>rdf_vocabularies_schema_http</code></strong> (this package)</td>
+<td><strong>~36MB</strong></td>
+<td>Schema.org HTTP</td>
+<td>Legacy compatibility</td>
+</tr>
+<tr>
+<td><strong><a href="https://pub.dev/packages/rdf_vocabularies_schema"><code>rdf_vocabularies_schema</code></a></strong></td>
+<td>~35MB</td>
+<td>Schema.org HTTPS</td>
+<td>Modern Schema.org apps</td>
+</tr>
+<tr>
+<td><strong><a href="https://pub.dev/packages/rdf_vocabularies_core"><code>rdf_vocabularies_core</code></a></strong></td>
+<td>~5MB</td>
+<td>Core RDF vocabularies</td>
+<td>Essential vocabularies</td>
+</tr>
+<tr>
+<td><strong><a href="https://pub.dev/packages/rdf_vocabularies"><code>rdf_vocabularies</code></a></strong></td>
+<td>~77MB</td>
+<td>All vocabularies</td>
+<td>Full compatibility</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>💡 Recommendation</strong>: Use <code>rdf_vocabularies_schema</code> (HTTPS) for new projects. Use this package only for legacy compatibility.</p>
+</blockquote>
+<p>The library is designed for both RDF newcomers and experts, offering structured ways to work with semantic data while maintaining compilation-time safety.</p>
+<hr>
+<h2 id="part-of-a-whole-family-of-projects">Part of a whole family of projects</h2>
+<p>If you are looking for more rdf-related functionality, have a look at our companion projects:</p>
+<ul>
+<li>basic graph classes as well as turtle/jsonld/n-triple encoding and decoding: <a href="https://github.com/kkalass/rdf_core">rdf_core</a></li>
+<li>encode and decode rdf/xml format: <a href="https://github.com/kkalass/rdf_xml">rdf_xml</a></li>
+<li>generate your own easy-to-use constants for other vocabularies with a build_runner: <a href="https://github.com/kkalass/rdf_vocabulary_to_dart">rdf_vocabulary_to_dart</a></li>
+<li>map Dart Objects ↔️ RDF: <a href="https://github.com/kkalass/rdf_mapper">rdf_mapper</a></li>
+</ul>
+<hr>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="installation">Installation</h3>
+<p>Add the package to your project:</p>
+<pre class="language-sh"><code class="language-sh"># Install Schema.org HTTP vocabulary (~36MB)
+dart pub add rdf_vocabularies_schema_http rdf_core
+
+# Recommended: Also add core vocabularies for RDF, RDFS, OWL, etc. (+5MB)
+dart pub add rdf_vocabularies_core
+</code></pre>
+<h3 id="when-to-use-http-schemaorg">When to Use HTTP Schema.org</h3>
+<ul>
+<li><strong>Legacy Compatibility</strong>: Working with existing data using HTTP URIs</li>
+<li><strong>System Requirements</strong>: Interfacing with systems that expect HTTP URIs</li>
+<li><strong>Data Migration</strong>: Transitioning from HTTP to HTTPS URIs</li>
+<li><strong>Mixed Environments</strong>: Supporting both HTTP and HTTPS in the same application</li>
+</ul>
+<blockquote>
+<p><strong>⚠️ Note</strong>: For new projects, prefer <code>rdf_vocabularies_schema</code> (HTTPS) as it uses the modern standard.</p>
+</blockquote>
+<h2 id="usage">Usage</h2>
+<h3 id="for-rdf-newcomers-class-specific-approach">For RDF Newcomers: Class-Specific Approach</h3>
+<p>If you're new to RDF, the class-specific approach guides you to use the correct properties for each type of resource:</p>
+<pre class="language-dart"><code class="language-dart">import 'package:rdf_core/rdf_core.dart';
+import 'package:rdf_vocabularies_schema_http/schema_http.dart';
+import 'package:rdf_vocabularies_core/rdf.dart';  // Optional: for RDF.type
+
+void main() {
+  final personIri = IriTerm('http://example.org/person/jane_doe');
+  
+  // Create a graph using Schema.org HTTP class-specific constants
+  final graph = RdfGraph.fromTriples([
+    // Use SchemaHttpPerson class for type-safe property access
+    Triple(personIri, Rdf.type, SchemaHttpPerson.classIri),
+    Triple(personIri, SchemaHttpPerson.name, LiteralTerm.string('Jane Doe')),
+    Triple(personIri, SchemaHttpPerson.email, LiteralTerm.string('jane.doe@example.com')),
+    Triple(personIri, SchemaHttpPerson.jobTitle, LiteralTerm.string('Software Developer')),
+    Triple(personIri, SchemaHttpPerson.birthDate, LiteralTerm('1990-01-01')),
+  ]);
+  
+  print(RdfCore.withStandardCodecs().encode(graph));
+</code></pre>
+<p><strong>Benefits</strong>: IDE autocompletion, compile-time validation, HTTP URI compatibility.</p>
+<h3 id="for-rdf-experts-direct-schemaorg-http-access">For RDF Experts: Direct Schema.org HTTP Access</h3>
+<p>Use Schema.org HTTP vocabulary classes directly:</p>
+<pre class="language-dart"><code class="language-dart">import 'package:rdf_core/rdf_core.dart';
+import 'package:rdf_vocabularies_schema_http/schema_http.dart';
+import 'package:rdf_vocabularies_core/rdf.dart';
+
+void main() {
+  final productIri = IriTerm('http://example.org/product/123');
+  
+  // Create structured data with HTTP Schema.org URIs
+  final graph = RdfGraph.fromTriples([
+    Triple(productIri, Rdf.type, SchemaHttp.Product),
+    Triple(productIri, SchemaHttp.name, LiteralTerm.string('Amazing Widget')),
+    Triple(productIri, SchemaHttp.description, LiteralTerm.string('The best widget you can buy')),
+    Triple(productIri, SchemaHttp.price, LiteralTerm.string('29.99')),
+    Triple(productIri, SchemaHttp.priceCurrency, LiteralTerm.string('USD')),
+  ]);
+  
+  print(RdfCore.withStandardCodecs().encode(graph));
+}
+</code></pre>
+<p><strong>Benefits</strong>: Maximum flexibility, HTTP URI compatibility, legacy system support.</p>
+<h2 id="schemaorg-http-vocabulary">Schema.org HTTP Vocabulary</h2>
+<p>This package provides the complete Schema.org vocabulary using legacy HTTP URIs:</p>
+<ul>
+<li><strong>All Schema.org Types</strong>: Person, Organization, Product, Event, Place, etc.</li>
+<li><strong>All Properties</strong>: name, description, url, image, and thousands more</li>
+<li><strong>HTTP URIs</strong>: Uses <code>http://schema.org/...</code> (legacy format)</li>
+<li><strong>Type Safety</strong>: Class-specific constants for better development experience</li>
+<li><strong>Rich Documentation</strong>: Each term includes Schema.org descriptions</li>
+</ul>
+<h3 id="http-vs-https-schemaorg">HTTP vs HTTPS Schema.org</h3>
+<p>Schema.org is available in two URI variants:</p>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>Package</th>
+<th>URIs</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HTTP</strong> (this package)</td>
+<td><code>rdf_vocabularies_schema_http</code></td>
+<td><code>http://schema.org/Person</code></td>
+<td>Legacy compatibility</td>
+</tr>
+<tr>
+<td><strong>HTTPS</strong> (recommended)</td>
+<td><code>rdf_vocabularies_schema</code></td>
+<td><code>https://schema.org/Person</code></td>
+<td>Modern standard</td>
+</tr>
+</tbody>
+</table>
+<p>Both packages contain identical Schema.org content - only the URI scheme differs.</p>
+<h2 id="combining-with-core-vocabularies">Combining with Core Vocabularies</h2>
+<p>For comprehensive RDF support, combine with core vocabularies:</p>
+<pre class="language-sh"><code class="language-sh"># Add both packages for complete coverage
+dart pub add rdf_vocabularies_core rdf_vocabularies_schema_http rdf_core
+</code></pre>
+<pre class="language-dart"><code class="language-dart">import 'package:rdf_vocabularies_core/foaf.dart';  // FOAF vocabulary
+import 'package:rdf_vocabularies_schema_http/schema_http.dart';  // Schema.org HTTP
+
+// Mix vocabularies as needed
+final graph = RdfGraph.fromTriples([
+  Triple(personIri, Rdf.type, SchemaHttp.Person),
+  Triple(personIri, SchemaHttp.name, LiteralTerm.string('Jane Doe')),
+  Triple(personIri, Foaf.age, LiteralTerm.integer(42)),  // FOAF property
+]);
+</code></pre>
+<h2 id="migration-to-https">Migration to HTTPS</h2>
+<p>When ready to migrate to HTTPS URIs, simply switch packages:</p>
+<pre class="language-sh"><code class="language-sh"># Remove HTTP version
+dart pub remove rdf_vocabularies_schema_http
+
+# Add HTTPS version  
+dart pub add rdf_vocabularies_schema
+
+# Update imports:
+# From: import 'package:rdf_vocabularies_schema_http/schema_http.dart';
+# To:   import 'package:rdf_vocabularies_schema/schema.dart';
+</code></pre>
+<h2 id="performance-characteristics">Performance Characteristics</h2>
+<ul>
+<li><strong>Zero Runtime Overhead</strong>: Nearly all content consists of compile-time constants</li>
+<li><strong>Large but Focused</strong>: ~36MB download for complete Schema.org coverage</li>
+<li><strong>Type Safety</strong>: Catch vocabulary usage errors at compile time</li>
+<li><strong>IDE Integration</strong>: Get autocompletion and documentation directly in your editor</li>
+</ul>
+<h2 id="-contributing">🤝 Contributing</h2>
+<p>Contributions, bug reports, and feature requests are welcome!</p>
+<ul>
+<li>Fork the repo and submit a PR</li>
+<li>See <a href="https://github.com/kkalass/rdf_vocabularies/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> for guidelines</li>
+<li>Join the discussion in <a href="https://github.com/kkalass/rdf_vocabularies/issues">GitHub Issues</a></li>
+</ul>
+<hr>
+<p>© 2025 Klas Kalaß. Licensed under the MIT License.</p>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="schema_http">
+  <span class="name"><a href="schema_http/">schema_http</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+        </dl>
+      </section>
+  </div> <!-- /.main-content -->
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="https://kkalass.github.io/rdf_vocabularies/">rdf_vocabularies_schema_http package</a></li>
+</ol>
+
+    <h5 class="hidden-xs"><span class="package-name">rdf_vocabularies_schema_http</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="schema_http/">schema_http</a></li>
+</ol>
+
+  </div>
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+</main>
+<footer>
+  <span class="no-break">
+    rdf_vocabularies_schema_http
+      0.4.0-dev
+  </span>
+  
+</footer>
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+

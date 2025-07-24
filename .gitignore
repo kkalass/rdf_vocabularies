@@ -18,3 +18,12 @@ coverage/
 
 # Misc
 *.log
+
+# Root level should not have pubspec.lock
+/pubspec.lock
+
+# Documentation
+# Generated API docs in individual packages should not be committed
+packages/*/doc/api/
+# Only commit the aggregated documentation for GitHub Pages
+!doc/

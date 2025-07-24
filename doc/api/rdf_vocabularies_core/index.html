@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="rdf_vocabularies_core API docs, for the Dart programming language.">
+  <title>rdf_vocabularies_core - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+  
+</head>
+
+<body data-base-href="" data-using-base-href="false" class="light-theme">
+<div id="overlay-under-drawer"></div>
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="https://kkalass.github.io/rdf_vocabularies/">rdf_vocabularies_core package</a></li>
+  </ol>
+  <div class="self-name">rdf_vocabularies_core</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <button class="toggle" id="theme-button" title="Toggle between light and dark mode" aria-label="Light and dark mode toggle">
+    <span id="dark-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      dark_mode
+    </span>
+    <span id="light-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      light_mode
+    </span>
+  </button>
+</header>
+<main>
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 id="rdf-vocabularies-core---essential-rdf-vocabularies">RDF Vocabularies Core - Essential RDF Vocabularies</h1>
+<p><a href="https://pub.dev/packages/rdf_vocabularies_core"><img src="https://img.shields.io/pub/v/rdf_vocabularies_core.svg" alt="pub package"></a>
+<a href="https://github.com/kkalass/rdf_vocabularies/actions"><img src="https://github.com/kkalass/rdf_vocabularies/actions/workflows/ci.yml/badge.svg" alt="build"></a>
+<a href="https://codecov.io/gh/kkalass/rdf_vocabularies"><img src="https://codecov.io/gh/kkalass/rdf_vocabularies/branch/main/graph/badge.svg" alt="codecov"></a>
+<a href="https://github.com/kkalass/rdf_vocabularies/blob/main/LICENSE"><img src="https://img.shields.io/github/license/kkalass/rdf_vocabularies.svg" alt="license"></a></p>
+<h2 id="overview">Overview</h2>
+<p><a href="https://kkalass.github.io/rdf_vocabularies/">🌐 <strong>Official Homepage</strong></a></p>
+<p><code>rdf_vocabularies_core</code> provides type-safe access to <strong>core RDF vocabulary terms</strong> as Dart constants for use with <a href="https://pub.dev/packages/rdf_core"><code>rdf_core</code></a>.</p>
+<p>This package contains the <strong>essential RDF vocabularies</strong> (~5MB) that cover most semantic web applications without the large Schema.org vocabularies.</p>
+<h2 id="-package-selection-guide">📦 Package Selection Guide</h2>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>Download Size</th>
+<th>Content</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>rdf_vocabularies_core</code></strong> (this package)</td>
+<td><strong>~5MB</strong></td>
+<td>Core RDF vocabularies</td>
+<td>Most applications</td>
+</tr>
+<tr>
+<td><strong><a href="https://pub.dev/packages/rdf_vocabularies"><code>rdf_vocabularies</code></a></strong></td>
+<td>~77MB</td>
+<td>All vocabularies</td>
+<td>Full compatibility</td>
+</tr>
+<tr>
+<td><strong><a href="https://pub.dev/packages/rdf_vocabularies_schema"><code>rdf_vocabularies_schema</code></a></strong></td>
+<td>~35MB</td>
+<td>Schema.org HTTPS</td>
+<td>Schema.org apps</td>
+</tr>
+<tr>
+<td><strong><a href="https://pub.dev/packages/rdf_vocabularies_schema_http"><code>rdf_vocabularies_schema_http</code></a></strong></td>
+<td>~36MB</td>
+<td>Schema.org HTTP</td>
+<td>Legacy compatibility</td>
+</tr>
+</tbody>
+</table>
+<p>The library is designed for both RDF newcomers and experts, offering structured ways to work with semantic data while maintaining compilation-time safety.</p>
+<hr>
+<h2 id="part-of-a-whole-family-of-projects">Part of a whole family of projects</h2>
+<p>If you are looking for more rdf-related functionality, have a look at our companion projects:</p>
+<ul>
+<li>basic graph classes as well as turtle/jsonld/n-triple encoding and decoding: <a href="https://github.com/kkalass/rdf_core">rdf_core</a></li>
+<li>encode and decode rdf/xml format: <a href="https://github.com/kkalass/rdf_xml">rdf_xml</a></li>
+<li>generate your own easy-to-use constants for other vocabularies with a build_runner: <a href="https://github.com/kkalass/rdf_vocabulary_to_dart">rdf_vocabulary_to_dart</a></li>
+<li>map Dart Objects ↔️ RDF: <a href="https://github.com/kkalass/rdf_mapper">rdf_mapper</a></li>
+</ul>
+<hr>
+<h2 id="part-of-a-whole-family-of-projects-2">Part of a whole family of projects</h2>
+<p>If you are looking for more rdf-related functionality, have a look at our companion projects:</p>
+<ul>
+<li>basic graph classes as well as turtle/jsonld/n-triple encoding and decoding: <a href="https://github.com/kkalass/rdf_core">rdf_core</a></li>
+<li>encode and decode rdf/xml format: <a href="https://github.com/kkalass/rdf_xml">rdf_xml</a></li>
+<li>generate your own easy-to-use constants for other vocabularies with a build_runner: <a href="https://github.com/kkalass/rdf_vocabulary_to_dart">rdf_vocabulary_to_dart</a></li>
+<li>map Dart Objects ↔️ RDF: <a href="https://github.com/kkalass/rdf_mapper">rdf_mapper</a></li>
+</ul>
+<hr>
+<h2 id="package-characteristics">Package Characteristics</h2>
+<ul>
+<li><strong>Zero Runtime Overhead</strong>: Nearly all content is composed of compile-time constants</li>
+<li><strong>Small Binary Size</strong>: Minimal impact on your application's size</li>
+<li><strong>Type Safety</strong>: Catch vocabulary usage errors at compile time</li>
+<li><strong>IDE Assistance</strong>: Get autocompletion and documentation directly in your editor</li>
+</ul>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>Dual Interface</strong>: Choose between class-specific access for beginners or full vocabulary access for experts</li>
+<li><strong>Comprehensive Coverage</strong>: Access terms from popular RDF vocabularies (Schema.org, FOAF, Dublin Core, etc.)</li>
+<li><strong>Rich Documentation</strong>: Each term includes its original description from the vocabulary</li>
+<li><strong>Seamless Integration</strong>: Works perfectly with the <code>rdf_core</code> library</li>
+</ul>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="installation">Installation</h3>
+<p>Add the package to your project:</p>
+<pre class="language-sh"><code class="language-sh"># Install core vocabularies package (~5MB)
+dart pub add rdf_vocabularies_core rdf_core
+</code></pre>
+<h3 id="why-choose-core-package">Why Choose Core Package?</h3>
+<ul>
+<li><strong>Smaller Download</strong>: Only ~5MB vs ~77MB for the full meta-package</li>
+<li><strong>Essential Vocabularies</strong>: Includes RDF, RDFS, OWL, FOAF, Dublin Core, SKOS, and more</li>
+<li><strong>Most Use Cases</strong>: Covers the majority of semantic web applications</li>
+<li><strong>Add Schema.org Later</strong>: Easily add Schema.org vocabularies if needed</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<h3 id="for-rdf-newcomers-class-specific-approach">For RDF Newcomers: Class-Specific Approach</h3>
+<p>If you're new to RDF, the class-specific approach guides you to use the correct properties for each type of resource:</p>
+<pre class="language-dart"><code class="language-dart">import 'package:rdf_core/rdf_core.dart';
+import 'package:rdf_vocabularies_core/foaf.dart';
+import 'package:rdf_vocabularies_core/rdf.dart';
+import 'package:rdf_vocabularies_core/xsd.dart';
+
+void main() {
+  final personIri = IriTerm('http://example.org/person/jane_doe');
+  
+  // Create a graph using class-specific constants
+  final graph = RdfGraph.fromTriples([
+    // Use FoafPerson class for type-safe property access
+    Triple(personIri, Rdf.type, FoafPerson.classIri),
+    Triple(personIri, FoafPerson.name, LiteralTerm.string('Jane Doe')),
+    Triple(personIri, FoafPerson.givenName, LiteralTerm.string('Jane')),
+    Triple(personIri, FoafPerson.familyName, LiteralTerm.string('Doe')),
+    Triple(personIri, FoafPerson.age, LiteralTerm.integer(42)),
+    Triple(personIri, FoafPerson.mbox, IriTerm('mailto:jane.doe@example.com')),
+  ]);
+  
+  print(RdfCore.withStandardCodecs().encode(graph));
+</code></pre>
+<p><strong>Benefits</strong>: IDE autocompletion, compile-time validation, guided vocabulary discovery.</p>
+<h3 id="for-rdf-experts-direct-vocabulary-approach">For RDF Experts: Direct Vocabulary Approach</h3>
+<p>Use vocabulary classes directly for maximum flexibility:</p>
+<pre class="language-dart"><code class="language-dart">import 'package:rdf_core/rdf_core.dart';
+import 'package:rdf_vocabularies_core/foaf.dart';
+import 'package:rdf_vocabularies_core/rdf.dart';
+import 'package:rdf_vocabularies_core/dc.dart';
+
+void main() {
+  final personIri = IriTerm('http://example.org/person/jane_doe');
+  
+  // Create a graph with direct vocabulary access
+  final graph = RdfGraph.fromTriples([
+    Triple(personIri, Rdf.type, Foaf.Person),
+    Triple(personIri, Foaf.name, LiteralTerm.string('Jane Doe')),
+    Triple(personIri, Foaf.age, LiteralTerm.integer(42)),
+    Triple(personIri, Dc.creator, LiteralTerm.string('System')),
+  ]);
+  
+  print(RdfCore.withStandardCodecs().encode(graph));
+}
+</code></pre>
+<p><strong>Benefits</strong>: Maximum flexibility, concise syntax, mix vocabularies freely.</p>
+<h2 id="core-vocabularies-included">Core Vocabularies Included</h2>
+<p>This package includes the essential RDF vocabularies for most semantic web applications:</p>
+<ul>
+<li><strong>RDF</strong>: Resource Description Framework base vocabulary</li>
+<li><strong>RDFS</strong>: RDF Schema vocabulary</li>
+<li><strong>OWL</strong>: Web Ontology Language</li>
+<li><strong>FOAF</strong>: Friend of a Friend vocabulary</li>
+<li><strong>DC/DCTerms</strong>: Dublin Core vocabularies (metadata)</li>
+<li><strong>SKOS</strong>: Simple Knowledge Organization System</li>
+<li><strong>VCard</strong>: vCard ontology for contacts</li>
+<li><strong>XSD</strong>: XML Schema Datatypes</li>
+<li><strong>ACL</strong>: Web Access Control vocabulary</li>
+<li><strong>Contact</strong>: Contact information vocabulary</li>
+<li><strong>EventOwl</strong>: Event vocabulary</li>
+<li><strong>GEO</strong>: Geospatial vocabulary</li>
+<li><strong>LDP</strong>: Linked Data Platform vocabulary</li>
+<li><strong>Solid</strong>: Solid platform vocabulary</li>
+<li><strong>VS</strong>: Vocabulary Status ontology</li>
+</ul>
+<h2 id="adding-schemaorg-support">Adding Schema.org Support</h2>
+<p>If you need Schema.org vocabularies, add them separately:</p>
+<pre class="language-sh"><code class="language-sh"># Modern Schema.org with HTTPS URIs (+35MB)
+dart pub add rdf_vocabularies_schema
+
+# Legacy Schema.org with HTTP URIs (+36MB) 
+dart pub add rdf_vocabularies_schema_http
+</code></pre>
+<h2 id="performance-characteristics">Performance Characteristics</h2>
+<ul>
+<li><strong>Zero Runtime Overhead</strong>: Nearly all content consists of compile-time constants</li>
+<li><strong>Optimized Size</strong>: Only ~5MB vs ~77MB for the full package</li>
+<li><strong>Type Safety</strong>: Catch vocabulary usage errors at compile time</li>
+<li><strong>IDE Integration</strong>: Get autocompletion and documentation directly in your editor</li>
+</ul>
+<h2 id="upgrading-from-meta-package">Upgrading from Meta-Package</h2>
+<p>Easily switch from the full <code>rdf_vocabularies</code> package to optimize size:</p>
+<pre class="language-sh"><code class="language-sh"># Remove the large meta-package
+dart pub remove rdf_vocabularies
+
+# Add the optimized core package
+dart pub add rdf_vocabularies_core
+
+# Update imports from 'package:rdf_vocabularies/' to 'package:rdf_vocabularies_core/'
+</code></pre>
+<p>The API remains identical - only import paths change.</p>
+<h2 id="-contributing">🤝 Contributing</h2>
+<p>Contributions, bug reports, and feature requests are welcome!</p>
+<ul>
+<li>Fork the repo and submit a PR</li>
+<li>See <a href="https://github.com/kkalass/rdf_vocabularies/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> for guidelines</li>
+<li>Join the discussion in <a href="https://github.com/kkalass/rdf_vocabularies/issues">GitHub Issues</a></li>
+</ul>
+<h2 id="-ai-policy">🤖 AI Policy</h2>
+<p>This project is proudly human-led and human-controlled, with all key decisions, design, and code reviews made by people. At the same time, it stands on the shoulders of LLM giants: generative AI tools are used throughout the development process to accelerate iteration, inspire new ideas, and improve documentation quality. We believe that combining human expertise with the best of AI leads to higher-quality, more innovative open source software.</p>
+<hr>
+<p>© 2025 Klas Kalaß. Licensed under the MIT License.</p>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="acl">
+  <span class="name"><a href="acl/">acl</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="contact">
+  <span class="name"><a href="contact/">contact</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="dc">
+  <span class="name"><a href="dc/">dc</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="dcmitype">
+  <span class="name"><a href="dcmitype/">dcmitype</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="dcterms">
+  <span class="name"><a href="dcterms/">dcterms</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="eventowl">
+  <span class="name"><a href="eventowl/">eventowl</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="foaf">
+  <span class="name"><a href="foaf/">foaf</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="geo">
+  <span class="name"><a href="geo/">geo</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="ldp">
+  <span class="name"><a href="ldp/">ldp</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="owl">
+  <span class="name"><a href="owl/">owl</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="rdf">
+  <span class="name"><a href="rdf/">rdf</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="rdfs">
+  <span class="name"><a href="rdfs/">rdfs</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="skos">
+  <span class="name"><a href="skos/">skos</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="solid">
+  <span class="name"><a href="solid/">solid</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="vcard">
+  <span class="name"><a href="vcard/">vcard</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="vs">
+  <span class="name"><a href="vs/">vs</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+          <dt id="xsd">
+  <span class="name"><a href="xsd/">xsd</a></span> 
+
+</dt>
+<dd>
+</dd>
+
+        </dl>
+      </section>
+  </div> <!-- /.main-content -->
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="https://kkalass.github.io/rdf_vocabularies/">rdf_vocabularies_core package</a></li>
+</ol>
+
+    <h5 class="hidden-xs"><span class="package-name">rdf_vocabularies_core</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="acl/">acl</a></li>
+      <li><a href="contact/">contact</a></li>
+      <li><a href="dc/">dc</a></li>
+      <li><a href="dcmitype/">dcmitype</a></li>
+      <li><a href="dcterms/">dcterms</a></li>
+      <li><a href="eventowl/">eventowl</a></li>
+      <li><a href="foaf/">foaf</a></li>
+      <li><a href="geo/">geo</a></li>
+      <li><a href="ldp/">ldp</a></li>
+      <li><a href="owl/">owl</a></li>
+      <li><a href="rdf/">rdf</a></li>
+      <li><a href="rdfs/">rdfs</a></li>
+      <li><a href="skos/">skos</a></li>
+      <li><a href="solid/">solid</a></li>
+      <li><a href="vcard/">vcard</a></li>
+      <li><a href="vs/">vs</a></li>
+      <li><a href="xsd/">xsd</a></li>
+</ol>
+
+  </div>
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+</main>
+<footer>
+  <span class="no-break">
+    rdf_vocabularies_core
+      0.4.0-dev
+  </span>
+  
+</footer>
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/docs.dart.js"></script>
+
+</body>
+</html>
+
