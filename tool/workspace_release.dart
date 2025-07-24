@@ -68,9 +68,9 @@ void main(List<String> args) async {
       await _validateCleanWorkingDirectory();
     }
 
-    // Step 4: Run all tests
-    print('🧪 Running tests for all packages...');
-    await _runAllTests();
+    // Step 4: Run tests for core packages only (meta-package tested after deps update)
+    print('🧪 Running tests for core packages...');
+    await _runCorePackageTests();
 
     // Step 5: Validate CHANGELOGs
     await _validateChangelogs(releaseVersion);
@@ -81,27 +81,19 @@ void main(List<String> args) async {
       await _generateDocumentation();
     }
 
-    // Step 7: Update meta-package dependencies to release version
-    print('🔄 Updating meta-package dependencies to version $releaseVersion...');
-    if (!dryRun) {
-      await _updateDependencies(releaseVersion, false);
-    }
-
-    // Step 8: Create git tag and commit
+    // Step 7: Create git tag and commit (without meta-package dependency updates)
     if (!dryRun) {
       await _createReleaseCommit(releaseVersion);
     }
 
-    // Step 9: Publish packages 
+    // Step 8: Publish packages 
     if (!skipPublish && !dryRun) {
       await _publishToPublicRegistry(releaseVersion);
     } else if (dryRun) {
       print('🚀 Would publish packages to pub.dev (skipped in dry run)');
     } else {
       print('🚀 Publishing skipped (--no-publish flag)');
-    }
-
-    // Step 10: Set next development version (dependencies stay at current version)
+    }    // Step 9: Set next development version (dependencies stay at current version)
     if (!dryRun) {
       final nextDevVersion = _incrementToNextDevVersion(releaseVersion);
       print('🔄 Setting next development version: $nextDevVersion');
@@ -210,8 +202,15 @@ Future<void> _validateCleanWorkingDirectory() async {
   print('   ✓ Working directory is clean');
 }
 
-Future<void> _runAllTests() async {
-  for (final packagePath in packages) {
+Future<void> _runCorePackageTests() async {
+  // Test only core packages (not meta-package which has unresolved dependencies)
+  final corePackages = [
+    'packages/rdf_vocabularies_core',
+    'packages/rdf_vocabularies_schema', 
+    'packages/rdf_vocabularies_schema_http',
+  ];
+  
+  for (final packagePath in corePackages) {
     print('   Testing $packagePath...');
 
     // First ensure dependencies are resolved
@@ -223,7 +222,20 @@ Future<void> _runAllTests() async {
     await _runProcessChecked('dart', ['test'], packagePath);
   }
 
-  print('   ✓ All tests passed');
+  print('   ✓ All core package tests passed');
+}
+
+Future<void> _runMetaPackageTests() async {
+  final metaPackage = 'packages/rdf_vocabularies';
+  
+  print('   Testing $metaPackage...');
+  print('     Getting dependencies...');
+  await _runProcessChecked('dart', ['pub', 'get'], metaPackage);
+  
+  print('     Running tests...');
+  await _runProcessChecked('dart', ['test'], metaPackage);
+  
+  print('   ✓ Meta-package tests passed');
 }
 
 Future<void> _validateChangelogs(String version) async {
@@ -283,9 +295,9 @@ Future<void> _publishToPublicRegistry(String version) async {
   ];
   final metaPackage = 'packages/rdf_vocabularies';
 
-  // First, validate all packages with dry run
-  print('   🔍 Validating all packages with dry run...');
-  for (final packagePath in packages) {
+  // Step 1: Validate core packages with dry run
+  print('   🔍 Validating core packages with dry run...');
+  for (final packagePath in corePackages) {
     print('     Validating $packagePath...');
     await _runProcessChecked('dart', [
       'pub',
@@ -295,7 +307,7 @@ Future<void> _publishToPublicRegistry(String version) async {
     print('   ✓ $packagePath validation passed');
   }
 
-  // Step 1: Publish core packages first
+  // Step 2: Publish core packages first
   print('   📦 Publishing core packages...');
   for (final packagePath in corePackages) {
     print('   📦 Publishing $packagePath...');
@@ -308,10 +320,34 @@ Future<void> _publishToPublicRegistry(String version) async {
     await Future.delayed(Duration(seconds: 2));
   }
 
-  // Step 2: Publish meta-package (dependencies already updated)
+  // Step 3: Wait a bit for packages to be available on pub.dev
+  print('   ⏳ Waiting for packages to be available on pub.dev...');
+  await Future.delayed(Duration(seconds: 10));
+
+  // Step 4: Update meta-package dependencies to new version
+  print('   🔄 Updating meta-package dependencies to version $version...');
+  await _updateDependencies(version, false);
+
+  // Step 5: Test meta-package with updated dependencies
+  print('   🧪 Testing meta-package with updated dependencies...');
+  await _runMetaPackageTests();
+
+  // Step 6: Validate and publish meta-package
+  print('     Validating meta-package...');
+  await _runProcessChecked('dart', [
+    'pub',
+    'publish',
+    '--dry-run',
+  ], metaPackage);
+
   print('   📦 Publishing meta-package...');
   await _runProcessChecked('dart', ['pub', 'publish', '--force'], metaPackage);
   print('   ✅ Successfully published $metaPackage');
+
+  // Step 7: Create final commit with updated dependencies
+  print('   📝 Committing updated meta-package dependencies...');
+  await _commitVersionChange(version, 'Update meta-package dependencies for release');
+
   print('   🎉 All packages published successfully!');
 }
 
