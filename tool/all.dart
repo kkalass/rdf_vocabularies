@@ -480,15 +480,26 @@ Future<void> cmdRelease(
   logSection('🚀 Running workspace-wide release process');
   logInfo('Using coordinated release to avoid tag conflicts...');
 
-  // Run the workspace release script with optional extra arguments
-  final result = await Process.run('dart', [
+  // Run the workspace release script with streaming output
+  final process = await Process.start('dart', [
     'run',
     'tool/workspace_release.dart',
     ...?extraArgs,
   ], workingDirectory: workspaceRoot.path);
 
-  if (result.exitCode != 0) {
-    throw Exception('Workspace release failed: ${result.stderr}');
+  // Forward stdout and stderr in real-time
+  process.stdout.listen((data) {
+    stdout.add(data);
+  });
+  
+  process.stderr.listen((data) {
+    stderr.add(data);
+  });
+
+  final exitCode = await process.exitCode;
+
+  if (exitCode != 0) {
+    throw Exception('Workspace release failed with exit code $exitCode');
   }
 
   logSuccess('Workspace release completed successfully!');

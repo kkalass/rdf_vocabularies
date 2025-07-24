@@ -15,13 +15,24 @@ import 'dart:io';
 
 Future<void> main(List<String> args) async {
   // Delegate to all.dart release command with all arguments passed through
-  final process = await Process.start('dart', [
+  final process = Process.start('dart', [
     'run',
     'tool/all.dart',
     'release',
     ...args,
-  ], mode: ProcessStartMode.inheritStdio);
+  ]);
 
-  final exitCode = await process.exitCode;
+  final processInstance = await process;
+  
+  // Forward stdout and stderr in real-time
+  processInstance.stdout.listen((data) {
+    stdout.add(data);
+  });
+  
+  processInstance.stderr.listen((data) {
+    stderr.add(data);
+  });
+
+  final exitCode = await processInstance.exitCode;
   exit(exitCode);
 }
