@@ -44,117 +44,16 @@ jobs:
               --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
           fi
       
-      # Store coverage artifacts for later combining  
-      - name: Upload coverage artifacts
+      # Upload coverage directly to Codecov
+      - name: Upload coverage to Codecov
         if: hashFiles('${{ matrix.package }}/coverage/lcov.info') != ''
-        run: |
-          # Create a package info file to track which package this artifact belongs to
-          echo "${{ matrix.package }}" > ${{ matrix.package }}/coverage/package.txt
-        
-      - name: Upload coverage artifacts with package info
-        if: hashFiles('${{ matrix.package }}/coverage/lcov.info') != ''
-        uses: actions/upload-artifact@v4
+        uses: codecov/codecov-action@v4
         with:
-          name: coverage-${{ strategy.job-index }}
-          path: |
-            ${{ matrix.package }}/coverage/lcov.info
-            ${{ matrix.package }}/coverage/package.txt
-          retention-days: 1
-
-  # Combined coverage job for better monorepo support
-  coverage:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      
-      # Download all coverage artifacts
-      - name: Download coverage artifacts
-        uses: actions/download-artifact@v4
-        with:
-          pattern: coverage-*
-          path: coverage-artifacts
-          merge-multiple: true
-      
-      # List what we downloaded
-      - name: List downloaded artifacts
-        run: |
-          echo "Downloaded artifacts:"
-          find coverage-artifacts -name "*.info" -type f || echo "No .info files found"
-          ls -la coverage-artifacts/ || echo "No coverage-artifacts directory"
-      
-      # Merge and upload coverage
-      - name: Merge coverage files and upload to Codecov
-        run: |
-          mkdir -p coverage/combined
-          
-          # Check if we have any coverage files
-          if find coverage-artifacts -name "*.info" -type f | head -1 | read; then
-            echo "Found coverage files, merging..."
-            
-            # Process each artifact directory
-            for artifact_dir in coverage-artifacts/*/; do
-              if [ -d "$artifact_dir" ]; then
-                echo "Processing artifact directory: $artifact_dir"
-                
-                # Find the package.txt file to determine package name
-                if [ -f "${artifact_dir}package.txt" ]; then
-                  PACKAGE_NAME=$(cat "${artifact_dir}package.txt")
-                  echo "Package name: $PACKAGE_NAME"
-                  
-                  # Find the lcov.info file
-                  if [ -f "${artifact_dir}lcov.info" ]; then
-                    # Create a safe filename
-                    SAFE_NAME=$(echo "$PACKAGE_NAME" | sed 's|packages/||' | sed 's|/|_|g')
-                    TARGET_FILE="coverage/combined/${SAFE_NAME}.lcov.info"
-                    
-                    # Copy the lcov file
-                    cp "${artifact_dir}lcov.info" "$TARGET_FILE"
-                    echo "Copied: ${artifact_dir}lcov.info -> $TARGET_FILE"
-                    
-                    # Adjust paths based on package name
-                    case "$PACKAGE_NAME" in
-                      packages/rdf_vocabularies_core)
-                        sed -i 's|SF:lib/|SF:packages/rdf_vocabularies_core/lib/|g' "$TARGET_FILE"
-                        ;;
-                      packages/rdf_vocabularies_schema_http)
-                        sed -i 's|SF:lib/|SF:packages/rdf_vocabularies_schema_http/lib/|g' "$TARGET_FILE"
-                        ;;
-                      packages/rdf_vocabularies_schema)
-                        sed -i 's|SF:lib/|SF:packages/rdf_vocabularies_schema/lib/|g' "$TARGET_FILE"
-                        ;;
-                      packages/rdf_vocabularies)
-                        sed -i 's|SF:lib/|SF:packages/rdf_vocabularies/lib/|g' "$TARGET_FILE"
-                        ;;
-                    esac
-                    echo "Adjusted paths in: $TARGET_FILE"
-                  fi
-                fi
-              fi
-            done
-            
-            # Combine all files
-            if ls coverage/combined/*.lcov.info 1> /dev/null 2>&1; then
-              cat coverage/combined/*.lcov.info > coverage/combined/final.lcov.info
-              
-              echo "Combined coverage file created:"
-              head -30 coverage/combined/final.lcov.info
-              echo "..."
-              echo "Total lines in combined file: $(wc -l < coverage/combined/final.lcov.info)"
-              
-              # Upload to Codecov
-              echo "Uploading to Codecov..."
-              curl -Os https://uploader.codecov.io/latest/linux/codecov
-              chmod +x codecov
-              ./codecov -f coverage/combined/final.lcov.info -t ${{ secrets.CODECOV_TOKEN }} -F combined
-            else
-              echo "No .lcov.info files found after processing"
-              exit 1
-            fi
-          else
-            echo "No coverage files found to merge"
-            exit 1
-          fi
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ${{ matrix.package }}/coverage/lcov.info
+          flags: ${{ matrix.package }}
+          name: ${{ matrix.package }}-coverage
+          fail_ci_if_error: false
 
   # Additional job to run workspace-level operations
   workspace:
