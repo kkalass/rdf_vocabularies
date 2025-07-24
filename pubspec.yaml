@@ -12,3 +12,7 @@ environment:
 # - packages/rdf_vocabularies_core: Core RDF vocabularies (RDF, RDFS, OWL, FOAF, etc.)
 # - packages/rdf_vocabularies_schema: Schema.org HTTPS vocabulary
 # - packages/rdf_vocabularies_schema_http: Schema.org HTTP vocabulary
+
+dev_dependencies:
+  yaml: ^3.1.2
+  path: ^1.8.0
