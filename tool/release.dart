@@ -23,12 +23,12 @@ Future<void> main(List<String> args) async {
   ]);
 
   final processInstance = await process;
-  
+
   // Forward stdout and stderr in real-time
   processInstance.stdout.listen((data) {
     stdout.add(data);
   });
-  
+
   processInstance.stderr.listen((data) {
     stderr.add(data);
   });

@@ -491,7 +491,7 @@ Future<void> cmdRelease(
   process.stdout.listen((data) {
     stdout.add(data);
   });
-  
+
   process.stderr.listen((data) {
     stderr.add(data);
   });

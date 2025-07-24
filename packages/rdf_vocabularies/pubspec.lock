@@ -231,21 +231,21 @@ packages:
       path: "../rdf_vocabularies_core"
       relative: true
     source: path
-    version: "0.4.0"
+    version: "0.4.1-dev"
   rdf_vocabularies_schema:
     dependency: "direct main"
     description:
       path: "../rdf_vocabularies_schema"
       relative: true
     source: path
-    version: "0.4.0"
+    version: "0.4.1-dev"
   rdf_vocabularies_schema_http:
     dependency: "direct main"
     description:
       path: "../rdf_vocabularies_schema_http"
       relative: true
     source: path
-    version: "0.4.0"
+    version: "0.4.1-dev"
   shelf:
     dependency: transitive
     description:
