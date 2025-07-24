@@ -91,7 +91,11 @@ void main(List<String> args) async {
     } else if (resume) {
       print('📝 Skipping git tag creation (resume mode)');
       // Verify tag exists
-      final tagResult = await _runProcess('git', ['tag', '--list', 'v$releaseVersion']);
+      final tagResult = await _runProcess('git', [
+        'tag',
+        '--list',
+        'v$releaseVersion',
+      ]);
       if (tagResult.stdout.toString().trim().isEmpty) {
         throw Exception('Resume mode requires tag v$releaseVersion to exist');
       }
@@ -296,13 +300,16 @@ Future<void> _createReleaseCommit(String version) async {
   print('   ✓ Pushed tag to origin');
 }
 
-Future<void> _publishToPublicRegistry(String version, [bool resume = false]) async {
+Future<void> _publishToPublicRegistry(
+  String version, [
+  bool resume = false,
+]) async {
   print('🚀 Publishing packages to pub.dev...');
-  
+
   // Define package groups
   final corePackages = [
     'packages/rdf_vocabularies_core',
-    'packages/rdf_vocabularies_schema', 
+    'packages/rdf_vocabularies_schema',
     'packages/rdf_vocabularies_schema_http',
   ];
   final metaPackage = 'packages/rdf_vocabularies';
@@ -330,7 +337,7 @@ Future<void> _publishToPublicRegistry(String version, [bool resume = false]) asy
       print('     Skipping validation for already published $packagePath');
       continue;
     }
-    
+
     print('     Validating $packagePath...');
     await _runPublishProcessChecked('dart', [
       'pub',
@@ -347,7 +354,7 @@ Future<void> _publishToPublicRegistry(String version, [bool resume = false]) asy
       print('   ⏭️  Skipping already published $packagePath');
       continue;
     }
-    
+
     print('   📦 Publishing $packagePath...');
     await _runPublishProcessChecked('dart', [
       'pub',
@@ -356,7 +363,7 @@ Future<void> _publishToPublicRegistry(String version, [bool resume = false]) asy
     ], packagePath);
     print('   ✅ Successfully published $packagePath');
     await Future.delayed(Duration(seconds: 2));
-  }  // Step 3: Wait a bit for packages to be available on pub.dev
+  } // Step 3: Wait a bit for packages to be available on pub.dev
   print('   ⏳ Waiting for packages to be available on pub.dev...');
   await Future.delayed(Duration(seconds: 10));
 
@@ -377,7 +384,11 @@ Future<void> _publishToPublicRegistry(String version, [bool resume = false]) asy
   ], metaPackage);
 
   print('   📦 Publishing meta-package...');
-  await _runPublishProcessChecked('dart', ['pub', 'publish', '--force'], metaPackage);
+  await _runPublishProcessChecked('dart', [
+    'pub',
+    'publish',
+    '--force',
+  ], metaPackage);
   print('   ✅ Successfully published $metaPackage');
 
   // Step 7: Create final commit with updated dependencies
@@ -479,7 +490,7 @@ Future<void> _runPublishProcessChecked(
   String? workingDirectory,
 ]) async {
   final result = await _runProcess(command, args, workingDirectory);
-  
+
   // Exit code 65 indicates warnings but successful validation/publishing
   // Exit code 0 indicates complete success
   // Any other exit code is considered a failure
@@ -488,9 +499,11 @@ Future<void> _runPublishProcessChecked(
       'Command failed: $command ${args.join(' ')} (exit code: ${result.exitCode})',
     );
   }
-  
+
   if (result.exitCode == 65) {
-    print('     ⚠️  Command completed with warnings (exit code 65) - continuing');
+    print(
+      '     ⚠️  Command completed with warnings (exit code 65) - continuing',
+    );
   }
 }
 
@@ -501,11 +514,11 @@ Future<bool> _checkPackagePublished(String packageName, String version) async {
       '-s',
       'https://pub.dev/api/packages/$packageName',
     ]);
-    
+
     if (result.exitCode != 0) {
       return false; // Package doesn't exist
     }
-    
+
     final response = result.stdout.toString();
     return response.contains('"version":"$version"');
   } catch (e) {
