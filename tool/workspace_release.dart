@@ -81,12 +81,18 @@ void main(List<String> args) async {
       await _generateDocumentation();
     }
 
-    // Step 7: Create git tag and commit
+    // Step 7: Update meta-package dependencies to release version
+    print('🔄 Updating meta-package dependencies to version $releaseVersion...');
+    if (!dryRun) {
+      await _updateDependencies(releaseVersion, false);
+    }
+
+    // Step 8: Create git tag and commit
     if (!dryRun) {
       await _createReleaseCommit(releaseVersion);
     }
 
-    // Step 8: Publish packages (meta-package dependencies will be updated during publishing)
+    // Step 9: Publish packages 
     if (!skipPublish && !dryRun) {
       await _publishToPublicRegistry(releaseVersion);
     } else if (dryRun) {
@@ -95,7 +101,7 @@ void main(List<String> args) async {
       print('🚀 Publishing skipped (--no-publish flag)');
     }
 
-    // Step 9: Set next development version (dependencies stay at current version)
+    // Step 10: Set next development version (dependencies stay at current version)
     if (!dryRun) {
       final nextDevVersion = _incrementToNextDevVersion(releaseVersion);
       print('🔄 Setting next development version: $nextDevVersion');
@@ -302,11 +308,7 @@ Future<void> _publishToPublicRegistry(String version) async {
     await Future.delayed(Duration(seconds: 2));
   }
 
-  // Step 2: Update meta-package dependencies to new version
-  print('   🔄 Updating meta-package dependencies to version $version...');
-  await _updateDependencies(version, false);
-
-  // Step 3: Publish meta-package
+  // Step 2: Publish meta-package (dependencies already updated)
   print('   📦 Publishing meta-package...');
   await _runProcessChecked('dart', ['pub', 'publish', '--force'], metaPackage);
   print('   ✅ Successfully published $metaPackage');
