@@ -523,12 +523,14 @@ Options:
   --dry-run           Simulate the release process without making changes
   --no-publish        Skip triggering the publishing workflow
   --non-interactive   Skip interactive prompts (requires clean working directory)
+  --resume            Continue an interrupted release (skip already published packages)
   --help              Show this help message
 
 Examples:
   dart run tool/release.dart --dry-run       # Test the release process
   dart run tool/release.dart                 # Perform full release
   dart run tool/release.dart --no-publish    # Create tag but don't publish
+  dart run tool/release.dart --resume        # Continue interrupted release
 
 This script coordinates releases across all packages in the workspace to ensure:
 - All packages have the same version
@@ -537,5 +539,12 @@ This script coordinates releases across all packages in the workspace to ensure:
 - CHANGELOGs are updated
 - Documentation is generated with updated version numbers
 - Packages are published directly to pub.dev in dependency order
+
+Resume Mode:
+The --resume flag allows continuing an interrupted release process. It will:
+- Check which packages are already published on pub.dev for the target version
+- Skip validation and publishing for already-published packages
+- Continue with remaining packages in the correct dependency order
+- Requires the git tag for the version to already exist
 ''');
 }
