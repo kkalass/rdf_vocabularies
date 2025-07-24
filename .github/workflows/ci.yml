@@ -44,12 +44,36 @@ jobs:
               --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
           fi
       
-      # Store coverage artifacts for later combining
-      - name: Upload coverage artifacts for ${{ matrix.package }}
-        if: hashFiles('${{ matrix.package }}/coverage/lcov.info') != ''
+      # Store coverage artifacts for later combining  
+      - name: Upload coverage artifacts for core
+        if: hashFiles('${{ matrix.package }}/coverage/lcov.info') != '' && matrix.package == 'packages/rdf_vocabularies_core'
         uses: actions/upload-artifact@v4
         with:
-          name: coverage-${{ matrix.package }}
+          name: coverage-core
+          path: ${{ matrix.package }}/coverage/lcov.info
+          retention-days: 1
+      
+      - name: Upload coverage artifacts for schema
+        if: hashFiles('${{ matrix.package }}/coverage/lcov.info') != '' && matrix.package == 'packages/rdf_vocabularies_schema'
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-schema
+          path: ${{ matrix.package }}/coverage/lcov.info
+          retention-days: 1
+      
+      - name: Upload coverage artifacts for schema-http
+        if: hashFiles('${{ matrix.package }}/coverage/lcov.info') != '' && matrix.package == 'packages/rdf_vocabularies_schema_http'
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-schema-http
+          path: ${{ matrix.package }}/coverage/lcov.info
+          retention-days: 1
+      
+      - name: Upload coverage artifacts for meta
+        if: hashFiles('${{ matrix.package }}/coverage/lcov.info') != '' && matrix.package == 'packages/rdf_vocabularies'
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-meta
           path: ${{ matrix.package }}/coverage/lcov.info
           retention-days: 1
 
@@ -98,16 +122,16 @@ jobs:
               if [ -f "$file" ]; then
                 filename=$(basename "$file")
                 case "$filename" in
-                  *rdf_vocabularies_core*)
+                  *core*)
                     sed -i 's|SF:lib/|SF:packages/rdf_vocabularies_core/lib/|g' "$file"
                     ;;
-                  *rdf_vocabularies_schema_http*)
+                  *schema-http*)
                     sed -i 's|SF:lib/|SF:packages/rdf_vocabularies_schema_http/lib/|g' "$file"
                     ;;
-                  *rdf_vocabularies_schema*)
+                  *schema*)
                     sed -i 's|SF:lib/|SF:packages/rdf_vocabularies_schema/lib/|g' "$file"
                     ;;
-                  *rdf_vocabularies*)
+                  *meta*)
                     sed -i 's|SF:lib/|SF:packages/rdf_vocabularies/lib/|g' "$file"
                     ;;
                 esac
