@@ -32,50 +32,7 @@ jobs:
       
       - name: Run tests for ${{ matrix.package }}
         working-directory: ${{ matrix.package }}
-        run: dart test --coverage=coverage
-      
-      # Convert coverage to lcov.info and fix paths
-      - name: Convert coverage to lcov.info for ${{ matrix.package }}
-        working-directory: ${{ matrix.package }}
-        run: |
-          if [ -d "lib" ]; then
-            dart pub global activate coverage
-            dart pub global run coverage:format_coverage \
-              --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
-            
-            # Show original paths first
-            echo "Original LCOV paths:"
-            head -5 coverage/lcov.info
-            
-            # Fix paths to be relative to repository root
-            # This handles both absolute paths and relative paths
-            sed -i "s|SF:.*/\(${{ matrix.package }}/lib/.*\)|SF:\1|g" coverage/lcov.info
-            sed -i "s|SF:lib/|SF:${{ matrix.package }}/lib/|g" coverage/lcov.info
-            
-            echo "Fixed LCOV paths:"
-            head -5 coverage/lcov.info
-            
-            # Verify that files exist
-            echo "Verifying that files exist in repository:"
-            for file in $(grep "^SF:" coverage/lcov.info | head -3 | cut -d: -f2); do
-              if [ -f "../$file" ]; then
-                echo "✓ Found: $file"
-              else
-                echo "✗ Missing: $file"
-              fi
-            done
-          fi
-      
-      # Upload coverage directly to Codecov
-      - name: Upload coverage to Codecov
-        if: hashFiles('${{ matrix.package }}/coverage/lcov.info') != ''
-        uses: codecov/codecov-action@v4
-        with:
-          files: ${{ matrix.package }}/coverage/lcov.info
-          flags: ${{ matrix.package }}
-          name: ${{ matrix.package }}-coverage
-          fail_ci_if_error: false
-          verbose: true
+        run: dart test
 
   # Additional job to run workspace-level operations
   workspace:
