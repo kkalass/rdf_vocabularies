@@ -44,12 +44,86 @@ jobs:
               --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
           fi
       
+      # Upload coverage with package name as flag and proper file path
       - name: Upload coverage to Codecov for ${{ matrix.package }}
         if: hashFiles('${{ matrix.package }}/coverage/lcov.info') != ''
         uses: codecov/codecov-action@v4
         with:
+          token: ${{ secrets.CODECOV_TOKEN }}
           files: ${{ matrix.package }}/coverage/lcov.info
           flags: ${{ matrix.package }}
+          name: ${{ matrix.package }}
+          fail_ci_if_error: false
+          working-directory: .
+
+  # Combined coverage job for better monorepo support
+  coverage:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+      
+      # Install global coverage tool
+      - name: Install coverage tool
+        run: dart pub global activate coverage
+      
+      # Generate coverage for all packages
+      - name: Generate coverage for all packages
+        run: |
+          # Create combined coverage directory
+          mkdir -p coverage/combined
+          
+          for package in packages/rdf_vocabularies_core packages/rdf_vocabularies_schema packages/rdf_vocabularies_schema_http packages/rdf_vocabularies; do
+            if [ -d "$package/lib" ]; then
+              echo "Generating coverage for $package"
+              cd $package
+              dart pub get
+              dart test --coverage=coverage || true
+              dart pub global run coverage:format_coverage \
+                --lcov --in=coverage --out=coverage/lcov.info --report-on=lib || true
+              cd ..
+              
+              # Copy lcov.info with package prefix to combined directory
+              if [ -f "$package/coverage/lcov.info" ]; then
+                cp "$package/coverage/lcov.info" "coverage/combined/$(basename $package).lcov.info"
+              fi
+            fi
+          done
+      
+      # Merge all coverage files
+      - name: Merge coverage files
+        run: |
+          if ls coverage/combined/*.lcov.info 1> /dev/null 2>&1; then
+            # Combine all lcov files into one
+            cat coverage/combined/*.lcov.info > coverage/combined/merged.lcov.info
+            
+            # Adjust paths to be relative to workspace root
+            sed -i 's|SF:lib/|SF:packages/rdf_vocabularies_core/lib/|g' coverage/combined/rdf_vocabularies_core.lcov.info || true
+            sed -i 's|SF:lib/|SF:packages/rdf_vocabularies_schema/lib/|g' coverage/combined/rdf_vocabularies_schema.lcov.info || true
+            sed -i 's|SF:lib/|SF:packages/rdf_vocabularies_schema_http/lib/|g' coverage/combined/rdf_vocabularies_schema_http.lcov.info || true
+            sed -i 's|SF:lib/|SF:packages/rdf_vocabularies/lib/|g' coverage/combined/rdf_vocabularies.lcov.info || true
+            
+            # Recreate merged file with corrected paths
+            cat coverage/combined/*.lcov.info > coverage/combined/final.lcov.info
+            
+            echo "Combined coverage file created:"
+            head -20 coverage/combined/final.lcov.info
+          else
+            echo "No coverage files found to merge"
+          fi
+      
+      # Upload combined coverage
+      - name: Upload combined coverage to Codecov
+        if: hashFiles('coverage/combined/final.lcov.info') != ''
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: coverage/combined/final.lcov.info
+          flags: combined
+          name: combined-coverage
           fail_ci_if_error: false
 
   # Additional job to run workspace-level operations

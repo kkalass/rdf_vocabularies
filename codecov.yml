@@ -1,0 +1,75 @@
+# Codecov configuration for RDF Vocabularies monorepo
+# https://docs.codecov.com/docs/codecov-yaml
+
+coverage:
+  precision: 2
+  round: down
+  range: "70...100"
+  
+  status:
+    project:
+      default:
+        target: 70%
+        threshold: 1%
+        informational: true
+    patch:
+      default:
+        target: 80%
+        threshold: 1%
+        informational: true
+
+# Define component structure for monorepo
+component_management:
+  default_rules:
+    flag_coverage_not_uploaded_behavior: include
+  individual_components:
+    - component_id: "rdf_vocabularies_core"
+      name: "RDF Vocabularies Core"
+      paths:
+        - "packages/rdf_vocabularies_core/lib/**"
+      flag_regexes:
+        - ".*rdf_vocabularies_core.*"
+    
+    - component_id: "rdf_vocabularies_schema"
+      name: "RDF Vocabularies Schema"
+      paths:
+        - "packages/rdf_vocabularies_schema/lib/**"
+      flag_regexes:
+        - ".*rdf_vocabularies_schema.*"
+    
+    - component_id: "rdf_vocabularies_schema_http"
+      name: "RDF Vocabularies Schema HTTP"
+      paths:
+        - "packages/rdf_vocabularies_schema_http/lib/**"
+      flag_regexes:
+        - ".*rdf_vocabularies_schema_http.*"
+    
+    - component_id: "rdf_vocabularies"
+      name: "RDF Vocabularies Meta Package"
+      paths:
+        - "packages/rdf_vocabularies/lib/**"
+      flag_regexes:
+        - ".*rdf_vocabularies$"
+
+# Ignore patterns
+ignore:
+  - "**/*.g.dart"
+  - "**/generated/**"
+  - "doc/**"
+  - "tool/**"
+  - "example/**"
+  - "test/**"
+  - "packages/*/test/**"
+  - "packages/*/example/**"
+
+# Comment behavior
+comment:
+  layout: "reach,diff,flags,tree"
+  behavior: default
+  require_changes: false
+  require_base: false
+  require_head: true
+
+# Notification settings
+github_checks:
+  annotations: true
