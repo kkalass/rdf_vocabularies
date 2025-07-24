@@ -25,7 +25,7 @@
   <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
   <ol class="breadcrumbs gt-separated dark hidden-xs">
     <li><a href="../../index.html">rdf_vocabularies</a></li>
-    <li><a href="../../schema_http">schema_http.dart</a></li>
+    <li><a href="../../schema_http/">schema_http.dart</a></li>
     <li><a href="../../schema_http/SchemaHttpPatient-class.html">SchemaHttpPatient</a></li>
     <li class="self-crumb">gender constant</li>
   </ol>
@@ -33,17 +33,14 @@
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
-  <div class="toggle" id="theme-button" title="Toggle brightness">
-    <label for="theme">
-      <input type="checkbox" id="theme" value="light-theme">
-      <span id="dark-theme-button" class="material-symbols-outlined">
-        dark_mode
-      </span>
-      <span id="light-theme-button" class="material-symbols-outlined">
-        light_mode
-      </span>
-    </label>
-  </div>
+  <button class="toggle" id="theme-button" title="Toggle between light and dark mode" aria-label="Light and dark mode toggle">
+    <span id="dark-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      dark_mode
+    </span>
+    <span id="light-theme-button" class="material-symbols-outlined" aria-hidden="true">
+      light_mode
+    </span>
+  </button>
 </header>
 <main>
 <div
@@ -58,7 +55,7 @@
     
       <section class="multi-line-signature">
         
-        <a href="https://pub.dev/documentation/rdf_core/0.9.0/rdf/IriTerm-class.html">IriTerm</a>
+        <a href="https://pub.dev/documentation/rdf_core/0.9.11/rdf/IriTerm-class.html">IriTerm</a>
         const <span class="name ">gender</span>
         
 
@@ -66,7 +63,7 @@
       
 <section class="desc markdown">
   <p>gender [Expects: <a href="http://schema.org/GenderType">http://schema.org/GenderType</a>, <a href="http://schema.org/Text%5D">http://schema.org/Text]</a></p>
-<p>Gender of something, typically a {<code>Person</code>}, but possibly also fictional characters, animals, etc. While <a href="http://schema.org/Male">http://schema.org/Male</a> and <a href="http://schema.org/Female">http://schema.org/Female</a> may be used, text strings are also acceptable for people who do not identify as a binary gender. The {<a href="../../schema_http/SchemaHttpPatient/gender-constant.html">gender</a>} property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender {<code>SportsTeam</code>} can be indicated with a text value of "Mixed".</p>
+<p>Gender of something, typically a {<code>Person</code>}, but possibly also fictional characters, animals, etc. While <a href="http://schema.org/Male">http://schema.org/Male</a> and <a href="http://schema.org/Female">http://schema.org/Female</a> may be used, text strings are also acceptable for people who are not a binary gender. The {<a href="../../schema_http/SchemaHttpPatient/gender-constant.html">gender</a>} property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender {<code>SportsTeam</code>} can be indicated with a text value of "Mixed".</p>
 <p>Can be used on: <a href="http://schema.org/Person">http://schema.org/Person</a>, <a href="http://schema.org/SportsTeam">http://schema.org/SportsTeam</a></p>
 </section>
 
@@ -88,7 +85,7 @@
 </header>
 <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
     <li><a href="../../index.html">rdf_vocabularies</a></li>
-    <li><a href="../../schema_http">schema_http</a></li>
+    <li><a href="../../schema_http/">schema_http</a></li>
     <li><a href="../../schema_http/SchemaHttpPatient-class.html">SchemaHttpPatient</a></li>
     <li class="self-crumb">gender constant</li>
 </ol>
@@ -102,7 +99,7 @@
 <footer>
   <span class="no-break">
     rdf_vocabularies
-      0.3.1-dev
+      0.3.1
   </span>
   
 </footer>
