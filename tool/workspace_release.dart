@@ -72,36 +72,30 @@ void main(List<String> args) async {
     print('🧪 Running tests for all packages...');
     await _runAllTests();
 
-    // Step 5: Update meta-package dependencies for publishing
-    print('🔄 Updating meta-package dependencies...');
-    await _updateDependencies(releaseVersion, dryRun);
-
-    // Step 6: Validate CHANGELOGs
+    // Step 5: Validate CHANGELOGs
     await _validateChangelogs(releaseVersion);
 
-    // Step 7: Generate documentation with updated versions
+    // Step 6: Generate documentation with updated versions
     print('📚 Generating documentation with updated versions...');
     if (!dryRun) {
       await _generateDocumentation();
     }
 
-    // Step 8: Create git tag and commit
+    // Step 7: Create git tag and commit
     if (!dryRun) {
       await _createReleaseCommit(releaseVersion);
     }
 
-    // Step 8: Trigger publishing
+    // Step 8: Publish packages (meta-package dependencies will be updated during publishing)
     if (!skipPublish && !dryRun) {
-      await _triggerPublishing(releaseVersion);
+      await _publishToPublicRegistry(releaseVersion);
+    } else if (dryRun) {
+      print('🚀 Would publish packages to pub.dev (skipped in dry run)');
+    } else {
+      print('🚀 Publishing skipped (--no-publish flag)');
     }
 
-    // Step 9: Restore path dependencies for development
-    if (!dryRun) {
-      print('🔄 Restoring path dependencies for development...');
-      await _restoreDependencies(dryRun);
-    }
-
-    // Step 10: Set next development version
+    // Step 9: Set next development version (dependencies stay at current version)
     if (!dryRun) {
       final nextDevVersion = _incrementToNextDevVersion(releaseVersion);
       print('🔄 Setting next development version: $nextDevVersion');
@@ -196,7 +190,7 @@ String _incrementToNextDevVersion(String releaseVersion) {
 Future<void> _validateCleanWorkingDirectory() async {
   print('🔍 Checking working directory status...');
 
-  final result = await Process.run('git', ['status', '--porcelain']);
+  final result = await _runProcess('git', ['status', '--porcelain']);
   if (result.exitCode != 0) {
     throw Exception('Failed to check git status');
   }
@@ -215,25 +209,12 @@ Future<void> _runAllTests() async {
     print('   Testing $packagePath...');
 
     // First ensure dependencies are resolved
-    final pubGetResult = await Process.run('dart', [
-      'pub',
-      'get',
-    ], workingDirectory: packagePath);
-
-    if (pubGetResult.exitCode != 0) {
-      throw Exception(
-        'Failed to get dependencies in $packagePath: ${pubGetResult.stderr}',
-      );
-    }
+    print('     Getting dependencies...');
+    await _runProcessChecked('dart', ['pub', 'get'], packagePath);
 
     // Then run tests
-    final result = await Process.run('dart', [
-      'test',
-    ], workingDirectory: packagePath);
-
-    if (result.exitCode != 0) {
-      throw Exception('Tests failed in $packagePath: ${result.stderr}');
-    }
+    print('     Running tests...');
+    await _runProcessChecked('dart', ['test'], packagePath);
   }
 
   print('   ✓ All tests passed');
@@ -265,97 +246,151 @@ Future<void> _createReleaseCommit(String version) async {
   final tagName = 'v$version';
 
   // Check if tag already exists
-  final tagResult = await Process.run('git', ['tag', '-l', tagName]);
+  final tagResult = await _runProcess('git', ['tag', '-l', tagName]);
   if (tagResult.stdout.toString().trim().isNotEmpty) {
     throw Exception('Tag $tagName already exists');
   }
 
   // Create tag
-  await _runProcess('git', ['tag', '-a', tagName, '-m', 'Release $tagName']);
+  await _runProcessChecked('git', [
+    'tag',
+    '-a',
+    tagName,
+    '-m',
+    'Release $tagName',
+  ]);
   print('   ✓ Created tag $tagName');
 
   // Push tag
-  await _runProcess('git', ['push', 'origin', tagName]);
+  await _runProcessChecked('git', ['push', 'origin', tagName]);
   print('   ✓ Pushed tag to origin');
 }
 
-Future<void> _triggerPublishing(String version) async {
-  print('🚀 Triggering publishing workflow...');
+Future<void> _publishToPublicRegistry(String version) async {
+  print('🚀 Publishing packages to pub.dev...');
 
-  // The GitHub Actions publish workflow will be triggered by the tag push
-  print('   ✓ Publishing will be handled by GitHub Actions');
-  print(
-    '   📝 Monitor progress at: https://github.com/kkalass/rdf_vocabularies/actions',
-  );
+  // Define package groups
+  final corePackages = [
+    'packages/rdf_vocabularies_core',
+    'packages/rdf_vocabularies_schema',
+    'packages/rdf_vocabularies_schema_http',
+  ];
+  final metaPackage = 'packages/rdf_vocabularies';
+
+  // First, validate all packages with dry run
+  print('   🔍 Validating all packages with dry run...');
+  for (final packagePath in packages) {
+    print('     Validating $packagePath...');
+    await _runProcessChecked('dart', [
+      'pub',
+      'publish',
+      '--dry-run',
+    ], packagePath);
+    print('   ✓ $packagePath validation passed');
+  }
+
+  // Step 1: Publish core packages first
+  print('   📦 Publishing core packages...');
+  for (final packagePath in corePackages) {
+    print('   📦 Publishing $packagePath...');
+    await _runProcessChecked('dart', [
+      'pub',
+      'publish',
+      '--force',
+    ], packagePath);
+    print('   ✅ Successfully published $packagePath');
+    await Future.delayed(Duration(seconds: 2));
+  }
+
+  // Step 2: Update meta-package dependencies to new version
+  print('   🔄 Updating meta-package dependencies to version $version...');
+  await _updateDependencies(version, false);
+
+  // Step 3: Publish meta-package
+  print('   📦 Publishing meta-package...');
+  await _runProcessChecked('dart', ['pub', 'publish', '--force'], metaPackage);
+  print('   ✅ Successfully published $metaPackage');
+  print('   🎉 All packages published successfully!');
 }
 
 Future<void> _updateDependencies(String version, bool dryRun) async {
-  final result = await Process.run('dart', [
-    'run',
-    'tool/update_dependencies.dart',
-    if (dryRun) '--dry-run',
-  ]);
+  final args = ['run', 'tool/update_dependencies.dart'];
+  if (dryRun) args.add('--dry-run');
 
-  if (result.exitCode != 0) {
-    throw Exception('Failed to update dependencies: ${result.stderr}');
-  }
-
+  await _runProcessChecked('dart', args);
   print('   ✓ Meta-package dependencies updated');
 }
 
-Future<void> _restoreDependencies(bool dryRun) async {
-  final result = await Process.run('dart', [
-    'run',
-    'tool/restore_dependencies.dart',
-    if (dryRun) '--dry-run',
-  ]);
-
-  if (result.exitCode != 0) {
-    throw Exception('Failed to restore dependencies: ${result.stderr}');
-  }
-
-  print('   ✓ Meta-package path dependencies restored');
-}
-
 Future<void> _generateDocumentation() async {
-  final result = await Process.run('dart', ['run', 'tool/all.dart', 'doc']);
-
-  if (result.exitCode != 0) {
-    throw Exception('Failed to generate documentation: ${result.stderr}');
-  }
-
+  await _runProcessChecked('dart', ['run', 'tool/all.dart', 'doc']);
   print('   ✓ Documentation generated with updated versions');
 }
 
 Future<void> _setAllPackageVersions(String version) async {
-  final result = await Process.run('dart', [
-    'run',
-    'tool/set_version.dart',
-    version,
-  ]);
-
-  if (result.exitCode != 0) {
-    throw Exception('Failed to set package versions: ${result.stderr}');
-  }
-
+  await _runProcessChecked('dart', ['run', 'tool/set_version.dart', version]);
   print('   ✓ All package versions set to $version');
 }
 
 Future<void> _commitVersionChange(String version, String message) async {
   // Add all changed files
-  await _runProcess('git', ['add', '.']);
+  await _runProcessChecked('git', ['add', '.']);
 
   // Commit with descriptive message
-  await _runProcess('git', ['commit', '-m', '$message $version']);
+  await _runProcessChecked('git', ['commit', '-m', '$message $version']);
 
   print('   ✓ Committed version change: $version');
 }
 
-Future<void> _runProcess(String command, List<String> args) async {
-  final result = await Process.run(command, args);
+Future<ProcessResult> _runProcess(
+  String command,
+  List<String> args, [
+  String? workingDirectory,
+]) async {
+  final process = await Process.start(
+    command,
+    args,
+    workingDirectory: workingDirectory,
+  );
+
+  // Capture stdout and stderr while also streaming them
+  final stdoutBuffer = StringBuffer();
+  final stderrBuffer = StringBuffer();
+
+  // Forward and capture stdout
+  process.stdout.listen((data) {
+    final text = String.fromCharCodes(data);
+    stdoutBuffer.write(text);
+    stdout.add(data);
+  });
+
+  // Forward and capture stderr
+  process.stderr.listen((data) {
+    final text = String.fromCharCodes(data);
+    stderrBuffer.write(text);
+    stderr.add(data);
+  });
+
+  final exitCode = await process.exitCode;
+
+  // Return a ProcessResult-like object for compatibility
+  return ProcessResult(
+    0,
+    exitCode,
+    stdoutBuffer.toString(),
+    stderrBuffer.toString(),
+  );
+}
+
+/// Simple wrapper that throws on non-zero exit code
+Future<void> _runProcessChecked(
+  String command,
+  List<String> args, [
+  String? workingDirectory,
+]) async {
+  final result = await _runProcess(command, args, workingDirectory);
   if (result.exitCode != 0) {
     throw Exception(
-      'Command failed: $command ${args.join(' ')}\n${result.stderr}',
+      'Command failed: $command ${args.join(' ')} (exit code: ${result.exitCode})',
     );
   }
 }
@@ -383,6 +418,6 @@ This script coordinates releases across all packages in the workspace to ensure:
 - Tests pass for all packages
 - CHANGELOGs are updated
 - Documentation is generated with updated version numbers
-- Publishing is coordinated via GitHub Actions
+- Packages are published directly to pub.dev in dependency order
 ''');
 }

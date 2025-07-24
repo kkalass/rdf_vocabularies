@@ -3,10 +3,12 @@
 // All rights reserved. Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-/// Restores path dependencies in meta-package after publishing
+/// DEPRECATED: Restores path dependencies in meta-package after publishing
 ///
-/// This script reverts the meta-package to use local path dependencies
-/// for development after publishing is complete.
+/// This script is no longer used in the new release workflow.
+/// The meta-package now uses version dependencies permanently.
+///
+/// For manual use only if needed during development.
 library;
 
 import 'dart:io';
@@ -41,33 +43,35 @@ Future<void> _restorePathDependencies(bool dryRun) async {
 
   final lines = file.readAsLinesSync();
   final updatedLines = <String>[];
-  
+
   bool inDependencies = false;
-  
+
   final pathMappings = {
     'rdf_vocabularies_core': '../rdf_vocabularies_core',
     'rdf_vocabularies_schema': '../rdf_vocabularies_schema',
     'rdf_vocabularies_schema_http': '../rdf_vocabularies_schema_http',
   };
-  
+
   for (final line in lines) {
     if (line.trim() == 'dependencies:') {
       inDependencies = true;
       updatedLines.add(line);
       continue;
     }
-    
+
     if (inDependencies && line.isNotEmpty && !line.startsWith(' ')) {
       inDependencies = false;
     }
-    
+
     if (inDependencies) {
       bool foundPackage = false;
       for (final entry in pathMappings.entries) {
         final packageName = entry.key;
         final packagePath = entry.value;
-        
-        final versionMatch = RegExp(r'^  ' + RegExp.escape(packageName) + r':\s*\^').firstMatch(line);
+
+        final versionMatch = RegExp(
+          r'^  ' + RegExp.escape(packageName) + r':\s*\^',
+        ).firstMatch(line);
         if (versionMatch != null) {
           updatedLines.add('  $packageName:');
           updatedLines.add('    path: $packagePath');
@@ -76,7 +80,7 @@ Future<void> _restorePathDependencies(bool dryRun) async {
           break;
         }
       }
-      
+
       if (!foundPackage) {
         updatedLines.add(line);
       }
