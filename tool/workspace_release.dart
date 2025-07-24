@@ -37,11 +37,15 @@ void main(List<String> args) async {
   final dryRun = args.contains('--dry-run');
   final skipPublish = args.contains('--no-publish') || dryRun;
   final nonInteractive = args.contains('--non-interactive');
+  final resume = args.contains('--resume');
 
   print('🚀 RDF Vocabularies Workspace Release');
   print('=====================================');
   if (dryRun) {
     print('🔍 DRY RUN: No changes will be made');
+  }
+  if (resume) {
+    print('🔄 RESUME MODE: Continuing existing release');
   }
   print('');
 
@@ -82,13 +86,21 @@ void main(List<String> args) async {
     }
 
     // Step 7: Create git tag and commit (without meta-package dependency updates)
-    if (!dryRun) {
+    if (!dryRun && !resume) {
       await _createReleaseCommit(releaseVersion);
+    } else if (resume) {
+      print('📝 Skipping git tag creation (resume mode)');
+      // Verify tag exists
+      final tagResult = await _runProcess('git', ['tag', '--list', 'v$releaseVersion']);
+      if (tagResult.stdout.toString().trim().isEmpty) {
+        throw Exception('Resume mode requires tag v$releaseVersion to exist');
+      }
+      print('   ✓ Found existing tag v$releaseVersion');
     }
 
     // Step 8: Publish packages
     if (!skipPublish && !dryRun) {
-      await _publishToPublicRegistry(releaseVersion);
+      await _publishToPublicRegistry(releaseVersion, resume);
     } else if (dryRun) {
       print('🚀 Would publish packages to pub.dev (skipped in dry run)');
     } else {
@@ -284,22 +296,43 @@ Future<void> _createReleaseCommit(String version) async {
   print('   ✓ Pushed tag to origin');
 }
 
-Future<void> _publishToPublicRegistry(String version) async {
+Future<void> _publishToPublicRegistry(String version, [bool resume = false]) async {
   print('🚀 Publishing packages to pub.dev...');
-
+  
   // Define package groups
   final corePackages = [
     'packages/rdf_vocabularies_core',
-    'packages/rdf_vocabularies_schema',
+    'packages/rdf_vocabularies_schema', 
     'packages/rdf_vocabularies_schema_http',
   ];
   final metaPackage = 'packages/rdf_vocabularies';
 
-  // Step 1: Validate core packages with dry run
+  // Step 1: Check which packages are already published (if resuming)
+  final Map<String, bool> publishedStatus = {};
+  if (resume) {
+    print('   🔍 Checking publication status...');
+    for (final packagePath in corePackages + [metaPackage]) {
+      final packageName = packagePath.split('/').last;
+      final isPublished = await _checkPackagePublished(packageName, version);
+      publishedStatus[packagePath] = isPublished;
+      if (isPublished) {
+        print('   ✓ $packageName v$version already published');
+      } else {
+        print('   ⏳ $packageName v$version needs to be published');
+      }
+    }
+  }
+
+  // Step 2: Validate core packages with dry run (skip if already published)
   print('   🔍 Validating core packages with dry run...');
   for (final packagePath in corePackages) {
+    if (resume && publishedStatus[packagePath] == true) {
+      print('     Skipping validation for already published $packagePath');
+      continue;
+    }
+    
     print('     Validating $packagePath...');
-    await _runProcessChecked('dart', [
+    await _runPublishProcessChecked('dart', [
       'pub',
       'publish',
       '--dry-run',
@@ -307,20 +340,23 @@ Future<void> _publishToPublicRegistry(String version) async {
     print('   ✓ $packagePath validation passed');
   }
 
-  // Step 2: Publish core packages first
+  // Step 3: Publish core packages first (skip if already published)
   print('   📦 Publishing core packages...');
   for (final packagePath in corePackages) {
+    if (resume && publishedStatus[packagePath] == true) {
+      print('   ⏭️  Skipping already published $packagePath');
+      continue;
+    }
+    
     print('   📦 Publishing $packagePath...');
-    await _runProcessChecked('dart', [
+    await _runPublishProcessChecked('dart', [
       'pub',
       'publish',
       '--force',
     ], packagePath);
     print('   ✅ Successfully published $packagePath');
     await Future.delayed(Duration(seconds: 2));
-  }
-
-  // Step 3: Wait a bit for packages to be available on pub.dev
+  }  // Step 3: Wait a bit for packages to be available on pub.dev
   print('   ⏳ Waiting for packages to be available on pub.dev...');
   await Future.delayed(Duration(seconds: 10));
 
@@ -334,14 +370,14 @@ Future<void> _publishToPublicRegistry(String version) async {
 
   // Step 6: Validate and publish meta-package
   print('     Validating meta-package...');
-  await _runProcessChecked('dart', [
+  await _runPublishProcessChecked('dart', [
     'pub',
     'publish',
     '--dry-run',
   ], metaPackage);
 
   print('   📦 Publishing meta-package...');
-  await _runProcessChecked('dart', ['pub', 'publish', '--force'], metaPackage);
+  await _runPublishProcessChecked('dart', ['pub', 'publish', '--force'], metaPackage);
   print('   ✅ Successfully published $metaPackage');
 
   // Step 7: Create final commit with updated dependencies
@@ -433,6 +469,47 @@ Future<void> _runProcessChecked(
     throw Exception(
       'Command failed: $command ${args.join(' ')} (exit code: ${result.exitCode})',
     );
+  }
+}
+
+/// Publishing-specific wrapper that tolerates warnings (exit code 65) but fails on errors
+Future<void> _runPublishProcessChecked(
+  String command,
+  List<String> args, [
+  String? workingDirectory,
+]) async {
+  final result = await _runProcess(command, args, workingDirectory);
+  
+  // Exit code 65 indicates warnings but successful validation/publishing
+  // Exit code 0 indicates complete success
+  // Any other exit code is considered a failure
+  if (result.exitCode != 0 && result.exitCode != 65) {
+    throw Exception(
+      'Command failed: $command ${args.join(' ')} (exit code: ${result.exitCode})',
+    );
+  }
+  
+  if (result.exitCode == 65) {
+    print('     ⚠️  Command completed with warnings (exit code 65) - continuing');
+  }
+}
+
+/// Check if a package with specific version is published on pub.dev
+Future<bool> _checkPackagePublished(String packageName, String version) async {
+  try {
+    final result = await _runProcess('curl', [
+      '-s',
+      'https://pub.dev/api/packages/$packageName',
+    ]);
+    
+    if (result.exitCode != 0) {
+      return false; // Package doesn't exist
+    }
+    
+    final response = result.stdout.toString();
+    return response.contains('"version":"$version"');
+  } catch (e) {
+    return false; // Assume not published if check fails
   }
 }
 
