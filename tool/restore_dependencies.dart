@@ -39,38 +39,54 @@ Future<void> _restorePathDependencies(bool dryRun) async {
     throw Exception('Meta-package not found: $metaPackagePath');
   }
 
-  String content = file.readAsStringSync();
-
-  // Replace version constraints with path dependencies
-  final replacements = {
+  final lines = file.readAsLinesSync();
+  final updatedLines = <String>[];
+  
+  bool inDependencies = false;
+  
+  final pathMappings = {
     'rdf_vocabularies_core': '../rdf_vocabularies_core',
     'rdf_vocabularies_schema': '../rdf_vocabularies_schema',
     'rdf_vocabularies_schema_http': '../rdf_vocabularies_schema_http',
   };
-
-  for (final entry in replacements.entries) {
-    final packageName = entry.key;
-    final packagePath = entry.value;
-
-    // Pattern to match version constraint
-    final versionPattern = RegExp(
-      r'(\s+' + RegExp.escape(packageName) + r'):\s*\^[^\n]+',
-      multiLine: true,
-    );
-
-    // Replacement with path dependency
-    final replacement = '  $packageName: \n    path: $packagePath';
-
-    if (versionPattern.hasMatch(content)) {
-      content = content.replaceAll(versionPattern, replacement);
-      print('   ✓ Restored $packageName to path dependency');
+  
+  for (final line in lines) {
+    if (line.trim() == 'dependencies:') {
+      inDependencies = true;
+      updatedLines.add(line);
+      continue;
+    }
+    
+    if (inDependencies && line.isNotEmpty && !line.startsWith(' ')) {
+      inDependencies = false;
+    }
+    
+    if (inDependencies) {
+      bool foundPackage = false;
+      for (final entry in pathMappings.entries) {
+        final packageName = entry.key;
+        final packagePath = entry.value;
+        
+        final versionMatch = RegExp(r'^  ' + RegExp.escape(packageName) + r':\s*\^').firstMatch(line);
+        if (versionMatch != null) {
+          updatedLines.add('  $packageName:');
+          updatedLines.add('    path: $packagePath');
+          print('   ✓ Restored $packageName to path dependency');
+          foundPackage = true;
+          break;
+        }
+      }
+      
+      if (!foundPackage) {
+        updatedLines.add(line);
+      }
     } else {
-      print('   ⚠️  No version constraint found for $packageName');
+      updatedLines.add(line);
     }
   }
 
   if (!dryRun) {
-    file.writeAsStringSync(content);
+    file.writeAsStringSync(updatedLines.join('\n') + '\n');
   } else {
     print('   📝 Would restore $metaPackagePath');
   }

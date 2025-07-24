@@ -64,38 +64,51 @@ Future<void> _updateMetaPackageDependencies(String version, bool dryRun) async {
     throw Exception('Meta-package not found: $metaPackagePath');
   }
 
-  String content = file.readAsStringSync();
+  final lines = file.readAsLinesSync();
+  final updatedLines = <String>[];
 
-  // Replace path dependencies with version constraints
-  final replacements = {
-    'rdf_vocabularies_core': version,
-    'rdf_vocabularies_schema': version,
-    'rdf_vocabularies_schema_http': version,
-  };
+  bool inDependencies = false;
+  bool skipNextPath = false;
 
-  for (final entry in replacements.entries) {
-    final packageName = entry.key;
-    final packageVersion = entry.value;
+  for (int i = 0; i < lines.length; i++) {
+    final line = lines[i];
 
-    // Pattern to match path dependency (across multiple lines)
-    final pathPattern = RegExp(
-      r'(\s+' + RegExp.escape(packageName) + r'):\s*\n\s+path:\s*[^\n]+',
-      multiLine: true,
-    );
-
-    // Replacement with version constraint
-    final replacement = '  $packageName: ^$packageVersion';
-
-    if (pathPattern.hasMatch(content)) {
-      content = content.replaceAll(pathPattern, replacement);
-      print('   ✓ Updated $packageName to ^$packageVersion');
-    } else {
-      print('   ⚠️  No path dependency found for $packageName');
+    if (line.trim() == 'dependencies:') {
+      inDependencies = true;
+      updatedLines.add(line);
+      continue;
     }
+
+    if (inDependencies && line.isNotEmpty && !line.startsWith(' ')) {
+      inDependencies = false;
+    }
+
+    if (inDependencies && skipNextPath && line.trim().startsWith('path:')) {
+      // Skip the path line
+      skipNextPath = false;
+      continue;
+    }
+
+    skipNextPath = false;
+
+    if (inDependencies) {
+      final packageMatch = RegExp(
+        r'^  (rdf_vocabularies_(?:core|schema|schema_http)):',
+      ).firstMatch(line);
+      if (packageMatch != null) {
+        final packageName = packageMatch.group(1)!;
+        updatedLines.add('  $packageName: ^$version');
+        skipNextPath = true;
+        print('   ✓ Updated $packageName to ^$version');
+        continue;
+      }
+    }
+
+    updatedLines.add(line);
   }
 
   if (!dryRun) {
-    file.writeAsStringSync(content);
+    file.writeAsStringSync(updatedLines.join('\n') + '\n');
   } else {
     print('   📝 Would update $metaPackagePath');
   }

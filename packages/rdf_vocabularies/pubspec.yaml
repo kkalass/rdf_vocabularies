@@ -19,11 +19,11 @@ environment:
   sdk: ^3.7.0
 
 dependencies:
-  rdf_vocabularies_core: 
+  rdf_vocabularies_core:
     path: ../rdf_vocabularies_core
-  rdf_vocabularies_schema: 
+  rdf_vocabularies_schema:
     path: ../rdf_vocabularies_schema
-  rdf_vocabularies_schema_http: 
+  rdf_vocabularies_schema_http:
     path: ../rdf_vocabularies_schema_http
   rdf_core: ^0.9.11
 
