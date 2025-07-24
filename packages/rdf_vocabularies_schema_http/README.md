@@ -1,10 +1,8 @@
-# [![pub package](https://img.shields.io/pub/v/rdf_vocabularies_schema_http.svg)](https://pub.dev/packages/rdf_vocabularies_schema_http)
-[![build](https://github.com/kkalass/rdf_vocabularies/actions/workflows/ci.yml/badge.svg)](https://github.com/kkalass/rdf_vocabularies/actions)
-[![codecov](https://codecov.io/gh/kkalass/rdf_vocabularies/branch/main/graph/badge.svg)](https://codecov.io/gh/kkalass/rdf_vocabularies)
-[![license](https://img.shields.io/github/license/kkalass/rdf_vocabularies.svg)](https://github.com/kkalass/rdf_vocabularies/blob/main/LICENSE) Vocabularies Schema HTTP - Schema.org HTTP Vocabulary
+# RDF Vocabularies Schema HTTP - Schema.org HTTP Vocabulary
 
 [![pub package](https://img.shields.io/pub/v/rdf_vocabularies_schema_http.svg)](https://pub.dev/packages/rdf_vocabularies_schema_http)
 [![build](https://github.com/kkalass/rdf_vocabularies/actions/workflows/ci.yml/badge.svg)](https://github.com/kkalass/rdf_vocabularies/actions)
+[![codecov](https://codecov.io/gh/kkalass/rdf_vocabularies/branch/main/graph/badge.svg)](https://codecov.io/gh/kkalass/rdf_vocabularies)
 [![license](https://img.shields.io/github/license/kkalass/rdf_vocabularies.svg)](https://github.com/kkalass/rdf_vocabularies/blob/main/LICENSE)
 
 ## Overview
@@ -176,6 +174,8 @@ dart pub add rdf_vocabularies_schema
 # Update imports:
 # From: import 'package:rdf_vocabularies_schema_http/schema_http.dart';
 # To:   import 'package:rdf_vocabularies_schema/schema.dart';
+
+# And replace all SchemaHttp matches with Schema
 ```
 
 ## Performance Characteristics
