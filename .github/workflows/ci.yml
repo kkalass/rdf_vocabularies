@@ -34,7 +34,7 @@ jobs:
         working-directory: ${{ matrix.package }}
         run: dart test --coverage=coverage
       
-      # Convert coverage to lcov.info 
+      # Convert coverage to lcov.info and fix paths
       - name: Convert coverage to lcov.info for ${{ matrix.package }}
         working-directory: ${{ matrix.package }}
         run: |
@@ -42,6 +42,12 @@ jobs:
             dart pub global activate coverage
             dart pub global run coverage:format_coverage \
               --lcov --in=coverage --out=coverage/lcov.info --report-on=lib
+            
+            # Fix paths to be relative to repository root
+            sed -i "s|SF:lib/|SF:${{ matrix.package }}/lib/|g" coverage/lcov.info
+            
+            echo "Fixed paths in LCOV file:"
+            head -10 coverage/lcov.info
           fi
       
       # Upload coverage directly to Codecov
