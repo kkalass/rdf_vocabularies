@@ -25,6 +25,8 @@ export 'ldp.dart';
 export 'ldp/index.dart';
 export 'owl.dart';
 export 'owl/index.dart';
+export 'pim.dart';
+export 'pim/index.dart';
 export 'rdf.dart';
 export 'rdf/index.dart';
 export 'rdfs.dart';

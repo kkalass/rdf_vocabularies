@@ -706,6 +706,26 @@ class ContactPerson {
     'http://xmlns.com/foaf/0.1/status',
   );
 
+  /// masterWorkspace from pim vocabulary [Expects: http://www.w3.org/ns/pim/space#MasterWorkspace]
+  ///
+  ///
+  ///
+  /// Can be used on: http://xmlns.com/foaf/0.1/Agent
+  ///
+  static const pimMasterWorkspace = IriTerm.prevalidated(
+    'http://www.w3.org/ns/pim/space#masterWorkspace',
+  );
+
+  /// preferencesFile from pim vocabulary [Expects: http://www.w3.org/ns/pim/space#ConfigurationFile]
+  ///
+  ///
+  ///
+  /// Can be used on: http://xmlns.com/foaf/0.1/Agent
+  ///
+  static const pimPreferencesFile = IriTerm.prevalidated(
+    'http://www.w3.org/ns/pim/space#preferencesFile',
+  );
+
   /// additionalName from schemahttp vocabulary [Expects: http://schema.org/Text]
   ///
   /// An additional name for a Person, can be used for a middle name.

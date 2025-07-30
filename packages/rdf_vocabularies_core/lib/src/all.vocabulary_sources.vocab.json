@@ -77,6 +77,12 @@
       "contentType": "application/rdf+xml",
       "generate": true
     },
+    "pim": {
+      "type": "url",
+      "namespace": "http://www.w3.org/ns/pim/space#",
+      "source": "https://www.w3.org/ns/pim/space",
+      "generate": true
+    },
     "vs": {
       "type": "url",
       "namespace": "http://www.w3.org/2003/06/sw-vocab-status/ns#",

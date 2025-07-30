@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.3] - 2025-07-30
+
+### Added
+- Enhanced Person and Patient classes with PIM vocabulary properties
+  - `pimMasterWorkspace`: References to master workspace for personal information management
+  - `pimPreferencesFile`: Links to user preference configuration files
+- Cross-vocabulary integration with W3C PIM namespace for workspace management
+
+### Changed
+- Updated vocabulary source configurations to include PIM namespace support
+- Improved semantic interoperability between Schema.org and PIM vocabularies
+
 ## [0.4.2] - 2025-07-24
 
 ### Changed

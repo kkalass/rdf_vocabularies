@@ -560,6 +560,26 @@ class FoafGroup {
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
+  /// masterWorkspace from pim vocabulary [Expects: http://www.w3.org/ns/pim/space#MasterWorkspace]
+  ///
+  ///
+  ///
+  /// Can be used on: http://xmlns.com/foaf/0.1/Agent
+  ///
+  static const pimMasterWorkspace = IriTerm.prevalidated(
+    'http://www.w3.org/ns/pim/space#masterWorkspace',
+  );
+
+  /// preferencesFile from pim vocabulary [Expects: http://www.w3.org/ns/pim/space#ConfigurationFile]
+  ///
+  ///
+  ///
+  /// Can be used on: http://xmlns.com/foaf/0.1/Agent
+  ///
+  static const pimPreferencesFile = IriTerm.prevalidated(
+    'http://www.w3.org/ns/pim/space#preferencesFile',
+  );
+
   /// interviewee from bibo vocabulary [Expects: http://xmlns.com/foaf/0.1/Agent]
   ///
   /// An agent that is interviewed by another agent.

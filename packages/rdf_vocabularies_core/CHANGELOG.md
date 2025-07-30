@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.3] - 2025-07-30
+
+### Added
+- **PIM vocabulary support**: Added complete W3C Personal Information Management (PIM) vocabulary (http://www.w3.org/ns/pim/space#)
+  - Workspace management classes: `Workspace`, `PrivateWorkspace`, `PublicWorkspace`, `SharedWorkspace`, `PreferencesWorkspace`, `MasterWorkspace`
+  - Storage management classes: `Storage`, `PersonalStorage`, `PublicStorage`, `ControlledStorage`
+  - Configuration classes: `ConfigurationFile`
+  - Universal properties for workspace and storage organization
+- Enhanced agent classes (FOAF Agent, Person, Group, Organization) with PIM properties (`masterWorkspace`, `preferencesFile`)
+- Enhanced authenticated agent classes (ACL, Contact, DC Terms) with PIM workspace properties
+
+### Changed
+- Updated vocabulary source configurations to include PIM namespace integration
+- Expanded cross-vocabulary property mappings for better RDF interoperability
+
 ## [0.4.2] - 2025-07-24
 
 ### Changed
