@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.4] - 2025-08-11
+
+### Fixed
+- **PIM vocabulary export**: Added missing PIM (Personal Information Management) vocabulary export to public API
+  - PIM vocabulary is now accessible via `import 'package:rdf_vocabularies/pim.dart'`
+  - Includes all PIM workspace and storage management classes
+
+### Changed
+- Updated dependencies to rdf_vocabularies_core 0.4.4 with fixed PIM exports
+
 ## [0.4.3] - 2025-07-30
 
 ### Added
