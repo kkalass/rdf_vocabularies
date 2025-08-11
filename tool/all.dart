@@ -242,10 +242,9 @@ Future<void> _runCleanAll() async {
 }
 
 Future<void> _runRelease() async {
-  final result = await Process.run('dart', ['run', 'tool/release.dart']);
-  if (result.exitCode != 0) {
-    throw Exception('Release failed: ${result.stderr}');
-  }
+  // Individual packages don't have their own release mechanism
+  // Release is handled at workspace level
+  logWarning('Release is handled at workspace level, not individual packages');
 }
 
 Future<void> _runUpdateVersion() async {

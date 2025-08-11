@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.3] - 2025-07-30
+
+### Added
+- **PIM vocabulary support**: Added complete W3C Personal Information Management (PIM) vocabulary integration through updated dependencies
+- Enhanced agent classes across all vocabularies with PIM properties (masterWorkspace, preferencesFile)
+
+### Changed
+- Updated dependencies to rdf_vocabularies_core 0.4.3 with PIM vocabulary support
+- Updated dependencies to rdf_vocabularies_schema 0.4.3 with enhanced agent classes
+- Updated dependencies to rdf_vocabularies_schema_http 0.4.3 with enhanced agent classes
+
 ## [0.4.2] - 2025-07-24
 
 ### Changed
