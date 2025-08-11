@@ -1,6 +1,6 @@
 name: rdf_vocabularies_core
 description: Core RDF vocabularies as Dart constants - essential semantic web vocabularies (RDF, RDFS, OWL, FOAF, Dublin Core, etc.)
-version: 0.4.4
+version: 0.4.5-dev
 homepage: https://kkalass.github.io/rdf_vocabularies/
 repository: https://github.com/kkalass/rdf_vocabularies
 issue_tracker: https://github.com/kkalass/rdf_vocabularies/issues
