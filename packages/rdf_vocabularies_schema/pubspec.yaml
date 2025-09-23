@@ -1,6 +1,6 @@
 name: rdf_vocabularies_schema
 description: Schema.org vocabulary (HTTPS variant) as Dart constants for type-safe RDF development
-version: 0.4.5-dev
+version: 0.4.5
 homepage: https://kkalass.github.io/rdf_vocabularies/
 repository: https://github.com/kkalass/rdf_vocabularies
 issue_tracker: https://github.com/kkalass/rdf_vocabularies/issues
