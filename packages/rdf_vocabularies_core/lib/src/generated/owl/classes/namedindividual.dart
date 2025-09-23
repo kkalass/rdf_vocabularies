@@ -25,7 +25,7 @@ class OwlNamedIndividual {
 
   /// IRI term for the NamedIndividual class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
+  static const classIri = const IriTerm(
     'http://www.w3.org/2002/07/owl#NamedIndividual',
   );
 
@@ -35,7 +35,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const annotatedProperty = IriTerm.prevalidated(
+  static const annotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -45,7 +45,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const annotatedSource = IriTerm.prevalidated(
+  static const annotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -55,7 +55,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const annotatedTarget = IriTerm.prevalidated(
+  static const annotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -65,7 +65,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const bottomDataProperty = IriTerm.prevalidated(
+  static const bottomDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomDataProperty',
   );
 
@@ -75,7 +75,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const bottomObjectProperty = IriTerm.prevalidated(
+  static const bottomObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomObjectProperty',
   );
 
@@ -85,7 +85,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const deprecated = IriTerm.prevalidated(
+  static const deprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -95,7 +95,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const differentFrom = IriTerm.prevalidated(
+  static const differentFrom = const IriTerm(
     'http://www.w3.org/2002/07/owl#differentFrom',
   );
 
@@ -105,9 +105,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const members = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#members',
-  );
+  static const members = const IriTerm('http://www.w3.org/2002/07/owl#members');
 
   /// sameAs [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -115,9 +113,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const sameAs = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#sameAs',
-  );
+  static const sameAs = const IriTerm('http://www.w3.org/2002/07/owl#sameAs');
 
   /// topDataProperty [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -125,7 +121,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const topDataProperty = IriTerm.prevalidated(
+  static const topDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topDataProperty',
   );
 
@@ -135,7 +131,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const topObjectProperty = IriTerm.prevalidated(
+  static const topObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topObjectProperty',
   );
 
@@ -145,7 +141,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const versionInfo = IriTerm.prevalidated(
+  static const versionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -155,7 +151,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -165,7 +161,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -175,7 +171,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -185,7 +181,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -195,7 +191,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -205,7 +201,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -215,7 +211,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -225,9 +221,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafName = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/name',
-  );
+  static const foafName = const IriTerm('http://xmlns.com/foaf/0.1/name');
 
   /// homepage from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -235,7 +229,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafHomepage = IriTerm.prevalidated(
+  static const foafHomepage = const IriTerm(
     'http://xmlns.com/foaf/0.1/homepage',
   );
 
@@ -246,9 +240,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafMaker = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/maker',
-  );
+  static const foafMaker = const IriTerm('http://xmlns.com/foaf/0.1/maker');
 
   /// depiction from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Image]
   ///
@@ -256,7 +248,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafDepiction = IriTerm.prevalidated(
+  static const foafDepiction = const IriTerm(
     'http://xmlns.com/foaf/0.1/depiction',
   );
 
@@ -266,7 +258,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafFundedBy = IriTerm.prevalidated(
+  static const foafFundedBy = const IriTerm(
     'http://xmlns.com/foaf/0.1/fundedBy',
   );
 
@@ -276,9 +268,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafLogo = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/logo',
-  );
+  static const foafLogo = const IriTerm('http://xmlns.com/foaf/0.1/logo');
 
   /// page from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -286,9 +276,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafPage = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/page',
-  );
+  static const foafPage = const IriTerm('http://xmlns.com/foaf/0.1/page');
 
   /// theme from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -296,9 +284,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafTheme = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/theme',
-  );
+  static const foafTheme = const IriTerm('http://xmlns.com/foaf/0.1/theme');
 
   /// abstract_ from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -306,7 +292,7 @@ class OwlNamedIndividual {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

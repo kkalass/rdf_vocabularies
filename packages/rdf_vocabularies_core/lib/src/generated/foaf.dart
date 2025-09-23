@@ -23,7 +23,7 @@ class Foaf {
   ///
   /// A foaf:LabelProperty is any RDF property with texual values that serve as labels.
   ///
-  static const LabelProperty = IriTerm.prevalidated(
+  static const LabelProperty = const IriTerm(
     'http://xmlns.com/foaf/0.1/LabelProperty',
   );
 
@@ -31,29 +31,25 @@ class Foaf {
   ///
   /// A person.
   ///
-  static const Person = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/Person',
-  );
+  static const Person = const IriTerm('http://xmlns.com/foaf/0.1/Person');
 
   /// IRI for foaf:Agent
   ///
   /// An agent (eg. person, group, software or physical artifact).
   ///
-  static const Agent = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/Agent');
+  static const Agent = const IriTerm('http://xmlns.com/foaf/0.1/Agent');
 
   /// IRI for foaf:Document
   ///
   /// A document.
   ///
-  static const Document = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/Document',
-  );
+  static const Document = const IriTerm('http://xmlns.com/foaf/0.1/Document');
 
   /// IRI for foaf:Organization
   ///
   /// An organization.
   ///
-  static const Organization = IriTerm.prevalidated(
+  static const Organization = const IriTerm(
     'http://xmlns.com/foaf/0.1/Organization',
   );
 
@@ -61,27 +57,25 @@ class Foaf {
   ///
   /// A class of Agents.
   ///
-  static const Group = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/Group');
+  static const Group = const IriTerm('http://xmlns.com/foaf/0.1/Group');
 
   /// IRI for foaf:Project
   ///
   /// A project (a collective endeavour of some kind).
   ///
-  static const Project = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/Project',
-  );
+  static const Project = const IriTerm('http://xmlns.com/foaf/0.1/Project');
 
   /// IRI for foaf:Image
   ///
   /// An image.
   ///
-  static const Image = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/Image');
+  static const Image = const IriTerm('http://xmlns.com/foaf/0.1/Image');
 
   /// IRI for foaf:PersonalProfileDocument
   ///
   /// A personal profile RDF document.
   ///
-  static const PersonalProfileDocument = IriTerm.prevalidated(
+  static const PersonalProfileDocument = const IriTerm(
     'http://xmlns.com/foaf/0.1/PersonalProfileDocument',
   );
 
@@ -89,7 +83,7 @@ class Foaf {
   ///
   /// An online account.
   ///
-  static const OnlineAccount = IriTerm.prevalidated(
+  static const OnlineAccount = const IriTerm(
     'http://xmlns.com/foaf/0.1/OnlineAccount',
   );
 
@@ -97,7 +91,7 @@ class Foaf {
   ///
   /// An online gaming account.
   ///
-  static const OnlineGamingAccount = IriTerm.prevalidated(
+  static const OnlineGamingAccount = const IriTerm(
     'http://xmlns.com/foaf/0.1/OnlineGamingAccount',
   );
 
@@ -105,7 +99,7 @@ class Foaf {
   ///
   /// An online e-commerce account.
   ///
-  static const OnlineEcommerceAccount = IriTerm.prevalidated(
+  static const OnlineEcommerceAccount = const IriTerm(
     'http://xmlns.com/foaf/0.1/OnlineEcommerceAccount',
   );
 
@@ -113,7 +107,7 @@ class Foaf {
   ///
   /// An online chat account.
   ///
-  static const OnlineChatAccount = IriTerm.prevalidated(
+  static const OnlineChatAccount = const IriTerm(
     'http://xmlns.com/foaf/0.1/OnlineChatAccount',
   );
 
@@ -121,7 +115,7 @@ class Foaf {
   ///
   /// A document that this thing is the primary topic of.
   ///
-  static const isPrimaryTopicOf = IriTerm.prevalidated(
+  static const isPrimaryTopicOf = const IriTerm(
     'http://xmlns.com/foaf/0.1/isPrimaryTopicOf',
   );
 
@@ -132,7 +126,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const mbox = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/mbox');
+  static const mbox = const IriTerm('http://xmlns.com/foaf/0.1/mbox');
 
   /// IRI for foaf:mbox_sha1sum [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -140,7 +134,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const mbox_sha1sum = IriTerm.prevalidated(
+  static const mbox_sha1sum = const IriTerm(
     'http://xmlns.com/foaf/0.1/mbox_sha1sum',
   );
 
@@ -150,9 +144,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const gender = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/gender',
-  );
+  static const gender = const IriTerm('http://xmlns.com/foaf/0.1/gender');
 
   /// IRI for foaf:geekcode [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -160,9 +152,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const geekcode = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/geekcode',
-  );
+  static const geekcode = const IriTerm('http://xmlns.com/foaf/0.1/geekcode');
 
   /// IRI for foaf:dnaChecksum [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -170,7 +160,7 @@ class Foaf {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const dnaChecksum = IriTerm.prevalidated(
+  static const dnaChecksum = const IriTerm(
     'http://xmlns.com/foaf/0.1/dnaChecksum',
   );
 
@@ -180,7 +170,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Document
   ///
-  static const sha1 = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/sha1');
+  static const sha1 = const IriTerm('http://xmlns.com/foaf/0.1/sha1');
 
   /// IRI for foaf:based_near [Expects: http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing]
   ///
@@ -188,7 +178,7 @@ class Foaf {
   ///
   /// Can be used on: http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
   ///
-  static const based_near = IriTerm.prevalidated(
+  static const based_near = const IriTerm(
     'http://xmlns.com/foaf/0.1/based_near',
   );
 
@@ -198,7 +188,7 @@ class Foaf {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const title = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/title');
+  static const title = const IriTerm('http://xmlns.com/foaf/0.1/title');
 
   /// IRI for foaf:nick
   ///
@@ -206,7 +196,7 @@ class Foaf {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const nick = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/nick');
+  static const nick = const IriTerm('http://xmlns.com/foaf/0.1/nick');
 
   /// IRI for foaf:jabberID [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -214,9 +204,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const jabberID = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/jabberID',
-  );
+  static const jabberID = const IriTerm('http://xmlns.com/foaf/0.1/jabberID');
 
   /// IRI for foaf:aimChatID [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -224,9 +212,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const aimChatID = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/aimChatID',
-  );
+  static const aimChatID = const IriTerm('http://xmlns.com/foaf/0.1/aimChatID');
 
   /// IRI for foaf:skypeID [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -234,9 +220,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const skypeID = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/skypeID',
-  );
+  static const skypeID = const IriTerm('http://xmlns.com/foaf/0.1/skypeID');
 
   /// IRI for foaf:icqChatID [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -244,9 +228,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const icqChatID = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/icqChatID',
-  );
+  static const icqChatID = const IriTerm('http://xmlns.com/foaf/0.1/icqChatID');
 
   /// IRI for foaf:yahooChatID [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -254,7 +236,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const yahooChatID = IriTerm.prevalidated(
+  static const yahooChatID = const IriTerm(
     'http://xmlns.com/foaf/0.1/yahooChatID',
   );
 
@@ -264,9 +246,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const msnChatID = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/msnChatID',
-  );
+  static const msnChatID = const IriTerm('http://xmlns.com/foaf/0.1/msnChatID');
 
   /// IRI for foaf:name [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -274,7 +254,7 @@ class Foaf {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const name = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/name');
+  static const name = const IriTerm('http://xmlns.com/foaf/0.1/name');
 
   /// IRI for foaf:firstName [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -282,9 +262,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const firstName = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/firstName',
-  );
+  static const firstName = const IriTerm('http://xmlns.com/foaf/0.1/firstName');
 
   /// IRI for foaf:lastName [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -292,9 +270,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const lastName = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/lastName',
-  );
+  static const lastName = const IriTerm('http://xmlns.com/foaf/0.1/lastName');
 
   /// IRI for foaf:givenName
   ///
@@ -302,9 +278,7 @@ class Foaf {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const givenName = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/givenName',
-  );
+  static const givenName = const IriTerm('http://xmlns.com/foaf/0.1/givenName');
 
   /// IRI for foaf:givenname
   ///
@@ -312,9 +286,7 @@ class Foaf {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const givenname = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/givenname',
-  );
+  static const givenname = const IriTerm('http://xmlns.com/foaf/0.1/givenname');
 
   /// IRI for foaf:surname [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -322,9 +294,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const surname = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/surname',
-  );
+  static const surname = const IriTerm('http://xmlns.com/foaf/0.1/surname');
 
   /// IRI for foaf:family_name [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -332,7 +302,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person, http://xmlns.com/foaf/0.1/Person
   ///
-  static const family_name = IriTerm.prevalidated(
+  static const family_name = const IriTerm(
     'http://xmlns.com/foaf/0.1/family_name',
   );
 
@@ -342,7 +312,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person, http://xmlns.com/foaf/0.1/Person
   ///
-  static const familyName = IriTerm.prevalidated(
+  static const familyName = const IriTerm(
     'http://xmlns.com/foaf/0.1/familyName',
   );
 
@@ -352,7 +322,7 @@ class Foaf {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const phone = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/phone');
+  static const phone = const IriTerm('http://xmlns.com/foaf/0.1/phone');
 
   /// IRI for foaf:homepage [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -360,9 +330,7 @@ class Foaf {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const homepage = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/homepage',
-  );
+  static const homepage = const IriTerm('http://xmlns.com/foaf/0.1/homepage');
 
   /// IRI for foaf:weblog [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -370,9 +338,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const weblog = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/weblog',
-  );
+  static const weblog = const IriTerm('http://xmlns.com/foaf/0.1/weblog');
 
   /// IRI for foaf:openid [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -380,9 +346,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const openid = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/openid',
-  );
+  static const openid = const IriTerm('http://xmlns.com/foaf/0.1/openid');
 
   /// IRI for foaf:tipjar [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -390,9 +354,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const tipjar = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/tipjar',
-  );
+  static const tipjar = const IriTerm('http://xmlns.com/foaf/0.1/tipjar');
 
   /// IRI for foaf:plan [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -400,7 +362,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const plan = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/plan');
+  static const plan = const IriTerm('http://xmlns.com/foaf/0.1/plan');
 
   /// IRI for foaf:made [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -408,7 +370,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const made = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/made');
+  static const made = const IriTerm('http://xmlns.com/foaf/0.1/made');
 
   /// IRI for foaf:maker [Expects: http://xmlns.com/foaf/0.1/Agent]
   ///
@@ -417,7 +379,7 @@ class Foaf {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const maker = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/maker');
+  static const maker = const IriTerm('http://xmlns.com/foaf/0.1/maker');
 
   /// IRI for foaf:img [Expects: http://xmlns.com/foaf/0.1/Image]
   ///
@@ -425,7 +387,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const img = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/img');
+  static const img = const IriTerm('http://xmlns.com/foaf/0.1/img');
 
   /// IRI for foaf:depiction [Expects: http://xmlns.com/foaf/0.1/Image]
   ///
@@ -433,9 +395,7 @@ class Foaf {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const depiction = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/depiction',
-  );
+  static const depiction = const IriTerm('http://xmlns.com/foaf/0.1/depiction');
 
   /// IRI for foaf:depicts [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -443,9 +403,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Image
   ///
-  static const depicts = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/depicts',
-  );
+  static const depicts = const IriTerm('http://xmlns.com/foaf/0.1/depicts');
 
   /// IRI for foaf:thumbnail [Expects: http://xmlns.com/foaf/0.1/Image]
   ///
@@ -453,9 +411,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Image
   ///
-  static const thumbnail = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/thumbnail',
-  );
+  static const thumbnail = const IriTerm('http://xmlns.com/foaf/0.1/thumbnail');
 
   /// IRI for foaf:myersBriggs [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -463,7 +419,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const myersBriggs = IriTerm.prevalidated(
+  static const myersBriggs = const IriTerm(
     'http://xmlns.com/foaf/0.1/myersBriggs',
   );
 
@@ -473,7 +429,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const workplaceHomepage = IriTerm.prevalidated(
+  static const workplaceHomepage = const IriTerm(
     'http://xmlns.com/foaf/0.1/workplaceHomepage',
   );
 
@@ -483,7 +439,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const workInfoHomepage = IriTerm.prevalidated(
+  static const workInfoHomepage = const IriTerm(
     'http://xmlns.com/foaf/0.1/workInfoHomepage',
   );
 
@@ -493,7 +449,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const schoolHomepage = IriTerm.prevalidated(
+  static const schoolHomepage = const IriTerm(
     'http://xmlns.com/foaf/0.1/schoolHomepage',
   );
 
@@ -503,7 +459,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const knows = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/knows');
+  static const knows = const IriTerm('http://xmlns.com/foaf/0.1/knows');
 
   /// IRI for foaf:interest [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -511,9 +467,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const interest = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/interest',
-  );
+  static const interest = const IriTerm('http://xmlns.com/foaf/0.1/interest');
 
   /// IRI for foaf:topic_interest [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -521,7 +475,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const topic_interest = IriTerm.prevalidated(
+  static const topic_interest = const IriTerm(
     'http://xmlns.com/foaf/0.1/topic_interest',
   );
 
@@ -531,7 +485,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const publications = IriTerm.prevalidated(
+  static const publications = const IriTerm(
     'http://xmlns.com/foaf/0.1/publications',
   );
 
@@ -541,7 +495,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const currentProject = IriTerm.prevalidated(
+  static const currentProject = const IriTerm(
     'http://xmlns.com/foaf/0.1/currentProject',
   );
 
@@ -551,7 +505,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Person
   ///
-  static const pastProject = IriTerm.prevalidated(
+  static const pastProject = const IriTerm(
     'http://xmlns.com/foaf/0.1/pastProject',
   );
 
@@ -561,9 +515,7 @@ class Foaf {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const fundedBy = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/fundedBy',
-  );
+  static const fundedBy = const IriTerm('http://xmlns.com/foaf/0.1/fundedBy');
 
   /// IRI for foaf:logo [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -571,7 +523,7 @@ class Foaf {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const logo = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/logo');
+  static const logo = const IriTerm('http://xmlns.com/foaf/0.1/logo');
 
   /// IRI for foaf:topic [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -579,7 +531,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Document
   ///
-  static const topic = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/topic');
+  static const topic = const IriTerm('http://xmlns.com/foaf/0.1/topic');
 
   /// IRI for foaf:primaryTopic [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -587,7 +539,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Document
   ///
-  static const primaryTopic = IriTerm.prevalidated(
+  static const primaryTopic = const IriTerm(
     'http://xmlns.com/foaf/0.1/primaryTopic',
   );
 
@@ -597,7 +549,7 @@ class Foaf {
   ///
   /// Can be used on: http://www.w3.org/2004/02/skos/core#Concept
   ///
-  static const focus = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/focus');
+  static const focus = const IriTerm('http://xmlns.com/foaf/0.1/focus');
 
   /// IRI for foaf:page [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -605,7 +557,7 @@ class Foaf {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const page = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/page');
+  static const page = const IriTerm('http://xmlns.com/foaf/0.1/page');
 
   /// IRI for foaf:theme [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -613,7 +565,7 @@ class Foaf {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const theme = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/theme');
+  static const theme = const IriTerm('http://xmlns.com/foaf/0.1/theme');
 
   /// IRI for foaf:account [Expects: http://xmlns.com/foaf/0.1/OnlineAccount]
   ///
@@ -621,9 +573,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const account = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/account',
-  );
+  static const account = const IriTerm('http://xmlns.com/foaf/0.1/account');
 
   /// IRI for foaf:holdsAccount [Expects: http://xmlns.com/foaf/0.1/OnlineAccount]
   ///
@@ -631,7 +581,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const holdsAccount = IriTerm.prevalidated(
+  static const holdsAccount = const IriTerm(
     'http://xmlns.com/foaf/0.1/holdsAccount',
   );
 
@@ -641,7 +591,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/OnlineAccount
   ///
-  static const accountServiceHomepage = IriTerm.prevalidated(
+  static const accountServiceHomepage = const IriTerm(
     'http://xmlns.com/foaf/0.1/accountServiceHomepage',
   );
 
@@ -651,7 +601,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/OnlineAccount
   ///
-  static const accountName = IriTerm.prevalidated(
+  static const accountName = const IriTerm(
     'http://xmlns.com/foaf/0.1/accountName',
   );
 
@@ -661,9 +611,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Group
   ///
-  static const member = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/member',
-  );
+  static const member = const IriTerm('http://xmlns.com/foaf/0.1/member');
 
   /// IRI for foaf:membershipClass
   ///
@@ -671,7 +619,7 @@ class Foaf {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const membershipClass = IriTerm.prevalidated(
+  static const membershipClass = const IriTerm(
     'http://xmlns.com/foaf/0.1/membershipClass',
   );
 
@@ -681,9 +629,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const birthday = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/birthday',
-  );
+  static const birthday = const IriTerm('http://xmlns.com/foaf/0.1/birthday');
 
   /// IRI for foaf:age [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -691,7 +637,7 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const age = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/age');
+  static const age = const IriTerm('http://xmlns.com/foaf/0.1/age');
 
   /// IRI for foaf:status [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -699,7 +645,5 @@ class Foaf {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const status = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/status',
-  );
+  static const status = const IriTerm('http://xmlns.com/foaf/0.1/status');
 }

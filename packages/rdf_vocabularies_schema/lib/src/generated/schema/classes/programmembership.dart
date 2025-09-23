@@ -26,9 +26,7 @@ class SchemaProgramMembership {
 
   /// IRI term for the ProgramMembership class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'https://schema.org/ProgramMembership',
-  );
+  static const classIri = const IriTerm('https://schema.org/ProgramMembership');
 
   /// additionalType [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -37,7 +35,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -47,7 +45,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -57,7 +55,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/MemberProgram, https://schema.org/ProgramMembership
   ///
-  static const hostingOrganization = IriTerm.prevalidated(
+  static const hostingOrganization = const IriTerm(
     'https://schema.org/hostingOrganization',
   );
 
@@ -67,7 +65,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -77,7 +75,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/ProgramMembership
   ///
-  static const members = IriTerm.prevalidated('https://schema.org/members');
+  static const members = const IriTerm('https://schema.org/members');
 
   /// membershipNumber [Expects: https://schema.org/Text]
   ///
@@ -85,7 +83,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/ProgramMembership
   ///
-  static const membershipNumber = IriTerm.prevalidated(
+  static const membershipNumber = const IriTerm(
     'https://schema.org/membershipNumber',
   );
 
@@ -95,7 +93,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/MemberProgramTier, https://schema.org/PriceSpecification, https://schema.org/ProgramMembership
   ///
-  static const membershipPointsEarned = IriTerm.prevalidated(
+  static const membershipPointsEarned = const IriTerm(
     'https://schema.org/membershipPointsEarned',
   );
 
@@ -105,7 +103,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// potentialAction [Expects: https://schema.org/Action]
   ///
@@ -113,7 +111,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -123,7 +121,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/ProgramMembership
   ///
-  static const program = IriTerm.prevalidated('https://schema.org/program');
+  static const program = const IriTerm('https://schema.org/program');
 
   /// programName [Expects: https://schema.org/Text]
   ///
@@ -131,9 +129,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/ProgramMembership
   ///
-  static const programName = IriTerm.prevalidated(
-    'https://schema.org/programName',
-  );
+  static const programName = const IriTerm('https://schema.org/programName');
 
   /// sameAs [Expects: https://schema.org/URL]
   ///
@@ -141,7 +137,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// url [Expects: https://schema.org/URL]
   ///
@@ -149,7 +145,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// alternateName [Expects: https://schema.org/Text]
   ///
@@ -157,7 +153,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -167,7 +163,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -177,7 +173,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// member [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -185,7 +181,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/ProgramMembership
   ///
-  static const member = IriTerm.prevalidated('https://schema.org/member');
+  static const member = const IriTerm('https://schema.org/member');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -193,9 +189,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -203,7 +197,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -212,9 +206,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -222,7 +214,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -230,7 +222,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -240,7 +232,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -250,7 +242,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -260,7 +252,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -270,7 +262,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -280,7 +272,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -290,7 +282,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -300,7 +292,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -310,7 +302,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -320,7 +312,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -330,7 +322,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -340,7 +332,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -350,7 +342,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -360,7 +352,7 @@ class SchemaProgramMembership {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

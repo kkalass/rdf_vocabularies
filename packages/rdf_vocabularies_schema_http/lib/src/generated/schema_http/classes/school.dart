@@ -29,7 +29,7 @@ class SchemaHttpSchool {
 
   /// IRI term for the School class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated('http://schema.org/School');
+  static const classIri = const IriTerm('http://schema.org/School');
 
   /// acceptedPaymentMethod [Expects: http://schema.org/LoanOrCredit, http://schema.org/PaymentMethod, http://schema.org/Text]
   ///
@@ -37,7 +37,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Organization
   ///
-  static const acceptedPaymentMethod = IriTerm.prevalidated(
+  static const acceptedPaymentMethod = const IriTerm(
     'http://schema.org/acceptedPaymentMethod',
   );
 
@@ -47,7 +47,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/NewsMediaOrganization, http://schema.org/Organization
   ///
-  static const actionableFeedbackPolicy = IriTerm.prevalidated(
+  static const actionableFeedbackPolicy = const IriTerm(
     'http://schema.org/actionableFeedbackPolicy',
   );
 
@@ -58,7 +58,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/Offer, http://schema.org/Place, http://schema.org/Product, http://schema.org/QualitativeValue, http://schema.org/QuantitativeValue
   ///
-  static const additionalProperty = IriTerm.prevalidated(
+  static const additionalProperty = const IriTerm(
     'http://schema.org/additionalProperty',
   );
 
@@ -69,7 +69,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -79,7 +79,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/GeoCoordinates, http://schema.org/GeoShape, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Place
   ///
-  static const address = IriTerm.prevalidated('http://schema.org/address');
+  static const address = const IriTerm('http://schema.org/address');
 
   /// agentInteractionStatistic [Expects: http://schema.org/InteractionCounter]
   ///
@@ -87,7 +87,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const agentInteractionStatistic = IriTerm.prevalidated(
+  static const agentInteractionStatistic = const IriTerm(
     'http://schema.org/agentInteractionStatistic',
   );
 
@@ -97,7 +97,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Brand, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const aggregateRating = IriTerm.prevalidated(
+  static const aggregateRating = const IriTerm(
     'http://schema.org/aggregateRating',
   );
 
@@ -107,7 +107,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Accommodation, http://schema.org/FloorPlan, http://schema.org/LodgingBusiness, http://schema.org/Place
   ///
-  static const amenityFeature = IriTerm.prevalidated(
+  static const amenityFeature = const IriTerm(
     'http://schema.org/amenityFeature',
   );
 
@@ -117,7 +117,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Product
   ///
-  static const awards = IriTerm.prevalidated('http://schema.org/awards');
+  static const awards = const IriTerm('http://schema.org/awards');
 
   /// branchCode [Expects: http://schema.org/Text]
   ///
@@ -126,9 +126,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const branchCode = IriTerm.prevalidated(
-    'http://schema.org/branchCode',
-  );
+  static const branchCode = const IriTerm('http://schema.org/branchCode');
 
   /// brand [Expects: http://schema.org/Brand, http://schema.org/Organization]
   ///
@@ -136,7 +134,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person, http://schema.org/Product, http://schema.org/Service
   ///
-  static const brand = IriTerm.prevalidated('http://schema.org/brand');
+  static const brand = const IriTerm('http://schema.org/brand');
 
   /// companyRegistration [Expects: http://schema.org/Certification]
   ///
@@ -144,7 +142,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const companyRegistration = IriTerm.prevalidated(
+  static const companyRegistration = const IriTerm(
     'http://schema.org/companyRegistration',
   );
 
@@ -154,9 +152,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const contactPoints = IriTerm.prevalidated(
-    'http://schema.org/contactPoints',
-  );
+  static const contactPoints = const IriTerm('http://schema.org/contactPoints');
 
   /// containedIn [Expects: http://schema.org/Place]
   ///
@@ -164,9 +160,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const containedIn = IriTerm.prevalidated(
-    'http://schema.org/containedIn',
-  );
+  static const containedIn = const IriTerm('http://schema.org/containedIn');
 
   /// correctionsPolicy [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -174,7 +168,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/NewsMediaOrganization, http://schema.org/Organization
   ///
-  static const correctionsPolicy = IriTerm.prevalidated(
+  static const correctionsPolicy = const IriTerm(
     'http://schema.org/correctionsPolicy',
   );
 
@@ -184,9 +178,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const department = IriTerm.prevalidated(
-    'http://schema.org/department',
-  );
+  static const department = const IriTerm('http://schema.org/department');
 
   /// disambiguatingDescription [Expects: http://schema.org/Text]
   ///
@@ -194,7 +186,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -204,7 +196,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const dissolutionDate = IriTerm.prevalidated(
+  static const dissolutionDate = const IriTerm(
     'http://schema.org/dissolutionDate',
   );
 
@@ -214,7 +206,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/NewsMediaOrganization, http://schema.org/Organization
   ///
-  static const diversityPolicy = IriTerm.prevalidated(
+  static const diversityPolicy = const IriTerm(
     'http://schema.org/diversityPolicy',
   );
 
@@ -224,7 +216,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/NewsMediaOrganization, http://schema.org/Organization
   ///
-  static const diversityStaffingReport = IriTerm.prevalidated(
+  static const diversityStaffingReport = const IriTerm(
     'http://schema.org/diversityStaffingReport',
   );
 
@@ -234,7 +226,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const duns = IriTerm.prevalidated('http://schema.org/duns');
+  static const duns = const IriTerm('http://schema.org/duns');
 
   /// email [Expects: http://schema.org/Text]
   ///
@@ -242,7 +234,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/ContactPoint, http://schema.org/Organization, http://schema.org/Person
   ///
-  static const email = IriTerm.prevalidated('http://schema.org/email');
+  static const email = const IriTerm('http://schema.org/email');
 
   /// employees [Expects: http://schema.org/Person]
   ///
@@ -250,7 +242,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const employees = IriTerm.prevalidated('http://schema.org/employees');
+  static const employees = const IriTerm('http://schema.org/employees');
 
   /// ethicsPolicy [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -258,9 +250,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/NewsMediaOrganization, http://schema.org/Organization
   ///
-  static const ethicsPolicy = IriTerm.prevalidated(
-    'http://schema.org/ethicsPolicy',
-  );
+  static const ethicsPolicy = const IriTerm('http://schema.org/ethicsPolicy');
 
   /// events [Expects: http://schema.org/Event]
   ///
@@ -268,7 +258,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Place
   ///
-  static const events = IriTerm.prevalidated('http://schema.org/events');
+  static const events = const IriTerm('http://schema.org/events');
 
   /// faxNumber [Expects: http://schema.org/Text]
   ///
@@ -276,7 +266,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/ContactPoint, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Place
   ///
-  static const faxNumber = IriTerm.prevalidated('http://schema.org/faxNumber');
+  static const faxNumber = const IriTerm('http://schema.org/faxNumber');
 
   /// founders [Expects: http://schema.org/Person]
   ///
@@ -284,7 +274,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const founders = IriTerm.prevalidated('http://schema.org/founders');
+  static const founders = const IriTerm('http://schema.org/founders');
 
   /// foundingDate [Expects: http://schema.org/Date]
   ///
@@ -292,9 +282,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const foundingDate = IriTerm.prevalidated(
-    'http://schema.org/foundingDate',
-  );
+  static const foundingDate = const IriTerm('http://schema.org/foundingDate');
 
   /// foundingLocation [Expects: http://schema.org/Place]
   ///
@@ -302,7 +290,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const foundingLocation = IriTerm.prevalidated(
+  static const foundingLocation = const IriTerm(
     'http://schema.org/foundingLocation',
   );
 
@@ -312,7 +300,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Grant, http://schema.org/MonetaryGrant, http://schema.org/Organization, http://schema.org/Person
   ///
-  static const funder = IriTerm.prevalidated('http://schema.org/funder');
+  static const funder = const IriTerm('http://schema.org/funder');
 
   /// geo [Expects: http://schema.org/GeoCoordinates, http://schema.org/GeoShape]
   ///
@@ -320,7 +308,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const geo = IriTerm.prevalidated('http://schema.org/geo');
+  static const geo = const IriTerm('http://schema.org/geo');
 
   /// geoContains [Expects: http://schema.org/GeospatialGeometry, http://schema.org/Place]
   ///
@@ -328,9 +316,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/GeospatialGeometry, http://schema.org/Place
   ///
-  static const geoContains = IriTerm.prevalidated(
-    'http://schema.org/geoContains',
-  );
+  static const geoContains = const IriTerm('http://schema.org/geoContains');
 
   /// geoCoveredBy [Expects: http://schema.org/GeospatialGeometry, http://schema.org/Place]
   ///
@@ -338,9 +324,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/GeospatialGeometry, http://schema.org/Place
   ///
-  static const geoCoveredBy = IriTerm.prevalidated(
-    'http://schema.org/geoCoveredBy',
-  );
+  static const geoCoveredBy = const IriTerm('http://schema.org/geoCoveredBy');
 
   /// geoCovers [Expects: http://schema.org/GeospatialGeometry, http://schema.org/Place]
   ///
@@ -348,7 +332,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/GeospatialGeometry, http://schema.org/Place
   ///
-  static const geoCovers = IriTerm.prevalidated('http://schema.org/geoCovers');
+  static const geoCovers = const IriTerm('http://schema.org/geoCovers');
 
   /// geoCrosses [Expects: http://schema.org/GeospatialGeometry, http://schema.org/Place]
   ///
@@ -356,9 +340,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/GeospatialGeometry, http://schema.org/Place
   ///
-  static const geoCrosses = IriTerm.prevalidated(
-    'http://schema.org/geoCrosses',
-  );
+  static const geoCrosses = const IriTerm('http://schema.org/geoCrosses');
 
   /// geoDisjoint [Expects: http://schema.org/GeospatialGeometry, http://schema.org/Place]
   ///
@@ -366,9 +348,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/GeospatialGeometry, http://schema.org/Place
   ///
-  static const geoDisjoint = IriTerm.prevalidated(
-    'http://schema.org/geoDisjoint',
-  );
+  static const geoDisjoint = const IriTerm('http://schema.org/geoDisjoint');
 
   /// geoEquals [Expects: http://schema.org/GeospatialGeometry, http://schema.org/Place]
   ///
@@ -376,7 +356,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/GeospatialGeometry, http://schema.org/Place
   ///
-  static const geoEquals = IriTerm.prevalidated('http://schema.org/geoEquals');
+  static const geoEquals = const IriTerm('http://schema.org/geoEquals');
 
   /// geoIntersects [Expects: http://schema.org/GeospatialGeometry, http://schema.org/Place]
   ///
@@ -384,9 +364,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/GeospatialGeometry, http://schema.org/Place
   ///
-  static const geoIntersects = IriTerm.prevalidated(
-    'http://schema.org/geoIntersects',
-  );
+  static const geoIntersects = const IriTerm('http://schema.org/geoIntersects');
 
   /// geoOverlaps [Expects: http://schema.org/GeospatialGeometry, http://schema.org/Place]
   ///
@@ -394,9 +372,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/GeospatialGeometry, http://schema.org/Place
   ///
-  static const geoOverlaps = IriTerm.prevalidated(
-    'http://schema.org/geoOverlaps',
-  );
+  static const geoOverlaps = const IriTerm('http://schema.org/geoOverlaps');
 
   /// geoTouches [Expects: http://schema.org/GeospatialGeometry, http://schema.org/Place]
   ///
@@ -404,9 +380,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/GeospatialGeometry, http://schema.org/Place
   ///
-  static const geoTouches = IriTerm.prevalidated(
-    'http://schema.org/geoTouches',
-  );
+  static const geoTouches = const IriTerm('http://schema.org/geoTouches');
 
   /// geoWithin [Expects: http://schema.org/GeospatialGeometry, http://schema.org/Place]
   ///
@@ -414,7 +388,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/GeospatialGeometry, http://schema.org/Place
   ///
-  static const geoWithin = IriTerm.prevalidated('http://schema.org/geoWithin');
+  static const geoWithin = const IriTerm('http://schema.org/geoWithin');
 
   /// globalLocationNumber [Expects: http://schema.org/Text]
   ///
@@ -422,7 +396,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person, http://schema.org/Place
   ///
-  static const globalLocationNumber = IriTerm.prevalidated(
+  static const globalLocationNumber = const IriTerm(
     'http://schema.org/globalLocationNumber',
   );
 
@@ -432,7 +406,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const hasCertification = IriTerm.prevalidated(
+  static const hasCertification = const IriTerm(
     'http://schema.org/hasCertification',
   );
 
@@ -442,9 +416,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const hasCredential = IriTerm.prevalidated(
-    'http://schema.org/hasCredential',
-  );
+  static const hasCredential = const IriTerm('http://schema.org/hasCredential');
 
   /// hasDriveThroughService [Expects: http://schema.org/Boolean]
   ///
@@ -452,7 +424,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const hasDriveThroughService = IriTerm.prevalidated(
+  static const hasDriveThroughService = const IriTerm(
     'http://schema.org/hasDriveThroughService',
   );
 
@@ -462,7 +434,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product
   ///
-  static const hasGS1DigitalLink = IriTerm.prevalidated(
+  static const hasGS1DigitalLink = const IriTerm(
     'http://schema.org/hasGS1DigitalLink',
   );
 
@@ -472,7 +444,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const hasMemberProgram = IriTerm.prevalidated(
+  static const hasMemberProgram = const IriTerm(
     'http://schema.org/hasMemberProgram',
   );
 
@@ -482,7 +454,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Product
   ///
-  static const hasMerchantReturnPolicy = IriTerm.prevalidated(
+  static const hasMerchantReturnPolicy = const IriTerm(
     'http://schema.org/hasMerchantReturnPolicy',
   );
 
@@ -492,7 +464,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person, http://schema.org/Service
   ///
-  static const hasOfferCatalog = IriTerm.prevalidated(
+  static const hasOfferCatalog = const IriTerm(
     'http://schema.org/hasOfferCatalog',
   );
 
@@ -502,7 +474,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const hasPOS = IriTerm.prevalidated('http://schema.org/hasPOS');
+  static const hasPOS = const IriTerm('http://schema.org/hasPOS');
 
   /// hasShippingService [Expects: http://schema.org/ShippingService]
   ///
@@ -510,7 +482,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/OfferShippingDetails, http://schema.org/Organization
   ///
-  static const hasShippingService = IriTerm.prevalidated(
+  static const hasShippingService = const IriTerm(
     'http://schema.org/hasShippingService',
   );
 
@@ -520,7 +492,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -530,7 +502,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person, http://schema.org/Place
   ///
-  static const isicV4 = IriTerm.prevalidated('http://schema.org/isicV4');
+  static const isicV4 = const IriTerm('http://schema.org/isicV4');
 
   /// iso6523Code [Expects: http://schema.org/Text]
   ///
@@ -538,9 +510,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const iso6523Code = IriTerm.prevalidated(
-    'http://schema.org/iso6523Code',
-  );
+  static const iso6523Code = const IriTerm('http://schema.org/iso6523Code');
 
   /// keywords [Expects: http://schema.org/DefinedTerm, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -548,7 +518,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product
   ///
-  static const keywords = IriTerm.prevalidated('http://schema.org/keywords');
+  static const keywords = const IriTerm('http://schema.org/keywords');
 
   /// knowsAbout [Expects: http://schema.org/Text, http://schema.org/Thing, http://schema.org/URL]
   ///
@@ -556,9 +526,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const knowsAbout = IriTerm.prevalidated(
-    'http://schema.org/knowsAbout',
-  );
+  static const knowsAbout = const IriTerm('http://schema.org/knowsAbout');
 
   /// knowsLanguage [Expects: http://schema.org/Language, http://schema.org/Text]
   ///
@@ -566,9 +534,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const knowsLanguage = IriTerm.prevalidated(
-    'http://schema.org/knowsLanguage',
-  );
+  static const knowsLanguage = const IriTerm('http://schema.org/knowsLanguage');
 
   /// latitude [Expects: http://schema.org/Number, http://schema.org/Text]
   ///
@@ -576,7 +542,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/GeoCoordinates, http://schema.org/Place
   ///
-  static const latitude = IriTerm.prevalidated('http://schema.org/latitude');
+  static const latitude = const IriTerm('http://schema.org/latitude');
 
   /// legalAddress [Expects: http://schema.org/PostalAddress]
   ///
@@ -584,9 +550,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const legalAddress = IriTerm.prevalidated(
-    'http://schema.org/legalAddress',
-  );
+  static const legalAddress = const IriTerm('http://schema.org/legalAddress');
 
   /// legalName [Expects: http://schema.org/Text]
   ///
@@ -594,7 +558,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const legalName = IriTerm.prevalidated('http://schema.org/legalName');
+  static const legalName = const IriTerm('http://schema.org/legalName');
 
   /// legalRepresentative [Expects: http://schema.org/Person]
   ///
@@ -602,7 +566,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const legalRepresentative = IriTerm.prevalidated(
+  static const legalRepresentative = const IriTerm(
     'http://schema.org/legalRepresentative',
   );
 
@@ -612,7 +576,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const leiCode = IriTerm.prevalidated('http://schema.org/leiCode');
+  static const leiCode = const IriTerm('http://schema.org/leiCode');
 
   /// logo [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -620,7 +584,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Brand, http://schema.org/Certification, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const logo = IriTerm.prevalidated('http://schema.org/logo');
+  static const logo = const IriTerm('http://schema.org/logo');
 
   /// longitude [Expects: http://schema.org/Number, http://schema.org/Text]
   ///
@@ -628,7 +592,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/GeoCoordinates, http://schema.org/Place
   ///
-  static const longitude = IriTerm.prevalidated('http://schema.org/longitude');
+  static const longitude = const IriTerm('http://schema.org/longitude');
 
   /// map [Expects: http://schema.org/URL]
   ///
@@ -636,7 +600,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const map = IriTerm.prevalidated('http://schema.org/map');
+  static const map = const IriTerm('http://schema.org/map');
 
   /// maps [Expects: http://schema.org/URL]
   ///
@@ -644,7 +608,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const maps = IriTerm.prevalidated('http://schema.org/maps');
+  static const maps = const IriTerm('http://schema.org/maps');
 
   /// maximumAttendeeCapacity [Expects: http://schema.org/Integer]
   ///
@@ -652,7 +616,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Event, http://schema.org/Place
   ///
-  static const maximumAttendeeCapacity = IriTerm.prevalidated(
+  static const maximumAttendeeCapacity = const IriTerm(
     'http://schema.org/maximumAttendeeCapacity',
   );
 
@@ -662,7 +626,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/ProgramMembership
   ///
-  static const members = IriTerm.prevalidated('http://schema.org/members');
+  static const members = const IriTerm('http://schema.org/members');
 
   /// naics [Expects: http://schema.org/Text]
   ///
@@ -670,7 +634,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const naics = IriTerm.prevalidated('http://schema.org/naics');
+  static const naics = const IriTerm('http://schema.org/naics');
 
   /// name [Expects: http://schema.org/Text]
   ///
@@ -678,7 +642,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('http://schema.org/name');
+  static const name = const IriTerm('http://schema.org/name');
 
   /// nonprofitStatus [Expects: http://schema.org/NonprofitType]
   ///
@@ -686,7 +650,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const nonprofitStatus = IriTerm.prevalidated(
+  static const nonprofitStatus = const IriTerm(
     'http://schema.org/nonprofitStatus',
   );
 
@@ -696,7 +660,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/BusinessAudience, http://schema.org/Organization
   ///
-  static const numberOfEmployees = IriTerm.prevalidated(
+  static const numberOfEmployees = const IriTerm(
     'http://schema.org/numberOfEmployees',
   );
 
@@ -706,9 +670,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/CivicStructure, http://schema.org/LocalBusiness
   ///
-  static const openingHours = IriTerm.prevalidated(
-    'http://schema.org/openingHours',
-  );
+  static const openingHours = const IriTerm('http://schema.org/openingHours');
 
   /// openingHoursSpecification [Expects: http://schema.org/OpeningHoursSpecification]
   ///
@@ -716,7 +678,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const openingHoursSpecification = IriTerm.prevalidated(
+  static const openingHoursSpecification = const IriTerm(
     'http://schema.org/openingHoursSpecification',
   );
 
@@ -726,7 +688,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/NewsMediaOrganization, http://schema.org/Organization
   ///
-  static const ownershipFundingInfo = IriTerm.prevalidated(
+  static const ownershipFundingInfo = const IriTerm(
     'http://schema.org/ownershipFundingInfo',
   );
 
@@ -736,7 +698,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const owns = IriTerm.prevalidated('http://schema.org/owns');
+  static const owns = const IriTerm('http://schema.org/owns');
 
   /// photos [Expects: http://schema.org/ImageObject, http://schema.org/Photograph]
   ///
@@ -744,7 +706,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const photos = IriTerm.prevalidated('http://schema.org/photos');
+  static const photos = const IriTerm('http://schema.org/photos');
 
   /// potentialAction [Expects: http://schema.org/Action]
   ///
@@ -752,7 +714,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -762,9 +724,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const publicAccess = IriTerm.prevalidated(
-    'http://schema.org/publicAccess',
-  );
+  static const publicAccess = const IriTerm('http://schema.org/publicAccess');
 
   /// reviews [Expects: http://schema.org/Review]
   ///
@@ -772,7 +732,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product
   ///
-  static const reviews = IriTerm.prevalidated('http://schema.org/reviews');
+  static const reviews = const IriTerm('http://schema.org/reviews');
 
   /// sameAs [Expects: http://schema.org/URL]
   ///
@@ -780,7 +740,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('http://schema.org/sameAs');
+  static const sameAs = const IriTerm('http://schema.org/sameAs');
 
   /// seeks [Expects: http://schema.org/Demand]
   ///
@@ -788,7 +748,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const seeks = IriTerm.prevalidated('http://schema.org/seeks');
+  static const seeks = const IriTerm('http://schema.org/seeks');
 
   /// skills [Expects: http://schema.org/DefinedTerm, http://schema.org/Text]
   ///
@@ -796,7 +756,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/JobPosting, http://schema.org/Occupation, http://schema.org/Organization, http://schema.org/Person
   ///
-  static const skills = IriTerm.prevalidated('http://schema.org/skills');
+  static const skills = const IriTerm('http://schema.org/skills');
 
   /// slogan [Expects: http://schema.org/Text]
   ///
@@ -804,7 +764,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Brand, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const slogan = IriTerm.prevalidated('http://schema.org/slogan');
+  static const slogan = const IriTerm('http://schema.org/slogan');
 
   /// smokingAllowed [Expects: http://schema.org/Boolean]
   ///
@@ -812,7 +772,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const smokingAllowed = IriTerm.prevalidated(
+  static const smokingAllowed = const IriTerm(
     'http://schema.org/smokingAllowed',
   );
 
@@ -823,7 +783,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const specialOpeningHoursSpecification = IriTerm.prevalidated(
+  static const specialOpeningHoursSpecification = const IriTerm(
     'http://schema.org/specialOpeningHoursSpecification',
   );
 
@@ -833,7 +793,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const taxID = IriTerm.prevalidated('http://schema.org/taxID');
+  static const taxID = const IriTerm('http://schema.org/taxID');
 
   /// telephone [Expects: http://schema.org/Text]
   ///
@@ -841,7 +801,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/ContactPoint, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Place
   ///
-  static const telephone = IriTerm.prevalidated('http://schema.org/telephone');
+  static const telephone = const IriTerm('http://schema.org/telephone');
 
   /// tourBookingPage [Expects: http://schema.org/URL]
   ///
@@ -849,7 +809,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Accommodation, http://schema.org/ApartmentComplex, http://schema.org/Place
   ///
-  static const tourBookingPage = IriTerm.prevalidated(
+  static const tourBookingPage = const IriTerm(
     'http://schema.org/tourBookingPage',
   );
 
@@ -859,7 +819,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/NewsMediaOrganization, http://schema.org/Organization
   ///
-  static const unnamedSourcesPolicy = IriTerm.prevalidated(
+  static const unnamedSourcesPolicy = const IriTerm(
     'http://schema.org/unnamedSourcesPolicy',
   );
 
@@ -869,7 +829,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('http://schema.org/url');
+  static const url = const IriTerm('http://schema.org/url');
 
   /// vatID [Expects: http://schema.org/Text]
   ///
@@ -877,7 +837,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const vatID = IriTerm.prevalidated('http://schema.org/vatID');
+  static const vatID = const IriTerm('http://schema.org/vatID');
 
   /// alternateName [Expects: http://schema.org/Text]
   ///
@@ -885,9 +845,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
-    'http://schema.org/alternateName',
-  );
+  static const alternateName = const IriTerm('http://schema.org/alternateName');
 
   /// alumni [Expects: http://schema.org/Person]
   ///
@@ -895,7 +853,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/EducationalOrganization, http://schema.org/Organization
   ///
-  static const alumni = IriTerm.prevalidated('http://schema.org/alumni');
+  static const alumni = const IriTerm('http://schema.org/alumni');
 
   /// award [Expects: http://schema.org/Text]
   ///
@@ -903,7 +861,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Product, http://schema.org/Service
   ///
-  static const award = IriTerm.prevalidated('http://schema.org/award');
+  static const award = const IriTerm('http://schema.org/award');
 
   /// contactPoint [Expects: http://schema.org/ContactPoint]
   ///
@@ -911,9 +869,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/HealthInsurancePlan, http://schema.org/Organization, http://schema.org/Person
   ///
-  static const contactPoint = IriTerm.prevalidated(
-    'http://schema.org/contactPoint',
-  );
+  static const contactPoint = const IriTerm('http://schema.org/contactPoint');
 
   /// containsPlace [Expects: http://schema.org/Place]
   ///
@@ -921,9 +877,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const containsPlace = IriTerm.prevalidated(
-    'http://schema.org/containsPlace',
-  );
+  static const containsPlace = const IriTerm('http://schema.org/containsPlace');
 
   /// employee [Expects: http://schema.org/Person]
   ///
@@ -931,7 +885,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const employee = IriTerm.prevalidated('http://schema.org/employee');
+  static const employee = const IriTerm('http://schema.org/employee');
 
   /// event [Expects: http://schema.org/Event]
   ///
@@ -939,7 +893,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/InformAction, http://schema.org/InviteAction, http://schema.org/JoinAction, http://schema.org/LeaveAction, http://schema.org/Organization, http://schema.org/Place, http://schema.org/PlayAction
   ///
-  static const event = IriTerm.prevalidated('http://schema.org/event');
+  static const event = const IriTerm('http://schema.org/event');
 
   /// founder [Expects: http://schema.org/Organization, http://schema.org/Person]
   ///
@@ -947,7 +901,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const founder = IriTerm.prevalidated('http://schema.org/founder');
+  static const founder = const IriTerm('http://schema.org/founder');
 
   /// funding [Expects: http://schema.org/Grant]
   ///
@@ -955,7 +909,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/BioChemEntity, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/MedicalEntity, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Product
   ///
-  static const funding = IriTerm.prevalidated('http://schema.org/funding');
+  static const funding = const IriTerm('http://schema.org/funding');
 
   /// interactionStatistic [Expects: http://schema.org/InteractionCounter]
   ///
@@ -963,7 +917,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Organization, http://schema.org/Person
   ///
-  static const interactionStatistic = IriTerm.prevalidated(
+  static const interactionStatistic = const IriTerm(
     'http://schema.org/interactionStatistic',
   );
 
@@ -973,7 +927,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Place
   ///
-  static const isAccessibleForFree = IriTerm.prevalidated(
+  static const isAccessibleForFree = const IriTerm(
     'http://schema.org/isAccessibleForFree',
   );
 
@@ -983,7 +937,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -993,9 +947,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const makesOffer = IriTerm.prevalidated(
-    'http://schema.org/makesOffer',
-  );
+  static const makesOffer = const IriTerm('http://schema.org/makesOffer');
 
   /// photo [Expects: http://schema.org/ImageObject, http://schema.org/Photograph]
   ///
@@ -1003,7 +955,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const photo = IriTerm.prevalidated('http://schema.org/photo');
+  static const photo = const IriTerm('http://schema.org/photo');
 
   /// review [Expects: http://schema.org/Review]
   ///
@@ -1011,7 +963,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Brand, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const review = IriTerm.prevalidated('http://schema.org/review');
+  static const review = const IriTerm('http://schema.org/review');
 
   /// serviceArea [Expects: http://schema.org/AdministrativeArea, http://schema.org/GeoShape, http://schema.org/Place]
   ///
@@ -1019,9 +971,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/ContactPoint, http://schema.org/Organization, http://schema.org/Service
   ///
-  static const serviceArea = IriTerm.prevalidated(
-    'http://schema.org/serviceArea',
-  );
+  static const serviceArea = const IriTerm('http://schema.org/serviceArea');
 
   /// sponsor [Expects: http://schema.org/Organization, http://schema.org/Person]
   ///
@@ -1029,7 +979,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Grant, http://schema.org/MedicalStudy, http://schema.org/Organization, http://schema.org/Person
   ///
-  static const sponsor = IriTerm.prevalidated('http://schema.org/sponsor');
+  static const sponsor = const IriTerm('http://schema.org/sponsor');
 
   /// subOrganization [Expects: http://schema.org/Organization]
   ///
@@ -1037,7 +987,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const subOrganization = IriTerm.prevalidated(
+  static const subOrganization = const IriTerm(
     'http://schema.org/subOrganization',
   );
 
@@ -1047,7 +997,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('http://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('http://schema.org/subjectOf');
 
   /// containedInPlace [Expects: http://schema.org/Place]
   ///
@@ -1055,7 +1005,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const containedInPlace = IriTerm.prevalidated(
+  static const containedInPlace = const IriTerm(
     'http://schema.org/containedInPlace',
   );
 
@@ -1065,7 +1015,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Place
   ///
-  static const hasMap = IriTerm.prevalidated('http://schema.org/hasMap');
+  static const hasMap = const IriTerm('http://schema.org/hasMap');
 
   /// memberOf [Expects: http://schema.org/MemberProgramTier, http://schema.org/Organization, http://schema.org/ProgramMembership]
   ///
@@ -1073,7 +1023,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person
   ///
-  static const memberOf = IriTerm.prevalidated('http://schema.org/memberOf');
+  static const memberOf = const IriTerm('http://schema.org/memberOf');
 
   /// parentOrganization [Expects: http://schema.org/Organization]
   ///
@@ -1081,7 +1031,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization
   ///
-  static const parentOrganization = IriTerm.prevalidated(
+  static const parentOrganization = const IriTerm(
     'http://schema.org/parentOrganization',
   );
 
@@ -1091,9 +1041,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/ContactPoint, http://schema.org/DeliveryChargeSpecification, http://schema.org/Demand, http://schema.org/FinancialIncentive, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Service
   ///
-  static const areaServed = IriTerm.prevalidated(
-    'http://schema.org/areaServed',
-  );
+  static const areaServed = const IriTerm('http://schema.org/areaServed');
 
   /// member [Expects: http://schema.org/Organization, http://schema.org/Person]
   ///
@@ -1101,7 +1049,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/ProgramMembership
   ///
-  static const member = IriTerm.prevalidated('http://schema.org/member');
+  static const member = const IriTerm('http://schema.org/member');
 
   /// description [Expects: http://schema.org/Text, http://schema.org/TextObject]
   ///
@@ -1109,9 +1057,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'http://schema.org/description',
-  );
+  static const description = const IriTerm('http://schema.org/description');
 
   /// image [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -1119,7 +1065,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('http://schema.org/image');
+  static const image = const IriTerm('http://schema.org/image');
 
   /// publishingPrinciples [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -1130,7 +1076,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Organization, http://schema.org/Person
   ///
-  static const publishingPrinciples = IriTerm.prevalidated(
+  static const publishingPrinciples = const IriTerm(
     'http://schema.org/publishingPrinciples',
   );
 
@@ -1140,7 +1086,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Action, http://schema.org/Event, http://schema.org/InteractionCounter, http://schema.org/Organization
   ///
-  static const location = IriTerm.prevalidated('http://schema.org/location');
+  static const location = const IriTerm('http://schema.org/location');
 
   /// identifier [Expects: http://schema.org/PropertyValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -1149,9 +1095,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'http://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('http://schema.org/identifier');
 
   /// source
   ///
@@ -1159,7 +1103,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -1167,7 +1111,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -1177,7 +1121,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -1187,7 +1131,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -1197,7 +1141,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -1207,7 +1151,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -1217,7 +1161,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -1227,7 +1171,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -1237,7 +1181,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -1247,7 +1191,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -1257,7 +1201,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -1267,7 +1211,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -1277,7 +1221,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -1287,7 +1231,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -1297,7 +1241,7 @@ class SchemaHttpSchool {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

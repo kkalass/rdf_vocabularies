@@ -28,7 +28,7 @@ class SchemaRadioBroadcastService {
 
   /// IRI term for the RadioBroadcastService class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
+  static const classIri = const IriTerm(
     'https://schema.org/RadioBroadcastService',
   );
 
@@ -39,7 +39,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -49,7 +49,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const aggregateRating = IriTerm.prevalidated(
+  static const aggregateRating = const IriTerm(
     'https://schema.org/aggregateRating',
   );
 
@@ -59,7 +59,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const area = IriTerm.prevalidated('https://schema.org/area');
+  static const area = const IriTerm('https://schema.org/area');
 
   /// availableChannel [Expects: https://schema.org/ServiceChannel]
   ///
@@ -67,7 +67,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const availableChannel = IriTerm.prevalidated(
+  static const availableChannel = const IriTerm(
     'https://schema.org/availableChannel',
   );
 
@@ -77,7 +77,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product, https://schema.org/Service
   ///
-  static const brand = IriTerm.prevalidated('https://schema.org/brand');
+  static const brand = const IriTerm('https://schema.org/brand');
 
   /// broadcastAffiliateOf [Expects: https://schema.org/Organization]
   ///
@@ -85,7 +85,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const broadcastAffiliateOf = IriTerm.prevalidated(
+  static const broadcastAffiliateOf = const IriTerm(
     'https://schema.org/broadcastAffiliateOf',
   );
 
@@ -95,7 +95,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const broadcastDisplayName = IriTerm.prevalidated(
+  static const broadcastDisplayName = const IriTerm(
     'https://schema.org/broadcastDisplayName',
   );
 
@@ -105,7 +105,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/BroadcastChannel, https://schema.org/BroadcastService
   ///
-  static const broadcastFrequency = IriTerm.prevalidated(
+  static const broadcastFrequency = const IriTerm(
     'https://schema.org/broadcastFrequency',
   );
 
@@ -115,7 +115,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const broadcastTimezone = IriTerm.prevalidated(
+  static const broadcastTimezone = const IriTerm(
     'https://schema.org/broadcastTimezone',
   );
 
@@ -125,9 +125,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const broadcaster = IriTerm.prevalidated(
-    'https://schema.org/broadcaster',
-  );
+  static const broadcaster = const IriTerm('https://schema.org/broadcaster');
 
   /// callSign [Expects: https://schema.org/Text]
   ///
@@ -135,7 +133,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/BroadcastService, https://schema.org/Person, https://schema.org/Vehicle
   ///
-  static const callSign = IriTerm.prevalidated('https://schema.org/callSign');
+  static const callSign = const IriTerm('https://schema.org/callSign');
 
   /// disambiguatingDescription [Expects: https://schema.org/Text]
   ///
@@ -143,7 +141,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -153,7 +151,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const hasCertification = IriTerm.prevalidated(
+  static const hasCertification = const IriTerm(
     'https://schema.org/hasCertification',
   );
 
@@ -163,7 +161,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Service
   ///
-  static const hasOfferCatalog = IriTerm.prevalidated(
+  static const hasOfferCatalog = const IriTerm(
     'https://schema.org/hasOfferCatalog',
   );
 
@@ -173,7 +171,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/LocationFeatureSpecification, https://schema.org/Service
   ///
-  static const hoursAvailable = IriTerm.prevalidated(
+  static const hoursAvailable = const IriTerm(
     'https://schema.org/hoursAvailable',
   );
 
@@ -183,7 +181,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -193,9 +191,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Product, https://schema.org/Service
   ///
-  static const isRelatedTo = IriTerm.prevalidated(
-    'https://schema.org/isRelatedTo',
-  );
+  static const isRelatedTo = const IriTerm('https://schema.org/isRelatedTo');
 
   /// isSimilarTo [Expects: https://schema.org/Product, https://schema.org/Service]
   ///
@@ -203,9 +199,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Product, https://schema.org/Service
   ///
-  static const isSimilarTo = IriTerm.prevalidated(
-    'https://schema.org/isSimilarTo',
-  );
+  static const isSimilarTo = const IriTerm('https://schema.org/isSimilarTo');
 
   /// logo [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -213,7 +207,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/Certification, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const logo = IriTerm.prevalidated('https://schema.org/logo');
+  static const logo = const IriTerm('https://schema.org/logo');
 
   /// name [Expects: https://schema.org/Text]
   ///
@@ -221,7 +215,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// parentService [Expects: https://schema.org/BroadcastService]
   ///
@@ -229,7 +223,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const parentService = IriTerm.prevalidated(
+  static const parentService = const IriTerm(
     'https://schema.org/parentService',
   );
 
@@ -239,7 +233,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -249,7 +243,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const produces = IriTerm.prevalidated('https://schema.org/produces');
+  static const produces = const IriTerm('https://schema.org/produces');
 
   /// providerMobility [Expects: https://schema.org/Text]
   ///
@@ -257,7 +251,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const providerMobility = IriTerm.prevalidated(
+  static const providerMobility = const IriTerm(
     'https://schema.org/providerMobility',
   );
 
@@ -267,7 +261,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// serviceAudience [Expects: https://schema.org/Audience]
   ///
@@ -275,7 +269,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const serviceAudience = IriTerm.prevalidated(
+  static const serviceAudience = const IriTerm(
     'https://schema.org/serviceAudience',
   );
 
@@ -285,9 +279,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const serviceType = IriTerm.prevalidated(
-    'https://schema.org/serviceType',
-  );
+  static const serviceType = const IriTerm('https://schema.org/serviceType');
 
   /// slogan [Expects: https://schema.org/Text]
   ///
@@ -295,7 +287,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const slogan = IriTerm.prevalidated('https://schema.org/slogan');
+  static const slogan = const IriTerm('https://schema.org/slogan');
 
   /// termsOfService [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -303,7 +295,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const termsOfService = IriTerm.prevalidated(
+  static const termsOfService = const IriTerm(
     'https://schema.org/termsOfService',
   );
 
@@ -313,7 +305,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// videoFormat [Expects: https://schema.org/Text]
   ///
@@ -321,9 +313,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/BroadcastEvent, https://schema.org/BroadcastService, https://schema.org/ScreeningEvent
   ///
-  static const videoFormat = IriTerm.prevalidated(
-    'https://schema.org/videoFormat',
-  );
+  static const videoFormat = const IriTerm('https://schema.org/videoFormat');
 
   /// alternateName [Expects: https://schema.org/Text]
   ///
@@ -331,7 +321,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -341,7 +331,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/LodgingBusiness, https://schema.org/PlayAction, https://schema.org/Product, https://schema.org/Service
   ///
-  static const audience = IriTerm.prevalidated('https://schema.org/audience');
+  static const audience = const IriTerm('https://schema.org/audience');
 
   /// award [Expects: https://schema.org/Text]
   ///
@@ -349,7 +339,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product, https://schema.org/Service
   ///
-  static const award = IriTerm.prevalidated('https://schema.org/award');
+  static const award = const IriTerm('https://schema.org/award');
 
   /// broker [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -357,7 +347,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Invoice, https://schema.org/Order, https://schema.org/Reservation, https://schema.org/Service
   ///
-  static const broker = IriTerm.prevalidated('https://schema.org/broker');
+  static const broker = const IriTerm('https://schema.org/broker');
 
   /// category [Expects: https://schema.org/CategoryCode, https://schema.org/PhysicalActivityCategory, https://schema.org/Text, https://schema.org/Thing, https://schema.org/URL]
   ///
@@ -365,7 +355,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/ActionAccessSpecification, https://schema.org/Invoice, https://schema.org/Offer, https://schema.org/PhysicalActivity, https://schema.org/Product, https://schema.org/Recommendation, https://schema.org/Service, https://schema.org/SpecialAnnouncement
   ///
-  static const category = IriTerm.prevalidated('https://schema.org/category');
+  static const category = const IriTerm('https://schema.org/category');
 
   /// hasBroadcastChannel [Expects: https://schema.org/BroadcastChannel]
   ///
@@ -373,7 +363,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const hasBroadcastChannel = IriTerm.prevalidated(
+  static const hasBroadcastChannel = const IriTerm(
     'https://schema.org/hasBroadcastChannel',
   );
 
@@ -383,9 +373,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/BroadcastService, https://schema.org/CommunicateAction, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/LinkRole, https://schema.org/PronounceableText, https://schema.org/WriteAction
   ///
-  static const inLanguage = IriTerm.prevalidated(
-    'https://schema.org/inLanguage',
-  );
+  static const inLanguage = const IriTerm('https://schema.org/inLanguage');
 
   /// mainEntityOfPage [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -393,7 +381,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -404,7 +392,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/AggregateOffer, https://schema.org/CreativeWork, https://schema.org/EducationalOccupationalProgram, https://schema.org/Event, https://schema.org/MenuItem, https://schema.org/Product, https://schema.org/Service, https://schema.org/Trip
   ///
-  static const offers = IriTerm.prevalidated('https://schema.org/offers');
+  static const offers = const IriTerm('https://schema.org/offers');
 
   /// provider [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -412,7 +400,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Action, https://schema.org/CreativeWork, https://schema.org/EducationalOccupationalProgram, https://schema.org/FinancialIncentive, https://schema.org/Invoice, https://schema.org/ParcelDelivery, https://schema.org/Reservation, https://schema.org/Service, https://schema.org/Trip
   ///
-  static const provider = IriTerm.prevalidated('https://schema.org/provider');
+  static const provider = const IriTerm('https://schema.org/provider');
 
   /// review [Expects: https://schema.org/Review]
   ///
@@ -420,7 +408,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const review = IriTerm.prevalidated('https://schema.org/review');
+  static const review = const IriTerm('https://schema.org/review');
 
   /// serviceArea [Expects: https://schema.org/AdministrativeArea, https://schema.org/GeoShape, https://schema.org/Place]
   ///
@@ -428,9 +416,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/Organization, https://schema.org/Service
   ///
-  static const serviceArea = IriTerm.prevalidated(
-    'https://schema.org/serviceArea',
-  );
+  static const serviceArea = const IriTerm('https://schema.org/serviceArea');
 
   /// serviceOutput [Expects: https://schema.org/Thing]
   ///
@@ -438,7 +424,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const serviceOutput = IriTerm.prevalidated(
+  static const serviceOutput = const IriTerm(
     'https://schema.org/serviceOutput',
   );
 
@@ -448,7 +434,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// areaServed [Expects: https://schema.org/AdministrativeArea, https://schema.org/GeoShape, https://schema.org/Place, https://schema.org/Text]
   ///
@@ -456,9 +442,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/DeliveryChargeSpecification, https://schema.org/Demand, https://schema.org/FinancialIncentive, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Service
   ///
-  static const areaServed = IriTerm.prevalidated(
-    'https://schema.org/areaServed',
-  );
+  static const areaServed = const IriTerm('https://schema.org/areaServed');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -466,9 +450,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -476,7 +458,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -485,9 +467,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -495,7 +475,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -503,7 +483,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -513,7 +493,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -523,7 +503,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -533,7 +513,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -543,7 +523,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -553,7 +533,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -563,7 +543,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -573,7 +553,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -583,7 +563,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -593,7 +573,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -603,7 +583,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -613,7 +593,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -623,7 +603,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -633,7 +613,7 @@ class SchemaRadioBroadcastService {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

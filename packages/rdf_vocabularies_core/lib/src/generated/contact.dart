@@ -23,7 +23,7 @@ class Contact {
   ///
   ///
   ///
-  static const Address = IriTerm.prevalidated(
+  static const Address = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#Address',
   );
 
@@ -31,7 +31,7 @@ class Contact {
   ///
   /// A place, or mobile situation, with address, phone number, fax, etc. Related to a person by home, office, etc. Note one person's workplace may be another person's home. A person may have more than one home and more than one workplace. (In practice it sometimes maybe useful with restriucted datasets to assume that this is not the case, when extracting data from other ontologies with no concept of ContactLocation). Strongly related to a person: in some ways a role that a person can be in.
   ///
-  static const ContactLocation = IriTerm.prevalidated(
+  static const ContactLocation = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#ContactLocation',
   );
 
@@ -39,7 +39,7 @@ class Contact {
   ///
   ///
   ///
-  static const Fax = IriTerm.prevalidated(
+  static const Fax = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#Fax',
   );
 
@@ -47,7 +47,7 @@ class Contact {
   ///
   ///
   ///
-  static const Female = IriTerm.prevalidated(
+  static const Female = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#Female',
   );
 
@@ -55,7 +55,7 @@ class Contact {
   ///
   ///
   ///
-  static const LanguageCode = IriTerm.prevalidated(
+  static const LanguageCode = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#LanguageCode',
   );
 
@@ -63,7 +63,7 @@ class Contact {
   ///
   ///
   ///
-  static const Male = IriTerm.prevalidated(
+  static const Male = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#Male',
   );
 
@@ -71,7 +71,7 @@ class Contact {
   ///
   ///
   ///
-  static const MobilePhone = IriTerm.prevalidated(
+  static const MobilePhone = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#MobilePhone',
   );
 
@@ -79,7 +79,7 @@ class Contact {
   ///
   ///
   ///
-  static const Pager = IriTerm.prevalidated(
+  static const Pager = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#Pager',
   );
 
@@ -87,7 +87,7 @@ class Contact {
   ///
   /// A person in the normal sense of the word.
   ///
-  static const Person = IriTerm.prevalidated(
+  static const Person = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#Person',
   );
 
@@ -95,7 +95,7 @@ class Contact {
   ///
   /// An end-point in the public swiitched telephone system. Anything identified by a URI with tel: scheme is in this class.
   ///
-  static const Phone = IriTerm.prevalidated(
+  static const Phone = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#Phone',
   );
 
@@ -103,7 +103,7 @@ class Contact {
   ///
   /// The sort of thing which can have a phone number. Typically a person or an incorporated company, or unincorporated group.
   ///
-  static const SocialEntity = IriTerm.prevalidated(
+  static const SocialEntity = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#SocialEntity',
   );
 
@@ -111,7 +111,7 @@ class Contact {
   ///
   ///
   ///
-  static const address = IriTerm.prevalidated(
+  static const address = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#address',
   );
 
@@ -119,7 +119,7 @@ class Contact {
   ///
   /// A person (or other agent) who is an assistant to the subject.
   ///
-  static const assistant = IriTerm.prevalidated(
+  static const assistant = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#assistant',
   );
 
@@ -127,7 +127,7 @@ class Contact {
   ///
   ///
   ///
-  static const birthday = IriTerm.prevalidated(
+  static const birthday = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#birthday',
   );
 
@@ -135,7 +135,7 @@ class Contact {
   ///
   ///
   ///
-  static const city = IriTerm.prevalidated(
+  static const city = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#city',
   );
 
@@ -143,7 +143,7 @@ class Contact {
   ///
   ///
   ///
-  static const country = IriTerm.prevalidated(
+  static const country = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#country',
   );
 
@@ -151,7 +151,7 @@ class Contact {
   ///
   ///
   ///
-  static const departmentName = IriTerm.prevalidated(
+  static const departmentName = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#departmentName',
   );
 
@@ -159,7 +159,7 @@ class Contact {
   ///
   ///
   ///
-  static const emergency = IriTerm.prevalidated(
+  static const emergency = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#emergency',
   );
 
@@ -167,7 +167,7 @@ class Contact {
   ///
   ///
   ///
-  static const familyName = IriTerm.prevalidated(
+  static const familyName = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#familyName',
   );
 
@@ -175,7 +175,7 @@ class Contact {
   ///
   ///
   ///
-  static const fax = IriTerm.prevalidated(
+  static const fax = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#fax',
   );
 
@@ -183,7 +183,7 @@ class Contact {
   ///
   ///
   ///
-  static const firstName = IriTerm.prevalidated(
+  static const firstName = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#firstName',
   );
 
@@ -191,7 +191,7 @@ class Contact {
   ///
   ///
   ///
-  static const fullName = IriTerm.prevalidated(
+  static const fullName = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#fullName',
   );
 
@@ -199,7 +199,7 @@ class Contact {
   ///
   ///
   ///
-  static const givenName = IriTerm.prevalidated(
+  static const givenName = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#givenName',
   );
 
@@ -207,7 +207,7 @@ class Contact {
   ///
   ///
   ///
-  static const home = IriTerm.prevalidated(
+  static const home = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#home',
   );
 
@@ -215,7 +215,7 @@ class Contact {
   ///
   ///
   ///
-  static const homePage = IriTerm.prevalidated(
+  static const homePage = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#homePage',
   );
 
@@ -223,7 +223,7 @@ class Contact {
   ///
   /// Use is discouraged
   ///
-  static const homePageAddress = IriTerm.prevalidated(
+  static const homePageAddress = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#homePageAddress',
   );
 
@@ -231,7 +231,7 @@ class Contact {
   ///
   /// A person may be known as various strings. For example, an email friendly name string. If you have an email from someone using a string as the human-readable phrase, then it is reasonable to assume that there are :knownAs that.
   ///
-  static const knownAs = IriTerm.prevalidated(
+  static const knownAs = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#knownAs',
   );
 
@@ -239,7 +239,7 @@ class Contact {
   ///
   ///
   ///
-  static const lastName = IriTerm.prevalidated(
+  static const lastName = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#lastName',
   );
 
@@ -247,7 +247,7 @@ class Contact {
   ///
   ///
   ///
-  static const middleInitial = IriTerm.prevalidated(
+  static const middleInitial = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#middleInitial',
   );
 
@@ -255,7 +255,7 @@ class Contact {
   ///
   ///
   ///
-  static const middleName = IriTerm.prevalidated(
+  static const middleName = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#middleName',
   );
 
@@ -263,7 +263,7 @@ class Contact {
   ///
   ///
   ///
-  static const mobile = IriTerm.prevalidated(
+  static const mobile = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#mobile',
   );
 
@@ -271,7 +271,7 @@ class Contact {
   ///
   ///
   ///
-  static const motherTongue = IriTerm.prevalidated(
+  static const motherTongue = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#motherTongue',
   );
 
@@ -285,7 +285,7 @@ class Contact {
   /// [See also](http://www.w3.org/2001/sw/WebOnt/webont-airports.rdf)
   /// [See also](http://www.w3.org/2001/tag/ilist#httpRange-14)
   ///
-  static const nearestAirport = IriTerm.prevalidated(
+  static const nearestAirport = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#nearestAirport',
   );
 
@@ -293,7 +293,7 @@ class Contact {
   ///
   ///
   ///
-  static const office = IriTerm.prevalidated(
+  static const office = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#office',
   );
 
@@ -301,7 +301,7 @@ class Contact {
   ///
   ///
   ///
-  static const organization = IriTerm.prevalidated(
+  static const organization = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#organization',
   );
 
@@ -309,7 +309,7 @@ class Contact {
   ///
   /// A person (or other agent) who particpates in an event, meeting, etc.
   ///
-  static const participant = IriTerm.prevalidated(
+  static const participant = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#participant',
   );
 
@@ -317,7 +317,7 @@ class Contact {
   ///
   ///
   ///
-  static const partner = IriTerm.prevalidated(
+  static const partner = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#partner',
   );
 
@@ -325,7 +325,7 @@ class Contact {
   ///
   ///
   ///
-  static const personalSuffix = IriTerm.prevalidated(
+  static const personalSuffix = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#personalSuffix',
   );
 
@@ -333,7 +333,7 @@ class Contact {
   ///
   ///
   ///
-  static const personalTitle = IriTerm.prevalidated(
+  static const personalTitle = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#personalTitle',
   );
 
@@ -341,7 +341,7 @@ class Contact {
   ///
   ///
   ///
-  static const phone = IriTerm.prevalidated(
+  static const phone = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#phone',
   );
 
@@ -349,7 +349,7 @@ class Contact {
   ///
   ///
   ///
-  static const postalCode = IriTerm.prevalidated(
+  static const postalCode = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#postalCode',
   );
 
@@ -357,7 +357,7 @@ class Contact {
   ///
   /// A string which is the URI a person, organization, etc, prefers that people use for them.
   ///
-  static const preferredURI = IriTerm.prevalidated(
+  static const preferredURI = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#preferredURI',
   );
 
@@ -365,7 +365,7 @@ class Contact {
   ///
   ///
   ///
-  static const publicHomePage = IriTerm.prevalidated(
+  static const publicHomePage = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#publicHomePage',
   );
 
@@ -373,7 +373,7 @@ class Contact {
   ///
   /// The sub-national unit such as state (us), province (ca), county (uk), département (fr), and so on
   ///
-  static const region = IriTerm.prevalidated(
+  static const region = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#region',
   );
 
@@ -381,7 +381,7 @@ class Contact {
   ///
   /// re-arranged for lexicographic ordering; ala Doe, John
   ///
-  static const sortName = IriTerm.prevalidated(
+  static const sortName = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#sortName',
   );
 
@@ -389,7 +389,7 @@ class Contact {
   ///
   ///
   ///
-  static const stateOrProvince = IriTerm.prevalidated(
+  static const stateOrProvince = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#stateOrProvince',
   );
 
@@ -397,7 +397,7 @@ class Contact {
   ///
   ///
   ///
-  static const street = IriTerm.prevalidated(
+  static const street = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#street',
   );
 
@@ -405,7 +405,7 @@ class Contact {
   ///
   ///
   ///
-  static const street2 = IriTerm.prevalidated(
+  static const street2 = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#street2',
   );
 
@@ -413,7 +413,7 @@ class Contact {
   ///
   ///
   ///
-  static const street3 = IriTerm.prevalidated(
+  static const street3 = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#street3',
   );
 
@@ -421,7 +421,7 @@ class Contact {
   ///
   ///
   ///
-  static const title = IriTerm.prevalidated(
+  static const title = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#title',
   );
 
@@ -429,7 +429,7 @@ class Contact {
   ///
   ///
   ///
-  static const vacationHome = IriTerm.prevalidated(
+  static const vacationHome = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#vacationHome',
   );
 
@@ -437,7 +437,7 @@ class Contact {
   ///
   /// A related web page
   ///
-  static const webPage = IriTerm.prevalidated(
+  static const webPage = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#webPage',
   );
 
@@ -445,7 +445,7 @@ class Contact {
   ///
   ///
   ///
-  static const zip = IriTerm.prevalidated(
+  static const zip = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#zip',
   );
 
@@ -453,7 +453,7 @@ class Contact {
   ///
   ///
   ///
-  static const Date = IriTerm.prevalidated(
+  static const Date = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#Date',
   );
 
@@ -461,7 +461,7 @@ class Contact {
   ///
   ///
   ///
-  static const Mailbox = IriTerm.prevalidated(
+  static const Mailbox = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#Mailbox',
   );
 
@@ -471,7 +471,7 @@ class Contact {
   ///
   /// Can be used on: http://www.w3.org/2000/10/swap/pim/contact#SocialEntity
   ///
-  static const emailAddress = IriTerm.prevalidated(
+  static const emailAddress = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#emailAddress',
   );
 
@@ -481,7 +481,7 @@ class Contact {
   ///
   /// Can be used on: http://www.w3.org/2000/10/swap/pim/contact#SocialEntity
   ///
-  static const mailbox = IriTerm.prevalidated(
+  static const mailbox = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#mailbox',
   );
 
@@ -491,7 +491,7 @@ class Contact {
   ///
   /// Can be used on: http://www.w3.org/2000/10/swap/pim/contact#SocialEntity
   ///
-  static const mailboxURI = IriTerm.prevalidated(
+  static const mailboxURI = const IriTerm(
     'http://www.w3.org/2000/10/swap/pim/contact#mailboxURI',
   );
 }

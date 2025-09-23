@@ -27,9 +27,7 @@ class SchemaHttpWorkBasedProgram {
 
   /// IRI term for the WorkBasedProgram class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'http://schema.org/WorkBasedProgram',
-  );
+  static const classIri = const IriTerm('http://schema.org/WorkBasedProgram');
 
   /// additionalType [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -38,7 +36,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -48,7 +46,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram
   ///
-  static const applicationDeadline = IriTerm.prevalidated(
+  static const applicationDeadline = const IriTerm(
     'http://schema.org/applicationDeadline',
   );
 
@@ -58,7 +56,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram
   ///
-  static const applicationStartDate = IriTerm.prevalidated(
+  static const applicationStartDate = const IriTerm(
     'http://schema.org/applicationStartDate',
   );
 
@@ -68,7 +66,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram, http://schema.org/OpeningHoursSpecification
   ///
-  static const dayOfWeek = IriTerm.prevalidated('http://schema.org/dayOfWeek');
+  static const dayOfWeek = const IriTerm('http://schema.org/dayOfWeek');
 
   /// disambiguatingDescription [Expects: http://schema.org/Text]
   ///
@@ -76,7 +74,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -86,7 +84,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Course, http://schema.org/EducationalOccupationalProgram
   ///
-  static const educationalCredentialAwarded = IriTerm.prevalidated(
+  static const educationalCredentialAwarded = const IriTerm(
     'http://schema.org/educationalCredentialAwarded',
   );
 
@@ -96,7 +94,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram
   ///
-  static const educationalProgramMode = IriTerm.prevalidated(
+  static const educationalProgramMode = const IriTerm(
     'http://schema.org/educationalProgramMode',
   );
 
@@ -106,7 +104,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/CreativeWorkSeason, http://schema.org/CreativeWorkSeries, http://schema.org/DatedMoneySpecification, http://schema.org/EducationalOccupationalProgram, http://schema.org/Event, http://schema.org/MerchantReturnPolicySeasonalOverride, http://schema.org/Role, http://schema.org/Schedule
   ///
-  static const endDate = IriTerm.prevalidated('http://schema.org/endDate');
+  static const endDate = const IriTerm('http://schema.org/endDate');
 
   /// financialAidEligible [Expects: http://schema.org/DefinedTerm, http://schema.org/Text]
   ///
@@ -114,7 +112,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Course, http://schema.org/EducationalOccupationalProgram
   ///
-  static const financialAidEligible = IriTerm.prevalidated(
+  static const financialAidEligible = const IriTerm(
     'http://schema.org/financialAidEligible',
   );
 
@@ -124,7 +122,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram
   ///
-  static const hasCourse = IriTerm.prevalidated('http://schema.org/hasCourse');
+  static const hasCourse = const IriTerm('http://schema.org/hasCourse');
 
   /// interactionCount
   ///
@@ -132,7 +130,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -142,7 +140,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram
   ///
-  static const maximumEnrollment = IriTerm.prevalidated(
+  static const maximumEnrollment = const IriTerm(
     'http://schema.org/maximumEnrollment',
   );
 
@@ -152,7 +150,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('http://schema.org/name');
+  static const name = const IriTerm('http://schema.org/name');
 
   /// numberOfCredits [Expects: http://schema.org/Integer, http://schema.org/StructuredValue]
   ///
@@ -160,7 +158,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Course, http://schema.org/EducationalOccupationalProgram
   ///
-  static const numberOfCredits = IriTerm.prevalidated(
+  static const numberOfCredits = const IriTerm(
     'http://schema.org/numberOfCredits',
   );
 
@@ -171,7 +169,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram, http://schema.org/JobPosting, http://schema.org/Occupation, http://schema.org/Physician, http://schema.org/WorkBasedProgram
   ///
-  static const occupationalCategory = IriTerm.prevalidated(
+  static const occupationalCategory = const IriTerm(
     'http://schema.org/occupationalCategory',
   );
 
@@ -181,7 +179,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Course, http://schema.org/EducationalOccupationalProgram
   ///
-  static const occupationalCredentialAwarded = IriTerm.prevalidated(
+  static const occupationalCredentialAwarded = const IriTerm(
     'http://schema.org/occupationalCredentialAwarded',
   );
 
@@ -191,7 +189,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -201,7 +199,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram
   ///
-  static const programPrerequisites = IriTerm.prevalidated(
+  static const programPrerequisites = const IriTerm(
     'http://schema.org/programPrerequisites',
   );
 
@@ -211,9 +209,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram
   ///
-  static const programType = IriTerm.prevalidated(
-    'http://schema.org/programType',
-  );
+  static const programType = const IriTerm('http://schema.org/programType');
 
   /// salaryUponCompletion [Expects: http://schema.org/MonetaryAmountDistribution]
   ///
@@ -221,7 +217,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram
   ///
-  static const salaryUponCompletion = IriTerm.prevalidated(
+  static const salaryUponCompletion = const IriTerm(
     'http://schema.org/salaryUponCompletion',
   );
 
@@ -231,7 +227,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('http://schema.org/sameAs');
+  static const sameAs = const IriTerm('http://schema.org/sameAs');
 
   /// startDate [Expects: http://schema.org/Date, http://schema.org/DateTime]
   ///
@@ -239,7 +235,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/CreativeWorkSeason, http://schema.org/CreativeWorkSeries, http://schema.org/DatedMoneySpecification, http://schema.org/EducationalOccupationalProgram, http://schema.org/Event, http://schema.org/MerchantReturnPolicySeasonalOverride, http://schema.org/Role, http://schema.org/Schedule
   ///
-  static const startDate = IriTerm.prevalidated('http://schema.org/startDate');
+  static const startDate = const IriTerm('http://schema.org/startDate');
 
   /// termDuration [Expects: http://schema.org/Duration]
   ///
@@ -247,9 +243,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram
   ///
-  static const termDuration = IriTerm.prevalidated(
-    'http://schema.org/termDuration',
-  );
+  static const termDuration = const IriTerm('http://schema.org/termDuration');
 
   /// termsPerYear [Expects: http://schema.org/Number]
   ///
@@ -257,9 +251,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram
   ///
-  static const termsPerYear = IriTerm.prevalidated(
-    'http://schema.org/termsPerYear',
-  );
+  static const termsPerYear = const IriTerm('http://schema.org/termsPerYear');
 
   /// timeOfDay [Expects: http://schema.org/Text]
   ///
@@ -267,7 +259,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram
   ///
-  static const timeOfDay = IriTerm.prevalidated('http://schema.org/timeOfDay');
+  static const timeOfDay = const IriTerm('http://schema.org/timeOfDay');
 
   /// timeToComplete [Expects: http://schema.org/Duration]
   ///
@@ -275,7 +267,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram
   ///
-  static const timeToComplete = IriTerm.prevalidated(
+  static const timeToComplete = const IriTerm(
     'http://schema.org/timeToComplete',
   );
 
@@ -285,7 +277,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram, http://schema.org/WorkBasedProgram
   ///
-  static const trainingSalary = IriTerm.prevalidated(
+  static const trainingSalary = const IriTerm(
     'http://schema.org/trainingSalary',
   );
 
@@ -295,7 +287,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/EducationalOccupationalProgram
   ///
-  static const typicalCreditsPerTerm = IriTerm.prevalidated(
+  static const typicalCreditsPerTerm = const IriTerm(
     'http://schema.org/typicalCreditsPerTerm',
   );
 
@@ -305,7 +297,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('http://schema.org/url');
+  static const url = const IriTerm('http://schema.org/url');
 
   /// alternateName [Expects: http://schema.org/Text]
   ///
@@ -313,9 +305,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
-    'http://schema.org/alternateName',
-  );
+  static const alternateName = const IriTerm('http://schema.org/alternateName');
 
   /// mainEntityOfPage [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -323,7 +313,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -334,7 +324,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/AggregateOffer, http://schema.org/CreativeWork, http://schema.org/EducationalOccupationalProgram, http://schema.org/Event, http://schema.org/MenuItem, http://schema.org/Product, http://schema.org/Service, http://schema.org/Trip
   ///
-  static const offers = IriTerm.prevalidated('http://schema.org/offers');
+  static const offers = const IriTerm('http://schema.org/offers');
 
   /// provider [Expects: http://schema.org/Organization, http://schema.org/Person]
   ///
@@ -342,7 +332,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Action, http://schema.org/CreativeWork, http://schema.org/EducationalOccupationalProgram, http://schema.org/FinancialIncentive, http://schema.org/Invoice, http://schema.org/ParcelDelivery, http://schema.org/Reservation, http://schema.org/Service, http://schema.org/Trip
   ///
-  static const provider = IriTerm.prevalidated('http://schema.org/provider');
+  static const provider = const IriTerm('http://schema.org/provider');
 
   /// subjectOf [Expects: http://schema.org/CreativeWork, http://schema.org/Event]
   ///
@@ -350,7 +340,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('http://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('http://schema.org/subjectOf');
 
   /// description [Expects: http://schema.org/Text, http://schema.org/TextObject]
   ///
@@ -358,9 +348,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'http://schema.org/description',
-  );
+  static const description = const IriTerm('http://schema.org/description');
 
   /// image [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -368,7 +356,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('http://schema.org/image');
+  static const image = const IriTerm('http://schema.org/image');
 
   /// identifier [Expects: http://schema.org/PropertyValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -377,9 +365,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'http://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('http://schema.org/identifier');
 
   /// source
   ///
@@ -387,7 +373,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -395,7 +381,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -405,7 +391,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -415,7 +401,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -425,7 +411,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -435,7 +421,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -445,7 +431,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -455,7 +441,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -465,7 +451,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -475,7 +461,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -485,7 +471,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -495,7 +481,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -505,7 +491,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -515,7 +501,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -525,7 +511,7 @@ class SchemaHttpWorkBasedProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

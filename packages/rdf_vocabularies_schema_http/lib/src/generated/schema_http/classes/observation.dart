@@ -33,7 +33,7 @@ class SchemaHttpObservation {
 
   /// IRI term for the Observation class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated('http://schema.org/Observation');
+  static const classIri = const IriTerm('http://schema.org/Observation');
 
   /// additionalProperty [Expects: http://schema.org/PropertyValue]
   ///
@@ -42,7 +42,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/Offer, http://schema.org/Place, http://schema.org/Product, http://schema.org/QualitativeValue, http://schema.org/QuantitativeValue
   ///
-  static const additionalProperty = IriTerm.prevalidated(
+  static const additionalProperty = const IriTerm(
     'http://schema.org/additionalProperty',
   );
 
@@ -53,7 +53,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -63,7 +63,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -73,7 +73,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -83,9 +83,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Observation
   ///
-  static const marginOfError = IriTerm.prevalidated(
-    'http://schema.org/marginOfError',
-  );
+  static const marginOfError = const IriTerm('http://schema.org/marginOfError');
 
   /// maxValue [Expects: http://schema.org/Number]
   ///
@@ -93,7 +91,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/MonetaryAmount, http://schema.org/PropertyValue, http://schema.org/PropertyValueSpecification, http://schema.org/QuantitativeValue
   ///
-  static const maxValue = IriTerm.prevalidated('http://schema.org/maxValue');
+  static const maxValue = const IriTerm('http://schema.org/maxValue');
 
   /// measuredProperty [Expects: http://schema.org/Property]
   ///
@@ -101,7 +99,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Observation, http://schema.org/StatisticalVariable
   ///
-  static const measuredProperty = IriTerm.prevalidated(
+  static const measuredProperty = const IriTerm(
     'http://schema.org/measuredProperty',
   );
 
@@ -111,7 +109,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Observation, http://schema.org/StatisticalVariable
   ///
-  static const measurementDenominator = IriTerm.prevalidated(
+  static const measurementDenominator = const IriTerm(
     'http://schema.org/measurementDenominator',
   );
 
@@ -121,7 +119,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/DataCatalog, http://schema.org/DataDownload, http://schema.org/Dataset, http://schema.org/Observation, http://schema.org/PropertyValue, http://schema.org/StatisticalVariable
   ///
-  static const measurementMethod = IriTerm.prevalidated(
+  static const measurementMethod = const IriTerm(
     'http://schema.org/measurementMethod',
   );
 
@@ -131,7 +129,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Observation, http://schema.org/StatisticalVariable
   ///
-  static const measurementQualifier = IriTerm.prevalidated(
+  static const measurementQualifier = const IriTerm(
     'http://schema.org/measurementQualifier',
   );
 
@@ -141,7 +139,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/MonetaryAmount, http://schema.org/PropertyValue, http://schema.org/PropertyValueSpecification, http://schema.org/QuantitativeValue
   ///
-  static const minValue = IriTerm.prevalidated('http://schema.org/minValue');
+  static const minValue = const IriTerm('http://schema.org/minValue');
 
   /// name [Expects: http://schema.org/Text]
   ///
@@ -149,7 +147,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('http://schema.org/name');
+  static const name = const IriTerm('http://schema.org/name');
 
   /// observationAbout [Expects: http://schema.org/Place, http://schema.org/Thing]
   ///
@@ -157,7 +155,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Observation
   ///
-  static const observationAbout = IriTerm.prevalidated(
+  static const observationAbout = const IriTerm(
     'http://schema.org/observationAbout',
   );
 
@@ -167,7 +165,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Observation
   ///
-  static const observationDate = IriTerm.prevalidated(
+  static const observationDate = const IriTerm(
     'http://schema.org/observationDate',
   );
 
@@ -177,7 +175,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Observation
   ///
-  static const observationPeriod = IriTerm.prevalidated(
+  static const observationPeriod = const IriTerm(
     'http://schema.org/observationPeriod',
   );
 
@@ -187,7 +185,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -197,7 +195,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('http://schema.org/sameAs');
+  static const sameAs = const IriTerm('http://schema.org/sameAs');
 
   /// unitCode [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -205,7 +203,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/PropertyValue, http://schema.org/QuantitativeValue, http://schema.org/TypeAndQuantityNode, http://schema.org/UnitPriceSpecification
   ///
-  static const unitCode = IriTerm.prevalidated('http://schema.org/unitCode');
+  static const unitCode = const IriTerm('http://schema.org/unitCode');
 
   /// unitText [Expects: http://schema.org/Text]
   ///
@@ -214,7 +212,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/PropertyValue, http://schema.org/QuantitativeValue, http://schema.org/TypeAndQuantityNode, http://schema.org/UnitPriceSpecification
   ///
-  static const unitText = IriTerm.prevalidated('http://schema.org/unitText');
+  static const unitText = const IriTerm('http://schema.org/unitText');
 
   /// url [Expects: http://schema.org/URL]
   ///
@@ -222,7 +220,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('http://schema.org/url');
+  static const url = const IriTerm('http://schema.org/url');
 
   /// value [Expects: http://schema.org/Boolean, http://schema.org/Number, http://schema.org/StructuredValue, http://schema.org/Text]
   ///
@@ -230,7 +228,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/MonetaryAmount, http://schema.org/PropertyValue, http://schema.org/QuantitativeValue
   ///
-  static const value = IriTerm.prevalidated('http://schema.org/value');
+  static const value = const IriTerm('http://schema.org/value');
 
   /// valueReference [Expects: http://schema.org/DefinedTerm, http://schema.org/Enumeration, http://schema.org/MeasurementTypeEnumeration, http://schema.org/PropertyValue, http://schema.org/QualitativeValue, http://schema.org/QuantitativeValue, http://schema.org/StructuredValue, http://schema.org/Text]
   ///
@@ -238,7 +236,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/PropertyValue, http://schema.org/QualitativeValue, http://schema.org/QuantitativeValue
   ///
-  static const valueReference = IriTerm.prevalidated(
+  static const valueReference = const IriTerm(
     'http://schema.org/valueReference',
   );
 
@@ -248,7 +246,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Dataset, http://schema.org/Observation
   ///
-  static const variableMeasured = IriTerm.prevalidated(
+  static const variableMeasured = const IriTerm(
     'http://schema.org/variableMeasured',
   );
 
@@ -258,9 +256,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
-    'http://schema.org/alternateName',
-  );
+  static const alternateName = const IriTerm('http://schema.org/alternateName');
 
   /// mainEntityOfPage [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -268,7 +264,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -284,7 +280,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/DataCatalog, http://schema.org/DataDownload, http://schema.org/Dataset, http://schema.org/Observation, http://schema.org/PropertyValue, http://schema.org/StatisticalVariable
   ///
-  static const measurementTechnique = IriTerm.prevalidated(
+  static const measurementTechnique = const IriTerm(
     'http://schema.org/measurementTechnique',
   );
 
@@ -294,7 +290,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('http://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('http://schema.org/subjectOf');
 
   /// description [Expects: http://schema.org/Text, http://schema.org/TextObject]
   ///
@@ -302,9 +298,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'http://schema.org/description',
-  );
+  static const description = const IriTerm('http://schema.org/description');
 
   /// image [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -312,7 +306,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('http://schema.org/image');
+  static const image = const IriTerm('http://schema.org/image');
 
   /// identifier [Expects: http://schema.org/PropertyValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -321,9 +315,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'http://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('http://schema.org/identifier');
 
   /// source
   ///
@@ -331,7 +323,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -339,7 +331,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -349,7 +341,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -359,7 +351,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -369,7 +361,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -379,7 +371,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -389,7 +381,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -399,7 +391,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -409,7 +401,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -419,7 +411,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -429,7 +421,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -439,7 +431,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -449,7 +441,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -459,7 +451,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -469,7 +461,7 @@ class SchemaHttpObservation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

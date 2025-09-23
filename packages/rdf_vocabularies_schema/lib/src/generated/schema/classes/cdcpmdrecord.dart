@@ -30,9 +30,7 @@ class SchemaCDCPMDRecord {
 
   /// IRI term for the CDCPMDRecord class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'https://schema.org/CDCPMDRecord',
-  );
+  static const classIri = const IriTerm('https://schema.org/CDCPMDRecord');
 
   /// additionalType [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -41,7 +39,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -51,7 +49,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdCollectionDate = IriTerm.prevalidated(
+  static const cvdCollectionDate = const IriTerm(
     'https://schema.org/cvdCollectionDate',
   );
 
@@ -61,7 +59,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdFacilityCounty = IriTerm.prevalidated(
+  static const cvdFacilityCounty = const IriTerm(
     'https://schema.org/cvdFacilityCounty',
   );
 
@@ -71,7 +69,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdFacilityId = IriTerm.prevalidated(
+  static const cvdFacilityId = const IriTerm(
     'https://schema.org/cvdFacilityId',
   );
 
@@ -81,9 +79,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumBeds = IriTerm.prevalidated(
-    'https://schema.org/cvdNumBeds',
-  );
+  static const cvdNumBeds = const IriTerm('https://schema.org/cvdNumBeds');
 
   /// cvdNumBedsOcc [Expects: https://schema.org/Number]
   ///
@@ -91,7 +87,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumBedsOcc = IriTerm.prevalidated(
+  static const cvdNumBedsOcc = const IriTerm(
     'https://schema.org/cvdNumBedsOcc',
   );
 
@@ -101,7 +97,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumC19Died = IriTerm.prevalidated(
+  static const cvdNumC19Died = const IriTerm(
     'https://schema.org/cvdNumC19Died',
   );
 
@@ -111,7 +107,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumC19HOPats = IriTerm.prevalidated(
+  static const cvdNumC19HOPats = const IriTerm(
     'https://schema.org/cvdNumC19HOPats',
   );
 
@@ -121,7 +117,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumC19HospPats = IriTerm.prevalidated(
+  static const cvdNumC19HospPats = const IriTerm(
     'https://schema.org/cvdNumC19HospPats',
   );
 
@@ -131,7 +127,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumC19MechVentPats = IriTerm.prevalidated(
+  static const cvdNumC19MechVentPats = const IriTerm(
     'https://schema.org/cvdNumC19MechVentPats',
   );
 
@@ -141,7 +137,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumC19OFMechVentPats = IriTerm.prevalidated(
+  static const cvdNumC19OFMechVentPats = const IriTerm(
     'https://schema.org/cvdNumC19OFMechVentPats',
   );
 
@@ -151,7 +147,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumC19OverflowPats = IriTerm.prevalidated(
+  static const cvdNumC19OverflowPats = const IriTerm(
     'https://schema.org/cvdNumC19OverflowPats',
   );
 
@@ -161,7 +157,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumICUBeds = IriTerm.prevalidated(
+  static const cvdNumICUBeds = const IriTerm(
     'https://schema.org/cvdNumICUBeds',
   );
 
@@ -171,7 +167,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumICUBedsOcc = IriTerm.prevalidated(
+  static const cvdNumICUBedsOcc = const IriTerm(
     'https://schema.org/cvdNumICUBedsOcc',
   );
 
@@ -181,7 +177,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumTotBeds = IriTerm.prevalidated(
+  static const cvdNumTotBeds = const IriTerm(
     'https://schema.org/cvdNumTotBeds',
   );
 
@@ -191,9 +187,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumVent = IriTerm.prevalidated(
-    'https://schema.org/cvdNumVent',
-  );
+  static const cvdNumVent = const IriTerm('https://schema.org/cvdNumVent');
 
   /// cvdNumVentUse [Expects: https://schema.org/Number]
   ///
@@ -201,7 +195,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumVentUse = IriTerm.prevalidated(
+  static const cvdNumVentUse = const IriTerm(
     'https://schema.org/cvdNumVentUse',
   );
 
@@ -211,9 +205,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord, https://schema.org/JobPosting, https://schema.org/RealEstateListing, https://schema.org/SpecialAnnouncement
   ///
-  static const datePosted = IriTerm.prevalidated(
-    'https://schema.org/datePosted',
-  );
+  static const datePosted = const IriTerm('https://schema.org/datePosted');
 
   /// disambiguatingDescription [Expects: https://schema.org/Text]
   ///
@@ -221,7 +213,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -231,7 +223,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -241,7 +233,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// potentialAction [Expects: https://schema.org/Action]
   ///
@@ -249,7 +241,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -259,7 +251,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// url [Expects: https://schema.org/URL]
   ///
@@ -267,7 +259,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// alternateName [Expects: https://schema.org/Text]
   ///
@@ -275,7 +267,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -285,7 +277,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -295,7 +287,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -303,9 +295,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -313,7 +303,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -322,9 +312,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -332,7 +320,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -340,7 +328,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -350,7 +338,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -360,7 +348,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -370,7 +358,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -380,7 +368,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -390,7 +378,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -400,7 +388,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -410,7 +398,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -420,7 +408,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -430,7 +418,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -440,7 +428,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -450,7 +438,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -460,7 +448,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -470,7 +458,7 @@ class SchemaCDCPMDRecord {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

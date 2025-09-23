@@ -27,7 +27,7 @@ class SchemaHowToItem {
 
   /// IRI term for the HowToItem class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated('https://schema.org/HowToItem');
+  static const classIri = const IriTerm('https://schema.org/HowToItem');
 
   /// additionalType [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -36,7 +36,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -46,7 +46,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -56,7 +56,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -66,7 +66,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/DataFeedItem, https://schema.org/ListItem
   ///
-  static const item = IriTerm.prevalidated('https://schema.org/item');
+  static const item = const IriTerm('https://schema.org/item');
 
   /// name [Expects: https://schema.org/Text]
   ///
@@ -74,7 +74,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// nextItem [Expects: https://schema.org/ListItem]
   ///
@@ -82,7 +82,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/ListItem
   ///
-  static const nextItem = IriTerm.prevalidated('https://schema.org/nextItem');
+  static const nextItem = const IriTerm('https://schema.org/nextItem');
 
   /// potentialAction [Expects: https://schema.org/Action]
   ///
@@ -90,7 +90,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -100,9 +100,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/ListItem
   ///
-  static const previousItem = IriTerm.prevalidated(
-    'https://schema.org/previousItem',
-  );
+  static const previousItem = const IriTerm('https://schema.org/previousItem');
 
   /// requiredQuantity [Expects: https://schema.org/Number, https://schema.org/QuantitativeValue, https://schema.org/Text]
   ///
@@ -110,7 +108,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/HowToItem
   ///
-  static const requiredQuantity = IriTerm.prevalidated(
+  static const requiredQuantity = const IriTerm(
     'https://schema.org/requiredQuantity',
   );
 
@@ -120,7 +118,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// url [Expects: https://schema.org/URL]
   ///
@@ -128,7 +126,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// alternateName [Expects: https://schema.org/Text]
   ///
@@ -136,7 +134,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -146,7 +144,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -156,7 +154,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -164,9 +162,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -174,7 +170,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// position [Expects: https://schema.org/Integer, https://schema.org/Text]
   ///
@@ -182,7 +178,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/ListItem
   ///
-  static const position = IriTerm.prevalidated('https://schema.org/position');
+  static const position = const IriTerm('https://schema.org/position');
 
   /// identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -191,9 +187,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -201,7 +195,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -209,7 +203,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -219,7 +213,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -229,7 +223,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -239,7 +233,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -249,7 +243,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -259,7 +253,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -269,7 +263,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -279,7 +273,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -289,7 +283,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -299,7 +293,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -309,7 +303,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -319,7 +313,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -329,7 +323,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -339,7 +333,7 @@ class SchemaHowToItem {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

@@ -33,7 +33,7 @@ class AclAuthenticatedAgent {
 
   /// IRI term for the AuthenticatedAgent class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
+  static const classIri = const IriTerm(
     'http://www.w3.org/ns/auth/acl#AuthenticatedAgent',
   );
 
@@ -44,7 +44,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const delegates = IriTerm.prevalidated(
+  static const delegates = const IriTerm(
     'http://www.w3.org/ns/auth/acl#delegates',
   );
 
@@ -57,9 +57,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const owner = IriTerm.prevalidated(
-    'http://www.w3.org/ns/auth/acl#owner',
-  );
+  static const owner = const IriTerm('http://www.w3.org/ns/auth/acl#owner');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -67,7 +65,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -77,7 +75,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -87,7 +85,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -97,7 +95,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -107,7 +105,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -117,7 +115,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -127,7 +125,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -137,7 +135,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -147,7 +145,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -157,7 +155,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -167,7 +165,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlBottomDataProperty = IriTerm.prevalidated(
+  static const owlBottomDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomDataProperty',
   );
 
@@ -177,7 +175,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlBottomObjectProperty = IriTerm.prevalidated(
+  static const owlBottomObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomObjectProperty',
   );
 
@@ -187,7 +185,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -197,7 +195,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlDifferentFrom = IriTerm.prevalidated(
+  static const owlDifferentFrom = const IriTerm(
     'http://www.w3.org/2002/07/owl#differentFrom',
   );
 
@@ -207,7 +205,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -217,7 +215,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlSameAs = IriTerm.prevalidated(
+  static const owlSameAs = const IriTerm(
     'http://www.w3.org/2002/07/owl#sameAs',
   );
 
@@ -227,7 +225,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlTopDataProperty = IriTerm.prevalidated(
+  static const owlTopDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topDataProperty',
   );
 
@@ -237,7 +235,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlTopObjectProperty = IriTerm.prevalidated(
+  static const owlTopObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topObjectProperty',
   );
 
@@ -247,7 +245,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -258,9 +256,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafMbox = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/mbox',
-  );
+  static const foafMbox = const IriTerm('http://xmlns.com/foaf/0.1/mbox');
 
   /// mbox_sha1sum from foaf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -268,7 +264,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafMbox_sha1sum = IriTerm.prevalidated(
+  static const foafMbox_sha1sum = const IriTerm(
     'http://xmlns.com/foaf/0.1/mbox_sha1sum',
   );
 
@@ -278,9 +274,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafGender = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/gender',
-  );
+  static const foafGender = const IriTerm('http://xmlns.com/foaf/0.1/gender');
 
   /// jabberID from foaf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -288,7 +282,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafJabberID = IriTerm.prevalidated(
+  static const foafJabberID = const IriTerm(
     'http://xmlns.com/foaf/0.1/jabberID',
   );
 
@@ -298,7 +292,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafAimChatID = IriTerm.prevalidated(
+  static const foafAimChatID = const IriTerm(
     'http://xmlns.com/foaf/0.1/aimChatID',
   );
 
@@ -308,9 +302,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafSkypeID = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/skypeID',
-  );
+  static const foafSkypeID = const IriTerm('http://xmlns.com/foaf/0.1/skypeID');
 
   /// icqChatID from foaf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -318,7 +310,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafIcqChatID = IriTerm.prevalidated(
+  static const foafIcqChatID = const IriTerm(
     'http://xmlns.com/foaf/0.1/icqChatID',
   );
 
@@ -328,7 +320,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafYahooChatID = IriTerm.prevalidated(
+  static const foafYahooChatID = const IriTerm(
     'http://xmlns.com/foaf/0.1/yahooChatID',
   );
 
@@ -338,7 +330,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafMsnChatID = IriTerm.prevalidated(
+  static const foafMsnChatID = const IriTerm(
     'http://xmlns.com/foaf/0.1/msnChatID',
   );
 
@@ -348,9 +340,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafName = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/name',
-  );
+  static const foafName = const IriTerm('http://xmlns.com/foaf/0.1/name');
 
   /// homepage from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -358,7 +348,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafHomepage = IriTerm.prevalidated(
+  static const foafHomepage = const IriTerm(
     'http://xmlns.com/foaf/0.1/homepage',
   );
 
@@ -368,9 +358,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafWeblog = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/weblog',
-  );
+  static const foafWeblog = const IriTerm('http://xmlns.com/foaf/0.1/weblog');
 
   /// openid from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -378,9 +366,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafOpenid = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/openid',
-  );
+  static const foafOpenid = const IriTerm('http://xmlns.com/foaf/0.1/openid');
 
   /// tipjar from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -388,9 +374,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafTipjar = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/tipjar',
-  );
+  static const foafTipjar = const IriTerm('http://xmlns.com/foaf/0.1/tipjar');
 
   /// made from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -398,9 +382,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafMade = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/made',
-  );
+  static const foafMade = const IriTerm('http://xmlns.com/foaf/0.1/made');
 
   /// maker from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Agent]
   ///
@@ -409,9 +391,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafMaker = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/maker',
-  );
+  static const foafMaker = const IriTerm('http://xmlns.com/foaf/0.1/maker');
 
   /// depiction from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Image]
   ///
@@ -419,7 +399,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafDepiction = IriTerm.prevalidated(
+  static const foafDepiction = const IriTerm(
     'http://xmlns.com/foaf/0.1/depiction',
   );
 
@@ -429,7 +409,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafInterest = IriTerm.prevalidated(
+  static const foafInterest = const IriTerm(
     'http://xmlns.com/foaf/0.1/interest',
   );
 
@@ -439,7 +419,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafTopic_interest = IriTerm.prevalidated(
+  static const foafTopic_interest = const IriTerm(
     'http://xmlns.com/foaf/0.1/topic_interest',
   );
 
@@ -449,7 +429,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafFundedBy = IriTerm.prevalidated(
+  static const foafFundedBy = const IriTerm(
     'http://xmlns.com/foaf/0.1/fundedBy',
   );
 
@@ -459,9 +439,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafLogo = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/logo',
-  );
+  static const foafLogo = const IriTerm('http://xmlns.com/foaf/0.1/logo');
 
   /// page from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -469,9 +447,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafPage = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/page',
-  );
+  static const foafPage = const IriTerm('http://xmlns.com/foaf/0.1/page');
 
   /// theme from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -479,9 +455,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafTheme = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/theme',
-  );
+  static const foafTheme = const IriTerm('http://xmlns.com/foaf/0.1/theme');
 
   /// account from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/OnlineAccount]
   ///
@@ -489,9 +463,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafAccount = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/account',
-  );
+  static const foafAccount = const IriTerm('http://xmlns.com/foaf/0.1/account');
 
   /// holdsAccount from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/OnlineAccount]
   ///
@@ -499,7 +471,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafHoldsAccount = IriTerm.prevalidated(
+  static const foafHoldsAccount = const IriTerm(
     'http://xmlns.com/foaf/0.1/holdsAccount',
   );
 
@@ -509,7 +481,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafBirthday = IriTerm.prevalidated(
+  static const foafBirthday = const IriTerm(
     'http://xmlns.com/foaf/0.1/birthday',
   );
 
@@ -519,7 +491,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafAge = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/age');
+  static const foafAge = const IriTerm('http://xmlns.com/foaf/0.1/age');
 
   /// status from foaf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -527,9 +499,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const foafStatus = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/status',
-  );
+  static const foafStatus = const IriTerm('http://xmlns.com/foaf/0.1/status');
 
   /// masterWorkspace from pim vocabulary [Expects: http://www.w3.org/ns/pim/space#MasterWorkspace]
   ///
@@ -537,7 +507,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const pimMasterWorkspace = IriTerm.prevalidated(
+  static const pimMasterWorkspace = const IriTerm(
     'http://www.w3.org/ns/pim/space#masterWorkspace',
   );
 
@@ -547,7 +517,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const pimPreferencesFile = IriTerm.prevalidated(
+  static const pimPreferencesFile = const IriTerm(
     'http://www.w3.org/ns/pim/space#preferencesFile',
   );
 
@@ -557,7 +527,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const biboInterviewee = IriTerm.prevalidated(
+  static const biboInterviewee = const IriTerm(
     'http://purl.org/ontology/bibo/interviewee',
   );
 
@@ -567,7 +537,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const biboInterviewer = IriTerm.prevalidated(
+  static const biboInterviewer = const IriTerm(
     'http://purl.org/ontology/bibo/interviewer',
   );
 
@@ -577,7 +547,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 
@@ -587,7 +557,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const biboPrefixName = IriTerm.prevalidated(
+  static const biboPrefixName = const IriTerm(
     'http://purl.org/ontology/bibo/prefixName',
   );
 
@@ -597,7 +567,7 @@ class AclAuthenticatedAgent {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const biboSuffixName = IriTerm.prevalidated(
+  static const biboSuffixName = const IriTerm(
     'http://purl.org/ontology/bibo/suffixName',
   );
 }

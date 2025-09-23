@@ -23,7 +23,7 @@ class Pim {
   ///
   ///
   ///
-  static const ConfigurationFile = IriTerm.prevalidated(
+  static const ConfigurationFile = const IriTerm(
     'http://www.w3.org/ns/pim/space#ConfigurationFile',
   );
 
@@ -33,7 +33,7 @@ class Pim {
   /// who has access to it.
   ///
   ///
-  static const ControlledStorage = IriTerm.prevalidated(
+  static const ControlledStorage = const IriTerm(
     'http://www.w3.org/ns/pim/space#ControlledStorage',
   );
 
@@ -43,7 +43,7 @@ class Pim {
   /// information about the other workspaces.
   /// As a user, you normally don't have to worry about it.
   ///
-  static const MasterWorkspace = IriTerm.prevalidated(
+  static const MasterWorkspace = const IriTerm(
     'http://www.w3.org/ns/pim/space#MasterWorkspace',
   );
 
@@ -53,7 +53,7 @@ class Pim {
   /// you cannot give access to anyone else.
   ///
   ///
-  static const PersonalStorage = IriTerm.prevalidated(
+  static const PersonalStorage = const IriTerm(
     'http://www.w3.org/ns/pim/space#PersonalStorage',
   );
 
@@ -61,7 +61,7 @@ class Pim {
   ///
   /// Aceess may not be open to the public. Contains preferences resources.
   ///
-  static const PreferencesWorkspace = IriTerm.prevalidated(
+  static const PreferencesWorkspace = const IriTerm(
     'http://www.w3.org/ns/pim/space#PreferencesWorkspace',
   );
 
@@ -69,7 +69,7 @@ class Pim {
   ///
   /// Access only by the you, the user.
   ///
-  static const PrivateWorkspace = IriTerm.prevalidated(
+  static const PrivateWorkspace = const IriTerm(
     'http://www.w3.org/ns/pim/space#PrivateWorkspace',
   );
 
@@ -79,7 +79,7 @@ class Pim {
   /// and all data is accessible to anyone without control.
   ///
   ///
-  static const PublicStorage = IriTerm.prevalidated(
+  static const PublicStorage = const IriTerm(
     'http://www.w3.org/ns/pim/space#PublicStorage',
   );
 
@@ -88,7 +88,7 @@ class Pim {
   /// Aceess is open to the public. Anything in a public workspace
   /// can be accesed by anyone.
   ///
-  static const PublicWorkspace = IriTerm.prevalidated(
+  static const PublicWorkspace = const IriTerm(
     'http://www.w3.org/ns/pim/space#PublicWorkspace',
   );
 
@@ -96,7 +96,7 @@ class Pim {
   ///
   /// Access is to some but not all people.
   ///
-  static const SharedWorkspace = IriTerm.prevalidated(
+  static const SharedWorkspace = const IriTerm(
     'http://www.w3.org/ns/pim/space#SharedWorkspace',
   );
 
@@ -105,7 +105,7 @@ class Pim {
   /// A storage is a space of URIs in which you have access to data.
   ///
   ///
-  static const Storage = IriTerm.prevalidated(
+  static const Storage = const IriTerm(
     'http://www.w3.org/ns/pim/space#Storage',
   );
 
@@ -116,7 +116,7 @@ class Pim {
   /// workspaces, some being user private, some shared, and some public.
   ///
   ///
-  static const Workspace = IriTerm.prevalidated(
+  static const Workspace = const IriTerm(
     'http://www.w3.org/ns/pim/space#Workspace',
   );
 
@@ -126,7 +126,7 @@ class Pim {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const masterWorkspace = IriTerm.prevalidated(
+  static const masterWorkspace = const IriTerm(
     'http://www.w3.org/ns/pim/space#masterWorkspace',
   );
 
@@ -136,7 +136,7 @@ class Pim {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Agent
   ///
-  static const preferencesFile = IriTerm.prevalidated(
+  static const preferencesFile = const IriTerm(
     'http://www.w3.org/ns/pim/space#preferencesFile',
   );
 
@@ -147,7 +147,7 @@ class Pim {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const storage = IriTerm.prevalidated(
+  static const storage = const IriTerm(
     'http://www.w3.org/ns/pim/space#storage',
   );
 
@@ -159,7 +159,7 @@ class Pim {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const uriPrefix = IriTerm.prevalidated(
+  static const uriPrefix = const IriTerm(
     'http://www.w3.org/ns/pim/space#uriPrefix',
   );
 
@@ -169,7 +169,7 @@ class Pim {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const workspace = IriTerm.prevalidated(
+  static const workspace = const IriTerm(
     'http://www.w3.org/ns/pim/space#workspace',
   );
 }

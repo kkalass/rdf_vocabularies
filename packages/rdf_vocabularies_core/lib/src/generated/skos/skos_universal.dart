@@ -25,7 +25,7 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const inScheme = IriTerm.prevalidated(
+  static const inScheme = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#inScheme',
   );
 
@@ -33,7 +33,7 @@ class SkosUniversalProperties {
   ///
   /// A resource has no more than one value of skos:prefLabel per language tag, and no more than one value of skos:prefLabel without language tag.
   ///
-  static const prefLabel = IriTerm.prevalidated(
+  static const prefLabel = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#prefLabel',
   );
 
@@ -41,7 +41,7 @@ class SkosUniversalProperties {
   ///
   /// The range of skos:altLabel is the class of RDF plain literals.
   ///
-  static const altLabel = IriTerm.prevalidated(
+  static const altLabel = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#altLabel',
   );
 
@@ -49,7 +49,7 @@ class SkosUniversalProperties {
   ///
   /// The range of skos:hiddenLabel is the class of RDF plain literals.
   ///
-  static const hiddenLabel = IriTerm.prevalidated(
+  static const hiddenLabel = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#hiddenLabel',
   );
 
@@ -57,7 +57,7 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const notation = IriTerm.prevalidated(
+  static const notation = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#notation',
   );
 
@@ -65,15 +65,13 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const note = IriTerm.prevalidated(
-    'http://www.w3.org/2004/02/skos/core#note',
-  );
+  static const note = const IriTerm('http://www.w3.org/2004/02/skos/core#note');
 
   /// changeNote
   ///
   ///
   ///
-  static const changeNote = IriTerm.prevalidated(
+  static const changeNote = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#changeNote',
   );
 
@@ -81,7 +79,7 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const definition = IriTerm.prevalidated(
+  static const definition = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#definition',
   );
 
@@ -89,7 +87,7 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const editorialNote = IriTerm.prevalidated(
+  static const editorialNote = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#editorialNote',
   );
 
@@ -97,7 +95,7 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const example = IriTerm.prevalidated(
+  static const example = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#example',
   );
 
@@ -105,7 +103,7 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const historyNote = IriTerm.prevalidated(
+  static const historyNote = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#historyNote',
   );
 
@@ -113,7 +111,7 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const scopeNote = IriTerm.prevalidated(
+  static const scopeNote = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#scopeNote',
   );
 
@@ -121,7 +119,7 @@ class SkosUniversalProperties {
   ///
   /// Broader concepts are typically rendered as parents in a concept hierarchy (tree).
   ///
-  static const broader = IriTerm.prevalidated(
+  static const broader = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#broader',
   );
 
@@ -129,7 +127,7 @@ class SkosUniversalProperties {
   ///
   /// Narrower concepts are typically rendered as children in a concept hierarchy (tree).
   ///
-  static const narrower = IriTerm.prevalidated(
+  static const narrower = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#narrower',
   );
 
@@ -137,7 +135,7 @@ class SkosUniversalProperties {
   ///
   /// skos:related is disjoint with skos:broaderTransitive
   ///
-  static const related = IriTerm.prevalidated(
+  static const related = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#related',
   );
 
@@ -145,7 +143,7 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const broaderTransitive = IriTerm.prevalidated(
+  static const broaderTransitive = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#broaderTransitive',
   );
 
@@ -153,7 +151,7 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const narrowerTransitive = IriTerm.prevalidated(
+  static const narrowerTransitive = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#narrowerTransitive',
   );
 
@@ -161,7 +159,7 @@ class SkosUniversalProperties {
   ///
   /// These concept mapping relations mirror semantic relations, and the data model defined below is similar (with the exception of skos:exactMatch) to the data model defined for semantic relations. A distinct vocabulary is provided for concept mapping relations, to provide a convenient way to differentiate links within a concept scheme from links between concept schemes. However, this pattern of usage is not a formal requirement of the SKOS data model, and relies on informal definitions of best practice.
   ///
-  static const mappingRelation = IriTerm.prevalidated(
+  static const mappingRelation = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#mappingRelation',
   );
 
@@ -169,7 +167,7 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const broadMatch = IriTerm.prevalidated(
+  static const broadMatch = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#broadMatch',
   );
 
@@ -177,7 +175,7 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const narrowMatch = IriTerm.prevalidated(
+  static const narrowMatch = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#narrowMatch',
   );
 
@@ -185,7 +183,7 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const relatedMatch = IriTerm.prevalidated(
+  static const relatedMatch = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#relatedMatch',
   );
 
@@ -193,7 +191,7 @@ class SkosUniversalProperties {
   ///
   /// skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch.
   ///
-  static const exactMatch = IriTerm.prevalidated(
+  static const exactMatch = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#exactMatch',
   );
 
@@ -201,7 +199,7 @@ class SkosUniversalProperties {
   ///
   ///
   ///
-  static const closeMatch = IriTerm.prevalidated(
+  static const closeMatch = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#closeMatch',
   );
 }

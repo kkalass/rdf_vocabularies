@@ -25,15 +25,13 @@ class DctermsUniversalProperties {
   ///
   /// A summary of the resource.
   ///
-  static const abstract_ = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/abstract',
-  );
+  static const abstract_ = const IriTerm('http://purl.org/dc/terms/abstract');
 
   /// accessRights
   ///
   /// Information about who access the resource or an indication of its security status.
   ///
-  static const accessRights = IriTerm.prevalidated(
+  static const accessRights = const IriTerm(
     'http://purl.org/dc/terms/accessRights',
   );
 
@@ -41,7 +39,7 @@ class DctermsUniversalProperties {
   ///
   /// An alternative name for the resource.
   ///
-  static const alternative = IriTerm.prevalidated(
+  static const alternative = const IriTerm(
     'http://purl.org/dc/terms/alternative',
   );
 
@@ -49,23 +47,19 @@ class DctermsUniversalProperties {
   ///
   /// A class of agents for whom the resource is intended or useful.
   ///
-  static const audience = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/audience',
-  );
+  static const audience = const IriTerm('http://purl.org/dc/terms/audience');
 
   /// available [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
   /// Date that the resource became or will become available.
   ///
-  static const available = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/available',
-  );
+  static const available = const IriTerm('http://purl.org/dc/terms/available');
 
   /// bibliographicCitation [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
   /// A bibliographic reference for the resource.
   ///
-  static const bibliographicCitation = IriTerm.prevalidated(
+  static const bibliographicCitation = const IriTerm(
     'http://purl.org/dc/terms/bibliographicCitation',
   );
 
@@ -73,7 +67,7 @@ class DctermsUniversalProperties {
   ///
   /// An established standard to which the described resource conforms.
   ///
-  static const conformsTo = IriTerm.prevalidated(
+  static const conformsTo = const IriTerm(
     'http://purl.org/dc/terms/conformsTo',
   );
 
@@ -81,7 +75,7 @@ class DctermsUniversalProperties {
   ///
   /// An entity responsible for making contributions to the resource.
   ///
-  static const contributor = IriTerm.prevalidated(
+  static const contributor = const IriTerm(
     'http://purl.org/dc/terms/contributor',
   );
 
@@ -89,37 +83,31 @@ class DctermsUniversalProperties {
   ///
   /// The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.
   ///
-  static const coverage = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/coverage',
-  );
+  static const coverage = const IriTerm('http://purl.org/dc/terms/coverage');
 
   /// created [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
   /// Date of creation of the resource.
   ///
-  static const created = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/created',
-  );
+  static const created = const IriTerm('http://purl.org/dc/terms/created');
 
   /// creator
   ///
   /// An entity responsible for making the resource.
   ///
-  static const creator = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/creator',
-  );
+  static const creator = const IriTerm('http://purl.org/dc/terms/creator');
 
   /// date [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
   /// A point or period of time associated with an event in the lifecycle of the resource.
   ///
-  static const date = IriTerm.prevalidated('http://purl.org/dc/terms/date');
+  static const date = const IriTerm('http://purl.org/dc/terms/date');
 
   /// dateAccepted [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
   /// Date of acceptance of the resource.
   ///
-  static const dateAccepted = IriTerm.prevalidated(
+  static const dateAccepted = const IriTerm(
     'http://purl.org/dc/terms/dateAccepted',
   );
 
@@ -127,7 +115,7 @@ class DctermsUniversalProperties {
   ///
   /// Date of copyright of the resource.
   ///
-  static const dateCopyrighted = IriTerm.prevalidated(
+  static const dateCopyrighted = const IriTerm(
     'http://purl.org/dc/terms/dateCopyrighted',
   );
 
@@ -135,7 +123,7 @@ class DctermsUniversalProperties {
   ///
   /// Date of submission of the resource.
   ///
-  static const dateSubmitted = IriTerm.prevalidated(
+  static const dateSubmitted = const IriTerm(
     'http://purl.org/dc/terms/dateSubmitted',
   );
 
@@ -143,7 +131,7 @@ class DctermsUniversalProperties {
   ///
   /// An account of the resource.
   ///
-  static const description = IriTerm.prevalidated(
+  static const description = const IriTerm(
     'http://purl.org/dc/terms/description',
   );
 
@@ -151,7 +139,7 @@ class DctermsUniversalProperties {
   ///
   /// A class of agents, defined in terms of progression through an educational or training context, for which the described resource is intended.
   ///
-  static const educationLevel = IriTerm.prevalidated(
+  static const educationLevel = const IriTerm(
     'http://purl.org/dc/terms/educationLevel',
   );
 
@@ -159,35 +147,31 @@ class DctermsUniversalProperties {
   ///
   /// The size or duration of the resource.
   ///
-  static const extent = IriTerm.prevalidated('http://purl.org/dc/terms/extent');
+  static const extent = const IriTerm('http://purl.org/dc/terms/extent');
 
   /// format
   ///
   /// The file format, physical medium, or dimensions of the resource.
   ///
-  static const format = IriTerm.prevalidated('http://purl.org/dc/terms/format');
+  static const format = const IriTerm('http://purl.org/dc/terms/format');
 
   /// hasFormat
   ///
   /// A related resource that is substantially the same as the pre-existing described resource, but in another format.
   ///
-  static const hasFormat = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/hasFormat',
-  );
+  static const hasFormat = const IriTerm('http://purl.org/dc/terms/hasFormat');
 
   /// hasPart
   ///
   /// A related resource that is included either physically or logically in the described resource.
   ///
-  static const hasPart = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/hasPart',
-  );
+  static const hasPart = const IriTerm('http://purl.org/dc/terms/hasPart');
 
   /// hasVersion
   ///
   /// A related resource that is a version, edition, or adaptation of the described resource.
   ///
-  static const hasVersion = IriTerm.prevalidated(
+  static const hasVersion = const IriTerm(
     'http://purl.org/dc/terms/hasVersion',
   );
 
@@ -195,7 +179,7 @@ class DctermsUniversalProperties {
   ///
   /// An unambiguous reference to the resource within a given context.
   ///
-  static const identifier = IriTerm.prevalidated(
+  static const identifier = const IriTerm(
     'http://purl.org/dc/terms/identifier',
   );
 
@@ -203,7 +187,7 @@ class DctermsUniversalProperties {
   ///
   /// A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support.
   ///
-  static const instructionalMethod = IriTerm.prevalidated(
+  static const instructionalMethod = const IriTerm(
     'http://purl.org/dc/terms/instructionalMethod',
   );
 
@@ -211,7 +195,7 @@ class DctermsUniversalProperties {
   ///
   /// A pre-existing related resource that is substantially the same as the described resource, but in another format.
   ///
-  static const isFormatOf = IriTerm.prevalidated(
+  static const isFormatOf = const IriTerm(
     'http://purl.org/dc/terms/isFormatOf',
   );
 
@@ -219,15 +203,13 @@ class DctermsUniversalProperties {
   ///
   /// A related resource in which the described resource is physically or logically included.
   ///
-  static const isPartOf = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/isPartOf',
-  );
+  static const isPartOf = const IriTerm('http://purl.org/dc/terms/isPartOf');
 
   /// isReferencedBy
   ///
   /// A related resource that references, cites, or otherwise points to the described resource.
   ///
-  static const isReferencedBy = IriTerm.prevalidated(
+  static const isReferencedBy = const IriTerm(
     'http://purl.org/dc/terms/isReferencedBy',
   );
 
@@ -235,7 +217,7 @@ class DctermsUniversalProperties {
   ///
   /// A related resource that supplants, displaces, or supersedes the described resource.
   ///
-  static const isReplacedBy = IriTerm.prevalidated(
+  static const isReplacedBy = const IriTerm(
     'http://purl.org/dc/terms/isReplacedBy',
   );
 
@@ -243,7 +225,7 @@ class DctermsUniversalProperties {
   ///
   /// A related resource that requires the described resource to support its function, delivery, or coherence.
   ///
-  static const isRequiredBy = IriTerm.prevalidated(
+  static const isRequiredBy = const IriTerm(
     'http://purl.org/dc/terms/isRequiredBy',
   );
 
@@ -251,7 +233,7 @@ class DctermsUniversalProperties {
   ///
   /// A related resource of which the described resource is a version, edition, or adaptation.
   ///
-  static const isVersionOf = IriTerm.prevalidated(
+  static const isVersionOf = const IriTerm(
     'http://purl.org/dc/terms/isVersionOf',
   );
 
@@ -259,51 +241,43 @@ class DctermsUniversalProperties {
   ///
   /// Date of formal issuance of the resource.
   ///
-  static const issued = IriTerm.prevalidated('http://purl.org/dc/terms/issued');
+  static const issued = const IriTerm('http://purl.org/dc/terms/issued');
 
   /// language
   ///
   /// A language of the resource.
   ///
-  static const language = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/language',
-  );
+  static const language = const IriTerm('http://purl.org/dc/terms/language');
 
   /// license
   ///
   /// A legal document giving official permission to do something with the resource.
   ///
-  static const license = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/license',
-  );
+  static const license = const IriTerm('http://purl.org/dc/terms/license');
 
   /// mediator
   ///
   /// An entity that mediates access to the resource.
   ///
-  static const mediator = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/mediator',
-  );
+  static const mediator = const IriTerm('http://purl.org/dc/terms/mediator');
 
   /// medium
   ///
   /// The material or physical carrier of the resource.
   ///
-  static const medium = IriTerm.prevalidated('http://purl.org/dc/terms/medium');
+  static const medium = const IriTerm('http://purl.org/dc/terms/medium');
 
   /// modified [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
   /// Date on which the resource was changed.
   ///
-  static const modified = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/modified',
-  );
+  static const modified = const IriTerm('http://purl.org/dc/terms/modified');
 
   /// provenance
   ///
   /// A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.
   ///
-  static const provenance = IriTerm.prevalidated(
+  static const provenance = const IriTerm(
     'http://purl.org/dc/terms/provenance',
   );
 
@@ -311,15 +285,13 @@ class DctermsUniversalProperties {
   ///
   /// An entity responsible for making the resource available.
   ///
-  static const publisher = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/publisher',
-  );
+  static const publisher = const IriTerm('http://purl.org/dc/terms/publisher');
 
   /// references
   ///
   /// A related resource that is referenced, cited, or otherwise pointed to by the described resource.
   ///
-  static const references = IriTerm.prevalidated(
+  static const references = const IriTerm(
     'http://purl.org/dc/terms/references',
   );
 
@@ -327,37 +299,31 @@ class DctermsUniversalProperties {
   ///
   /// A related resource.
   ///
-  static const relation = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/relation',
-  );
+  static const relation = const IriTerm('http://purl.org/dc/terms/relation');
 
   /// replaces
   ///
   /// A related resource that is supplanted, displaced, or superseded by the described resource.
   ///
-  static const replaces = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/replaces',
-  );
+  static const replaces = const IriTerm('http://purl.org/dc/terms/replaces');
 
   /// requires
   ///
   /// A related resource that is required by the described resource to support its function, delivery, or coherence.
   ///
-  static const requires = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/requires',
-  );
+  static const requires = const IriTerm('http://purl.org/dc/terms/requires');
 
   /// rights
   ///
   /// Information about rights held in and over the resource.
   ///
-  static const rights = IriTerm.prevalidated('http://purl.org/dc/terms/rights');
+  static const rights = const IriTerm('http://purl.org/dc/terms/rights');
 
   /// rightsHolder
   ///
   /// A person or organization owning or managing rights over the resource.
   ///
-  static const rightsHolder = IriTerm.prevalidated(
+  static const rightsHolder = const IriTerm(
     'http://purl.org/dc/terms/rightsHolder',
   );
 
@@ -365,29 +331,25 @@ class DctermsUniversalProperties {
   ///
   /// A related resource from which the described resource is derived.
   ///
-  static const source = IriTerm.prevalidated('http://purl.org/dc/terms/source');
+  static const source = const IriTerm('http://purl.org/dc/terms/source');
 
   /// spatial
   ///
   /// Spatial characteristics of the resource.
   ///
-  static const spatial = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/spatial',
-  );
+  static const spatial = const IriTerm('http://purl.org/dc/terms/spatial');
 
   /// subject
   ///
   /// A topic of the resource.
   ///
-  static const subject = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/subject',
-  );
+  static const subject = const IriTerm('http://purl.org/dc/terms/subject');
 
   /// tableOfContents
   ///
   /// A list of subunits of the resource.
   ///
-  static const tableOfContents = IriTerm.prevalidated(
+  static const tableOfContents = const IriTerm(
     'http://purl.org/dc/terms/tableOfContents',
   );
 
@@ -395,25 +357,23 @@ class DctermsUniversalProperties {
   ///
   /// Temporal characteristics of the resource.
   ///
-  static const temporal = IriTerm.prevalidated(
-    'http://purl.org/dc/terms/temporal',
-  );
+  static const temporal = const IriTerm('http://purl.org/dc/terms/temporal');
 
   /// title [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
   /// A name given to the resource.
   ///
-  static const title = IriTerm.prevalidated('http://purl.org/dc/terms/title');
+  static const title = const IriTerm('http://purl.org/dc/terms/title');
 
   /// type
   ///
   /// The nature or genre of the resource.
   ///
-  static const type = IriTerm.prevalidated('http://purl.org/dc/terms/type');
+  static const type = const IriTerm('http://purl.org/dc/terms/type');
 
   /// valid [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
   /// Date (often a range) of validity of a resource.
   ///
-  static const valid = IriTerm.prevalidated('http://purl.org/dc/terms/valid');
+  static const valid = const IriTerm('http://purl.org/dc/terms/valid');
 }

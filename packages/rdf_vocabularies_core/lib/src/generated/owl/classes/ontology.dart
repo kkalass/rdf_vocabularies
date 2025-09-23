@@ -24,7 +24,7 @@ class OwlOntology {
 
   /// IRI term for the Ontology class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
+  static const classIri = const IriTerm(
     'http://www.w3.org/2002/07/owl#Ontology',
   );
 
@@ -34,7 +34,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const annotatedProperty = IriTerm.prevalidated(
+  static const annotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -44,7 +44,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const annotatedSource = IriTerm.prevalidated(
+  static const annotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -54,7 +54,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const annotatedTarget = IriTerm.prevalidated(
+  static const annotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -64,7 +64,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Ontology
   ///
-  static const backwardCompatibleWith = IriTerm.prevalidated(
+  static const backwardCompatibleWith = const IriTerm(
     'http://www.w3.org/2002/07/owl#backwardCompatibleWith',
   );
 
@@ -74,7 +74,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const deprecated = IriTerm.prevalidated(
+  static const deprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -84,9 +84,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Ontology
   ///
-  static const imports = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#imports',
-  );
+  static const imports = const IriTerm('http://www.w3.org/2002/07/owl#imports');
 
   /// incompatibleWith [Expects: http://www.w3.org/2002/07/owl#Ontology]
   ///
@@ -94,7 +92,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Ontology
   ///
-  static const incompatibleWith = IriTerm.prevalidated(
+  static const incompatibleWith = const IriTerm(
     'http://www.w3.org/2002/07/owl#incompatibleWith',
   );
 
@@ -104,9 +102,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const members = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#members',
-  );
+  static const members = const IriTerm('http://www.w3.org/2002/07/owl#members');
 
   /// priorVersion [Expects: http://www.w3.org/2002/07/owl#Ontology]
   ///
@@ -114,7 +110,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Ontology
   ///
-  static const priorVersion = IriTerm.prevalidated(
+  static const priorVersion = const IriTerm(
     'http://www.w3.org/2002/07/owl#priorVersion',
   );
 
@@ -124,7 +120,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const versionInfo = IriTerm.prevalidated(
+  static const versionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -134,7 +130,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Ontology
   ///
-  static const versionIRI = IriTerm.prevalidated(
+  static const versionIRI = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionIRI',
   );
 
@@ -144,7 +140,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -154,7 +150,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -164,7 +160,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -174,7 +170,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -184,7 +180,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -194,7 +190,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -204,7 +200,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -214,7 +210,7 @@ class OwlOntology {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

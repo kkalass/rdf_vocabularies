@@ -25,7 +25,7 @@ class SkosConcept {
 
   /// IRI term for the Concept class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
+  static const classIri = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#Concept',
   );
 
@@ -35,7 +35,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const inScheme = IriTerm.prevalidated(
+  static const inScheme = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#inScheme',
   );
 
@@ -45,7 +45,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2004/02/skos/core#Concept
   ///
-  static const topConceptOf = IriTerm.prevalidated(
+  static const topConceptOf = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#topConceptOf',
   );
 
@@ -55,7 +55,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const prefLabel = IriTerm.prevalidated(
+  static const prefLabel = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#prefLabel',
   );
 
@@ -65,7 +65,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const altLabel = IriTerm.prevalidated(
+  static const altLabel = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#altLabel',
   );
 
@@ -75,7 +75,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hiddenLabel = IriTerm.prevalidated(
+  static const hiddenLabel = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#hiddenLabel',
   );
 
@@ -85,7 +85,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const notation = IriTerm.prevalidated(
+  static const notation = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#notation',
   );
 
@@ -95,9 +95,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const note = IriTerm.prevalidated(
-    'http://www.w3.org/2004/02/skos/core#note',
-  );
+  static const note = const IriTerm('http://www.w3.org/2004/02/skos/core#note');
 
   /// changeNote
   ///
@@ -105,7 +103,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const changeNote = IriTerm.prevalidated(
+  static const changeNote = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#changeNote',
   );
 
@@ -115,7 +113,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const definition = IriTerm.prevalidated(
+  static const definition = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#definition',
   );
 
@@ -125,7 +123,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const editorialNote = IriTerm.prevalidated(
+  static const editorialNote = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#editorialNote',
   );
 
@@ -135,7 +133,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const example = IriTerm.prevalidated(
+  static const example = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#example',
   );
 
@@ -145,7 +143,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const historyNote = IriTerm.prevalidated(
+  static const historyNote = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#historyNote',
   );
 
@@ -155,7 +153,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const scopeNote = IriTerm.prevalidated(
+  static const scopeNote = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#scopeNote',
   );
 
@@ -165,7 +163,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2004/02/skos/core#Concept
   ///
-  static const semanticRelation = IriTerm.prevalidated(
+  static const semanticRelation = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#semanticRelation',
   );
 
@@ -175,7 +173,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const broader = IriTerm.prevalidated(
+  static const broader = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#broader',
   );
 
@@ -185,7 +183,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const narrower = IriTerm.prevalidated(
+  static const narrower = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#narrower',
   );
 
@@ -195,7 +193,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const related = IriTerm.prevalidated(
+  static const related = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#related',
   );
 
@@ -205,7 +203,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const broaderTransitive = IriTerm.prevalidated(
+  static const broaderTransitive = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#broaderTransitive',
   );
 
@@ -215,7 +213,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const narrowerTransitive = IriTerm.prevalidated(
+  static const narrowerTransitive = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#narrowerTransitive',
   );
 
@@ -225,7 +223,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const mappingRelation = IriTerm.prevalidated(
+  static const mappingRelation = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#mappingRelation',
   );
 
@@ -235,7 +233,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const broadMatch = IriTerm.prevalidated(
+  static const broadMatch = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#broadMatch',
   );
 
@@ -245,7 +243,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const narrowMatch = IriTerm.prevalidated(
+  static const narrowMatch = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#narrowMatch',
   );
 
@@ -255,7 +253,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const relatedMatch = IriTerm.prevalidated(
+  static const relatedMatch = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#relatedMatch',
   );
 
@@ -265,7 +263,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const exactMatch = IriTerm.prevalidated(
+  static const exactMatch = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#exactMatch',
   );
 
@@ -275,7 +273,7 @@ class SkosConcept {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const closeMatch = IriTerm.prevalidated(
+  static const closeMatch = const IriTerm(
     'http://www.w3.org/2004/02/skos/core#closeMatch',
   );
 
@@ -285,7 +283,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -295,7 +293,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -305,7 +303,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -315,7 +313,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -325,7 +323,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -335,7 +333,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -345,7 +343,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -355,7 +353,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -365,7 +363,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -375,7 +373,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -385,7 +383,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlBottomDataProperty = IriTerm.prevalidated(
+  static const owlBottomDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomDataProperty',
   );
 
@@ -395,7 +393,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlBottomObjectProperty = IriTerm.prevalidated(
+  static const owlBottomObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomObjectProperty',
   );
 
@@ -405,7 +403,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -415,7 +413,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlDifferentFrom = IriTerm.prevalidated(
+  static const owlDifferentFrom = const IriTerm(
     'http://www.w3.org/2002/07/owl#differentFrom',
   );
 
@@ -425,7 +423,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -435,7 +433,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlSameAs = IriTerm.prevalidated(
+  static const owlSameAs = const IriTerm(
     'http://www.w3.org/2002/07/owl#sameAs',
   );
 
@@ -445,7 +443,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlTopDataProperty = IriTerm.prevalidated(
+  static const owlTopDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topDataProperty',
   );
 
@@ -455,7 +453,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlTopObjectProperty = IriTerm.prevalidated(
+  static const owlTopObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topObjectProperty',
   );
 
@@ -465,7 +463,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -475,9 +473,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafName = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/name',
-  );
+  static const foafName = const IriTerm('http://xmlns.com/foaf/0.1/name');
 
   /// homepage from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -485,7 +481,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafHomepage = IriTerm.prevalidated(
+  static const foafHomepage = const IriTerm(
     'http://xmlns.com/foaf/0.1/homepage',
   );
 
@@ -496,9 +492,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafMaker = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/maker',
-  );
+  static const foafMaker = const IriTerm('http://xmlns.com/foaf/0.1/maker');
 
   /// depiction from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Image]
   ///
@@ -506,7 +500,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafDepiction = IriTerm.prevalidated(
+  static const foafDepiction = const IriTerm(
     'http://xmlns.com/foaf/0.1/depiction',
   );
 
@@ -516,7 +510,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafFundedBy = IriTerm.prevalidated(
+  static const foafFundedBy = const IriTerm(
     'http://xmlns.com/foaf/0.1/fundedBy',
   );
 
@@ -526,9 +520,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafLogo = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/logo',
-  );
+  static const foafLogo = const IriTerm('http://xmlns.com/foaf/0.1/logo');
 
   /// focus from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -536,9 +528,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2004/02/skos/core#Concept
   ///
-  static const foafFocus = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/focus',
-  );
+  static const foafFocus = const IriTerm('http://xmlns.com/foaf/0.1/focus');
 
   /// page from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -546,9 +536,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafPage = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/page',
-  );
+  static const foafPage = const IriTerm('http://xmlns.com/foaf/0.1/page');
 
   /// theme from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -556,9 +544,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafTheme = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/theme',
-  );
+  static const foafTheme = const IriTerm('http://xmlns.com/foaf/0.1/theme');
 
   /// abstract_ from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -566,7 +552,7 @@ class SkosConcept {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

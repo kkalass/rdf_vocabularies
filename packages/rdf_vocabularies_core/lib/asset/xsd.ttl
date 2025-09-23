@@ -5,6 +5,8 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 # XML Schema Definition (XSD) Datatypes
+#
+# Based on W3C XML Schema Part 2: Datatypes Second Edition https://www.w3.org/TR/xmlschema-2/
 
 xsd:string a rdfs:Datatype ;
     rdfs:label "string" ;

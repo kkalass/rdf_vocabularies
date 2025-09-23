@@ -23,7 +23,7 @@ class Solid {
   ///
   /// A Solid account.
   ///
-  static const Account = IriTerm.prevalidated(
+  static const Account = const IriTerm(
     'http://www.w3.org/ns/solid/terms#Account',
   );
 
@@ -31,9 +31,7 @@ class Solid {
   ///
   /// A resource containing notifications.
   ///
-  static const Inbox = IriTerm.prevalidated(
-    'http://www.w3.org/ns/solid/terms#Inbox',
-  );
+  static const Inbox = const IriTerm('http://www.w3.org/ns/solid/terms#Inbox');
 
   /// IRI for solid:InsertDeletePatch
   ///
@@ -41,7 +39,7 @@ class Solid {
   ///
   /// [See also](https://solidproject.org/TR/2021/protocol-20211217#server-patch-n3-type)
   ///
-  static const InsertDeletePatch = IriTerm.prevalidated(
+  static const InsertDeletePatch = const IriTerm(
     'http://www.w3.org/ns/solid/terms#InsertDeletePatch',
   );
 
@@ -49,7 +47,7 @@ class Solid {
   ///
   /// Listed Type Index is a registry of resources that are publicly discoverable by outside users and applications.
   ///
-  static const ListedDocument = IriTerm.prevalidated(
+  static const ListedDocument = const IriTerm(
     'http://www.w3.org/ns/solid/terms#ListedDocument',
   );
 
@@ -57,7 +55,7 @@ class Solid {
   ///
   /// A notification resource.
   ///
-  static const Notification = IriTerm.prevalidated(
+  static const Notification = const IriTerm(
     'http://www.w3.org/ns/solid/terms#Notification',
   );
 
@@ -65,15 +63,13 @@ class Solid {
   ///
   /// A patch expresses conditional modifications to a resource that has an RDF-based representation.
   ///
-  static const Patch = IriTerm.prevalidated(
-    'http://www.w3.org/ns/solid/terms#Patch',
-  );
+  static const Patch = const IriTerm('http://www.w3.org/ns/solid/terms#Patch');
 
   /// IRI for solid:Timeline
   ///
   /// A resource containing time ordered items and sub-containers.  Sub-containers may be desirable in file based systems to split the timeline into logical components e.g. /yyyy-mm-dd/ as used in ISO 8061.
   ///
-  static const Timeline = IriTerm.prevalidated(
+  static const Timeline = const IriTerm(
     'http://www.w3.org/ns/solid/terms#Timeline',
   );
 
@@ -81,7 +77,7 @@ class Solid {
   ///
   /// A index of type registries for resources. Applications can register the RDF type they use and list them in the index resource.
   ///
-  static const TypeIndex = IriTerm.prevalidated(
+  static const TypeIndex = const IriTerm(
     'http://www.w3.org/ns/solid/terms#TypeIndex',
   );
 
@@ -89,7 +85,7 @@ class Solid {
   ///
   /// The registered types that map a RDF classes/types to their locations using either `instance` or `instanceContainer` property.
   ///
-  static const TypeRegistration = IriTerm.prevalidated(
+  static const TypeRegistration = const IriTerm(
     'http://www.w3.org/ns/solid/terms#TypeRegistration',
   );
 
@@ -97,7 +93,7 @@ class Solid {
   ///
   /// Unlisted Type Index is a registry of resources that are private to the user and their apps, for types that are not publicly discoverable.
   ///
-  static const UnlistedDocument = IriTerm.prevalidated(
+  static const UnlistedDocument = const IriTerm(
     'http://www.w3.org/ns/solid/terms#UnlistedDocument',
   );
 
@@ -107,7 +103,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const account = IriTerm.prevalidated(
+  static const account = const IriTerm(
     'http://www.w3.org/ns/solid/terms#account',
   );
 
@@ -117,7 +113,7 @@ class Solid {
   ///
   /// Can be used on: http://www.w3.org/ns/solid/terms#Patch
   ///
-  static const deletes = IriTerm.prevalidated(
+  static const deletes = const IriTerm(
     'http://www.w3.org/ns/solid/terms#deletes',
   );
 
@@ -127,7 +123,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const forClass = IriTerm.prevalidated(
+  static const forClass = const IriTerm(
     'http://www.w3.org/ns/solid/terms#forClass',
   );
 
@@ -137,9 +133,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const inbox = IriTerm.prevalidated(
-    'http://www.w3.org/ns/solid/terms#inbox',
-  );
+  static const inbox = const IriTerm('http://www.w3.org/ns/solid/terms#inbox');
 
   /// IRI for solid:inserts [Expects: http://www.w3.org/2000/10/swap/log#Formula]
   ///
@@ -147,7 +141,7 @@ class Solid {
   ///
   /// Can be used on: http://www.w3.org/ns/solid/terms#Patch
   ///
-  static const inserts = IriTerm.prevalidated(
+  static const inserts = const IriTerm(
     'http://www.w3.org/ns/solid/terms#inserts',
   );
 
@@ -157,7 +151,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const instance = IriTerm.prevalidated(
+  static const instance = const IriTerm(
     'http://www.w3.org/ns/solid/terms#instance',
   );
 
@@ -167,7 +161,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const instanceContainer = IriTerm.prevalidated(
+  static const instanceContainer = const IriTerm(
     'http://www.w3.org/ns/solid/terms#instanceContainer',
   );
 
@@ -177,7 +171,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const loginEndpoint = IriTerm.prevalidated(
+  static const loginEndpoint = const IriTerm(
     'http://www.w3.org/ns/solid/terms#loginEndpoint',
   );
 
@@ -187,7 +181,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const logoutEndpoint = IriTerm.prevalidated(
+  static const logoutEndpoint = const IriTerm(
     'http://www.w3.org/ns/solid/terms#logoutEndpoint',
   );
 
@@ -197,7 +191,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const notification = IriTerm.prevalidated(
+  static const notification = const IriTerm(
     'http://www.w3.org/ns/solid/terms#notification',
   );
 
@@ -207,7 +201,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const oidcIssuer = IriTerm.prevalidated(
+  static const oidcIssuer = const IriTerm(
     'http://www.w3.org/ns/solid/terms#oidcIssuer',
   );
 
@@ -217,9 +211,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const owner = IriTerm.prevalidated(
-    'http://www.w3.org/ns/solid/terms#owner',
-  );
+  static const owner = const IriTerm('http://www.w3.org/ns/solid/terms#owner');
 
   /// IRI for solid:patches [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
   ///
@@ -227,7 +219,7 @@ class Solid {
   ///
   /// Can be used on: http://www.w3.org/ns/solid/terms#Patch
   ///
-  static const patches = IriTerm.prevalidated(
+  static const patches = const IriTerm(
     'http://www.w3.org/ns/solid/terms#patches',
   );
 
@@ -237,7 +229,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const privateTypeIndex = IriTerm.prevalidated(
+  static const privateTypeIndex = const IriTerm(
     'http://www.w3.org/ns/solid/terms#privateTypeIndex',
   );
 
@@ -247,7 +239,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const publicTypeIndex = IriTerm.prevalidated(
+  static const publicTypeIndex = const IriTerm(
     'http://www.w3.org/ns/solid/terms#publicTypeIndex',
   );
 
@@ -257,7 +249,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const privateLabelIndex = IriTerm.prevalidated(
+  static const privateLabelIndex = const IriTerm(
     'http://www.w3.org/ns/solid/terms#privateLabelIndex',
   );
 
@@ -267,9 +259,7 @@ class Solid {
   ///
   /// Can be used on: http://rdfs.org/sioc/ns#Post
   ///
-  static const read = IriTerm.prevalidated(
-    'http://www.w3.org/ns/solid/terms#read',
-  );
+  static const read = const IriTerm('http://www.w3.org/ns/solid/terms#read');
 
   /// IRI for solid:storageDescription
   ///
@@ -279,7 +269,7 @@ class Solid {
   ///
   /// [See also](https://solidproject.org/TR/2024/protocol-20240512#server-storage-description)
   ///
-  static const storageDescription = IriTerm.prevalidated(
+  static const storageDescription = const IriTerm(
     'http://www.w3.org/ns/solid/terms#storageDescription',
   );
 
@@ -289,7 +279,7 @@ class Solid {
   ///
   /// Can be used on: http://www.w3.org/ns/solid/terms#Account
   ///
-  static const storageQuota = IriTerm.prevalidated(
+  static const storageQuota = const IriTerm(
     'http://www.w3.org/ns/solid/terms#storageQuota',
   );
 
@@ -299,7 +289,7 @@ class Solid {
   ///
   /// Can be used on: http://www.w3.org/ns/solid/terms#Account
   ///
-  static const storageUsage = IriTerm.prevalidated(
+  static const storageUsage = const IriTerm(
     'http://www.w3.org/ns/solid/terms#storageUsage',
   );
 
@@ -309,7 +299,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const typeIndex = IriTerm.prevalidated(
+  static const typeIndex = const IriTerm(
     'http://www.w3.org/ns/solid/terms#typeIndex',
   );
 
@@ -319,7 +309,7 @@ class Solid {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const timeline = IriTerm.prevalidated(
+  static const timeline = const IriTerm(
     'http://www.w3.org/ns/solid/terms#timeline',
   );
 
@@ -329,7 +319,5 @@ class Solid {
   ///
   /// Can be used on: http://www.w3.org/ns/solid/terms#Patch
   ///
-  static const where = IriTerm.prevalidated(
-    'http://www.w3.org/ns/solid/terms#where',
-  );
+  static const where = const IriTerm('http://www.w3.org/ns/solid/terms#where');
 }

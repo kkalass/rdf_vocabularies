@@ -365,26 +365,26 @@ packages:
     dependency: "direct main"
     description:
       name: rdf_core
-      sha256: "501198b3f9ba81a3ad75a26cd17c8264a9dd6b8bd9b6f0b9e85cb5a0807372a4"
+      sha256: cc208fdc51227d11d32ba82dd28c741637f006cdfbee99b27366317083efe4f6
       url: "https://pub.dev"
     source: hosted
-    version: "0.9.11"
+    version: "0.9.15"
   rdf_vocabulary_to_dart:
     dependency: "direct dev"
     description:
       name: rdf_vocabulary_to_dart
-      sha256: "6b19e5e46cf54e54881fbd0bc29170c17c163f846fea64b7620aa007634df632"
+      sha256: f09a845a646b7379e1e9132083b5cca56adad01278dbb93692fac646af6f9499
       url: "https://pub.dev"
     source: hosted
-    version: "0.9.1"
+    version: "0.9.2"
   rdf_xml:
     dependency: transitive
     description:
       name: rdf_xml
-      sha256: "9170235f5bb846aa50c3a444dad082911ade8fb1c9236f125ef2703e836b9c01"
+      sha256: "8e70b69332ef7faa371666a5069ce84bc72c36b61bb7feae440b98e09de6a3b4"
       url: "https://pub.dev"
     source: hosted
-    version: "0.4.3"
+    version: "0.4.6"
   shelf:
     dependency: transitive
     description:

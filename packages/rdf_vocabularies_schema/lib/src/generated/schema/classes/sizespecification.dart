@@ -28,9 +28,7 @@ class SchemaSizeSpecification {
 
   /// IRI term for the SizeSpecification class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'https://schema.org/SizeSpecification',
-  );
+  static const classIri = const IriTerm('https://schema.org/SizeSpecification');
 
   /// additionalProperty [Expects: https://schema.org/PropertyValue]
   ///
@@ -39,7 +37,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy, https://schema.org/Offer, https://schema.org/Place, https://schema.org/Product, https://schema.org/QualitativeValue, https://schema.org/QuantitativeValue
   ///
-  static const additionalProperty = IriTerm.prevalidated(
+  static const additionalProperty = const IriTerm(
     'https://schema.org/additionalProperty',
   );
 
@@ -50,7 +48,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -60,7 +58,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -70,7 +68,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/QualitativeValue
   ///
-  static const equal = IriTerm.prevalidated('https://schema.org/equal');
+  static const equal = const IriTerm('https://schema.org/equal');
 
   /// greater [Expects: https://schema.org/QualitativeValue]
   ///
@@ -78,7 +76,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/QualitativeValue
   ///
-  static const greater = IriTerm.prevalidated('https://schema.org/greater');
+  static const greater = const IriTerm('https://schema.org/greater');
 
   /// greaterOrEqual [Expects: https://schema.org/QualitativeValue]
   ///
@@ -86,7 +84,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/QualitativeValue
   ///
-  static const greaterOrEqual = IriTerm.prevalidated(
+  static const greaterOrEqual = const IriTerm(
     'https://schema.org/greaterOrEqual',
   );
 
@@ -96,7 +94,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Certification, https://schema.org/Offer, https://schema.org/Product, https://schema.org/SizeSpecification
   ///
-  static const hasMeasurement = IriTerm.prevalidated(
+  static const hasMeasurement = const IriTerm(
     'https://schema.org/hasMeasurement',
   );
 
@@ -106,7 +104,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -116,7 +114,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/QualitativeValue
   ///
-  static const lesser = IriTerm.prevalidated('https://schema.org/lesser');
+  static const lesser = const IriTerm('https://schema.org/lesser');
 
   /// lesserOrEqual [Expects: https://schema.org/QualitativeValue]
   ///
@@ -124,7 +122,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/QualitativeValue
   ///
-  static const lesserOrEqual = IriTerm.prevalidated(
+  static const lesserOrEqual = const IriTerm(
     'https://schema.org/lesserOrEqual',
   );
 
@@ -134,7 +132,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// nonEqual [Expects: https://schema.org/QualitativeValue]
   ///
@@ -142,7 +140,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/QualitativeValue
   ///
-  static const nonEqual = IriTerm.prevalidated('https://schema.org/nonEqual');
+  static const nonEqual = const IriTerm('https://schema.org/nonEqual');
 
   /// potentialAction [Expects: https://schema.org/Action]
   ///
@@ -150,7 +148,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -160,7 +158,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// sizeGroup [Expects: https://schema.org/SizeGroupEnumeration, https://schema.org/Text]
   ///
@@ -168,7 +166,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/SizeSpecification
   ///
-  static const sizeGroup = IriTerm.prevalidated('https://schema.org/sizeGroup');
+  static const sizeGroup = const IriTerm('https://schema.org/sizeGroup');
 
   /// sizeSystem [Expects: https://schema.org/SizeSystemEnumeration, https://schema.org/Text]
   ///
@@ -176,9 +174,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/SizeSpecification
   ///
-  static const sizeSystem = IriTerm.prevalidated(
-    'https://schema.org/sizeSystem',
-  );
+  static const sizeSystem = const IriTerm('https://schema.org/sizeSystem');
 
   /// suggestedAge [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -186,9 +182,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/PeopleAudience, https://schema.org/SizeSpecification
   ///
-  static const suggestedAge = IriTerm.prevalidated(
-    'https://schema.org/suggestedAge',
-  );
+  static const suggestedAge = const IriTerm('https://schema.org/suggestedAge');
 
   /// suggestedGender [Expects: https://schema.org/GenderType, https://schema.org/Text]
   ///
@@ -196,7 +190,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/PeopleAudience, https://schema.org/SizeSpecification
   ///
-  static const suggestedGender = IriTerm.prevalidated(
+  static const suggestedGender = const IriTerm(
     'https://schema.org/suggestedGender',
   );
 
@@ -206,7 +200,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/PeopleAudience, https://schema.org/SizeSpecification
   ///
-  static const suggestedMeasurement = IriTerm.prevalidated(
+  static const suggestedMeasurement = const IriTerm(
     'https://schema.org/suggestedMeasurement',
   );
 
@@ -216,9 +210,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Class, https://schema.org/Enumeration, https://schema.org/Property
   ///
-  static const supersededBy = IriTerm.prevalidated(
-    'https://schema.org/supersededBy',
-  );
+  static const supersededBy = const IriTerm('https://schema.org/supersededBy');
 
   /// url [Expects: https://schema.org/URL]
   ///
@@ -226,7 +218,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// valueReference [Expects: https://schema.org/DefinedTerm, https://schema.org/Enumeration, https://schema.org/MeasurementTypeEnumeration, https://schema.org/PropertyValue, https://schema.org/QualitativeValue, https://schema.org/QuantitativeValue, https://schema.org/StructuredValue, https://schema.org/Text]
   ///
@@ -234,7 +226,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/PropertyValue, https://schema.org/QualitativeValue, https://schema.org/QuantitativeValue
   ///
-  static const valueReference = IriTerm.prevalidated(
+  static const valueReference = const IriTerm(
     'https://schema.org/valueReference',
   );
 
@@ -244,7 +236,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -254,7 +246,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -264,7 +256,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -272,9 +264,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -282,7 +272,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -291,9 +281,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -301,7 +289,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -309,7 +297,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -319,7 +307,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -329,7 +317,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -339,7 +327,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -349,7 +337,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -359,7 +347,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -369,7 +357,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -379,7 +367,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -389,7 +377,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -399,7 +387,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -409,7 +397,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -419,7 +407,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -429,7 +417,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -439,7 +427,7 @@ class SchemaSizeSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

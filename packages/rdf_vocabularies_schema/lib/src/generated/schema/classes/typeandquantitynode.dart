@@ -27,7 +27,7 @@ class SchemaTypeAndQuantityNode {
 
   /// IRI term for the TypeAndQuantityNode class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
+  static const classIri = const IriTerm(
     'https://schema.org/TypeAndQuantityNode',
   );
 
@@ -38,7 +38,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -48,7 +48,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/TypeAndQuantityNode
   ///
-  static const amountOfThisGood = IriTerm.prevalidated(
+  static const amountOfThisGood = const IriTerm(
     'https://schema.org/amountOfThisGood',
   );
 
@@ -58,7 +58,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/TypeAndQuantityNode
   ///
-  static const businessFunction = IriTerm.prevalidated(
+  static const businessFunction = const IriTerm(
     'https://schema.org/businessFunction',
   );
 
@@ -68,7 +68,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -78,7 +78,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -88,7 +88,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// potentialAction [Expects: https://schema.org/Action]
   ///
@@ -96,7 +96,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -106,7 +106,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// typeOfGood [Expects: https://schema.org/Product, https://schema.org/Service]
   ///
@@ -114,9 +114,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/OwnershipInfo, https://schema.org/TypeAndQuantityNode
   ///
-  static const typeOfGood = IriTerm.prevalidated(
-    'https://schema.org/typeOfGood',
-  );
+  static const typeOfGood = const IriTerm('https://schema.org/typeOfGood');
 
   /// unitCode [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -124,7 +122,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/PropertyValue, https://schema.org/QuantitativeValue, https://schema.org/TypeAndQuantityNode, https://schema.org/UnitPriceSpecification
   ///
-  static const unitCode = IriTerm.prevalidated('https://schema.org/unitCode');
+  static const unitCode = const IriTerm('https://schema.org/unitCode');
 
   /// unitText [Expects: https://schema.org/Text]
   ///
@@ -133,7 +131,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/PropertyValue, https://schema.org/QuantitativeValue, https://schema.org/TypeAndQuantityNode, https://schema.org/UnitPriceSpecification
   ///
-  static const unitText = IriTerm.prevalidated('https://schema.org/unitText');
+  static const unitText = const IriTerm('https://schema.org/unitText');
 
   /// url [Expects: https://schema.org/URL]
   ///
@@ -141,7 +139,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// alternateName [Expects: https://schema.org/Text]
   ///
@@ -149,7 +147,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -159,7 +157,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -169,7 +167,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -177,9 +175,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -187,7 +183,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -196,9 +192,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -206,7 +200,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -214,7 +208,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -224,7 +218,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -234,7 +228,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -244,7 +238,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -254,7 +248,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -264,7 +258,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -274,7 +268,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -284,7 +278,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -294,7 +288,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -304,7 +298,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -314,7 +308,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -324,7 +318,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -334,7 +328,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -344,7 +338,7 @@ class SchemaTypeAndQuantityNode {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

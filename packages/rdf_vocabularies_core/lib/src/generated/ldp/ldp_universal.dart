@@ -25,7 +25,7 @@ class LdpUniversalProperties {
   ///
   /// Link to a page sequence resource, as defined by LDP Paging.  Typically used to communicate the sorting criteria used to allocate LDPC members to pages.
   ///
-  static const pageSequence = IriTerm.prevalidated(
+  static const pageSequence = const IriTerm(
     'http://www.w3.org/ns/ldp#pageSequence',
   );
 
@@ -33,5 +33,5 @@ class LdpUniversalProperties {
   ///
   /// Links a resource to a container where notifications for the resource can be created and discovered.
   ///
-  static const inbox = IriTerm.prevalidated('http://www.w3.org/ns/ldp#inbox');
+  static const inbox = const IriTerm('http://www.w3.org/ns/ldp#inbox');
 }

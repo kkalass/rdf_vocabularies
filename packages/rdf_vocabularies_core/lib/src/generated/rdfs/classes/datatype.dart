@@ -27,7 +27,7 @@ class RdfsDatatype {
 
   /// IRI term for the Datatype class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
+  static const classIri = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#Datatype',
   );
 
@@ -37,7 +37,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Class
   ///
-  static const subClassOf = IriTerm.prevalidated(
+  static const subClassOf = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#subClassOf',
   );
 
@@ -47,7 +47,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const comment = IriTerm.prevalidated(
+  static const comment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -57,7 +57,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const label = IriTerm.prevalidated(
+  static const label = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -67,7 +67,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const seeAlso = IriTerm.prevalidated(
+  static const seeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -77,7 +77,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const isDefinedBy = IriTerm.prevalidated(
+  static const isDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -87,7 +87,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const member = IriTerm.prevalidated(
+  static const member = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -97,7 +97,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -107,7 +107,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -117,7 +117,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -127,7 +127,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -137,7 +137,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -147,7 +147,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Datatype
   ///
-  static const owlDatatypeComplementOf = IriTerm.prevalidated(
+  static const owlDatatypeComplementOf = const IriTerm(
     'http://www.w3.org/2002/07/owl#datatypeComplementOf',
   );
 
@@ -157,7 +157,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -167,7 +167,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Class
   ///
-  static const owlEquivalentClass = IriTerm.prevalidated(
+  static const owlEquivalentClass = const IriTerm(
     'http://www.w3.org/2002/07/owl#equivalentClass',
   );
 
@@ -177,7 +177,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Class
   ///
-  static const owlIntersectionOf = IriTerm.prevalidated(
+  static const owlIntersectionOf = const IriTerm(
     'http://www.w3.org/2002/07/owl#intersectionOf',
   );
 
@@ -187,7 +187,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -197,7 +197,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Datatype
   ///
-  static const owlOnDatatype = IriTerm.prevalidated(
+  static const owlOnDatatype = const IriTerm(
     'http://www.w3.org/2002/07/owl#onDatatype',
   );
 
@@ -207,9 +207,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Class
   ///
-  static const owlOneOf = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#oneOf',
-  );
+  static const owlOneOf = const IriTerm('http://www.w3.org/2002/07/owl#oneOf');
 
   /// unionOf from owl vocabulary [Expects: http://www.w3.org/1999/02/22-rdf-syntax-ns#List]
   ///
@@ -217,7 +215,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Class
   ///
-  static const owlUnionOf = IriTerm.prevalidated(
+  static const owlUnionOf = const IriTerm(
     'http://www.w3.org/2002/07/owl#unionOf',
   );
 
@@ -227,7 +225,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -237,7 +235,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Datatype
   ///
-  static const owlWithRestrictions = IriTerm.prevalidated(
+  static const owlWithRestrictions = const IriTerm(
     'http://www.w3.org/2002/07/owl#withRestrictions',
   );
 
@@ -248,7 +246,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const schemaAdditionalType = IriTerm.prevalidated(
+  static const schemaAdditionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -258,7 +256,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const schemaDisambiguatingDescription = IriTerm.prevalidated(
+  static const schemaDisambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -268,7 +266,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const schemaName = IriTerm.prevalidated('https://schema.org/name');
+  static const schemaName = const IriTerm('https://schema.org/name');
 
   /// potentialAction from schema vocabulary [Expects: https://schema.org/Action]
   ///
@@ -276,7 +274,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const schemaPotentialAction = IriTerm.prevalidated(
+  static const schemaPotentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -286,7 +284,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const schemaSameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const schemaSameAs = const IriTerm('https://schema.org/sameAs');
 
   /// url from schema vocabulary [Expects: https://schema.org/URL]
   ///
@@ -294,7 +292,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const schemaUrl = IriTerm.prevalidated('https://schema.org/url');
+  static const schemaUrl = const IriTerm('https://schema.org/url');
 
   /// alternateName from schema vocabulary [Expects: https://schema.org/Text]
   ///
@@ -302,7 +300,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const schemaAlternateName = IriTerm.prevalidated(
+  static const schemaAlternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -312,7 +310,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const schemaMainEntityOfPage = IriTerm.prevalidated(
+  static const schemaMainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -322,9 +320,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const schemaSubjectOf = IriTerm.prevalidated(
-    'https://schema.org/subjectOf',
-  );
+  static const schemaSubjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// description from schema vocabulary [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -332,7 +328,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const schemaDescription = IriTerm.prevalidated(
+  static const schemaDescription = const IriTerm(
     'https://schema.org/description',
   );
 
@@ -342,7 +338,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const schemaImage = IriTerm.prevalidated('https://schema.org/image');
+  static const schemaImage = const IriTerm('https://schema.org/image');
 
   /// identifier from schema vocabulary [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -351,7 +347,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const schemaIdentifier = IriTerm.prevalidated(
+  static const schemaIdentifier = const IriTerm(
     'https://schema.org/identifier',
   );
 
@@ -361,7 +357,7 @@ class RdfsDatatype {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

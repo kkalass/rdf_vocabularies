@@ -27,9 +27,7 @@ class SchemaHttpMotorizedBicycle {
 
   /// IRI term for the MotorizedBicycle class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'http://schema.org/MotorizedBicycle',
-  );
+  static const classIri = const IriTerm('http://schema.org/MotorizedBicycle');
 
   /// accelerationTime [Expects: http://schema.org/QuantitativeValue]
   ///
@@ -37,7 +35,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const accelerationTime = IriTerm.prevalidated(
+  static const accelerationTime = const IriTerm(
     'http://schema.org/accelerationTime',
   );
 
@@ -48,7 +46,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/Offer, http://schema.org/Place, http://schema.org/Product, http://schema.org/QualitativeValue, http://schema.org/QuantitativeValue
   ///
-  static const additionalProperty = IriTerm.prevalidated(
+  static const additionalProperty = const IriTerm(
     'http://schema.org/additionalProperty',
   );
 
@@ -59,7 +57,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -69,7 +67,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Brand, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const aggregateRating = IriTerm.prevalidated(
+  static const aggregateRating = const IriTerm(
     'http://schema.org/aggregateRating',
   );
 
@@ -82,7 +80,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const asin = IriTerm.prevalidated('http://schema.org/asin');
+  static const asin = const IriTerm('http://schema.org/asin');
 
   /// awards [Expects: http://schema.org/Text]
   ///
@@ -90,7 +88,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Product
   ///
-  static const awards = IriTerm.prevalidated('http://schema.org/awards');
+  static const awards = const IriTerm('http://schema.org/awards');
 
   /// bodyType [Expects: http://schema.org/QualitativeValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -98,7 +96,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const bodyType = IriTerm.prevalidated('http://schema.org/bodyType');
+  static const bodyType = const IriTerm('http://schema.org/bodyType');
 
   /// brand [Expects: http://schema.org/Brand, http://schema.org/Organization]
   ///
@@ -106,7 +104,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person, http://schema.org/Product, http://schema.org/Service
   ///
-  static const brand = IriTerm.prevalidated('http://schema.org/brand');
+  static const brand = const IriTerm('http://schema.org/brand');
 
   /// callSign [Expects: http://schema.org/Text]
   ///
@@ -114,7 +112,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/BroadcastService, http://schema.org/Person, http://schema.org/Vehicle
   ///
-  static const callSign = IriTerm.prevalidated('http://schema.org/callSign');
+  static const callSign = const IriTerm('http://schema.org/callSign');
 
   /// cargoVolume [Expects: http://schema.org/QuantitativeValue]
   ///
@@ -122,9 +120,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const cargoVolume = IriTerm.prevalidated(
-    'http://schema.org/cargoVolume',
-  );
+  static const cargoVolume = const IriTerm('http://schema.org/cargoVolume');
 
   /// color [Expects: http://schema.org/Text]
   ///
@@ -132,7 +128,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product
   ///
-  static const color = IriTerm.prevalidated('http://schema.org/color');
+  static const color = const IriTerm('http://schema.org/color');
 
   /// colorSwatch [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -140,9 +136,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product
   ///
-  static const colorSwatch = IriTerm.prevalidated(
-    'http://schema.org/colorSwatch',
-  );
+  static const colorSwatch = const IriTerm('http://schema.org/colorSwatch');
 
   /// countryOfAssembly [Expects: http://schema.org/Text]
   ///
@@ -150,7 +144,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product
   ///
-  static const countryOfAssembly = IriTerm.prevalidated(
+  static const countryOfAssembly = const IriTerm(
     'http://schema.org/countryOfAssembly',
   );
 
@@ -160,7 +154,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product
   ///
-  static const countryOfLastProcessing = IriTerm.prevalidated(
+  static const countryOfLastProcessing = const IriTerm(
     'http://schema.org/countryOfLastProcessing',
   );
 
@@ -174,7 +168,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Movie, http://schema.org/Product, http://schema.org/TVEpisode, http://schema.org/TVSeason, http://schema.org/TVSeries
   ///
-  static const countryOfOrigin = IriTerm.prevalidated(
+  static const countryOfOrigin = const IriTerm(
     'http://schema.org/countryOfOrigin',
   );
 
@@ -184,7 +178,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const dateVehicleFirstRegistered = IriTerm.prevalidated(
+  static const dateVehicleFirstRegistered = const IriTerm(
     'http://schema.org/dateVehicleFirstRegistered',
   );
 
@@ -194,7 +188,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/OfferShippingDetails, http://schema.org/Product, http://schema.org/ShippingConditions, http://schema.org/VisualArtwork
   ///
-  static const depth = IriTerm.prevalidated('http://schema.org/depth');
+  static const depth = const IriTerm('http://schema.org/depth');
 
   /// disambiguatingDescription [Expects: http://schema.org/Text]
   ///
@@ -202,7 +196,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -212,7 +206,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const driveWheelConfiguration = IriTerm.prevalidated(
+  static const driveWheelConfiguration = const IriTerm(
     'http://schema.org/driveWheelConfiguration',
   );
 
@@ -222,9 +216,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const emissionsCO2 = IriTerm.prevalidated(
-    'http://schema.org/emissionsCO2',
-  );
+  static const emissionsCO2 = const IriTerm('http://schema.org/emissionsCO2');
 
   /// fuelCapacity [Expects: http://schema.org/QuantitativeValue]
   ///
@@ -232,9 +224,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const fuelCapacity = IriTerm.prevalidated(
-    'http://schema.org/fuelCapacity',
-  );
+  static const fuelCapacity = const IriTerm('http://schema.org/fuelCapacity');
 
   /// fuelConsumption [Expects: http://schema.org/QuantitativeValue]
   ///
@@ -242,7 +232,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const fuelConsumption = IriTerm.prevalidated(
+  static const fuelConsumption = const IriTerm(
     'http://schema.org/fuelConsumption',
   );
 
@@ -252,7 +242,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const fuelEfficiency = IriTerm.prevalidated(
+  static const fuelEfficiency = const IriTerm(
     'http://schema.org/fuelEfficiency',
   );
 
@@ -262,7 +252,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/EngineSpecification, http://schema.org/Vehicle
   ///
-  static const fuelType = IriTerm.prevalidated('http://schema.org/fuelType');
+  static const fuelType = const IriTerm('http://schema.org/fuelType');
 
   /// gtin12 [Expects: http://schema.org/Text]
   ///
@@ -270,7 +260,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const gtin12 = IriTerm.prevalidated('http://schema.org/gtin12');
+  static const gtin12 = const IriTerm('http://schema.org/gtin12');
 
   /// gtin13 [Expects: http://schema.org/Text]
   ///
@@ -278,7 +268,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const gtin13 = IriTerm.prevalidated('http://schema.org/gtin13');
+  static const gtin13 = const IriTerm('http://schema.org/gtin13');
 
   /// gtin14 [Expects: http://schema.org/Text]
   ///
@@ -286,7 +276,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const gtin14 = IriTerm.prevalidated('http://schema.org/gtin14');
+  static const gtin14 = const IriTerm('http://schema.org/gtin14');
 
   /// gtin8 [Expects: http://schema.org/Text]
   ///
@@ -294,7 +284,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const gtin8 = IriTerm.prevalidated('http://schema.org/gtin8');
+  static const gtin8 = const IriTerm('http://schema.org/gtin8');
 
   /// hasAdultConsideration [Expects: http://schema.org/AdultOrientedEnumeration]
   ///
@@ -302,7 +292,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Offer, http://schema.org/Product
   ///
-  static const hasAdultConsideration = IriTerm.prevalidated(
+  static const hasAdultConsideration = const IriTerm(
     'http://schema.org/hasAdultConsideration',
   );
 
@@ -312,7 +302,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Organization, http://schema.org/Person, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const hasCertification = IriTerm.prevalidated(
+  static const hasCertification = const IriTerm(
     'http://schema.org/hasCertification',
   );
 
@@ -322,7 +312,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product
   ///
-  static const hasEnergyConsumptionDetails = IriTerm.prevalidated(
+  static const hasEnergyConsumptionDetails = const IriTerm(
     'http://schema.org/hasEnergyConsumptionDetails',
   );
 
@@ -332,7 +322,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product
   ///
-  static const hasGS1DigitalLink = IriTerm.prevalidated(
+  static const hasGS1DigitalLink = const IriTerm(
     'http://schema.org/hasGS1DigitalLink',
   );
 
@@ -342,7 +332,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Certification, http://schema.org/Offer, http://schema.org/Product, http://schema.org/SizeSpecification
   ///
-  static const hasMeasurement = IriTerm.prevalidated(
+  static const hasMeasurement = const IriTerm(
     'http://schema.org/hasMeasurement',
   );
 
@@ -352,7 +342,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Product
   ///
-  static const hasMerchantReturnPolicy = IriTerm.prevalidated(
+  static const hasMerchantReturnPolicy = const IriTerm(
     'http://schema.org/hasMerchantReturnPolicy',
   );
 
@@ -362,7 +352,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/MediaObject, http://schema.org/OfferShippingDetails, http://schema.org/Person, http://schema.org/Product, http://schema.org/ShippingConditions, http://schema.org/VisualArtwork
   ///
-  static const height = IriTerm.prevalidated('http://schema.org/height');
+  static const height = const IriTerm('http://schema.org/height');
 
   /// inProductGroupWithID [Expects: http://schema.org/Text]
   ///
@@ -370,7 +360,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product
   ///
-  static const inProductGroupWithID = IriTerm.prevalidated(
+  static const inProductGroupWithID = const IriTerm(
     'http://schema.org/inProductGroupWithID',
   );
 
@@ -380,7 +370,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -390,7 +380,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product
   ///
-  static const isAccessoryOrSparePartFor = IriTerm.prevalidated(
+  static const isAccessoryOrSparePartFor = const IriTerm(
     'http://schema.org/isAccessoryOrSparePartFor',
   );
 
@@ -400,7 +390,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product
   ///
-  static const isConsumableFor = IriTerm.prevalidated(
+  static const isConsumableFor = const IriTerm(
     'http://schema.org/isConsumableFor',
   );
 
@@ -410,7 +400,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const isFamilyFriendly = IriTerm.prevalidated(
+  static const isFamilyFriendly = const IriTerm(
     'http://schema.org/isFamilyFriendly',
   );
 
@@ -420,9 +410,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product, http://schema.org/Service
   ///
-  static const isRelatedTo = IriTerm.prevalidated(
-    'http://schema.org/isRelatedTo',
-  );
+  static const isRelatedTo = const IriTerm('http://schema.org/isRelatedTo');
 
   /// isSimilarTo [Expects: http://schema.org/Product, http://schema.org/Service]
   ///
@@ -430,9 +418,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product, http://schema.org/Service
   ///
-  static const isSimilarTo = IriTerm.prevalidated(
-    'http://schema.org/isSimilarTo',
-  );
+  static const isSimilarTo = const IriTerm('http://schema.org/isSimilarTo');
 
   /// itemCondition [Expects: http://schema.org/OfferItemCondition]
   ///
@@ -440,9 +426,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/MerchantReturnPolicy, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const itemCondition = IriTerm.prevalidated(
-    'http://schema.org/itemCondition',
-  );
+  static const itemCondition = const IriTerm('http://schema.org/itemCondition');
 
   /// keywords [Expects: http://schema.org/DefinedTerm, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -450,7 +434,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product
   ///
-  static const keywords = IriTerm.prevalidated('http://schema.org/keywords');
+  static const keywords = const IriTerm('http://schema.org/keywords');
 
   /// knownVehicleDamages [Expects: http://schema.org/Text]
   ///
@@ -458,7 +442,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const knownVehicleDamages = IriTerm.prevalidated(
+  static const knownVehicleDamages = const IriTerm(
     'http://schema.org/knownVehicleDamages',
   );
 
@@ -468,7 +452,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Brand, http://schema.org/Certification, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const logo = IriTerm.prevalidated('http://schema.org/logo');
+  static const logo = const IriTerm('http://schema.org/logo');
 
   /// manufacturer [Expects: http://schema.org/Organization]
   ///
@@ -476,9 +460,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product
   ///
-  static const manufacturer = IriTerm.prevalidated(
-    'http://schema.org/manufacturer',
-  );
+  static const manufacturer = const IriTerm('http://schema.org/manufacturer');
 
   /// meetsEmissionStandard [Expects: http://schema.org/QualitativeValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -486,7 +468,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const meetsEmissionStandard = IriTerm.prevalidated(
+  static const meetsEmissionStandard = const IriTerm(
     'http://schema.org/meetsEmissionStandard',
   );
 
@@ -496,7 +478,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const mileageFromOdometer = IriTerm.prevalidated(
+  static const mileageFromOdometer = const IriTerm(
     'http://schema.org/mileageFromOdometer',
   );
 
@@ -509,7 +491,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Offer, http://schema.org/Product
   ///
-  static const mobileUrl = IriTerm.prevalidated('http://schema.org/mobileUrl');
+  static const mobileUrl = const IriTerm('http://schema.org/mobileUrl');
 
   /// model [Expects: http://schema.org/ProductModel, http://schema.org/Text]
   ///
@@ -517,7 +499,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product
   ///
-  static const model = IriTerm.prevalidated('http://schema.org/model');
+  static const model = const IriTerm('http://schema.org/model');
 
   /// modelDate [Expects: http://schema.org/Date]
   ///
@@ -525,7 +507,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const modelDate = IriTerm.prevalidated('http://schema.org/modelDate');
+  static const modelDate = const IriTerm('http://schema.org/modelDate');
 
   /// mpn [Expects: http://schema.org/Text]
   ///
@@ -533,7 +515,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const mpn = IriTerm.prevalidated('http://schema.org/mpn');
+  static const mpn = const IriTerm('http://schema.org/mpn');
 
   /// name [Expects: http://schema.org/Text]
   ///
@@ -541,7 +523,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('http://schema.org/name');
+  static const name = const IriTerm('http://schema.org/name');
 
   /// negativeNotes [Expects: http://schema.org/ItemList, http://schema.org/ListItem, http://schema.org/Text, http://schema.org/WebContent]
   ///
@@ -554,9 +536,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product, http://schema.org/Review
   ///
-  static const negativeNotes = IriTerm.prevalidated(
-    'http://schema.org/negativeNotes',
-  );
+  static const negativeNotes = const IriTerm('http://schema.org/negativeNotes');
 
   /// nsn [Expects: http://schema.org/Text]
   ///
@@ -564,7 +544,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product
   ///
-  static const nsn = IriTerm.prevalidated('http://schema.org/nsn');
+  static const nsn = const IriTerm('http://schema.org/nsn');
 
   /// numberOfAirbags [Expects: http://schema.org/Number, http://schema.org/Text]
   ///
@@ -572,7 +552,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const numberOfAirbags = IriTerm.prevalidated(
+  static const numberOfAirbags = const IriTerm(
     'http://schema.org/numberOfAirbags',
   );
 
@@ -582,9 +562,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const numberOfAxles = IriTerm.prevalidated(
-    'http://schema.org/numberOfAxles',
-  );
+  static const numberOfAxles = const IriTerm('http://schema.org/numberOfAxles');
 
   /// numberOfDoors [Expects: http://schema.org/Number, http://schema.org/QuantitativeValue]
   ///
@@ -592,9 +570,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const numberOfDoors = IriTerm.prevalidated(
-    'http://schema.org/numberOfDoors',
-  );
+  static const numberOfDoors = const IriTerm('http://schema.org/numberOfDoors');
 
   /// numberOfForwardGears [Expects: http://schema.org/Number, http://schema.org/QuantitativeValue]
   ///
@@ -602,7 +578,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const numberOfForwardGears = IriTerm.prevalidated(
+  static const numberOfForwardGears = const IriTerm(
     'http://schema.org/numberOfForwardGears',
   );
 
@@ -612,7 +588,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const numberOfPreviousOwners = IriTerm.prevalidated(
+  static const numberOfPreviousOwners = const IriTerm(
     'http://schema.org/numberOfPreviousOwners',
   );
 
@@ -622,7 +598,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Product
   ///
-  static const pattern = IriTerm.prevalidated('http://schema.org/pattern');
+  static const pattern = const IriTerm('http://schema.org/pattern');
 
   /// payload [Expects: http://schema.org/QuantitativeValue]
   ///
@@ -630,7 +606,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const payload = IriTerm.prevalidated('http://schema.org/payload');
+  static const payload = const IriTerm('http://schema.org/payload');
 
   /// positiveNotes [Expects: http://schema.org/ItemList, http://schema.org/ListItem, http://schema.org/Text, http://schema.org/WebContent]
   ///
@@ -642,9 +618,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product, http://schema.org/Review
   ///
-  static const positiveNotes = IriTerm.prevalidated(
-    'http://schema.org/positiveNotes',
-  );
+  static const positiveNotes = const IriTerm('http://schema.org/positiveNotes');
 
   /// potentialAction [Expects: http://schema.org/Action]
   ///
@@ -652,7 +626,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -662,7 +636,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product
   ///
-  static const productID = IriTerm.prevalidated('http://schema.org/productID');
+  static const productID = const IriTerm('http://schema.org/productID');
 
   /// productionDate [Expects: http://schema.org/Date]
   ///
@@ -670,7 +644,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product, http://schema.org/Vehicle
   ///
-  static const productionDate = IriTerm.prevalidated(
+  static const productionDate = const IriTerm(
     'http://schema.org/productionDate',
   );
 
@@ -680,9 +654,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product, http://schema.org/Vehicle
   ///
-  static const purchaseDate = IriTerm.prevalidated(
-    'http://schema.org/purchaseDate',
-  );
+  static const purchaseDate = const IriTerm('http://schema.org/purchaseDate');
 
   /// releaseDate [Expects: http://schema.org/Date]
   ///
@@ -690,9 +662,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product
   ///
-  static const releaseDate = IriTerm.prevalidated(
-    'http://schema.org/releaseDate',
-  );
+  static const releaseDate = const IriTerm('http://schema.org/releaseDate');
 
   /// reviews [Expects: http://schema.org/Review]
   ///
@@ -700,7 +670,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product
   ///
-  static const reviews = IriTerm.prevalidated('http://schema.org/reviews');
+  static const reviews = const IriTerm('http://schema.org/reviews');
 
   /// sameAs [Expects: http://schema.org/URL]
   ///
@@ -708,7 +678,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('http://schema.org/sameAs');
+  static const sameAs = const IriTerm('http://schema.org/sameAs');
 
   /// seatingCapacity [Expects: http://schema.org/Number, http://schema.org/QuantitativeValue]
   ///
@@ -716,7 +686,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const seatingCapacity = IriTerm.prevalidated(
+  static const seatingCapacity = const IriTerm(
     'http://schema.org/seatingCapacity',
   );
 
@@ -726,7 +696,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Product
   ///
-  static const size = IriTerm.prevalidated('http://schema.org/size');
+  static const size = const IriTerm('http://schema.org/size');
 
   /// sku [Expects: http://schema.org/Text]
   ///
@@ -734,7 +704,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const sku = IriTerm.prevalidated('http://schema.org/sku');
+  static const sku = const IriTerm('http://schema.org/sku');
 
   /// slogan [Expects: http://schema.org/Text]
   ///
@@ -742,7 +712,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Brand, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const slogan = IriTerm.prevalidated('http://schema.org/slogan');
+  static const slogan = const IriTerm('http://schema.org/slogan');
 
   /// speed [Expects: http://schema.org/QuantitativeValue]
   ///
@@ -750,7 +720,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const speed = IriTerm.prevalidated('http://schema.org/speed');
+  static const speed = const IriTerm('http://schema.org/speed');
 
   /// steeringPosition [Expects: http://schema.org/SteeringPositionValue]
   ///
@@ -758,7 +728,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const steeringPosition = IriTerm.prevalidated(
+  static const steeringPosition = const IriTerm(
     'http://schema.org/steeringPosition',
   );
 
@@ -768,9 +738,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const tongueWeight = IriTerm.prevalidated(
-    'http://schema.org/tongueWeight',
-  );
+  static const tongueWeight = const IriTerm('http://schema.org/tongueWeight');
 
   /// trailerWeight [Expects: http://schema.org/QuantitativeValue]
   ///
@@ -778,9 +746,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const trailerWeight = IriTerm.prevalidated(
-    'http://schema.org/trailerWeight',
-  );
+  static const trailerWeight = const IriTerm('http://schema.org/trailerWeight');
 
   /// url [Expects: http://schema.org/URL]
   ///
@@ -788,7 +754,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('http://schema.org/url');
+  static const url = const IriTerm('http://schema.org/url');
 
   /// vehicleConfiguration [Expects: http://schema.org/Text]
   ///
@@ -796,7 +762,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const vehicleConfiguration = IriTerm.prevalidated(
+  static const vehicleConfiguration = const IriTerm(
     'http://schema.org/vehicleConfiguration',
   );
 
@@ -806,9 +772,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const vehicleEngine = IriTerm.prevalidated(
-    'http://schema.org/vehicleEngine',
-  );
+  static const vehicleEngine = const IriTerm('http://schema.org/vehicleEngine');
 
   /// vehicleIdentificationNumber [Expects: http://schema.org/Text]
   ///
@@ -816,7 +780,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const vehicleIdentificationNumber = IriTerm.prevalidated(
+  static const vehicleIdentificationNumber = const IriTerm(
     'http://schema.org/vehicleIdentificationNumber',
   );
 
@@ -826,7 +790,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const vehicleInteriorColor = IriTerm.prevalidated(
+  static const vehicleInteriorColor = const IriTerm(
     'http://schema.org/vehicleInteriorColor',
   );
 
@@ -836,7 +800,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const vehicleInteriorType = IriTerm.prevalidated(
+  static const vehicleInteriorType = const IriTerm(
     'http://schema.org/vehicleInteriorType',
   );
 
@@ -846,7 +810,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const vehicleModelDate = IriTerm.prevalidated(
+  static const vehicleModelDate = const IriTerm(
     'http://schema.org/vehicleModelDate',
   );
 
@@ -856,7 +820,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const vehicleSeatingCapacity = IriTerm.prevalidated(
+  static const vehicleSeatingCapacity = const IriTerm(
     'http://schema.org/vehicleSeatingCapacity',
   );
 
@@ -866,7 +830,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const vehicleSpecialUsage = IriTerm.prevalidated(
+  static const vehicleSpecialUsage = const IriTerm(
     'http://schema.org/vehicleSpecialUsage',
   );
 
@@ -876,7 +840,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const vehicleTransmission = IriTerm.prevalidated(
+  static const vehicleTransmission = const IriTerm(
     'http://schema.org/vehicleTransmission',
   );
 
@@ -886,7 +850,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/OfferShippingDetails, http://schema.org/Person, http://schema.org/Product, http://schema.org/ShippingConditions, http://schema.org/VisualArtwork
   ///
-  static const weight = IriTerm.prevalidated('http://schema.org/weight');
+  static const weight = const IriTerm('http://schema.org/weight');
 
   /// weightTotal [Expects: http://schema.org/QuantitativeValue]
   ///
@@ -894,9 +858,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const weightTotal = IriTerm.prevalidated(
-    'http://schema.org/weightTotal',
-  );
+  static const weightTotal = const IriTerm('http://schema.org/weightTotal');
 
   /// wheelbase [Expects: http://schema.org/QuantitativeValue]
   ///
@@ -904,7 +866,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Vehicle
   ///
-  static const wheelbase = IriTerm.prevalidated('http://schema.org/wheelbase');
+  static const wheelbase = const IriTerm('http://schema.org/wheelbase');
 
   /// width [Expects: http://schema.org/Distance, http://schema.org/QuantitativeValue]
   ///
@@ -912,7 +874,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/MediaObject, http://schema.org/OfferShippingDetails, http://schema.org/Product, http://schema.org/ShippingConditions, http://schema.org/VisualArtwork
   ///
-  static const width = IriTerm.prevalidated('http://schema.org/width');
+  static const width = const IriTerm('http://schema.org/width');
 
   /// alternateName [Expects: http://schema.org/Text]
   ///
@@ -920,9 +882,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
-    'http://schema.org/alternateName',
-  );
+  static const alternateName = const IriTerm('http://schema.org/alternateName');
 
   /// audience [Expects: http://schema.org/Audience]
   ///
@@ -930,7 +890,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/LodgingBusiness, http://schema.org/PlayAction, http://schema.org/Product, http://schema.org/Service
   ///
-  static const audience = IriTerm.prevalidated('http://schema.org/audience');
+  static const audience = const IriTerm('http://schema.org/audience');
 
   /// award [Expects: http://schema.org/Text]
   ///
@@ -938,7 +898,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Product, http://schema.org/Service
   ///
-  static const award = IriTerm.prevalidated('http://schema.org/award');
+  static const award = const IriTerm('http://schema.org/award');
 
   /// category [Expects: http://schema.org/CategoryCode, http://schema.org/PhysicalActivityCategory, http://schema.org/Text, http://schema.org/Thing, http://schema.org/URL]
   ///
@@ -946,7 +906,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/Invoice, http://schema.org/Offer, http://schema.org/PhysicalActivity, http://schema.org/Product, http://schema.org/Recommendation, http://schema.org/Service, http://schema.org/SpecialAnnouncement
   ///
-  static const category = IriTerm.prevalidated('http://schema.org/category');
+  static const category = const IriTerm('http://schema.org/category');
 
   /// funding [Expects: http://schema.org/Grant]
   ///
@@ -954,7 +914,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/BioChemEntity, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/MedicalEntity, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Product
   ///
-  static const funding = IriTerm.prevalidated('http://schema.org/funding');
+  static const funding = const IriTerm('http://schema.org/funding');
 
   /// isVariantOf [Expects: http://schema.org/ProductGroup, http://schema.org/ProductModel]
   ///
@@ -962,9 +922,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Product, http://schema.org/ProductModel
   ///
-  static const isVariantOf = IriTerm.prevalidated(
-    'http://schema.org/isVariantOf',
-  );
+  static const isVariantOf = const IriTerm('http://schema.org/isVariantOf');
 
   /// mainEntityOfPage [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -972,7 +930,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -983,7 +941,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/AggregateOffer, http://schema.org/CreativeWork, http://schema.org/EducationalOccupationalProgram, http://schema.org/Event, http://schema.org/MenuItem, http://schema.org/Product, http://schema.org/Service, http://schema.org/Trip
   ///
-  static const offers = IriTerm.prevalidated('http://schema.org/offers');
+  static const offers = const IriTerm('http://schema.org/offers');
 
   /// review [Expects: http://schema.org/Review]
   ///
@@ -991,7 +949,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Brand, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const review = IriTerm.prevalidated('http://schema.org/review');
+  static const review = const IriTerm('http://schema.org/review');
 
   /// subjectOf [Expects: http://schema.org/CreativeWork, http://schema.org/Event]
   ///
@@ -999,7 +957,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('http://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('http://schema.org/subjectOf');
 
   /// material [Expects: http://schema.org/Product, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -1007,7 +965,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Product
   ///
-  static const material = IriTerm.prevalidated('http://schema.org/material');
+  static const material = const IriTerm('http://schema.org/material');
 
   /// description [Expects: http://schema.org/Text, http://schema.org/TextObject]
   ///
@@ -1015,9 +973,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'http://schema.org/description',
-  );
+  static const description = const IriTerm('http://schema.org/description');
 
   /// gtin [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -1032,7 +988,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const gtin = IriTerm.prevalidated('http://schema.org/gtin');
+  static const gtin = const IriTerm('http://schema.org/gtin');
 
   /// image [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -1040,7 +996,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('http://schema.org/image');
+  static const image = const IriTerm('http://schema.org/image');
 
   /// identifier [Expects: http://schema.org/PropertyValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -1049,9 +1005,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'http://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('http://schema.org/identifier');
 
   /// source
   ///
@@ -1059,7 +1013,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -1067,7 +1021,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -1077,7 +1031,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -1087,7 +1041,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -1097,7 +1051,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -1107,7 +1061,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -1117,7 +1071,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -1127,7 +1081,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -1137,7 +1091,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -1147,7 +1101,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -1157,7 +1111,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -1167,7 +1121,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -1177,7 +1131,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -1187,7 +1141,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -1197,7 +1151,7 @@ class SchemaHttpMotorizedBicycle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

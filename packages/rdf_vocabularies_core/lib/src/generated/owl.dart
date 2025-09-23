@@ -23,7 +23,7 @@ class Owl {
   ///
   /// The class of collections of pairwise different individuals.
   ///
-  static const AllDifferent = IriTerm.prevalidated(
+  static const AllDifferent = const IriTerm(
     'http://www.w3.org/2002/07/owl#AllDifferent',
   );
 
@@ -31,7 +31,7 @@ class Owl {
   ///
   /// The class of collections of pairwise disjoint classes.
   ///
-  static const AllDisjointClasses = IriTerm.prevalidated(
+  static const AllDisjointClasses = const IriTerm(
     'http://www.w3.org/2002/07/owl#AllDisjointClasses',
   );
 
@@ -39,7 +39,7 @@ class Owl {
   ///
   /// The class of collections of pairwise disjoint properties.
   ///
-  static const AllDisjointProperties = IriTerm.prevalidated(
+  static const AllDisjointProperties = const IriTerm(
     'http://www.w3.org/2002/07/owl#AllDisjointProperties',
   );
 
@@ -47,7 +47,7 @@ class Owl {
   ///
   /// The class of annotated annotations for which the RDF serialization consists of an annotated subject, predicate and object.
   ///
-  static const Annotation = IriTerm.prevalidated(
+  static const Annotation = const IriTerm(
     'http://www.w3.org/2002/07/owl#Annotation',
   );
 
@@ -55,7 +55,7 @@ class Owl {
   ///
   /// The class of annotation properties.
   ///
-  static const AnnotationProperty = IriTerm.prevalidated(
+  static const AnnotationProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#AnnotationProperty',
   );
 
@@ -63,7 +63,7 @@ class Owl {
   ///
   /// The class of asymmetric properties.
   ///
-  static const AsymmetricProperty = IriTerm.prevalidated(
+  static const AsymmetricProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#AsymmetricProperty',
   );
 
@@ -71,23 +71,19 @@ class Owl {
   ///
   /// The class of annotated axioms for which the RDF serialization consists of an annotated subject, predicate and object.
   ///
-  static const Axiom = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#Axiom',
-  );
+  static const Axiom = const IriTerm('http://www.w3.org/2002/07/owl#Axiom');
 
   /// IRI for owl:Class
   ///
   /// The class of OWL classes.
   ///
-  static const Class = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#Class',
-  );
+  static const Class = const IriTerm('http://www.w3.org/2002/07/owl#Class');
 
   /// IRI for owl:DataRange
   ///
   /// The class of OWL data ranges, which are special kinds of datatypes. Note: The use of the IRI owl:DataRange has been deprecated as of OWL 2. The IRI rdfs:Datatype SHOULD be used instead.
   ///
-  static const DataRange = IriTerm.prevalidated(
+  static const DataRange = const IriTerm(
     'http://www.w3.org/2002/07/owl#DataRange',
   );
 
@@ -95,7 +91,7 @@ class Owl {
   ///
   /// The class of data properties.
   ///
-  static const DatatypeProperty = IriTerm.prevalidated(
+  static const DatatypeProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#DatatypeProperty',
   );
 
@@ -103,7 +99,7 @@ class Owl {
   ///
   /// The class of deprecated classes.
   ///
-  static const DeprecatedClass = IriTerm.prevalidated(
+  static const DeprecatedClass = const IriTerm(
     'http://www.w3.org/2002/07/owl#DeprecatedClass',
   );
 
@@ -111,7 +107,7 @@ class Owl {
   ///
   /// The class of deprecated properties.
   ///
-  static const DeprecatedProperty = IriTerm.prevalidated(
+  static const DeprecatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#DeprecatedProperty',
   );
 
@@ -119,7 +115,7 @@ class Owl {
   ///
   /// The class of functional properties.
   ///
-  static const FunctionalProperty = IriTerm.prevalidated(
+  static const FunctionalProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#FunctionalProperty',
   );
 
@@ -127,7 +123,7 @@ class Owl {
   ///
   /// The class of inverse-functional properties.
   ///
-  static const InverseFunctionalProperty = IriTerm.prevalidated(
+  static const InverseFunctionalProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#InverseFunctionalProperty',
   );
 
@@ -135,7 +131,7 @@ class Owl {
   ///
   /// The class of irreflexive properties.
   ///
-  static const IrreflexiveProperty = IriTerm.prevalidated(
+  static const IrreflexiveProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#IrreflexiveProperty',
   );
 
@@ -143,7 +139,7 @@ class Owl {
   ///
   /// The class of named individuals.
   ///
-  static const NamedIndividual = IriTerm.prevalidated(
+  static const NamedIndividual = const IriTerm(
     'http://www.w3.org/2002/07/owl#NamedIndividual',
   );
 
@@ -151,7 +147,7 @@ class Owl {
   ///
   /// The class of negative property assertions.
   ///
-  static const NegativePropertyAssertion = IriTerm.prevalidated(
+  static const NegativePropertyAssertion = const IriTerm(
     'http://www.w3.org/2002/07/owl#NegativePropertyAssertion',
   );
 
@@ -159,15 +155,13 @@ class Owl {
   ///
   /// This is the empty class.
   ///
-  static const Nothing = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#Nothing',
-  );
+  static const Nothing = const IriTerm('http://www.w3.org/2002/07/owl#Nothing');
 
   /// IRI for owl:ObjectProperty
   ///
   /// The class of object properties.
   ///
-  static const ObjectProperty = IriTerm.prevalidated(
+  static const ObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#ObjectProperty',
   );
 
@@ -175,7 +169,7 @@ class Owl {
   ///
   /// The class of ontologies.
   ///
-  static const Ontology = IriTerm.prevalidated(
+  static const Ontology = const IriTerm(
     'http://www.w3.org/2002/07/owl#Ontology',
   );
 
@@ -183,7 +177,7 @@ class Owl {
   ///
   /// The class of ontology properties.
   ///
-  static const OntologyProperty = IriTerm.prevalidated(
+  static const OntologyProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#OntologyProperty',
   );
 
@@ -191,7 +185,7 @@ class Owl {
   ///
   /// The class of reflexive properties.
   ///
-  static const ReflexiveProperty = IriTerm.prevalidated(
+  static const ReflexiveProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#ReflexiveProperty',
   );
 
@@ -199,7 +193,7 @@ class Owl {
   ///
   /// The class of property restrictions.
   ///
-  static const Restriction = IriTerm.prevalidated(
+  static const Restriction = const IriTerm(
     'http://www.w3.org/2002/07/owl#Restriction',
   );
 
@@ -207,7 +201,7 @@ class Owl {
   ///
   /// The class of symmetric properties.
   ///
-  static const SymmetricProperty = IriTerm.prevalidated(
+  static const SymmetricProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#SymmetricProperty',
   );
 
@@ -215,7 +209,7 @@ class Owl {
   ///
   /// The class of transitive properties.
   ///
-  static const TransitiveProperty = IriTerm.prevalidated(
+  static const TransitiveProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#TransitiveProperty',
   );
 
@@ -223,9 +217,7 @@ class Owl {
   ///
   /// The class of OWL individuals.
   ///
-  static const Thing = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#Thing',
-  );
+  static const Thing = const IriTerm('http://www.w3.org/2002/07/owl#Thing');
 
   /// IRI for owl:allValuesFrom [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -233,7 +225,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const allValuesFrom = IriTerm.prevalidated(
+  static const allValuesFrom = const IriTerm(
     'http://www.w3.org/2002/07/owl#allValuesFrom',
   );
 
@@ -243,7 +235,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const annotatedProperty = IriTerm.prevalidated(
+  static const annotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -253,7 +245,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const annotatedSource = IriTerm.prevalidated(
+  static const annotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -263,7 +255,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const annotatedTarget = IriTerm.prevalidated(
+  static const annotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -273,7 +265,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#NegativePropertyAssertion
   ///
-  static const assertionProperty = IriTerm.prevalidated(
+  static const assertionProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#assertionProperty',
   );
 
@@ -283,7 +275,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Ontology
   ///
-  static const backwardCompatibleWith = IriTerm.prevalidated(
+  static const backwardCompatibleWith = const IriTerm(
     'http://www.w3.org/2002/07/owl#backwardCompatibleWith',
   );
 
@@ -293,7 +285,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const bottomDataProperty = IriTerm.prevalidated(
+  static const bottomDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomDataProperty',
   );
 
@@ -303,7 +295,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const bottomObjectProperty = IriTerm.prevalidated(
+  static const bottomObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomObjectProperty',
   );
 
@@ -313,7 +305,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const cardinality = IriTerm.prevalidated(
+  static const cardinality = const IriTerm(
     'http://www.w3.org/2002/07/owl#cardinality',
   );
 
@@ -323,7 +315,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Class
   ///
-  static const complementOf = IriTerm.prevalidated(
+  static const complementOf = const IriTerm(
     'http://www.w3.org/2002/07/owl#complementOf',
   );
 
@@ -333,7 +325,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Datatype
   ///
-  static const datatypeComplementOf = IriTerm.prevalidated(
+  static const datatypeComplementOf = const IriTerm(
     'http://www.w3.org/2002/07/owl#datatypeComplementOf',
   );
 
@@ -343,7 +335,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const deprecated = IriTerm.prevalidated(
+  static const deprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -353,7 +345,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const differentFrom = IriTerm.prevalidated(
+  static const differentFrom = const IriTerm(
     'http://www.w3.org/2002/07/owl#differentFrom',
   );
 
@@ -363,7 +355,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Class
   ///
-  static const disjointUnionOf = IriTerm.prevalidated(
+  static const disjointUnionOf = const IriTerm(
     'http://www.w3.org/2002/07/owl#disjointUnionOf',
   );
 
@@ -373,7 +365,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Class
   ///
-  static const disjointWith = IriTerm.prevalidated(
+  static const disjointWith = const IriTerm(
     'http://www.w3.org/2002/07/owl#disjointWith',
   );
 
@@ -383,7 +375,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#AllDifferent
   ///
-  static const distinctMembers = IriTerm.prevalidated(
+  static const distinctMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#distinctMembers',
   );
 
@@ -393,7 +385,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Class
   ///
-  static const equivalentClass = IriTerm.prevalidated(
+  static const equivalentClass = const IriTerm(
     'http://www.w3.org/2002/07/owl#equivalentClass',
   );
 
@@ -403,7 +395,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
   ///
-  static const equivalentProperty = IriTerm.prevalidated(
+  static const equivalentProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#equivalentProperty',
   );
 
@@ -413,9 +405,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Class
   ///
-  static const hasKey = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#hasKey',
-  );
+  static const hasKey = const IriTerm('http://www.w3.org/2002/07/owl#hasKey');
 
   /// IRI for owl:hasSelf [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
   ///
@@ -423,9 +413,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const hasSelf = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#hasSelf',
-  );
+  static const hasSelf = const IriTerm('http://www.w3.org/2002/07/owl#hasSelf');
 
   /// IRI for owl:hasValue [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
   ///
@@ -433,7 +421,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const hasValue = IriTerm.prevalidated(
+  static const hasValue = const IriTerm(
     'http://www.w3.org/2002/07/owl#hasValue',
   );
 
@@ -443,9 +431,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Ontology
   ///
-  static const imports = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#imports',
-  );
+  static const imports = const IriTerm('http://www.w3.org/2002/07/owl#imports');
 
   /// IRI for owl:incompatibleWith [Expects: http://www.w3.org/2002/07/owl#Ontology]
   ///
@@ -453,7 +439,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Ontology
   ///
-  static const incompatibleWith = IriTerm.prevalidated(
+  static const incompatibleWith = const IriTerm(
     'http://www.w3.org/2002/07/owl#incompatibleWith',
   );
 
@@ -463,7 +449,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Class
   ///
-  static const intersectionOf = IriTerm.prevalidated(
+  static const intersectionOf = const IriTerm(
     'http://www.w3.org/2002/07/owl#intersectionOf',
   );
 
@@ -473,7 +459,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#ObjectProperty
   ///
-  static const inverseOf = IriTerm.prevalidated(
+  static const inverseOf = const IriTerm(
     'http://www.w3.org/2002/07/owl#inverseOf',
   );
 
@@ -483,7 +469,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const maxCardinality = IriTerm.prevalidated(
+  static const maxCardinality = const IriTerm(
     'http://www.w3.org/2002/07/owl#maxCardinality',
   );
 
@@ -493,7 +479,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const maxQualifiedCardinality = IriTerm.prevalidated(
+  static const maxQualifiedCardinality = const IriTerm(
     'http://www.w3.org/2002/07/owl#maxQualifiedCardinality',
   );
 
@@ -503,9 +489,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const members = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#members',
-  );
+  static const members = const IriTerm('http://www.w3.org/2002/07/owl#members');
 
   /// IRI for owl:minCardinality [Expects: http://www.w3.org/2001/XMLSchema#nonNegativeInteger]
   ///
@@ -513,7 +497,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const minCardinality = IriTerm.prevalidated(
+  static const minCardinality = const IriTerm(
     'http://www.w3.org/2002/07/owl#minCardinality',
   );
 
@@ -523,7 +507,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const minQualifiedCardinality = IriTerm.prevalidated(
+  static const minQualifiedCardinality = const IriTerm(
     'http://www.w3.org/2002/07/owl#minQualifiedCardinality',
   );
 
@@ -533,9 +517,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const onClass = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#onClass',
-  );
+  static const onClass = const IriTerm('http://www.w3.org/2002/07/owl#onClass');
 
   /// IRI for owl:onDataRange [Expects: http://www.w3.org/2000/01/rdf-schema#Datatype]
   ///
@@ -543,7 +525,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const onDataRange = IriTerm.prevalidated(
+  static const onDataRange = const IriTerm(
     'http://www.w3.org/2002/07/owl#onDataRange',
   );
 
@@ -553,7 +535,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Datatype
   ///
-  static const onDatatype = IriTerm.prevalidated(
+  static const onDatatype = const IriTerm(
     'http://www.w3.org/2002/07/owl#onDatatype',
   );
 
@@ -563,9 +545,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Class
   ///
-  static const oneOf = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#oneOf',
-  );
+  static const oneOf = const IriTerm('http://www.w3.org/2002/07/owl#oneOf');
 
   /// IRI for owl:onProperties [Expects: http://www.w3.org/1999/02/22-rdf-syntax-ns#List]
   ///
@@ -573,7 +553,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const onProperties = IriTerm.prevalidated(
+  static const onProperties = const IriTerm(
     'http://www.w3.org/2002/07/owl#onProperties',
   );
 
@@ -583,7 +563,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const onProperty = IriTerm.prevalidated(
+  static const onProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#onProperty',
   );
 
@@ -593,7 +573,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Ontology
   ///
-  static const priorVersion = IriTerm.prevalidated(
+  static const priorVersion = const IriTerm(
     'http://www.w3.org/2002/07/owl#priorVersion',
   );
 
@@ -603,7 +583,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#ObjectProperty
   ///
-  static const propertyChainAxiom = IriTerm.prevalidated(
+  static const propertyChainAxiom = const IriTerm(
     'http://www.w3.org/2002/07/owl#propertyChainAxiom',
   );
 
@@ -613,7 +593,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
   ///
-  static const propertyDisjointWith = IriTerm.prevalidated(
+  static const propertyDisjointWith = const IriTerm(
     'http://www.w3.org/2002/07/owl#propertyDisjointWith',
   );
 
@@ -623,7 +603,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const qualifiedCardinality = IriTerm.prevalidated(
+  static const qualifiedCardinality = const IriTerm(
     'http://www.w3.org/2002/07/owl#qualifiedCardinality',
   );
 
@@ -633,9 +613,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const sameAs = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#sameAs',
-  );
+  static const sameAs = const IriTerm('http://www.w3.org/2002/07/owl#sameAs');
 
   /// IRI for owl:someValuesFrom [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -643,7 +621,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Restriction
   ///
-  static const someValuesFrom = IriTerm.prevalidated(
+  static const someValuesFrom = const IriTerm(
     'http://www.w3.org/2002/07/owl#someValuesFrom',
   );
 
@@ -653,7 +631,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#NegativePropertyAssertion
   ///
-  static const sourceIndividual = IriTerm.prevalidated(
+  static const sourceIndividual = const IriTerm(
     'http://www.w3.org/2002/07/owl#sourceIndividual',
   );
 
@@ -663,7 +641,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#NegativePropertyAssertion
   ///
-  static const targetIndividual = IriTerm.prevalidated(
+  static const targetIndividual = const IriTerm(
     'http://www.w3.org/2002/07/owl#targetIndividual',
   );
 
@@ -673,7 +651,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#NegativePropertyAssertion
   ///
-  static const targetValue = IriTerm.prevalidated(
+  static const targetValue = const IriTerm(
     'http://www.w3.org/2002/07/owl#targetValue',
   );
 
@@ -683,7 +661,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const topDataProperty = IriTerm.prevalidated(
+  static const topDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topDataProperty',
   );
 
@@ -693,7 +671,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const topObjectProperty = IriTerm.prevalidated(
+  static const topObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topObjectProperty',
   );
 
@@ -703,9 +681,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Class
   ///
-  static const unionOf = IriTerm.prevalidated(
-    'http://www.w3.org/2002/07/owl#unionOf',
-  );
+  static const unionOf = const IriTerm('http://www.w3.org/2002/07/owl#unionOf');
 
   /// IRI for owl:versionInfo [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
   ///
@@ -713,7 +689,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const versionInfo = IriTerm.prevalidated(
+  static const versionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -723,7 +699,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Ontology
   ///
-  static const versionIRI = IriTerm.prevalidated(
+  static const versionIRI = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionIRI',
   );
 
@@ -733,7 +709,7 @@ class Owl {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Datatype
   ///
-  static const withRestrictions = IriTerm.prevalidated(
+  static const withRestrictions = const IriTerm(
     'http://www.w3.org/2002/07/owl#withRestrictions',
   );
 }

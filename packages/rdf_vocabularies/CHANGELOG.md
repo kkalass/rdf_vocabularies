@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.5] - 2025-09-23
+
+### Changed
+- **Dependency updates**: Updated all underlying packages with rdf_core ^0.9.15 and rdf_vocabulary_to_dart ^0.9.2
+- **Vocabulary regeneration**: All vocabulary files regenerated with latest code generation improvements
+  - Enhanced code generation with improved type safety and documentation
+  - Updated all core and Schema.org vocabulary class definitions
+  - Refreshed vocabulary structure across all packages for better performance
+- **Package dependencies**: Updated to rdf_vocabularies_core 0.4.5, rdf_vocabularies_schema 0.4.5, and rdf_vocabularies_schema_http 0.4.5
+- **Code quality improvements**: Applied latest linting rules and formatting standards across all packages
+
 ## [0.4.4] - 2025-08-11
 
 ### Fixed

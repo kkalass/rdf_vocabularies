@@ -26,7 +26,7 @@ class SchemaHttpTicket {
 
   /// IRI term for the Ticket class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated('http://schema.org/Ticket');
+  static const classIri = const IriTerm('http://schema.org/Ticket');
 
   /// additionalType [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -35,7 +35,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -45,9 +45,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Ticket
   ///
-  static const dateIssued = IriTerm.prevalidated(
-    'http://schema.org/dateIssued',
-  );
+  static const dateIssued = const IriTerm('http://schema.org/dateIssued');
 
   /// disambiguatingDescription [Expects: http://schema.org/Text]
   ///
@@ -55,7 +53,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -65,7 +63,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -75,7 +73,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Certification, http://schema.org/Permit, http://schema.org/Ticket
   ///
-  static const issuedBy = IriTerm.prevalidated('http://schema.org/issuedBy');
+  static const issuedBy = const IriTerm('http://schema.org/issuedBy');
 
   /// name [Expects: http://schema.org/Text]
   ///
@@ -83,7 +81,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('http://schema.org/name');
+  static const name = const IriTerm('http://schema.org/name');
 
   /// potentialAction [Expects: http://schema.org/Action]
   ///
@@ -91,7 +89,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -101,9 +99,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/DonateAction, http://schema.org/Offer, http://schema.org/PriceSpecification, http://schema.org/Reservation, http://schema.org/Ticket, http://schema.org/TradeAction
   ///
-  static const priceCurrency = IriTerm.prevalidated(
-    'http://schema.org/priceCurrency',
-  );
+  static const priceCurrency = const IriTerm('http://schema.org/priceCurrency');
 
   /// sameAs [Expects: http://schema.org/URL]
   ///
@@ -111,7 +107,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('http://schema.org/sameAs');
+  static const sameAs = const IriTerm('http://schema.org/sameAs');
 
   /// ticketNumber [Expects: http://schema.org/Text]
   ///
@@ -119,9 +115,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Ticket
   ///
-  static const ticketNumber = IriTerm.prevalidated(
-    'http://schema.org/ticketNumber',
-  );
+  static const ticketNumber = const IriTerm('http://schema.org/ticketNumber');
 
   /// ticketToken [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -129,9 +123,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Ticket
   ///
-  static const ticketToken = IriTerm.prevalidated(
-    'http://schema.org/ticketToken',
-  );
+  static const ticketToken = const IriTerm('http://schema.org/ticketToken');
 
   /// ticketedSeat [Expects: http://schema.org/Seat]
   ///
@@ -139,9 +131,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Ticket
   ///
-  static const ticketedSeat = IriTerm.prevalidated(
-    'http://schema.org/ticketedSeat',
-  );
+  static const ticketedSeat = const IriTerm('http://schema.org/ticketedSeat');
 
   /// totalPrice [Expects: http://schema.org/Number, http://schema.org/PriceSpecification, http://schema.org/Text]
   ///
@@ -149,9 +139,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Reservation, http://schema.org/Ticket
   ///
-  static const totalPrice = IriTerm.prevalidated(
-    'http://schema.org/totalPrice',
-  );
+  static const totalPrice = const IriTerm('http://schema.org/totalPrice');
 
   /// underName [Expects: http://schema.org/Organization, http://schema.org/Person]
   ///
@@ -159,7 +147,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Reservation, http://schema.org/Ticket
   ///
-  static const underName = IriTerm.prevalidated('http://schema.org/underName');
+  static const underName = const IriTerm('http://schema.org/underName');
 
   /// url [Expects: http://schema.org/URL]
   ///
@@ -167,7 +155,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('http://schema.org/url');
+  static const url = const IriTerm('http://schema.org/url');
 
   /// alternateName [Expects: http://schema.org/Text]
   ///
@@ -175,9 +163,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
-    'http://schema.org/alternateName',
-  );
+  static const alternateName = const IriTerm('http://schema.org/alternateName');
 
   /// mainEntityOfPage [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -185,7 +171,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -195,7 +181,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('http://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('http://schema.org/subjectOf');
 
   /// description [Expects: http://schema.org/Text, http://schema.org/TextObject]
   ///
@@ -203,9 +189,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'http://schema.org/description',
-  );
+  static const description = const IriTerm('http://schema.org/description');
 
   /// image [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -213,7 +197,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('http://schema.org/image');
+  static const image = const IriTerm('http://schema.org/image');
 
   /// identifier [Expects: http://schema.org/PropertyValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -222,9 +206,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'http://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('http://schema.org/identifier');
 
   /// source
   ///
@@ -232,7 +214,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -240,7 +222,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -250,7 +232,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -260,7 +242,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -270,7 +252,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -280,7 +262,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -290,7 +272,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -300,7 +282,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -310,7 +292,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -320,7 +302,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -330,7 +312,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -340,7 +322,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -350,7 +332,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -360,7 +342,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -370,7 +352,7 @@ class SchemaHttpTicket {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

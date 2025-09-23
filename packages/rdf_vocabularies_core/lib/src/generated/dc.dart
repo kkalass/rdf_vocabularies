@@ -25,7 +25,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const contributor = IriTerm.prevalidated(
+  static const contributor = const IriTerm(
     'http://purl.org/dc/elements/1.1/contributor',
   );
 
@@ -35,7 +35,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const coverage = IriTerm.prevalidated(
+  static const coverage = const IriTerm(
     'http://purl.org/dc/elements/1.1/coverage',
   );
 
@@ -45,7 +45,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const creator = IriTerm.prevalidated(
+  static const creator = const IriTerm(
     'http://purl.org/dc/elements/1.1/creator',
   );
 
@@ -55,9 +55,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const date = IriTerm.prevalidated(
-    'http://purl.org/dc/elements/1.1/date',
-  );
+  static const date = const IriTerm('http://purl.org/dc/elements/1.1/date');
 
   /// IRI for dc:description
   ///
@@ -65,7 +63,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const description = IriTerm.prevalidated(
+  static const description = const IriTerm(
     'http://purl.org/dc/elements/1.1/description',
   );
 
@@ -75,9 +73,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const format = IriTerm.prevalidated(
-    'http://purl.org/dc/elements/1.1/format',
-  );
+  static const format = const IriTerm('http://purl.org/dc/elements/1.1/format');
 
   /// IRI for dc:identifier
   ///
@@ -85,7 +81,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const identifier = IriTerm.prevalidated(
+  static const identifier = const IriTerm(
     'http://purl.org/dc/elements/1.1/identifier',
   );
 
@@ -95,7 +91,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const language = IriTerm.prevalidated(
+  static const language = const IriTerm(
     'http://purl.org/dc/elements/1.1/language',
   );
 
@@ -105,7 +101,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const publisher = IriTerm.prevalidated(
+  static const publisher = const IriTerm(
     'http://purl.org/dc/elements/1.1/publisher',
   );
 
@@ -115,7 +111,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const relation = IriTerm.prevalidated(
+  static const relation = const IriTerm(
     'http://purl.org/dc/elements/1.1/relation',
   );
 
@@ -125,9 +121,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const rights = IriTerm.prevalidated(
-    'http://purl.org/dc/elements/1.1/rights',
-  );
+  static const rights = const IriTerm('http://purl.org/dc/elements/1.1/rights');
 
   /// IRI for dc:source
   ///
@@ -135,9 +129,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated(
-    'http://purl.org/dc/elements/1.1/source',
-  );
+  static const source = const IriTerm('http://purl.org/dc/elements/1.1/source');
 
   /// IRI for dc:subject
   ///
@@ -145,7 +137,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const subject = IriTerm.prevalidated(
+  static const subject = const IriTerm(
     'http://purl.org/dc/elements/1.1/subject',
   );
 
@@ -155,9 +147,7 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const title = IriTerm.prevalidated(
-    'http://purl.org/dc/elements/1.1/title',
-  );
+  static const title = const IriTerm('http://purl.org/dc/elements/1.1/title');
 
   /// IRI for dc:type
   ///
@@ -165,7 +155,5 @@ class Dc {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const type = IriTerm.prevalidated(
-    'http://purl.org/dc/elements/1.1/type',
-  );
+  static const type = const IriTerm('http://purl.org/dc/elements/1.1/type');
 }

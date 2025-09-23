@@ -25,7 +25,7 @@ class EventowlUniversalProperties {
   ///
   ///
   ///
-  static const isAgentIn = IriTerm.prevalidated(
+  static const isAgentIn = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#isAgentIn',
   );
 
@@ -33,7 +33,7 @@ class EventowlUniversalProperties {
   ///
   ///
   ///
-  static const isFactorOf = IriTerm.prevalidated(
+  static const isFactorOf = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#isFactorOf',
   );
 
@@ -41,7 +41,7 @@ class EventowlUniversalProperties {
   ///
   ///
   ///
-  static const producedIn = IriTerm.prevalidated(
+  static const producedIn = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#producedIn',
   );
 
@@ -49,7 +49,7 @@ class EventowlUniversalProperties {
   ///
   ///
   ///
-  static const hasFactor = IriTerm.prevalidated(
+  static const hasFactor = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasFactor',
   );
 
@@ -57,7 +57,7 @@ class EventowlUniversalProperties {
   ///
   ///
   ///
-  static const hasAgent = IriTerm.prevalidated(
+  static const hasAgent = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasAgent',
   );
 
@@ -65,7 +65,7 @@ class EventowlUniversalProperties {
   ///
   ///
   ///
-  static const hasProduct = IriTerm.prevalidated(
+  static const hasProduct = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasProduct',
   );
 
@@ -73,7 +73,7 @@ class EventowlUniversalProperties {
   ///
   ///
   ///
-  static const hasLiteralFactor = IriTerm.prevalidated(
+  static const hasLiteralFactor = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasLiteralFactor',
   );
 
@@ -81,7 +81,7 @@ class EventowlUniversalProperties {
   ///
   ///
   ///
-  static const agent_in = IriTerm.prevalidated(
+  static const agent_in = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#agent_in',
   );
 
@@ -89,7 +89,7 @@ class EventowlUniversalProperties {
   ///
   ///
   ///
-  static const factor_of = IriTerm.prevalidated(
+  static const factor_of = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#factor_of',
   );
 
@@ -97,7 +97,7 @@ class EventowlUniversalProperties {
   ///
   ///
   ///
-  static const produced_in = IriTerm.prevalidated(
+  static const produced_in = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#produced_in',
   );
 
@@ -105,7 +105,7 @@ class EventowlUniversalProperties {
   ///
   ///
   ///
-  static const hasSubEvent = IriTerm.prevalidated(
+  static const hasSubEvent = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasSubEvent',
   );
 }

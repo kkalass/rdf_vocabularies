@@ -23,9 +23,7 @@ class Acl {
   ///
   /// Any kind of access to a resource. Don't use this, use R W and RW
   ///
-  static const Access = IriTerm.prevalidated(
-    'http://www.w3.org/ns/auth/acl#Access',
-  );
+  static const Access = const IriTerm('http://www.w3.org/ns/auth/acl#Access');
 
   /// IRI for acl:Append
   ///
@@ -37,9 +35,7 @@ class Acl {
   /// that a some link has been made elsewhere relevant to the given resource.
   ///
   ///
-  static const Append = IriTerm.prevalidated(
-    'http://www.w3.org/ns/auth/acl#Append',
-  );
+  static const Append = const IriTerm('http://www.w3.org/ns/auth/acl#Append');
 
   /// IRI for acl:AuthenticatedAgent
   ///
@@ -52,7 +48,7 @@ class Acl {
   /// and for example to develop a reputation)
   ///
   ///
-  static const AuthenticatedAgent = IriTerm.prevalidated(
+  static const AuthenticatedAgent = const IriTerm(
     'http://www.w3.org/ns/auth/acl#AuthenticatedAgent',
   );
 
@@ -61,7 +57,7 @@ class Acl {
   /// An element of access control,
   /// allowing agent to agents access of some kind to resources or classes of resources
   ///
-  static const Authorization = IriTerm.prevalidated(
+  static const Authorization = const IriTerm(
     'http://www.w3.org/ns/auth/acl#Authorization',
   );
 
@@ -69,9 +65,7 @@ class Acl {
   ///
   /// Allows read/write access to the ACL for the resource(s)
   ///
-  static const Control = IriTerm.prevalidated(
-    'http://www.w3.org/ns/auth/acl#Control',
-  );
+  static const Control = const IriTerm('http://www.w3.org/ns/auth/acl#Control');
 
   /// IRI for acl:Origin
   ///
@@ -83,25 +77,19 @@ class Acl {
   ///
   /// [See also](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin)
   ///
-  static const Origin = IriTerm.prevalidated(
-    'http://www.w3.org/ns/auth/acl#Origin',
-  );
+  static const Origin = const IriTerm('http://www.w3.org/ns/auth/acl#Origin');
 
   /// IRI for acl:Read
   ///
   /// The class of read operations
   ///
-  static const Read = IriTerm.prevalidated(
-    'http://www.w3.org/ns/auth/acl#Read',
-  );
+  static const Read = const IriTerm('http://www.w3.org/ns/auth/acl#Read');
 
   /// IRI for acl:Write
   ///
   ///
   ///
-  static const Write = IriTerm.prevalidated(
-    'http://www.w3.org/ns/auth/acl#Write',
-  );
+  static const Write = const IriTerm('http://www.w3.org/ns/auth/acl#Write');
 
   /// IRI for acl:accessControl [Expects: http://www.w3.org/2006/gen/ont#InformationResource]
   ///
@@ -113,7 +101,7 @@ class Acl {
   ///
   /// [See also](https://solidproject.org/TR/wac#acl-link-relation)
   ///
-  static const accessControl = IriTerm.prevalidated(
+  static const accessControl = const IriTerm(
     'http://www.w3.org/ns/auth/acl#accessControl',
   );
 
@@ -123,7 +111,7 @@ class Acl {
   ///
   /// Can be used on: http://www.w3.org/ns/auth/acl#Authorization
   ///
-  static const accessTo = IriTerm.prevalidated(
+  static const accessTo = const IriTerm(
     'http://www.w3.org/ns/auth/acl#accessTo',
   );
 
@@ -133,7 +121,7 @@ class Acl {
   ///
   /// Can be used on: http://www.w3.org/ns/auth/acl#Authorization
   ///
-  static const accessToClass = IriTerm.prevalidated(
+  static const accessToClass = const IriTerm(
     'http://www.w3.org/ns/auth/acl#accessToClass',
   );
 
@@ -143,9 +131,7 @@ class Acl {
   ///
   /// Can be used on: http://www.w3.org/ns/auth/acl#Authorization
   ///
-  static const agent = IriTerm.prevalidated(
-    'http://www.w3.org/ns/auth/acl#agent',
-  );
+  static const agent = const IriTerm('http://www.w3.org/ns/auth/acl#agent');
 
   /// IRI for acl:agentClass [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -153,7 +139,7 @@ class Acl {
   ///
   /// Can be used on: http://www.w3.org/ns/auth/acl#Authorization
   ///
-  static const agentClass = IriTerm.prevalidated(
+  static const agentClass = const IriTerm(
     'http://www.w3.org/ns/auth/acl#agentClass',
   );
 
@@ -165,7 +151,7 @@ class Acl {
   ///
   /// Can be used on: http://www.w3.org/ns/auth/acl#Authorization
   ///
-  static const agentGroup = IriTerm.prevalidated(
+  static const agentGroup = const IriTerm(
     'http://www.w3.org/ns/auth/acl#agentGroup',
   );
 
@@ -182,7 +168,7 @@ class Acl {
   ///
   /// Can be used on: http://www.w3.org/ns/auth/acl#Authorization
   ///
-  static const default_ = IriTerm.prevalidated(
+  static const default_ = const IriTerm(
     'http://www.w3.org/ns/auth/acl#default',
   );
 
@@ -193,7 +179,7 @@ class Acl {
   ///
   /// Can be used on: http://www.w3.org/ns/auth/acl#Authorization
   ///
-  static const defaultForNew = IriTerm.prevalidated(
+  static const defaultForNew = const IriTerm(
     'http://www.w3.org/ns/auth/acl#defaultForNew',
   );
 
@@ -204,7 +190,7 @@ class Acl {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const delegates = IriTerm.prevalidated(
+  static const delegates = const IriTerm(
     'http://www.w3.org/ns/auth/acl#delegates',
   );
 
@@ -214,9 +200,7 @@ class Acl {
   ///
   /// Can be used on: http://www.w3.org/ns/auth/acl#Authorization
   ///
-  static const mode = IriTerm.prevalidated(
-    'http://www.w3.org/ns/auth/acl#mode',
-  );
+  static const mode = const IriTerm('http://www.w3.org/ns/auth/acl#mode');
 
   /// IRI for acl:origin [Expects: http://www.w3.org/ns/auth/acl#Origin]
   ///
@@ -231,9 +215,7 @@ class Acl {
   ///
   /// [See also](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin)
   ///
-  static const origin = IriTerm.prevalidated(
-    'http://www.w3.org/ns/auth/acl#origin',
-  );
+  static const origin = const IriTerm('http://www.w3.org/ns/auth/acl#origin');
 
   /// IRI for acl:owner [Expects: http://xmlns.com/foaf/0.1/Agent]
   ///
@@ -244,7 +226,5 @@ class Acl {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const owner = IriTerm.prevalidated(
-    'http://www.w3.org/ns/auth/acl#owner',
-  );
+  static const owner = const IriTerm('http://www.w3.org/ns/auth/acl#owner');
 }

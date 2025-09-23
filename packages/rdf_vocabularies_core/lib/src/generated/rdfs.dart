@@ -23,7 +23,7 @@ class Rdfs {
   ///
   /// The class resource, everything.
   ///
-  static const Resource = IriTerm.prevalidated(
+  static const Resource = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#Resource',
   );
 
@@ -31,7 +31,7 @@ class Rdfs {
   ///
   /// The class of classes.
   ///
-  static const Class = IriTerm.prevalidated(
+  static const Class = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#Class',
   );
 
@@ -39,7 +39,7 @@ class Rdfs {
   ///
   /// The class of literal values, eg. textual strings and integers.
   ///
-  static const Literal = IriTerm.prevalidated(
+  static const Literal = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#Literal',
   );
 
@@ -47,7 +47,7 @@ class Rdfs {
   ///
   /// The class of RDF containers.
   ///
-  static const Container = IriTerm.prevalidated(
+  static const Container = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#Container',
   );
 
@@ -55,7 +55,7 @@ class Rdfs {
   ///
   /// The class of container membership properties, rdf:_1, rdf:_2, ..., all of which are sub-properties of 'member'.
   ///
-  static const ContainerMembershipProperty = IriTerm.prevalidated(
+  static const ContainerMembershipProperty = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty',
   );
 
@@ -63,7 +63,7 @@ class Rdfs {
   ///
   /// The class of RDF datatypes.
   ///
-  static const Datatype = IriTerm.prevalidated(
+  static const Datatype = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#Datatype',
   );
 
@@ -73,7 +73,7 @@ class Rdfs {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Class
   ///
-  static const subClassOf = IriTerm.prevalidated(
+  static const subClassOf = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#subClassOf',
   );
 
@@ -83,7 +83,7 @@ class Rdfs {
   ///
   /// Can be used on: http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
   ///
-  static const subPropertyOf = IriTerm.prevalidated(
+  static const subPropertyOf = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#subPropertyOf',
   );
 
@@ -93,7 +93,7 @@ class Rdfs {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const comment = IriTerm.prevalidated(
+  static const comment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -103,7 +103,7 @@ class Rdfs {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const label = IriTerm.prevalidated(
+  static const label = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -113,7 +113,7 @@ class Rdfs {
   ///
   /// Can be used on: http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
   ///
-  static const domain = IriTerm.prevalidated(
+  static const domain = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#domain',
   );
 
@@ -123,7 +123,7 @@ class Rdfs {
   ///
   /// Can be used on: http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
   ///
-  static const range = IriTerm.prevalidated(
+  static const range = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#range',
   );
 
@@ -133,7 +133,7 @@ class Rdfs {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const seeAlso = IriTerm.prevalidated(
+  static const seeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -143,7 +143,7 @@ class Rdfs {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const isDefinedBy = IriTerm.prevalidated(
+  static const isDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -153,7 +153,7 @@ class Rdfs {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const member = IriTerm.prevalidated(
+  static const member = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 }

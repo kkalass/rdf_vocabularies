@@ -26,7 +26,7 @@ class AclUniversalProperties {
   /// Delegates a person or another agent to act on behalf of the agent.
   /// For example, Alice delegates Bob to act on behalf of Alice for ACL purposes.
   ///
-  static const delegates = IriTerm.prevalidated(
+  static const delegates = const IriTerm(
     'http://www.w3.org/ns/auth/acl#delegates',
   );
 
@@ -37,7 +37,5 @@ class AclUniversalProperties {
   /// There is a sense of "right to control".   Typically defaults to the agent who created
   /// something, but can be changed.
   ///
-  static const owner = IriTerm.prevalidated(
-    'http://www.w3.org/ns/auth/acl#owner',
-  );
+  static const owner = const IriTerm('http://www.w3.org/ns/auth/acl#owner');
 }

@@ -27,9 +27,7 @@ class SchemaHttpPhysicalActivity {
 
   /// IRI term for the PhysicalActivity class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'http://schema.org/PhysicalActivity',
-  );
+  static const classIri = const IriTerm('http://schema.org/PhysicalActivity');
 
   /// additionalType [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -38,7 +36,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -48,7 +46,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/MedicalCondition, http://schema.org/PhysicalActivity
   ///
-  static const associatedAnatomy = IriTerm.prevalidated(
+  static const associatedAnatomy = const IriTerm(
     'http://schema.org/associatedAnatomy',
   );
 
@@ -58,7 +56,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/MedicalEntity
   ///
-  static const code = IriTerm.prevalidated('http://schema.org/code');
+  static const code = const IriTerm('http://schema.org/code');
 
   /// disambiguatingDescription [Expects: http://schema.org/Text]
   ///
@@ -66,7 +64,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -76,9 +74,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/MedicalCondition, http://schema.org/PhysicalActivity
   ///
-  static const epidemiology = IriTerm.prevalidated(
-    'http://schema.org/epidemiology',
-  );
+  static const epidemiology = const IriTerm('http://schema.org/epidemiology');
 
   /// guideline [Expects: http://schema.org/MedicalGuideline]
   ///
@@ -86,7 +82,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/MedicalEntity
   ///
-  static const guideline = IriTerm.prevalidated('http://schema.org/guideline');
+  static const guideline = const IriTerm('http://schema.org/guideline');
 
   /// interactionCount
   ///
@@ -94,7 +90,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -104,9 +100,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/DietarySupplement, http://schema.org/Drug, http://schema.org/MedicalEntity
   ///
-  static const legalStatus = IriTerm.prevalidated(
-    'http://schema.org/legalStatus',
-  );
+  static const legalStatus = const IriTerm('http://schema.org/legalStatus');
 
   /// medicineSystem [Expects: http://schema.org/MedicineSystem]
   ///
@@ -114,7 +108,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/MedicalEntity
   ///
-  static const medicineSystem = IriTerm.prevalidated(
+  static const medicineSystem = const IriTerm(
     'http://schema.org/medicineSystem',
   );
 
@@ -124,7 +118,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('http://schema.org/name');
+  static const name = const IriTerm('http://schema.org/name');
 
   /// pathophysiology [Expects: http://schema.org/Text]
   ///
@@ -132,7 +126,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/MedicalCondition, http://schema.org/PhysicalActivity
   ///
-  static const pathophysiology = IriTerm.prevalidated(
+  static const pathophysiology = const IriTerm(
     'http://schema.org/pathophysiology',
   );
 
@@ -142,7 +136,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -152,7 +146,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/MedicalEntity
   ///
-  static const recognizingAuthority = IriTerm.prevalidated(
+  static const recognizingAuthority = const IriTerm(
     'http://schema.org/recognizingAuthority',
   );
 
@@ -162,7 +156,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/MedicalEntity
   ///
-  static const relevantSpecialty = IriTerm.prevalidated(
+  static const relevantSpecialty = const IriTerm(
     'http://schema.org/relevantSpecialty',
   );
 
@@ -172,7 +166,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('http://schema.org/sameAs');
+  static const sameAs = const IriTerm('http://schema.org/sameAs');
 
   /// study [Expects: http://schema.org/MedicalStudy]
   ///
@@ -180,7 +174,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/MedicalEntity
   ///
-  static const study = IriTerm.prevalidated('http://schema.org/study');
+  static const study = const IriTerm('http://schema.org/study');
 
   /// url [Expects: http://schema.org/URL]
   ///
@@ -188,7 +182,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('http://schema.org/url');
+  static const url = const IriTerm('http://schema.org/url');
 
   /// alternateName [Expects: http://schema.org/Text]
   ///
@@ -196,9 +190,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
-    'http://schema.org/alternateName',
-  );
+  static const alternateName = const IriTerm('http://schema.org/alternateName');
 
   /// category [Expects: http://schema.org/CategoryCode, http://schema.org/PhysicalActivityCategory, http://schema.org/Text, http://schema.org/Thing, http://schema.org/URL]
   ///
@@ -206,7 +198,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/Invoice, http://schema.org/Offer, http://schema.org/PhysicalActivity, http://schema.org/Product, http://schema.org/Recommendation, http://schema.org/Service, http://schema.org/SpecialAnnouncement
   ///
-  static const category = IriTerm.prevalidated('http://schema.org/category');
+  static const category = const IriTerm('http://schema.org/category');
 
   /// funding [Expects: http://schema.org/Grant]
   ///
@@ -214,7 +206,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/BioChemEntity, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/MedicalEntity, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Product
   ///
-  static const funding = IriTerm.prevalidated('http://schema.org/funding');
+  static const funding = const IriTerm('http://schema.org/funding');
 
   /// mainEntityOfPage [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -222,7 +214,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -232,7 +224,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('http://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('http://schema.org/subjectOf');
 
   /// description [Expects: http://schema.org/Text, http://schema.org/TextObject]
   ///
@@ -240,9 +232,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'http://schema.org/description',
-  );
+  static const description = const IriTerm('http://schema.org/description');
 
   /// image [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -250,7 +240,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('http://schema.org/image');
+  static const image = const IriTerm('http://schema.org/image');
 
   /// identifier [Expects: http://schema.org/PropertyValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -259,9 +249,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'http://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('http://schema.org/identifier');
 
   /// source
   ///
@@ -269,7 +257,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -277,7 +265,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -287,7 +275,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -297,7 +285,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -307,7 +295,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -317,7 +305,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -327,7 +315,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -337,7 +325,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -347,7 +335,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -357,7 +345,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -367,7 +355,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -377,7 +365,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -387,7 +375,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -397,7 +385,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -407,7 +395,7 @@ class SchemaHttpPhysicalActivity {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

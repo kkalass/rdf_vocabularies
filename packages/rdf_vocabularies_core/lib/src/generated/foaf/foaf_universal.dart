@@ -25,7 +25,7 @@ class FoafUniversalProperties {
   ///
   /// A checksum for the DNA of some thing. Joke.
   ///
-  static const dnaChecksum = IriTerm.prevalidated(
+  static const dnaChecksum = const IriTerm(
     'http://xmlns.com/foaf/0.1/dnaChecksum',
   );
 
@@ -33,41 +33,37 @@ class FoafUniversalProperties {
   ///
   /// Title (Mr, Mrs, Ms, Dr. etc)
   ///
-  static const title = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/title');
+  static const title = const IriTerm('http://xmlns.com/foaf/0.1/title');
 
   /// nick
   ///
   /// A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames).
   ///
-  static const nick = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/nick');
+  static const nick = const IriTerm('http://xmlns.com/foaf/0.1/nick');
 
   /// givenName
   ///
   /// The given name of some person.
   ///
-  static const givenName = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/givenName',
-  );
+  static const givenName = const IriTerm('http://xmlns.com/foaf/0.1/givenName');
 
   /// givenname
   ///
   /// The given name of some person.
   ///
-  static const givenname = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/givenname',
-  );
+  static const givenname = const IriTerm('http://xmlns.com/foaf/0.1/givenname');
 
   /// phone
   ///
   /// A phone,  specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel).
   ///
-  static const phone = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/phone');
+  static const phone = const IriTerm('http://xmlns.com/foaf/0.1/phone');
 
   /// membershipClass
   ///
   /// Indicates the class of individuals that are a member of a Group
   ///
-  static const membershipClass = IriTerm.prevalidated(
+  static const membershipClass = const IriTerm(
     'http://xmlns.com/foaf/0.1/membershipClass',
   );
 }

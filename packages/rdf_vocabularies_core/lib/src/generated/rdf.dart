@@ -25,7 +25,7 @@ class Rdf {
   ///
   /// [See also](http://www.w3.org/TR/rdf11-concepts/#section-html)
   ///
-  static const HTML = IriTerm.prevalidated(
+  static const HTML = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML',
   );
 
@@ -35,7 +35,7 @@ class Rdf {
   ///
   /// [See also](http://www.w3.org/TR/rdf11-concepts/#section-Graph-Literal)
   ///
-  static const langString = IriTerm.prevalidated(
+  static const langString = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#langString',
   );
 
@@ -45,7 +45,7 @@ class Rdf {
   ///
   /// [See also](http://www.w3.org/TR/rdf-plain-literal/)
   ///
-  static const PlainLiteral = IriTerm.prevalidated(
+  static const PlainLiteral = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral',
   );
 
@@ -53,7 +53,7 @@ class Rdf {
   ///
   /// The class of RDF properties.
   ///
-  static const Property = IriTerm.prevalidated(
+  static const Property = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#Property',
   );
 
@@ -61,7 +61,7 @@ class Rdf {
   ///
   /// The class of RDF statements.
   ///
-  static const Statement = IriTerm.prevalidated(
+  static const Statement = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement',
   );
 
@@ -69,7 +69,7 @@ class Rdf {
   ///
   /// The class of unordered containers.
   ///
-  static const Bag = IriTerm.prevalidated(
+  static const Bag = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag',
   );
 
@@ -77,7 +77,7 @@ class Rdf {
   ///
   /// The class of ordered containers.
   ///
-  static const Seq = IriTerm.prevalidated(
+  static const Seq = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq',
   );
 
@@ -85,7 +85,7 @@ class Rdf {
   ///
   /// The class of containers of alternatives.
   ///
-  static const Alt = IriTerm.prevalidated(
+  static const Alt = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt',
   );
 
@@ -93,7 +93,7 @@ class Rdf {
   ///
   /// The class of RDF Lists.
   ///
-  static const List = IriTerm.prevalidated(
+  static const List = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#List',
   );
 
@@ -101,7 +101,7 @@ class Rdf {
   ///
   /// The datatype of XML literal values.
   ///
-  static const XMLLiteral = IriTerm.prevalidated(
+  static const XMLLiteral = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral',
   );
 
@@ -111,7 +111,7 @@ class Rdf {
   ///
   /// [See also](https://www.w3.org/TR/json-ld11/#the-rdf-json-datatype)
   ///
-  static const JSON = IriTerm.prevalidated(
+  static const JSON = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON',
   );
 
@@ -121,7 +121,7 @@ class Rdf {
   ///
   /// [See also](https://www.w3.org/TR/json-ld11/#the-rdf-compoundliteral-class-and-the-rdf-language-and-rdf-direction-properties)
   ///
-  static const CompoundLiteral = IriTerm.prevalidated(
+  static const CompoundLiteral = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#CompoundLiteral',
   );
 
@@ -129,7 +129,7 @@ class Rdf {
   ///
   /// The empty list, with no items in it. If the rest of a list is nil then the list has no more items in it.
   ///
-  static const nil = IriTerm.prevalidated(
+  static const nil = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#nil',
   );
 
@@ -139,7 +139,7 @@ class Rdf {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const type = IriTerm.prevalidated(
+  static const type = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -149,7 +149,7 @@ class Rdf {
   ///
   /// Can be used on: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   ///
-  static const subject = IriTerm.prevalidated(
+  static const subject = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#subject',
   );
 
@@ -159,7 +159,7 @@ class Rdf {
   ///
   /// Can be used on: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   ///
-  static const predicate = IriTerm.prevalidated(
+  static const predicate = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate',
   );
 
@@ -169,7 +169,7 @@ class Rdf {
   ///
   /// Can be used on: http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
   ///
-  static const object = IriTerm.prevalidated(
+  static const object = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#object',
   );
 
@@ -179,7 +179,7 @@ class Rdf {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const value = IriTerm.prevalidated(
+  static const value = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -189,7 +189,7 @@ class Rdf {
   ///
   /// Can be used on: http://www.w3.org/1999/02/22-rdf-syntax-ns#List
   ///
-  static const first = IriTerm.prevalidated(
+  static const first = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#first',
   );
 
@@ -199,7 +199,7 @@ class Rdf {
   ///
   /// Can be used on: http://www.w3.org/1999/02/22-rdf-syntax-ns#List
   ///
-  static const rest = IriTerm.prevalidated(
+  static const rest = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#rest',
   );
 
@@ -211,7 +211,7 @@ class Rdf {
   ///
   /// [See also](https://www.w3.org/TR/json-ld11/#the-rdf-compoundliteral-class-and-the-rdf-language-and-rdf-direction-properties)
   ///
-  static const language = IriTerm.prevalidated(
+  static const language = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#language',
   );
 
@@ -223,7 +223,7 @@ class Rdf {
   ///
   /// [See also](https://www.w3.org/TR/json-ld11/#the-rdf-compoundliteral-class-and-the-rdf-language-and-rdf-direction-properties)
   ///
-  static const direction = IriTerm.prevalidated(
+  static const direction = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#direction',
   );
 }

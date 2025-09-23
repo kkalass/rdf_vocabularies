@@ -26,7 +26,7 @@ class SchemaHttpActionAccessSpecification {
 
   /// IRI term for the ActionAccessSpecification class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
+  static const classIri = const IriTerm(
     'http://schema.org/ActionAccessSpecification',
   );
 
@@ -37,7 +37,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -47,7 +47,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const availabilityEnds = IriTerm.prevalidated(
+  static const availabilityEnds = const IriTerm(
     'http://schema.org/availabilityEnds',
   );
 
@@ -57,7 +57,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const availabilityStarts = IriTerm.prevalidated(
+  static const availabilityStarts = const IriTerm(
     'http://schema.org/availabilityStarts',
   );
 
@@ -67,7 +67,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -78,7 +78,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/DeliveryChargeSpecification, http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const eligibleRegion = IriTerm.prevalidated(
+  static const eligibleRegion = const IriTerm(
     'http://schema.org/eligibleRegion',
   );
 
@@ -88,7 +88,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/ConsumeAction, http://schema.org/MediaSubscription
   ///
-  static const expectsAcceptanceOf = IriTerm.prevalidated(
+  static const expectsAcceptanceOf = const IriTerm(
     'http://schema.org/expectsAcceptanceOf',
   );
 
@@ -99,7 +99,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/DeliveryChargeSpecification, http://schema.org/Demand, http://schema.org/MediaObject, http://schema.org/Offer
   ///
-  static const ineligibleRegion = IriTerm.prevalidated(
+  static const ineligibleRegion = const IriTerm(
     'http://schema.org/ineligibleRegion',
   );
 
@@ -109,7 +109,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -119,7 +119,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('http://schema.org/name');
+  static const name = const IriTerm('http://schema.org/name');
 
   /// potentialAction [Expects: http://schema.org/Action]
   ///
@@ -127,7 +127,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -137,7 +137,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/MediaObject
   ///
-  static const requiresSubscription = IriTerm.prevalidated(
+  static const requiresSubscription = const IriTerm(
     'http://schema.org/requiresSubscription',
   );
 
@@ -147,7 +147,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('http://schema.org/sameAs');
+  static const sameAs = const IriTerm('http://schema.org/sameAs');
 
   /// url [Expects: http://schema.org/URL]
   ///
@@ -155,7 +155,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('http://schema.org/url');
+  static const url = const IriTerm('http://schema.org/url');
 
   /// alternateName [Expects: http://schema.org/Text]
   ///
@@ -163,9 +163,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
-    'http://schema.org/alternateName',
-  );
+  static const alternateName = const IriTerm('http://schema.org/alternateName');
 
   /// category [Expects: http://schema.org/CategoryCode, http://schema.org/PhysicalActivityCategory, http://schema.org/Text, http://schema.org/Thing, http://schema.org/URL]
   ///
@@ -173,7 +171,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/Invoice, http://schema.org/Offer, http://schema.org/PhysicalActivity, http://schema.org/Product, http://schema.org/Recommendation, http://schema.org/Service, http://schema.org/SpecialAnnouncement
   ///
-  static const category = IriTerm.prevalidated('http://schema.org/category');
+  static const category = const IriTerm('http://schema.org/category');
 
   /// mainEntityOfPage [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -181,7 +179,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -191,7 +189,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('http://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('http://schema.org/subjectOf');
 
   /// description [Expects: http://schema.org/Text, http://schema.org/TextObject]
   ///
@@ -199,9 +197,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'http://schema.org/description',
-  );
+  static const description = const IriTerm('http://schema.org/description');
 
   /// image [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -209,7 +205,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('http://schema.org/image');
+  static const image = const IriTerm('http://schema.org/image');
 
   /// identifier [Expects: http://schema.org/PropertyValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -218,9 +214,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'http://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('http://schema.org/identifier');
 
   /// source
   ///
@@ -228,7 +222,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -236,7 +230,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -246,7 +240,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -256,7 +250,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -266,7 +260,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -276,7 +270,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -286,7 +280,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -296,7 +290,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -306,7 +300,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -316,7 +310,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -326,7 +320,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -336,7 +330,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -346,7 +340,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -356,7 +350,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -366,7 +360,7 @@ class SchemaHttpActionAccessSpecification {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

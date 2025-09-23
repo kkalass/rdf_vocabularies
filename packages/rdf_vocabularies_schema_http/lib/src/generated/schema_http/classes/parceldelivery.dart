@@ -26,9 +26,7 @@ class SchemaHttpParcelDelivery {
 
   /// IRI term for the ParcelDelivery class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'http://schema.org/ParcelDelivery',
-  );
+  static const classIri = const IriTerm('http://schema.org/ParcelDelivery');
 
   /// additionalType [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -37,7 +35,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -47,7 +45,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Flight, http://schema.org/ParcelDelivery
   ///
-  static const carrier = IriTerm.prevalidated('http://schema.org/carrier');
+  static const carrier = const IriTerm('http://schema.org/carrier');
 
   /// deliveryAddress [Expects: http://schema.org/PostalAddress]
   ///
@@ -55,7 +53,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/ParcelDelivery
   ///
-  static const deliveryAddress = IriTerm.prevalidated(
+  static const deliveryAddress = const IriTerm(
     'http://schema.org/deliveryAddress',
   );
 
@@ -65,7 +63,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/ParcelDelivery
   ///
-  static const deliveryStatus = IriTerm.prevalidated(
+  static const deliveryStatus = const IriTerm(
     'http://schema.org/deliveryStatus',
   );
 
@@ -75,7 +73,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -85,7 +83,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/ParcelDelivery
   ///
-  static const expectedArrivalFrom = IriTerm.prevalidated(
+  static const expectedArrivalFrom = const IriTerm(
     'http://schema.org/expectedArrivalFrom',
   );
 
@@ -95,7 +93,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/ParcelDelivery
   ///
-  static const expectedArrivalUntil = IriTerm.prevalidated(
+  static const expectedArrivalUntil = const IriTerm(
     'http://schema.org/expectedArrivalUntil',
   );
 
@@ -105,7 +103,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/DeliveryEvent, http://schema.org/ParcelDelivery
   ///
-  static const hasDeliveryMethod = IriTerm.prevalidated(
+  static const hasDeliveryMethod = const IriTerm(
     'http://schema.org/hasDeliveryMethod',
   );
 
@@ -115,7 +113,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -125,9 +123,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/ParcelDelivery
   ///
-  static const itemShipped = IriTerm.prevalidated(
-    'http://schema.org/itemShipped',
-  );
+  static const itemShipped = const IriTerm('http://schema.org/itemShipped');
 
   /// name [Expects: http://schema.org/Text]
   ///
@@ -135,7 +131,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('http://schema.org/name');
+  static const name = const IriTerm('http://schema.org/name');
 
   /// originAddress [Expects: http://schema.org/PostalAddress]
   ///
@@ -143,9 +139,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/ParcelDelivery
   ///
-  static const originAddress = IriTerm.prevalidated(
-    'http://schema.org/originAddress',
-  );
+  static const originAddress = const IriTerm('http://schema.org/originAddress');
 
   /// partOfOrder [Expects: http://schema.org/Order]
   ///
@@ -153,9 +147,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/ParcelDelivery
   ///
-  static const partOfOrder = IriTerm.prevalidated(
-    'http://schema.org/partOfOrder',
-  );
+  static const partOfOrder = const IriTerm('http://schema.org/partOfOrder');
 
   /// potentialAction [Expects: http://schema.org/Action]
   ///
@@ -163,7 +155,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -173,7 +165,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('http://schema.org/sameAs');
+  static const sameAs = const IriTerm('http://schema.org/sameAs');
 
   /// trackingNumber [Expects: http://schema.org/Text]
   ///
@@ -181,7 +173,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/ParcelDelivery
   ///
-  static const trackingNumber = IriTerm.prevalidated(
+  static const trackingNumber = const IriTerm(
     'http://schema.org/trackingNumber',
   );
 
@@ -191,9 +183,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/ParcelDelivery
   ///
-  static const trackingUrl = IriTerm.prevalidated(
-    'http://schema.org/trackingUrl',
-  );
+  static const trackingUrl = const IriTerm('http://schema.org/trackingUrl');
 
   /// url [Expects: http://schema.org/URL]
   ///
@@ -201,7 +191,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('http://schema.org/url');
+  static const url = const IriTerm('http://schema.org/url');
 
   /// alternateName [Expects: http://schema.org/Text]
   ///
@@ -209,9 +199,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
-    'http://schema.org/alternateName',
-  );
+  static const alternateName = const IriTerm('http://schema.org/alternateName');
 
   /// mainEntityOfPage [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -219,7 +207,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -229,7 +217,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Action, http://schema.org/CreativeWork, http://schema.org/EducationalOccupationalProgram, http://schema.org/FinancialIncentive, http://schema.org/Invoice, http://schema.org/ParcelDelivery, http://schema.org/Reservation, http://schema.org/Service, http://schema.org/Trip
   ///
-  static const provider = IriTerm.prevalidated('http://schema.org/provider');
+  static const provider = const IriTerm('http://schema.org/provider');
 
   /// subjectOf [Expects: http://schema.org/CreativeWork, http://schema.org/Event]
   ///
@@ -237,7 +225,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('http://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('http://schema.org/subjectOf');
 
   /// description [Expects: http://schema.org/Text, http://schema.org/TextObject]
   ///
@@ -245,9 +233,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'http://schema.org/description',
-  );
+  static const description = const IriTerm('http://schema.org/description');
 
   /// image [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -255,7 +241,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('http://schema.org/image');
+  static const image = const IriTerm('http://schema.org/image');
 
   /// identifier [Expects: http://schema.org/PropertyValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -264,9 +250,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'http://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('http://schema.org/identifier');
 
   /// source
   ///
@@ -274,7 +258,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -282,7 +266,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -292,7 +276,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -302,7 +286,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -312,7 +296,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -322,7 +306,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -332,7 +316,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -342,7 +326,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -352,7 +336,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -362,7 +346,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -372,7 +356,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -382,7 +366,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -392,7 +376,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -402,7 +386,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -412,7 +396,7 @@ class SchemaHttpParcelDelivery {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

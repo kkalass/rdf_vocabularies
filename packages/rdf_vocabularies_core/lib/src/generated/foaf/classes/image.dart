@@ -35,9 +35,7 @@ class FoafImage {
 
   /// IRI term for the Image class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/Image',
-  );
+  static const classIri = const IriTerm('http://xmlns.com/foaf/0.1/Image');
 
   /// dnaChecksum [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -45,7 +43,7 @@ class FoafImage {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const dnaChecksum = IriTerm.prevalidated(
+  static const dnaChecksum = const IriTerm(
     'http://xmlns.com/foaf/0.1/dnaChecksum',
   );
 
@@ -55,7 +53,7 @@ class FoafImage {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Document
   ///
-  static const sha1 = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/sha1');
+  static const sha1 = const IriTerm('http://xmlns.com/foaf/0.1/sha1');
 
   /// title
   ///
@@ -63,7 +61,7 @@ class FoafImage {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const title = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/title');
+  static const title = const IriTerm('http://xmlns.com/foaf/0.1/title');
 
   /// nick
   ///
@@ -71,7 +69,7 @@ class FoafImage {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const nick = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/nick');
+  static const nick = const IriTerm('http://xmlns.com/foaf/0.1/nick');
 
   /// name [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -79,7 +77,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const name = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/name');
+  static const name = const IriTerm('http://xmlns.com/foaf/0.1/name');
 
   /// givenName
   ///
@@ -87,9 +85,7 @@ class FoafImage {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const givenName = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/givenName',
-  );
+  static const givenName = const IriTerm('http://xmlns.com/foaf/0.1/givenName');
 
   /// givenname
   ///
@@ -97,9 +93,7 @@ class FoafImage {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const givenname = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/givenname',
-  );
+  static const givenname = const IriTerm('http://xmlns.com/foaf/0.1/givenname');
 
   /// phone
   ///
@@ -107,7 +101,7 @@ class FoafImage {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const phone = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/phone');
+  static const phone = const IriTerm('http://xmlns.com/foaf/0.1/phone');
 
   /// homepage [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -115,9 +109,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const homepage = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/homepage',
-  );
+  static const homepage = const IriTerm('http://xmlns.com/foaf/0.1/homepage');
 
   /// maker [Expects: http://xmlns.com/foaf/0.1/Agent]
   ///
@@ -126,7 +118,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const maker = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/maker');
+  static const maker = const IriTerm('http://xmlns.com/foaf/0.1/maker');
 
   /// depiction [Expects: http://xmlns.com/foaf/0.1/Image]
   ///
@@ -134,9 +126,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const depiction = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/depiction',
-  );
+  static const depiction = const IriTerm('http://xmlns.com/foaf/0.1/depiction');
 
   /// depicts [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -144,9 +134,7 @@ class FoafImage {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Image
   ///
-  static const depicts = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/depicts',
-  );
+  static const depicts = const IriTerm('http://xmlns.com/foaf/0.1/depicts');
 
   /// thumbnail [Expects: http://xmlns.com/foaf/0.1/Image]
   ///
@@ -154,9 +142,7 @@ class FoafImage {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Image
   ///
-  static const thumbnail = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/thumbnail',
-  );
+  static const thumbnail = const IriTerm('http://xmlns.com/foaf/0.1/thumbnail');
 
   /// fundedBy [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -164,9 +150,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const fundedBy = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/fundedBy',
-  );
+  static const fundedBy = const IriTerm('http://xmlns.com/foaf/0.1/fundedBy');
 
   /// logo [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -174,7 +158,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const logo = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/logo');
+  static const logo = const IriTerm('http://xmlns.com/foaf/0.1/logo');
 
   /// topic [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -182,7 +166,7 @@ class FoafImage {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Document
   ///
-  static const topic = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/topic');
+  static const topic = const IriTerm('http://xmlns.com/foaf/0.1/topic');
 
   /// primaryTopic [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -190,7 +174,7 @@ class FoafImage {
   ///
   /// Can be used on: http://xmlns.com/foaf/0.1/Document
   ///
-  static const primaryTopic = IriTerm.prevalidated(
+  static const primaryTopic = const IriTerm(
     'http://xmlns.com/foaf/0.1/primaryTopic',
   );
 
@@ -200,7 +184,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const page = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/page');
+  static const page = const IriTerm('http://xmlns.com/foaf/0.1/page');
 
   /// theme [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -208,7 +192,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const theme = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/theme');
+  static const theme = const IriTerm('http://xmlns.com/foaf/0.1/theme');
 
   /// membershipClass
   ///
@@ -216,7 +200,7 @@ class FoafImage {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const membershipClass = IriTerm.prevalidated(
+  static const membershipClass = const IriTerm(
     'http://xmlns.com/foaf/0.1/membershipClass',
   );
 
@@ -226,7 +210,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -236,7 +220,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -246,7 +230,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -256,7 +240,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -266,7 +250,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -276,7 +260,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -286,7 +270,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -296,7 +280,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -306,7 +290,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -316,7 +300,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -326,7 +310,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlBottomDataProperty = IriTerm.prevalidated(
+  static const owlBottomDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomDataProperty',
   );
 
@@ -336,7 +320,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlBottomObjectProperty = IriTerm.prevalidated(
+  static const owlBottomObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomObjectProperty',
   );
 
@@ -346,7 +330,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -356,7 +340,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlDifferentFrom = IriTerm.prevalidated(
+  static const owlDifferentFrom = const IriTerm(
     'http://www.w3.org/2002/07/owl#differentFrom',
   );
 
@@ -366,7 +350,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -376,7 +360,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlSameAs = IriTerm.prevalidated(
+  static const owlSameAs = const IriTerm(
     'http://www.w3.org/2002/07/owl#sameAs',
   );
 
@@ -386,7 +370,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlTopDataProperty = IriTerm.prevalidated(
+  static const owlTopDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topDataProperty',
   );
 
@@ -396,7 +380,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlTopObjectProperty = IriTerm.prevalidated(
+  static const owlTopObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topObjectProperty',
   );
 
@@ -406,7 +390,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -416,7 +400,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpAbstract_ = IriTerm.prevalidated(
+  static const schemahttpAbstract_ = const IriTerm(
     'http://schema.org/abstract',
   );
 
@@ -426,7 +410,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpAccessMode = IriTerm.prevalidated(
+  static const schemahttpAccessMode = const IriTerm(
     'http://schema.org/accessMode',
   );
 
@@ -436,7 +420,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpAccessModeSufficient = IriTerm.prevalidated(
+  static const schemahttpAccessModeSufficient = const IriTerm(
     'http://schema.org/accessModeSufficient',
   );
 
@@ -446,7 +430,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpAccessibilityAPI = IriTerm.prevalidated(
+  static const schemahttpAccessibilityAPI = const IriTerm(
     'http://schema.org/accessibilityAPI',
   );
 
@@ -456,7 +440,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpAccessibilityControl = IriTerm.prevalidated(
+  static const schemahttpAccessibilityControl = const IriTerm(
     'http://schema.org/accessibilityControl',
   );
 
@@ -466,7 +450,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpAccessibilityFeature = IriTerm.prevalidated(
+  static const schemahttpAccessibilityFeature = const IriTerm(
     'http://schema.org/accessibilityFeature',
   );
 
@@ -476,7 +460,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpAccessibilityHazard = IriTerm.prevalidated(
+  static const schemahttpAccessibilityHazard = const IriTerm(
     'http://schema.org/accessibilityHazard',
   );
 
@@ -486,7 +470,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpAccessibilitySummary = IriTerm.prevalidated(
+  static const schemahttpAccessibilitySummary = const IriTerm(
     'http://schema.org/accessibilitySummary',
   );
 
@@ -496,7 +480,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpAccountablePerson = IriTerm.prevalidated(
+  static const schemahttpAccountablePerson = const IriTerm(
     'http://schema.org/accountablePerson',
   );
 
@@ -506,7 +490,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpAcquireLicensePage = IriTerm.prevalidated(
+  static const schemahttpAcquireLicensePage = const IriTerm(
     'http://schema.org/acquireLicensePage',
   );
 
@@ -517,7 +501,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const schemahttpAdditionalType = IriTerm.prevalidated(
+  static const schemahttpAdditionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -527,7 +511,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Brand, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const schemahttpAggregateRating = IriTerm.prevalidated(
+  static const schemahttpAggregateRating = const IriTerm(
     'http://schema.org/aggregateRating',
   );
 
@@ -537,7 +521,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpAlternativeHeadline = IriTerm.prevalidated(
+  static const schemahttpAlternativeHeadline = const IriTerm(
     'http://schema.org/alternativeHeadline',
   );
 
@@ -547,7 +531,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpArchivedAt = IriTerm.prevalidated(
+  static const schemahttpArchivedAt = const IriTerm(
     'http://schema.org/archivedAt',
   );
 
@@ -557,9 +541,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/EducationEvent, http://schema.org/LearningResource
   ///
-  static const schemahttpAssesses = IriTerm.prevalidated(
-    'http://schema.org/assesses',
-  );
+  static const schemahttpAssesses = const IriTerm('http://schema.org/assesses');
 
   /// associatedArticle from schemahttp vocabulary [Expects: http://schema.org/NewsArticle]
   ///
@@ -567,7 +549,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/MediaObject
   ///
-  static const schemahttpAssociatedArticle = IriTerm.prevalidated(
+  static const schemahttpAssociatedArticle = const IriTerm(
     'http://schema.org/associatedArticle',
   );
 
@@ -577,7 +559,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/HyperToc, http://schema.org/HyperTocEntry
   ///
-  static const schemahttpAssociatedMedia = IriTerm.prevalidated(
+  static const schemahttpAssociatedMedia = const IriTerm(
     'http://schema.org/associatedMedia',
   );
 
@@ -587,9 +569,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpAudio = IriTerm.prevalidated(
-    'http://schema.org/audio',
-  );
+  static const schemahttpAudio = const IriTerm('http://schema.org/audio');
 
   /// author from schemahttp vocabulary [Expects: http://schema.org/Organization, http://schema.org/Person]
   ///
@@ -597,9 +577,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Rating
   ///
-  static const schemahttpAuthor = IriTerm.prevalidated(
-    'http://schema.org/author',
-  );
+  static const schemahttpAuthor = const IriTerm('http://schema.org/author');
 
   /// awards from schemahttp vocabulary [Expects: http://schema.org/Text]
   ///
@@ -607,9 +585,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Product
   ///
-  static const schemahttpAwards = IriTerm.prevalidated(
-    'http://schema.org/awards',
-  );
+  static const schemahttpAwards = const IriTerm('http://schema.org/awards');
 
   /// bitrate from schemahttp vocabulary [Expects: http://schema.org/Text]
   ///
@@ -617,9 +593,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/MediaObject
   ///
-  static const schemahttpBitrate = IriTerm.prevalidated(
-    'http://schema.org/bitrate',
-  );
+  static const schemahttpBitrate = const IriTerm('http://schema.org/bitrate');
 
   /// character from schemahttp vocabulary [Expects: http://schema.org/Person]
   ///
@@ -627,7 +601,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpCharacter = IriTerm.prevalidated(
+  static const schemahttpCharacter = const IriTerm(
     'http://schema.org/character',
   );
 
@@ -637,9 +611,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpCitation = IriTerm.prevalidated(
-    'http://schema.org/citation',
-  );
+  static const schemahttpCitation = const IriTerm('http://schema.org/citation');
 
   /// comment from schemahttp vocabulary [Expects: http://schema.org/Comment]
   ///
@@ -647,9 +619,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/RsvpAction
   ///
-  static const schemahttpComment = IriTerm.prevalidated(
-    'http://schema.org/comment',
-  );
+  static const schemahttpComment = const IriTerm('http://schema.org/comment');
 
   /// commentCount from schemahttp vocabulary [Expects: http://schema.org/Integer]
   ///
@@ -657,7 +627,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpCommentCount = IriTerm.prevalidated(
+  static const schemahttpCommentCount = const IriTerm(
     'http://schema.org/commentCount',
   );
 
@@ -667,7 +637,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpConditionsOfAccess = IriTerm.prevalidated(
+  static const schemahttpConditionsOfAccess = const IriTerm(
     'http://schema.org/conditionsOfAccess',
   );
 
@@ -677,7 +647,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpContentRating = IriTerm.prevalidated(
+  static const schemahttpContentRating = const IriTerm(
     'http://schema.org/contentRating',
   );
 
@@ -687,7 +657,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpContentReferenceTime = IriTerm.prevalidated(
+  static const schemahttpContentReferenceTime = const IriTerm(
     'http://schema.org/contentReferenceTime',
   );
 
@@ -697,7 +667,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/MediaObject
   ///
-  static const schemahttpContentSize = IriTerm.prevalidated(
+  static const schemahttpContentSize = const IriTerm(
     'http://schema.org/contentSize',
   );
 
@@ -707,7 +677,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/MediaObject
   ///
-  static const schemahttpContentUrl = IriTerm.prevalidated(
+  static const schemahttpContentUrl = const IriTerm(
     'http://schema.org/contentUrl',
   );
 
@@ -717,7 +687,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event
   ///
-  static const schemahttpContributor = IriTerm.prevalidated(
+  static const schemahttpContributor = const IriTerm(
     'http://schema.org/contributor',
   );
 
@@ -727,7 +697,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpCopyrightHolder = IriTerm.prevalidated(
+  static const schemahttpCopyrightHolder = const IriTerm(
     'http://schema.org/copyrightHolder',
   );
 
@@ -737,7 +707,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpCopyrightNotice = IriTerm.prevalidated(
+  static const schemahttpCopyrightNotice = const IriTerm(
     'http://schema.org/copyrightNotice',
   );
 
@@ -747,7 +717,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpCopyrightYear = IriTerm.prevalidated(
+  static const schemahttpCopyrightYear = const IriTerm(
     'http://schema.org/copyrightYear',
   );
 
@@ -757,7 +727,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpCorrection = IriTerm.prevalidated(
+  static const schemahttpCorrection = const IriTerm(
     'http://schema.org/correction',
   );
 
@@ -771,7 +741,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Movie, http://schema.org/Product, http://schema.org/TVEpisode, http://schema.org/TVSeason, http://schema.org/TVSeries
   ///
-  static const schemahttpCountryOfOrigin = IriTerm.prevalidated(
+  static const schemahttpCountryOfOrigin = const IriTerm(
     'http://schema.org/countryOfOrigin',
   );
 
@@ -781,7 +751,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpCreativeWorkStatus = IriTerm.prevalidated(
+  static const schemahttpCreativeWorkStatus = const IriTerm(
     'http://schema.org/creativeWorkStatus',
   );
 
@@ -791,7 +761,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpCreditText = IriTerm.prevalidated(
+  static const schemahttpCreditText = const IriTerm(
     'http://schema.org/creditText',
   );
 
@@ -801,7 +771,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/DataFeedItem
   ///
-  static const schemahttpDateModified = IriTerm.prevalidated(
+  static const schemahttpDateModified = const IriTerm(
     'http://schema.org/dateModified',
   );
 
@@ -811,7 +781,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Certification, http://schema.org/CreativeWork
   ///
-  static const schemahttpDatePublished = IriTerm.prevalidated(
+  static const schemahttpDatePublished = const IriTerm(
     'http://schema.org/datePublished',
   );
 
@@ -821,7 +791,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpDigitalSourceType = IriTerm.prevalidated(
+  static const schemahttpDigitalSourceType = const IriTerm(
     'http://schema.org/digitalSourceType',
   );
 
@@ -831,7 +801,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const schemahttpDisambiguatingDescription = IriTerm.prevalidated(
+  static const schemahttpDisambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -841,7 +811,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpDiscussionUrl = IriTerm.prevalidated(
+  static const schemahttpDiscussionUrl = const IriTerm(
     'http://schema.org/discussionUrl',
   );
 
@@ -856,9 +826,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpEditEIDR = IriTerm.prevalidated(
-    'http://schema.org/editEIDR',
-  );
+  static const schemahttpEditEIDR = const IriTerm('http://schema.org/editEIDR');
 
   /// editor from schemahttp vocabulary [Expects: http://schema.org/Person]
   ///
@@ -866,9 +834,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpEditor = IriTerm.prevalidated(
-    'http://schema.org/editor',
-  );
+  static const schemahttpEditor = const IriTerm('http://schema.org/editor');
 
   /// educationalAlignment from schemahttp vocabulary [Expects: http://schema.org/AlignmentObject]
   ///
@@ -878,7 +844,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/LearningResource
   ///
-  static const schemahttpEducationalAlignment = IriTerm.prevalidated(
+  static const schemahttpEducationalAlignment = const IriTerm(
     'http://schema.org/educationalAlignment',
   );
 
@@ -888,7 +854,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/EducationEvent, http://schema.org/EducationalOccupationalCredential, http://schema.org/LearningResource
   ///
-  static const schemahttpEducationalLevel = IriTerm.prevalidated(
+  static const schemahttpEducationalLevel = const IriTerm(
     'http://schema.org/educationalLevel',
   );
 
@@ -898,7 +864,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/LearningResource
   ///
-  static const schemahttpEducationalUse = IriTerm.prevalidated(
+  static const schemahttpEducationalUse = const IriTerm(
     'http://schema.org/educationalUse',
   );
 
@@ -908,9 +874,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/MediaObject
   ///
-  static const schemahttpEmbedUrl = IriTerm.prevalidated(
-    'http://schema.org/embedUrl',
-  );
+  static const schemahttpEmbedUrl = const IriTerm('http://schema.org/embedUrl');
 
   /// embeddedTextCaption from schemahttp vocabulary [Expects: http://schema.org/Text]
   ///
@@ -918,7 +882,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/AudioObject, http://schema.org/ImageObject, http://schema.org/VideoObject
   ///
-  static const schemahttpEmbeddedTextCaption = IriTerm.prevalidated(
+  static const schemahttpEmbeddedTextCaption = const IriTerm(
     'http://schema.org/embeddedTextCaption',
   );
 
@@ -928,7 +892,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpEncodings = IriTerm.prevalidated(
+  static const schemahttpEncodings = const IriTerm(
     'http://schema.org/encodings',
   );
 
@@ -938,9 +902,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Action, http://schema.org/FoodEstablishmentReservation, http://schema.org/InteractionCounter, http://schema.org/MediaObject, http://schema.org/Schedule
   ///
-  static const schemahttpEndTime = IriTerm.prevalidated(
-    'http://schema.org/endTime',
-  );
+  static const schemahttpEndTime = const IriTerm('http://schema.org/endTime');
 
   /// exifData from schemahttp vocabulary [Expects: http://schema.org/PropertyValue, http://schema.org/Text]
   ///
@@ -948,9 +910,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/ImageObject
   ///
-  static const schemahttpExifData = IriTerm.prevalidated(
-    'http://schema.org/exifData',
-  );
+  static const schemahttpExifData = const IriTerm('http://schema.org/exifData');
 
   /// expires from schemahttp vocabulary [Expects: http://schema.org/Date, http://schema.org/DateTime]
   ///
@@ -958,9 +918,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Certification, http://schema.org/CreativeWork
   ///
-  static const schemahttpExpires = IriTerm.prevalidated(
-    'http://schema.org/expires',
-  );
+  static const schemahttpExpires = const IriTerm('http://schema.org/expires');
 
   /// fileFormat from schemahttp vocabulary [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -968,7 +926,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpFileFormat = IriTerm.prevalidated(
+  static const schemahttpFileFormat = const IriTerm(
     'http://schema.org/fileFormat',
   );
 
@@ -978,9 +936,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Grant, http://schema.org/MonetaryGrant, http://schema.org/Organization, http://schema.org/Person
   ///
-  static const schemahttpFunder = IriTerm.prevalidated(
-    'http://schema.org/funder',
-  );
+  static const schemahttpFunder = const IriTerm('http://schema.org/funder');
 
   /// headline from schemahttp vocabulary [Expects: http://schema.org/Text]
   ///
@@ -988,9 +944,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpHeadline = IriTerm.prevalidated(
-    'http://schema.org/headline',
-  );
+  static const schemahttpHeadline = const IriTerm('http://schema.org/headline');
 
   /// height from schemahttp vocabulary [Expects: http://schema.org/Distance, http://schema.org/QuantitativeValue]
   ///
@@ -998,9 +952,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/MediaObject, http://schema.org/OfferShippingDetails, http://schema.org/Person, http://schema.org/Product, http://schema.org/ShippingConditions, http://schema.org/VisualArtwork
   ///
-  static const schemahttpHeight = IriTerm.prevalidated(
-    'http://schema.org/height',
-  );
+  static const schemahttpHeight = const IriTerm('http://schema.org/height');
 
   /// ineligibleRegion from schemahttp vocabulary [Expects: http://schema.org/GeoShape, http://schema.org/Place, http://schema.org/Text]
   ///
@@ -1009,7 +961,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/DeliveryChargeSpecification, http://schema.org/Demand, http://schema.org/MediaObject, http://schema.org/Offer
   ///
-  static const schemahttpIneligibleRegion = IriTerm.prevalidated(
+  static const schemahttpIneligibleRegion = const IriTerm(
     'http://schema.org/ineligibleRegion',
   );
 
@@ -1019,7 +971,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpInteractivityType = IriTerm.prevalidated(
+  static const schemahttpInteractivityType = const IriTerm(
     'http://schema.org/interactivityType',
   );
 
@@ -1029,7 +981,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/MediaObject
   ///
-  static const schemahttpInterpretedAsClaim = IriTerm.prevalidated(
+  static const schemahttpInterpretedAsClaim = const IriTerm(
     'http://schema.org/interpretedAsClaim',
   );
 
@@ -1039,7 +991,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpIsBasedOnUrl = IriTerm.prevalidated(
+  static const schemahttpIsBasedOnUrl = const IriTerm(
     'http://schema.org/isBasedOnUrl',
   );
 
@@ -1049,7 +1001,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const schemahttpIsFamilyFriendly = IriTerm.prevalidated(
+  static const schemahttpIsFamilyFriendly = const IriTerm(
     'http://schema.org/isFamilyFriendly',
   );
 
@@ -1059,9 +1011,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product
   ///
-  static const schemahttpKeywords = IriTerm.prevalidated(
-    'http://schema.org/keywords',
-  );
+  static const schemahttpKeywords = const IriTerm('http://schema.org/keywords');
 
   /// learningResourceType from schemahttp vocabulary [Expects: http://schema.org/DefinedTerm, http://schema.org/Text]
   ///
@@ -1069,7 +1019,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/LearningResource
   ///
-  static const schemahttpLearningResourceType = IriTerm.prevalidated(
+  static const schemahttpLearningResourceType = const IriTerm(
     'http://schema.org/learningResourceType',
   );
 
@@ -1079,9 +1029,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpLicense = IriTerm.prevalidated(
-    'http://schema.org/license',
-  );
+  static const schemahttpLicense = const IriTerm('http://schema.org/license');
 
   /// locationCreated from schemahttp vocabulary [Expects: http://schema.org/Place]
   ///
@@ -1089,7 +1037,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpLocationCreated = IriTerm.prevalidated(
+  static const schemahttpLocationCreated = const IriTerm(
     'http://schema.org/locationCreated',
   );
 
@@ -1100,7 +1048,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpMaintainer = IriTerm.prevalidated(
+  static const schemahttpMaintainer = const IriTerm(
     'http://schema.org/maintainer',
   );
 
@@ -1110,7 +1058,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpMaterialExtent = IriTerm.prevalidated(
+  static const schemahttpMaterialExtent = const IriTerm(
     'http://schema.org/materialExtent',
   );
 
@@ -1120,9 +1068,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpMentions = IriTerm.prevalidated(
-    'http://schema.org/mentions',
-  );
+  static const schemahttpMentions = const IriTerm('http://schema.org/mentions');
 
   /// name from schemahttp vocabulary [Expects: http://schema.org/Text]
   ///
@@ -1130,7 +1076,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const schemahttpName = IriTerm.prevalidated('http://schema.org/name');
+  static const schemahttpName = const IriTerm('http://schema.org/name');
 
   /// pattern from schemahttp vocabulary [Expects: http://schema.org/DefinedTerm, http://schema.org/Text]
   ///
@@ -1138,9 +1084,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Product
   ///
-  static const schemahttpPattern = IriTerm.prevalidated(
-    'http://schema.org/pattern',
-  );
+  static const schemahttpPattern = const IriTerm('http://schema.org/pattern');
 
   /// playerType from schemahttp vocabulary [Expects: http://schema.org/Text]
   ///
@@ -1148,7 +1092,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/MediaObject
   ///
-  static const schemahttpPlayerType = IriTerm.prevalidated(
+  static const schemahttpPlayerType = const IriTerm(
     'http://schema.org/playerType',
   );
 
@@ -1158,7 +1102,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const schemahttpPotentialAction = IriTerm.prevalidated(
+  static const schemahttpPotentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -1168,9 +1112,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpProducer = IriTerm.prevalidated(
-    'http://schema.org/producer',
-  );
+  static const schemahttpProducer = const IriTerm('http://schema.org/producer');
 
   /// productionCompany from schemahttp vocabulary [Expects: http://schema.org/Organization]
   ///
@@ -1178,7 +1120,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWorkSeason, http://schema.org/Episode, http://schema.org/MediaObject, http://schema.org/Movie, http://schema.org/MovieSeries, http://schema.org/RadioSeries, http://schema.org/TVSeries, http://schema.org/VideoGameSeries
   ///
-  static const schemahttpProductionCompany = IriTerm.prevalidated(
+  static const schemahttpProductionCompany = const IriTerm(
     'http://schema.org/productionCompany',
   );
 
@@ -1188,7 +1130,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpPublication = IriTerm.prevalidated(
+  static const schemahttpPublication = const IriTerm(
     'http://schema.org/publication',
   );
 
@@ -1198,7 +1140,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/FinancialIncentive
   ///
-  static const schemahttpPublisher = IriTerm.prevalidated(
+  static const schemahttpPublisher = const IriTerm(
     'http://schema.org/publisher',
   );
 
@@ -1208,7 +1150,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpPublisherImprint = IriTerm.prevalidated(
+  static const schemahttpPublisherImprint = const IriTerm(
     'http://schema.org/publisherImprint',
   );
 
@@ -1218,7 +1160,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/MediaObject
   ///
-  static const schemahttpRegionsAllowed = IriTerm.prevalidated(
+  static const schemahttpRegionsAllowed = const IriTerm(
     'http://schema.org/regionsAllowed',
   );
 
@@ -1228,7 +1170,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpReleasedEvent = IriTerm.prevalidated(
+  static const schemahttpReleasedEvent = const IriTerm(
     'http://schema.org/releasedEvent',
   );
 
@@ -1238,7 +1180,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/ImageObject
   ///
-  static const schemahttpRepresentativeOfPage = IriTerm.prevalidated(
+  static const schemahttpRepresentativeOfPage = const IriTerm(
     'http://schema.org/representativeOfPage',
   );
 
@@ -1248,7 +1190,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/MediaObject
   ///
-  static const schemahttpRequiresSubscription = IriTerm.prevalidated(
+  static const schemahttpRequiresSubscription = const IriTerm(
     'http://schema.org/requiresSubscription',
   );
 
@@ -1258,9 +1200,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product
   ///
-  static const schemahttpReviews = IriTerm.prevalidated(
-    'http://schema.org/reviews',
-  );
+  static const schemahttpReviews = const IriTerm('http://schema.org/reviews');
 
   /// sameAs from schemahttp vocabulary [Expects: http://schema.org/URL]
   ///
@@ -1268,9 +1208,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const schemahttpSameAs = IriTerm.prevalidated(
-    'http://schema.org/sameAs',
-  );
+  static const schemahttpSameAs = const IriTerm('http://schema.org/sameAs');
 
   /// schemaVersion from schemahttp vocabulary [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -1279,7 +1217,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpSchemaVersion = IriTerm.prevalidated(
+  static const schemahttpSchemaVersion = const IriTerm(
     'http://schema.org/schemaVersion',
   );
 
@@ -1289,7 +1227,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpSdDatePublished = IriTerm.prevalidated(
+  static const schemahttpSdDatePublished = const IriTerm(
     'http://schema.org/sdDatePublished',
   );
 
@@ -1299,7 +1237,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpSdLicense = IriTerm.prevalidated(
+  static const schemahttpSdLicense = const IriTerm(
     'http://schema.org/sdLicense',
   );
 
@@ -1310,7 +1248,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpSdPublisher = IriTerm.prevalidated(
+  static const schemahttpSdPublisher = const IriTerm(
     'http://schema.org/sdPublisher',
   );
 
@@ -1320,9 +1258,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/MediaObject
   ///
-  static const schemahttpSha256 = IriTerm.prevalidated(
-    'http://schema.org/sha256',
-  );
+  static const schemahttpSha256 = const IriTerm('http://schema.org/sha256');
 
   /// size from schemahttp vocabulary [Expects: http://schema.org/DefinedTerm, http://schema.org/QuantitativeValue, http://schema.org/SizeSpecification, http://schema.org/Text]
   ///
@@ -1330,7 +1266,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Product
   ///
-  static const schemahttpSize = IriTerm.prevalidated('http://schema.org/size');
+  static const schemahttpSize = const IriTerm('http://schema.org/size');
 
   /// sourceOrganization from schemahttp vocabulary [Expects: http://schema.org/Organization]
   ///
@@ -1338,7 +1274,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpSourceOrganization = IriTerm.prevalidated(
+  static const schemahttpSourceOrganization = const IriTerm(
     'http://schema.org/sourceOrganization',
   );
 
@@ -1349,9 +1285,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpSpatial = IriTerm.prevalidated(
-    'http://schema.org/spatial',
-  );
+  static const schemahttpSpatial = const IriTerm('http://schema.org/spatial');
 
   /// startTime from schemahttp vocabulary [Expects: http://schema.org/DateTime, http://schema.org/Time]
   ///
@@ -1359,7 +1293,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Action, http://schema.org/FoodEstablishmentReservation, http://schema.org/InteractionCounter, http://schema.org/MediaObject, http://schema.org/Schedule
   ///
-  static const schemahttpStartTime = IriTerm.prevalidated(
+  static const schemahttpStartTime = const IriTerm(
     'http://schema.org/startTime',
   );
 
@@ -1369,9 +1303,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/EducationEvent, http://schema.org/LearningResource
   ///
-  static const schemahttpTeaches = IriTerm.prevalidated(
-    'http://schema.org/teaches',
-  );
+  static const schemahttpTeaches = const IriTerm('http://schema.org/teaches');
 
   /// temporal from schemahttp vocabulary [Expects: http://schema.org/DateTime, http://schema.org/Text]
   ///
@@ -1380,9 +1312,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpTemporal = IriTerm.prevalidated(
-    'http://schema.org/temporal',
-  );
+  static const schemahttpTemporal = const IriTerm('http://schema.org/temporal');
 
   /// text from schemahttp vocabulary [Expects: http://schema.org/Text]
   ///
@@ -1390,7 +1320,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpText = IriTerm.prevalidated('http://schema.org/text');
+  static const schemahttpText = const IriTerm('http://schema.org/text');
 
   /// thumbnail from schemahttp vocabulary [Expects: http://schema.org/ImageObject]
   ///
@@ -1398,7 +1328,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpThumbnail = IriTerm.prevalidated(
+  static const schemahttpThumbnail = const IriTerm(
     'http://schema.org/thumbnail',
   );
 
@@ -1408,7 +1338,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpThumbnailUrl = IriTerm.prevalidated(
+  static const schemahttpThumbnailUrl = const IriTerm(
     'http://schema.org/thumbnailUrl',
   );
 
@@ -1418,7 +1348,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpTimeRequired = IriTerm.prevalidated(
+  static const schemahttpTimeRequired = const IriTerm(
     'http://schema.org/timeRequired',
   );
 
@@ -1428,7 +1358,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event
   ///
-  static const schemahttpTranslator = IriTerm.prevalidated(
+  static const schemahttpTranslator = const IriTerm(
     'http://schema.org/translator',
   );
 
@@ -1438,7 +1368,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event
   ///
-  static const schemahttpTypicalAgeRange = IriTerm.prevalidated(
+  static const schemahttpTypicalAgeRange = const IriTerm(
     'http://schema.org/typicalAgeRange',
   );
 
@@ -1448,7 +1378,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/MediaObject
   ///
-  static const schemahttpUploadDate = IriTerm.prevalidated(
+  static const schemahttpUploadDate = const IriTerm(
     'http://schema.org/uploadDate',
   );
 
@@ -1458,7 +1388,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const schemahttpUrl = IriTerm.prevalidated('http://schema.org/url');
+  static const schemahttpUrl = const IriTerm('http://schema.org/url');
 
   /// version from schemahttp vocabulary [Expects: http://schema.org/Number, http://schema.org/Text]
   ///
@@ -1466,9 +1396,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpVersion = IriTerm.prevalidated(
-    'http://schema.org/version',
-  );
+  static const schemahttpVersion = const IriTerm('http://schema.org/version');
 
   /// video from schemahttp vocabulary [Expects: http://schema.org/Clip, http://schema.org/VideoObject]
   ///
@@ -1476,9 +1404,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpVideo = IriTerm.prevalidated(
-    'http://schema.org/video',
-  );
+  static const schemahttpVideo = const IriTerm('http://schema.org/video');
 
   /// width from schemahttp vocabulary [Expects: http://schema.org/Distance, http://schema.org/QuantitativeValue]
   ///
@@ -1486,9 +1412,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/MediaObject, http://schema.org/OfferShippingDetails, http://schema.org/Product, http://schema.org/ShippingConditions, http://schema.org/VisualArtwork
   ///
-  static const schemahttpWidth = IriTerm.prevalidated(
-    'http://schema.org/width',
-  );
+  static const schemahttpWidth = const IriTerm('http://schema.org/width');
 
   /// wordCount from schemahttp vocabulary [Expects: http://schema.org/Integer]
   ///
@@ -1496,7 +1420,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Article, http://schema.org/CreativeWork
   ///
-  static const schemahttpWordCount = IriTerm.prevalidated(
+  static const schemahttpWordCount = const IriTerm(
     'http://schema.org/wordCount',
   );
 
@@ -1506,7 +1430,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const schemahttpAlternateName = IriTerm.prevalidated(
+  static const schemahttpAlternateName = const IriTerm(
     'http://schema.org/alternateName',
   );
 
@@ -1516,9 +1440,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/LodgingBusiness, http://schema.org/PlayAction, http://schema.org/Product, http://schema.org/Service
   ///
-  static const schemahttpAudience = IriTerm.prevalidated(
-    'http://schema.org/audience',
-  );
+  static const schemahttpAudience = const IriTerm('http://schema.org/audience');
 
   /// award from schemahttp vocabulary [Expects: http://schema.org/Text]
   ///
@@ -1526,9 +1448,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Product, http://schema.org/Service
   ///
-  static const schemahttpAward = IriTerm.prevalidated(
-    'http://schema.org/award',
-  );
+  static const schemahttpAward = const IriTerm('http://schema.org/award');
 
   /// caption from schemahttp vocabulary [Expects: http://schema.org/MediaObject, http://schema.org/Text]
   ///
@@ -1536,9 +1456,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/AudioObject, http://schema.org/ImageObject, http://schema.org/VideoObject
   ///
-  static const schemahttpCaption = IriTerm.prevalidated(
-    'http://schema.org/caption',
-  );
+  static const schemahttpCaption = const IriTerm('http://schema.org/caption');
 
   /// contentLocation from schemahttp vocabulary [Expects: http://schema.org/Place]
   ///
@@ -1546,7 +1464,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpContentLocation = IriTerm.prevalidated(
+  static const schemahttpContentLocation = const IriTerm(
     'http://schema.org/contentLocation',
   );
 
@@ -1556,9 +1474,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/UserComments
   ///
-  static const schemahttpCreator = IriTerm.prevalidated(
-    'http://schema.org/creator',
-  );
+  static const schemahttpCreator = const IriTerm('http://schema.org/creator');
 
   /// dateCreated from schemahttp vocabulary [Expects: http://schema.org/Date, http://schema.org/DateTime]
   ///
@@ -1566,7 +1482,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/DataFeedItem
   ///
-  static const schemahttpDateCreated = IriTerm.prevalidated(
+  static const schemahttpDateCreated = const IriTerm(
     'http://schema.org/dateCreated',
   );
 
@@ -1576,9 +1492,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Audiobook, http://schema.org/Episode, http://schema.org/Event, http://schema.org/MediaObject, http://schema.org/Movie, http://schema.org/MusicRecording, http://schema.org/MusicRelease, http://schema.org/QuantitativeValueDistribution, http://schema.org/Schedule, http://schema.org/ServicePeriod
   ///
-  static const schemahttpDuration = IriTerm.prevalidated(
-    'http://schema.org/duration',
-  );
+  static const schemahttpDuration = const IriTerm('http://schema.org/duration');
 
   /// encodesCreativeWork from schemahttp vocabulary [Expects: http://schema.org/CreativeWork]
   ///
@@ -1586,7 +1500,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/MediaObject
   ///
-  static const schemahttpEncodesCreativeWork = IriTerm.prevalidated(
+  static const schemahttpEncodesCreativeWork = const IriTerm(
     'http://schema.org/encodesCreativeWork',
   );
 
@@ -1600,7 +1514,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/MediaObject
   ///
-  static const schemahttpEncodingFormat = IriTerm.prevalidated(
+  static const schemahttpEncodingFormat = const IriTerm(
     'http://schema.org/encodingFormat',
   );
 
@@ -1610,7 +1524,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpExampleOfWork = IriTerm.prevalidated(
+  static const schemahttpExampleOfWork = const IriTerm(
     'http://schema.org/exampleOfWork',
   );
 
@@ -1620,9 +1534,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/BioChemEntity, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/MedicalEntity, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Product
   ///
-  static const schemahttpFunding = IriTerm.prevalidated(
-    'http://schema.org/funding',
-  );
+  static const schemahttpFunding = const IriTerm('http://schema.org/funding');
 
   /// genre from schemahttp vocabulary [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -1630,9 +1542,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/BroadcastChannel, http://schema.org/CreativeWork, http://schema.org/MusicGroup
   ///
-  static const schemahttpGenre = IriTerm.prevalidated(
-    'http://schema.org/genre',
-  );
+  static const schemahttpGenre = const IriTerm('http://schema.org/genre');
 
   /// inLanguage from schemahttp vocabulary [Expects: http://schema.org/Language, http://schema.org/Text]
   ///
@@ -1640,7 +1550,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/BroadcastService, http://schema.org/CommunicateAction, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/LinkRole, http://schema.org/PronounceableText, http://schema.org/WriteAction
   ///
-  static const schemahttpInLanguage = IriTerm.prevalidated(
+  static const schemahttpInLanguage = const IriTerm(
     'http://schema.org/inLanguage',
   );
 
@@ -1650,7 +1560,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Organization, http://schema.org/Person
   ///
-  static const schemahttpInteractionStatistic = IriTerm.prevalidated(
+  static const schemahttpInteractionStatistic = const IriTerm(
     'http://schema.org/interactionStatistic',
   );
 
@@ -1660,7 +1570,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Place
   ///
-  static const schemahttpIsAccessibleForFree = IriTerm.prevalidated(
+  static const schemahttpIsAccessibleForFree = const IriTerm(
     'http://schema.org/isAccessibleForFree',
   );
 
@@ -1670,7 +1580,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpIsBasedOn = IriTerm.prevalidated(
+  static const schemahttpIsBasedOn = const IriTerm(
     'http://schema.org/isBasedOn',
   );
 
@@ -1680,7 +1590,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpMainEntity = IriTerm.prevalidated(
+  static const schemahttpMainEntity = const IriTerm(
     'http://schema.org/mainEntity',
   );
 
@@ -1690,7 +1600,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const schemahttpMainEntityOfPage = IriTerm.prevalidated(
+  static const schemahttpMainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -1701,9 +1611,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/AggregateOffer, http://schema.org/CreativeWork, http://schema.org/EducationalOccupationalProgram, http://schema.org/Event, http://schema.org/MenuItem, http://schema.org/Product, http://schema.org/Service, http://schema.org/Trip
   ///
-  static const schemahttpOffers = IriTerm.prevalidated(
-    'http://schema.org/offers',
-  );
+  static const schemahttpOffers = const IriTerm('http://schema.org/offers');
 
   /// provider from schemahttp vocabulary [Expects: http://schema.org/Organization, http://schema.org/Person]
   ///
@@ -1711,9 +1619,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Action, http://schema.org/CreativeWork, http://schema.org/EducationalOccupationalProgram, http://schema.org/FinancialIncentive, http://schema.org/Invoice, http://schema.org/ParcelDelivery, http://schema.org/Reservation, http://schema.org/Service, http://schema.org/Trip
   ///
-  static const schemahttpProvider = IriTerm.prevalidated(
-    'http://schema.org/provider',
-  );
+  static const schemahttpProvider = const IriTerm('http://schema.org/provider');
 
   /// recordedAt from schemahttp vocabulary [Expects: http://schema.org/Event]
   ///
@@ -1721,7 +1627,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpRecordedAt = IriTerm.prevalidated(
+  static const schemahttpRecordedAt = const IriTerm(
     'http://schema.org/recordedAt',
   );
 
@@ -1731,9 +1637,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Brand, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const schemahttpReview = IriTerm.prevalidated(
-    'http://schema.org/review',
-  );
+  static const schemahttpReview = const IriTerm('http://schema.org/review');
 
   /// sponsor from schemahttp vocabulary [Expects: http://schema.org/Organization, http://schema.org/Person]
   ///
@@ -1741,9 +1645,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Grant, http://schema.org/MedicalStudy, http://schema.org/Organization, http://schema.org/Person
   ///
-  static const schemahttpSponsor = IriTerm.prevalidated(
-    'http://schema.org/sponsor',
-  );
+  static const schemahttpSponsor = const IriTerm('http://schema.org/sponsor');
 
   /// subjectOf from schemahttp vocabulary [Expects: http://schema.org/CreativeWork, http://schema.org/Event]
   ///
@@ -1751,7 +1653,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const schemahttpSubjectOf = IriTerm.prevalidated(
+  static const schemahttpSubjectOf = const IriTerm(
     'http://schema.org/subjectOf',
   );
 
@@ -1765,7 +1667,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpTemporalCoverage = IriTerm.prevalidated(
+  static const schemahttpTemporalCoverage = const IriTerm(
     'http://schema.org/temporalCoverage',
   );
 
@@ -1775,7 +1677,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpTranslationOfWork = IriTerm.prevalidated(
+  static const schemahttpTranslationOfWork = const IriTerm(
     'http://schema.org/translationOfWork',
   );
 
@@ -1787,7 +1689,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpUsageInfo = IriTerm.prevalidated(
+  static const schemahttpUsageInfo = const IriTerm(
     'http://schema.org/usageInfo',
   );
 
@@ -1797,7 +1699,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpWorkTranslation = IriTerm.prevalidated(
+  static const schemahttpWorkTranslation = const IriTerm(
     'http://schema.org/workTranslation',
   );
 
@@ -1807,9 +1709,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Certification, http://schema.org/CommunicateAction, http://schema.org/CreativeWork, http://schema.org/Event
   ///
-  static const schemahttpAbout = IriTerm.prevalidated(
-    'http://schema.org/about',
-  );
+  static const schemahttpAbout = const IriTerm('http://schema.org/about');
 
   /// encoding from schemahttp vocabulary [Expects: http://schema.org/MediaObject]
   ///
@@ -1817,9 +1717,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpEncoding = IriTerm.prevalidated(
-    'http://schema.org/encoding',
-  );
+  static const schemahttpEncoding = const IriTerm('http://schema.org/encoding');
 
   /// material from schemahttp vocabulary [Expects: http://schema.org/Product, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -1827,9 +1725,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Product
   ///
-  static const schemahttpMaterial = IriTerm.prevalidated(
-    'http://schema.org/material',
-  );
+  static const schemahttpMaterial = const IriTerm('http://schema.org/material');
 
   /// spatialCoverage from schemahttp vocabulary [Expects: http://schema.org/Place]
   ///
@@ -1839,7 +1735,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpSpatialCoverage = IriTerm.prevalidated(
+  static const schemahttpSpatialCoverage = const IriTerm(
     'http://schema.org/spatialCoverage',
   );
 
@@ -1849,7 +1745,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpWorkExample = IriTerm.prevalidated(
+  static const schemahttpWorkExample = const IriTerm(
     'http://schema.org/workExample',
   );
 
@@ -1859,7 +1755,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const schemahttpDescription = IriTerm.prevalidated(
+  static const schemahttpDescription = const IriTerm(
     'http://schema.org/description',
   );
 
@@ -1869,9 +1765,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const schemahttpImage = IriTerm.prevalidated(
-    'http://schema.org/image',
-  );
+  static const schemahttpImage = const IriTerm('http://schema.org/image');
 
   /// hasPart from schemahttp vocabulary [Expects: http://schema.org/CreativeWork]
   ///
@@ -1879,9 +1773,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpHasPart = IriTerm.prevalidated(
-    'http://schema.org/hasPart',
-  );
+  static const schemahttpHasPart = const IriTerm('http://schema.org/hasPart');
 
   /// position from schemahttp vocabulary [Expects: http://schema.org/Integer, http://schema.org/Text]
   ///
@@ -1889,9 +1781,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/ListItem
   ///
-  static const schemahttpPosition = IriTerm.prevalidated(
-    'http://schema.org/position',
-  );
+  static const schemahttpPosition = const IriTerm('http://schema.org/position');
 
   /// isPartOf from schemahttp vocabulary [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -1899,9 +1789,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork
   ///
-  static const schemahttpIsPartOf = IriTerm.prevalidated(
-    'http://schema.org/isPartOf',
-  );
+  static const schemahttpIsPartOf = const IriTerm('http://schema.org/isPartOf');
 
   /// publishingPrinciples from schemahttp vocabulary [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -1912,7 +1800,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Organization, http://schema.org/Person
   ///
-  static const schemahttpPublishingPrinciples = IriTerm.prevalidated(
+  static const schemahttpPublishingPrinciples = const IriTerm(
     'http://schema.org/publishingPrinciples',
   );
 
@@ -1923,7 +1811,7 @@ class FoafImage {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const schemahttpIdentifier = IriTerm.prevalidated(
+  static const schemahttpIdentifier = const IriTerm(
     'http://schema.org/identifier',
   );
 
@@ -1933,7 +1821,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboAuthorList = IriTerm.prevalidated(
+  static const biboAuthorList = const IriTerm(
     'http://purl.org/ontology/bibo/authorList',
   );
 
@@ -1944,7 +1832,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboCitedBy = IriTerm.prevalidated(
+  static const biboCitedBy = const IriTerm(
     'http://purl.org/ontology/bibo/citedBy',
   );
 
@@ -1956,9 +1844,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboCites = IriTerm.prevalidated(
-    'http://purl.org/ontology/bibo/cites',
-  );
+  static const biboCites = const IriTerm('http://purl.org/ontology/bibo/cites');
 
   /// contributorList from bibo vocabulary
   ///
@@ -1966,7 +1852,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboContributorList = IriTerm.prevalidated(
+  static const biboContributorList = const IriTerm(
     'http://purl.org/ontology/bibo/contributorList',
   );
 
@@ -1976,7 +1862,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboEditorList = IriTerm.prevalidated(
+  static const biboEditorList = const IriTerm(
     'http://purl.org/ontology/bibo/editorList',
   );
 
@@ -1986,7 +1872,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboPresentedAt = IriTerm.prevalidated(
+  static const biboPresentedAt = const IriTerm(
     'http://purl.org/ontology/bibo/presentedAt',
   );
 
@@ -1996,7 +1882,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboReproducedIn = IriTerm.prevalidated(
+  static const biboReproducedIn = const IriTerm(
     'http://purl.org/ontology/bibo/reproducedIn',
   );
 
@@ -2006,7 +1892,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboReviewOf = IriTerm.prevalidated(
+  static const biboReviewOf = const IriTerm(
     'http://purl.org/ontology/bibo/reviewOf',
   );
 
@@ -2016,7 +1902,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboStatus = IriTerm.prevalidated(
+  static const biboStatus = const IriTerm(
     'http://purl.org/ontology/bibo/status',
   );
 
@@ -2026,7 +1912,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboTranscriptOf = IriTerm.prevalidated(
+  static const biboTranscriptOf = const IriTerm(
     'http://purl.org/ontology/bibo/transcriptOf',
   );
 
@@ -2036,7 +1922,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboTranslationOf = IriTerm.prevalidated(
+  static const biboTranslationOf = const IriTerm(
     'http://purl.org/ontology/bibo/translationOf',
   );
 
@@ -2046,7 +1932,7 @@ class FoafImage {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 
@@ -2056,7 +1942,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboContent = IriTerm.prevalidated(
+  static const biboContent = const IriTerm(
     'http://purl.org/ontology/bibo/content',
   );
 
@@ -2066,7 +1952,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboEdition = IriTerm.prevalidated(
+  static const biboEdition = const IriTerm(
     'http://purl.org/ontology/bibo/edition',
   );
 
@@ -2076,7 +1962,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboLocator = IriTerm.prevalidated(
+  static const biboLocator = const IriTerm(
     'http://purl.org/ontology/bibo/locator',
   );
 
@@ -2086,7 +1972,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboNumPages = IriTerm.prevalidated(
+  static const biboNumPages = const IriTerm(
     'http://purl.org/ontology/bibo/numPages',
   );
 
@@ -2096,7 +1982,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboNumber = IriTerm.prevalidated(
+  static const biboNumber = const IriTerm(
     'http://purl.org/ontology/bibo/number',
   );
 
@@ -2106,7 +1992,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboPageEnd = IriTerm.prevalidated(
+  static const biboPageEnd = const IriTerm(
     'http://purl.org/ontology/bibo/pageEnd',
   );
 
@@ -2116,7 +2002,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboPageStart = IriTerm.prevalidated(
+  static const biboPageStart = const IriTerm(
     'http://purl.org/ontology/bibo/pageStart',
   );
 
@@ -2126,9 +2012,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboPages = IriTerm.prevalidated(
-    'http://purl.org/ontology/bibo/pages',
-  );
+  static const biboPages = const IriTerm('http://purl.org/ontology/bibo/pages');
 
   /// section from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -2136,7 +2020,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboSection = IriTerm.prevalidated(
+  static const biboSection = const IriTerm(
     'http://purl.org/ontology/bibo/section',
   );
 
@@ -2146,7 +2030,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboShortDescription = IriTerm.prevalidated(
+  static const biboShortDescription = const IriTerm(
     'http://purl.org/ontology/bibo/shortDescription',
   );
 
@@ -2156,7 +2040,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboShortTitle = IriTerm.prevalidated(
+  static const biboShortTitle = const IriTerm(
     'http://purl.org/ontology/bibo/shortTitle',
   );
 
@@ -2166,7 +2050,7 @@ class FoafImage {
   ///
   /// Can be used on: http://purl.org/ontology/bibo/Document
   ///
-  static const biboVolume = IriTerm.prevalidated(
+  static const biboVolume = const IriTerm(
     'http://purl.org/ontology/bibo/volume',
   );
 }

@@ -23,7 +23,7 @@ class Xsd {
   ///
   /// Integer datatype
   ///
-  static const integer = IriTerm.prevalidated(
+  static const integer = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#integer',
   );
 
@@ -31,7 +31,7 @@ class Xsd {
   ///
   /// Integer values greater than zero
   ///
-  static const positiveInteger = IriTerm.prevalidated(
+  static const positiveInteger = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#positiveInteger',
   );
 
@@ -39,7 +39,7 @@ class Xsd {
   ///
   /// Integer values less than zero
   ///
-  static const negativeInteger = IriTerm.prevalidated(
+  static const negativeInteger = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#negativeInteger',
   );
 
@@ -47,7 +47,7 @@ class Xsd {
   ///
   /// Integer values less than or equal to zero
   ///
-  static const nonPositiveInteger = IriTerm.prevalidated(
+  static const nonPositiveInteger = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#nonPositiveInteger',
   );
 
@@ -55,7 +55,7 @@ class Xsd {
   ///
   /// Integer values greater than or equal to zero
   ///
-  static const nonNegativeInteger = IriTerm.prevalidated(
+  static const nonNegativeInteger = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#nonNegativeInteger',
   );
 
@@ -63,39 +63,31 @@ class Xsd {
   ///
   /// 64-bit integer
   ///
-  static const long = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#long',
-  );
+  static const long = const IriTerm('http://www.w3.org/2001/XMLSchema#long');
 
   /// IRI for xsd:int
   ///
   /// 32-bit integer
   ///
-  static const int = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#int',
-  );
+  static const int = const IriTerm('http://www.w3.org/2001/XMLSchema#int');
 
   /// IRI for xsd:short
   ///
   /// 16-bit integer
   ///
-  static const short = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#short',
-  );
+  static const short = const IriTerm('http://www.w3.org/2001/XMLSchema#short');
 
   /// IRI for xsd:byte
   ///
   /// 8-bit integer
   ///
-  static const byte = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#byte',
-  );
+  static const byte = const IriTerm('http://www.w3.org/2001/XMLSchema#byte');
 
   /// IRI for xsd:unsignedLong
   ///
   /// Unsigned 64-bit integer
   ///
-  static const unsignedLong = IriTerm.prevalidated(
+  static const unsignedLong = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#unsignedLong',
   );
 
@@ -103,7 +95,7 @@ class Xsd {
   ///
   /// Unsigned 32-bit integer
   ///
-  static const unsignedInt = IriTerm.prevalidated(
+  static const unsignedInt = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#unsignedInt',
   );
 
@@ -111,7 +103,7 @@ class Xsd {
   ///
   /// Unsigned 16-bit integer
   ///
-  static const unsignedShort = IriTerm.prevalidated(
+  static const unsignedShort = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#unsignedShort',
   );
 
@@ -119,7 +111,7 @@ class Xsd {
   ///
   /// Unsigned 8-bit integer
   ///
-  static const unsignedByte = IriTerm.prevalidated(
+  static const unsignedByte = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#unsignedByte',
   );
 
@@ -127,7 +119,7 @@ class Xsd {
   ///
   /// Date and time with required timezone
   ///
-  static const dateTimeStamp = IriTerm.prevalidated(
+  static const dateTimeStamp = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#dateTimeStamp',
   );
 
@@ -135,7 +127,7 @@ class Xsd {
   ///
   /// Duration limited to year-month (PnYnM)
   ///
-  static const yearMonthDuration = IriTerm.prevalidated(
+  static const yearMonthDuration = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#yearMonthDuration',
   );
 
@@ -143,7 +135,7 @@ class Xsd {
   ///
   /// Duration limited to day-time (PnDTnHnMnS)
   ///
-  static const dayTimeDuration = IriTerm.prevalidated(
+  static const dayTimeDuration = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#dayTimeDuration',
   );
 
@@ -151,7 +143,7 @@ class Xsd {
   ///
   /// String with normalized whitespace
   ///
-  static const normalizedString = IriTerm.prevalidated(
+  static const normalizedString = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#normalizedString',
   );
 
@@ -159,23 +151,19 @@ class Xsd {
   ///
   /// String with normalized whitespace, no leading/trailing whitespace
   ///
-  static const token = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#token',
-  );
+  static const token = const IriTerm('http://www.w3.org/2001/XMLSchema#token');
 
   /// IRI for xsd:Name
   ///
   /// XML Name
   ///
-  static const Name = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#Name',
-  );
+  static const Name = const IriTerm('http://www.w3.org/2001/XMLSchema#Name');
 
   /// IRI for xsd:NCName
   ///
   /// XML non-colonized Name
   ///
-  static const NCName = IriTerm.prevalidated(
+  static const NCName = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#NCName',
   );
 
@@ -183,7 +171,7 @@ class Xsd {
   ///
   /// XML NMTOKEN
   ///
-  static const NMTOKEN = IriTerm.prevalidated(
+  static const NMTOKEN = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#NMTOKEN',
   );
 
@@ -191,21 +179,19 @@ class Xsd {
   ///
   /// XML ID
   ///
-  static const ID = IriTerm.prevalidated('http://www.w3.org/2001/XMLSchema#ID');
+  static const ID = const IriTerm('http://www.w3.org/2001/XMLSchema#ID');
 
   /// IRI for xsd:IDREF
   ///
   /// XML IDREF
   ///
-  static const IDREF = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#IDREF',
-  );
+  static const IDREF = const IriTerm('http://www.w3.org/2001/XMLSchema#IDREF');
 
   /// IRI for xsd:string
   ///
   /// String datatype
   ///
-  static const string = IriTerm.prevalidated(
+  static const string = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#string',
   );
 
@@ -213,7 +199,7 @@ class Xsd {
   ///
   /// Boolean datatype (true/false)
   ///
-  static const boolean = IriTerm.prevalidated(
+  static const boolean = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#boolean',
   );
 
@@ -221,7 +207,7 @@ class Xsd {
   ///
   /// Decimal datatype
   ///
-  static const decimal = IriTerm.prevalidated(
+  static const decimal = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#decimal',
   );
 
@@ -229,15 +215,13 @@ class Xsd {
   ///
   /// 32-bit floating point
   ///
-  static const float = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#float',
-  );
+  static const float = const IriTerm('http://www.w3.org/2001/XMLSchema#float');
 
   /// IRI for xsd:double
   ///
   /// 64-bit floating point
   ///
-  static const double = IriTerm.prevalidated(
+  static const double = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#double',
   );
 
@@ -245,23 +229,19 @@ class Xsd {
   ///
   /// Date value (YYYY-MM-DD)
   ///
-  static const date = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#date',
-  );
+  static const date = const IriTerm('http://www.w3.org/2001/XMLSchema#date');
 
   /// IRI for xsd:time
   ///
   /// Time value (hh:mm:ss)
   ///
-  static const time = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#time',
-  );
+  static const time = const IriTerm('http://www.w3.org/2001/XMLSchema#time');
 
   /// IRI for xsd:dateTime
   ///
   /// Date and time value (YYYY-MM-DDThh:mm:ss)
   ///
-  static const dateTime = IriTerm.prevalidated(
+  static const dateTime = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#dateTime',
   );
 
@@ -269,15 +249,13 @@ class Xsd {
   ///
   /// Gregorian calendar year (YYYY)
   ///
-  static const gYear = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#gYear',
-  );
+  static const gYear = const IriTerm('http://www.w3.org/2001/XMLSchema#gYear');
 
   /// IRI for xsd:gMonth
   ///
   /// Gregorian calendar month (--MM--)
   ///
-  static const gMonth = IriTerm.prevalidated(
+  static const gMonth = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#gMonth',
   );
 
@@ -285,15 +263,13 @@ class Xsd {
   ///
   /// Gregorian calendar day of month (---DD)
   ///
-  static const gDay = IriTerm.prevalidated(
-    'http://www.w3.org/2001/XMLSchema#gDay',
-  );
+  static const gDay = const IriTerm('http://www.w3.org/2001/XMLSchema#gDay');
 
   /// IRI for xsd:gYearMonth
   ///
   /// Gregorian calendar year and month (YYYY-MM)
   ///
-  static const gYearMonth = IriTerm.prevalidated(
+  static const gYearMonth = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#gYearMonth',
   );
 
@@ -301,7 +277,7 @@ class Xsd {
   ///
   /// Gregorian calendar month and day (--MM-DD)
   ///
-  static const gMonthDay = IriTerm.prevalidated(
+  static const gMonthDay = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#gMonthDay',
   );
 
@@ -309,7 +285,7 @@ class Xsd {
   ///
   /// Duration value (PnYnMnDTnHnMnS)
   ///
-  static const duration = IriTerm.prevalidated(
+  static const duration = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#duration',
   );
 
@@ -317,7 +293,7 @@ class Xsd {
   ///
   /// Hex-encoded binary data
   ///
-  static const hexBinary = IriTerm.prevalidated(
+  static const hexBinary = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#hexBinary',
   );
 
@@ -325,7 +301,7 @@ class Xsd {
   ///
   /// Base64-encoded binary data
   ///
-  static const base64Binary = IriTerm.prevalidated(
+  static const base64Binary = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#base64Binary',
   );
 
@@ -333,7 +309,7 @@ class Xsd {
   ///
   /// Uniform Resource Identifier
   ///
-  static const anyURI = IriTerm.prevalidated(
+  static const anyURI = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#anyURI',
   );
 
@@ -341,7 +317,7 @@ class Xsd {
   ///
   /// Language tag (as per BCP 47)
   ///
-  static const language = IriTerm.prevalidated(
+  static const language = const IriTerm(
     'http://www.w3.org/2001/XMLSchema#language',
   );
 }

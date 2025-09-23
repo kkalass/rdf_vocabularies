@@ -25,7 +25,7 @@ class SchemaHttpUniversalProperties {
   ///
   /// This property is deprecated, alongside the UserInteraction types on which it depended.
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -33,5 +33,5 @@ class SchemaHttpUniversalProperties {
   ///
   ///
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 }

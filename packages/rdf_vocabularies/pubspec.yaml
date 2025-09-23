@@ -22,7 +22,7 @@ dependencies:
   rdf_vocabularies_core: ^0.4.4
   rdf_vocabularies_schema: ^0.4.4
   rdf_vocabularies_schema_http: ^0.4.4
-  rdf_core: ^0.9.11
+  rdf_core: ^0.9.15
 
 dev_dependencies:
   test: ^1.21.0

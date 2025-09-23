@@ -27,7 +27,7 @@ class SchemaBoatTrip {
 
   /// IRI term for the BoatTrip class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated('https://schema.org/BoatTrip');
+  static const classIri = const IriTerm('https://schema.org/BoatTrip');
 
   /// additionalType [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -36,7 +36,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -46,7 +46,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/BoatTrip
   ///
-  static const arrivalBoatTerminal = IriTerm.prevalidated(
+  static const arrivalBoatTerminal = const IriTerm(
     'https://schema.org/arrivalBoatTerminal',
   );
 
@@ -56,9 +56,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Trip
   ///
-  static const arrivalTime = IriTerm.prevalidated(
-    'https://schema.org/arrivalTime',
-  );
+  static const arrivalTime = const IriTerm('https://schema.org/arrivalTime');
 
   /// departureBoatTerminal [Expects: https://schema.org/BoatTerminal]
   ///
@@ -66,7 +64,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/BoatTrip
   ///
-  static const departureBoatTerminal = IriTerm.prevalidated(
+  static const departureBoatTerminal = const IriTerm(
     'https://schema.org/departureBoatTerminal',
   );
 
@@ -76,7 +74,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Trip
   ///
-  static const departureTime = IriTerm.prevalidated(
+  static const departureTime = const IriTerm(
     'https://schema.org/departureTime',
   );
 
@@ -86,7 +84,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -96,7 +94,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -106,7 +104,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Trip
   ///
-  static const itinerary = IriTerm.prevalidated('https://schema.org/itinerary');
+  static const itinerary = const IriTerm('https://schema.org/itinerary');
 
   /// name [Expects: https://schema.org/Text]
   ///
@@ -114,7 +112,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// potentialAction [Expects: https://schema.org/Action]
   ///
@@ -122,7 +120,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -132,7 +130,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// tripOrigin [Expects: https://schema.org/Place]
   ///
@@ -140,9 +138,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Trip
   ///
-  static const tripOrigin = IriTerm.prevalidated(
-    'https://schema.org/tripOrigin',
-  );
+  static const tripOrigin = const IriTerm('https://schema.org/tripOrigin');
 
   /// url [Expects: https://schema.org/URL]
   ///
@@ -150,7 +146,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// alternateName [Expects: https://schema.org/Text]
   ///
@@ -158,7 +154,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -168,7 +164,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -179,7 +175,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/AggregateOffer, https://schema.org/CreativeWork, https://schema.org/EducationalOccupationalProgram, https://schema.org/Event, https://schema.org/MenuItem, https://schema.org/Product, https://schema.org/Service, https://schema.org/Trip
   ///
-  static const offers = IriTerm.prevalidated('https://schema.org/offers');
+  static const offers = const IriTerm('https://schema.org/offers');
 
   /// partOfTrip [Expects: https://schema.org/Trip]
   ///
@@ -187,9 +183,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Trip
   ///
-  static const partOfTrip = IriTerm.prevalidated(
-    'https://schema.org/partOfTrip',
-  );
+  static const partOfTrip = const IriTerm('https://schema.org/partOfTrip');
 
   /// provider [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -197,7 +191,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Action, https://schema.org/CreativeWork, https://schema.org/EducationalOccupationalProgram, https://schema.org/FinancialIncentive, https://schema.org/Invoice, https://schema.org/ParcelDelivery, https://schema.org/Reservation, https://schema.org/Service, https://schema.org/Trip
   ///
-  static const provider = IriTerm.prevalidated('https://schema.org/provider');
+  static const provider = const IriTerm('https://schema.org/provider');
 
   /// subTrip [Expects: https://schema.org/Trip]
   ///
@@ -205,7 +199,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Trip
   ///
-  static const subTrip = IriTerm.prevalidated('https://schema.org/subTrip');
+  static const subTrip = const IriTerm('https://schema.org/subTrip');
 
   /// subjectOf [Expects: https://schema.org/CreativeWork, https://schema.org/Event]
   ///
@@ -213,7 +207,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -221,9 +215,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -231,7 +223,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -240,9 +232,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -250,7 +240,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -258,7 +248,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -268,7 +258,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -278,7 +268,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -288,7 +278,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -298,7 +288,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -308,7 +298,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -318,7 +308,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -328,7 +318,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -338,7 +328,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -348,7 +338,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -358,7 +348,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -368,7 +358,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -378,7 +368,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -388,7 +378,7 @@ class SchemaBoatTrip {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

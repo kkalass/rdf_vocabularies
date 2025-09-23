@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.5] - 2025-09-23
+
+### Changed
+- **Dependency updates**: Updated rdf_core to ^0.9.15 and rdf_vocabulary_to_dart to ^0.9.2
+- **Vocabulary regeneration**: Regenerated all Schema.org HTTP vocabulary files with latest code generation improvements
+  - Enhanced code generation with improved type safety and documentation
+  - Updated all Schema.org class definitions with latest specifications (HTTP variant)
+  - Refreshed vocabulary structure for better performance and maintainability
+- **Code quality improvements**: Applied latest linting rules and formatting standards
+
 ## [0.4.4] - 2025-08-11
 
 ### Fixed

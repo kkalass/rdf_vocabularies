@@ -25,7 +25,7 @@ class VcardEmail {
 
   /// IRI term for the Email class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
+  static const classIri = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#Email',
   );
 
@@ -35,9 +35,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const adr = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#adr',
-  );
+  static const adr = const IriTerm('http://www.w3.org/2006/vcard/ns#adr');
 
   /// agent
   ///
@@ -45,9 +43,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const agent = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#agent',
-  );
+  static const agent = const IriTerm('http://www.w3.org/2006/vcard/ns#agent');
 
   /// email
   ///
@@ -55,9 +51,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const email = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#email',
-  );
+  static const email = const IriTerm('http://www.w3.org/2006/vcard/ns#email');
 
   /// geo
   ///
@@ -65,9 +59,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const geo = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#geo',
-  );
+  static const geo = const IriTerm('http://www.w3.org/2006/vcard/ns#geo');
 
   /// hasAdditionalName
   ///
@@ -75,7 +67,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasAdditionalName = IriTerm.prevalidated(
+  static const hasAdditionalName = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasAdditionalName',
   );
 
@@ -85,7 +77,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasAddress = IriTerm.prevalidated(
+  static const hasAddress = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasAddress',
   );
 
@@ -95,7 +87,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasCalendarBusy = IriTerm.prevalidated(
+  static const hasCalendarBusy = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasCalendarBusy',
   );
 
@@ -105,7 +97,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasCalendarLink = IriTerm.prevalidated(
+  static const hasCalendarLink = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasCalendarLink',
   );
 
@@ -115,7 +107,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasCalendarRequest = IriTerm.prevalidated(
+  static const hasCalendarRequest = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasCalendarRequest',
   );
 
@@ -125,7 +117,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasCategory = IriTerm.prevalidated(
+  static const hasCategory = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasCategory',
   );
 
@@ -135,7 +127,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasCountryName = IriTerm.prevalidated(
+  static const hasCountryName = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasCountryName',
   );
 
@@ -145,7 +137,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasEmail = IriTerm.prevalidated(
+  static const hasEmail = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasEmail',
   );
 
@@ -155,9 +147,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasFN = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#hasFN',
-  );
+  static const hasFN = const IriTerm('http://www.w3.org/2006/vcard/ns#hasFN');
 
   /// hasFamilyName
   ///
@@ -165,7 +155,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasFamilyName = IriTerm.prevalidated(
+  static const hasFamilyName = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasFamilyName',
   );
 
@@ -175,7 +165,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasGender = IriTerm.prevalidated(
+  static const hasGender = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasGender',
   );
 
@@ -185,9 +175,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasGeo = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#hasGeo',
-  );
+  static const hasGeo = const IriTerm('http://www.w3.org/2006/vcard/ns#hasGeo');
 
   /// hasGivenName
   ///
@@ -195,7 +183,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasGivenName = IriTerm.prevalidated(
+  static const hasGivenName = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasGivenName',
   );
 
@@ -205,7 +193,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasHonorificPrefix = IriTerm.prevalidated(
+  static const hasHonorificPrefix = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasHonorificPrefix',
   );
 
@@ -215,7 +203,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasHonorificSuffix = IriTerm.prevalidated(
+  static const hasHonorificSuffix = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasHonorificSuffix',
   );
 
@@ -225,7 +213,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasInstantMessage = IriTerm.prevalidated(
+  static const hasInstantMessage = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasInstantMessage',
   );
 
@@ -235,9 +223,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasKey = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#hasKey',
-  );
+  static const hasKey = const IriTerm('http://www.w3.org/2006/vcard/ns#hasKey');
 
   /// hasLanguage
   ///
@@ -245,7 +231,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasLanguage = IriTerm.prevalidated(
+  static const hasLanguage = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasLanguage',
   );
 
@@ -255,7 +241,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasLocality = IriTerm.prevalidated(
+  static const hasLocality = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasLocality',
   );
 
@@ -265,7 +251,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasLogo = IriTerm.prevalidated(
+  static const hasLogo = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasLogo',
   );
 
@@ -275,7 +261,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasName = IriTerm.prevalidated(
+  static const hasName = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasName',
   );
 
@@ -287,7 +273,7 @@ class VcardEmail {
   ///
   /// [See also](http://www.w3.org/2006/vcard/ns#nickname)
   ///
-  static const hasNickname = IriTerm.prevalidated(
+  static const hasNickname = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasNickname',
   );
 
@@ -297,7 +283,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasNote = IriTerm.prevalidated(
+  static const hasNote = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasNote',
   );
 
@@ -307,7 +293,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasOrganizationName = IriTerm.prevalidated(
+  static const hasOrganizationName = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasOrganizationName',
   );
 
@@ -317,7 +303,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasOrganizationUnit = IriTerm.prevalidated(
+  static const hasOrganizationUnit = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasOrganizationUnit',
   );
 
@@ -327,7 +313,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasPhoto = IriTerm.prevalidated(
+  static const hasPhoto = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasPhoto',
   );
 
@@ -337,7 +323,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasPostalCode = IriTerm.prevalidated(
+  static const hasPostalCode = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasPostalCode',
   );
 
@@ -347,7 +333,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasRegion = IriTerm.prevalidated(
+  static const hasRegion = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasRegion',
   );
 
@@ -357,7 +343,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasRelated = IriTerm.prevalidated(
+  static const hasRelated = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasRelated',
   );
 
@@ -367,7 +353,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasRole = IriTerm.prevalidated(
+  static const hasRole = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasRole',
   );
 
@@ -377,7 +363,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasSound = IriTerm.prevalidated(
+  static const hasSound = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasSound',
   );
 
@@ -387,7 +373,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasSource = IriTerm.prevalidated(
+  static const hasSource = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasSource',
   );
 
@@ -397,7 +383,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasStreetAddress = IriTerm.prevalidated(
+  static const hasStreetAddress = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasStreetAddress',
   );
 
@@ -407,7 +393,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasTelephone = IriTerm.prevalidated(
+  static const hasTelephone = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasTelephone',
   );
 
@@ -417,7 +403,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasTitle = IriTerm.prevalidated(
+  static const hasTitle = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasTitle',
   );
 
@@ -427,9 +413,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasUID = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#hasUID',
-  );
+  static const hasUID = const IriTerm('http://www.w3.org/2006/vcard/ns#hasUID');
 
   /// hasURL
   ///
@@ -437,9 +421,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasURL = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#hasURL',
-  );
+  static const hasURL = const IriTerm('http://www.w3.org/2006/vcard/ns#hasURL');
 
   /// hasValue
   ///
@@ -447,7 +429,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasValue = IriTerm.prevalidated(
+  static const hasValue = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#hasValue',
   );
 
@@ -457,9 +439,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const key = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#key',
-  );
+  static const key = const IriTerm('http://www.w3.org/2006/vcard/ns#key');
 
   /// logo
   ///
@@ -467,9 +447,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const logo = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#logo',
-  );
+  static const logo = const IriTerm('http://www.w3.org/2006/vcard/ns#logo');
 
   /// n
   ///
@@ -477,7 +455,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const n = IriTerm.prevalidated('http://www.w3.org/2006/vcard/ns#n');
+  static const n = const IriTerm('http://www.w3.org/2006/vcard/ns#n');
 
   /// org
   ///
@@ -485,9 +463,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const org = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#org',
-  );
+  static const org = const IriTerm('http://www.w3.org/2006/vcard/ns#org');
 
   /// photo
   ///
@@ -495,9 +471,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const photo = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#photo',
-  );
+  static const photo = const IriTerm('http://www.w3.org/2006/vcard/ns#photo');
 
   /// sound
   ///
@@ -505,9 +479,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const sound = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#sound',
-  );
+  static const sound = const IriTerm('http://www.w3.org/2006/vcard/ns#sound');
 
   /// tel
   ///
@@ -515,9 +487,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const tel = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#tel',
-  );
+  static const tel = const IriTerm('http://www.w3.org/2006/vcard/ns#tel');
 
   /// url
   ///
@@ -525,9 +495,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const url = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#url',
-  );
+  static const url = const IriTerm('http://www.w3.org/2006/vcard/ns#url');
 
   /// additional_name [Expects: http://www.w3.org/2001/XMLSchema#string]
   ///
@@ -535,7 +503,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const additional_name = IriTerm.prevalidated(
+  static const additional_name = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#additional-name',
   );
 
@@ -545,7 +513,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const anniversary = IriTerm.prevalidated(
+  static const anniversary = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#anniversary',
   );
 
@@ -555,9 +523,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const bday = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#bday',
-  );
+  static const bday = const IriTerm('http://www.w3.org/2006/vcard/ns#bday');
 
   /// category [Expects: http://www.w3.org/2001/XMLSchema#string]
   ///
@@ -565,7 +531,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const category = IriTerm.prevalidated(
+  static const category = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#category',
   );
 
@@ -575,9 +541,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const class_ = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#class',
-  );
+  static const class_ = const IriTerm('http://www.w3.org/2006/vcard/ns#class');
 
   /// country_name [Expects: http://www.w3.org/2001/XMLSchema#string]
   ///
@@ -585,7 +549,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const country_name = IriTerm.prevalidated(
+  static const country_name = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#country-name',
   );
 
@@ -595,7 +559,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const extended_address = IriTerm.prevalidated(
+  static const extended_address = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#extended-address',
   );
 
@@ -605,7 +569,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const family_name = IriTerm.prevalidated(
+  static const family_name = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#family-name',
   );
 
@@ -615,7 +579,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const fn = IriTerm.prevalidated('http://www.w3.org/2006/vcard/ns#fn');
+  static const fn = const IriTerm('http://www.w3.org/2006/vcard/ns#fn');
 
   /// given_name [Expects: http://www.w3.org/2001/XMLSchema#string]
   ///
@@ -623,7 +587,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const given_name = IriTerm.prevalidated(
+  static const given_name = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#given-name',
   );
 
@@ -633,7 +597,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const honorific_prefix = IriTerm.prevalidated(
+  static const honorific_prefix = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#honorific-prefix',
   );
 
@@ -643,7 +607,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const honorific_suffix = IriTerm.prevalidated(
+  static const honorific_suffix = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#honorific-suffix',
   );
 
@@ -653,9 +617,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const label = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#label',
-  );
+  static const label = const IriTerm('http://www.w3.org/2006/vcard/ns#label');
 
   /// language
   ///
@@ -663,7 +625,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const language = IriTerm.prevalidated(
+  static const language = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#language',
   );
 
@@ -673,7 +635,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const latitude = IriTerm.prevalidated(
+  static const latitude = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#latitude',
   );
 
@@ -683,7 +645,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const locality = IriTerm.prevalidated(
+  static const locality = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#locality',
   );
 
@@ -693,7 +655,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const longitude = IriTerm.prevalidated(
+  static const longitude = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#longitude',
   );
 
@@ -703,9 +665,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const mailer = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#mailer',
-  );
+  static const mailer = const IriTerm('http://www.w3.org/2006/vcard/ns#mailer');
 
   /// nickname [Expects: http://www.w3.org/2001/XMLSchema#string]
   ///
@@ -713,7 +673,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const nickname = IriTerm.prevalidated(
+  static const nickname = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#nickname',
   );
 
@@ -723,9 +683,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const note = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#note',
-  );
+  static const note = const IriTerm('http://www.w3.org/2006/vcard/ns#note');
 
   /// organization_name [Expects: http://www.w3.org/2001/XMLSchema#string]
   ///
@@ -733,7 +691,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const organization_name = IriTerm.prevalidated(
+  static const organization_name = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#organization-name',
   );
 
@@ -743,7 +701,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const organization_unit = IriTerm.prevalidated(
+  static const organization_unit = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#organization-unit',
   );
 
@@ -753,7 +711,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const post_office_box = IriTerm.prevalidated(
+  static const post_office_box = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#post-office-box',
   );
 
@@ -763,7 +721,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const postal_code = IriTerm.prevalidated(
+  static const postal_code = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#postal-code',
   );
 
@@ -773,9 +731,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const prodid = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#prodid',
-  );
+  static const prodid = const IriTerm('http://www.w3.org/2006/vcard/ns#prodid');
 
   /// region [Expects: http://www.w3.org/2001/XMLSchema#string]
   ///
@@ -783,9 +739,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const region = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#region',
-  );
+  static const region = const IriTerm('http://www.w3.org/2006/vcard/ns#region');
 
   /// rev [Expects: http://www.w3.org/2001/XMLSchema#dateTime]
   ///
@@ -793,9 +747,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const rev = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#rev',
-  );
+  static const rev = const IriTerm('http://www.w3.org/2006/vcard/ns#rev');
 
   /// role [Expects: http://www.w3.org/2001/XMLSchema#string]
   ///
@@ -803,9 +755,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const role = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#role',
-  );
+  static const role = const IriTerm('http://www.w3.org/2006/vcard/ns#role');
 
   /// sort_string [Expects: http://www.w3.org/2001/XMLSchema#string]
   ///
@@ -813,7 +763,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const sort_string = IriTerm.prevalidated(
+  static const sort_string = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#sort-string',
   );
 
@@ -823,7 +773,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const street_address = IriTerm.prevalidated(
+  static const street_address = const IriTerm(
     'http://www.w3.org/2006/vcard/ns#street-address',
   );
 
@@ -833,9 +783,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const title = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#title',
-  );
+  static const title = const IriTerm('http://www.w3.org/2006/vcard/ns#title');
 
   /// tz [Expects: http://www.w3.org/2001/XMLSchema#string]
   ///
@@ -843,7 +791,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const tz = IriTerm.prevalidated('http://www.w3.org/2006/vcard/ns#tz');
+  static const tz = const IriTerm('http://www.w3.org/2006/vcard/ns#tz');
 
   /// value
   ///
@@ -851,9 +799,7 @@ class VcardEmail {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const value = IriTerm.prevalidated(
-    'http://www.w3.org/2006/vcard/ns#value',
-  );
+  static const value = const IriTerm('http://www.w3.org/2006/vcard/ns#value');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -861,7 +807,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -871,7 +817,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -881,7 +827,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -891,7 +837,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -901,7 +847,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -911,7 +857,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -921,7 +867,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -931,7 +877,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -941,7 +887,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -951,7 +897,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -961,7 +907,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlBottomDataProperty = IriTerm.prevalidated(
+  static const owlBottomDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomDataProperty',
   );
 
@@ -971,7 +917,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlBottomObjectProperty = IriTerm.prevalidated(
+  static const owlBottomObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomObjectProperty',
   );
 
@@ -981,7 +927,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -991,7 +937,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlDifferentFrom = IriTerm.prevalidated(
+  static const owlDifferentFrom = const IriTerm(
     'http://www.w3.org/2002/07/owl#differentFrom',
   );
 
@@ -1001,7 +947,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -1011,7 +957,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlSameAs = IriTerm.prevalidated(
+  static const owlSameAs = const IriTerm(
     'http://www.w3.org/2002/07/owl#sameAs',
   );
 
@@ -1021,7 +967,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlTopDataProperty = IriTerm.prevalidated(
+  static const owlTopDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topDataProperty',
   );
 
@@ -1031,7 +977,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlTopObjectProperty = IriTerm.prevalidated(
+  static const owlTopObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topObjectProperty',
   );
 
@@ -1041,7 +987,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -1051,9 +997,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafName = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/name',
-  );
+  static const foafName = const IriTerm('http://xmlns.com/foaf/0.1/name');
 
   /// homepage from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -1061,7 +1005,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafHomepage = IriTerm.prevalidated(
+  static const foafHomepage = const IriTerm(
     'http://xmlns.com/foaf/0.1/homepage',
   );
 
@@ -1072,9 +1016,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafMaker = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/maker',
-  );
+  static const foafMaker = const IriTerm('http://xmlns.com/foaf/0.1/maker');
 
   /// depiction from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Image]
   ///
@@ -1082,7 +1024,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafDepiction = IriTerm.prevalidated(
+  static const foafDepiction = const IriTerm(
     'http://xmlns.com/foaf/0.1/depiction',
   );
 
@@ -1092,7 +1034,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafFundedBy = IriTerm.prevalidated(
+  static const foafFundedBy = const IriTerm(
     'http://xmlns.com/foaf/0.1/fundedBy',
   );
 
@@ -1102,9 +1044,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafLogo = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/logo',
-  );
+  static const foafLogo = const IriTerm('http://xmlns.com/foaf/0.1/logo');
 
   /// page from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -1112,9 +1052,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafPage = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/page',
-  );
+  static const foafPage = const IriTerm('http://xmlns.com/foaf/0.1/page');
 
   /// theme from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -1122,9 +1060,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafTheme = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/theme',
-  );
+  static const foafTheme = const IriTerm('http://xmlns.com/foaf/0.1/theme');
 
   /// abstract_ from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -1132,7 +1068,7 @@ class VcardEmail {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

@@ -593,6 +593,7 @@ export 'classes/officeequipmentstore.dart';
 export 'classes/ondemandevent.dart';
 export 'classes/oncologic.dart';
 export 'classes/onlinebusiness.dart';
+export 'classes/onlinemarketplace.dart';
 export 'classes/onlinestore.dart';
 export 'classes/openinghoursspecification.dart';
 export 'classes/opinionnewsarticle.dart';

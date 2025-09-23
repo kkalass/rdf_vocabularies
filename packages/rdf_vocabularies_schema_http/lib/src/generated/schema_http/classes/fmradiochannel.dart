@@ -28,9 +28,7 @@ class SchemaHttpFMRadioChannel {
 
   /// IRI term for the FMRadioChannel class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'http://schema.org/FMRadioChannel',
-  );
+  static const classIri = const IriTerm('http://schema.org/FMRadioChannel');
 
   /// additionalType [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -39,7 +37,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -49,7 +47,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/BroadcastChannel
   ///
-  static const broadcastChannelId = IriTerm.prevalidated(
+  static const broadcastChannelId = const IriTerm(
     'http://schema.org/broadcastChannelId',
   );
 
@@ -59,7 +57,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/BroadcastChannel, http://schema.org/BroadcastService
   ///
-  static const broadcastFrequency = IriTerm.prevalidated(
+  static const broadcastFrequency = const IriTerm(
     'http://schema.org/broadcastFrequency',
   );
 
@@ -69,7 +67,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/BroadcastChannel
   ///
-  static const broadcastServiceTier = IriTerm.prevalidated(
+  static const broadcastServiceTier = const IriTerm(
     'http://schema.org/broadcastServiceTier',
   );
 
@@ -79,7 +77,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -89,7 +87,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/BroadcastChannel
   ///
-  static const inBroadcastLineup = IriTerm.prevalidated(
+  static const inBroadcastLineup = const IriTerm(
     'http://schema.org/inBroadcastLineup',
   );
 
@@ -99,7 +97,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -109,7 +107,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('http://schema.org/name');
+  static const name = const IriTerm('http://schema.org/name');
 
   /// potentialAction [Expects: http://schema.org/Action]
   ///
@@ -117,7 +115,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -127,7 +125,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('http://schema.org/sameAs');
+  static const sameAs = const IriTerm('http://schema.org/sameAs');
 
   /// url [Expects: http://schema.org/URL]
   ///
@@ -135,7 +133,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('http://schema.org/url');
+  static const url = const IriTerm('http://schema.org/url');
 
   /// alternateName [Expects: http://schema.org/Text]
   ///
@@ -143,9 +141,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
-    'http://schema.org/alternateName',
-  );
+  static const alternateName = const IriTerm('http://schema.org/alternateName');
 
   /// genre [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -153,7 +149,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/BroadcastChannel, http://schema.org/CreativeWork, http://schema.org/MusicGroup
   ///
-  static const genre = IriTerm.prevalidated('http://schema.org/genre');
+  static const genre = const IriTerm('http://schema.org/genre');
 
   /// mainEntityOfPage [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -161,7 +157,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -171,7 +167,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/BroadcastChannel
   ///
-  static const providesBroadcastService = IriTerm.prevalidated(
+  static const providesBroadcastService = const IriTerm(
     'http://schema.org/providesBroadcastService',
   );
 
@@ -181,7 +177,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('http://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('http://schema.org/subjectOf');
 
   /// description [Expects: http://schema.org/Text, http://schema.org/TextObject]
   ///
@@ -189,9 +185,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'http://schema.org/description',
-  );
+  static const description = const IriTerm('http://schema.org/description');
 
   /// image [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -199,7 +193,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('http://schema.org/image');
+  static const image = const IriTerm('http://schema.org/image');
 
   /// identifier [Expects: http://schema.org/PropertyValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -208,9 +202,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'http://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('http://schema.org/identifier');
 
   /// source
   ///
@@ -218,7 +210,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -226,7 +218,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -236,7 +228,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -246,7 +238,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -256,7 +248,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -266,7 +258,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -276,7 +268,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -286,7 +278,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -296,7 +288,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -306,7 +298,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -316,7 +308,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -326,7 +318,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -336,7 +328,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -346,7 +338,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -356,7 +348,7 @@ class SchemaHttpFMRadioChannel {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

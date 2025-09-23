@@ -26,9 +26,7 @@ class SchemaHttpMedicalCondition {
 
   /// IRI term for the MedicalCondition class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'http://schema.org/MedicalCondition',
-  );
+  static const classIri = const IriTerm('http://schema.org/MedicalCondition');
 
   /// additionalType [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -37,7 +35,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -47,7 +45,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition, http://schema.org/PhysicalActivity
   ///
-  static const associatedAnatomy = IriTerm.prevalidated(
+  static const associatedAnatomy = const IriTerm(
     'http://schema.org/associatedAnatomy',
   );
 
@@ -57,7 +55,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalEntity
   ///
-  static const code = IriTerm.prevalidated('http://schema.org/code');
+  static const code = const IriTerm('http://schema.org/code');
 
   /// differentialDiagnosis [Expects: http://schema.org/DDxElement]
   ///
@@ -65,7 +63,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition
   ///
-  static const differentialDiagnosis = IriTerm.prevalidated(
+  static const differentialDiagnosis = const IriTerm(
     'http://schema.org/differentialDiagnosis',
   );
 
@@ -75,7 +73,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -85,7 +83,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/DrugClass, http://schema.org/MedicalCondition, http://schema.org/Patient, http://schema.org/TherapeuticProcedure
   ///
-  static const drug = IriTerm.prevalidated('http://schema.org/drug');
+  static const drug = const IriTerm('http://schema.org/drug');
 
   /// epidemiology [Expects: http://schema.org/Text]
   ///
@@ -93,9 +91,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition, http://schema.org/PhysicalActivity
   ///
-  static const epidemiology = IriTerm.prevalidated(
-    'http://schema.org/epidemiology',
-  );
+  static const epidemiology = const IriTerm('http://schema.org/epidemiology');
 
   /// expectedPrognosis [Expects: http://schema.org/Text]
   ///
@@ -103,7 +99,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition
   ///
-  static const expectedPrognosis = IriTerm.prevalidated(
+  static const expectedPrognosis = const IriTerm(
     'http://schema.org/expectedPrognosis',
   );
 
@@ -113,7 +109,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalEntity
   ///
-  static const guideline = IriTerm.prevalidated('http://schema.org/guideline');
+  static const guideline = const IriTerm('http://schema.org/guideline');
 
   /// interactionCount
   ///
@@ -121,7 +117,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -131,9 +127,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/DietarySupplement, http://schema.org/Drug, http://schema.org/MedicalEntity
   ///
-  static const legalStatus = IriTerm.prevalidated(
-    'http://schema.org/legalStatus',
-  );
+  static const legalStatus = const IriTerm('http://schema.org/legalStatus');
 
   /// medicineSystem [Expects: http://schema.org/MedicineSystem]
   ///
@@ -141,7 +135,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalEntity
   ///
-  static const medicineSystem = IriTerm.prevalidated(
+  static const medicineSystem = const IriTerm(
     'http://schema.org/medicineSystem',
   );
 
@@ -151,7 +145,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('http://schema.org/name');
+  static const name = const IriTerm('http://schema.org/name');
 
   /// naturalProgression [Expects: http://schema.org/Text]
   ///
@@ -159,7 +153,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition
   ///
-  static const naturalProgression = IriTerm.prevalidated(
+  static const naturalProgression = const IriTerm(
     'http://schema.org/naturalProgression',
   );
 
@@ -169,7 +163,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition, http://schema.org/PhysicalActivity
   ///
-  static const pathophysiology = IriTerm.prevalidated(
+  static const pathophysiology = const IriTerm(
     'http://schema.org/pathophysiology',
   );
 
@@ -179,7 +173,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition
   ///
-  static const possibleComplication = IriTerm.prevalidated(
+  static const possibleComplication = const IriTerm(
     'http://schema.org/possibleComplication',
   );
 
@@ -189,7 +183,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition, http://schema.org/MedicalSignOrSymptom
   ///
-  static const possibleTreatment = IriTerm.prevalidated(
+  static const possibleTreatment = const IriTerm(
     'http://schema.org/possibleTreatment',
   );
 
@@ -199,7 +193,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -209,7 +203,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition
   ///
-  static const primaryPrevention = IriTerm.prevalidated(
+  static const primaryPrevention = const IriTerm(
     'http://schema.org/primaryPrevention',
   );
 
@@ -219,7 +213,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalEntity
   ///
-  static const recognizingAuthority = IriTerm.prevalidated(
+  static const recognizingAuthority = const IriTerm(
     'http://schema.org/recognizingAuthority',
   );
 
@@ -229,7 +223,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalEntity
   ///
-  static const relevantSpecialty = IriTerm.prevalidated(
+  static const relevantSpecialty = const IriTerm(
     'http://schema.org/relevantSpecialty',
   );
 
@@ -239,9 +233,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition
   ///
-  static const riskFactor = IriTerm.prevalidated(
-    'http://schema.org/riskFactor',
-  );
+  static const riskFactor = const IriTerm('http://schema.org/riskFactor');
 
   /// sameAs [Expects: http://schema.org/URL]
   ///
@@ -249,7 +241,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('http://schema.org/sameAs');
+  static const sameAs = const IriTerm('http://schema.org/sameAs');
 
   /// secondaryPrevention [Expects: http://schema.org/MedicalTherapy]
   ///
@@ -257,7 +249,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition
   ///
-  static const secondaryPrevention = IriTerm.prevalidated(
+  static const secondaryPrevention = const IriTerm(
     'http://schema.org/secondaryPrevention',
   );
 
@@ -267,9 +259,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition
   ///
-  static const signOrSymptom = IriTerm.prevalidated(
-    'http://schema.org/signOrSymptom',
-  );
+  static const signOrSymptom = const IriTerm('http://schema.org/signOrSymptom');
 
   /// stage [Expects: http://schema.org/MedicalConditionStage]
   ///
@@ -277,7 +267,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition
   ///
-  static const stage = IriTerm.prevalidated('http://schema.org/stage');
+  static const stage = const IriTerm('http://schema.org/stage');
 
   /// status [Expects: http://schema.org/EventStatusType, http://schema.org/MedicalStudyStatus, http://schema.org/Text]
   ///
@@ -285,7 +275,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition, http://schema.org/MedicalProcedure, http://schema.org/MedicalStudy
   ///
-  static const status = IriTerm.prevalidated('http://schema.org/status');
+  static const status = const IriTerm('http://schema.org/status');
 
   /// study [Expects: http://schema.org/MedicalStudy]
   ///
@@ -293,7 +283,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalEntity
   ///
-  static const study = IriTerm.prevalidated('http://schema.org/study');
+  static const study = const IriTerm('http://schema.org/study');
 
   /// typicalTest [Expects: http://schema.org/MedicalTest]
   ///
@@ -301,9 +291,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/MedicalCondition
   ///
-  static const typicalTest = IriTerm.prevalidated(
-    'http://schema.org/typicalTest',
-  );
+  static const typicalTest = const IriTerm('http://schema.org/typicalTest');
 
   /// url [Expects: http://schema.org/URL]
   ///
@@ -311,7 +299,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('http://schema.org/url');
+  static const url = const IriTerm('http://schema.org/url');
 
   /// alternateName [Expects: http://schema.org/Text]
   ///
@@ -319,9 +307,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
-    'http://schema.org/alternateName',
-  );
+  static const alternateName = const IriTerm('http://schema.org/alternateName');
 
   /// funding [Expects: http://schema.org/Grant]
   ///
@@ -329,7 +315,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/BioChemEntity, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/MedicalEntity, http://schema.org/Organization, http://schema.org/Person, http://schema.org/Product
   ///
-  static const funding = IriTerm.prevalidated('http://schema.org/funding');
+  static const funding = const IriTerm('http://schema.org/funding');
 
   /// mainEntityOfPage [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -337,7 +323,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -347,7 +333,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('http://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('http://schema.org/subjectOf');
 
   /// description [Expects: http://schema.org/Text, http://schema.org/TextObject]
   ///
@@ -355,9 +341,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'http://schema.org/description',
-  );
+  static const description = const IriTerm('http://schema.org/description');
 
   /// image [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -365,7 +349,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('http://schema.org/image');
+  static const image = const IriTerm('http://schema.org/image');
 
   /// identifier [Expects: http://schema.org/PropertyValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -374,9 +358,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'http://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('http://schema.org/identifier');
 
   /// source
   ///
@@ -384,7 +366,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -392,7 +374,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -402,7 +384,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -412,7 +394,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -422,7 +404,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -432,7 +414,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -442,7 +424,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -452,7 +434,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -462,7 +444,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -472,7 +454,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -482,7 +464,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -492,7 +474,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -502,7 +484,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -512,7 +494,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -522,7 +504,7 @@ class SchemaHttpMedicalCondition {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

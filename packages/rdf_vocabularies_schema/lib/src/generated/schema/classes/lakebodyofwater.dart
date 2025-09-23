@@ -28,9 +28,7 @@ class SchemaLakeBodyOfWater {
 
   /// IRI term for the LakeBodyOfWater class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'https://schema.org/LakeBodyOfWater',
-  );
+  static const classIri = const IriTerm('https://schema.org/LakeBodyOfWater');
 
   /// additionalProperty [Expects: https://schema.org/PropertyValue]
   ///
@@ -39,7 +37,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy, https://schema.org/Offer, https://schema.org/Place, https://schema.org/Product, https://schema.org/QualitativeValue, https://schema.org/QuantitativeValue
   ///
-  static const additionalProperty = IriTerm.prevalidated(
+  static const additionalProperty = const IriTerm(
     'https://schema.org/additionalProperty',
   );
 
@@ -50,7 +48,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -60,7 +58,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/GeoCoordinates, https://schema.org/GeoShape, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place
   ///
-  static const address = IriTerm.prevalidated('https://schema.org/address');
+  static const address = const IriTerm('https://schema.org/address');
 
   /// aggregateRating [Expects: https://schema.org/AggregateRating]
   ///
@@ -68,7 +66,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const aggregateRating = IriTerm.prevalidated(
+  static const aggregateRating = const IriTerm(
     'https://schema.org/aggregateRating',
   );
 
@@ -78,7 +76,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/FloorPlan, https://schema.org/LodgingBusiness, https://schema.org/Place
   ///
-  static const amenityFeature = IriTerm.prevalidated(
+  static const amenityFeature = const IriTerm(
     'https://schema.org/amenityFeature',
   );
 
@@ -89,9 +87,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const branchCode = IriTerm.prevalidated(
-    'https://schema.org/branchCode',
-  );
+  static const branchCode = const IriTerm('https://schema.org/branchCode');
 
   /// containedIn [Expects: https://schema.org/Place]
   ///
@@ -99,9 +95,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const containedIn = IriTerm.prevalidated(
-    'https://schema.org/containedIn',
-  );
+  static const containedIn = const IriTerm('https://schema.org/containedIn');
 
   /// disambiguatingDescription [Expects: https://schema.org/Text]
   ///
@@ -109,7 +103,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -119,7 +113,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Place
   ///
-  static const events = IriTerm.prevalidated('https://schema.org/events');
+  static const events = const IriTerm('https://schema.org/events');
 
   /// faxNumber [Expects: https://schema.org/Text]
   ///
@@ -127,7 +121,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place
   ///
-  static const faxNumber = IriTerm.prevalidated('https://schema.org/faxNumber');
+  static const faxNumber = const IriTerm('https://schema.org/faxNumber');
 
   /// geo [Expects: https://schema.org/GeoCoordinates, https://schema.org/GeoShape]
   ///
@@ -135,7 +129,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const geo = IriTerm.prevalidated('https://schema.org/geo');
+  static const geo = const IriTerm('https://schema.org/geo');
 
   /// geoContains [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -143,9 +137,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoContains = IriTerm.prevalidated(
-    'https://schema.org/geoContains',
-  );
+  static const geoContains = const IriTerm('https://schema.org/geoContains');
 
   /// geoCoveredBy [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -153,9 +145,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoCoveredBy = IriTerm.prevalidated(
-    'https://schema.org/geoCoveredBy',
-  );
+  static const geoCoveredBy = const IriTerm('https://schema.org/geoCoveredBy');
 
   /// geoCovers [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -163,7 +153,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoCovers = IriTerm.prevalidated('https://schema.org/geoCovers');
+  static const geoCovers = const IriTerm('https://schema.org/geoCovers');
 
   /// geoCrosses [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -171,9 +161,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoCrosses = IriTerm.prevalidated(
-    'https://schema.org/geoCrosses',
-  );
+  static const geoCrosses = const IriTerm('https://schema.org/geoCrosses');
 
   /// geoDisjoint [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -181,9 +169,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoDisjoint = IriTerm.prevalidated(
-    'https://schema.org/geoDisjoint',
-  );
+  static const geoDisjoint = const IriTerm('https://schema.org/geoDisjoint');
 
   /// geoEquals [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -191,7 +177,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoEquals = IriTerm.prevalidated('https://schema.org/geoEquals');
+  static const geoEquals = const IriTerm('https://schema.org/geoEquals');
 
   /// geoIntersects [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -199,7 +185,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoIntersects = IriTerm.prevalidated(
+  static const geoIntersects = const IriTerm(
     'https://schema.org/geoIntersects',
   );
 
@@ -209,9 +195,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoOverlaps = IriTerm.prevalidated(
-    'https://schema.org/geoOverlaps',
-  );
+  static const geoOverlaps = const IriTerm('https://schema.org/geoOverlaps');
 
   /// geoTouches [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -219,9 +203,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoTouches = IriTerm.prevalidated(
-    'https://schema.org/geoTouches',
-  );
+  static const geoTouches = const IriTerm('https://schema.org/geoTouches');
 
   /// geoWithin [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -229,7 +211,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoWithin = IriTerm.prevalidated('https://schema.org/geoWithin');
+  static const geoWithin = const IriTerm('https://schema.org/geoWithin');
 
   /// globalLocationNumber [Expects: https://schema.org/Text]
   ///
@@ -237,7 +219,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place
   ///
-  static const globalLocationNumber = IriTerm.prevalidated(
+  static const globalLocationNumber = const IriTerm(
     'https://schema.org/globalLocationNumber',
   );
 
@@ -247,7 +229,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const hasCertification = IriTerm.prevalidated(
+  static const hasCertification = const IriTerm(
     'https://schema.org/hasCertification',
   );
 
@@ -257,7 +239,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const hasDriveThroughService = IriTerm.prevalidated(
+  static const hasDriveThroughService = const IriTerm(
     'https://schema.org/hasDriveThroughService',
   );
 
@@ -267,7 +249,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product
   ///
-  static const hasGS1DigitalLink = IriTerm.prevalidated(
+  static const hasGS1DigitalLink = const IriTerm(
     'https://schema.org/hasGS1DigitalLink',
   );
 
@@ -277,7 +259,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -287,7 +269,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place
   ///
-  static const isicV4 = IriTerm.prevalidated('https://schema.org/isicV4');
+  static const isicV4 = const IriTerm('https://schema.org/isicV4');
 
   /// keywords [Expects: https://schema.org/DefinedTerm, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -295,7 +277,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product
   ///
-  static const keywords = IriTerm.prevalidated('https://schema.org/keywords');
+  static const keywords = const IriTerm('https://schema.org/keywords');
 
   /// latitude [Expects: https://schema.org/Number, https://schema.org/Text]
   ///
@@ -303,7 +285,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/GeoCoordinates, https://schema.org/Place
   ///
-  static const latitude = IriTerm.prevalidated('https://schema.org/latitude');
+  static const latitude = const IriTerm('https://schema.org/latitude');
 
   /// logo [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -311,7 +293,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/Certification, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const logo = IriTerm.prevalidated('https://schema.org/logo');
+  static const logo = const IriTerm('https://schema.org/logo');
 
   /// longitude [Expects: https://schema.org/Number, https://schema.org/Text]
   ///
@@ -319,7 +301,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/GeoCoordinates, https://schema.org/Place
   ///
-  static const longitude = IriTerm.prevalidated('https://schema.org/longitude');
+  static const longitude = const IriTerm('https://schema.org/longitude');
 
   /// map [Expects: https://schema.org/URL]
   ///
@@ -327,7 +309,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const map = IriTerm.prevalidated('https://schema.org/map');
+  static const map = const IriTerm('https://schema.org/map');
 
   /// maps [Expects: https://schema.org/URL]
   ///
@@ -335,7 +317,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const maps = IriTerm.prevalidated('https://schema.org/maps');
+  static const maps = const IriTerm('https://schema.org/maps');
 
   /// maximumAttendeeCapacity [Expects: https://schema.org/Integer]
   ///
@@ -343,7 +325,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Event, https://schema.org/Place
   ///
-  static const maximumAttendeeCapacity = IriTerm.prevalidated(
+  static const maximumAttendeeCapacity = const IriTerm(
     'https://schema.org/maximumAttendeeCapacity',
   );
 
@@ -353,7 +335,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// openingHoursSpecification [Expects: https://schema.org/OpeningHoursSpecification]
   ///
@@ -361,7 +343,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const openingHoursSpecification = IriTerm.prevalidated(
+  static const openingHoursSpecification = const IriTerm(
     'https://schema.org/openingHoursSpecification',
   );
 
@@ -371,7 +353,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const photos = IriTerm.prevalidated('https://schema.org/photos');
+  static const photos = const IriTerm('https://schema.org/photos');
 
   /// potentialAction [Expects: https://schema.org/Action]
   ///
@@ -379,7 +361,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -389,9 +371,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const publicAccess = IriTerm.prevalidated(
-    'https://schema.org/publicAccess',
-  );
+  static const publicAccess = const IriTerm('https://schema.org/publicAccess');
 
   /// reviews [Expects: https://schema.org/Review]
   ///
@@ -399,7 +379,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product
   ///
-  static const reviews = IriTerm.prevalidated('https://schema.org/reviews');
+  static const reviews = const IriTerm('https://schema.org/reviews');
 
   /// sameAs [Expects: https://schema.org/URL]
   ///
@@ -407,7 +387,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// slogan [Expects: https://schema.org/Text]
   ///
@@ -415,7 +395,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const slogan = IriTerm.prevalidated('https://schema.org/slogan');
+  static const slogan = const IriTerm('https://schema.org/slogan');
 
   /// smokingAllowed [Expects: https://schema.org/Boolean]
   ///
@@ -423,7 +403,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const smokingAllowed = IriTerm.prevalidated(
+  static const smokingAllowed = const IriTerm(
     'https://schema.org/smokingAllowed',
   );
 
@@ -434,7 +414,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const specialOpeningHoursSpecification = IriTerm.prevalidated(
+  static const specialOpeningHoursSpecification = const IriTerm(
     'https://schema.org/specialOpeningHoursSpecification',
   );
 
@@ -444,7 +424,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place
   ///
-  static const telephone = IriTerm.prevalidated('https://schema.org/telephone');
+  static const telephone = const IriTerm('https://schema.org/telephone');
 
   /// tourBookingPage [Expects: https://schema.org/URL]
   ///
@@ -452,7 +432,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/ApartmentComplex, https://schema.org/Place
   ///
-  static const tourBookingPage = IriTerm.prevalidated(
+  static const tourBookingPage = const IriTerm(
     'https://schema.org/tourBookingPage',
   );
 
@@ -462,7 +442,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// alternateName [Expects: https://schema.org/Text]
   ///
@@ -470,7 +450,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -480,7 +460,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const containsPlace = IriTerm.prevalidated(
+  static const containsPlace = const IriTerm(
     'https://schema.org/containsPlace',
   );
 
@@ -490,7 +470,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/InformAction, https://schema.org/InviteAction, https://schema.org/JoinAction, https://schema.org/LeaveAction, https://schema.org/Organization, https://schema.org/Place, https://schema.org/PlayAction
   ///
-  static const event = IriTerm.prevalidated('https://schema.org/event');
+  static const event = const IriTerm('https://schema.org/event');
 
   /// isAccessibleForFree [Expects: https://schema.org/Boolean]
   ///
@@ -498,7 +478,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Place
   ///
-  static const isAccessibleForFree = IriTerm.prevalidated(
+  static const isAccessibleForFree = const IriTerm(
     'https://schema.org/isAccessibleForFree',
   );
 
@@ -508,7 +488,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -518,7 +498,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const photo = IriTerm.prevalidated('https://schema.org/photo');
+  static const photo = const IriTerm('https://schema.org/photo');
 
   /// review [Expects: https://schema.org/Review]
   ///
@@ -526,7 +506,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const review = IriTerm.prevalidated('https://schema.org/review');
+  static const review = const IriTerm('https://schema.org/review');
 
   /// subjectOf [Expects: https://schema.org/CreativeWork, https://schema.org/Event]
   ///
@@ -534,7 +514,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// containedInPlace [Expects: https://schema.org/Place]
   ///
@@ -542,7 +522,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const containedInPlace = IriTerm.prevalidated(
+  static const containedInPlace = const IriTerm(
     'https://schema.org/containedInPlace',
   );
 
@@ -552,7 +532,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const hasMap = IriTerm.prevalidated('https://schema.org/hasMap');
+  static const hasMap = const IriTerm('https://schema.org/hasMap');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -560,9 +540,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -570,7 +548,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -579,9 +557,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -589,7 +565,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -597,7 +573,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -607,7 +583,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -617,7 +593,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -627,7 +603,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -637,7 +613,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -647,7 +623,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -657,7 +633,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -667,7 +643,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -677,7 +653,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -687,7 +663,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -697,7 +673,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -707,7 +683,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -717,7 +693,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -727,7 +703,7 @@ class SchemaLakeBodyOfWater {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

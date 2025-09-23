@@ -26,7 +26,7 @@ class SchemaEducationalOccupationalProgram {
 
   /// IRI term for the EducationalOccupationalProgram class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
+  static const classIri = const IriTerm(
     'https://schema.org/EducationalOccupationalProgram',
   );
 
@@ -37,7 +37,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -47,7 +47,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const applicationDeadline = IriTerm.prevalidated(
+  static const applicationDeadline = const IriTerm(
     'https://schema.org/applicationDeadline',
   );
 
@@ -57,7 +57,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const applicationStartDate = IriTerm.prevalidated(
+  static const applicationStartDate = const IriTerm(
     'https://schema.org/applicationStartDate',
   );
 
@@ -67,7 +67,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram, https://schema.org/OpeningHoursSpecification
   ///
-  static const dayOfWeek = IriTerm.prevalidated('https://schema.org/dayOfWeek');
+  static const dayOfWeek = const IriTerm('https://schema.org/dayOfWeek');
 
   /// disambiguatingDescription [Expects: https://schema.org/Text]
   ///
@@ -75,7 +75,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -85,7 +85,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Course, https://schema.org/EducationalOccupationalProgram
   ///
-  static const educationalCredentialAwarded = IriTerm.prevalidated(
+  static const educationalCredentialAwarded = const IriTerm(
     'https://schema.org/educationalCredentialAwarded',
   );
 
@@ -95,7 +95,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const educationalProgramMode = IriTerm.prevalidated(
+  static const educationalProgramMode = const IriTerm(
     'https://schema.org/educationalProgramMode',
   );
 
@@ -105,7 +105,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/CreativeWorkSeason, https://schema.org/CreativeWorkSeries, https://schema.org/DatedMoneySpecification, https://schema.org/EducationalOccupationalProgram, https://schema.org/Event, https://schema.org/MerchantReturnPolicySeasonalOverride, https://schema.org/Role, https://schema.org/Schedule
   ///
-  static const endDate = IriTerm.prevalidated('https://schema.org/endDate');
+  static const endDate = const IriTerm('https://schema.org/endDate');
 
   /// financialAidEligible [Expects: https://schema.org/DefinedTerm, https://schema.org/Text]
   ///
@@ -113,7 +113,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Course, https://schema.org/EducationalOccupationalProgram
   ///
-  static const financialAidEligible = IriTerm.prevalidated(
+  static const financialAidEligible = const IriTerm(
     'https://schema.org/financialAidEligible',
   );
 
@@ -123,7 +123,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const hasCourse = IriTerm.prevalidated('https://schema.org/hasCourse');
+  static const hasCourse = const IriTerm('https://schema.org/hasCourse');
 
   /// interactionCount
   ///
@@ -131,7 +131,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -141,7 +141,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const maximumEnrollment = IriTerm.prevalidated(
+  static const maximumEnrollment = const IriTerm(
     'https://schema.org/maximumEnrollment',
   );
 
@@ -151,7 +151,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// numberOfCredits [Expects: https://schema.org/Integer, https://schema.org/StructuredValue]
   ///
@@ -159,7 +159,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Course, https://schema.org/EducationalOccupationalProgram
   ///
-  static const numberOfCredits = IriTerm.prevalidated(
+  static const numberOfCredits = const IriTerm(
     'https://schema.org/numberOfCredits',
   );
 
@@ -170,7 +170,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram, https://schema.org/JobPosting, https://schema.org/Occupation, https://schema.org/Physician, https://schema.org/WorkBasedProgram
   ///
-  static const occupationalCategory = IriTerm.prevalidated(
+  static const occupationalCategory = const IriTerm(
     'https://schema.org/occupationalCategory',
   );
 
@@ -180,7 +180,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Course, https://schema.org/EducationalOccupationalProgram
   ///
-  static const occupationalCredentialAwarded = IriTerm.prevalidated(
+  static const occupationalCredentialAwarded = const IriTerm(
     'https://schema.org/occupationalCredentialAwarded',
   );
 
@@ -190,7 +190,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -200,7 +200,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const programPrerequisites = IriTerm.prevalidated(
+  static const programPrerequisites = const IriTerm(
     'https://schema.org/programPrerequisites',
   );
 
@@ -210,9 +210,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const programType = IriTerm.prevalidated(
-    'https://schema.org/programType',
-  );
+  static const programType = const IriTerm('https://schema.org/programType');
 
   /// salaryUponCompletion [Expects: https://schema.org/MonetaryAmountDistribution]
   ///
@@ -220,7 +218,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const salaryUponCompletion = IriTerm.prevalidated(
+  static const salaryUponCompletion = const IriTerm(
     'https://schema.org/salaryUponCompletion',
   );
 
@@ -230,7 +228,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// startDate [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -238,7 +236,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/CreativeWorkSeason, https://schema.org/CreativeWorkSeries, https://schema.org/DatedMoneySpecification, https://schema.org/EducationalOccupationalProgram, https://schema.org/Event, https://schema.org/MerchantReturnPolicySeasonalOverride, https://schema.org/Role, https://schema.org/Schedule
   ///
-  static const startDate = IriTerm.prevalidated('https://schema.org/startDate');
+  static const startDate = const IriTerm('https://schema.org/startDate');
 
   /// termDuration [Expects: https://schema.org/Duration]
   ///
@@ -246,9 +244,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const termDuration = IriTerm.prevalidated(
-    'https://schema.org/termDuration',
-  );
+  static const termDuration = const IriTerm('https://schema.org/termDuration');
 
   /// termsPerYear [Expects: https://schema.org/Number]
   ///
@@ -256,9 +252,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const termsPerYear = IriTerm.prevalidated(
-    'https://schema.org/termsPerYear',
-  );
+  static const termsPerYear = const IriTerm('https://schema.org/termsPerYear');
 
   /// timeOfDay [Expects: https://schema.org/Text]
   ///
@@ -266,7 +260,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const timeOfDay = IriTerm.prevalidated('https://schema.org/timeOfDay');
+  static const timeOfDay = const IriTerm('https://schema.org/timeOfDay');
 
   /// timeToComplete [Expects: https://schema.org/Duration]
   ///
@@ -274,7 +268,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const timeToComplete = IriTerm.prevalidated(
+  static const timeToComplete = const IriTerm(
     'https://schema.org/timeToComplete',
   );
 
@@ -284,7 +278,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram, https://schema.org/WorkBasedProgram
   ///
-  static const trainingSalary = IriTerm.prevalidated(
+  static const trainingSalary = const IriTerm(
     'https://schema.org/trainingSalary',
   );
 
@@ -294,7 +288,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const typicalCreditsPerTerm = IriTerm.prevalidated(
+  static const typicalCreditsPerTerm = const IriTerm(
     'https://schema.org/typicalCreditsPerTerm',
   );
 
@@ -304,7 +298,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// alternateName [Expects: https://schema.org/Text]
   ///
@@ -312,7 +306,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -322,7 +316,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -333,7 +327,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/AggregateOffer, https://schema.org/CreativeWork, https://schema.org/EducationalOccupationalProgram, https://schema.org/Event, https://schema.org/MenuItem, https://schema.org/Product, https://schema.org/Service, https://schema.org/Trip
   ///
-  static const offers = IriTerm.prevalidated('https://schema.org/offers');
+  static const offers = const IriTerm('https://schema.org/offers');
 
   /// provider [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -341,7 +335,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Action, https://schema.org/CreativeWork, https://schema.org/EducationalOccupationalProgram, https://schema.org/FinancialIncentive, https://schema.org/Invoice, https://schema.org/ParcelDelivery, https://schema.org/Reservation, https://schema.org/Service, https://schema.org/Trip
   ///
-  static const provider = IriTerm.prevalidated('https://schema.org/provider');
+  static const provider = const IriTerm('https://schema.org/provider');
 
   /// subjectOf [Expects: https://schema.org/CreativeWork, https://schema.org/Event]
   ///
@@ -349,7 +343,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -357,9 +351,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -367,7 +359,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -376,9 +368,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -386,7 +376,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -394,7 +384,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -404,7 +394,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -414,7 +404,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -424,7 +414,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -434,7 +424,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -444,7 +434,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -454,7 +444,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -464,7 +454,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -474,7 +464,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -484,7 +474,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -494,7 +484,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -504,7 +494,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -514,7 +504,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -524,7 +514,7 @@ class SchemaEducationalOccupationalProgram {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

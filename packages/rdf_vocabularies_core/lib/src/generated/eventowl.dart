@@ -27,7 +27,7 @@ class Eventowl {
   /// passive factors, products, and a location in space/time.
   ///
   ///
-  static const Event = IriTerm.prevalidated(
+  static const Event = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#Event',
   );
 
@@ -37,7 +37,7 @@ class Eventowl {
   /// Everything produced by an event
   ///
   ///
-  static const Product = IriTerm.prevalidated(
+  static const Product = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#Product',
   );
 
@@ -47,7 +47,7 @@ class Eventowl {
   /// Everything used as a factor in an event
   ///
   ///
-  static const Factor = IriTerm.prevalidated(
+  static const Factor = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#Factor',
   );
 
@@ -59,7 +59,7 @@ class Eventowl {
   ///
   /// Can be used on: http://purl.org/NET/c4dm/event.owl#Event
   ///
-  static const agent = IriTerm.prevalidated(
+  static const agent = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#agent',
   );
 
@@ -71,7 +71,7 @@ class Eventowl {
   ///
   /// Can be used on: http://purl.org/NET/c4dm/event.owl#Event
   ///
-  static const factor = IriTerm.prevalidated(
+  static const factor = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#factor',
   );
 
@@ -85,7 +85,7 @@ class Eventowl {
   ///
   /// Can be used on: http://purl.org/NET/c4dm/event.owl#Event
   ///
-  static const literal_factor = IriTerm.prevalidated(
+  static const literal_factor = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#literal_factor',
   );
 
@@ -97,7 +97,7 @@ class Eventowl {
   ///
   /// Can be used on: http://purl.org/NET/c4dm/event.owl#Event
   ///
-  static const product = IriTerm.prevalidated(
+  static const product = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#product',
   );
 
@@ -110,7 +110,7 @@ class Eventowl {
   ///
   /// Can be used on: http://purl.org/NET/c4dm/event.owl#Event
   ///
-  static const sub_event = IriTerm.prevalidated(
+  static const sub_event = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#sub_event',
   );
 
@@ -124,9 +124,7 @@ class Eventowl {
   ///
   /// Can be used on: http://purl.org/NET/c4dm/event.owl#Event
   ///
-  static const time = IriTerm.prevalidated(
-    'http://purl.org/NET/c4dm/event.owl#time',
-  );
+  static const time = const IriTerm('http://purl.org/NET/c4dm/event.owl#time');
 
   /// IRI for eventowl:place [Expects: http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing]
   ///
@@ -136,7 +134,7 @@ class Eventowl {
   ///
   /// Can be used on: http://purl.org/NET/c4dm/event.owl#Event
   ///
-  static const place = IriTerm.prevalidated(
+  static const place = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#place',
   );
 
@@ -146,7 +144,7 @@ class Eventowl {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const isAgentIn = IriTerm.prevalidated(
+  static const isAgentIn = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#isAgentIn',
   );
 
@@ -156,7 +154,7 @@ class Eventowl {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const isFactorOf = IriTerm.prevalidated(
+  static const isFactorOf = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#isFactorOf',
   );
 
@@ -166,7 +164,7 @@ class Eventowl {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const producedIn = IriTerm.prevalidated(
+  static const producedIn = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#producedIn',
   );
 
@@ -176,7 +174,7 @@ class Eventowl {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasFactor = IriTerm.prevalidated(
+  static const hasFactor = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasFactor',
   );
 
@@ -186,7 +184,7 @@ class Eventowl {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasAgent = IriTerm.prevalidated(
+  static const hasAgent = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasAgent',
   );
 
@@ -196,7 +194,7 @@ class Eventowl {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasProduct = IriTerm.prevalidated(
+  static const hasProduct = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasProduct',
   );
 
@@ -206,7 +204,7 @@ class Eventowl {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasLiteralFactor = IriTerm.prevalidated(
+  static const hasLiteralFactor = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasLiteralFactor',
   );
 
@@ -216,7 +214,7 @@ class Eventowl {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const agent_in = IriTerm.prevalidated(
+  static const agent_in = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#agent_in',
   );
 
@@ -226,7 +224,7 @@ class Eventowl {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const factor_of = IriTerm.prevalidated(
+  static const factor_of = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#factor_of',
   );
 
@@ -236,7 +234,7 @@ class Eventowl {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const produced_in = IriTerm.prevalidated(
+  static const produced_in = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#produced_in',
   );
 
@@ -246,7 +244,7 @@ class Eventowl {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasSubEvent = IriTerm.prevalidated(
+  static const hasSubEvent = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasSubEvent',
   );
 }

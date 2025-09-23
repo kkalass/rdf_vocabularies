@@ -26,7 +26,7 @@ class PimUniversalProperties {
   /// The storage in which this workspace is, or the storage which
   /// contains this resource, or a storage available to this agent to use.
   ///
-  static const storage = IriTerm.prevalidated(
+  static const storage = const IriTerm(
     'http://www.w3.org/ns/pim/space#storage',
   );
 
@@ -36,7 +36,7 @@ class PimUniversalProperties {
   /// This may be used for constructing URIs for new storage resources.
   ///
   ///
-  static const uriPrefix = IriTerm.prevalidated(
+  static const uriPrefix = const IriTerm(
     'http://www.w3.org/ns/pim/space#uriPrefix',
   );
 
@@ -44,7 +44,7 @@ class PimUniversalProperties {
   ///
   ///
   ///
-  static const workspace = IriTerm.prevalidated(
+  static const workspace = const IriTerm(
     'http://www.w3.org/ns/pim/space#workspace',
   );
 }

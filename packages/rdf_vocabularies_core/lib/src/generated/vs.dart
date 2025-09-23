@@ -24,7 +24,7 @@ class Vs {
   ///
   /// more information about the status etc of a term, typically human oriented
   ///
-  static const moreinfo = IriTerm.prevalidated(
+  static const moreinfo = const IriTerm(
     'http://www.w3.org/2003/06/sw-vocab-status/ns#moreinfo',
   );
 
@@ -32,7 +32,7 @@ class Vs {
   ///
   /// human-oriented documentation, examples etc for use of this term
   ///
-  static const userdocs = IriTerm.prevalidated(
+  static const userdocs = const IriTerm(
     'http://www.w3.org/2003/06/sw-vocab-status/ns#userdocs',
   );
 
@@ -42,7 +42,7 @@ class Vs {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const term_status = IriTerm.prevalidated(
+  static const term_status = const IriTerm(
     'http://www.w3.org/2003/06/sw-vocab-status/ns#term_status',
   );
 }

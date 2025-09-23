@@ -26,7 +26,7 @@ class SchemaHttpMerchantReturnPolicy {
 
   /// IRI term for the MerchantReturnPolicy class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
+  static const classIri = const IriTerm(
     'http://schema.org/MerchantReturnPolicy',
   );
 
@@ -37,7 +37,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/Offer, http://schema.org/Place, http://schema.org/Product, http://schema.org/QualitativeValue, http://schema.org/QuantitativeValue
   ///
-  static const additionalProperty = IriTerm.prevalidated(
+  static const additionalProperty = const IriTerm(
     'http://schema.org/additionalProperty',
   );
 
@@ -48,7 +48,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -58,7 +58,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy
   ///
-  static const applicableCountry = IriTerm.prevalidated(
+  static const applicableCountry = const IriTerm(
     'http://schema.org/applicableCountry',
   );
 
@@ -68,7 +68,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy
   ///
-  static const customerRemorseReturnFees = IriTerm.prevalidated(
+  static const customerRemorseReturnFees = const IriTerm(
     'http://schema.org/customerRemorseReturnFees',
   );
 
@@ -78,7 +78,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy
   ///
-  static const customerRemorseReturnLabelSource = IriTerm.prevalidated(
+  static const customerRemorseReturnLabelSource = const IriTerm(
     'http://schema.org/customerRemorseReturnLabelSource',
   );
 
@@ -88,7 +88,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy
   ///
-  static const customerRemorseReturnShippingFeesAmount = IriTerm.prevalidated(
+  static const customerRemorseReturnShippingFeesAmount = const IriTerm(
     'http://schema.org/customerRemorseReturnShippingFeesAmount',
   );
 
@@ -98,7 +98,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -108,7 +108,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy
   ///
-  static const inStoreReturnsOffered = IriTerm.prevalidated(
+  static const inStoreReturnsOffered = const IriTerm(
     'http://schema.org/inStoreReturnsOffered',
   );
 
@@ -118,7 +118,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -128,9 +128,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/MerchantReturnPolicy, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const itemCondition = IriTerm.prevalidated(
-    'http://schema.org/itemCondition',
-  );
+  static const itemCondition = const IriTerm('http://schema.org/itemCondition');
 
   /// itemDefectReturnFees [Expects: http://schema.org/ReturnFeesEnumeration]
   ///
@@ -138,7 +136,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy
   ///
-  static const itemDefectReturnFees = IriTerm.prevalidated(
+  static const itemDefectReturnFees = const IriTerm(
     'http://schema.org/itemDefectReturnFees',
   );
 
@@ -148,7 +146,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy
   ///
-  static const itemDefectReturnLabelSource = IriTerm.prevalidated(
+  static const itemDefectReturnLabelSource = const IriTerm(
     'http://schema.org/itemDefectReturnLabelSource',
   );
 
@@ -158,7 +156,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy
   ///
-  static const itemDefectReturnShippingFeesAmount = IriTerm.prevalidated(
+  static const itemDefectReturnShippingFeesAmount = const IriTerm(
     'http://schema.org/itemDefectReturnShippingFeesAmount',
   );
 
@@ -168,7 +166,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const merchantReturnDays = IriTerm.prevalidated(
+  static const merchantReturnDays = const IriTerm(
     'http://schema.org/merchantReturnDays',
   );
 
@@ -178,7 +176,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy
   ///
-  static const merchantReturnLink = IriTerm.prevalidated(
+  static const merchantReturnLink = const IriTerm(
     'http://schema.org/merchantReturnLink',
   );
 
@@ -188,7 +186,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('http://schema.org/name');
+  static const name = const IriTerm('http://schema.org/name');
 
   /// potentialAction [Expects: http://schema.org/Action]
   ///
@@ -196,7 +194,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -206,9 +204,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const refundType = IriTerm.prevalidated(
-    'http://schema.org/refundType',
-  );
+  static const refundType = const IriTerm('http://schema.org/refundType');
 
   /// restockingFee [Expects: http://schema.org/MonetaryAmount, http://schema.org/Number]
   ///
@@ -216,9 +212,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const restockingFee = IriTerm.prevalidated(
-    'http://schema.org/restockingFee',
-  );
+  static const restockingFee = const IriTerm('http://schema.org/restockingFee');
 
   /// returnFees [Expects: http://schema.org/ReturnFeesEnumeration]
   ///
@@ -226,9 +220,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const returnFees = IriTerm.prevalidated(
-    'http://schema.org/returnFees',
-  );
+  static const returnFees = const IriTerm('http://schema.org/returnFees');
 
   /// returnLabelSource [Expects: http://schema.org/ReturnLabelSourceEnumeration]
   ///
@@ -236,7 +228,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy
   ///
-  static const returnLabelSource = IriTerm.prevalidated(
+  static const returnLabelSource = const IriTerm(
     'http://schema.org/returnLabelSource',
   );
 
@@ -246,9 +238,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const returnMethod = IriTerm.prevalidated(
-    'http://schema.org/returnMethod',
-  );
+  static const returnMethod = const IriTerm('http://schema.org/returnMethod');
 
   /// returnPolicyCategory [Expects: http://schema.org/MerchantReturnEnumeration]
   ///
@@ -256,7 +246,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const returnPolicyCategory = IriTerm.prevalidated(
+  static const returnPolicyCategory = const IriTerm(
     'http://schema.org/returnPolicyCategory',
   );
 
@@ -266,7 +256,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy
   ///
-  static const returnPolicyCountry = IriTerm.prevalidated(
+  static const returnPolicyCountry = const IriTerm(
     'http://schema.org/returnPolicyCountry',
   );
 
@@ -276,7 +266,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy
   ///
-  static const returnPolicySeasonalOverride = IriTerm.prevalidated(
+  static const returnPolicySeasonalOverride = const IriTerm(
     'http://schema.org/returnPolicySeasonalOverride',
   );
 
@@ -286,7 +276,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const returnShippingFeesAmount = IriTerm.prevalidated(
+  static const returnShippingFeesAmount = const IriTerm(
     'http://schema.org/returnShippingFeesAmount',
   );
 
@@ -296,7 +286,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('http://schema.org/sameAs');
+  static const sameAs = const IriTerm('http://schema.org/sameAs');
 
   /// url [Expects: http://schema.org/URL]
   ///
@@ -304,7 +294,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('http://schema.org/url');
+  static const url = const IriTerm('http://schema.org/url');
 
   /// validForMemberTier [Expects: http://schema.org/MemberProgramTier]
   ///
@@ -312,7 +302,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/Offer, http://schema.org/OfferShippingDetails, http://schema.org/PriceSpecification, http://schema.org/ShippingService
   ///
-  static const validForMemberTier = IriTerm.prevalidated(
+  static const validForMemberTier = const IriTerm(
     'http://schema.org/validForMemberTier',
   );
 
@@ -322,9 +312,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
-    'http://schema.org/alternateName',
-  );
+  static const alternateName = const IriTerm('http://schema.org/alternateName');
 
   /// mainEntityOfPage [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -332,7 +320,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -342,7 +330,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('http://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('http://schema.org/subjectOf');
 
   /// description [Expects: http://schema.org/Text, http://schema.org/TextObject]
   ///
@@ -350,9 +338,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'http://schema.org/description',
-  );
+  static const description = const IriTerm('http://schema.org/description');
 
   /// image [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -360,7 +346,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('http://schema.org/image');
+  static const image = const IriTerm('http://schema.org/image');
 
   /// identifier [Expects: http://schema.org/PropertyValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -369,9 +355,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'http://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('http://schema.org/identifier');
 
   /// source
   ///
@@ -379,7 +363,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -387,7 +371,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -397,7 +381,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -407,7 +391,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -417,7 +401,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -427,7 +411,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -437,7 +421,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -447,7 +431,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -457,7 +441,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -467,7 +451,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -477,7 +461,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -487,7 +471,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -497,7 +481,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -507,7 +491,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -517,7 +501,7 @@ class SchemaHttpMerchantReturnPolicy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

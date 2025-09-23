@@ -26,9 +26,7 @@ class LdpContainer {
 
   /// IRI term for the Container class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'http://www.w3.org/ns/ldp#Container',
-  );
+  static const classIri = const IriTerm('http://www.w3.org/ns/ldp#Container');
 
   /// hasMemberRelation [Expects: http://www.w3.org/1999/02/22-rdf-syntax-ns#Property]
   ///
@@ -36,7 +34,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/ns/ldp#Container
   ///
-  static const hasMemberRelation = IriTerm.prevalidated(
+  static const hasMemberRelation = const IriTerm(
     'http://www.w3.org/ns/ldp#hasMemberRelation',
   );
 
@@ -46,7 +44,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/ns/ldp#Container
   ///
-  static const isMemberOfRelation = IriTerm.prevalidated(
+  static const isMemberOfRelation = const IriTerm(
     'http://www.w3.org/ns/ldp#isMemberOfRelation',
   );
 
@@ -56,7 +54,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/ns/ldp#Container
   ///
-  static const membershipResource = IriTerm.prevalidated(
+  static const membershipResource = const IriTerm(
     'http://www.w3.org/ns/ldp#membershipResource',
   );
 
@@ -66,7 +64,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/ns/ldp#Container
   ///
-  static const insertedContentRelation = IriTerm.prevalidated(
+  static const insertedContentRelation = const IriTerm(
     'http://www.w3.org/ns/ldp#insertedContentRelation',
   );
 
@@ -76,7 +74,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/ns/ldp#Resource
   ///
-  static const member = IriTerm.prevalidated('http://www.w3.org/ns/ldp#member');
+  static const member = const IriTerm('http://www.w3.org/ns/ldp#member');
 
   /// contains [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
   ///
@@ -84,9 +82,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/ns/ldp#Container
   ///
-  static const contains = IriTerm.prevalidated(
-    'http://www.w3.org/ns/ldp#contains',
-  );
+  static const contains = const IriTerm('http://www.w3.org/ns/ldp#contains');
 
   /// constrainedBy [Expects: http://www.w3.org/2000/01/rdf-schema#Resource]
   ///
@@ -94,7 +90,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/ns/ldp#Resource
   ///
-  static const constrainedBy = IriTerm.prevalidated(
+  static const constrainedBy = const IriTerm(
     'http://www.w3.org/ns/ldp#constrainedBy',
   );
 
@@ -104,7 +100,7 @@ class LdpContainer {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const pageSequence = IriTerm.prevalidated(
+  static const pageSequence = const IriTerm(
     'http://www.w3.org/ns/ldp#pageSequence',
   );
 
@@ -114,7 +110,7 @@ class LdpContainer {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const inbox = IriTerm.prevalidated('http://www.w3.org/ns/ldp#inbox');
+  static const inbox = const IriTerm('http://www.w3.org/ns/ldp#inbox');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -122,7 +118,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -132,7 +128,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -142,7 +138,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -152,7 +148,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -162,7 +158,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -172,7 +168,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -182,7 +178,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -192,7 +188,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -202,7 +198,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -212,7 +208,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -222,7 +218,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -232,7 +228,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -242,7 +238,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -252,7 +248,7 @@ class LdpContainer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

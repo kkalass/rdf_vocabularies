@@ -25,7 +25,7 @@ class DcUniversalProperties {
   ///
   /// An entity responsible for making contributions to the resource.
   ///
-  static const contributor = IriTerm.prevalidated(
+  static const contributor = const IriTerm(
     'http://purl.org/dc/elements/1.1/contributor',
   );
 
@@ -33,7 +33,7 @@ class DcUniversalProperties {
   ///
   /// The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.
   ///
-  static const coverage = IriTerm.prevalidated(
+  static const coverage = const IriTerm(
     'http://purl.org/dc/elements/1.1/coverage',
   );
 
@@ -41,7 +41,7 @@ class DcUniversalProperties {
   ///
   /// An entity primarily responsible for making the resource.
   ///
-  static const creator = IriTerm.prevalidated(
+  static const creator = const IriTerm(
     'http://purl.org/dc/elements/1.1/creator',
   );
 
@@ -49,15 +49,13 @@ class DcUniversalProperties {
   ///
   /// A point or period of time associated with an event in the lifecycle of the resource.
   ///
-  static const date = IriTerm.prevalidated(
-    'http://purl.org/dc/elements/1.1/date',
-  );
+  static const date = const IriTerm('http://purl.org/dc/elements/1.1/date');
 
   /// description
   ///
   /// An account of the resource.
   ///
-  static const description = IriTerm.prevalidated(
+  static const description = const IriTerm(
     'http://purl.org/dc/elements/1.1/description',
   );
 
@@ -65,15 +63,13 @@ class DcUniversalProperties {
   ///
   /// The file format, physical medium, or dimensions of the resource.
   ///
-  static const format = IriTerm.prevalidated(
-    'http://purl.org/dc/elements/1.1/format',
-  );
+  static const format = const IriTerm('http://purl.org/dc/elements/1.1/format');
 
   /// identifier
   ///
   /// An unambiguous reference to the resource within a given context.
   ///
-  static const identifier = IriTerm.prevalidated(
+  static const identifier = const IriTerm(
     'http://purl.org/dc/elements/1.1/identifier',
   );
 
@@ -81,7 +77,7 @@ class DcUniversalProperties {
   ///
   /// A language of the resource.
   ///
-  static const language = IriTerm.prevalidated(
+  static const language = const IriTerm(
     'http://purl.org/dc/elements/1.1/language',
   );
 
@@ -89,7 +85,7 @@ class DcUniversalProperties {
   ///
   /// An entity responsible for making the resource available.
   ///
-  static const publisher = IriTerm.prevalidated(
+  static const publisher = const IriTerm(
     'http://purl.org/dc/elements/1.1/publisher',
   );
 
@@ -97,7 +93,7 @@ class DcUniversalProperties {
   ///
   /// A related resource.
   ///
-  static const relation = IriTerm.prevalidated(
+  static const relation = const IriTerm(
     'http://purl.org/dc/elements/1.1/relation',
   );
 
@@ -105,23 +101,19 @@ class DcUniversalProperties {
   ///
   /// Information about rights held in and over the resource.
   ///
-  static const rights = IriTerm.prevalidated(
-    'http://purl.org/dc/elements/1.1/rights',
-  );
+  static const rights = const IriTerm('http://purl.org/dc/elements/1.1/rights');
 
   /// source
   ///
   /// A related resource from which the described resource is derived.
   ///
-  static const source = IriTerm.prevalidated(
-    'http://purl.org/dc/elements/1.1/source',
-  );
+  static const source = const IriTerm('http://purl.org/dc/elements/1.1/source');
 
   /// subject
   ///
   /// The topic of the resource.
   ///
-  static const subject = IriTerm.prevalidated(
+  static const subject = const IriTerm(
     'http://purl.org/dc/elements/1.1/subject',
   );
 
@@ -129,15 +121,11 @@ class DcUniversalProperties {
   ///
   /// A name given to the resource.
   ///
-  static const title = IriTerm.prevalidated(
-    'http://purl.org/dc/elements/1.1/title',
-  );
+  static const title = const IriTerm('http://purl.org/dc/elements/1.1/title');
 
   /// type
   ///
   /// The nature or genre of the resource.
   ///
-  static const type = IriTerm.prevalidated(
-    'http://purl.org/dc/elements/1.1/type',
-  );
+  static const type = const IriTerm('http://purl.org/dc/elements/1.1/type');
 }

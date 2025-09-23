@@ -27,7 +27,7 @@ class SchemaNutritionInformation {
 
   /// IRI term for the NutritionInformation class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
+  static const classIri = const IriTerm(
     'https://schema.org/NutritionInformation',
   );
 
@@ -38,7 +38,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -48,7 +48,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const calories = IriTerm.prevalidated('https://schema.org/calories');
+  static const calories = const IriTerm('https://schema.org/calories');
 
   /// carbohydrateContent [Expects: https://schema.org/Mass]
   ///
@@ -56,7 +56,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const carbohydrateContent = IriTerm.prevalidated(
+  static const carbohydrateContent = const IriTerm(
     'https://schema.org/carbohydrateContent',
   );
 
@@ -66,7 +66,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const cholesterolContent = IriTerm.prevalidated(
+  static const cholesterolContent = const IriTerm(
     'https://schema.org/cholesterolContent',
   );
 
@@ -76,7 +76,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -86,9 +86,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const fatContent = IriTerm.prevalidated(
-    'https://schema.org/fatContent',
-  );
+  static const fatContent = const IriTerm('https://schema.org/fatContent');
 
   /// fiberContent [Expects: https://schema.org/Mass]
   ///
@@ -96,9 +94,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const fiberContent = IriTerm.prevalidated(
-    'https://schema.org/fiberContent',
-  );
+  static const fiberContent = const IriTerm('https://schema.org/fiberContent');
 
   /// interactionCount
   ///
@@ -106,7 +102,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -116,7 +112,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// potentialAction [Expects: https://schema.org/Action]
   ///
@@ -124,7 +120,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -134,7 +130,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const proteinContent = IriTerm.prevalidated(
+  static const proteinContent = const IriTerm(
     'https://schema.org/proteinContent',
   );
 
@@ -144,7 +140,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// saturatedFatContent [Expects: https://schema.org/Mass]
   ///
@@ -152,7 +148,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const saturatedFatContent = IriTerm.prevalidated(
+  static const saturatedFatContent = const IriTerm(
     'https://schema.org/saturatedFatContent',
   );
 
@@ -162,9 +158,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const servingSize = IriTerm.prevalidated(
-    'https://schema.org/servingSize',
-  );
+  static const servingSize = const IriTerm('https://schema.org/servingSize');
 
   /// sodiumContent [Expects: https://schema.org/Mass]
   ///
@@ -172,7 +166,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const sodiumContent = IriTerm.prevalidated(
+  static const sodiumContent = const IriTerm(
     'https://schema.org/sodiumContent',
   );
 
@@ -182,9 +176,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const sugarContent = IriTerm.prevalidated(
-    'https://schema.org/sugarContent',
-  );
+  static const sugarContent = const IriTerm('https://schema.org/sugarContent');
 
   /// transFatContent [Expects: https://schema.org/Mass]
   ///
@@ -192,7 +184,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const transFatContent = IriTerm.prevalidated(
+  static const transFatContent = const IriTerm(
     'https://schema.org/transFatContent',
   );
 
@@ -202,7 +194,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const unsaturatedFatContent = IriTerm.prevalidated(
+  static const unsaturatedFatContent = const IriTerm(
     'https://schema.org/unsaturatedFatContent',
   );
 
@@ -212,7 +204,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// alternateName [Expects: https://schema.org/Text]
   ///
@@ -220,7 +212,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -230,7 +222,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -240,7 +232,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -248,9 +240,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -258,7 +248,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -267,9 +257,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -277,7 +265,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -285,7 +273,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -295,7 +283,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -305,7 +293,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -315,7 +303,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -325,7 +313,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -335,7 +323,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -345,7 +333,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -355,7 +343,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -365,7 +353,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -375,7 +363,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -385,7 +373,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -395,7 +383,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -405,7 +393,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -415,7 +403,7 @@ class SchemaNutritionInformation {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

@@ -25,9 +25,7 @@ class FoafProject {
 
   /// IRI term for the Project class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/Project',
-  );
+  static const classIri = const IriTerm('http://xmlns.com/foaf/0.1/Project');
 
   /// dnaChecksum [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -35,7 +33,7 @@ class FoafProject {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const dnaChecksum = IriTerm.prevalidated(
+  static const dnaChecksum = const IriTerm(
     'http://xmlns.com/foaf/0.1/dnaChecksum',
   );
 
@@ -45,7 +43,7 @@ class FoafProject {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const title = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/title');
+  static const title = const IriTerm('http://xmlns.com/foaf/0.1/title');
 
   /// nick
   ///
@@ -53,7 +51,7 @@ class FoafProject {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const nick = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/nick');
+  static const nick = const IriTerm('http://xmlns.com/foaf/0.1/nick');
 
   /// name [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -61,7 +59,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const name = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/name');
+  static const name = const IriTerm('http://xmlns.com/foaf/0.1/name');
 
   /// givenName
   ///
@@ -69,9 +67,7 @@ class FoafProject {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const givenName = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/givenName',
-  );
+  static const givenName = const IriTerm('http://xmlns.com/foaf/0.1/givenName');
 
   /// givenname
   ///
@@ -79,9 +75,7 @@ class FoafProject {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const givenname = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/givenname',
-  );
+  static const givenname = const IriTerm('http://xmlns.com/foaf/0.1/givenname');
 
   /// phone
   ///
@@ -89,7 +83,7 @@ class FoafProject {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const phone = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/phone');
+  static const phone = const IriTerm('http://xmlns.com/foaf/0.1/phone');
 
   /// homepage [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -97,9 +91,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const homepage = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/homepage',
-  );
+  static const homepage = const IriTerm('http://xmlns.com/foaf/0.1/homepage');
 
   /// maker [Expects: http://xmlns.com/foaf/0.1/Agent]
   ///
@@ -108,7 +100,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const maker = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/maker');
+  static const maker = const IriTerm('http://xmlns.com/foaf/0.1/maker');
 
   /// depiction [Expects: http://xmlns.com/foaf/0.1/Image]
   ///
@@ -116,9 +108,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const depiction = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/depiction',
-  );
+  static const depiction = const IriTerm('http://xmlns.com/foaf/0.1/depiction');
 
   /// fundedBy [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -126,9 +116,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const fundedBy = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/fundedBy',
-  );
+  static const fundedBy = const IriTerm('http://xmlns.com/foaf/0.1/fundedBy');
 
   /// logo [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -136,7 +124,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const logo = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/logo');
+  static const logo = const IriTerm('http://xmlns.com/foaf/0.1/logo');
 
   /// page [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -144,7 +132,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const page = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/page');
+  static const page = const IriTerm('http://xmlns.com/foaf/0.1/page');
 
   /// theme [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -152,7 +140,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const theme = IriTerm.prevalidated('http://xmlns.com/foaf/0.1/theme');
+  static const theme = const IriTerm('http://xmlns.com/foaf/0.1/theme');
 
   /// membershipClass
   ///
@@ -160,7 +148,7 @@ class FoafProject {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const membershipClass = IriTerm.prevalidated(
+  static const membershipClass = const IriTerm(
     'http://xmlns.com/foaf/0.1/membershipClass',
   );
 
@@ -170,7 +158,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -180,7 +168,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -190,7 +178,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -200,7 +188,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -210,7 +198,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -220,7 +208,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -230,7 +218,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -240,7 +228,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -250,7 +238,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -260,7 +248,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -270,7 +258,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlBottomDataProperty = IriTerm.prevalidated(
+  static const owlBottomDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomDataProperty',
   );
 
@@ -280,7 +268,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlBottomObjectProperty = IriTerm.prevalidated(
+  static const owlBottomObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomObjectProperty',
   );
 
@@ -290,7 +278,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -300,7 +288,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlDifferentFrom = IriTerm.prevalidated(
+  static const owlDifferentFrom = const IriTerm(
     'http://www.w3.org/2002/07/owl#differentFrom',
   );
 
@@ -310,7 +298,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -320,7 +308,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlSameAs = IriTerm.prevalidated(
+  static const owlSameAs = const IriTerm(
     'http://www.w3.org/2002/07/owl#sameAs',
   );
 
@@ -330,7 +318,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlTopDataProperty = IriTerm.prevalidated(
+  static const owlTopDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topDataProperty',
   );
 
@@ -340,7 +328,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlTopObjectProperty = IriTerm.prevalidated(
+  static const owlTopObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topObjectProperty',
   );
 
@@ -350,7 +338,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -360,7 +348,7 @@ class FoafProject {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

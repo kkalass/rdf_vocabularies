@@ -26,7 +26,7 @@ class SchemaHttpFloorPlan {
 
   /// IRI term for the FloorPlan class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated('http://schema.org/FloorPlan');
+  static const classIri = const IriTerm('http://schema.org/FloorPlan');
 
   /// additionalType [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -35,7 +35,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -45,7 +45,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Accommodation, http://schema.org/FloorPlan, http://schema.org/LodgingBusiness, http://schema.org/Place
   ///
-  static const amenityFeature = IriTerm.prevalidated(
+  static const amenityFeature = const IriTerm(
     'http://schema.org/amenityFeature',
   );
 
@@ -55,7 +55,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -66,7 +66,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Accommodation, http://schema.org/FloorPlan
   ///
-  static const floorSize = IriTerm.prevalidated('http://schema.org/floorSize');
+  static const floorSize = const IriTerm('http://schema.org/floorSize');
 
   /// interactionCount
   ///
@@ -74,7 +74,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -84,7 +84,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/FloorPlan
   ///
-  static const isPlanForApartment = IriTerm.prevalidated(
+  static const isPlanForApartment = const IriTerm(
     'http://schema.org/isPlanForApartment',
   );
 
@@ -94,9 +94,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/FloorPlan
   ///
-  static const layoutImage = IriTerm.prevalidated(
-    'http://schema.org/layoutImage',
-  );
+  static const layoutImage = const IriTerm('http://schema.org/layoutImage');
 
   /// name [Expects: http://schema.org/Text]
   ///
@@ -104,7 +102,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('http://schema.org/name');
+  static const name = const IriTerm('http://schema.org/name');
 
   /// numberOfAccommodationUnits [Expects: http://schema.org/QuantitativeValue]
   ///
@@ -112,7 +110,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/ApartmentComplex, http://schema.org/FloorPlan
   ///
-  static const numberOfAccommodationUnits = IriTerm.prevalidated(
+  static const numberOfAccommodationUnits = const IriTerm(
     'http://schema.org/numberOfAccommodationUnits',
   );
 
@@ -122,7 +120,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/ApartmentComplex, http://schema.org/FloorPlan
   ///
-  static const numberOfAvailableAccommodationUnits = IriTerm.prevalidated(
+  static const numberOfAvailableAccommodationUnits = const IriTerm(
     'http://schema.org/numberOfAvailableAccommodationUnits',
   );
 
@@ -132,7 +130,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Accommodation, http://schema.org/FloorPlan
   ///
-  static const numberOfBathroomsTotal = IriTerm.prevalidated(
+  static const numberOfBathroomsTotal = const IriTerm(
     'http://schema.org/numberOfBathroomsTotal',
   );
 
@@ -142,7 +140,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Accommodation, http://schema.org/ApartmentComplex, http://schema.org/FloorPlan
   ///
-  static const numberOfBedrooms = IriTerm.prevalidated(
+  static const numberOfBedrooms = const IriTerm(
     'http://schema.org/numberOfBedrooms',
   );
 
@@ -152,7 +150,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Accommodation, http://schema.org/FloorPlan
   ///
-  static const numberOfFullBathrooms = IriTerm.prevalidated(
+  static const numberOfFullBathrooms = const IriTerm(
     'http://schema.org/numberOfFullBathrooms',
   );
 
@@ -162,7 +160,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Accommodation, http://schema.org/FloorPlan
   ///
-  static const numberOfPartialBathrooms = IriTerm.prevalidated(
+  static const numberOfPartialBathrooms = const IriTerm(
     'http://schema.org/numberOfPartialBathrooms',
   );
 
@@ -173,9 +171,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Accommodation, http://schema.org/Apartment, http://schema.org/FloorPlan, http://schema.org/House, http://schema.org/LodgingBusiness, http://schema.org/SingleFamilyResidence, http://schema.org/Suite
   ///
-  static const numberOfRooms = IriTerm.prevalidated(
-    'http://schema.org/numberOfRooms',
-  );
+  static const numberOfRooms = const IriTerm('http://schema.org/numberOfRooms');
 
   /// petsAllowed [Expects: http://schema.org/Boolean, http://schema.org/Text]
   ///
@@ -183,9 +179,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Accommodation, http://schema.org/ApartmentComplex, http://schema.org/FloorPlan, http://schema.org/LodgingBusiness
   ///
-  static const petsAllowed = IriTerm.prevalidated(
-    'http://schema.org/petsAllowed',
-  );
+  static const petsAllowed = const IriTerm('http://schema.org/petsAllowed');
 
   /// potentialAction [Expects: http://schema.org/Action]
   ///
@@ -193,7 +187,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -203,7 +197,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('http://schema.org/sameAs');
+  static const sameAs = const IriTerm('http://schema.org/sameAs');
 
   /// url [Expects: http://schema.org/URL]
   ///
@@ -211,7 +205,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('http://schema.org/url');
+  static const url = const IriTerm('http://schema.org/url');
 
   /// alternateName [Expects: http://schema.org/Text]
   ///
@@ -219,9 +213,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
-    'http://schema.org/alternateName',
-  );
+  static const alternateName = const IriTerm('http://schema.org/alternateName');
 
   /// mainEntityOfPage [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -229,7 +221,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -239,7 +231,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('http://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('http://schema.org/subjectOf');
 
   /// description [Expects: http://schema.org/Text, http://schema.org/TextObject]
   ///
@@ -247,9 +239,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'http://schema.org/description',
-  );
+  static const description = const IriTerm('http://schema.org/description');
 
   /// image [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -257,7 +247,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('http://schema.org/image');
+  static const image = const IriTerm('http://schema.org/image');
 
   /// identifier [Expects: http://schema.org/PropertyValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -266,9 +256,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'http://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('http://schema.org/identifier');
 
   /// source
   ///
@@ -276,7 +264,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -284,7 +272,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -294,7 +282,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -304,7 +292,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -314,7 +302,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -324,7 +312,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -334,7 +322,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -344,7 +332,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -354,7 +342,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -364,7 +352,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -374,7 +362,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -384,7 +372,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -394,7 +382,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -404,7 +392,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -414,7 +402,7 @@ class SchemaHttpFloorPlan {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

@@ -29,9 +29,7 @@ class SchemaPhysicalTherapy {
 
   /// IRI term for the PhysicalTherapy class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'https://schema.org/PhysicalTherapy',
-  );
+  static const classIri = const IriTerm('https://schema.org/PhysicalTherapy');
 
   /// additionalType [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -40,7 +38,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -50,7 +48,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalDevice, https://schema.org/TherapeuticProcedure
   ///
-  static const adverseOutcome = IriTerm.prevalidated(
+  static const adverseOutcome = const IriTerm(
     'https://schema.org/adverseOutcome',
   );
 
@@ -60,9 +58,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/AnatomicalStructure, https://schema.org/MedicalProcedure
   ///
-  static const bodyLocation = IriTerm.prevalidated(
-    'https://schema.org/bodyLocation',
-  );
+  static const bodyLocation = const IriTerm('https://schema.org/bodyLocation');
 
   /// code [Expects: https://schema.org/MedicalCode]
   ///
@@ -70,7 +66,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalEntity
   ///
-  static const code = IriTerm.prevalidated('https://schema.org/code');
+  static const code = const IriTerm('https://schema.org/code');
 
   /// contraindication [Expects: https://schema.org/MedicalContraindication, https://schema.org/Text]
   ///
@@ -78,7 +74,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalDevice, https://schema.org/MedicalTherapy
   ///
-  static const contraindication = IriTerm.prevalidated(
+  static const contraindication = const IriTerm(
     'https://schema.org/contraindication',
   );
 
@@ -88,7 +84,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -98,9 +94,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/Drug, https://schema.org/TherapeuticProcedure
   ///
-  static const doseSchedule = IriTerm.prevalidated(
-    'https://schema.org/doseSchedule',
-  );
+  static const doseSchedule = const IriTerm('https://schema.org/doseSchedule');
 
   /// drug [Expects: https://schema.org/Drug]
   ///
@@ -108,7 +102,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/DrugClass, https://schema.org/MedicalCondition, https://schema.org/Patient, https://schema.org/TherapeuticProcedure
   ///
-  static const drug = IriTerm.prevalidated('https://schema.org/drug');
+  static const drug = const IriTerm('https://schema.org/drug');
 
   /// duplicateTherapy [Expects: https://schema.org/MedicalTherapy]
   ///
@@ -116,7 +110,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalTherapy
   ///
-  static const duplicateTherapy = IriTerm.prevalidated(
+  static const duplicateTherapy = const IriTerm(
     'https://schema.org/duplicateTherapy',
   );
 
@@ -126,7 +120,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalProcedure
   ///
-  static const followup = IriTerm.prevalidated('https://schema.org/followup');
+  static const followup = const IriTerm('https://schema.org/followup');
 
   /// guideline [Expects: https://schema.org/MedicalGuideline]
   ///
@@ -134,7 +128,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalEntity
   ///
-  static const guideline = IriTerm.prevalidated('https://schema.org/guideline');
+  static const guideline = const IriTerm('https://schema.org/guideline');
 
   /// howPerformed [Expects: https://schema.org/Text]
   ///
@@ -142,9 +136,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalProcedure
   ///
-  static const howPerformed = IriTerm.prevalidated(
-    'https://schema.org/howPerformed',
-  );
+  static const howPerformed = const IriTerm('https://schema.org/howPerformed');
 
   /// interactionCount
   ///
@@ -152,7 +144,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -162,9 +154,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/DietarySupplement, https://schema.org/Drug, https://schema.org/MedicalEntity
   ///
-  static const legalStatus = IriTerm.prevalidated(
-    'https://schema.org/legalStatus',
-  );
+  static const legalStatus = const IriTerm('https://schema.org/legalStatus');
 
   /// medicineSystem [Expects: https://schema.org/MedicineSystem]
   ///
@@ -172,7 +162,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalEntity
   ///
-  static const medicineSystem = IriTerm.prevalidated(
+  static const medicineSystem = const IriTerm(
     'https://schema.org/medicineSystem',
   );
 
@@ -182,7 +172,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// potentialAction [Expects: https://schema.org/Action]
   ///
@@ -190,7 +180,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -200,9 +190,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalProcedure
   ///
-  static const preparation = IriTerm.prevalidated(
-    'https://schema.org/preparation',
-  );
+  static const preparation = const IriTerm('https://schema.org/preparation');
 
   /// procedureType [Expects: https://schema.org/MedicalProcedureType]
   ///
@@ -210,7 +198,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalProcedure
   ///
-  static const procedureType = IriTerm.prevalidated(
+  static const procedureType = const IriTerm(
     'https://schema.org/procedureType',
   );
 
@@ -220,7 +208,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalEntity
   ///
-  static const recognizingAuthority = IriTerm.prevalidated(
+  static const recognizingAuthority = const IriTerm(
     'https://schema.org/recognizingAuthority',
   );
 
@@ -230,7 +218,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalEntity
   ///
-  static const relevantSpecialty = IriTerm.prevalidated(
+  static const relevantSpecialty = const IriTerm(
     'https://schema.org/relevantSpecialty',
   );
 
@@ -240,7 +228,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// seriousAdverseOutcome [Expects: https://schema.org/MedicalEntity]
   ///
@@ -248,7 +236,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalDevice, https://schema.org/MedicalTherapy
   ///
-  static const seriousAdverseOutcome = IriTerm.prevalidated(
+  static const seriousAdverseOutcome = const IriTerm(
     'https://schema.org/seriousAdverseOutcome',
   );
 
@@ -258,7 +246,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalCondition, https://schema.org/MedicalProcedure, https://schema.org/MedicalStudy
   ///
-  static const status = IriTerm.prevalidated('https://schema.org/status');
+  static const status = const IriTerm('https://schema.org/status');
 
   /// study [Expects: https://schema.org/MedicalStudy]
   ///
@@ -266,7 +254,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/MedicalEntity
   ///
-  static const study = IriTerm.prevalidated('https://schema.org/study');
+  static const study = const IriTerm('https://schema.org/study');
 
   /// url [Expects: https://schema.org/URL]
   ///
@@ -274,7 +262,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// alternateName [Expects: https://schema.org/Text]
   ///
@@ -282,7 +270,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -292,7 +280,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/BioChemEntity, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/MedicalEntity, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product
   ///
-  static const funding = IriTerm.prevalidated('https://schema.org/funding');
+  static const funding = const IriTerm('https://schema.org/funding');
 
   /// mainEntityOfPage [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -300,7 +288,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -310,7 +298,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -318,9 +306,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -328,7 +314,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -337,9 +323,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -347,7 +331,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -355,7 +339,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -365,7 +349,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -375,7 +359,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -385,7 +369,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -395,7 +379,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -405,7 +389,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -415,7 +399,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -425,7 +409,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -435,7 +419,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -445,7 +429,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -455,7 +439,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -465,7 +449,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -475,7 +459,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -485,7 +469,7 @@ class SchemaPhysicalTherapy {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

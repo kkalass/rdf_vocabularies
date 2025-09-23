@@ -26,7 +26,7 @@ class SchemaHttpOffer {
 
   /// IRI term for the Offer class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated('http://schema.org/Offer');
+  static const classIri = const IriTerm('http://schema.org/Offer');
 
   /// acceptedPaymentMethod [Expects: http://schema.org/LoanOrCredit, http://schema.org/PaymentMethod, http://schema.org/Text]
   ///
@@ -34,7 +34,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Organization
   ///
-  static const acceptedPaymentMethod = IriTerm.prevalidated(
+  static const acceptedPaymentMethod = const IriTerm(
     'http://schema.org/acceptedPaymentMethod',
   );
 
@@ -44,7 +44,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Offer
   ///
-  static const addOn = IriTerm.prevalidated('http://schema.org/addOn');
+  static const addOn = const IriTerm('http://schema.org/addOn');
 
   /// additionalProperty [Expects: http://schema.org/PropertyValue]
   ///
@@ -53,7 +53,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/Offer, http://schema.org/Place, http://schema.org/Product, http://schema.org/QualitativeValue, http://schema.org/QuantitativeValue
   ///
-  static const additionalProperty = IriTerm.prevalidated(
+  static const additionalProperty = const IriTerm(
     'http://schema.org/additionalProperty',
   );
 
@@ -64,7 +64,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'http://schema.org/additionalType',
   );
 
@@ -74,7 +74,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const advanceBookingRequirement = IriTerm.prevalidated(
+  static const advanceBookingRequirement = const IriTerm(
     'http://schema.org/advanceBookingRequirement',
   );
 
@@ -84,7 +84,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Brand, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const aggregateRating = IriTerm.prevalidated(
+  static const aggregateRating = const IriTerm(
     'http://schema.org/aggregateRating',
   );
 
@@ -97,7 +97,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const asin = IriTerm.prevalidated('http://schema.org/asin');
+  static const asin = const IriTerm('http://schema.org/asin');
 
   /// availability [Expects: http://schema.org/ItemAvailability]
   ///
@@ -105,9 +105,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const availability = IriTerm.prevalidated(
-    'http://schema.org/availability',
-  );
+  static const availability = const IriTerm('http://schema.org/availability');
 
   /// availabilityEnds [Expects: http://schema.org/Date, http://schema.org/DateTime, http://schema.org/Time]
   ///
@@ -115,7 +113,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const availabilityEnds = IriTerm.prevalidated(
+  static const availabilityEnds = const IriTerm(
     'http://schema.org/availabilityEnds',
   );
 
@@ -125,7 +123,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const availabilityStarts = IriTerm.prevalidated(
+  static const availabilityStarts = const IriTerm(
     'http://schema.org/availabilityStarts',
   );
 
@@ -135,7 +133,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const availableAtOrFrom = IriTerm.prevalidated(
+  static const availableAtOrFrom = const IriTerm(
     'http://schema.org/availableAtOrFrom',
   );
 
@@ -145,7 +143,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const availableDeliveryMethod = IriTerm.prevalidated(
+  static const availableDeliveryMethod = const IriTerm(
     'http://schema.org/availableDeliveryMethod',
   );
 
@@ -155,7 +153,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/TypeAndQuantityNode
   ///
-  static const businessFunction = IriTerm.prevalidated(
+  static const businessFunction = const IriTerm(
     'http://schema.org/businessFunction',
   );
 
@@ -165,7 +163,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Offer
   ///
-  static const checkoutPageURLTemplate = IriTerm.prevalidated(
+  static const checkoutPageURLTemplate = const IriTerm(
     'http://schema.org/checkoutPageURLTemplate',
   );
 
@@ -175,7 +173,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const deliveryLeadTime = IriTerm.prevalidated(
+  static const deliveryLeadTime = const IriTerm(
     'http://schema.org/deliveryLeadTime',
   );
 
@@ -185,7 +183,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'http://schema.org/disambiguatingDescription',
   );
 
@@ -195,7 +193,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const eligibleCustomerType = IriTerm.prevalidated(
+  static const eligibleCustomerType = const IriTerm(
     'http://schema.org/eligibleCustomerType',
   );
 
@@ -205,7 +203,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const eligibleDuration = IriTerm.prevalidated(
+  static const eligibleDuration = const IriTerm(
     'http://schema.org/eligibleDuration',
   );
 
@@ -215,7 +213,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/PriceSpecification
   ///
-  static const eligibleQuantity = IriTerm.prevalidated(
+  static const eligibleQuantity = const IriTerm(
     'http://schema.org/eligibleQuantity',
   );
 
@@ -226,7 +224,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/DeliveryChargeSpecification, http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const eligibleRegion = IriTerm.prevalidated(
+  static const eligibleRegion = const IriTerm(
     'http://schema.org/eligibleRegion',
   );
 
@@ -236,7 +234,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/PriceSpecification
   ///
-  static const eligibleTransactionVolume = IriTerm.prevalidated(
+  static const eligibleTransactionVolume = const IriTerm(
     'http://schema.org/eligibleTransactionVolume',
   );
 
@@ -246,7 +244,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const gtin12 = IriTerm.prevalidated('http://schema.org/gtin12');
+  static const gtin12 = const IriTerm('http://schema.org/gtin12');
 
   /// gtin13 [Expects: http://schema.org/Text]
   ///
@@ -254,7 +252,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const gtin13 = IriTerm.prevalidated('http://schema.org/gtin13');
+  static const gtin13 = const IriTerm('http://schema.org/gtin13');
 
   /// gtin14 [Expects: http://schema.org/Text]
   ///
@@ -262,7 +260,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const gtin14 = IriTerm.prevalidated('http://schema.org/gtin14');
+  static const gtin14 = const IriTerm('http://schema.org/gtin14');
 
   /// gtin8 [Expects: http://schema.org/Text]
   ///
@@ -270,7 +268,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const gtin8 = IriTerm.prevalidated('http://schema.org/gtin8');
+  static const gtin8 = const IriTerm('http://schema.org/gtin8');
 
   /// hasAdultConsideration [Expects: http://schema.org/AdultOrientedEnumeration]
   ///
@@ -278,7 +276,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Offer, http://schema.org/Product
   ///
-  static const hasAdultConsideration = IriTerm.prevalidated(
+  static const hasAdultConsideration = const IriTerm(
     'http://schema.org/hasAdultConsideration',
   );
 
@@ -288,7 +286,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product
   ///
-  static const hasGS1DigitalLink = IriTerm.prevalidated(
+  static const hasGS1DigitalLink = const IriTerm(
     'http://schema.org/hasGS1DigitalLink',
   );
 
@@ -298,7 +296,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Certification, http://schema.org/Offer, http://schema.org/Product, http://schema.org/SizeSpecification
   ///
-  static const hasMeasurement = IriTerm.prevalidated(
+  static const hasMeasurement = const IriTerm(
     'http://schema.org/hasMeasurement',
   );
 
@@ -308,7 +306,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Product
   ///
-  static const hasMerchantReturnPolicy = IriTerm.prevalidated(
+  static const hasMerchantReturnPolicy = const IriTerm(
     'http://schema.org/hasMerchantReturnPolicy',
   );
 
@@ -318,7 +316,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/ProductCollection
   ///
-  static const includesObject = IriTerm.prevalidated(
+  static const includesObject = const IriTerm(
     'http://schema.org/includesObject',
   );
 
@@ -329,7 +327,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/DeliveryChargeSpecification, http://schema.org/Demand, http://schema.org/MediaObject, http://schema.org/Offer
   ///
-  static const ineligibleRegion = IriTerm.prevalidated(
+  static const ineligibleRegion = const IriTerm(
     'http://schema.org/ineligibleRegion',
   );
 
@@ -339,7 +337,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'http://schema.org/interactionCount',
   );
 
@@ -349,7 +347,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/SomeProducts
   ///
-  static const inventoryLevel = IriTerm.prevalidated(
+  static const inventoryLevel = const IriTerm(
     'http://schema.org/inventoryLevel',
   );
 
@@ -359,7 +357,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const isFamilyFriendly = IriTerm.prevalidated(
+  static const isFamilyFriendly = const IriTerm(
     'http://schema.org/isFamilyFriendly',
   );
 
@@ -369,9 +367,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/MerchantReturnPolicy, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const itemCondition = IriTerm.prevalidated(
-    'http://schema.org/itemCondition',
-  );
+  static const itemCondition = const IriTerm('http://schema.org/itemCondition');
 
   /// leaseLength [Expects: http://schema.org/Duration, http://schema.org/QuantitativeValue]
   ///
@@ -379,9 +375,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Accommodation, http://schema.org/Offer, http://schema.org/RealEstateListing
   ///
-  static const leaseLength = IriTerm.prevalidated(
-    'http://schema.org/leaseLength',
-  );
+  static const leaseLength = const IriTerm('http://schema.org/leaseLength');
 
   /// mobileUrl [Expects: http://schema.org/Text]
   ///
@@ -392,7 +386,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Offer, http://schema.org/Product
   ///
-  static const mobileUrl = IriTerm.prevalidated('http://schema.org/mobileUrl');
+  static const mobileUrl = const IriTerm('http://schema.org/mobileUrl');
 
   /// mpn [Expects: http://schema.org/Text]
   ///
@@ -400,7 +394,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const mpn = IriTerm.prevalidated('http://schema.org/mpn');
+  static const mpn = const IriTerm('http://schema.org/mpn');
 
   /// name [Expects: http://schema.org/Text]
   ///
@@ -408,7 +402,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('http://schema.org/name');
+  static const name = const IriTerm('http://schema.org/name');
 
   /// potentialAction [Expects: http://schema.org/Action]
   ///
@@ -416,7 +410,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'http://schema.org/potentialAction',
   );
 
@@ -427,7 +421,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/DonateAction, http://schema.org/Offer, http://schema.org/PriceSpecification, http://schema.org/TradeAction
   ///
-  static const price = IriTerm.prevalidated('http://schema.org/price');
+  static const price = const IriTerm('http://schema.org/price');
 
   /// priceCurrency [Expects: http://schema.org/Text]
   ///
@@ -435,9 +429,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/DonateAction, http://schema.org/Offer, http://schema.org/PriceSpecification, http://schema.org/Reservation, http://schema.org/Ticket, http://schema.org/TradeAction
   ///
-  static const priceCurrency = IriTerm.prevalidated(
-    'http://schema.org/priceCurrency',
-  );
+  static const priceCurrency = const IriTerm('http://schema.org/priceCurrency');
 
   /// priceSpecification [Expects: http://schema.org/PriceSpecification]
   ///
@@ -445,7 +437,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/DonateAction, http://schema.org/Offer, http://schema.org/TradeAction
   ///
-  static const priceSpecification = IriTerm.prevalidated(
+  static const priceSpecification = const IriTerm(
     'http://schema.org/priceSpecification',
   );
 
@@ -455,7 +447,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Offer
   ///
-  static const priceValidUntil = IriTerm.prevalidated(
+  static const priceValidUntil = const IriTerm(
     'http://schema.org/priceValidUntil',
   );
 
@@ -465,7 +457,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/CreativeWork, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product
   ///
-  static const reviews = IriTerm.prevalidated('http://schema.org/reviews');
+  static const reviews = const IriTerm('http://schema.org/reviews');
 
   /// sameAs [Expects: http://schema.org/URL]
   ///
@@ -473,7 +465,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('http://schema.org/sameAs');
+  static const sameAs = const IriTerm('http://schema.org/sameAs');
 
   /// shippingDetails [Expects: http://schema.org/OfferShippingDetails]
   ///
@@ -481,7 +473,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Offer
   ///
-  static const shippingDetails = IriTerm.prevalidated(
+  static const shippingDetails = const IriTerm(
     'http://schema.org/shippingDetails',
   );
 
@@ -491,7 +483,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const sku = IriTerm.prevalidated('http://schema.org/sku');
+  static const sku = const IriTerm('http://schema.org/sku');
 
   /// url [Expects: http://schema.org/URL]
   ///
@@ -499,7 +491,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('http://schema.org/url');
+  static const url = const IriTerm('http://schema.org/url');
 
   /// validForMemberTier [Expects: http://schema.org/MemberProgramTier]
   ///
@@ -507,7 +499,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/MerchantReturnPolicy, http://schema.org/Offer, http://schema.org/OfferShippingDetails, http://schema.org/PriceSpecification, http://schema.org/ShippingService
   ///
-  static const validForMemberTier = IriTerm.prevalidated(
+  static const validForMemberTier = const IriTerm(
     'http://schema.org/validForMemberTier',
   );
 
@@ -517,7 +509,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Certification, http://schema.org/Demand, http://schema.org/FinancialIncentive, http://schema.org/LocationFeatureSpecification, http://schema.org/MonetaryAmount, http://schema.org/Offer, http://schema.org/OpeningHoursSpecification, http://schema.org/Permit, http://schema.org/PriceSpecification
   ///
-  static const validFrom = IriTerm.prevalidated('http://schema.org/validFrom');
+  static const validFrom = const IriTerm('http://schema.org/validFrom');
 
   /// validThrough [Expects: http://schema.org/Date, http://schema.org/DateTime]
   ///
@@ -525,9 +517,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/FinancialIncentive, http://schema.org/JobPosting, http://schema.org/LocationFeatureSpecification, http://schema.org/MonetaryAmount, http://schema.org/Offer, http://schema.org/OpeningHoursSpecification, http://schema.org/PriceSpecification
   ///
-  static const validThrough = IriTerm.prevalidated(
-    'http://schema.org/validThrough',
-  );
+  static const validThrough = const IriTerm('http://schema.org/validThrough');
 
   /// alternateName [Expects: http://schema.org/Text]
   ///
@@ -535,9 +525,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
-    'http://schema.org/alternateName',
-  );
+  static const alternateName = const IriTerm('http://schema.org/alternateName');
 
   /// category [Expects: http://schema.org/CategoryCode, http://schema.org/PhysicalActivityCategory, http://schema.org/Text, http://schema.org/Thing, http://schema.org/URL]
   ///
@@ -545,7 +533,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/ActionAccessSpecification, http://schema.org/Invoice, http://schema.org/Offer, http://schema.org/PhysicalActivity, http://schema.org/Product, http://schema.org/Recommendation, http://schema.org/Service, http://schema.org/SpecialAnnouncement
   ///
-  static const category = IriTerm.prevalidated('http://schema.org/category');
+  static const category = const IriTerm('http://schema.org/category');
 
   /// itemOffered [Expects: http://schema.org/AggregateOffer, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/MenuItem, http://schema.org/Product, http://schema.org/Service, http://schema.org/Trip]
   ///
@@ -553,9 +541,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const itemOffered = IriTerm.prevalidated(
-    'http://schema.org/itemOffered',
-  );
+  static const itemOffered = const IriTerm('http://schema.org/itemOffered');
 
   /// mainEntityOfPage [Expects: http://schema.org/CreativeWork, http://schema.org/URL]
   ///
@@ -563,7 +549,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'http://schema.org/mainEntityOfPage',
   );
 
@@ -573,7 +559,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Offer
   ///
-  static const offeredBy = IriTerm.prevalidated('http://schema.org/offeredBy');
+  static const offeredBy = const IriTerm('http://schema.org/offeredBy');
 
   /// review [Expects: http://schema.org/Review]
   ///
@@ -581,7 +567,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Brand, http://schema.org/CreativeWork, http://schema.org/Event, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Place, http://schema.org/Product, http://schema.org/Service
   ///
-  static const review = IriTerm.prevalidated('http://schema.org/review');
+  static const review = const IriTerm('http://schema.org/review');
 
   /// serialNumber [Expects: http://schema.org/Text]
   ///
@@ -589,9 +575,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/IndividualProduct, http://schema.org/Offer
   ///
-  static const serialNumber = IriTerm.prevalidated(
-    'http://schema.org/serialNumber',
-  );
+  static const serialNumber = const IriTerm('http://schema.org/serialNumber');
 
   /// subjectOf [Expects: http://schema.org/CreativeWork, http://schema.org/Event]
   ///
@@ -599,7 +583,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('http://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('http://schema.org/subjectOf');
 
   /// warranty [Expects: http://schema.org/WarrantyPromise]
   ///
@@ -607,7 +591,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer
   ///
-  static const warranty = IriTerm.prevalidated('http://schema.org/warranty');
+  static const warranty = const IriTerm('http://schema.org/warranty');
 
   /// seller [Expects: http://schema.org/Organization, http://schema.org/Person]
   ///
@@ -615,7 +599,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/BuyAction, http://schema.org/Demand, http://schema.org/Flight, http://schema.org/Offer, http://schema.org/Order
   ///
-  static const seller = IriTerm.prevalidated('http://schema.org/seller');
+  static const seller = const IriTerm('http://schema.org/seller');
 
   /// areaServed [Expects: http://schema.org/AdministrativeArea, http://schema.org/GeoShape, http://schema.org/Place, http://schema.org/Text]
   ///
@@ -623,9 +607,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/ContactPoint, http://schema.org/DeliveryChargeSpecification, http://schema.org/Demand, http://schema.org/FinancialIncentive, http://schema.org/Offer, http://schema.org/Organization, http://schema.org/Service
   ///
-  static const areaServed = IriTerm.prevalidated(
-    'http://schema.org/areaServed',
-  );
+  static const areaServed = const IriTerm('http://schema.org/areaServed');
 
   /// description [Expects: http://schema.org/Text, http://schema.org/TextObject]
   ///
@@ -633,9 +615,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'http://schema.org/description',
-  );
+  static const description = const IriTerm('http://schema.org/description');
 
   /// gtin [Expects: http://schema.org/Text, http://schema.org/URL]
   ///
@@ -650,7 +630,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Demand, http://schema.org/Offer, http://schema.org/Product
   ///
-  static const gtin = IriTerm.prevalidated('http://schema.org/gtin');
+  static const gtin = const IriTerm('http://schema.org/gtin');
 
   /// image [Expects: http://schema.org/ImageObject, http://schema.org/URL]
   ///
@@ -658,7 +638,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('http://schema.org/image');
+  static const image = const IriTerm('http://schema.org/image');
 
   /// identifier [Expects: http://schema.org/PropertyValue, http://schema.org/Text, http://schema.org/URL]
   ///
@@ -667,9 +647,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'http://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('http://schema.org/identifier');
 
   /// source
   ///
@@ -677,7 +655,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('http://schema.org/source');
+  static const source = const IriTerm('http://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -685,7 +663,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -695,7 +673,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -705,7 +683,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -715,7 +693,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -725,7 +703,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -735,7 +713,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -745,7 +723,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -755,7 +733,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -765,7 +743,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -775,7 +753,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -785,7 +763,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -795,7 +773,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -805,7 +783,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -815,7 +793,7 @@ class SchemaHttpOffer {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

@@ -30,9 +30,7 @@ class SchemaNewsArticle {
 
   /// IRI term for the NewsArticle class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'https://schema.org/NewsArticle',
-  );
+  static const classIri = const IriTerm('https://schema.org/NewsArticle');
 
   /// abstract_ [Expects: https://schema.org/Text]
   ///
@@ -40,7 +38,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const abstract_ = IriTerm.prevalidated('https://schema.org/abstract');
+  static const abstract_ = const IriTerm('https://schema.org/abstract');
 
   /// accessMode [Expects: https://schema.org/Text]
   ///
@@ -48,9 +46,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessMode = IriTerm.prevalidated(
-    'https://schema.org/accessMode',
-  );
+  static const accessMode = const IriTerm('https://schema.org/accessMode');
 
   /// accessModeSufficient [Expects: https://schema.org/ItemList]
   ///
@@ -58,7 +54,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessModeSufficient = IriTerm.prevalidated(
+  static const accessModeSufficient = const IriTerm(
     'https://schema.org/accessModeSufficient',
   );
 
@@ -68,7 +64,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessibilityAPI = IriTerm.prevalidated(
+  static const accessibilityAPI = const IriTerm(
     'https://schema.org/accessibilityAPI',
   );
 
@@ -78,7 +74,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessibilityControl = IriTerm.prevalidated(
+  static const accessibilityControl = const IriTerm(
     'https://schema.org/accessibilityControl',
   );
 
@@ -88,7 +84,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessibilityFeature = IriTerm.prevalidated(
+  static const accessibilityFeature = const IriTerm(
     'https://schema.org/accessibilityFeature',
   );
 
@@ -98,7 +94,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessibilityHazard = IriTerm.prevalidated(
+  static const accessibilityHazard = const IriTerm(
     'https://schema.org/accessibilityHazard',
   );
 
@@ -108,7 +104,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessibilitySummary = IriTerm.prevalidated(
+  static const accessibilitySummary = const IriTerm(
     'https://schema.org/accessibilitySummary',
   );
 
@@ -118,7 +114,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accountablePerson = IriTerm.prevalidated(
+  static const accountablePerson = const IriTerm(
     'https://schema.org/accountablePerson',
   );
 
@@ -128,7 +124,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const acquireLicensePage = IriTerm.prevalidated(
+  static const acquireLicensePage = const IriTerm(
     'https://schema.org/acquireLicensePage',
   );
 
@@ -139,7 +135,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -149,7 +145,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const aggregateRating = IriTerm.prevalidated(
+  static const aggregateRating = const IriTerm(
     'https://schema.org/aggregateRating',
   );
 
@@ -159,7 +155,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const alternativeHeadline = IriTerm.prevalidated(
+  static const alternativeHeadline = const IriTerm(
     'https://schema.org/alternativeHeadline',
   );
 
@@ -169,9 +165,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const archivedAt = IriTerm.prevalidated(
-    'https://schema.org/archivedAt',
-  );
+  static const archivedAt = const IriTerm('https://schema.org/archivedAt');
 
   /// articleBody [Expects: https://schema.org/Text]
   ///
@@ -179,9 +173,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Article
   ///
-  static const articleBody = IriTerm.prevalidated(
-    'https://schema.org/articleBody',
-  );
+  static const articleBody = const IriTerm('https://schema.org/articleBody');
 
   /// articleSection [Expects: https://schema.org/Text]
   ///
@@ -189,7 +181,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Article
   ///
-  static const articleSection = IriTerm.prevalidated(
+  static const articleSection = const IriTerm(
     'https://schema.org/articleSection',
   );
 
@@ -199,7 +191,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/EducationEvent, https://schema.org/LearningResource
   ///
-  static const assesses = IriTerm.prevalidated('https://schema.org/assesses');
+  static const assesses = const IriTerm('https://schema.org/assesses');
 
   /// associatedMedia [Expects: https://schema.org/MediaObject]
   ///
@@ -207,7 +199,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/HyperToc, https://schema.org/HyperTocEntry
   ///
-  static const associatedMedia = IriTerm.prevalidated(
+  static const associatedMedia = const IriTerm(
     'https://schema.org/associatedMedia',
   );
 
@@ -217,7 +209,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const audio = IriTerm.prevalidated('https://schema.org/audio');
+  static const audio = const IriTerm('https://schema.org/audio');
 
   /// author [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -225,7 +217,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Rating
   ///
-  static const author = IriTerm.prevalidated('https://schema.org/author');
+  static const author = const IriTerm('https://schema.org/author');
 
   /// awards [Expects: https://schema.org/Text]
   ///
@@ -233,7 +225,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product
   ///
-  static const awards = IriTerm.prevalidated('https://schema.org/awards');
+  static const awards = const IriTerm('https://schema.org/awards');
 
   /// backstory [Expects: https://schema.org/CreativeWork, https://schema.org/Text]
   ///
@@ -241,7 +233,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Article
   ///
-  static const backstory = IriTerm.prevalidated('https://schema.org/backstory');
+  static const backstory = const IriTerm('https://schema.org/backstory');
 
   /// character [Expects: https://schema.org/Person]
   ///
@@ -249,7 +241,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const character = IriTerm.prevalidated('https://schema.org/character');
+  static const character = const IriTerm('https://schema.org/character');
 
   /// citation [Expects: https://schema.org/CreativeWork, https://schema.org/Text]
   ///
@@ -257,7 +249,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const citation = IriTerm.prevalidated('https://schema.org/citation');
+  static const citation = const IriTerm('https://schema.org/citation');
 
   /// comment [Expects: https://schema.org/Comment]
   ///
@@ -265,7 +257,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/RsvpAction
   ///
-  static const comment = IriTerm.prevalidated('https://schema.org/comment');
+  static const comment = const IriTerm('https://schema.org/comment');
 
   /// commentCount [Expects: https://schema.org/Integer]
   ///
@@ -273,9 +265,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const commentCount = IriTerm.prevalidated(
-    'https://schema.org/commentCount',
-  );
+  static const commentCount = const IriTerm('https://schema.org/commentCount');
 
   /// conditionsOfAccess [Expects: https://schema.org/Text]
   ///
@@ -283,7 +273,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const conditionsOfAccess = IriTerm.prevalidated(
+  static const conditionsOfAccess = const IriTerm(
     'https://schema.org/conditionsOfAccess',
   );
 
@@ -293,7 +283,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const contentRating = IriTerm.prevalidated(
+  static const contentRating = const IriTerm(
     'https://schema.org/contentRating',
   );
 
@@ -303,7 +293,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const contentReferenceTime = IriTerm.prevalidated(
+  static const contentReferenceTime = const IriTerm(
     'https://schema.org/contentReferenceTime',
   );
 
@@ -313,9 +303,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event
   ///
-  static const contributor = IriTerm.prevalidated(
-    'https://schema.org/contributor',
-  );
+  static const contributor = const IriTerm('https://schema.org/contributor');
 
   /// copyrightHolder [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -323,7 +311,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const copyrightHolder = IriTerm.prevalidated(
+  static const copyrightHolder = const IriTerm(
     'https://schema.org/copyrightHolder',
   );
 
@@ -333,7 +321,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const copyrightNotice = IriTerm.prevalidated(
+  static const copyrightNotice = const IriTerm(
     'https://schema.org/copyrightNotice',
   );
 
@@ -343,7 +331,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const copyrightYear = IriTerm.prevalidated(
+  static const copyrightYear = const IriTerm(
     'https://schema.org/copyrightYear',
   );
 
@@ -353,9 +341,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const correction = IriTerm.prevalidated(
-    'https://schema.org/correction',
-  );
+  static const correction = const IriTerm('https://schema.org/correction');
 
   /// countryOfOrigin [Expects: https://schema.org/Country]
   ///
@@ -367,7 +353,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Movie, https://schema.org/Product, https://schema.org/TVEpisode, https://schema.org/TVSeason, https://schema.org/TVSeries
   ///
-  static const countryOfOrigin = IriTerm.prevalidated(
+  static const countryOfOrigin = const IriTerm(
     'https://schema.org/countryOfOrigin',
   );
 
@@ -377,7 +363,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const creativeWorkStatus = IriTerm.prevalidated(
+  static const creativeWorkStatus = const IriTerm(
     'https://schema.org/creativeWorkStatus',
   );
 
@@ -387,9 +373,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const creditText = IriTerm.prevalidated(
-    'https://schema.org/creditText',
-  );
+  static const creditText = const IriTerm('https://schema.org/creditText');
 
   /// dateModified [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -397,9 +381,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/DataFeedItem
   ///
-  static const dateModified = IriTerm.prevalidated(
-    'https://schema.org/dateModified',
-  );
+  static const dateModified = const IriTerm('https://schema.org/dateModified');
 
   /// datePublished [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -407,7 +389,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Certification, https://schema.org/CreativeWork
   ///
-  static const datePublished = IriTerm.prevalidated(
+  static const datePublished = const IriTerm(
     'https://schema.org/datePublished',
   );
 
@@ -422,7 +404,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/NewsArticle
   ///
-  static const dateline = IriTerm.prevalidated('https://schema.org/dateline');
+  static const dateline = const IriTerm('https://schema.org/dateline');
 
   /// digitalSourceType [Expects: https://schema.org/IPTCDigitalSourceEnumeration]
   ///
@@ -430,7 +412,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const digitalSourceType = IriTerm.prevalidated(
+  static const digitalSourceType = const IriTerm(
     'https://schema.org/digitalSourceType',
   );
 
@@ -440,7 +422,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -450,7 +432,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const discussionUrl = IriTerm.prevalidated(
+  static const discussionUrl = const IriTerm(
     'https://schema.org/discussionUrl',
   );
 
@@ -465,7 +447,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const editEIDR = IriTerm.prevalidated('https://schema.org/editEIDR');
+  static const editEIDR = const IriTerm('https://schema.org/editEIDR');
 
   /// editor [Expects: https://schema.org/Person]
   ///
@@ -473,7 +455,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const editor = IriTerm.prevalidated('https://schema.org/editor');
+  static const editor = const IriTerm('https://schema.org/editor');
 
   /// educationalAlignment [Expects: https://schema.org/AlignmentObject]
   ///
@@ -483,7 +465,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/LearningResource
   ///
-  static const educationalAlignment = IriTerm.prevalidated(
+  static const educationalAlignment = const IriTerm(
     'https://schema.org/educationalAlignment',
   );
 
@@ -493,7 +475,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/EducationEvent, https://schema.org/EducationalOccupationalCredential, https://schema.org/LearningResource
   ///
-  static const educationalLevel = IriTerm.prevalidated(
+  static const educationalLevel = const IriTerm(
     'https://schema.org/educationalLevel',
   );
 
@@ -503,7 +485,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/LearningResource
   ///
-  static const educationalUse = IriTerm.prevalidated(
+  static const educationalUse = const IriTerm(
     'https://schema.org/educationalUse',
   );
 
@@ -513,7 +495,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const encodings = IriTerm.prevalidated('https://schema.org/encodings');
+  static const encodings = const IriTerm('https://schema.org/encodings');
 
   /// expires [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -521,7 +503,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Certification, https://schema.org/CreativeWork
   ///
-  static const expires = IriTerm.prevalidated('https://schema.org/expires');
+  static const expires = const IriTerm('https://schema.org/expires');
 
   /// fileFormat [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -529,9 +511,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const fileFormat = IriTerm.prevalidated(
-    'https://schema.org/fileFormat',
-  );
+  static const fileFormat = const IriTerm('https://schema.org/fileFormat');
 
   /// funder [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -539,7 +519,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Grant, https://schema.org/MonetaryGrant, https://schema.org/Organization, https://schema.org/Person
   ///
-  static const funder = IriTerm.prevalidated('https://schema.org/funder');
+  static const funder = const IriTerm('https://schema.org/funder');
 
   /// headline [Expects: https://schema.org/Text]
   ///
@@ -547,7 +527,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const headline = IriTerm.prevalidated('https://schema.org/headline');
+  static const headline = const IriTerm('https://schema.org/headline');
 
   /// interactionCount
   ///
@@ -555,7 +535,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -565,7 +545,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const interactivityType = IriTerm.prevalidated(
+  static const interactivityType = const IriTerm(
     'https://schema.org/interactivityType',
   );
 
@@ -575,7 +555,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/MediaObject
   ///
-  static const interpretedAsClaim = IriTerm.prevalidated(
+  static const interpretedAsClaim = const IriTerm(
     'https://schema.org/interpretedAsClaim',
   );
 
@@ -585,9 +565,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const isBasedOnUrl = IriTerm.prevalidated(
-    'https://schema.org/isBasedOnUrl',
-  );
+  static const isBasedOnUrl = const IriTerm('https://schema.org/isBasedOnUrl');
 
   /// isFamilyFriendly [Expects: https://schema.org/Boolean]
   ///
@@ -595,7 +573,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Offer, https://schema.org/Product
   ///
-  static const isFamilyFriendly = IriTerm.prevalidated(
+  static const isFamilyFriendly = const IriTerm(
     'https://schema.org/isFamilyFriendly',
   );
 
@@ -605,7 +583,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product
   ///
-  static const keywords = IriTerm.prevalidated('https://schema.org/keywords');
+  static const keywords = const IriTerm('https://schema.org/keywords');
 
   /// learningResourceType [Expects: https://schema.org/DefinedTerm, https://schema.org/Text]
   ///
@@ -613,7 +591,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/LearningResource
   ///
-  static const learningResourceType = IriTerm.prevalidated(
+  static const learningResourceType = const IriTerm(
     'https://schema.org/learningResourceType',
   );
 
@@ -623,7 +601,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const license = IriTerm.prevalidated('https://schema.org/license');
+  static const license = const IriTerm('https://schema.org/license');
 
   /// locationCreated [Expects: https://schema.org/Place]
   ///
@@ -631,7 +609,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const locationCreated = IriTerm.prevalidated(
+  static const locationCreated = const IriTerm(
     'https://schema.org/locationCreated',
   );
 
@@ -642,9 +620,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const maintainer = IriTerm.prevalidated(
-    'https://schema.org/maintainer',
-  );
+  static const maintainer = const IriTerm('https://schema.org/maintainer');
 
   /// materialExtent [Expects: https://schema.org/QuantitativeValue, https://schema.org/Text]
   ///
@@ -652,7 +628,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const materialExtent = IriTerm.prevalidated(
+  static const materialExtent = const IriTerm(
     'https://schema.org/materialExtent',
   );
 
@@ -662,7 +638,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const mentions = IriTerm.prevalidated('https://schema.org/mentions');
+  static const mentions = const IriTerm('https://schema.org/mentions');
 
   /// name [Expects: https://schema.org/Text]
   ///
@@ -670,7 +646,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// pageEnd [Expects: https://schema.org/Integer, https://schema.org/Text]
   ///
@@ -678,7 +654,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Article, https://schema.org/Chapter, https://schema.org/PublicationIssue, https://schema.org/PublicationVolume
   ///
-  static const pageEnd = IriTerm.prevalidated('https://schema.org/pageEnd');
+  static const pageEnd = const IriTerm('https://schema.org/pageEnd');
 
   /// pageStart [Expects: https://schema.org/Integer, https://schema.org/Text]
   ///
@@ -686,7 +662,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Article, https://schema.org/Chapter, https://schema.org/PublicationIssue, https://schema.org/PublicationVolume
   ///
-  static const pageStart = IriTerm.prevalidated('https://schema.org/pageStart');
+  static const pageStart = const IriTerm('https://schema.org/pageStart');
 
   /// pagination [Expects: https://schema.org/Text]
   ///
@@ -694,9 +670,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Article, https://schema.org/Chapter, https://schema.org/PublicationIssue, https://schema.org/PublicationVolume
   ///
-  static const pagination = IriTerm.prevalidated(
-    'https://schema.org/pagination',
-  );
+  static const pagination = const IriTerm('https://schema.org/pagination');
 
   /// pattern [Expects: https://schema.org/DefinedTerm, https://schema.org/Text]
   ///
@@ -704,7 +678,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Product
   ///
-  static const pattern = IriTerm.prevalidated('https://schema.org/pattern');
+  static const pattern = const IriTerm('https://schema.org/pattern');
 
   /// potentialAction [Expects: https://schema.org/Action]
   ///
@@ -712,7 +686,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -722,9 +696,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/NewsArticle
   ///
-  static const printColumn = IriTerm.prevalidated(
-    'https://schema.org/printColumn',
-  );
+  static const printColumn = const IriTerm('https://schema.org/printColumn');
 
   /// printEdition [Expects: https://schema.org/Text]
   ///
@@ -732,9 +704,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/NewsArticle
   ///
-  static const printEdition = IriTerm.prevalidated(
-    'https://schema.org/printEdition',
-  );
+  static const printEdition = const IriTerm('https://schema.org/printEdition');
 
   /// printPage [Expects: https://schema.org/Text]
   ///
@@ -742,7 +712,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/NewsArticle
   ///
-  static const printPage = IriTerm.prevalidated('https://schema.org/printPage');
+  static const printPage = const IriTerm('https://schema.org/printPage');
 
   /// printSection [Expects: https://schema.org/Text]
   ///
@@ -750,9 +720,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/NewsArticle
   ///
-  static const printSection = IriTerm.prevalidated(
-    'https://schema.org/printSection',
-  );
+  static const printSection = const IriTerm('https://schema.org/printSection');
 
   /// producer [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -760,7 +728,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const producer = IriTerm.prevalidated('https://schema.org/producer');
+  static const producer = const IriTerm('https://schema.org/producer');
 
   /// publication [Expects: https://schema.org/PublicationEvent]
   ///
@@ -768,9 +736,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const publication = IriTerm.prevalidated(
-    'https://schema.org/publication',
-  );
+  static const publication = const IriTerm('https://schema.org/publication');
 
   /// publisher [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -778,7 +744,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/FinancialIncentive
   ///
-  static const publisher = IriTerm.prevalidated('https://schema.org/publisher');
+  static const publisher = const IriTerm('https://schema.org/publisher');
 
   /// publisherImprint [Expects: https://schema.org/Organization]
   ///
@@ -786,7 +752,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const publisherImprint = IriTerm.prevalidated(
+  static const publisherImprint = const IriTerm(
     'https://schema.org/publisherImprint',
   );
 
@@ -796,7 +762,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const releasedEvent = IriTerm.prevalidated(
+  static const releasedEvent = const IriTerm(
     'https://schema.org/releasedEvent',
   );
 
@@ -806,7 +772,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product
   ///
-  static const reviews = IriTerm.prevalidated('https://schema.org/reviews');
+  static const reviews = const IriTerm('https://schema.org/reviews');
 
   /// sameAs [Expects: https://schema.org/URL]
   ///
@@ -814,7 +780,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// schemaVersion [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -823,7 +789,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const schemaVersion = IriTerm.prevalidated(
+  static const schemaVersion = const IriTerm(
     'https://schema.org/schemaVersion',
   );
 
@@ -833,7 +799,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const sdDatePublished = IriTerm.prevalidated(
+  static const sdDatePublished = const IriTerm(
     'https://schema.org/sdDatePublished',
   );
 
@@ -843,7 +809,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const sdLicense = IriTerm.prevalidated('https://schema.org/sdLicense');
+  static const sdLicense = const IriTerm('https://schema.org/sdLicense');
 
   /// sdPublisher [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -852,9 +818,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const sdPublisher = IriTerm.prevalidated(
-    'https://schema.org/sdPublisher',
-  );
+  static const sdPublisher = const IriTerm('https://schema.org/sdPublisher');
 
   /// size [Expects: https://schema.org/DefinedTerm, https://schema.org/QuantitativeValue, https://schema.org/SizeSpecification, https://schema.org/Text]
   ///
@@ -862,7 +826,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Product
   ///
-  static const size = IriTerm.prevalidated('https://schema.org/size');
+  static const size = const IriTerm('https://schema.org/size');
 
   /// sourceOrganization [Expects: https://schema.org/Organization]
   ///
@@ -870,7 +834,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const sourceOrganization = IriTerm.prevalidated(
+  static const sourceOrganization = const IriTerm(
     'https://schema.org/sourceOrganization',
   );
 
@@ -881,7 +845,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const spatial = IriTerm.prevalidated('https://schema.org/spatial');
+  static const spatial = const IriTerm('https://schema.org/spatial');
 
   /// speakable [Expects: https://schema.org/SpeakableSpecification, https://schema.org/URL]
   ///
@@ -902,7 +866,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Article, https://schema.org/WebPage
   ///
-  static const speakable = IriTerm.prevalidated('https://schema.org/speakable');
+  static const speakable = const IriTerm('https://schema.org/speakable');
 
   /// teaches [Expects: https://schema.org/DefinedTerm, https://schema.org/Text]
   ///
@@ -910,7 +874,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/EducationEvent, https://schema.org/LearningResource
   ///
-  static const teaches = IriTerm.prevalidated('https://schema.org/teaches');
+  static const teaches = const IriTerm('https://schema.org/teaches');
 
   /// temporal [Expects: https://schema.org/DateTime, https://schema.org/Text]
   ///
@@ -919,7 +883,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const temporal = IriTerm.prevalidated('https://schema.org/temporal');
+  static const temporal = const IriTerm('https://schema.org/temporal');
 
   /// text [Expects: https://schema.org/Text]
   ///
@@ -927,7 +891,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const text = IriTerm.prevalidated('https://schema.org/text');
+  static const text = const IriTerm('https://schema.org/text');
 
   /// thumbnail [Expects: https://schema.org/ImageObject]
   ///
@@ -935,7 +899,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const thumbnail = IriTerm.prevalidated('https://schema.org/thumbnail');
+  static const thumbnail = const IriTerm('https://schema.org/thumbnail');
 
   /// thumbnailUrl [Expects: https://schema.org/URL]
   ///
@@ -943,9 +907,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const thumbnailUrl = IriTerm.prevalidated(
-    'https://schema.org/thumbnailUrl',
-  );
+  static const thumbnailUrl = const IriTerm('https://schema.org/thumbnailUrl');
 
   /// timeRequired [Expects: https://schema.org/Duration]
   ///
@@ -953,9 +915,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const timeRequired = IriTerm.prevalidated(
-    'https://schema.org/timeRequired',
-  );
+  static const timeRequired = const IriTerm('https://schema.org/timeRequired');
 
   /// translator [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -963,9 +923,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event
   ///
-  static const translator = IriTerm.prevalidated(
-    'https://schema.org/translator',
-  );
+  static const translator = const IriTerm('https://schema.org/translator');
 
   /// typicalAgeRange [Expects: https://schema.org/Text]
   ///
@@ -973,7 +931,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event
   ///
-  static const typicalAgeRange = IriTerm.prevalidated(
+  static const typicalAgeRange = const IriTerm(
     'https://schema.org/typicalAgeRange',
   );
 
@@ -983,7 +941,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// version [Expects: https://schema.org/Number, https://schema.org/Text]
   ///
@@ -991,7 +949,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const version = IriTerm.prevalidated('https://schema.org/version');
+  static const version = const IriTerm('https://schema.org/version');
 
   /// video [Expects: https://schema.org/Clip, https://schema.org/VideoObject]
   ///
@@ -999,7 +957,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const video = IriTerm.prevalidated('https://schema.org/video');
+  static const video = const IriTerm('https://schema.org/video');
 
   /// wordCount [Expects: https://schema.org/Integer]
   ///
@@ -1007,7 +965,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Article, https://schema.org/CreativeWork
   ///
-  static const wordCount = IriTerm.prevalidated('https://schema.org/wordCount');
+  static const wordCount = const IriTerm('https://schema.org/wordCount');
 
   /// alternateName [Expects: https://schema.org/Text]
   ///
@@ -1015,7 +973,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -1025,7 +983,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/LodgingBusiness, https://schema.org/PlayAction, https://schema.org/Product, https://schema.org/Service
   ///
-  static const audience = IriTerm.prevalidated('https://schema.org/audience');
+  static const audience = const IriTerm('https://schema.org/audience');
 
   /// award [Expects: https://schema.org/Text]
   ///
@@ -1033,7 +991,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product, https://schema.org/Service
   ///
-  static const award = IriTerm.prevalidated('https://schema.org/award');
+  static const award = const IriTerm('https://schema.org/award');
 
   /// contentLocation [Expects: https://schema.org/Place]
   ///
@@ -1041,7 +999,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const contentLocation = IriTerm.prevalidated(
+  static const contentLocation = const IriTerm(
     'https://schema.org/contentLocation',
   );
 
@@ -1051,7 +1009,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/UserComments
   ///
-  static const creator = IriTerm.prevalidated('https://schema.org/creator');
+  static const creator = const IriTerm('https://schema.org/creator');
 
   /// dateCreated [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -1059,9 +1017,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/DataFeedItem
   ///
-  static const dateCreated = IriTerm.prevalidated(
-    'https://schema.org/dateCreated',
-  );
+  static const dateCreated = const IriTerm('https://schema.org/dateCreated');
 
   /// encodingFormat [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -1073,7 +1029,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/MediaObject
   ///
-  static const encodingFormat = IriTerm.prevalidated(
+  static const encodingFormat = const IriTerm(
     'https://schema.org/encodingFormat',
   );
 
@@ -1083,7 +1039,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const exampleOfWork = IriTerm.prevalidated(
+  static const exampleOfWork = const IriTerm(
     'https://schema.org/exampleOfWork',
   );
 
@@ -1093,7 +1049,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/BioChemEntity, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/MedicalEntity, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product
   ///
-  static const funding = IriTerm.prevalidated('https://schema.org/funding');
+  static const funding = const IriTerm('https://schema.org/funding');
 
   /// genre [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -1101,7 +1057,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/BroadcastChannel, https://schema.org/CreativeWork, https://schema.org/MusicGroup
   ///
-  static const genre = IriTerm.prevalidated('https://schema.org/genre');
+  static const genre = const IriTerm('https://schema.org/genre');
 
   /// inLanguage [Expects: https://schema.org/Language, https://schema.org/Text]
   ///
@@ -1109,9 +1065,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/BroadcastService, https://schema.org/CommunicateAction, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/LinkRole, https://schema.org/PronounceableText, https://schema.org/WriteAction
   ///
-  static const inLanguage = IriTerm.prevalidated(
-    'https://schema.org/inLanguage',
-  );
+  static const inLanguage = const IriTerm('https://schema.org/inLanguage');
 
   /// interactionStatistic [Expects: https://schema.org/InteractionCounter]
   ///
@@ -1119,7 +1073,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Organization, https://schema.org/Person
   ///
-  static const interactionStatistic = IriTerm.prevalidated(
+  static const interactionStatistic = const IriTerm(
     'https://schema.org/interactionStatistic',
   );
 
@@ -1129,7 +1083,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Place
   ///
-  static const isAccessibleForFree = IriTerm.prevalidated(
+  static const isAccessibleForFree = const IriTerm(
     'https://schema.org/isAccessibleForFree',
   );
 
@@ -1139,7 +1093,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const isBasedOn = IriTerm.prevalidated('https://schema.org/isBasedOn');
+  static const isBasedOn = const IriTerm('https://schema.org/isBasedOn');
 
   /// mainEntity [Expects: https://schema.org/Thing]
   ///
@@ -1147,9 +1101,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const mainEntity = IriTerm.prevalidated(
-    'https://schema.org/mainEntity',
-  );
+  static const mainEntity = const IriTerm('https://schema.org/mainEntity');
 
   /// mainEntityOfPage [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -1157,7 +1109,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -1168,7 +1120,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/AggregateOffer, https://schema.org/CreativeWork, https://schema.org/EducationalOccupationalProgram, https://schema.org/Event, https://schema.org/MenuItem, https://schema.org/Product, https://schema.org/Service, https://schema.org/Trip
   ///
-  static const offers = IriTerm.prevalidated('https://schema.org/offers');
+  static const offers = const IriTerm('https://schema.org/offers');
 
   /// provider [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -1176,7 +1128,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Action, https://schema.org/CreativeWork, https://schema.org/EducationalOccupationalProgram, https://schema.org/FinancialIncentive, https://schema.org/Invoice, https://schema.org/ParcelDelivery, https://schema.org/Reservation, https://schema.org/Service, https://schema.org/Trip
   ///
-  static const provider = IriTerm.prevalidated('https://schema.org/provider');
+  static const provider = const IriTerm('https://schema.org/provider');
 
   /// recordedAt [Expects: https://schema.org/Event]
   ///
@@ -1184,9 +1136,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const recordedAt = IriTerm.prevalidated(
-    'https://schema.org/recordedAt',
-  );
+  static const recordedAt = const IriTerm('https://schema.org/recordedAt');
 
   /// review [Expects: https://schema.org/Review]
   ///
@@ -1194,7 +1144,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const review = IriTerm.prevalidated('https://schema.org/review');
+  static const review = const IriTerm('https://schema.org/review');
 
   /// sponsor [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -1202,7 +1152,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Grant, https://schema.org/MedicalStudy, https://schema.org/Organization, https://schema.org/Person
   ///
-  static const sponsor = IriTerm.prevalidated('https://schema.org/sponsor');
+  static const sponsor = const IriTerm('https://schema.org/sponsor');
 
   /// subjectOf [Expects: https://schema.org/CreativeWork, https://schema.org/Event]
   ///
@@ -1210,7 +1160,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// temporalCoverage [Expects: https://schema.org/DateTime, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -1222,7 +1172,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const temporalCoverage = IriTerm.prevalidated(
+  static const temporalCoverage = const IriTerm(
     'https://schema.org/temporalCoverage',
   );
 
@@ -1232,7 +1182,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const translationOfWork = IriTerm.prevalidated(
+  static const translationOfWork = const IriTerm(
     'https://schema.org/translationOfWork',
   );
 
@@ -1244,7 +1194,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const usageInfo = IriTerm.prevalidated('https://schema.org/usageInfo');
+  static const usageInfo = const IriTerm('https://schema.org/usageInfo');
 
   /// workTranslation [Expects: https://schema.org/CreativeWork]
   ///
@@ -1252,7 +1202,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const workTranslation = IriTerm.prevalidated(
+  static const workTranslation = const IriTerm(
     'https://schema.org/workTranslation',
   );
 
@@ -1262,7 +1212,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Certification, https://schema.org/CommunicateAction, https://schema.org/CreativeWork, https://schema.org/Event
   ///
-  static const about = IriTerm.prevalidated('https://schema.org/about');
+  static const about = const IriTerm('https://schema.org/about');
 
   /// encoding [Expects: https://schema.org/MediaObject]
   ///
@@ -1270,7 +1220,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const encoding = IriTerm.prevalidated('https://schema.org/encoding');
+  static const encoding = const IriTerm('https://schema.org/encoding');
 
   /// material [Expects: https://schema.org/Product, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -1278,7 +1228,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Product
   ///
-  static const material = IriTerm.prevalidated('https://schema.org/material');
+  static const material = const IriTerm('https://schema.org/material');
 
   /// spatialCoverage [Expects: https://schema.org/Place]
   ///
@@ -1288,7 +1238,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const spatialCoverage = IriTerm.prevalidated(
+  static const spatialCoverage = const IriTerm(
     'https://schema.org/spatialCoverage',
   );
 
@@ -1298,9 +1248,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const workExample = IriTerm.prevalidated(
-    'https://schema.org/workExample',
-  );
+  static const workExample = const IriTerm('https://schema.org/workExample');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -1308,9 +1256,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -1318,7 +1264,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// hasPart [Expects: https://schema.org/CreativeWork]
   ///
@@ -1326,7 +1272,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const hasPart = IriTerm.prevalidated('https://schema.org/hasPart');
+  static const hasPart = const IriTerm('https://schema.org/hasPart');
 
   /// position [Expects: https://schema.org/Integer, https://schema.org/Text]
   ///
@@ -1334,7 +1280,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/ListItem
   ///
-  static const position = IriTerm.prevalidated('https://schema.org/position');
+  static const position = const IriTerm('https://schema.org/position');
 
   /// isPartOf [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -1342,7 +1288,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const isPartOf = IriTerm.prevalidated('https://schema.org/isPartOf');
+  static const isPartOf = const IriTerm('https://schema.org/isPartOf');
 
   /// publishingPrinciples [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -1353,7 +1299,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Organization, https://schema.org/Person
   ///
-  static const publishingPrinciples = IriTerm.prevalidated(
+  static const publishingPrinciples = const IriTerm(
     'https://schema.org/publishingPrinciples',
   );
 
@@ -1364,9 +1310,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -1374,7 +1318,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -1382,7 +1326,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -1392,7 +1336,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -1402,7 +1346,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -1412,7 +1356,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -1422,7 +1366,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -1432,7 +1376,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -1442,7 +1386,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -1452,7 +1396,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -1462,7 +1406,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -1472,7 +1416,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -1482,7 +1426,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -1492,7 +1436,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -1502,7 +1446,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -1512,7 +1456,7 @@ class SchemaNewsArticle {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

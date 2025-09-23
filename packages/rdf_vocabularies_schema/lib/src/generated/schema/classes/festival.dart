@@ -26,7 +26,7 @@ class SchemaFestival {
 
   /// IRI term for the Festival class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated('https://schema.org/Festival');
+  static const classIri = const IriTerm('https://schema.org/Festival');
 
   /// additionalType [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -35,7 +35,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -45,7 +45,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const aggregateRating = IriTerm.prevalidated(
+  static const aggregateRating = const IriTerm(
     'https://schema.org/aggregateRating',
   );
 
@@ -55,7 +55,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const attendees = IriTerm.prevalidated('https://schema.org/attendees');
+  static const attendees = const IriTerm('https://schema.org/attendees');
 
   /// composer [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -63,7 +63,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event, https://schema.org/MusicComposition
   ///
-  static const composer = IriTerm.prevalidated('https://schema.org/composer');
+  static const composer = const IriTerm('https://schema.org/composer');
 
   /// contributor [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -71,9 +71,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event
   ///
-  static const contributor = IriTerm.prevalidated(
-    'https://schema.org/contributor',
-  );
+  static const contributor = const IriTerm('https://schema.org/contributor');
 
   /// disambiguatingDescription [Expects: https://schema.org/Text]
   ///
@@ -81,7 +79,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -91,7 +89,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const doorTime = IriTerm.prevalidated('https://schema.org/doorTime');
+  static const doorTime = const IriTerm('https://schema.org/doorTime');
 
   /// endDate [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -99,7 +97,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/CreativeWorkSeason, https://schema.org/CreativeWorkSeries, https://schema.org/DatedMoneySpecification, https://schema.org/EducationalOccupationalProgram, https://schema.org/Event, https://schema.org/MerchantReturnPolicySeasonalOverride, https://schema.org/Role, https://schema.org/Schedule
   ///
-  static const endDate = IriTerm.prevalidated('https://schema.org/endDate');
+  static const endDate = const IriTerm('https://schema.org/endDate');
 
   /// eventAttendanceMode [Expects: https://schema.org/EventAttendanceModeEnumeration]
   ///
@@ -107,7 +105,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const eventAttendanceMode = IriTerm.prevalidated(
+  static const eventAttendanceMode = const IriTerm(
     'https://schema.org/eventAttendanceMode',
   );
 
@@ -122,7 +120,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const eventSchedule = IriTerm.prevalidated(
+  static const eventSchedule = const IriTerm(
     'https://schema.org/eventSchedule',
   );
 
@@ -132,9 +130,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const eventStatus = IriTerm.prevalidated(
-    'https://schema.org/eventStatus',
-  );
+  static const eventStatus = const IriTerm('https://schema.org/eventStatus');
 
   /// funder [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -142,7 +138,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Grant, https://schema.org/MonetaryGrant, https://schema.org/Organization, https://schema.org/Person
   ///
-  static const funder = IriTerm.prevalidated('https://schema.org/funder');
+  static const funder = const IriTerm('https://schema.org/funder');
 
   /// interactionCount
   ///
@@ -150,7 +146,7 @@ class SchemaFestival {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -160,7 +156,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product
   ///
-  static const keywords = IriTerm.prevalidated('https://schema.org/keywords');
+  static const keywords = const IriTerm('https://schema.org/keywords');
 
   /// maximumAttendeeCapacity [Expects: https://schema.org/Integer]
   ///
@@ -168,7 +164,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event, https://schema.org/Place
   ///
-  static const maximumAttendeeCapacity = IriTerm.prevalidated(
+  static const maximumAttendeeCapacity = const IriTerm(
     'https://schema.org/maximumAttendeeCapacity',
   );
 
@@ -178,7 +174,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const maximumPhysicalAttendeeCapacity = IriTerm.prevalidated(
+  static const maximumPhysicalAttendeeCapacity = const IriTerm(
     'https://schema.org/maximumPhysicalAttendeeCapacity',
   );
 
@@ -188,7 +184,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const maximumVirtualAttendeeCapacity = IriTerm.prevalidated(
+  static const maximumVirtualAttendeeCapacity = const IriTerm(
     'https://schema.org/maximumVirtualAttendeeCapacity',
   );
 
@@ -198,7 +194,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// organizer [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -206,7 +202,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const organizer = IriTerm.prevalidated('https://schema.org/organizer');
+  static const organizer = const IriTerm('https://schema.org/organizer');
 
   /// performers [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -214,9 +210,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const performers = IriTerm.prevalidated(
-    'https://schema.org/performers',
-  );
+  static const performers = const IriTerm('https://schema.org/performers');
 
   /// potentialAction [Expects: https://schema.org/Action]
   ///
@@ -224,7 +218,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -234,7 +228,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const previousStartDate = IriTerm.prevalidated(
+  static const previousStartDate = const IriTerm(
     'https://schema.org/previousStartDate',
   );
 
@@ -244,7 +238,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const remainingAttendeeCapacity = IriTerm.prevalidated(
+  static const remainingAttendeeCapacity = const IriTerm(
     'https://schema.org/remainingAttendeeCapacity',
   );
 
@@ -254,7 +248,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// startDate [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -262,7 +256,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/CreativeWorkSeason, https://schema.org/CreativeWorkSeries, https://schema.org/DatedMoneySpecification, https://schema.org/EducationalOccupationalProgram, https://schema.org/Event, https://schema.org/MerchantReturnPolicySeasonalOverride, https://schema.org/Role, https://schema.org/Schedule
   ///
-  static const startDate = IriTerm.prevalidated('https://schema.org/startDate');
+  static const startDate = const IriTerm('https://schema.org/startDate');
 
   /// subEvents [Expects: https://schema.org/Event]
   ///
@@ -270,7 +264,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const subEvents = IriTerm.prevalidated('https://schema.org/subEvents');
+  static const subEvents = const IriTerm('https://schema.org/subEvents');
 
   /// translator [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -278,9 +272,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event
   ///
-  static const translator = IriTerm.prevalidated(
-    'https://schema.org/translator',
-  );
+  static const translator = const IriTerm('https://schema.org/translator');
 
   /// typicalAgeRange [Expects: https://schema.org/Text]
   ///
@@ -288,7 +280,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event
   ///
-  static const typicalAgeRange = IriTerm.prevalidated(
+  static const typicalAgeRange = const IriTerm(
     'https://schema.org/typicalAgeRange',
   );
 
@@ -298,7 +290,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// workPerformed [Expects: https://schema.org/CreativeWork]
   ///
@@ -306,7 +298,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const workPerformed = IriTerm.prevalidated(
+  static const workPerformed = const IriTerm(
     'https://schema.org/workPerformed',
   );
 
@@ -316,7 +308,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -326,7 +318,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const attendee = IriTerm.prevalidated('https://schema.org/attendee');
+  static const attendee = const IriTerm('https://schema.org/attendee');
 
   /// audience [Expects: https://schema.org/Audience]
   ///
@@ -334,7 +326,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/LodgingBusiness, https://schema.org/PlayAction, https://schema.org/Product, https://schema.org/Service
   ///
-  static const audience = IriTerm.prevalidated('https://schema.org/audience');
+  static const audience = const IriTerm('https://schema.org/audience');
 
   /// director [Expects: https://schema.org/Person]
   ///
@@ -342,7 +334,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Clip, https://schema.org/CreativeWorkSeason, https://schema.org/Episode, https://schema.org/Event, https://schema.org/Movie, https://schema.org/MovieSeries, https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGame, https://schema.org/VideoGameSeries, https://schema.org/VideoObject
   ///
-  static const director = IriTerm.prevalidated('https://schema.org/director');
+  static const director = const IriTerm('https://schema.org/director');
 
   /// duration [Expects: https://schema.org/Duration, https://schema.org/QuantitativeValue]
   ///
@@ -350,7 +342,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Audiobook, https://schema.org/Episode, https://schema.org/Event, https://schema.org/MediaObject, https://schema.org/Movie, https://schema.org/MusicRecording, https://schema.org/MusicRelease, https://schema.org/QuantitativeValueDistribution, https://schema.org/Schedule, https://schema.org/ServicePeriod
   ///
-  static const duration = IriTerm.prevalidated('https://schema.org/duration');
+  static const duration = const IriTerm('https://schema.org/duration');
 
   /// funding [Expects: https://schema.org/Grant]
   ///
@@ -358,7 +350,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/BioChemEntity, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/MedicalEntity, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product
   ///
-  static const funding = IriTerm.prevalidated('https://schema.org/funding');
+  static const funding = const IriTerm('https://schema.org/funding');
 
   /// inLanguage [Expects: https://schema.org/Language, https://schema.org/Text]
   ///
@@ -366,9 +358,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/BroadcastService, https://schema.org/CommunicateAction, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/LinkRole, https://schema.org/PronounceableText, https://schema.org/WriteAction
   ///
-  static const inLanguage = IriTerm.prevalidated(
-    'https://schema.org/inLanguage',
-  );
+  static const inLanguage = const IriTerm('https://schema.org/inLanguage');
 
   /// isAccessibleForFree [Expects: https://schema.org/Boolean]
   ///
@@ -376,7 +366,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Place
   ///
-  static const isAccessibleForFree = IriTerm.prevalidated(
+  static const isAccessibleForFree = const IriTerm(
     'https://schema.org/isAccessibleForFree',
   );
 
@@ -386,7 +376,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -397,7 +387,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/AggregateOffer, https://schema.org/CreativeWork, https://schema.org/EducationalOccupationalProgram, https://schema.org/Event, https://schema.org/MenuItem, https://schema.org/Product, https://schema.org/Service, https://schema.org/Trip
   ///
-  static const offers = IriTerm.prevalidated('https://schema.org/offers');
+  static const offers = const IriTerm('https://schema.org/offers');
 
   /// performer [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -405,7 +395,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const performer = IriTerm.prevalidated('https://schema.org/performer');
+  static const performer = const IriTerm('https://schema.org/performer');
 
   /// recordedIn [Expects: https://schema.org/CreativeWork]
   ///
@@ -413,9 +403,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const recordedIn = IriTerm.prevalidated(
-    'https://schema.org/recordedIn',
-  );
+  static const recordedIn = const IriTerm('https://schema.org/recordedIn');
 
   /// review [Expects: https://schema.org/Review]
   ///
@@ -423,7 +411,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const review = IriTerm.prevalidated('https://schema.org/review');
+  static const review = const IriTerm('https://schema.org/review');
 
   /// sponsor [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -431,7 +419,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Grant, https://schema.org/MedicalStudy, https://schema.org/Organization, https://schema.org/Person
   ///
-  static const sponsor = IriTerm.prevalidated('https://schema.org/sponsor');
+  static const sponsor = const IriTerm('https://schema.org/sponsor');
 
   /// subjectOf [Expects: https://schema.org/CreativeWork, https://schema.org/Event]
   ///
@@ -439,7 +427,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// superEvent [Expects: https://schema.org/Event]
   ///
@@ -447,9 +435,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const superEvent = IriTerm.prevalidated(
-    'https://schema.org/superEvent',
-  );
+  static const superEvent = const IriTerm('https://schema.org/superEvent');
 
   /// about [Expects: https://schema.org/Thing]
   ///
@@ -457,7 +443,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Certification, https://schema.org/CommunicateAction, https://schema.org/CreativeWork, https://schema.org/Event
   ///
-  static const about = IriTerm.prevalidated('https://schema.org/about');
+  static const about = const IriTerm('https://schema.org/about');
 
   /// actor [Expects: https://schema.org/PerformingGroup, https://schema.org/Person]
   ///
@@ -465,7 +451,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Clip, https://schema.org/CreativeWorkSeason, https://schema.org/Episode, https://schema.org/Event, https://schema.org/Movie, https://schema.org/MovieSeries, https://schema.org/PodcastSeries, https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGame, https://schema.org/VideoGameSeries, https://schema.org/VideoObject
   ///
-  static const actor = IriTerm.prevalidated('https://schema.org/actor');
+  static const actor = const IriTerm('https://schema.org/actor');
 
   /// subEvent [Expects: https://schema.org/Event]
   ///
@@ -473,7 +459,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const subEvent = IriTerm.prevalidated('https://schema.org/subEvent');
+  static const subEvent = const IriTerm('https://schema.org/subEvent');
 
   /// workFeatured [Expects: https://schema.org/CreativeWork]
   ///
@@ -482,9 +468,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const workFeatured = IriTerm.prevalidated(
-    'https://schema.org/workFeatured',
-  );
+  static const workFeatured = const IriTerm('https://schema.org/workFeatured');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -492,9 +476,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -502,7 +484,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// location [Expects: https://schema.org/Place, https://schema.org/PostalAddress, https://schema.org/Text, https://schema.org/VirtualLocation]
   ///
@@ -510,7 +492,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Action, https://schema.org/Event, https://schema.org/InteractionCounter, https://schema.org/Organization
   ///
-  static const location = IriTerm.prevalidated('https://schema.org/location');
+  static const location = const IriTerm('https://schema.org/location');
 
   /// identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -519,9 +501,7 @@ class SchemaFestival {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -529,7 +509,7 @@ class SchemaFestival {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -537,7 +517,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -547,7 +527,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -557,7 +537,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -567,7 +547,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -577,7 +557,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -587,7 +567,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -597,7 +577,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -607,7 +587,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -617,7 +597,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -627,7 +607,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -637,7 +617,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -647,7 +627,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -657,7 +637,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -667,7 +647,7 @@ class SchemaFestival {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

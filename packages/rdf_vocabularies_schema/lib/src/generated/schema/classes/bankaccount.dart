@@ -28,9 +28,7 @@ class SchemaBankAccount {
 
   /// IRI term for the BankAccount class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
-    'https://schema.org/BankAccount',
-  );
+  static const classIri = const IriTerm('https://schema.org/BankAccount');
 
   /// accountMinimumInflow [Expects: https://schema.org/MonetaryAmount]
   ///
@@ -38,7 +36,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/BankAccount
   ///
-  static const accountMinimumInflow = IriTerm.prevalidated(
+  static const accountMinimumInflow = const IriTerm(
     'https://schema.org/accountMinimumInflow',
   );
 
@@ -48,7 +46,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/BankAccount
   ///
-  static const accountOverdraftLimit = IriTerm.prevalidated(
+  static const accountOverdraftLimit = const IriTerm(
     'https://schema.org/accountOverdraftLimit',
   );
 
@@ -59,7 +57,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -69,7 +67,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const aggregateRating = IriTerm.prevalidated(
+  static const aggregateRating = const IriTerm(
     'https://schema.org/aggregateRating',
   );
 
@@ -79,7 +77,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/FinancialProduct
   ///
-  static const annualPercentageRate = IriTerm.prevalidated(
+  static const annualPercentageRate = const IriTerm(
     'https://schema.org/annualPercentageRate',
   );
 
@@ -89,7 +87,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const availableChannel = IriTerm.prevalidated(
+  static const availableChannel = const IriTerm(
     'https://schema.org/availableChannel',
   );
 
@@ -99,7 +97,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/BankAccount
   ///
-  static const bankAccountType = IriTerm.prevalidated(
+  static const bankAccountType = const IriTerm(
     'https://schema.org/bankAccountType',
   );
 
@@ -109,7 +107,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product, https://schema.org/Service
   ///
-  static const brand = IriTerm.prevalidated('https://schema.org/brand');
+  static const brand = const IriTerm('https://schema.org/brand');
 
   /// disambiguatingDescription [Expects: https://schema.org/Text]
   ///
@@ -117,7 +115,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -127,7 +125,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/FinancialProduct, https://schema.org/FinancialService
   ///
-  static const feesAndCommissionsSpecification = IriTerm.prevalidated(
+  static const feesAndCommissionsSpecification = const IriTerm(
     'https://schema.org/feesAndCommissionsSpecification',
   );
 
@@ -137,7 +135,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const hasCertification = IriTerm.prevalidated(
+  static const hasCertification = const IriTerm(
     'https://schema.org/hasCertification',
   );
 
@@ -147,7 +145,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Service
   ///
-  static const hasOfferCatalog = IriTerm.prevalidated(
+  static const hasOfferCatalog = const IriTerm(
     'https://schema.org/hasOfferCatalog',
   );
 
@@ -157,7 +155,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/LocationFeatureSpecification, https://schema.org/Service
   ///
-  static const hoursAvailable = IriTerm.prevalidated(
+  static const hoursAvailable = const IriTerm(
     'https://schema.org/hoursAvailable',
   );
 
@@ -167,7 +165,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -177,9 +175,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/FinancialProduct
   ///
-  static const interestRate = IriTerm.prevalidated(
-    'https://schema.org/interestRate',
-  );
+  static const interestRate = const IriTerm('https://schema.org/interestRate');
 
   /// isRelatedTo [Expects: https://schema.org/Product, https://schema.org/Service]
   ///
@@ -187,9 +183,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Product, https://schema.org/Service
   ///
-  static const isRelatedTo = IriTerm.prevalidated(
-    'https://schema.org/isRelatedTo',
-  );
+  static const isRelatedTo = const IriTerm('https://schema.org/isRelatedTo');
 
   /// isSimilarTo [Expects: https://schema.org/Product, https://schema.org/Service]
   ///
@@ -197,9 +191,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Product, https://schema.org/Service
   ///
-  static const isSimilarTo = IriTerm.prevalidated(
-    'https://schema.org/isSimilarTo',
-  );
+  static const isSimilarTo = const IriTerm('https://schema.org/isSimilarTo');
 
   /// logo [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -207,7 +199,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/Certification, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const logo = IriTerm.prevalidated('https://schema.org/logo');
+  static const logo = const IriTerm('https://schema.org/logo');
 
   /// name [Expects: https://schema.org/Text]
   ///
@@ -215,7 +207,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// potentialAction [Expects: https://schema.org/Action]
   ///
@@ -223,7 +215,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -233,7 +225,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const produces = IriTerm.prevalidated('https://schema.org/produces');
+  static const produces = const IriTerm('https://schema.org/produces');
 
   /// providerMobility [Expects: https://schema.org/Text]
   ///
@@ -241,7 +233,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const providerMobility = IriTerm.prevalidated(
+  static const providerMobility = const IriTerm(
     'https://schema.org/providerMobility',
   );
 
@@ -251,7 +243,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// serviceAudience [Expects: https://schema.org/Audience]
   ///
@@ -259,7 +251,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const serviceAudience = IriTerm.prevalidated(
+  static const serviceAudience = const IriTerm(
     'https://schema.org/serviceAudience',
   );
 
@@ -269,9 +261,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const serviceType = IriTerm.prevalidated(
-    'https://schema.org/serviceType',
-  );
+  static const serviceType = const IriTerm('https://schema.org/serviceType');
 
   /// slogan [Expects: https://schema.org/Text]
   ///
@@ -279,7 +269,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const slogan = IriTerm.prevalidated('https://schema.org/slogan');
+  static const slogan = const IriTerm('https://schema.org/slogan');
 
   /// termsOfService [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -287,7 +277,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const termsOfService = IriTerm.prevalidated(
+  static const termsOfService = const IriTerm(
     'https://schema.org/termsOfService',
   );
 
@@ -297,7 +287,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// alternateName [Expects: https://schema.org/Text]
   ///
@@ -305,7 +295,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -315,7 +305,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/LodgingBusiness, https://schema.org/PlayAction, https://schema.org/Product, https://schema.org/Service
   ///
-  static const audience = IriTerm.prevalidated('https://schema.org/audience');
+  static const audience = const IriTerm('https://schema.org/audience');
 
   /// award [Expects: https://schema.org/Text]
   ///
@@ -323,7 +313,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product, https://schema.org/Service
   ///
-  static const award = IriTerm.prevalidated('https://schema.org/award');
+  static const award = const IriTerm('https://schema.org/award');
 
   /// broker [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -331,7 +321,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Invoice, https://schema.org/Order, https://schema.org/Reservation, https://schema.org/Service
   ///
-  static const broker = IriTerm.prevalidated('https://schema.org/broker');
+  static const broker = const IriTerm('https://schema.org/broker');
 
   /// category [Expects: https://schema.org/CategoryCode, https://schema.org/PhysicalActivityCategory, https://schema.org/Text, https://schema.org/Thing, https://schema.org/URL]
   ///
@@ -339,7 +329,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/ActionAccessSpecification, https://schema.org/Invoice, https://schema.org/Offer, https://schema.org/PhysicalActivity, https://schema.org/Product, https://schema.org/Recommendation, https://schema.org/Service, https://schema.org/SpecialAnnouncement
   ///
-  static const category = IriTerm.prevalidated('https://schema.org/category');
+  static const category = const IriTerm('https://schema.org/category');
 
   /// mainEntityOfPage [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -347,7 +337,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -358,7 +348,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/AggregateOffer, https://schema.org/CreativeWork, https://schema.org/EducationalOccupationalProgram, https://schema.org/Event, https://schema.org/MenuItem, https://schema.org/Product, https://schema.org/Service, https://schema.org/Trip
   ///
-  static const offers = IriTerm.prevalidated('https://schema.org/offers');
+  static const offers = const IriTerm('https://schema.org/offers');
 
   /// provider [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -366,7 +356,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Action, https://schema.org/CreativeWork, https://schema.org/EducationalOccupationalProgram, https://schema.org/FinancialIncentive, https://schema.org/Invoice, https://schema.org/ParcelDelivery, https://schema.org/Reservation, https://schema.org/Service, https://schema.org/Trip
   ///
-  static const provider = IriTerm.prevalidated('https://schema.org/provider');
+  static const provider = const IriTerm('https://schema.org/provider');
 
   /// review [Expects: https://schema.org/Review]
   ///
@@ -374,7 +364,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const review = IriTerm.prevalidated('https://schema.org/review');
+  static const review = const IriTerm('https://schema.org/review');
 
   /// serviceArea [Expects: https://schema.org/AdministrativeArea, https://schema.org/GeoShape, https://schema.org/Place]
   ///
@@ -382,9 +372,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/Organization, https://schema.org/Service
   ///
-  static const serviceArea = IriTerm.prevalidated(
-    'https://schema.org/serviceArea',
-  );
+  static const serviceArea = const IriTerm('https://schema.org/serviceArea');
 
   /// serviceOutput [Expects: https://schema.org/Thing]
   ///
@@ -392,7 +380,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const serviceOutput = IriTerm.prevalidated(
+  static const serviceOutput = const IriTerm(
     'https://schema.org/serviceOutput',
   );
 
@@ -402,7 +390,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// areaServed [Expects: https://schema.org/AdministrativeArea, https://schema.org/GeoShape, https://schema.org/Place, https://schema.org/Text]
   ///
@@ -410,9 +398,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/DeliveryChargeSpecification, https://schema.org/Demand, https://schema.org/FinancialIncentive, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Service
   ///
-  static const areaServed = IriTerm.prevalidated(
-    'https://schema.org/areaServed',
-  );
+  static const areaServed = const IriTerm('https://schema.org/areaServed');
 
   /// description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -420,9 +406,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// image [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -430,7 +414,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -439,9 +423,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// source
   ///
@@ -449,7 +431,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 
   /// type from rdf vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Class]
   ///
@@ -457,7 +439,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -467,7 +449,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -477,7 +459,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -487,7 +469,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -497,7 +479,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -507,7 +489,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -517,7 +499,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -527,7 +509,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -537,7 +519,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -547,7 +529,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -557,7 +539,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -567,7 +549,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -577,7 +559,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -587,7 +569,7 @@ class SchemaBankAccount {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

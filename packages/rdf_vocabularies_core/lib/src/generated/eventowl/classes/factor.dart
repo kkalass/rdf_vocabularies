@@ -27,7 +27,7 @@ class EventowlFactor {
 
   /// IRI term for the Factor class
   /// Use this to specify that a resource is of this type.
-  static const classIri = IriTerm.prevalidated(
+  static const classIri = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#Factor',
   );
 
@@ -37,7 +37,7 @@ class EventowlFactor {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const isAgentIn = IriTerm.prevalidated(
+  static const isAgentIn = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#isAgentIn',
   );
 
@@ -47,7 +47,7 @@ class EventowlFactor {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const isFactorOf = IriTerm.prevalidated(
+  static const isFactorOf = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#isFactorOf',
   );
 
@@ -57,7 +57,7 @@ class EventowlFactor {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const producedIn = IriTerm.prevalidated(
+  static const producedIn = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#producedIn',
   );
 
@@ -67,7 +67,7 @@ class EventowlFactor {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasFactor = IriTerm.prevalidated(
+  static const hasFactor = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasFactor',
   );
 
@@ -77,7 +77,7 @@ class EventowlFactor {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasAgent = IriTerm.prevalidated(
+  static const hasAgent = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasAgent',
   );
 
@@ -87,7 +87,7 @@ class EventowlFactor {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasProduct = IriTerm.prevalidated(
+  static const hasProduct = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasProduct',
   );
 
@@ -97,7 +97,7 @@ class EventowlFactor {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasLiteralFactor = IriTerm.prevalidated(
+  static const hasLiteralFactor = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasLiteralFactor',
   );
 
@@ -107,7 +107,7 @@ class EventowlFactor {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const agent_in = IriTerm.prevalidated(
+  static const agent_in = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#agent_in',
   );
 
@@ -117,7 +117,7 @@ class EventowlFactor {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const factor_of = IriTerm.prevalidated(
+  static const factor_of = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#factor_of',
   );
 
@@ -127,7 +127,7 @@ class EventowlFactor {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const produced_in = IriTerm.prevalidated(
+  static const produced_in = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#produced_in',
   );
 
@@ -137,7 +137,7 @@ class EventowlFactor {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const hasSubEvent = IriTerm.prevalidated(
+  static const hasSubEvent = const IriTerm(
     'http://purl.org/NET/c4dm/event.owl#hasSubEvent',
   );
 
@@ -147,7 +147,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfType = IriTerm.prevalidated(
+  static const rdfType = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#type',
   );
 
@@ -157,7 +157,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfValue = IriTerm.prevalidated(
+  static const rdfValue = const IriTerm(
     'http://www.w3.org/1999/02/22-rdf-syntax-ns#value',
   );
 
@@ -167,7 +167,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsComment = IriTerm.prevalidated(
+  static const rdfsComment = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#comment',
   );
 
@@ -177,7 +177,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsLabel = IriTerm.prevalidated(
+  static const rdfsLabel = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#label',
   );
 
@@ -187,7 +187,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsSeeAlso = IriTerm.prevalidated(
+  static const rdfsSeeAlso = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#seeAlso',
   );
 
@@ -197,7 +197,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsIsDefinedBy = IriTerm.prevalidated(
+  static const rdfsIsDefinedBy = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#isDefinedBy',
   );
 
@@ -207,7 +207,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const rdfsMember = IriTerm.prevalidated(
+  static const rdfsMember = const IriTerm(
     'http://www.w3.org/2000/01/rdf-schema#member',
   );
 
@@ -217,7 +217,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedProperty = IriTerm.prevalidated(
+  static const owlAnnotatedProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedProperty',
   );
 
@@ -227,7 +227,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedSource = IriTerm.prevalidated(
+  static const owlAnnotatedSource = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedSource',
   );
 
@@ -237,7 +237,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlAnnotatedTarget = IriTerm.prevalidated(
+  static const owlAnnotatedTarget = const IriTerm(
     'http://www.w3.org/2002/07/owl#annotatedTarget',
   );
 
@@ -247,7 +247,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlBottomDataProperty = IriTerm.prevalidated(
+  static const owlBottomDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomDataProperty',
   );
 
@@ -257,7 +257,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlBottomObjectProperty = IriTerm.prevalidated(
+  static const owlBottomObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#bottomObjectProperty',
   );
 
@@ -267,7 +267,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlDeprecated = IriTerm.prevalidated(
+  static const owlDeprecated = const IriTerm(
     'http://www.w3.org/2002/07/owl#deprecated',
   );
 
@@ -277,7 +277,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlDifferentFrom = IriTerm.prevalidated(
+  static const owlDifferentFrom = const IriTerm(
     'http://www.w3.org/2002/07/owl#differentFrom',
   );
 
@@ -287,7 +287,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlMembers = IriTerm.prevalidated(
+  static const owlMembers = const IriTerm(
     'http://www.w3.org/2002/07/owl#members',
   );
 
@@ -297,7 +297,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlSameAs = IriTerm.prevalidated(
+  static const owlSameAs = const IriTerm(
     'http://www.w3.org/2002/07/owl#sameAs',
   );
 
@@ -307,7 +307,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlTopDataProperty = IriTerm.prevalidated(
+  static const owlTopDataProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topDataProperty',
   );
 
@@ -317,7 +317,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const owlTopObjectProperty = IriTerm.prevalidated(
+  static const owlTopObjectProperty = const IriTerm(
     'http://www.w3.org/2002/07/owl#topObjectProperty',
   );
 
@@ -327,7 +327,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const owlVersionInfo = IriTerm.prevalidated(
+  static const owlVersionInfo = const IriTerm(
     'http://www.w3.org/2002/07/owl#versionInfo',
   );
 
@@ -337,9 +337,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafName = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/name',
-  );
+  static const foafName = const IriTerm('http://xmlns.com/foaf/0.1/name');
 
   /// homepage from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -347,7 +345,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafHomepage = IriTerm.prevalidated(
+  static const foafHomepage = const IriTerm(
     'http://xmlns.com/foaf/0.1/homepage',
   );
 
@@ -358,9 +356,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafMaker = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/maker',
-  );
+  static const foafMaker = const IriTerm('http://xmlns.com/foaf/0.1/maker');
 
   /// depiction from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Image]
   ///
@@ -368,7 +364,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafDepiction = IriTerm.prevalidated(
+  static const foafDepiction = const IriTerm(
     'http://xmlns.com/foaf/0.1/depiction',
   );
 
@@ -378,7 +374,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafFundedBy = IriTerm.prevalidated(
+  static const foafFundedBy = const IriTerm(
     'http://xmlns.com/foaf/0.1/fundedBy',
   );
 
@@ -388,9 +384,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafLogo = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/logo',
-  );
+  static const foafLogo = const IriTerm('http://xmlns.com/foaf/0.1/logo');
 
   /// page from foaf vocabulary [Expects: http://xmlns.com/foaf/0.1/Document]
   ///
@@ -398,9 +392,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafPage = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/page',
-  );
+  static const foafPage = const IriTerm('http://xmlns.com/foaf/0.1/page');
 
   /// theme from foaf vocabulary [Expects: http://www.w3.org/2002/07/owl#Thing]
   ///
@@ -408,9 +400,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2002/07/owl#Thing
   ///
-  static const foafTheme = IriTerm.prevalidated(
-    'http://xmlns.com/foaf/0.1/theme',
-  );
+  static const foafTheme = const IriTerm('http://xmlns.com/foaf/0.1/theme');
 
   /// abstract_ from bibo vocabulary [Expects: http://www.w3.org/2000/01/rdf-schema#Literal]
   ///
@@ -418,7 +408,7 @@ class EventowlFactor {
   ///
   /// Can be used on: http://www.w3.org/2000/01/rdf-schema#Resource
   ///
-  static const biboAbstract_ = IriTerm.prevalidated(
+  static const biboAbstract_ = const IriTerm(
     'http://purl.org/ontology/bibo/abstract',
   );
 }

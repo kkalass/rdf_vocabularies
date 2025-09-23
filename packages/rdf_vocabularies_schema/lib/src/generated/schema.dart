@@ -24,13 +24,13 @@ class Schema {
   /// A 3D model represents some kind of 3D content, which may have {[encoding]}s in one or more {[MediaObject]}s. Many 3D formats are available (e.g. see [Wikipedia](https://en.wikipedia.org/wiki/Category:3D_graphics_file_formats)); specific encoding formats can be represented using the {[encodingFormat]} property applied to the relevant {[MediaObject]}. For the
   /// case of a single file published after Zip compression, the convention of appending '+zip' to the {[encodingFormat]} can be used. Geospatial, AR/VR, artistic/animation, gaming, engineering and scientific content can all be represented using {[3DModel]}.
   ///
-  static const n3DModel = IriTerm.prevalidated('https://schema.org/3DModel');
+  static const n3DModel = const IriTerm('https://schema.org/3DModel');
 
   /// IRI for schema:AMRadioChannel
   ///
   /// A radio channel that uses AM.
   ///
-  static const AMRadioChannel = IriTerm.prevalidated(
+  static const AMRadioChannel = const IriTerm(
     'https://schema.org/AMRadioChannel',
   );
 
@@ -38,23 +38,19 @@ class Schema {
   ///
   /// Reference documentation for application programming interfaces (APIs).
   ///
-  static const APIReference = IriTerm.prevalidated(
-    'https://schema.org/APIReference',
-  );
+  static const APIReference = const IriTerm('https://schema.org/APIReference');
 
   /// IRI for schema:AboutPage
   ///
   /// Web page type: About page.
   ///
-  static const AboutPage = IriTerm.prevalidated('https://schema.org/AboutPage');
+  static const AboutPage = const IriTerm('https://schema.org/AboutPage');
 
   /// IRI for schema:AcceptAction
   ///
   /// The act of committing to/adopting an object.\n\nRelated actions:\n\n* {[RejectAction]}: The antonym of AcceptAction.
   ///
-  static const AcceptAction = IriTerm.prevalidated(
-    'https://schema.org/AcceptAction',
-  );
+  static const AcceptAction = const IriTerm('https://schema.org/AcceptAction');
 
   /// IRI for schema:Accommodation
   ///
@@ -64,7 +60,7 @@ class Schema {
   /// See also the <a href="/docs/hotels.html">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.
   ///
   ///
-  static const Accommodation = IriTerm.prevalidated(
+  static const Accommodation = const IriTerm(
     'https://schema.org/Accommodation',
   );
 
@@ -73,7 +69,7 @@ class Schema {
   /// Accountancy business.\n\nAs a {[LocalBusiness]} it can be described as a {[provider]} of one or more {[Service]}\(s).
   ///
   ///
-  static const AccountingService = IriTerm.prevalidated(
+  static const AccountingService = const IriTerm(
     'https://schema.org/AccountingService',
   );
 
@@ -81,21 +77,21 @@ class Schema {
   ///
   /// The act of accomplishing something via previous efforts. It is an instantaneous action rather than an ongoing process.
   ///
-  static const AchieveAction = IriTerm.prevalidated(
+  static const AchieveAction = const IriTerm(
     'https://schema.org/AchieveAction',
   );
 
   /// IRI for schema:Action
   ///
-  /// An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of the action may produce a result. Specific action sub-type documentation specifies the exact expectation of each argument/role.\n\nSee also [blog post](http://blog.schema.org/2014/04/announcing-schemaorg-actions.html) and [Actions overview document](https://schema.org/docs/actions.html).
+  /// An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of the action may produce a result. Specific action sub-type documentation specifies the exact expectation of each argument/role.\n\nSee also [blog post](https://blog.schema.org/2014/04/16/announcing-schema-org-actions/) and [Actions overview document](https://schema.org/docs/actions.html).
   ///
-  static const Action = IriTerm.prevalidated('https://schema.org/Action');
+  static const Action = const IriTerm('https://schema.org/Action');
 
   /// IRI for schema:ActionAccessSpecification
   ///
   /// A set of requirements that must be fulfilled in order to perform an Action.
   ///
-  static const ActionAccessSpecification = IriTerm.prevalidated(
+  static const ActionAccessSpecification = const IriTerm(
     'https://schema.org/ActionAccessSpecification',
   );
 
@@ -103,7 +99,7 @@ class Schema {
   ///
   /// The status of an Action.
   ///
-  static const ActionStatusType = IriTerm.prevalidated(
+  static const ActionStatusType = const IriTerm(
     'https://schema.org/ActionStatusType',
   );
 
@@ -111,7 +107,7 @@ class Schema {
   ///
   /// The act of starting or activating a device or application (e.g. starting a timer or turning on a flashlight).
   ///
-  static const ActivateAction = IriTerm.prevalidated(
+  static const ActivateAction = const IriTerm(
     'https://schema.org/ActivateAction',
   );
 
@@ -119,13 +115,13 @@ class Schema {
   ///
   /// The act of editing by adding an object to a collection.
   ///
-  static const AddAction = IriTerm.prevalidated('https://schema.org/AddAction');
+  static const AddAction = const IriTerm('https://schema.org/AddAction');
 
   /// IRI for schema:AdministrativeArea
   ///
   /// A geographical region, typically under the jurisdiction of a particular government.
   ///
-  static const AdministrativeArea = IriTerm.prevalidated(
+  static const AdministrativeArea = const IriTerm(
     'https://schema.org/AdministrativeArea',
   );
 
@@ -133,7 +129,7 @@ class Schema {
   ///
   /// An adult entertainment establishment.
   ///
-  static const AdultEntertainment = IriTerm.prevalidated(
+  static const AdultEntertainment = const IriTerm(
     'https://schema.org/AdultEntertainment',
   );
 
@@ -141,7 +137,7 @@ class Schema {
   ///
   /// Enumeration of considerations that make a product relevant or potentially restricted for adults only.
   ///
-  static const AdultOrientedEnumeration = IriTerm.prevalidated(
+  static const AdultOrientedEnumeration = const IriTerm(
     'https://schema.org/AdultOrientedEnumeration',
   );
 
@@ -149,7 +145,7 @@ class Schema {
   ///
   /// An {[Article]} that an external entity has paid to place or to produce to its specifications. Includes [advertorials](https://en.wikipedia.org/wiki/Advertorial), sponsored content, native advertising and other paid content.
   ///
-  static const AdvertiserContentArticle = IriTerm.prevalidated(
+  static const AdvertiserContentArticle = const IriTerm(
     'https://schema.org/AdvertiserContentArticle',
   );
 
@@ -157,7 +153,7 @@ class Schema {
   ///
   /// When a single product is associated with multiple offers (for example, the same pair of shoes is offered by different merchants), then AggregateOffer can be used.\n\nNote: AggregateOffers are normally expected to associate multiple offers that all share the same defined {[businessFunction]} value, or default to http://purl.org/goodrelations/v1#Sell if businessFunction is not explicitly defined.
   ///
-  static const AggregateOffer = IriTerm.prevalidated(
+  static const AggregateOffer = const IriTerm(
     'https://schema.org/AggregateOffer',
   );
 
@@ -165,7 +161,7 @@ class Schema {
   ///
   /// The average rating based on multiple ratings or reviews.
   ///
-  static const AggregateRating = IriTerm.prevalidated(
+  static const AggregateRating = const IriTerm(
     'https://schema.org/AggregateRating',
   );
 
@@ -173,21 +169,19 @@ class Schema {
   ///
   /// The act of expressing a consistency of opinion with the object. An agent agrees to/about an object (a proposition, topic or theme) with participants.
   ///
-  static const AgreeAction = IriTerm.prevalidated(
-    'https://schema.org/AgreeAction',
-  );
+  static const AgreeAction = const IriTerm('https://schema.org/AgreeAction');
 
   /// IRI for schema:Airline
   ///
   /// An organization that provides flights for passengers.
   ///
-  static const Airline = IriTerm.prevalidated('https://schema.org/Airline');
+  static const Airline = const IriTerm('https://schema.org/Airline');
 
   /// IRI for schema:Airport
   ///
   /// An airport.
   ///
-  static const Airport = IriTerm.prevalidated('https://schema.org/Airport');
+  static const Airport = const IriTerm('https://schema.org/Airport');
 
   /// IRI for schema:AlignmentObject
   ///
@@ -195,7 +189,7 @@ class Schema {
   ///
   /// Should not be used where the nature of the alignment can be described using a simple property, for example to express that a resource {[teaches]} or {[assesses]} a competency.
   ///
-  static const AlignmentObject = IriTerm.prevalidated(
+  static const AlignmentObject = const IriTerm(
     'https://schema.org/AlignmentObject',
   );
 
@@ -203,7 +197,7 @@ class Schema {
   ///
   /// The act of organizing tasks/objects/events by associating resources to it.
   ///
-  static const AllocateAction = IriTerm.prevalidated(
+  static const AllocateAction = const IriTerm(
     'https://schema.org/AllocateAction',
   );
 
@@ -211,13 +205,13 @@ class Schema {
   ///
   /// A creative work with a visual storytelling format intended to be viewed online, particularly on mobile devices.
   ///
-  static const AmpStory = IriTerm.prevalidated('https://schema.org/AmpStory');
+  static const AmpStory = const IriTerm('https://schema.org/AmpStory');
 
   /// IRI for schema:AmusementPark
   ///
   /// An amusement park.
   ///
-  static const AmusementPark = IriTerm.prevalidated(
+  static const AmusementPark = const IriTerm(
     'https://schema.org/AmusementPark',
   );
 
@@ -225,7 +219,7 @@ class Schema {
   ///
   /// An AnalysisNewsArticle is a {[NewsArticle]} that, while based on factual reporting, incorporates the expertise of the author/producer, offering interpretations and conclusions.
   ///
-  static const AnalysisNewsArticle = IriTerm.prevalidated(
+  static const AnalysisNewsArticle = const IriTerm(
     'https://schema.org/AnalysisNewsArticle',
   );
 
@@ -233,7 +227,7 @@ class Schema {
   ///
   /// Any part of the human body, typically a component of an anatomical system. Organs, tissues, and cells are all anatomical structures.
   ///
-  static const AnatomicalStructure = IriTerm.prevalidated(
+  static const AnatomicalStructure = const IriTerm(
     'https://schema.org/AnatomicalStructure',
   );
 
@@ -241,7 +235,7 @@ class Schema {
   ///
   /// An anatomical system is a group of anatomical structures that work together to perform a certain task. Anatomical systems, such as organ systems, are one organizing principle of anatomy, and can include circulatory, digestive, endocrine, integumentary, immune, lymphatic, muscular, nervous, reproductive, respiratory, skeletal, urinary, vestibular, and other systems.
   ///
-  static const AnatomicalSystem = IriTerm.prevalidated(
+  static const AnatomicalSystem = const IriTerm(
     'https://schema.org/AnatomicalSystem',
   );
 
@@ -249,7 +243,7 @@ class Schema {
   ///
   /// Animal shelter.
   ///
-  static const AnimalShelter = IriTerm.prevalidated(
+  static const AnimalShelter = const IriTerm(
     'https://schema.org/AnimalShelter',
   );
 
@@ -257,19 +251,19 @@ class Schema {
   ///
   /// An answer offered to a question; perhaps correct, perhaps opinionated or wrong.
   ///
-  static const Answer = IriTerm.prevalidated('https://schema.org/Answer');
+  static const Answer = const IriTerm('https://schema.org/Answer');
 
   /// IRI for schema:Apartment
   ///
   /// An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (source: Wikipedia, the free encyclopedia, see <a href="http://en.wikipedia.org/wiki/Apartment">http://en.wikipedia.org/wiki/Apartment</a>).
   ///
-  static const Apartment = IriTerm.prevalidated('https://schema.org/Apartment');
+  static const Apartment = const IriTerm('https://schema.org/Apartment');
 
   /// IRI for schema:ApartmentComplex
   ///
   /// Residence type: Apartment complex.
   ///
-  static const ApartmentComplex = IriTerm.prevalidated(
+  static const ApartmentComplex = const IriTerm(
     'https://schema.org/ApartmentComplex',
   );
 
@@ -277,23 +271,19 @@ class Schema {
   ///
   /// The act of inserting at the end if an ordered collection.
   ///
-  static const AppendAction = IriTerm.prevalidated(
-    'https://schema.org/AppendAction',
-  );
+  static const AppendAction = const IriTerm('https://schema.org/AppendAction');
 
   /// IRI for schema:ApplyAction
   ///
   /// The act of registering to an organization/service without the guarantee to receive it.\n\nRelated actions:\n\n* {[RegisterAction]}: Unlike RegisterAction, ApplyAction has no guarantees that the application will be accepted.
   ///
-  static const ApplyAction = IriTerm.prevalidated(
-    'https://schema.org/ApplyAction',
-  );
+  static const ApplyAction = const IriTerm('https://schema.org/ApplyAction');
 
   /// IRI for schema:ApprovedIndication
   ///
   /// An indication for a medical therapy that has been formally specified or approved by a regulatory body that regulates use of the therapy; for example, the US FDA approves indications for most drugs in the US.
   ///
-  static const ApprovedIndication = IriTerm.prevalidated(
+  static const ApprovedIndication = const IriTerm(
     'https://schema.org/ApprovedIndication',
   );
 
@@ -301,13 +291,13 @@ class Schema {
   ///
   /// Aquarium.
   ///
-  static const Aquarium = IriTerm.prevalidated('https://schema.org/Aquarium');
+  static const Aquarium = const IriTerm('https://schema.org/Aquarium');
 
   /// IRI for schema:ArchiveComponent
   ///
   /// An intangible type to be applied to any archive content, carrying with it a set of properties required to describe archival items and collections.
   ///
-  static const ArchiveComponent = IriTerm.prevalidated(
+  static const ArchiveComponent = const IriTerm(
     'https://schema.org/ArchiveComponent',
   );
 
@@ -315,7 +305,7 @@ class Schema {
   ///
   /// An organization with archival holdings. An organization which keeps and preserves archival material and typically makes it accessible to the public.
   ///
-  static const ArchiveOrganization = IriTerm.prevalidated(
+  static const ArchiveOrganization = const IriTerm(
     'https://schema.org/ArchiveOrganization',
   );
 
@@ -323,41 +313,37 @@ class Schema {
   ///
   /// The act of arriving at a place. An agent arrives at a destination from a fromLocation, optionally with participants.
   ///
-  static const ArriveAction = IriTerm.prevalidated(
-    'https://schema.org/ArriveAction',
-  );
+  static const ArriveAction = const IriTerm('https://schema.org/ArriveAction');
 
   /// IRI for schema:ArtGallery
   ///
   /// An art gallery.
   ///
-  static const ArtGallery = IriTerm.prevalidated(
-    'https://schema.org/ArtGallery',
-  );
+  static const ArtGallery = const IriTerm('https://schema.org/ArtGallery');
 
   /// IRI for schema:Artery
   ///
   /// A type of blood vessel that specifically carries blood away from the heart.
   ///
-  static const Artery = IriTerm.prevalidated('https://schema.org/Artery');
+  static const Artery = const IriTerm('https://schema.org/Artery');
 
   /// IRI for schema:Article
   ///
-  /// An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all.\n\nSee also [blog post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html).
+  /// An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all.\n\nSee also [blog post](https://blog.schema.org/2014/09/02/schema-org-support-for-bibliographic-relationships-and-periodicals/).
   ///
-  static const Article = IriTerm.prevalidated('https://schema.org/Article');
+  static const Article = const IriTerm('https://schema.org/Article');
 
   /// IRI for schema:AskAction
   ///
   /// The act of posing a question / favor to someone.\n\nRelated actions:\n\n* {[ReplyAction]}: Appears generally as a response to AskAction.
   ///
-  static const AskAction = IriTerm.prevalidated('https://schema.org/AskAction');
+  static const AskAction = const IriTerm('https://schema.org/AskAction');
 
   /// IRI for schema:AskPublicNewsArticle
   ///
   /// A {[NewsArticle]} expressing an open call by a {[NewsMediaOrganization]} asking the public for input, insights, clarifications, anecdotes, documentation, etc., on an issue, for reporting purposes.
   ///
-  static const AskPublicNewsArticle = IriTerm.prevalidated(
+  static const AskPublicNewsArticle = const IriTerm(
     'https://schema.org/AskPublicNewsArticle',
   );
 
@@ -365,49 +351,43 @@ class Schema {
   ///
   /// The act of forming one's opinion, reaction or sentiment.
   ///
-  static const AssessAction = IriTerm.prevalidated(
-    'https://schema.org/AssessAction',
-  );
+  static const AssessAction = const IriTerm('https://schema.org/AssessAction');
 
   /// IRI for schema:AssignAction
   ///
   /// The act of allocating an action/event/task to some destination (someone or something).
   ///
-  static const AssignAction = IriTerm.prevalidated(
-    'https://schema.org/AssignAction',
-  );
+  static const AssignAction = const IriTerm('https://schema.org/AssignAction');
 
   /// IRI for schema:Atlas
   ///
   /// A collection or bound volume of maps, charts, plates or tables, physical or in media form illustrating any subject.
   ///
-  static const Atlas = IriTerm.prevalidated('https://schema.org/Atlas');
+  static const Atlas = const IriTerm('https://schema.org/Atlas');
 
   /// IRI for schema:Attorney
   ///
   /// Professional service: Attorney. \n\nThis type is deprecated - {[LegalService]} is more inclusive and less ambiguous.
   ///
-  static const Attorney = IriTerm.prevalidated('https://schema.org/Attorney');
+  static const Attorney = const IriTerm('https://schema.org/Attorney');
 
   /// IRI for schema:Audience
   ///
   /// Intended audience for an item, i.e. the group for whom the item was created.
   ///
-  static const Audience = IriTerm.prevalidated('https://schema.org/Audience');
+  static const Audience = const IriTerm('https://schema.org/Audience');
 
   /// IRI for schema:AudioObject
   ///
   /// An audio file.
   ///
-  static const AudioObject = IriTerm.prevalidated(
-    'https://schema.org/AudioObject',
-  );
+  static const AudioObject = const IriTerm('https://schema.org/AudioObject');
 
   /// IRI for schema:AudioObjectSnapshot
   ///
   /// A specific and exact (byte-for-byte) version of an {[AudioObject]}. Two byte-for-byte identical files, for the purposes of this type, considered identical. If they have different embedded metadata the files will differ. Different external facts about the files, e.g. creator or dateCreated that aren't represented in their actual content, do not affect this notion of identity.
   ///
-  static const AudioObjectSnapshot = IriTerm.prevalidated(
+  static const AudioObjectSnapshot = const IriTerm(
     'https://schema.org/AudioObjectSnapshot',
   );
 
@@ -415,13 +395,13 @@ class Schema {
   ///
   /// An audiobook.
   ///
-  static const Audiobook = IriTerm.prevalidated('https://schema.org/Audiobook');
+  static const Audiobook = const IriTerm('https://schema.org/Audiobook');
 
   /// IRI for schema:AuthorizeAction
   ///
   /// The act of granting permission to an object.
   ///
-  static const AuthorizeAction = IriTerm.prevalidated(
+  static const AuthorizeAction = const IriTerm(
     'https://schema.org/AuthorizeAction',
   );
 
@@ -429,23 +409,19 @@ class Schema {
   ///
   /// Auto body shop.
   ///
-  static const AutoBodyShop = IriTerm.prevalidated(
-    'https://schema.org/AutoBodyShop',
-  );
+  static const AutoBodyShop = const IriTerm('https://schema.org/AutoBodyShop');
 
   /// IRI for schema:AutoDealer
   ///
   /// An car dealership.
   ///
-  static const AutoDealer = IriTerm.prevalidated(
-    'https://schema.org/AutoDealer',
-  );
+  static const AutoDealer = const IriTerm('https://schema.org/AutoDealer');
 
   /// IRI for schema:AutoPartsStore
   ///
   /// An auto parts store.
   ///
-  static const AutoPartsStore = IriTerm.prevalidated(
+  static const AutoPartsStore = const IriTerm(
     'https://schema.org/AutoPartsStore',
   );
 
@@ -453,29 +429,25 @@ class Schema {
   ///
   /// A car rental business.
   ///
-  static const AutoRental = IriTerm.prevalidated(
-    'https://schema.org/AutoRental',
-  );
+  static const AutoRental = const IriTerm('https://schema.org/AutoRental');
 
   /// IRI for schema:AutoRepair
   ///
   /// Car repair business.
   ///
-  static const AutoRepair = IriTerm.prevalidated(
-    'https://schema.org/AutoRepair',
-  );
+  static const AutoRepair = const IriTerm('https://schema.org/AutoRepair');
 
   /// IRI for schema:AutoWash
   ///
   /// A car wash business.
   ///
-  static const AutoWash = IriTerm.prevalidated('https://schema.org/AutoWash');
+  static const AutoWash = const IriTerm('https://schema.org/AutoWash');
 
   /// IRI for schema:AutomatedTeller
   ///
   /// ATM/cash machine.
   ///
-  static const AutomatedTeller = IriTerm.prevalidated(
+  static const AutomatedTeller = const IriTerm(
     'https://schema.org/AutomatedTeller',
   );
 
@@ -483,7 +455,7 @@ class Schema {
   ///
   /// Car repair, sales, or parts.
   ///
-  static const AutomotiveBusiness = IriTerm.prevalidated(
+  static const AutomotiveBusiness = const IriTerm(
     'https://schema.org/AutomotiveBusiness',
   );
 
@@ -491,7 +463,7 @@ class Schema {
   ///
   /// A {[NewsArticle]} providing historical context, definition and detail on a specific topic (aka "explainer" or "backgrounder"). For example, an in-depth article or frequently-asked-questions ([FAQ](https://en.wikipedia.org/wiki/FAQ)) document on topics such as Climate Change or the European Union. Other kinds of background material from a non-news setting are often described using {[Book]} or {[Article]}, in particular {[ScholarlyArticle]}. See also {[NewsArticle]} for related vocabulary from a learning/education perspective.
   ///
-  static const BackgroundNewsArticle = IriTerm.prevalidated(
+  static const BackgroundNewsArticle = const IriTerm(
     'https://schema.org/BackgroundNewsArticle',
   );
 
@@ -499,21 +471,19 @@ class Schema {
   ///
   /// A bakery.
   ///
-  static const Bakery = IriTerm.prevalidated('https://schema.org/Bakery');
+  static const Bakery = const IriTerm('https://schema.org/Bakery');
 
   /// IRI for schema:BankAccount
   ///
   /// A product or service offered by a bank whereby one may deposit, withdraw or transfer money and in some cases be paid interest.
   ///
-  static const BankAccount = IriTerm.prevalidated(
-    'https://schema.org/BankAccount',
-  );
+  static const BankAccount = const IriTerm('https://schema.org/BankAccount');
 
   /// IRI for schema:BankOrCreditUnion
   ///
   /// Bank or credit union.
   ///
-  static const BankOrCreditUnion = IriTerm.prevalidated(
+  static const BankOrCreditUnion = const IriTerm(
     'https://schema.org/BankOrCreditUnion',
   );
 
@@ -521,27 +491,25 @@ class Schema {
   ///
   /// A bar or pub.
   ///
-  static const BarOrPub = IriTerm.prevalidated('https://schema.org/BarOrPub');
+  static const BarOrPub = const IriTerm('https://schema.org/BarOrPub');
 
   /// IRI for schema:Barcode
   ///
   /// An image of a visual machine-readable code such as a barcode or QR code.
   ///
-  static const Barcode = IriTerm.prevalidated('https://schema.org/Barcode');
+  static const Barcode = const IriTerm('https://schema.org/Barcode');
 
   /// IRI for schema:Beach
   ///
   /// Beach.
   ///
-  static const Beach = IriTerm.prevalidated('https://schema.org/Beach');
+  static const Beach = const IriTerm('https://schema.org/Beach');
 
   /// IRI for schema:BeautySalon
   ///
   /// Beauty salon.
   ///
-  static const BeautySalon = IriTerm.prevalidated(
-    'https://schema.org/BeautySalon',
-  );
+  static const BeautySalon = const IriTerm('https://schema.org/BeautySalon');
 
   /// IRI for schema:BedAndBreakfast
   ///
@@ -550,7 +518,7 @@ class Schema {
   /// See also the <a href="/docs/hotels.html">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.
   ///
   ///
-  static const BedAndBreakfast = IriTerm.prevalidated(
+  static const BedAndBreakfast = const IriTerm(
     'https://schema.org/BedAndBreakfast',
   );
 
@@ -558,21 +526,19 @@ class Schema {
   ///
   /// An entity holding detailed information about the available bed types, e.g. the quantity of twin beds for a hotel room. For the single case of just one bed of a certain type, you can use bed directly with a text. See also {[BedType]} (under development).
   ///
-  static const BedDetails = IriTerm.prevalidated(
-    'https://schema.org/BedDetails',
-  );
+  static const BedDetails = const IriTerm('https://schema.org/BedDetails');
 
   /// IRI for schema:BedType
   ///
   /// A type of bed. This is used for indicating the bed or beds available in an accommodation.
   ///
-  static const BedType = IriTerm.prevalidated('https://schema.org/BedType');
+  static const BedType = const IriTerm('https://schema.org/BedType');
 
   /// IRI for schema:BefriendAction
   ///
   /// The act of forming a personal connection with someone (object) mutually/bidirectionally/symmetrically.\n\nRelated actions:\n\n* {[FollowAction]}: Unlike FollowAction, BefriendAction implies that the connection is reciprocal.
   ///
-  static const BefriendAction = IriTerm.prevalidated(
+  static const BefriendAction = const IriTerm(
     'https://schema.org/BefriendAction',
   );
 
@@ -580,13 +546,13 @@ class Schema {
   ///
   /// A bike store.
   ///
-  static const BikeStore = IriTerm.prevalidated('https://schema.org/BikeStore');
+  static const BikeStore = const IriTerm('https://schema.org/BikeStore');
 
   /// IRI for schema:BioChemEntity
   ///
   /// Any biological, chemical, or biochemical thing. For example: a protein; a gene; a chemical; a synthetic chemical.
   ///
-  static const BioChemEntity = IriTerm.prevalidated(
+  static const BioChemEntity = const IriTerm(
     'https://schema.org/BioChemEntity',
   );
 
@@ -594,27 +560,25 @@ class Schema {
   ///
   /// A [blog](https://en.wikipedia.org/wiki/Blog), sometimes known as a "weblog". Note that the individual posts ({[BlogPosting]}s) in a {[Blog]} are often colloquially referred to by the same term.
   ///
-  static const Blog = IriTerm.prevalidated('https://schema.org/Blog');
+  static const Blog = const IriTerm('https://schema.org/Blog');
 
   /// IRI for schema:BlogPosting
   ///
   /// A blog post.
   ///
-  static const BlogPosting = IriTerm.prevalidated(
-    'https://schema.org/BlogPosting',
-  );
+  static const BlogPosting = const IriTerm('https://schema.org/BlogPosting');
 
   /// IRI for schema:BloodTest
   ///
   /// A medical test performed on a sample of a patient's blood.
   ///
-  static const BloodTest = IriTerm.prevalidated('https://schema.org/BloodTest');
+  static const BloodTest = const IriTerm('https://schema.org/BloodTest');
 
   /// IRI for schema:BoardingPolicyType
   ///
   /// A type of boarding policy used by an airline.
   ///
-  static const BoardingPolicyType = IriTerm.prevalidated(
+  static const BoardingPolicyType = const IriTerm(
     'https://schema.org/BoardingPolicyType',
   );
 
@@ -624,7 +588,7 @@ class Schema {
   ///
   /// Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use {[Offer]}.
   ///
-  static const BoatReservation = IriTerm.prevalidated(
+  static const BoatReservation = const IriTerm(
     'https://schema.org/BoatReservation',
   );
 
@@ -632,21 +596,19 @@ class Schema {
   ///
   /// A terminal for boats, ships, and other water vessels.
   ///
-  static const BoatTerminal = IriTerm.prevalidated(
-    'https://schema.org/BoatTerminal',
-  );
+  static const BoatTerminal = const IriTerm('https://schema.org/BoatTerminal');
 
   /// IRI for schema:BoatTrip
   ///
   /// A trip on a commercial ferry line.
   ///
-  static const BoatTrip = IriTerm.prevalidated('https://schema.org/BoatTrip');
+  static const BoatTrip = const IriTerm('https://schema.org/BoatTrip');
 
   /// IRI for schema:BodyMeasurementTypeEnumeration
   ///
   /// Enumerates types (or dimensions) of a person's body measurements, for example for fitting of clothes.
   ///
-  static const BodyMeasurementTypeEnumeration = IriTerm.prevalidated(
+  static const BodyMeasurementTypeEnumeration = const IriTerm(
     'https://schema.org/BodyMeasurementTypeEnumeration',
   );
 
@@ -654,27 +616,25 @@ class Schema {
   ///
   /// A body of water, such as a sea, ocean, or lake.
   ///
-  static const BodyOfWater = IriTerm.prevalidated(
-    'https://schema.org/BodyOfWater',
-  );
+  static const BodyOfWater = const IriTerm('https://schema.org/BodyOfWater');
 
   /// IRI for schema:Bone
   ///
   /// Rigid connective tissue that comprises up the skeletal structure of the human body.
   ///
-  static const Bone = IriTerm.prevalidated('https://schema.org/Bone');
+  static const Bone = const IriTerm('https://schema.org/Bone');
 
   /// IRI for schema:Book
   ///
   /// A book.
   ///
-  static const Book = IriTerm.prevalidated('https://schema.org/Book');
+  static const Book = const IriTerm('https://schema.org/Book');
 
   /// IRI for schema:BookFormatType
   ///
   /// The publication format of the book.
   ///
-  static const BookFormatType = IriTerm.prevalidated(
+  static const BookFormatType = const IriTerm(
     'https://schema.org/BookFormatType',
   );
 
@@ -682,21 +642,19 @@ class Schema {
   ///
   /// A series of books. Included books can be indicated with the hasPart property.
   ///
-  static const BookSeries = IriTerm.prevalidated(
-    'https://schema.org/BookSeries',
-  );
+  static const BookSeries = const IriTerm('https://schema.org/BookSeries');
 
   /// IRI for schema:BookStore
   ///
   /// A bookstore.
   ///
-  static const BookStore = IriTerm.prevalidated('https://schema.org/BookStore');
+  static const BookStore = const IriTerm('https://schema.org/BookStore');
 
   /// IRI for schema:BookmarkAction
   ///
   /// An agent bookmarks/flags/labels/tags/marks an object.
   ///
-  static const BookmarkAction = IriTerm.prevalidated(
+  static const BookmarkAction = const IriTerm(
     'https://schema.org/BookmarkAction',
   );
 
@@ -704,29 +662,25 @@ class Schema {
   ///
   /// Boolean: True or False.
   ///
-  static const Boolean = IriTerm.prevalidated('https://schema.org/Boolean');
+  static const Boolean = const IriTerm('https://schema.org/Boolean');
 
   /// IRI for schema:BorrowAction
   ///
   /// The act of obtaining an object under an agreement to return it at a later date. Reciprocal of LendAction.\n\nRelated actions:\n\n* {[LendAction]}: Reciprocal of BorrowAction.
   ///
-  static const BorrowAction = IriTerm.prevalidated(
-    'https://schema.org/BorrowAction',
-  );
+  static const BorrowAction = const IriTerm('https://schema.org/BorrowAction');
 
   /// IRI for schema:BowlingAlley
   ///
   /// A bowling alley.
   ///
-  static const BowlingAlley = IriTerm.prevalidated(
-    'https://schema.org/BowlingAlley',
-  );
+  static const BowlingAlley = const IriTerm('https://schema.org/BowlingAlley');
 
   /// IRI for schema:BrainStructure
   ///
   /// Any anatomical structure which pertains to the soft nervous tissue functioning as the coordinating center of sensation and intellectual and nervous activity.
   ///
-  static const BrainStructure = IriTerm.prevalidated(
+  static const BrainStructure = const IriTerm(
     'https://schema.org/BrainStructure',
   );
 
@@ -734,14 +688,14 @@ class Schema {
   ///
   /// A brand is a name used by an organization or business person for labeling a product, product group, or similar.
   ///
-  static const Brand = IriTerm.prevalidated('https://schema.org/Brand');
+  static const Brand = const IriTerm('https://schema.org/Brand');
 
   /// IRI for schema:BreadcrumbList
   ///
   /// A BreadcrumbList is an ItemList consisting of a chain of linked Web pages, typically described using at least their URL and their name, and typically ending with the current page.\n\nThe {[position]} property is used to reconstruct the order of the items in a BreadcrumbList. The convention is that a breadcrumb list has an {[itemListOrder]} of {[ItemListOrderAscending]} (lower values listed first), and that the first items in this list correspond to the "top" or beginning of the breadcrumb trail, e.g. with a site or section homepage. The specific values of 'position' are not assigned meaning for a BreadcrumbList, but they should be integers, e.g. beginning with '1' for the first item in the list.
   ///
   ///
-  static const BreadcrumbList = IriTerm.prevalidated(
+  static const BreadcrumbList = const IriTerm(
     'https://schema.org/BreadcrumbList',
   );
 
@@ -749,19 +703,19 @@ class Schema {
   ///
   /// Brewery.
   ///
-  static const Brewery = IriTerm.prevalidated('https://schema.org/Brewery');
+  static const Brewery = const IriTerm('https://schema.org/Brewery');
 
   /// IRI for schema:Bridge
   ///
   /// A bridge.
   ///
-  static const Bridge = IriTerm.prevalidated('https://schema.org/Bridge');
+  static const Bridge = const IriTerm('https://schema.org/Bridge');
 
   /// IRI for schema:BroadcastChannel
   ///
   /// A unique instance of a BroadcastService on a CableOrSatelliteService lineup.
   ///
-  static const BroadcastChannel = IriTerm.prevalidated(
+  static const BroadcastChannel = const IriTerm(
     'https://schema.org/BroadcastChannel',
   );
 
@@ -769,7 +723,7 @@ class Schema {
   ///
   /// An over the air or online broadcast event.
   ///
-  static const BroadcastEvent = IriTerm.prevalidated(
+  static const BroadcastEvent = const IriTerm(
     'https://schema.org/BroadcastEvent',
   );
 
@@ -777,7 +731,7 @@ class Schema {
   ///
   /// The frequency in MHz and the modulation used for a particular BroadcastService.
   ///
-  static const BroadcastFrequencySpecification = IriTerm.prevalidated(
+  static const BroadcastFrequencySpecification = const IriTerm(
     'https://schema.org/BroadcastFrequencySpecification',
   );
 
@@ -785,7 +739,7 @@ class Schema {
   ///
   /// A delivery service through which content is provided via broadcast over the air or online.
   ///
-  static const BroadcastService = IriTerm.prevalidated(
+  static const BroadcastService = const IriTerm(
     'https://schema.org/BroadcastService',
   );
 
@@ -793,7 +747,7 @@ class Schema {
   ///
   /// An account that allows an investor to deposit funds and place investment orders with a licensed broker or brokerage firm.
   ///
-  static const BrokerageAccount = IriTerm.prevalidated(
+  static const BrokerageAccount = const IriTerm(
     'https://schema.org/BrokerageAccount',
   );
 
@@ -801,7 +755,7 @@ class Schema {
   ///
   /// A Buddhist temple.
   ///
-  static const BuddhistTemple = IriTerm.prevalidated(
+  static const BuddhistTemple = const IriTerm(
     'https://schema.org/BuddhistTemple',
   );
 
@@ -809,15 +763,13 @@ class Schema {
   ///
   /// A bus (also omnibus or autobus) is a road vehicle designed to carry passengers. Coaches are luxury buses, usually in service for long distance travel.
   ///
-  static const BusOrCoach = IriTerm.prevalidated(
-    'https://schema.org/BusOrCoach',
-  );
+  static const BusOrCoach = const IriTerm('https://schema.org/BusOrCoach');
 
   /// IRI for schema:BusReservation
   ///
   /// A reservation for bus travel. \n\nNote: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use {[Offer]}.
   ///
-  static const BusReservation = IriTerm.prevalidated(
+  static const BusReservation = const IriTerm(
     'https://schema.org/BusReservation',
   );
 
@@ -825,27 +777,25 @@ class Schema {
   ///
   /// A bus station.
   ///
-  static const BusStation = IriTerm.prevalidated(
-    'https://schema.org/BusStation',
-  );
+  static const BusStation = const IriTerm('https://schema.org/BusStation');
 
   /// IRI for schema:BusStop
   ///
   /// A bus stop.
   ///
-  static const BusStop = IriTerm.prevalidated('https://schema.org/BusStop');
+  static const BusStop = const IriTerm('https://schema.org/BusStop');
 
   /// IRI for schema:BusTrip
   ///
   /// A trip on a commercial bus line.
   ///
-  static const BusTrip = IriTerm.prevalidated('https://schema.org/BusTrip');
+  static const BusTrip = const IriTerm('https://schema.org/BusTrip');
 
   /// IRI for schema:BusinessAudience
   ///
   /// A set of characteristics belonging to businesses, e.g. who compose an item's target audience.
   ///
-  static const BusinessAudience = IriTerm.prevalidated(
+  static const BusinessAudience = const IriTerm(
     'https://schema.org/BusinessAudience',
   );
 
@@ -854,7 +804,7 @@ class Schema {
   /// A business entity type is a conceptual entity representing the legal form, the size, the main line of business, the position in the value chain, or any combination thereof, of an organization or business person.\n\nCommonly used values:\n\n* http://purl.org/goodrelations/v1#Business\n* http://purl.org/goodrelations/v1#Enduser\n* http://purl.org/goodrelations/v1#PublicInstitution\n* http://purl.org/goodrelations/v1#Reseller
   ///
   ///
-  static const BusinessEntityType = IriTerm.prevalidated(
+  static const BusinessEntityType = const IriTerm(
     'https://schema.org/BusinessEntityType',
   );
 
@@ -862,7 +812,7 @@ class Schema {
   ///
   /// Event type: Business event.
   ///
-  static const BusinessEvent = IriTerm.prevalidated(
+  static const BusinessEvent = const IriTerm(
     'https://schema.org/BusinessEvent',
   );
 
@@ -871,7 +821,7 @@ class Schema {
   /// The business function specifies the type of activity or access (i.e., the bundle of rights) offered by the organization or business person through the offer. Typical are sell, rental or lease, maintenance or repair, manufacture / produce, recycle / dispose, engineering / construction, or installation. Proprietary specifications of access rights are also instances of this class.\n\nCommonly used values:\n\n* http://purl.org/goodrelations/v1#ConstructionInstallation\n* http://purl.org/goodrelations/v1#Dispose\n* http://purl.org/goodrelations/v1#LeaseOut\n* http://purl.org/goodrelations/v1#Maintain\n* http://purl.org/goodrelations/v1#ProvideService\n* http://purl.org/goodrelations/v1#Repair\n* http://purl.org/goodrelations/v1#Sell\n* http://purl.org/goodrelations/v1#Buy
   ///
   ///
-  static const BusinessFunction = IriTerm.prevalidated(
+  static const BusinessFunction = const IriTerm(
     'https://schema.org/BusinessFunction',
   );
 
@@ -879,7 +829,7 @@ class Schema {
   ///
   /// The act of giving money to a seller in exchange for goods or services rendered. An agent buys an object, product, or service from a seller for a price. Reciprocal of SellAction.
   ///
-  static const BuyAction = IriTerm.prevalidated('https://schema.org/BuyAction');
+  static const BuyAction = const IriTerm('https://schema.org/BuyAction');
 
   /// IRI for schema:CDCPMDRecord
   ///
@@ -888,15 +838,13 @@ class Schema {
   /// definitions used as the source here.
   ///
   ///
-  static const CDCPMDRecord = IriTerm.prevalidated(
-    'https://schema.org/CDCPMDRecord',
-  );
+  static const CDCPMDRecord = const IriTerm('https://schema.org/CDCPMDRecord');
 
   /// IRI for schema:CableOrSatelliteService
   ///
   /// A service which provides access to media programming like TV or radio. Access may be via cable or satellite.
   ///
-  static const CableOrSatelliteService = IriTerm.prevalidated(
+  static const CableOrSatelliteService = const IriTerm(
     'https://schema.org/CableOrSatelliteService',
   );
 
@@ -904,7 +852,7 @@ class Schema {
   ///
   /// A cafe or coffee shop.
   ///
-  static const CafeOrCoffeeShop = IriTerm.prevalidated(
+  static const CafeOrCoffeeShop = const IriTerm(
     'https://schema.org/CafeOrCoffeeShop',
   );
 
@@ -916,9 +864,7 @@ class Schema {
   /// See also the dedicated [document on the use of schema.org for marking up hotels and other forms of accommodations](/docs/hotels.html).
   ///
   ///
-  static const Campground = IriTerm.prevalidated(
-    'https://schema.org/Campground',
-  );
+  static const Campground = const IriTerm('https://schema.org/Campground');
 
   /// IRI for schema:CampingPitch
   ///
@@ -928,57 +874,49 @@ class Schema {
   /// See also the dedicated [document on the use of schema.org for marking up hotels and other forms of accommodations](/docs/hotels.html).
   ///
   ///
-  static const CampingPitch = IriTerm.prevalidated(
-    'https://schema.org/CampingPitch',
-  );
+  static const CampingPitch = const IriTerm('https://schema.org/CampingPitch');
 
   /// IRI for schema:Canal
   ///
   /// A canal, like the Panama Canal.
   ///
-  static const Canal = IriTerm.prevalidated('https://schema.org/Canal');
+  static const Canal = const IriTerm('https://schema.org/Canal');
 
   /// IRI for schema:CancelAction
   ///
   /// The act of asserting that a future event/action is no longer going to happen.\n\nRelated actions:\n\n* {[ConfirmAction]}: The antonym of CancelAction.
   ///
-  static const CancelAction = IriTerm.prevalidated(
-    'https://schema.org/CancelAction',
-  );
+  static const CancelAction = const IriTerm('https://schema.org/CancelAction');
 
   /// IRI for schema:Car
   ///
   /// A car is a wheeled, self-powered motor vehicle used for transportation.
   ///
-  static const Car = IriTerm.prevalidated('https://schema.org/Car');
+  static const Car = const IriTerm('https://schema.org/Car');
 
   /// IRI for schema:CarUsageType
   ///
   /// A value indicating a special usage of a car, e.g. commercial rental, driving school, or as a taxi.
   ///
-  static const CarUsageType = IriTerm.prevalidated(
-    'https://schema.org/CarUsageType',
-  );
+  static const CarUsageType = const IriTerm('https://schema.org/CarUsageType');
 
   /// IRI for schema:Casino
   ///
   /// A casino.
   ///
-  static const Casino = IriTerm.prevalidated('https://schema.org/Casino');
+  static const Casino = const IriTerm('https://schema.org/Casino');
 
   /// IRI for schema:CategoryCode
   ///
   /// A Category Code.
   ///
-  static const CategoryCode = IriTerm.prevalidated(
-    'https://schema.org/CategoryCode',
-  );
+  static const CategoryCode = const IriTerm('https://schema.org/CategoryCode');
 
   /// IRI for schema:CategoryCodeSet
   ///
   /// A set of Category Code values.
   ///
-  static const CategoryCodeSet = IriTerm.prevalidated(
+  static const CategoryCodeSet = const IriTerm(
     'https://schema.org/CategoryCodeSet',
   );
 
@@ -986,7 +924,7 @@ class Schema {
   ///
   /// A Catholic church.
   ///
-  static const CatholicChurch = IriTerm.prevalidated(
+  static const CatholicChurch = const IriTerm(
     'https://schema.org/CatholicChurch',
   );
 
@@ -994,13 +932,13 @@ class Schema {
   ///
   /// A graveyard.
   ///
-  static const Cemetery = IriTerm.prevalidated('https://schema.org/Cemetery');
+  static const Cemetery = const IriTerm('https://schema.org/Cemetery');
 
   /// IRI for schema:Certification
   ///
   /// A Certification is an official and authoritative statement about a subject, for example a product, service, person, or organization. A certification is typically issued by an indendent certification body, for example a professional organization or government. It formally attests certain characteristics about the subject, for example Organizations can be ISO certified, Food products can be certified Organic or Vegan, a Person can be a certified professional, a Place can be certified for food processing. There are certifications for many domains: regulatory, organizational, recycling, food, efficiency, educational, ecological, etc. A certification is a form of credential, as are accreditations and licenses. Mapped from the [gs1:CertificationDetails](https://www.gs1.org/voc/CertificationDetails) class in the GS1 Web Vocabulary.
   ///
-  static const Certification = IriTerm.prevalidated(
+  static const Certification = const IriTerm(
     'https://schema.org/Certification',
   );
 
@@ -1008,7 +946,7 @@ class Schema {
   ///
   /// Enumerates the different statuses of a Certification (Active and Inactive).
   ///
-  static const CertificationStatusEnumeration = IriTerm.prevalidated(
+  static const CertificationStatusEnumeration = const IriTerm(
     'https://schema.org/CertificationStatusEnumeration',
   );
 
@@ -1016,21 +954,19 @@ class Schema {
   ///
   /// One of the sections into which a book is divided. A chapter usually has a section number or a name.
   ///
-  static const Chapter = IriTerm.prevalidated('https://schema.org/Chapter');
+  static const Chapter = const IriTerm('https://schema.org/Chapter');
 
   /// IRI for schema:CheckAction
   ///
   /// An agent inspects, determines, investigates, inquires, or examines an object's accuracy, quality, condition, or state.
   ///
-  static const CheckAction = IriTerm.prevalidated(
-    'https://schema.org/CheckAction',
-  );
+  static const CheckAction = const IriTerm('https://schema.org/CheckAction');
 
   /// IRI for schema:CheckInAction
   ///
   /// The act of an agent communicating (service provider, social media, etc) their arrival by registering/confirming for a previously reserved service (e.g. flight check-in) or at a place (e.g. hotel), possibly resulting in a result (boarding pass, etc).\n\nRelated actions:\n\n* {[CheckOutAction]}: The antonym of CheckInAction.\n* {[ArriveAction]}: Unlike ArriveAction, CheckInAction implies that the agent is informing/confirming the start of a previously reserved service.\n* {[ConfirmAction]}: Unlike ConfirmAction, CheckInAction implies that the agent is informing/confirming the *start* of a previously reserved service rather than its validity/existence.
   ///
-  static const CheckInAction = IriTerm.prevalidated(
+  static const CheckInAction = const IriTerm(
     'https://schema.org/CheckInAction',
   );
 
@@ -1038,7 +974,7 @@ class Schema {
   ///
   /// The act of an agent communicating (service provider, social media, etc) their departure of a previously reserved service (e.g. flight check-in) or place (e.g. hotel).\n\nRelated actions:\n\n* {[CheckInAction]}: The antonym of CheckOutAction.\n* {[DepartAction]}: Unlike DepartAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service.\n* {[CancelAction]}: Unlike CancelAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service.
   ///
-  static const CheckOutAction = IriTerm.prevalidated(
+  static const CheckOutAction = const IriTerm(
     'https://schema.org/CheckOutAction',
   );
 
@@ -1046,15 +982,13 @@ class Schema {
   ///
   /// Web page type: Checkout page.
   ///
-  static const CheckoutPage = IriTerm.prevalidated(
-    'https://schema.org/CheckoutPage',
-  );
+  static const CheckoutPage = const IriTerm('https://schema.org/CheckoutPage');
 
   /// IRI for schema:ChemicalSubstance
   ///
   /// A chemical substance is 'a portion of matter of constant composition, composed of molecular entities of the same type or of different types' (source: [ChEBI:59999](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999)).
   ///
-  static const ChemicalSubstance = IriTerm.prevalidated(
+  static const ChemicalSubstance = const IriTerm(
     'https://schema.org/ChemicalSubstance',
   );
 
@@ -1062,13 +996,13 @@ class Schema {
   ///
   /// A Childcare center.
   ///
-  static const ChildCare = IriTerm.prevalidated('https://schema.org/ChildCare');
+  static const ChildCare = const IriTerm('https://schema.org/ChildCare');
 
   /// IRI for schema:ChildrensEvent
   ///
   /// Event type: Children's event.
   ///
-  static const ChildrensEvent = IriTerm.prevalidated(
+  static const ChildrensEvent = const IriTerm(
     'https://schema.org/ChildrensEvent',
   );
 
@@ -1076,33 +1010,31 @@ class Schema {
   ///
   /// The act of expressing a preference from a set of options or a large or unbounded set of choices/options.
   ///
-  static const ChooseAction = IriTerm.prevalidated(
-    'https://schema.org/ChooseAction',
-  );
+  static const ChooseAction = const IriTerm('https://schema.org/ChooseAction');
 
   /// IRI for schema:Church
   ///
   /// A church.
   ///
-  static const Church = IriTerm.prevalidated('https://schema.org/Church');
+  static const Church = const IriTerm('https://schema.org/Church');
 
   /// IRI for schema:City
   ///
   /// A city or town.
   ///
-  static const City = IriTerm.prevalidated('https://schema.org/City');
+  static const City = const IriTerm('https://schema.org/City');
 
   /// IRI for schema:CityHall
   ///
   /// A city hall.
   ///
-  static const CityHall = IriTerm.prevalidated('https://schema.org/CityHall');
+  static const CityHall = const IriTerm('https://schema.org/CityHall');
 
   /// IRI for schema:CivicStructure
   ///
   /// A public structure, such as a town hall or concert hall.
   ///
-  static const CivicStructure = IriTerm.prevalidated(
+  static const CivicStructure = const IriTerm(
     'https://schema.org/CivicStructure',
   );
 
@@ -1115,33 +1047,31 @@ class Schema {
   /// At this time, Schema.org does not define any types of relationship between claims. This is a natural area for future exploration.
   ///
   ///
-  static const Claim = IriTerm.prevalidated('https://schema.org/Claim');
+  static const Claim = const IriTerm('https://schema.org/Claim');
 
   /// IRI for schema:ClaimReview
   ///
   /// A fact-checking review of claims made (or reported) in some creative work (referenced via itemReviewed).
   ///
-  static const ClaimReview = IriTerm.prevalidated(
-    'https://schema.org/ClaimReview',
-  );
+  static const ClaimReview = const IriTerm('https://schema.org/ClaimReview');
 
   /// IRI for schema:Class
   ///
   /// A class, also often called a 'Type'; equivalent to rdfs:Class.
   ///
-  static const Class = IriTerm.prevalidated('https://schema.org/Class');
+  static const Class = const IriTerm('https://schema.org/Class');
 
   /// IRI for schema:Clip
   ///
   /// A short TV or radio program or a segment/part of a program.
   ///
-  static const Clip = IriTerm.prevalidated('https://schema.org/Clip');
+  static const Clip = const IriTerm('https://schema.org/Clip');
 
   /// IRI for schema:ClothingStore
   ///
   /// A clothing store.
   ///
-  static const ClothingStore = IriTerm.prevalidated(
+  static const ClothingStore = const IriTerm(
     'https://schema.org/ClothingStore',
   );
 
@@ -1149,21 +1079,19 @@ class Schema {
   ///
   /// Computer programming source code. Example: Full (compile ready) solutions, code snippet samples, scripts, templates.
   ///
-  static const Code = IriTerm.prevalidated('https://schema.org/Code');
+  static const Code = const IriTerm('https://schema.org/Code');
 
   /// IRI for schema:Collection
   ///
   /// A collection of items, e.g. creative works or products.
   ///
-  static const Collection = IriTerm.prevalidated(
-    'https://schema.org/Collection',
-  );
+  static const Collection = const IriTerm('https://schema.org/Collection');
 
   /// IRI for schema:CollectionPage
   ///
   /// Web page type: Collection page.
   ///
-  static const CollectionPage = IriTerm.prevalidated(
+  static const CollectionPage = const IriTerm(
     'https://schema.org/CollectionPage',
   );
 
@@ -1171,7 +1099,7 @@ class Schema {
   ///
   /// A college, university, or other third-level educational institution.
   ///
-  static const CollegeOrUniversity = IriTerm.prevalidated(
+  static const CollegeOrUniversity = const IriTerm(
     'https://schema.org/CollegeOrUniversity',
   );
 
@@ -1179,23 +1107,19 @@ class Schema {
   ///
   /// A comedy club.
   ///
-  static const ComedyClub = IriTerm.prevalidated(
-    'https://schema.org/ComedyClub',
-  );
+  static const ComedyClub = const IriTerm('https://schema.org/ComedyClub');
 
   /// IRI for schema:ComedyEvent
   ///
   /// Event type: Comedy event.
   ///
-  static const ComedyEvent = IriTerm.prevalidated(
-    'https://schema.org/ComedyEvent',
-  );
+  static const ComedyEvent = const IriTerm('https://schema.org/ComedyEvent');
 
   /// IRI for schema:ComicCoverArt
   ///
   /// The artwork on the cover of a comic.
   ///
-  static const ComicCoverArt = IriTerm.prevalidated(
+  static const ComicCoverArt = const IriTerm(
     'https://schema.org/ComicCoverArt',
   );
 
@@ -1208,9 +1132,7 @@ class Schema {
   /// series to which the issue belongs; the issue number; and the variant
   /// description of the issue (if any).
   ///
-  static const ComicIssue = IriTerm.prevalidated(
-    'https://schema.org/ComicIssue',
-  );
+  static const ComicIssue = const IriTerm('https://schema.org/ComicIssue');
 
   /// IRI for schema:ComicSeries
   ///
@@ -1218,9 +1140,7 @@ class Schema {
   /// unifying title, for example "The Amazing Spider-Man" or "Groo the
   /// Wanderer".
   ///
-  static const ComicSeries = IriTerm.prevalidated(
-    'https://schema.org/ComicSeries',
-  );
+  static const ComicSeries = const IriTerm('https://schema.org/ComicSeries');
 
   /// IRI for schema:ComicStory
   ///
@@ -1228,21 +1148,19 @@ class Schema {
   /// unit of a comic, including the interior stories, covers, and backmatter. Most
   /// comics have at least two stories: a cover (ComicCoverArt) and an interior story.
   ///
-  static const ComicStory = IriTerm.prevalidated(
-    'https://schema.org/ComicStory',
-  );
+  static const ComicStory = const IriTerm('https://schema.org/ComicStory');
 
   /// IRI for schema:Comment
   ///
   /// A comment on an item - for example, a comment on a blog post. The comment's content is expressed via the {[text]} property, and its topic via {[about]}, properties shared with all CreativeWorks.
   ///
-  static const Comment = IriTerm.prevalidated('https://schema.org/Comment');
+  static const Comment = const IriTerm('https://schema.org/Comment');
 
   /// IRI for schema:CommentAction
   ///
   /// The act of generating a comment about a subject.
   ///
-  static const CommentAction = IriTerm.prevalidated(
+  static const CommentAction = const IriTerm(
     'https://schema.org/CommentAction',
   );
 
@@ -1250,7 +1168,7 @@ class Schema {
   ///
   /// The act of conveying information to another person via a communication medium (instrument) such as speech, email, or telephone conversation.
   ///
-  static const CommunicateAction = IriTerm.prevalidated(
+  static const CommunicateAction = const IriTerm(
     'https://schema.org/CommunicateAction',
   );
 
@@ -1260,7 +1178,7 @@ class Schema {
   ///
   /// This is the equivalent of Atom's element as defined in Feed Paging and Archiving [RFC 5005](https://tools.ietf.org/html/rfc5005), for example (and as defined for Atom), when using data from a feed that represents a collection of items that varies over time (e.g. "Top Twenty Records") there is no need to have newer entries mixed in alongside older, obsolete entries. By marking this feed as a CompleteDataFeed, old entries can be safely discarded when the feed is refreshed, since we can assume the feed has provided descriptions for all current items.
   ///
-  static const CompleteDataFeed = IriTerm.prevalidated(
+  static const CompleteDataFeed = const IriTerm(
     'https://schema.org/CompleteDataFeed',
   );
 
@@ -1268,7 +1186,7 @@ class Schema {
   ///
   /// A compound price specification is one that bundles multiple prices that all apply in combination for different dimensions of consumption. Use the name property of the attached unit price specification for indicating the dimension of a price component (e.g. "electricity" or "final cleaning").
   ///
-  static const CompoundPriceSpecification = IriTerm.prevalidated(
+  static const CompoundPriceSpecification = const IriTerm(
     'https://schema.org/CompoundPriceSpecification',
   );
 
@@ -1276,7 +1194,7 @@ class Schema {
   ///
   /// This type covers computer programming languages such as Scheme and Lisp, as well as other language-like computer representations. Natural languages are best represented with the {[Language]} type.
   ///
-  static const ComputerLanguage = IriTerm.prevalidated(
+  static const ComputerLanguage = const IriTerm(
     'https://schema.org/ComputerLanguage',
   );
 
@@ -1284,7 +1202,7 @@ class Schema {
   ///
   /// A computer store.
   ///
-  static const ComputerStore = IriTerm.prevalidated(
+  static const ComputerStore = const IriTerm(
     'https://schema.org/ComputerStore',
   );
 
@@ -1292,7 +1210,7 @@ class Schema {
   ///
   /// The act of notifying someone that a future event/action is going to happen as expected.\n\nRelated actions:\n\n* {[CancelAction]}: The antonym of ConfirmAction.
   ///
-  static const ConfirmAction = IriTerm.prevalidated(
+  static const ConfirmAction = const IriTerm(
     'https://schema.org/ConfirmAction',
   );
 
@@ -1300,16 +1218,14 @@ class Schema {
   ///
   /// A Consortium is a membership {[Organization]} whose members are typically Organizations.
   ///
-  static const Consortium = IriTerm.prevalidated(
-    'https://schema.org/Consortium',
-  );
+  static const Consortium = const IriTerm('https://schema.org/Consortium');
 
   /// IRI for schema:ConstraintNode
   ///
   /// The ConstraintNode type is provided to support usecases in which a node in a structured data graph is described with properties which appear to describe a single entity, but are being used in a situation where they serve a more abstract purpose. A {[ConstraintNode]} can be described using {[constraintProperty]} and {[numConstraints]}. These constraint properties can serve a
   /// variety of purposes, and their values may sometimes be understood to indicate sets of possible values rather than single, exact and specific values.
   ///
-  static const ConstraintNode = IriTerm.prevalidated(
+  static const ConstraintNode = const IriTerm(
     'https://schema.org/ConstraintNode',
   );
 
@@ -1317,7 +1233,7 @@ class Schema {
   ///
   /// The act of ingesting information/resources/food.
   ///
-  static const ConsumeAction = IriTerm.prevalidated(
+  static const ConsumeAction = const IriTerm(
     'https://schema.org/ConsumeAction',
   );
 
@@ -1325,23 +1241,19 @@ class Schema {
   ///
   /// Web page type: Contact page.
   ///
-  static const ContactPage = IriTerm.prevalidated(
-    'https://schema.org/ContactPage',
-  );
+  static const ContactPage = const IriTerm('https://schema.org/ContactPage');
 
   /// IRI for schema:ContactPoint
   ///
   /// A contact point&#x2014;for example, a Customer Complaints department.
   ///
-  static const ContactPoint = IriTerm.prevalidated(
-    'https://schema.org/ContactPoint',
-  );
+  static const ContactPoint = const IriTerm('https://schema.org/ContactPoint');
 
   /// IRI for schema:ContactPointOption
   ///
   /// Enumerated options related to a ContactPoint.
   ///
-  static const ContactPointOption = IriTerm.prevalidated(
+  static const ContactPointOption = const IriTerm(
     'https://schema.org/ContactPointOption',
   );
 
@@ -1349,13 +1261,13 @@ class Schema {
   ///
   /// One of the continents (for example, Europe or Africa).
   ///
-  static const Continent = IriTerm.prevalidated('https://schema.org/Continent');
+  static const Continent = const IriTerm('https://schema.org/Continent');
 
   /// IRI for schema:ControlAction
   ///
   /// An agent controls a device or application.
   ///
-  static const ControlAction = IriTerm.prevalidated(
+  static const ControlAction = const IriTerm(
     'https://schema.org/ControlAction',
   );
 
@@ -1363,7 +1275,7 @@ class Schema {
   ///
   /// A convenience store.
   ///
-  static const ConvenienceStore = IriTerm.prevalidated(
+  static const ConvenienceStore = const IriTerm(
     'https://schema.org/ConvenienceStore',
   );
 
@@ -1371,39 +1283,31 @@ class Schema {
   ///
   /// One or more messages between organizations or people on a particular topic. Individual messages can be linked to the conversation with isPartOf or hasPart properties.
   ///
-  static const Conversation = IriTerm.prevalidated(
-    'https://schema.org/Conversation',
-  );
+  static const Conversation = const IriTerm('https://schema.org/Conversation');
 
   /// IRI for schema:CookAction
   ///
   /// The act of producing/preparing food.
   ///
-  static const CookAction = IriTerm.prevalidated(
-    'https://schema.org/CookAction',
-  );
+  static const CookAction = const IriTerm('https://schema.org/CookAction');
 
   /// IRI for schema:Cooperative
   ///
   /// An organization that is a joint project of multiple organizations or persons.
   ///
-  static const Cooperative = IriTerm.prevalidated(
-    'https://schema.org/Cooperative',
-  );
+  static const Cooperative = const IriTerm('https://schema.org/Cooperative');
 
   /// IRI for schema:Corporation
   ///
   /// Organization: A business corporation.
   ///
-  static const Corporation = IriTerm.prevalidated(
-    'https://schema.org/Corporation',
-  );
+  static const Corporation = const IriTerm('https://schema.org/Corporation');
 
   /// IRI for schema:CorrectionComment
   ///
   /// A {[comment]} that corrects {[CreativeWork]}.
   ///
-  static const CorrectionComment = IriTerm.prevalidated(
+  static const CorrectionComment = const IriTerm(
     'https://schema.org/CorrectionComment',
   );
 
@@ -1411,19 +1315,19 @@ class Schema {
   ///
   /// A country.
   ///
-  static const Country = IriTerm.prevalidated('https://schema.org/Country');
+  static const Country = const IriTerm('https://schema.org/Country');
 
   /// IRI for schema:Course
   ///
   /// A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or be offered through different media or modes of study. An educational course is a sequence of one or more educational events and/or creative works which aims to build knowledge, competence or ability of learners.
   ///
-  static const Course = IriTerm.prevalidated('https://schema.org/Course');
+  static const Course = const IriTerm('https://schema.org/Course');
 
   /// IRI for schema:CourseInstance
   ///
   /// An instance of a {[Course]} which is distinct from other instances because it is offered at a different time or location or through different media or modes of study or to a specific section of students.
   ///
-  static const CourseInstance = IriTerm.prevalidated(
+  static const CourseInstance = const IriTerm(
     'https://schema.org/CourseInstance',
   );
 
@@ -1431,15 +1335,13 @@ class Schema {
   ///
   /// A courthouse.
   ///
-  static const Courthouse = IriTerm.prevalidated(
-    'https://schema.org/Courthouse',
-  );
+  static const Courthouse = const IriTerm('https://schema.org/Courthouse');
 
   /// IRI for schema:CoverArt
   ///
   /// The artwork on the outer surface of a CreativeWork.
   ///
-  static const CoverArt = IriTerm.prevalidated('https://schema.org/CoverArt');
+  static const CoverArt = const IriTerm('https://schema.org/CoverArt');
 
   /// IRI for schema:CovidTestingFacility
   ///
@@ -1449,7 +1351,7 @@ class Schema {
   /// about that place, e.g. contact info, address, opening hours. Note that in an emergency, such information may not always be reliable.
   ///
   ///
-  static const CovidTestingFacility = IriTerm.prevalidated(
+  static const CovidTestingFacility = const IriTerm(
     'https://schema.org/CovidTestingFacility',
   );
 
@@ -1457,23 +1359,19 @@ class Schema {
   ///
   /// The act of deliberately creating/producing/generating/building a result out of the agent.
   ///
-  static const CreateAction = IriTerm.prevalidated(
-    'https://schema.org/CreateAction',
-  );
+  static const CreateAction = const IriTerm('https://schema.org/CreateAction');
 
   /// IRI for schema:CreativeWork
   ///
   /// The most generic kind of creative work, including books, movies, photographs, software programs, etc.
   ///
-  static const CreativeWork = IriTerm.prevalidated(
-    'https://schema.org/CreativeWork',
-  );
+  static const CreativeWork = const IriTerm('https://schema.org/CreativeWork');
 
   /// IRI for schema:CreativeWorkSeason
   ///
   /// A media season, e.g. TV, radio, video game etc.
   ///
-  static const CreativeWorkSeason = IriTerm.prevalidated(
+  static const CreativeWorkSeason = const IriTerm(
     'https://schema.org/CreativeWorkSeason',
   );
 
@@ -1482,7 +1380,7 @@ class Schema {
   /// A CreativeWorkSeries in schema.org is a group of related items, typically but not necessarily of the same kind. CreativeWorkSeries are usually organized into some order, often chronological. Unlike {[ItemList]} which is a general purpose data structure for lists of things, the emphasis with CreativeWorkSeries is on published materials (written e.g. books and periodicals, or media such as TV, radio and games).\n\nSpecific subtypes are available for describing {[TVSeries]}, {[RadioSeries]}, {[MovieSeries]}, {[BookSeries]}, {[Periodical]} and {[VideoGameSeries]}. In each case, the {[hasPart]} / {[isPartOf]} properties can be used to relate the CreativeWorkSeries to its parts. The general CreativeWorkSeries type serves largely just to organize these more specific and practical subtypes.\n\nIt is common for properties applicable to an item from the series to be usefully applied to the containing group. Schema.org attempts to anticipate some of these cases, but publishers should be free to apply properties of the series parts to the series as a whole wherever they seem appropriate.
   ///
   ///
-  static const CreativeWorkSeries = IriTerm.prevalidated(
+  static const CreativeWorkSeries = const IriTerm(
     'https://schema.org/CreativeWorkSeries',
   );
 
@@ -1491,31 +1389,25 @@ class Schema {
   /// A card payment method of a particular brand or name.  Used to mark up a particular payment method and/or the financial product/service that supplies the card account.\n\nCommonly used values:\n\n* http://purl.org/goodrelations/v1#AmericanExpress\n* http://purl.org/goodrelations/v1#DinersClub\n* http://purl.org/goodrelations/v1#Discover\n* http://purl.org/goodrelations/v1#JCB\n* http://purl.org/goodrelations/v1#MasterCard\n* http://purl.org/goodrelations/v1#VISA
   ///
   ///
-  static const CreditCard = IriTerm.prevalidated(
-    'https://schema.org/CreditCard',
-  );
+  static const CreditCard = const IriTerm('https://schema.org/CreditCard');
 
   /// IRI for schema:Crematorium
   ///
   /// A crematorium.
   ///
-  static const Crematorium = IriTerm.prevalidated(
-    'https://schema.org/Crematorium',
-  );
+  static const Crematorium = const IriTerm('https://schema.org/Crematorium');
 
   /// IRI for schema:CriticReview
   ///
   /// A {[CriticReview]} is a more specialized form of Review written or published by a source that is recognized for its reviewing activities. These can include online columns, travel and food guides, TV and radio shows, blogs and other independent Web sites. {[CriticReview]}s are typically more in-depth and professionally written. For simpler, casually written user/visitor/viewer/customer reviews, it is more appropriate to use the {[UserReview]} type. Review aggregator sites such as Metacritic already separate out the site's user reviews from selected critic reviews that originate from third-party sources.
   ///
-  static const CriticReview = IriTerm.prevalidated(
-    'https://schema.org/CriticReview',
-  );
+  static const CriticReview = const IriTerm('https://schema.org/CriticReview');
 
   /// IRI for schema:CssSelectorType
   ///
   /// Text representing a CSS selector.
   ///
-  static const CssSelectorType = IriTerm.prevalidated(
+  static const CssSelectorType = const IriTerm(
     'https://schema.org/CssSelectorType',
   );
 
@@ -1523,7 +1415,7 @@ class Schema {
   ///
   /// A service to convert funds from one currency to another currency.
   ///
-  static const CurrencyConversionService = IriTerm.prevalidated(
+  static const CurrencyConversionService = const IriTerm(
     'https://schema.org/CurrencyConversionService',
   );
 
@@ -1531,85 +1423,73 @@ class Schema {
   ///
   /// An alternative, closely-related condition typically considered later in the differential diagnosis process along with the signs that are used to distinguish it.
   ///
-  static const DDxElement = IriTerm.prevalidated(
-    'https://schema.org/DDxElement',
-  );
+  static const DDxElement = const IriTerm('https://schema.org/DDxElement');
 
   /// IRI for schema:DanceEvent
   ///
   /// Event type: A social dance.
   ///
-  static const DanceEvent = IriTerm.prevalidated(
-    'https://schema.org/DanceEvent',
-  );
+  static const DanceEvent = const IriTerm('https://schema.org/DanceEvent');
 
   /// IRI for schema:DanceGroup
   ///
   /// A dance group&#x2014;for example, the Alvin Ailey Dance Theater or Riverdance.
   ///
-  static const DanceGroup = IriTerm.prevalidated(
-    'https://schema.org/DanceGroup',
-  );
+  static const DanceGroup = const IriTerm('https://schema.org/DanceGroup');
 
   /// IRI for schema:DataCatalog
   ///
   /// A collection of datasets.
   ///
-  static const DataCatalog = IriTerm.prevalidated(
-    'https://schema.org/DataCatalog',
-  );
+  static const DataCatalog = const IriTerm('https://schema.org/DataCatalog');
 
   /// IRI for schema:DataDownload
   ///
   /// All or part of a {[Dataset]} in downloadable form.
   ///
-  static const DataDownload = IriTerm.prevalidated(
-    'https://schema.org/DataDownload',
-  );
+  static const DataDownload = const IriTerm('https://schema.org/DataDownload');
 
   /// IRI for schema:DataFeed
   ///
   /// A single feed providing structured information about one or more entities or topics.
   ///
-  static const DataFeed = IriTerm.prevalidated('https://schema.org/DataFeed');
+  static const DataFeed = const IriTerm('https://schema.org/DataFeed');
 
   /// IRI for schema:DataFeedItem
   ///
   /// A single item within a larger data feed.
   ///
-  static const DataFeedItem = IriTerm.prevalidated(
-    'https://schema.org/DataFeedItem',
-  );
+  static const DataFeedItem = const IriTerm('https://schema.org/DataFeedItem');
 
   /// IRI for schema:DataType
   ///
   /// The basic data types such as Integers, Strings, etc.
   ///
-  static const DataType = IriTerm.prevalidated('https://schema.org/DataType');
+  static const DataType = const IriTerm('https://schema.org/DataType');
 
   /// IRI for schema:Dataset
   ///
   /// A body of structured information describing some topic(s) of interest.
   ///
-  static const Dataset = IriTerm.prevalidated('https://schema.org/Dataset');
+  static const Dataset = const IriTerm('https://schema.org/Dataset');
 
   /// IRI for schema:Date
   ///
   /// A date value in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).
   ///
-  static const Date = IriTerm.prevalidated('https://schema.org/Date');
+  static const Date = const IriTerm('https://schema.org/Date');
 
   /// IRI for schema:DateTime
   ///
   /// A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm] (see Chapter 5.4 of ISO 8601).
   ///
-  static const DateTime = IriTerm.prevalidated('https://schema.org/DateTime');
+  static const DateTime = const IriTerm('https://schema.org/DateTime');
 
   /// IRI for schema:DatedMoneySpecification
   ///
   /// A DatedMoneySpecification represents monetary values with optional start and end dates. For example, this could represent an employee's salary over a specific period of time. __Note:__ This type has been superseded by {[MonetaryAmount]}, use of that type is recommended.
   ///
-  static const DatedMoneySpecification = IriTerm.prevalidated(
+  static const DatedMoneySpecification = const IriTerm(
     'https://schema.org/DatedMoneySpecification',
   );
 
@@ -1620,19 +1500,19 @@ class Schema {
   /// Originally, URLs from [GoodRelations](http://purl.org/goodrelations/v1) were used (for {[Monday]}, {[Tuesday]}, {[Wednesday]}, {[Thursday]}, {[Friday]}, {[Saturday]}, {[Sunday]} plus a special entry for {[PublicHolidays]}); these have now been integrated directly into schema.org.
   ///
   ///
-  static const DayOfWeek = IriTerm.prevalidated('https://schema.org/DayOfWeek');
+  static const DayOfWeek = const IriTerm('https://schema.org/DayOfWeek');
 
   /// IRI for schema:DaySpa
   ///
   /// A day spa.
   ///
-  static const DaySpa = IriTerm.prevalidated('https://schema.org/DaySpa');
+  static const DaySpa = const IriTerm('https://schema.org/DaySpa');
 
   /// IRI for schema:DeactivateAction
   ///
   /// The act of stopping or deactivating a device or application (e.g. stopping a timer or turning off a flashlight).
   ///
-  static const DeactivateAction = IriTerm.prevalidated(
+  static const DeactivateAction = const IriTerm(
     'https://schema.org/DeactivateAction',
   );
 
@@ -1640,7 +1520,7 @@ class Schema {
   ///
   /// A defence establishment, such as an army or navy base.
   ///
-  static const DefenceEstablishment = IriTerm.prevalidated(
+  static const DefenceEstablishment = const IriTerm(
     'https://schema.org/DefenceEstablishment',
   );
 
@@ -1661,7 +1541,7 @@ class Schema {
   /// Region = state, canton, prefecture, autonomous community...
   ///
   ///
-  static const DefinedRegion = IriTerm.prevalidated(
+  static const DefinedRegion = const IriTerm(
     'https://schema.org/DefinedRegion',
   );
 
@@ -1669,15 +1549,13 @@ class Schema {
   ///
   /// A word, name, acronym, phrase, etc. with a formal definition. Often used in the context of category or subject classification, glossaries or dictionaries, product or creative work types, etc. Use the name property for the term being defined, use termCode if the term has an alpha-numeric code allocated, use description to provide the definition of the term.
   ///
-  static const DefinedTerm = IriTerm.prevalidated(
-    'https://schema.org/DefinedTerm',
-  );
+  static const DefinedTerm = const IriTerm('https://schema.org/DefinedTerm');
 
   /// IRI for schema:DefinedTermSet
   ///
   /// A set of defined terms, for example a set of categories or a classification scheme, a glossary, dictionary or enumeration.
   ///
-  static const DefinedTermSet = IriTerm.prevalidated(
+  static const DefinedTermSet = const IriTerm(
     'https://schema.org/DefinedTermSet',
   );
 
@@ -1685,15 +1563,13 @@ class Schema {
   ///
   /// The act of editing a recipient by removing one of its objects.
   ///
-  static const DeleteAction = IriTerm.prevalidated(
-    'https://schema.org/DeleteAction',
-  );
+  static const DeleteAction = const IriTerm('https://schema.org/DeleteAction');
 
   /// IRI for schema:DeliveryChargeSpecification
   ///
   /// The price for the delivery of an offer using a particular delivery method.
   ///
-  static const DeliveryChargeSpecification = IriTerm.prevalidated(
+  static const DeliveryChargeSpecification = const IriTerm(
     'https://schema.org/DeliveryChargeSpecification',
   );
 
@@ -1701,7 +1577,7 @@ class Schema {
   ///
   /// An event involving the delivery of an item.
   ///
-  static const DeliveryEvent = IriTerm.prevalidated(
+  static const DeliveryEvent = const IriTerm(
     'https://schema.org/DeliveryEvent',
   );
 
@@ -1710,7 +1586,7 @@ class Schema {
   /// A delivery method is a standardized procedure for transferring the product or service to the destination of fulfillment chosen by the customer. Delivery methods are characterized by the means of transportation used, and by the organization or group that is the contracting party for the sending organization or person.\n\nCommonly used values:\n\n* http://purl.org/goodrelations/v1#DeliveryModeDirectDownload\n* http://purl.org/goodrelations/v1#DeliveryModeFreight\n* http://purl.org/goodrelations/v1#DeliveryModeMail\n* http://purl.org/goodrelations/v1#DeliveryModeOwnFleet\n* http://purl.org/goodrelations/v1#DeliveryModePickUp\n* http://purl.org/goodrelations/v1#DHL\n* http://purl.org/goodrelations/v1#FederalExpress\n* http://purl.org/goodrelations/v1#UPS
   ///
   ///
-  static const DeliveryMethod = IriTerm.prevalidated(
+  static const DeliveryMethod = const IriTerm(
     'https://schema.org/DeliveryMethod',
   );
 
@@ -1718,27 +1594,25 @@ class Schema {
   ///
   /// A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. For describing demand using this type, the very same properties used for Offer apply.
   ///
-  static const Demand = IriTerm.prevalidated('https://schema.org/Demand');
+  static const Demand = const IriTerm('https://schema.org/Demand');
 
   /// IRI for schema:Dentist
   ///
   /// A dentist.
   ///
-  static const Dentist = IriTerm.prevalidated('https://schema.org/Dentist');
+  static const Dentist = const IriTerm('https://schema.org/Dentist');
 
   /// IRI for schema:DepartAction
   ///
   /// The act of  departing from a place. An agent departs from a fromLocation for a destination, optionally with participants.
   ///
-  static const DepartAction = IriTerm.prevalidated(
-    'https://schema.org/DepartAction',
-  );
+  static const DepartAction = const IriTerm('https://schema.org/DepartAction');
 
   /// IRI for schema:DepartmentStore
   ///
   /// A department store.
   ///
-  static const DepartmentStore = IriTerm.prevalidated(
+  static const DepartmentStore = const IriTerm(
     'https://schema.org/DepartmentStore',
   );
 
@@ -1746,7 +1620,7 @@ class Schema {
   ///
   /// A type of Bank Account with a main purpose of depositing funds to gain interest or other benefits.
   ///
-  static const DepositAccount = IriTerm.prevalidated(
+  static const DepositAccount = const IriTerm(
     'https://schema.org/DepositAccount',
   );
 
@@ -1754,7 +1628,7 @@ class Schema {
   ///
   /// A medical laboratory that offers on-site or off-site diagnostic services.
   ///
-  static const DiagnosticLab = IriTerm.prevalidated(
+  static const DiagnosticLab = const IriTerm(
     'https://schema.org/DiagnosticLab',
   );
 
@@ -1762,7 +1636,7 @@ class Schema {
   ///
   /// A medical procedure intended primarily for diagnostic, as opposed to therapeutic, purposes.
   ///
-  static const DiagnosticProcedure = IriTerm.prevalidated(
+  static const DiagnosticProcedure = const IriTerm(
     'https://schema.org/DiagnosticProcedure',
   );
 
@@ -1770,13 +1644,13 @@ class Schema {
   ///
   /// A strategy of regulating the intake of food to achieve or maintain a specific health-related goal.
   ///
-  static const Diet = IriTerm.prevalidated('https://schema.org/Diet');
+  static const Diet = const IriTerm('https://schema.org/Diet');
 
   /// IRI for schema:DietarySupplement
   ///
   /// A product taken by mouth that contains a dietary ingredient intended to supplement the diet. Dietary ingredients may include vitamins, minerals, herbs or other botanicals, amino acids, and substances such as enzymes, organ tissues, glandulars and metabolites.
   ///
-  static const DietarySupplement = IriTerm.prevalidated(
+  static const DietarySupplement = const IriTerm(
     'https://schema.org/DietarySupplement',
   );
 
@@ -1784,7 +1658,7 @@ class Schema {
   ///
   /// An electronic file or document.
   ///
-  static const DigitalDocument = IriTerm.prevalidated(
+  static const DigitalDocument = const IriTerm(
     'https://schema.org/DigitalDocument',
   );
 
@@ -1792,7 +1666,7 @@ class Schema {
   ///
   /// A permission for a particular person or group to access a particular file.
   ///
-  static const DigitalDocumentPermission = IriTerm.prevalidated(
+  static const DigitalDocumentPermission = const IriTerm(
     'https://schema.org/DigitalDocumentPermission',
   );
 
@@ -1800,7 +1674,7 @@ class Schema {
   ///
   /// A type of permission which can be granted for accessing a digital document.
   ///
-  static const DigitalDocumentPermissionType = IriTerm.prevalidated(
+  static const DigitalDocumentPermissionType = const IriTerm(
     'https://schema.org/DigitalDocumentPermissionType',
   );
 
@@ -1808,7 +1682,7 @@ class Schema {
   ///
   /// Enumerates some common technology platforms, for use with properties such as {[actionPlatform]}. It is not supposed to be comprehensive - when a suitable code is not enumerated here, textual or URL values can be used instead. These codes are at a fairly high level and do not deal with versioning and other nuance. Additional codes can be suggested [in github](https://github.com/schemaorg/schemaorg/issues/3057).
   ///
-  static const DigitalPlatformEnumeration = IriTerm.prevalidated(
+  static const DigitalPlatformEnumeration = const IriTerm(
     'https://schema.org/DigitalPlatformEnumeration',
   );
 
@@ -1816,7 +1690,7 @@ class Schema {
   ///
   /// The act of expressing a difference of opinion with the object. An agent disagrees to/about an object (a proposition, topic or theme) with participants.
   ///
-  static const DisagreeAction = IriTerm.prevalidated(
+  static const DisagreeAction = const IriTerm(
     'https://schema.org/DisagreeAction',
   );
 
@@ -1824,7 +1698,7 @@ class Schema {
   ///
   /// The act of discovering/finding an object.
   ///
-  static const DiscoverAction = IriTerm.prevalidated(
+  static const DiscoverAction = const IriTerm(
     'https://schema.org/DiscoverAction',
   );
 
@@ -1832,7 +1706,7 @@ class Schema {
   ///
   /// A posting to a discussion forum.
   ///
-  static const DiscussionForumPosting = IriTerm.prevalidated(
+  static const DiscussionForumPosting = const IriTerm(
     'https://schema.org/DiscussionForumPosting',
   );
 
@@ -1840,7 +1714,7 @@ class Schema {
   ///
   /// The act of expressing a negative sentiment about the object. An agent dislikes an object (a proposition, topic or theme) with participants.
   ///
-  static const DislikeAction = IriTerm.prevalidated(
+  static const DislikeAction = const IriTerm(
     'https://schema.org/DislikeAction',
   );
 
@@ -1848,37 +1722,31 @@ class Schema {
   ///
   /// Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'. E.g., '7 ft'.
   ///
-  static const Distance = IriTerm.prevalidated('https://schema.org/Distance');
+  static const Distance = const IriTerm('https://schema.org/Distance');
 
   /// IRI for schema:Distillery
   ///
   /// A distillery.
   ///
-  static const Distillery = IriTerm.prevalidated(
-    'https://schema.org/Distillery',
-  );
+  static const Distillery = const IriTerm('https://schema.org/Distillery');
 
   /// IRI for schema:DonateAction
   ///
   /// The act of providing goods, services, or money without compensation, often for philanthropic reasons.
   ///
-  static const DonateAction = IriTerm.prevalidated(
-    'https://schema.org/DonateAction',
-  );
+  static const DonateAction = const IriTerm('https://schema.org/DonateAction');
 
   /// IRI for schema:DoseSchedule
   ///
   /// A specific dosing schedule for a drug or supplement.
   ///
-  static const DoseSchedule = IriTerm.prevalidated(
-    'https://schema.org/DoseSchedule',
-  );
+  static const DoseSchedule = const IriTerm('https://schema.org/DoseSchedule');
 
   /// IRI for schema:DownloadAction
   ///
   /// The act of downloading an object.
   ///
-  static const DownloadAction = IriTerm.prevalidated(
+  static const DownloadAction = const IriTerm(
     'https://schema.org/DownloadAction',
   );
 
@@ -1886,29 +1754,25 @@ class Schema {
   ///
   /// The act of producing a visual/graphical representation of an object, typically with a pen/pencil and paper as instruments.
   ///
-  static const DrawAction = IriTerm.prevalidated(
-    'https://schema.org/DrawAction',
-  );
+  static const DrawAction = const IriTerm('https://schema.org/DrawAction');
 
   /// IRI for schema:Drawing
   ///
   /// A picture or diagram made with a pencil, pen, or crayon rather than paint.
   ///
-  static const Drawing = IriTerm.prevalidated('https://schema.org/Drawing');
+  static const Drawing = const IriTerm('https://schema.org/Drawing');
 
   /// IRI for schema:DrinkAction
   ///
   /// The act of swallowing liquids.
   ///
-  static const DrinkAction = IriTerm.prevalidated(
-    'https://schema.org/DrinkAction',
-  );
+  static const DrinkAction = const IriTerm('https://schema.org/DrinkAction');
 
   /// IRI for schema:DriveWheelConfigurationValue
   ///
   /// A value indicating which roadwheels will receive torque.
   ///
-  static const DriveWheelConfigurationValue = IriTerm.prevalidated(
+  static const DriveWheelConfigurationValue = const IriTerm(
     'https://schema.org/DriveWheelConfigurationValue',
   );
 
@@ -1916,25 +1780,25 @@ class Schema {
   ///
   /// A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowledge makes a clear difference between them.
   ///
-  static const Drug = IriTerm.prevalidated('https://schema.org/Drug');
+  static const Drug = const IriTerm('https://schema.org/Drug');
 
   /// IRI for schema:DrugClass
   ///
   /// A class of medical drugs, e.g., statins. Classes can represent general pharmacological class, common mechanisms of action, common physiological effects, etc.
   ///
-  static const DrugClass = IriTerm.prevalidated('https://schema.org/DrugClass');
+  static const DrugClass = const IriTerm('https://schema.org/DrugClass');
 
   /// IRI for schema:DrugCost
   ///
   /// The cost per unit of a medical drug. Note that this type is not meant to represent the price in an offer of a drug for sale; see the Offer type for that. This type will typically be used to tag wholesale or average retail cost of a drug, or maximum reimbursable cost. Costs of medical drugs vary widely depending on how and where they are paid for, so while this type captures some of the variables, costs should be used with caution by consumers of this schema's markup.
   ///
-  static const DrugCost = IriTerm.prevalidated('https://schema.org/DrugCost');
+  static const DrugCost = const IriTerm('https://schema.org/DrugCost');
 
   /// IRI for schema:DrugCostCategory
   ///
   /// Enumerated categories of medical drug costs.
   ///
-  static const DrugCostCategory = IriTerm.prevalidated(
+  static const DrugCostCategory = const IriTerm(
     'https://schema.org/DrugCostCategory',
   );
 
@@ -1942,7 +1806,7 @@ class Schema {
   ///
   /// The legal availability status of a medical drug.
   ///
-  static const DrugLegalStatus = IriTerm.prevalidated(
+  static const DrugLegalStatus = const IriTerm(
     'https://schema.org/DrugLegalStatus',
   );
 
@@ -1950,7 +1814,7 @@ class Schema {
   ///
   /// Categories that represent an assessment of the risk of fetal injury due to a drug or pharmaceutical used as directed by the mother during pregnancy.
   ///
-  static const DrugPregnancyCategory = IriTerm.prevalidated(
+  static const DrugPregnancyCategory = const IriTerm(
     'https://schema.org/DrugPregnancyCategory',
   );
 
@@ -1958,7 +1822,7 @@ class Schema {
   ///
   /// Indicates whether this drug is available by prescription or over-the-counter.
   ///
-  static const DrugPrescriptionStatus = IriTerm.prevalidated(
+  static const DrugPrescriptionStatus = const IriTerm(
     'https://schema.org/DrugPrescriptionStatus',
   );
 
@@ -1966,15 +1830,13 @@ class Schema {
   ///
   /// A specific strength in which a medical drug is available in a specific country.
   ///
-  static const DrugStrength = IriTerm.prevalidated(
-    'https://schema.org/DrugStrength',
-  );
+  static const DrugStrength = const IriTerm('https://schema.org/DrugStrength');
 
   /// IRI for schema:DryCleaningOrLaundry
   ///
   /// A dry-cleaning business.
   ///
-  static const DryCleaningOrLaundry = IriTerm.prevalidated(
+  static const DryCleaningOrLaundry = const IriTerm(
     'https://schema.org/DryCleaningOrLaundry',
   );
 
@@ -1982,13 +1844,13 @@ class Schema {
   ///
   /// Quantity: Duration (use [ISO 8601 duration format](http://en.wikipedia.org/wiki/ISO_8601)).
   ///
-  static const Duration = IriTerm.prevalidated('https://schema.org/Duration');
+  static const Duration = const IriTerm('https://schema.org/Duration');
 
   /// IRI for schema:EUEnergyEfficiencyEnumeration
   ///
   /// Enumerates the EU energy efficiency classes A-G as well as A+, A++, and A+++ as defined in EU directive 2017/1369.
   ///
-  static const EUEnergyEfficiencyEnumeration = IriTerm.prevalidated(
+  static const EUEnergyEfficiencyEnumeration = const IriTerm(
     'https://schema.org/EUEnergyEfficiencyEnumeration',
   );
 
@@ -1996,13 +1858,13 @@ class Schema {
   ///
   /// The act of swallowing solid objects.
   ///
-  static const EatAction = IriTerm.prevalidated('https://schema.org/EatAction');
+  static const EatAction = const IriTerm('https://schema.org/EatAction');
 
   /// IRI for schema:EducationEvent
   ///
   /// Event type: Education event.
   ///
-  static const EducationEvent = IriTerm.prevalidated(
+  static const EducationEvent = const IriTerm(
     'https://schema.org/EducationEvent',
   );
 
@@ -2010,7 +1872,7 @@ class Schema {
   ///
   /// An EducationalAudience.
   ///
-  static const EducationalAudience = IriTerm.prevalidated(
+  static const EducationalAudience = const IriTerm(
     'https://schema.org/EducationalAudience',
   );
 
@@ -2018,7 +1880,7 @@ class Schema {
   ///
   /// An educational or occupational credential. A diploma, academic degree, certification, qualification, badge, etc., that may be awarded to a person or other entity that meets the requirements defined by the credentialer.
   ///
-  static const EducationalOccupationalCredential = IriTerm.prevalidated(
+  static const EducationalOccupationalCredential = const IriTerm(
     'https://schema.org/EducationalOccupationalCredential',
   );
 
@@ -2026,7 +1888,7 @@ class Schema {
   ///
   /// A program offered by an institution which determines the learning progress to achieve an outcome, usually a credential like a degree or certificate. This would define a discrete set of opportunities (e.g., job, courses) that together constitute a program with a clear start, end, set of requirements, and transition to a new occupational opportunity (e.g., a job), or sometimes a higher educational opportunity (e.g., an advanced degree).
   ///
-  static const EducationalOccupationalProgram = IriTerm.prevalidated(
+  static const EducationalOccupationalProgram = const IriTerm(
     'https://schema.org/EducationalOccupationalProgram',
   );
 
@@ -2034,7 +1896,7 @@ class Schema {
   ///
   /// An educational organization.
   ///
-  static const EducationalOrganization = IriTerm.prevalidated(
+  static const EducationalOrganization = const IriTerm(
     'https://schema.org/EducationalOrganization',
   );
 
@@ -2042,15 +1904,13 @@ class Schema {
   ///
   /// An electrician.
   ///
-  static const Electrician = IriTerm.prevalidated(
-    'https://schema.org/Electrician',
-  );
+  static const Electrician = const IriTerm('https://schema.org/Electrician');
 
   /// IRI for schema:ElectronicsStore
   ///
   /// An electronics store.
   ///
-  static const ElectronicsStore = IriTerm.prevalidated(
+  static const ElectronicsStore = const IriTerm(
     'https://schema.org/ElectronicsStore',
   );
 
@@ -2058,7 +1918,7 @@ class Schema {
   ///
   /// An elementary school.
   ///
-  static const ElementarySchool = IriTerm.prevalidated(
+  static const ElementarySchool = const IriTerm(
     'https://schema.org/ElementarySchool',
   );
 
@@ -2066,21 +1926,19 @@ class Schema {
   ///
   /// An email message.
   ///
-  static const EmailMessage = IriTerm.prevalidated(
-    'https://schema.org/EmailMessage',
-  );
+  static const EmailMessage = const IriTerm('https://schema.org/EmailMessage');
 
   /// IRI for schema:Embassy
   ///
   /// An embassy.
   ///
-  static const Embassy = IriTerm.prevalidated('https://schema.org/Embassy');
+  static const Embassy = const IriTerm('https://schema.org/Embassy');
 
   /// IRI for schema:EmergencyService
   ///
   /// An emergency service, such as a fire station or ER.
   ///
-  static const EmergencyService = IriTerm.prevalidated(
+  static const EmergencyService = const IriTerm(
     'https://schema.org/EmergencyService',
   );
 
@@ -2088,15 +1946,13 @@ class Schema {
   ///
   /// A subclass of OrganizationRole used to describe employee relationships.
   ///
-  static const EmployeeRole = IriTerm.prevalidated(
-    'https://schema.org/EmployeeRole',
-  );
+  static const EmployeeRole = const IriTerm('https://schema.org/EmployeeRole');
 
   /// IRI for schema:EmployerAggregateRating
   ///
   /// An aggregate rating of an Organization related to its role as an employer.
   ///
-  static const EmployerAggregateRating = IriTerm.prevalidated(
+  static const EmployerAggregateRating = const IriTerm(
     'https://schema.org/EmployerAggregateRating',
   );
 
@@ -2104,7 +1960,7 @@ class Schema {
   ///
   /// An {[EmployerReview]} is a review of an {[Organization]} regarding its role as an employer, written by a current or former employee of that organization.
   ///
-  static const EmployerReview = IriTerm.prevalidated(
+  static const EmployerReview = const IriTerm(
     'https://schema.org/EmployerReview',
   );
 
@@ -2112,7 +1968,7 @@ class Schema {
   ///
   /// An employment agency.
   ///
-  static const EmploymentAgency = IriTerm.prevalidated(
+  static const EmploymentAgency = const IriTerm(
     'https://schema.org/EmploymentAgency',
   );
 
@@ -2120,7 +1976,7 @@ class Schema {
   ///
   /// An agent approves/certifies/likes/supports/sanctions an object.
   ///
-  static const EndorseAction = IriTerm.prevalidated(
+  static const EndorseAction = const IriTerm(
     'https://schema.org/EndorseAction',
   );
 
@@ -2134,7 +1990,7 @@ class Schema {
   /// endorsement rating is particularly useful in the absence of numeric scales as it helps consumers understand that the rating is broadly positive.
   ///
   ///
-  static const EndorsementRating = IriTerm.prevalidated(
+  static const EndorsementRating = const IriTerm(
     'https://schema.org/EndorsementRating',
   );
 
@@ -2142,13 +1998,13 @@ class Schema {
   ///
   /// Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.
   ///
-  static const Energy = IriTerm.prevalidated('https://schema.org/Energy');
+  static const Energy = const IriTerm('https://schema.org/Energy');
 
   /// IRI for schema:EnergyConsumptionDetails
   ///
   /// EnergyConsumptionDetails represents information related to the energy efficiency of a product that consumes energy. The information that can be provided is based on international regulations such as for example [EU directive 2017/1369](https://eur-lex.europa.eu/eli/reg/2017/1369/oj) for energy labeling and the [Energy labeling rule](https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/energy-water-use-labeling-consumer) under the Energy Policy and Conservation Act (EPCA) in the US.
   ///
-  static const EnergyConsumptionDetails = IriTerm.prevalidated(
+  static const EnergyConsumptionDetails = const IriTerm(
     'https://schema.org/EnergyConsumptionDetails',
   );
 
@@ -2156,7 +2012,7 @@ class Schema {
   ///
   /// Enumerates energy efficiency levels (also known as "classes" or "ratings") and certifications that are part of several international energy efficiency standards.
   ///
-  static const EnergyEfficiencyEnumeration = IriTerm.prevalidated(
+  static const EnergyEfficiencyEnumeration = const IriTerm(
     'https://schema.org/EnergyEfficiencyEnumeration',
   );
 
@@ -2164,7 +2020,7 @@ class Schema {
   ///
   /// Used to indicate whether a product is EnergyStar certified.
   ///
-  static const EnergyStarEnergyEfficiencyEnumeration = IriTerm.prevalidated(
+  static const EnergyStarEnergyEfficiencyEnumeration = const IriTerm(
     'https://schema.org/EnergyStarEnergyEfficiencyEnumeration',
   );
 
@@ -2172,7 +2028,7 @@ class Schema {
   ///
   /// Information about the engine of the vehicle. A vehicle can have multiple engines represented by multiple engine specification entities.
   ///
-  static const EngineSpecification = IriTerm.prevalidated(
+  static const EngineSpecification = const IriTerm(
     'https://schema.org/EngineSpecification',
   );
 
@@ -2180,7 +2036,7 @@ class Schema {
   ///
   /// A business providing entertainment.
   ///
-  static const EntertainmentBusiness = IriTerm.prevalidated(
+  static const EntertainmentBusiness = const IriTerm(
     'https://schema.org/EntertainmentBusiness',
   );
 
@@ -2188,35 +2044,31 @@ class Schema {
   ///
   /// An entry point, within some Web-based protocol.
   ///
-  static const EntryPoint = IriTerm.prevalidated(
-    'https://schema.org/EntryPoint',
-  );
+  static const EntryPoint = const IriTerm('https://schema.org/EntryPoint');
 
   /// IRI for schema:Enumeration
   ///
   /// Lists or enumerations—for example, a list of cuisines or music genres, etc.
   ///
-  static const Enumeration = IriTerm.prevalidated(
-    'https://schema.org/Enumeration',
-  );
+  static const Enumeration = const IriTerm('https://schema.org/Enumeration');
 
   /// IRI for schema:Episode
   ///
   /// A media episode (e.g. TV, radio, video game) which can be part of a series or season.
   ///
-  static const Episode = IriTerm.prevalidated('https://schema.org/Episode');
+  static const Episode = const IriTerm('https://schema.org/Episode');
 
   /// IRI for schema:Event
   ///
   /// An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the {[offers]} property. Repeated events may be structured as separate Event objects.
   ///
-  static const Event = IriTerm.prevalidated('https://schema.org/Event');
+  static const Event = const IriTerm('https://schema.org/Event');
 
   /// IRI for schema:EventAttendanceModeEnumeration
   ///
   /// An EventAttendanceModeEnumeration value is one of potentially several modes of organising an event, relating to whether it is online or offline.
   ///
-  static const EventAttendanceModeEnumeration = IriTerm.prevalidated(
+  static const EventAttendanceModeEnumeration = const IriTerm(
     'https://schema.org/EventAttendanceModeEnumeration',
   );
 
@@ -2224,7 +2076,7 @@ class Schema {
   ///
   /// A reservation for an event like a concert, sporting event, or lecture.\n\nNote: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use {[Offer]}.
   ///
-  static const EventReservation = IriTerm.prevalidated(
+  static const EventReservation = const IriTerm(
     'https://schema.org/EventReservation',
   );
 
@@ -2245,15 +2097,13 @@ class Schema {
   /// it may also sometimes prove useful to describe a longer-term series as an Event.
   ///
   ///
-  static const EventSeries = IriTerm.prevalidated(
-    'https://schema.org/EventSeries',
-  );
+  static const EventSeries = const IriTerm('https://schema.org/EventSeries');
 
   /// IRI for schema:EventStatusType
   ///
   /// EventStatusType is an enumeration type whose instances represent several states that an Event may be in.
   ///
-  static const EventStatusType = IriTerm.prevalidated(
+  static const EventStatusType = const IriTerm(
     'https://schema.org/EventStatusType',
   );
 
@@ -2261,15 +2111,13 @@ class Schema {
   ///
   /// An event venue.
   ///
-  static const EventVenue = IriTerm.prevalidated(
-    'https://schema.org/EventVenue',
-  );
+  static const EventVenue = const IriTerm('https://schema.org/EventVenue');
 
   /// IRI for schema:ExchangeRateSpecification
   ///
   /// A structured value representing exchange rate.
   ///
-  static const ExchangeRateSpecification = IriTerm.prevalidated(
+  static const ExchangeRateSpecification = const IriTerm(
     'https://schema.org/ExchangeRateSpecification',
   );
 
@@ -2277,7 +2125,7 @@ class Schema {
   ///
   /// The act of participating in exertive activity for the purposes of improving health and fitness.
   ///
-  static const ExerciseAction = IriTerm.prevalidated(
+  static const ExerciseAction = const IriTerm(
     'https://schema.org/ExerciseAction',
   );
 
@@ -2285,23 +2133,19 @@ class Schema {
   ///
   /// A gym.
   ///
-  static const ExerciseGym = IriTerm.prevalidated(
-    'https://schema.org/ExerciseGym',
-  );
+  static const ExerciseGym = const IriTerm('https://schema.org/ExerciseGym');
 
   /// IRI for schema:ExercisePlan
   ///
   /// Fitness-related activity designed for a specific health-related purpose, including defined exercise routines as well as activity prescribed by a clinician.
   ///
-  static const ExercisePlan = IriTerm.prevalidated(
-    'https://schema.org/ExercisePlan',
-  );
+  static const ExercisePlan = const IriTerm('https://schema.org/ExercisePlan');
 
   /// IRI for schema:ExhibitionEvent
   ///
   /// Event type: Exhibition event, e.g. at a museum, library, archive, tradeshow, ...
   ///
-  static const ExhibitionEvent = IriTerm.prevalidated(
+  static const ExhibitionEvent = const IriTerm(
     'https://schema.org/ExhibitionEvent',
   );
 
@@ -2309,13 +2153,13 @@ class Schema {
   ///
   /// A {[FAQPage]} is a {[WebPage]} presenting one or more "[Frequently asked questions](https://en.wikipedia.org/wiki/FAQ)" (see also {[QAPage]}).
   ///
-  static const FAQPage = IriTerm.prevalidated('https://schema.org/FAQPage');
+  static const FAQPage = const IriTerm('https://schema.org/FAQPage');
 
   /// IRI for schema:FMRadioChannel
   ///
   /// A radio channel that uses FM.
   ///
-  static const FMRadioChannel = IriTerm.prevalidated(
+  static const FMRadioChannel = const IriTerm(
     'https://schema.org/FMRadioChannel',
   );
 
@@ -2323,7 +2167,7 @@ class Schema {
   ///
   /// A fast-food restaurant.
   ///
-  static const FastFoodRestaurant = IriTerm.prevalidated(
+  static const FastFoodRestaurant = const IriTerm(
     'https://schema.org/FastFoodRestaurant',
   );
 
@@ -2331,15 +2175,13 @@ class Schema {
   ///
   /// Event type: Festival.
   ///
-  static const Festival = IriTerm.prevalidated('https://schema.org/Festival');
+  static const Festival = const IriTerm('https://schema.org/Festival');
 
   /// IRI for schema:FilmAction
   ///
   /// The act of capturing sound and moving images on film, video, or digitally.
   ///
-  static const FilmAction = IriTerm.prevalidated(
-    'https://schema.org/FilmAction',
-  );
+  static const FilmAction = const IriTerm('https://schema.org/FilmAction');
 
   /// IRI for schema:FinancialIncentive
   ///
@@ -2350,7 +2192,7 @@ class Schema {
   /// <p>Optionally contains criteria on whether the incentive is limited based on {[purchaseType]}, {[purchasePriceLimit]}, {[incomeLimit]}, and the {[qualifiedExpense]}.
   ///
   ///
-  static const FinancialIncentive = IriTerm.prevalidated(
+  static const FinancialIncentive = const IriTerm(
     'https://schema.org/FinancialIncentive',
   );
 
@@ -2358,7 +2200,7 @@ class Schema {
   ///
   /// A product provided to consumers and businesses by financial institutions such as banks, insurance companies, brokerage firms, consumer finance companies, and investment companies which comprise the financial services industry.
   ///
-  static const FinancialProduct = IriTerm.prevalidated(
+  static const FinancialProduct = const IriTerm(
     'https://schema.org/FinancialProduct',
   );
 
@@ -2366,7 +2208,7 @@ class Schema {
   ///
   /// Financial services business.
   ///
-  static const FinancialService = IriTerm.prevalidated(
+  static const FinancialService = const IriTerm(
     'https://schema.org/FinancialService',
   );
 
@@ -2374,29 +2216,25 @@ class Schema {
   ///
   /// The act of finding an object.\n\nRelated actions:\n\n* {[SearchAction]}: FindAction is generally lead by a SearchAction, but not necessarily.
   ///
-  static const FindAction = IriTerm.prevalidated(
-    'https://schema.org/FindAction',
-  );
+  static const FindAction = const IriTerm('https://schema.org/FindAction');
 
   /// IRI for schema:FireStation
   ///
   /// A fire station. With firemen.
   ///
-  static const FireStation = IriTerm.prevalidated(
-    'https://schema.org/FireStation',
-  );
+  static const FireStation = const IriTerm('https://schema.org/FireStation');
 
   /// IRI for schema:Flight
   ///
   /// An airline flight.
   ///
-  static const Flight = IriTerm.prevalidated('https://schema.org/Flight');
+  static const Flight = const IriTerm('https://schema.org/Flight');
 
   /// IRI for schema:FlightReservation
   ///
   /// A reservation for air travel.\n\nNote: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use {[Offer]}.
   ///
-  static const FlightReservation = IriTerm.prevalidated(
+  static const FlightReservation = const IriTerm(
     'https://schema.org/FlightReservation',
   );
 
@@ -2404,33 +2242,31 @@ class Schema {
   ///
   /// Data type: Floating number.
   ///
-  static const Float = IriTerm.prevalidated('https://schema.org/Float');
+  static const Float = const IriTerm('https://schema.org/Float');
 
   /// IRI for schema:FloorPlan
   ///
   /// A FloorPlan is an explicit representation of a collection of similar accommodations, allowing the provision of common information (room counts, sizes, layout diagrams) and offers for rental or sale. In typical use, some {[ApartmentComplex]} has an {[accommodationFloorPlan]} which is a {[FloorPlan]}.  A FloorPlan is always in the context of a particular place, either a larger {[ApartmentComplex]} or a single {[Apartment]}. The visual/spatial aspects of a floor plan (i.e. room layout, [see wikipedia](https://en.wikipedia.org/wiki/Floor_plan)) can be indicated using {[image]}.
   ///
-  static const FloorPlan = IriTerm.prevalidated('https://schema.org/FloorPlan');
+  static const FloorPlan = const IriTerm('https://schema.org/FloorPlan');
 
   /// IRI for schema:Florist
   ///
   /// A florist.
   ///
-  static const Florist = IriTerm.prevalidated('https://schema.org/Florist');
+  static const Florist = const IriTerm('https://schema.org/Florist');
 
   /// IRI for schema:FollowAction
   ///
   /// The act of forming a personal connection with someone/something (object) unidirectionally/asymmetrically to get updates polled from.\n\nRelated actions:\n\n* {[BefriendAction]}: Unlike BefriendAction, FollowAction implies that the connection is *not* necessarily reciprocal.\n* {[SubscribeAction]}: Unlike SubscribeAction, FollowAction implies that the follower acts as an active agent constantly/actively polling for updates.\n* {[RegisterAction]}: Unlike RegisterAction, FollowAction implies that the agent is interested in continuing receiving updates from the object.\n* {[JoinAction]}: Unlike JoinAction, FollowAction implies that the agent is interested in getting updates from the object.\n* {[TrackAction]}: Unlike TrackAction, FollowAction refers to the polling of updates of all aspects of animate objects rather than the location of inanimate objects (e.g. you track a package, but you don't follow it).
   ///
-  static const FollowAction = IriTerm.prevalidated(
-    'https://schema.org/FollowAction',
-  );
+  static const FollowAction = const IriTerm('https://schema.org/FollowAction');
 
   /// IRI for schema:FoodEstablishment
   ///
   /// A food-related business.
   ///
-  static const FoodEstablishment = IriTerm.prevalidated(
+  static const FoodEstablishment = const IriTerm(
     'https://schema.org/FoodEstablishment',
   );
 
@@ -2438,7 +2274,7 @@ class Schema {
   ///
   /// A reservation to dine at a food-related business.\n\nNote: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations.
   ///
-  static const FoodEstablishmentReservation = IriTerm.prevalidated(
+  static const FoodEstablishmentReservation = const IriTerm(
     'https://schema.org/FoodEstablishmentReservation',
   );
 
@@ -2446,21 +2282,19 @@ class Schema {
   ///
   /// Event type: Food event.
   ///
-  static const FoodEvent = IriTerm.prevalidated('https://schema.org/FoodEvent');
+  static const FoodEvent = const IriTerm('https://schema.org/FoodEvent');
 
   /// IRI for schema:FoodService
   ///
   /// A food service, like breakfast, lunch, or dinner.
   ///
-  static const FoodService = IriTerm.prevalidated(
-    'https://schema.org/FoodService',
-  );
+  static const FoodService = const IriTerm('https://schema.org/FoodService');
 
   /// IRI for schema:FulfillmentTypeEnumeration
   ///
   /// A type of product fulfillment.
   ///
-  static const FulfillmentTypeEnumeration = IriTerm.prevalidated(
+  static const FulfillmentTypeEnumeration = const IriTerm(
     'https://schema.org/FulfillmentTypeEnumeration',
   );
 
@@ -2473,7 +2307,7 @@ class Schema {
   /// Examples of funding agencies include ERC, REA, NIH, Bill and Melinda Gates Foundation, ...
   ///
   ///
-  static const FundingAgency = IriTerm.prevalidated(
+  static const FundingAgency = const IriTerm(
     'https://schema.org/FundingAgency',
   );
 
@@ -2483,7 +2317,7 @@ class Schema {
   /// that sets guidelines, principles and mechanisms to support other kinds of projects and activities.
   /// Funding is typically organized via {[Grant]} funding. Examples of funding schemes: Swiss Priority Programmes (SPPs); EU Framework 7 (FP7); Horizon 2020; the NIH-R01 Grant Program; Wellcome institutional strategic support fund. For large scale public sector funding, the management and administration of grant awards is often handled by other, dedicated, organizations - {[FundingAgency]}s such as ERC, REA, ...
   ///
-  static const FundingScheme = IriTerm.prevalidated(
+  static const FundingScheme = const IriTerm(
     'https://schema.org/FundingScheme',
   );
 
@@ -2491,7 +2325,7 @@ class Schema {
   ///
   /// A furniture store.
   ///
-  static const FurnitureStore = IriTerm.prevalidated(
+  static const FurnitureStore = const IriTerm(
     'https://schema.org/FurnitureStore',
   );
 
@@ -2499,13 +2333,13 @@ class Schema {
   ///
   /// The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters in a fictional setting.
   ///
-  static const Game = IriTerm.prevalidated('https://schema.org/Game');
+  static const Game = const IriTerm('https://schema.org/Game');
 
   /// IRI for schema:GameAvailabilityEnumeration
   ///
   /// For a {[VideoGame]}, such as used with a {[PlayGameAction]}, an enumeration of the kind of game availability offered.
   ///
-  static const GameAvailabilityEnumeration = IriTerm.prevalidated(
+  static const GameAvailabilityEnumeration = const IriTerm(
     'https://schema.org/GameAvailabilityEnumeration',
   );
 
@@ -2513,23 +2347,19 @@ class Schema {
   ///
   /// Indicates whether this game is multi-player, co-op or single-player.
   ///
-  static const GamePlayMode = IriTerm.prevalidated(
-    'https://schema.org/GamePlayMode',
-  );
+  static const GamePlayMode = const IriTerm('https://schema.org/GamePlayMode');
 
   /// IRI for schema:GameServer
   ///
   /// Server that provides game interaction in a multiplayer game.
   ///
-  static const GameServer = IriTerm.prevalidated(
-    'https://schema.org/GameServer',
-  );
+  static const GameServer = const IriTerm('https://schema.org/GameServer');
 
   /// IRI for schema:GameServerStatus
   ///
   /// Status of a game server.
   ///
-  static const GameServerStatus = IriTerm.prevalidated(
+  static const GameServerStatus = const IriTerm(
     'https://schema.org/GameServerStatus',
   );
 
@@ -2537,23 +2367,19 @@ class Schema {
   ///
   /// A garden store.
   ///
-  static const GardenStore = IriTerm.prevalidated(
-    'https://schema.org/GardenStore',
-  );
+  static const GardenStore = const IriTerm('https://schema.org/GardenStore');
 
   /// IRI for schema:GasStation
   ///
   /// A gas station.
   ///
-  static const GasStation = IriTerm.prevalidated(
-    'https://schema.org/GasStation',
-  );
+  static const GasStation = const IriTerm('https://schema.org/GasStation');
 
   /// IRI for schema:GatedResidenceCommunity
   ///
   /// Residence type: Gated community.
   ///
-  static const GatedResidenceCommunity = IriTerm.prevalidated(
+  static const GatedResidenceCommunity = const IriTerm(
     'https://schema.org/GatedResidenceCommunity',
   );
 
@@ -2561,21 +2387,19 @@ class Schema {
   ///
   /// An enumeration of genders.
   ///
-  static const GenderType = IriTerm.prevalidated(
-    'https://schema.org/GenderType',
-  );
+  static const GenderType = const IriTerm('https://schema.org/GenderType');
 
   /// IRI for schema:Gene
   ///
   /// A discrete unit of inheritance which affects one or more biological traits (Source: [https://en.wikipedia.org/wiki/Gene](https://en.wikipedia.org/wiki/Gene)). Examples include FOXP2 (Forkhead box protein P2), SCARNA21 (small Cajal body-specific RNA 21), A- (agouti genotype).
   ///
-  static const Gene = IriTerm.prevalidated('https://schema.org/Gene');
+  static const Gene = const IriTerm('https://schema.org/Gene');
 
   /// IRI for schema:GeneralContractor
   ///
   /// A general contractor.
   ///
-  static const GeneralContractor = IriTerm.prevalidated(
+  static const GeneralContractor = const IriTerm(
     'https://schema.org/GeneralContractor',
   );
 
@@ -2586,13 +2410,13 @@ class Schema {
   /// The center of the circle can be indicated via the 'geoMidpoint' property, or more approximately using 'address', 'postalCode'.
   ///
   ///
-  static const GeoCircle = IriTerm.prevalidated('https://schema.org/GeoCircle');
+  static const GeoCircle = const IriTerm('https://schema.org/GeoCircle');
 
   /// IRI for schema:GeoCoordinates
   ///
   /// The geographic coordinates of a place or event.
   ///
-  static const GeoCoordinates = IriTerm.prevalidated(
+  static const GeoCoordinates = const IriTerm(
     'https://schema.org/GeoCoordinates',
   );
 
@@ -2600,13 +2424,13 @@ class Schema {
   ///
   /// The geographic shape of a place. A GeoShape can be described using several properties whose values are based on latitude/longitude pairs. Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points.
   ///
-  static const GeoShape = IriTerm.prevalidated('https://schema.org/GeoShape');
+  static const GeoShape = const IriTerm('https://schema.org/GeoShape');
 
   /// IRI for schema:GeospatialGeometry
   ///
   /// (Eventually to be defined as) a supertype of GeoShape designed to accommodate definitions from Geo-Spatial best practices.
   ///
-  static const GeospatialGeometry = IriTerm.prevalidated(
+  static const GeospatialGeometry = const IriTerm(
     'https://schema.org/GeospatialGeometry',
   );
 
@@ -2614,23 +2438,19 @@ class Schema {
   ///
   /// The act of transferring ownership of an object to a destination. Reciprocal of TakeAction.\n\nRelated actions:\n\n* {[TakeAction]}: Reciprocal of GiveAction.\n* {[SendAction]}: Unlike SendAction, GiveAction implies that ownership is being transferred (e.g. I may send my laptop to you, but that doesn't mean I'm giving it to you).
   ///
-  static const GiveAction = IriTerm.prevalidated(
-    'https://schema.org/GiveAction',
-  );
+  static const GiveAction = const IriTerm('https://schema.org/GiveAction');
 
   /// IRI for schema:GolfCourse
   ///
   /// A golf course.
   ///
-  static const GolfCourse = IriTerm.prevalidated(
-    'https://schema.org/GolfCourse',
-  );
+  static const GolfCourse = const IriTerm('https://schema.org/GolfCourse');
 
   /// IRI for schema:GovernmentBenefitsType
   ///
   /// GovernmentBenefitsType enumerates several kinds of government benefits to support the COVID-19 situation. Note that this structure may not capture all benefits offered.
   ///
-  static const GovernmentBenefitsType = IriTerm.prevalidated(
+  static const GovernmentBenefitsType = const IriTerm(
     'https://schema.org/GovernmentBenefitsType',
   );
 
@@ -2638,7 +2458,7 @@ class Schema {
   ///
   /// A government building.
   ///
-  static const GovernmentBuilding = IriTerm.prevalidated(
+  static const GovernmentBuilding = const IriTerm(
     'https://schema.org/GovernmentBuilding',
   );
 
@@ -2646,7 +2466,7 @@ class Schema {
   ///
   /// A government office&#x2014;for example, an IRS or DMV office.
   ///
-  static const GovernmentOffice = IriTerm.prevalidated(
+  static const GovernmentOffice = const IriTerm(
     'https://schema.org/GovernmentOffice',
   );
 
@@ -2654,7 +2474,7 @@ class Schema {
   ///
   /// A governmental organization or agency.
   ///
-  static const GovernmentOrganization = IriTerm.prevalidated(
+  static const GovernmentOrganization = const IriTerm(
     'https://schema.org/GovernmentOrganization',
   );
 
@@ -2662,7 +2482,7 @@ class Schema {
   ///
   /// A permit issued by a government agency.
   ///
-  static const GovernmentPermit = IriTerm.prevalidated(
+  static const GovernmentPermit = const IriTerm(
     'https://schema.org/GovernmentPermit',
   );
 
@@ -2670,7 +2490,7 @@ class Schema {
   ///
   /// A service provided by a government organization, e.g. food stamps, veterans benefits, etc.
   ///
-  static const GovernmentService = IriTerm.prevalidated(
+  static const GovernmentService = const IriTerm(
     'https://schema.org/GovernmentService',
   );
 
@@ -2684,47 +2504,43 @@ class Schema {
   /// The amount of a {[Grant]} is represented using {[amount]} as a {[MonetaryAmount]}.
   ///
   ///
-  static const Grant = IriTerm.prevalidated('https://schema.org/Grant');
+  static const Grant = const IriTerm('https://schema.org/Grant');
 
   /// IRI for schema:GroceryStore
   ///
   /// A grocery store.
   ///
-  static const GroceryStore = IriTerm.prevalidated(
-    'https://schema.org/GroceryStore',
-  );
+  static const GroceryStore = const IriTerm('https://schema.org/GroceryStore');
 
   /// IRI for schema:Guide
   ///
   /// {[Guide]} is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A {[Guide]} may represent a Buying Guide and detail aspects of products or services for a user to consider. A {[Guide]} may represent a Product Guide and recommend specific products or services. A {[Guide]} may represent a Ranked List and recommend specific products or services with ranking.
   ///
-  static const Guide = IriTerm.prevalidated('https://schema.org/Guide');
+  static const Guide = const IriTerm('https://schema.org/Guide');
 
   /// IRI for schema:HVACBusiness
   ///
   /// A business that provides Heating, Ventilation and Air Conditioning services.
   ///
-  static const HVACBusiness = IriTerm.prevalidated(
-    'https://schema.org/HVACBusiness',
-  );
+  static const HVACBusiness = const IriTerm('https://schema.org/HVACBusiness');
 
   /// IRI for schema:Hackathon
   ///
   /// A [hackathon](https://en.wikipedia.org/wiki/Hackathon) event.
   ///
-  static const Hackathon = IriTerm.prevalidated('https://schema.org/Hackathon');
+  static const Hackathon = const IriTerm('https://schema.org/Hackathon');
 
   /// IRI for schema:HairSalon
   ///
   /// A hair salon.
   ///
-  static const HairSalon = IriTerm.prevalidated('https://schema.org/HairSalon');
+  static const HairSalon = const IriTerm('https://schema.org/HairSalon');
 
   /// IRI for schema:HardwareStore
   ///
   /// A hardware store.
   ///
-  static const HardwareStore = IriTerm.prevalidated(
+  static const HardwareStore = const IriTerm(
     'https://schema.org/HardwareStore',
   );
 
@@ -2732,7 +2548,7 @@ class Schema {
   ///
   /// Health and beauty.
   ///
-  static const HealthAndBeautyBusiness = IriTerm.prevalidated(
+  static const HealthAndBeautyBusiness = const IriTerm(
     'https://schema.org/HealthAndBeautyBusiness',
   );
 
@@ -2740,7 +2556,7 @@ class Schema {
   ///
   /// HealthAspectEnumeration enumerates several aspects of health content online, each of which might be described using {[hasHealthAspect]} and {[HealthTopicContent]}.
   ///
-  static const HealthAspectEnumeration = IriTerm.prevalidated(
+  static const HealthAspectEnumeration = const IriTerm(
     'https://schema.org/HealthAspectEnumeration',
   );
 
@@ -2748,15 +2564,13 @@ class Schema {
   ///
   /// A health club.
   ///
-  static const HealthClub = IriTerm.prevalidated(
-    'https://schema.org/HealthClub',
-  );
+  static const HealthClub = const IriTerm('https://schema.org/HealthClub');
 
   /// IRI for schema:HealthInsurancePlan
   ///
   /// A US-style health insurance plan, including PPOs, EPOs, and HMOs.
   ///
-  static const HealthInsurancePlan = IriTerm.prevalidated(
+  static const HealthInsurancePlan = const IriTerm(
     'https://schema.org/HealthInsurancePlan',
   );
 
@@ -2764,7 +2578,7 @@ class Schema {
   ///
   /// A description of costs to the patient under a given network or formulary.
   ///
-  static const HealthPlanCostSharingSpecification = IriTerm.prevalidated(
+  static const HealthPlanCostSharingSpecification = const IriTerm(
     'https://schema.org/HealthPlanCostSharingSpecification',
   );
 
@@ -2772,7 +2586,7 @@ class Schema {
   ///
   /// For a given health insurance plan, the specification for costs and coverage of prescription drugs.
   ///
-  static const HealthPlanFormulary = IriTerm.prevalidated(
+  static const HealthPlanFormulary = const IriTerm(
     'https://schema.org/HealthPlanFormulary',
   );
 
@@ -2780,7 +2594,7 @@ class Schema {
   ///
   /// A US-style health insurance plan network.
   ///
-  static const HealthPlanNetwork = IriTerm.prevalidated(
+  static const HealthPlanNetwork = const IriTerm(
     'https://schema.org/HealthPlanNetwork',
   );
 
@@ -2789,7 +2603,7 @@ class Schema {
   /// {[HealthTopicContent]} is {[WebContent]} that is about some aspect of a health topic, e.g. a condition, its symptoms or treatments. Such content may be comprised of several parts or sections and use different types of media. Multiple instances of {[WebContent]} (and hence {[HealthTopicContent]}) can be related using {[hasPart]} / {[isPartOf]} where there is some kind of content hierarchy, and their content described with {[about]} and {[mentions]} e.g. building upon the existing {[MedicalCondition]} vocabulary.
   ///
   ///
-  static const HealthTopicContent = IriTerm.prevalidated(
+  static const HealthTopicContent = const IriTerm(
     'https://schema.org/HealthTopicContent',
   );
 
@@ -2797,29 +2611,25 @@ class Schema {
   ///
   /// A high school.
   ///
-  static const HighSchool = IriTerm.prevalidated(
-    'https://schema.org/HighSchool',
-  );
+  static const HighSchool = const IriTerm('https://schema.org/HighSchool');
 
   /// IRI for schema:HinduTemple
   ///
   /// A Hindu temple.
   ///
-  static const HinduTemple = IriTerm.prevalidated(
-    'https://schema.org/HinduTemple',
-  );
+  static const HinduTemple = const IriTerm('https://schema.org/HinduTemple');
 
   /// IRI for schema:HobbyShop
   ///
   /// A store that sells materials useful or necessary for various hobbies.
   ///
-  static const HobbyShop = IriTerm.prevalidated('https://schema.org/HobbyShop');
+  static const HobbyShop = const IriTerm('https://schema.org/HobbyShop');
 
   /// IRI for schema:HomeAndConstructionBusiness
   ///
   /// A construction business.\n\nA HomeAndConstructionBusiness is a {[LocalBusiness]} that provides services around homes and buildings.\n\nAs a {[LocalBusiness]} it can be described as a {[provider]} of one or more {[Service]}\(s).
   ///
-  static const HomeAndConstructionBusiness = IriTerm.prevalidated(
+  static const HomeAndConstructionBusiness = const IriTerm(
     'https://schema.org/HomeAndConstructionBusiness',
   );
 
@@ -2827,7 +2637,7 @@ class Schema {
   ///
   /// A home goods store.
   ///
-  static const HomeGoodsStore = IriTerm.prevalidated(
+  static const HomeGoodsStore = const IriTerm(
     'https://schema.org/HomeGoodsStore',
   );
 
@@ -2835,7 +2645,7 @@ class Schema {
   ///
   /// A hospital.
   ///
-  static const Hospital = IriTerm.prevalidated('https://schema.org/Hospital');
+  static const Hospital = const IriTerm('https://schema.org/Hospital');
 
   /// IRI for schema:Hostel
   ///
@@ -2844,7 +2654,7 @@ class Schema {
   /// See also the <a href="/docs/hotels.html">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.
   ///
   ///
-  static const Hostel = IriTerm.prevalidated('https://schema.org/Hostel');
+  static const Hostel = const IriTerm('https://schema.org/Hostel');
 
   /// IRI for schema:Hotel
   ///
@@ -2853,7 +2663,7 @@ class Schema {
   /// See also the <a href="/docs/hotels.html">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.
   ///
   ///
-  static const Hotel = IriTerm.prevalidated('https://schema.org/Hotel');
+  static const Hotel = const IriTerm('https://schema.org/Hotel');
 
   /// IRI for schema:HotelRoom
   ///
@@ -2862,33 +2672,31 @@ class Schema {
   /// See also the <a href="/docs/hotels.html">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.
   ///
   ///
-  static const HotelRoom = IriTerm.prevalidated('https://schema.org/HotelRoom');
+  static const HotelRoom = const IriTerm('https://schema.org/HotelRoom');
 
   /// IRI for schema:House
   ///
   /// A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia, see <a href="http://en.wikipedia.org/wiki/House">http://en.wikipedia.org/wiki/House</a>).
   ///
-  static const House = IriTerm.prevalidated('https://schema.org/House');
+  static const House = const IriTerm('https://schema.org/House');
 
   /// IRI for schema:HousePainter
   ///
   /// A house painting service.
   ///
-  static const HousePainter = IriTerm.prevalidated(
-    'https://schema.org/HousePainter',
-  );
+  static const HousePainter = const IriTerm('https://schema.org/HousePainter');
 
   /// IRI for schema:HowTo
   ///
   /// Instructions that explain how to achieve a result by performing a sequence of steps.
   ///
-  static const HowTo = IriTerm.prevalidated('https://schema.org/HowTo');
+  static const HowTo = const IriTerm('https://schema.org/HowTo');
 
   /// IRI for schema:HowToDirection
   ///
   /// A direction indicating a single action to do in the instructions for how to achieve a result.
   ///
-  static const HowToDirection = IriTerm.prevalidated(
+  static const HowToDirection = const IriTerm(
     'https://schema.org/HowToDirection',
   );
 
@@ -2896,53 +2704,49 @@ class Schema {
   ///
   /// An item used as either a tool or supply when performing the instructions for how to achieve a result.
   ///
-  static const HowToItem = IriTerm.prevalidated('https://schema.org/HowToItem');
+  static const HowToItem = const IriTerm('https://schema.org/HowToItem');
 
   /// IRI for schema:HowToSection
   ///
   /// A sub-grouping of steps in the instructions for how to achieve a result (e.g. steps for making a pie crust within a pie recipe).
   ///
-  static const HowToSection = IriTerm.prevalidated(
-    'https://schema.org/HowToSection',
-  );
+  static const HowToSection = const IriTerm('https://schema.org/HowToSection');
 
   /// IRI for schema:HowToStep
   ///
   /// A step in the instructions for how to achieve a result. It is an ordered list with HowToDirection and/or HowToTip items.
   ///
-  static const HowToStep = IriTerm.prevalidated('https://schema.org/HowToStep');
+  static const HowToStep = const IriTerm('https://schema.org/HowToStep');
 
   /// IRI for schema:HowToSupply
   ///
   /// A supply consumed when performing the instructions for how to achieve a result.
   ///
-  static const HowToSupply = IriTerm.prevalidated(
-    'https://schema.org/HowToSupply',
-  );
+  static const HowToSupply = const IriTerm('https://schema.org/HowToSupply');
 
   /// IRI for schema:HowToTip
   ///
   /// An explanation in the instructions for how to achieve a result. It provides supplementary information about a technique, supply, author's preference, etc. It can explain what could be done, or what should not be done, but doesn't specify what should be done (see HowToDirection).
   ///
-  static const HowToTip = IriTerm.prevalidated('https://schema.org/HowToTip');
+  static const HowToTip = const IriTerm('https://schema.org/HowToTip');
 
   /// IRI for schema:HowToTool
   ///
   /// A tool used (but not consumed) when performing instructions for how to achieve a result.
   ///
-  static const HowToTool = IriTerm.prevalidated('https://schema.org/HowToTool');
+  static const HowToTool = const IriTerm('https://schema.org/HowToTool');
 
   /// IRI for schema:HyperToc
   ///
   /// A HyperToc represents a hypertext table of contents for complex media objects, such as {[VideoObject]}, {[AudioObject]}. Items in the table of contents are indicated using the {[tocEntry]} property, and typed {[HyperTocEntry]}. For cases where the same larger work is split into multiple files, {[associatedMedia]} can be used on individual {[HyperTocEntry]} items.
   ///
-  static const HyperToc = IriTerm.prevalidated('https://schema.org/HyperToc');
+  static const HyperToc = const IriTerm('https://schema.org/HyperToc');
 
   /// IRI for schema:HyperTocEntry
   ///
   /// A HyperToEntry is an item within a {[HyperToc]}, which represents a hypertext table of contents for complex media objects, such as {[VideoObject]}, {[AudioObject]}. The media object itself is indicated using {[associatedMedia]}. Each section of interest within that content can be described with a {[HyperTocEntry]}, with associated {[startOffset]} and {[endOffset]}. When several entries are all from the same file, {[associatedMedia]} is used on the overarching {[HyperTocEntry]}; if the content has been split into multiple files, they can be referenced using {[associatedMedia]} on each {[HyperTocEntry]}.
   ///
-  static const HyperTocEntry = IriTerm.prevalidated(
+  static const HyperTocEntry = const IriTerm(
     'https://schema.org/HyperTocEntry',
   );
 
@@ -2952,7 +2756,7 @@ class Schema {
   /// In general these codes are not declared here to be mutually exclusive, although some combinations would be contradictory if applied simultaneously, or might be considered mutually incompatible by upstream maintainers of the definitions. See the IPTC <a href="https://www.iptc.org/std/photometadata/documentation/userguide/">documentation</a>
   /// for <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">detailed definitions</a> of all terms.
   ///
-  static const IPTCDigitalSourceEnumeration = IriTerm.prevalidated(
+  static const IPTCDigitalSourceEnumeration = const IriTerm(
     'https://schema.org/IPTCDigitalSourceEnumeration',
   );
 
@@ -2960,39 +2764,31 @@ class Schema {
   ///
   /// An ice cream shop.
   ///
-  static const IceCreamShop = IriTerm.prevalidated(
-    'https://schema.org/IceCreamShop',
-  );
+  static const IceCreamShop = const IriTerm('https://schema.org/IceCreamShop');
 
   /// IRI for schema:IgnoreAction
   ///
   /// The act of intentionally disregarding the object. An agent ignores an object.
   ///
-  static const IgnoreAction = IriTerm.prevalidated(
-    'https://schema.org/IgnoreAction',
-  );
+  static const IgnoreAction = const IriTerm('https://schema.org/IgnoreAction');
 
   /// IRI for schema:ImageGallery
   ///
   /// Web page type: Image gallery page.
   ///
-  static const ImageGallery = IriTerm.prevalidated(
-    'https://schema.org/ImageGallery',
-  );
+  static const ImageGallery = const IriTerm('https://schema.org/ImageGallery');
 
   /// IRI for schema:ImageObject
   ///
   /// An image file.
   ///
-  static const ImageObject = IriTerm.prevalidated(
-    'https://schema.org/ImageObject',
-  );
+  static const ImageObject = const IriTerm('https://schema.org/ImageObject');
 
   /// IRI for schema:ImageObjectSnapshot
   ///
   /// A specific and exact (byte-for-byte) version of an {[ImageObject]}. Two byte-for-byte identical files, for the purposes of this type, considered identical. If they have different embedded metadata (e.g. XMP, EXIF) the files will differ. Different external facts about the files, e.g. creator or dateCreated that aren't represented in their actual content, do not affect this notion of identity.
   ///
-  static const ImageObjectSnapshot = IriTerm.prevalidated(
+  static const ImageObjectSnapshot = const IriTerm(
     'https://schema.org/ImageObjectSnapshot',
   );
 
@@ -3000,15 +2796,13 @@ class Schema {
   ///
   /// Any medical imaging modality typically used for diagnostic purposes.
   ///
-  static const ImagingTest = IriTerm.prevalidated(
-    'https://schema.org/ImagingTest',
-  );
+  static const ImagingTest = const IriTerm('https://schema.org/ImagingTest');
 
   /// IRI for schema:IncentiveQualifiedExpenseType
   ///
   /// The types of expenses that are covered by the incentive. For example some incentives are only for the goods (tangible items) but the services (labor) are excluded.
   ///
-  static const IncentiveQualifiedExpenseType = IriTerm.prevalidated(
+  static const IncentiveQualifiedExpenseType = const IriTerm(
     'https://schema.org/IncentiveQualifiedExpenseType',
   );
 
@@ -3016,7 +2810,7 @@ class Schema {
   ///
   /// Enumerates a status for an incentive, such as whether it is active.
   ///
-  static const IncentiveStatus = IriTerm.prevalidated(
+  static const IncentiveStatus = const IriTerm(
     'https://schema.org/IncentiveStatus',
   );
 
@@ -3024,7 +2818,7 @@ class Schema {
   ///
   /// Enumerates common financial incentives for products, including tax credits, tax deductions, rebates and subsidies, etc.
   ///
-  static const IncentiveType = IriTerm.prevalidated(
+  static const IncentiveType = const IriTerm(
     'https://schema.org/IncentiveType',
   );
 
@@ -3033,7 +2827,7 @@ class Schema {
   /// An individual medical practitioner. For their official address use {[address]}, for affiliations to hospitals use {[hospitalAffiliation]}.
   /// The {[practicesAt]} property can be used to indicate {[MedicalOrganization]} hospitals, clinics, pharmacies etc. where this physician practices.
   ///
-  static const IndividualPhysician = IriTerm.prevalidated(
+  static const IndividualPhysician = const IriTerm(
     'https://schema.org/IndividualPhysician',
   );
 
@@ -3041,7 +2835,7 @@ class Schema {
   ///
   /// A single, identifiable product instance (e.g. a laptop with a particular serial number).
   ///
-  static const IndividualProduct = IriTerm.prevalidated(
+  static const IndividualProduct = const IriTerm(
     'https://schema.org/IndividualProduct',
   );
 
@@ -3049,7 +2843,7 @@ class Schema {
   ///
   /// Classes of agents or pathogens that transmit infectious diseases. Enumerated type.
   ///
-  static const InfectiousAgentClass = IriTerm.prevalidated(
+  static const InfectiousAgentClass = const IriTerm(
     'https://schema.org/InfectiousAgentClass',
   );
 
@@ -3057,7 +2851,7 @@ class Schema {
   ///
   /// An infectious disease is a clinically evident human disease resulting from the presence of pathogenic microbial agents, like pathogenic viruses, pathogenic bacteria, fungi, protozoa, multicellular parasites, and prions. To be considered an infectious disease, such pathogens are known to be able to cause this disease.
   ///
-  static const InfectiousDisease = IriTerm.prevalidated(
+  static const InfectiousDisease = const IriTerm(
     'https://schema.org/InfectiousDisease',
   );
 
@@ -3065,23 +2859,19 @@ class Schema {
   ///
   /// The act of notifying someone of information pertinent to them, with no expectation of a response.
   ///
-  static const InformAction = IriTerm.prevalidated(
-    'https://schema.org/InformAction',
-  );
+  static const InformAction = const IriTerm('https://schema.org/InformAction');
 
   /// IRI for schema:InsertAction
   ///
   /// The act of adding at a specific location in an ordered collection.
   ///
-  static const InsertAction = IriTerm.prevalidated(
-    'https://schema.org/InsertAction',
-  );
+  static const InsertAction = const IriTerm('https://schema.org/InsertAction');
 
   /// IRI for schema:InstallAction
   ///
   /// The act of installing an application.
   ///
-  static const InstallAction = IriTerm.prevalidated(
+  static const InstallAction = const IriTerm(
     'https://schema.org/InstallAction',
   );
 
@@ -3089,7 +2879,7 @@ class Schema {
   ///
   /// An Insurance agency.
   ///
-  static const InsuranceAgency = IriTerm.prevalidated(
+  static const InsuranceAgency = const IriTerm(
     'https://schema.org/InsuranceAgency',
   );
 
@@ -3097,21 +2887,19 @@ class Schema {
   ///
   /// A utility class that serves as the umbrella for a number of 'intangible' things such as quantities, structured values, etc.
   ///
-  static const Intangible = IriTerm.prevalidated(
-    'https://schema.org/Intangible',
-  );
+  static const Intangible = const IriTerm('https://schema.org/Intangible');
 
   /// IRI for schema:Integer
   ///
   /// Data type: Integer.
   ///
-  static const Integer = IriTerm.prevalidated('https://schema.org/Integer');
+  static const Integer = const IriTerm('https://schema.org/Integer');
 
   /// IRI for schema:InteractAction
   ///
   /// The act of interacting with another person or organization.
   ///
-  static const InteractAction = IriTerm.prevalidated(
+  static const InteractAction = const IriTerm(
     'https://schema.org/InteractAction',
   );
 
@@ -3119,7 +2907,7 @@ class Schema {
   ///
   /// A summary of how users have interacted with this CreativeWork. In most cases, authors will use a subtype to specify the specific type of interaction.
   ///
-  static const InteractionCounter = IriTerm.prevalidated(
+  static const InteractionCounter = const IriTerm(
     'https://schema.org/InteractionCounter',
   );
 
@@ -3127,15 +2915,13 @@ class Schema {
   ///
   /// An internet cafe.
   ///
-  static const InternetCafe = IriTerm.prevalidated(
-    'https://schema.org/InternetCafe',
-  );
+  static const InternetCafe = const IriTerm('https://schema.org/InternetCafe');
 
   /// IRI for schema:InvestmentFund
   ///
   /// A company or fund that gathers capital from a number of investors to create a pool of money that is then re-invested into stocks, bonds and other assets.
   ///
-  static const InvestmentFund = IriTerm.prevalidated(
+  static const InvestmentFund = const IriTerm(
     'https://schema.org/InvestmentFund',
   );
 
@@ -3143,7 +2929,7 @@ class Schema {
   ///
   /// A type of financial product that typically requires the client to transfer funds to a financial service in return for potential beneficial financial return.
   ///
-  static const InvestmentOrDeposit = IriTerm.prevalidated(
+  static const InvestmentOrDeposit = const IriTerm(
     'https://schema.org/InvestmentOrDeposit',
   );
 
@@ -3151,21 +2937,19 @@ class Schema {
   ///
   /// The act of asking someone to attend an event. Reciprocal of RsvpAction.
   ///
-  static const InviteAction = IriTerm.prevalidated(
-    'https://schema.org/InviteAction',
-  );
+  static const InviteAction = const IriTerm('https://schema.org/InviteAction');
 
   /// IRI for schema:Invoice
   ///
   /// A statement of the money due for goods or services; a bill.
   ///
-  static const Invoice = IriTerm.prevalidated('https://schema.org/Invoice');
+  static const Invoice = const IriTerm('https://schema.org/Invoice');
 
   /// IRI for schema:ItemAvailability
   ///
   /// A list of possible product availability options.
   ///
-  static const ItemAvailability = IriTerm.prevalidated(
+  static const ItemAvailability = const IriTerm(
     'https://schema.org/ItemAvailability',
   );
 
@@ -3173,13 +2957,13 @@ class Schema {
   ///
   /// A list of items of any sort&#x2014;for example, Top 10 Movies About Weathermen, or Top 100 Party Songs. Not to be confused with HTML lists, which are often used only for formatting.
   ///
-  static const ItemList = IriTerm.prevalidated('https://schema.org/ItemList');
+  static const ItemList = const IriTerm('https://schema.org/ItemList');
 
   /// IRI for schema:ItemListOrderType
   ///
   /// Enumerated for values for itemListOrder for indicating how an ordered ItemList is organized.
   ///
-  static const ItemListOrderType = IriTerm.prevalidated(
+  static const ItemListOrderType = const IriTerm(
     'https://schema.org/ItemListOrderType',
   );
 
@@ -3187,43 +2971,37 @@ class Schema {
   ///
   /// A page devoted to a single item, such as a particular product or hotel.
   ///
-  static const ItemPage = IriTerm.prevalidated('https://schema.org/ItemPage');
+  static const ItemPage = const IriTerm('https://schema.org/ItemPage');
 
   /// IRI for schema:JewelryStore
   ///
   /// A jewelry store.
   ///
-  static const JewelryStore = IriTerm.prevalidated(
-    'https://schema.org/JewelryStore',
-  );
+  static const JewelryStore = const IriTerm('https://schema.org/JewelryStore');
 
   /// IRI for schema:JobPosting
   ///
   /// A listing that describes a job opening in a certain organization.
   ///
-  static const JobPosting = IriTerm.prevalidated(
-    'https://schema.org/JobPosting',
-  );
+  static const JobPosting = const IriTerm('https://schema.org/JobPosting');
 
   /// IRI for schema:JoinAction
   ///
   /// An agent joins an event/group with participants/friends at a location.\n\nRelated actions:\n\n* {[RegisterAction]}: Unlike RegisterAction, JoinAction refers to joining a group/team of people.\n* {[SubscribeAction]}: Unlike SubscribeAction, JoinAction does not imply that you'll be receiving updates.\n* {[FollowAction]}: Unlike FollowAction, JoinAction does not imply that you'll be polling for updates.
   ///
-  static const JoinAction = IriTerm.prevalidated(
-    'https://schema.org/JoinAction',
-  );
+  static const JoinAction = const IriTerm('https://schema.org/JoinAction');
 
   /// IRI for schema:Joint
   ///
   /// The anatomical location at which two or more bones make contact.
   ///
-  static const Joint = IriTerm.prevalidated('https://schema.org/Joint');
+  static const Joint = const IriTerm('https://schema.org/Joint');
 
   /// IRI for schema:LakeBodyOfWater
   ///
   /// A lake (for example, Lake Pontrachain).
   ///
-  static const LakeBodyOfWater = IriTerm.prevalidated(
+  static const LakeBodyOfWater = const IriTerm(
     'https://schema.org/LakeBodyOfWater',
   );
 
@@ -3231,13 +3009,13 @@ class Schema {
   ///
   /// A landform or physical feature.  Landform elements include mountains, plains, lakes, rivers, seascape and oceanic waterbody interface features such as bays, peninsulas, seas and so forth, including sub-aqueous terrain features such as submersed mountain ranges, volcanoes, and the great ocean basins.
   ///
-  static const Landform = IriTerm.prevalidated('https://schema.org/Landform');
+  static const Landform = const IriTerm('https://schema.org/Landform');
 
   /// IRI for schema:LandmarksOrHistoricalBuildings
   ///
   /// An historical landmark or building.
   ///
-  static const LandmarksOrHistoricalBuildings = IriTerm.prevalidated(
+  static const LandmarksOrHistoricalBuildings = const IriTerm(
     'https://schema.org/LandmarksOrHistoricalBuildings',
   );
 
@@ -3245,7 +3023,7 @@ class Schema {
   ///
   /// Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in [BCP 47](https://en.wikipedia.org/wiki/IETF_language_tag) can be used via the {[alternateName]} property. The Language type previously also covered programming languages such as Scheme and Lisp, which are now best represented using {[ComputerLanguage]}.
   ///
-  static const Language = IriTerm.prevalidated('https://schema.org/Language');
+  static const Language = const IriTerm('https://schema.org/Language');
 
   /// IRI for schema:LearningResource
   ///
@@ -3255,7 +3033,7 @@ class Schema {
   ///
   /// {[EducationEvent]} serves a similar purpose for event-like things (e.g. a {[Trip]}). A {[LearningResource]} may be created as a result of an {[EducationEvent]}, for example by recording one.
   ///
-  static const LearningResource = IriTerm.prevalidated(
+  static const LearningResource = const IriTerm(
     'https://schema.org/LearningResource',
   );
 
@@ -3263,15 +3041,13 @@ class Schema {
   ///
   /// An agent leaves an event / group with participants/friends at a location.\n\nRelated actions:\n\n* {[JoinAction]}: The antonym of LeaveAction.\n* {[UnRegisterAction]}: Unlike UnRegisterAction, LeaveAction implies leaving a group/team of people rather than a service.
   ///
-  static const LeaveAction = IriTerm.prevalidated(
-    'https://schema.org/LeaveAction',
-  );
+  static const LeaveAction = const IriTerm('https://schema.org/LeaveAction');
 
   /// IRI for schema:LegalForceStatus
   ///
   /// A list of possible statuses for the legal force of a legislation.
   ///
-  static const LegalForceStatus = IriTerm.prevalidated(
+  static const LegalForceStatus = const IriTerm(
     'https://schema.org/LegalForceStatus',
   );
 
@@ -3279,15 +3055,13 @@ class Schema {
   ///
   /// A LegalService is a business that provides legally-oriented services, advice and representation, e.g. law firms.\n\nAs a {[LocalBusiness]} it can be described as a {[provider]} of one or more {[Service]}\(s).
   ///
-  static const LegalService = IriTerm.prevalidated(
-    'https://schema.org/LegalService',
-  );
+  static const LegalService = const IriTerm('https://schema.org/LegalService');
 
   /// IRI for schema:LegalValueLevel
   ///
   /// A list of possible levels for the legal validity of a legislation.
   ///
-  static const LegalValueLevel = IriTerm.prevalidated(
+  static const LegalValueLevel = const IriTerm(
     'https://schema.org/LegalValueLevel',
   );
 
@@ -3295,15 +3069,13 @@ class Schema {
   ///
   /// A legal document such as an act, decree, bill, etc. (enforceable or not) or a component of a legal act (like an article).
   ///
-  static const Legislation = IriTerm.prevalidated(
-    'https://schema.org/Legislation',
-  );
+  static const Legislation = const IriTerm('https://schema.org/Legislation');
 
   /// IRI for schema:LegislationObject
   ///
   /// A specific object or file containing a Legislation. Note that the same Legislation can be published in multiple files. For example, a digitally signed PDF, a plain PDF and an HTML version.
   ///
-  static const LegislationObject = IriTerm.prevalidated(
+  static const LegislationObject = const IriTerm(
     'https://schema.org/LegislationObject',
   );
 
@@ -3311,7 +3083,7 @@ class Schema {
   ///
   /// A legislative building&#x2014;for example, the state capitol.
   ///
-  static const LegislativeBuilding = IriTerm.prevalidated(
+  static const LegislativeBuilding = const IriTerm(
     'https://schema.org/LegislativeBuilding',
   );
 
@@ -3319,21 +3091,19 @@ class Schema {
   ///
   /// The act of providing an object under an agreement that it will be returned at a later date. Reciprocal of BorrowAction.\n\nRelated actions:\n\n* {[BorrowAction]}: Reciprocal of LendAction.
   ///
-  static const LendAction = IriTerm.prevalidated(
-    'https://schema.org/LendAction',
-  );
+  static const LendAction = const IriTerm('https://schema.org/LendAction');
 
   /// IRI for schema:Library
   ///
   /// A library.
   ///
-  static const Library = IriTerm.prevalidated('https://schema.org/Library');
+  static const Library = const IriTerm('https://schema.org/Library');
 
   /// IRI for schema:LibrarySystem
   ///
   /// A {[LibrarySystem]} is a collaborative system amongst several libraries.
   ///
-  static const LibrarySystem = IriTerm.prevalidated(
+  static const LibrarySystem = const IriTerm(
     'https://schema.org/LibrarySystem',
   );
 
@@ -3341,7 +3111,7 @@ class Schema {
   ///
   /// A process of care involving exercise, changes to diet, fitness routines, and other lifestyle changes aimed at improving a health condition.
   ///
-  static const LifestyleModification = IriTerm.prevalidated(
+  static const LifestyleModification = const IriTerm(
     'https://schema.org/LifestyleModification',
   );
 
@@ -3349,49 +3119,43 @@ class Schema {
   ///
   /// A short band of tough, flexible, fibrous connective tissue that functions to connect multiple bones, cartilages, and structurally support joints.
   ///
-  static const Ligament = IriTerm.prevalidated('https://schema.org/Ligament');
+  static const Ligament = const IriTerm('https://schema.org/Ligament');
 
   /// IRI for schema:LikeAction
   ///
   /// The act of expressing a positive sentiment about the object. An agent likes an object (a proposition, topic or theme) with participants.
   ///
-  static const LikeAction = IriTerm.prevalidated(
-    'https://schema.org/LikeAction',
-  );
+  static const LikeAction = const IriTerm('https://schema.org/LikeAction');
 
   /// IRI for schema:LinkRole
   ///
   /// A Role that represents a Web link, e.g. as expressed via the 'url' property. Its linkRelationship property can indicate URL-based and plain textual link types, e.g. those in IANA link registry or others such as 'amphtml'. This structure provides a placeholder where details from HTML's link element can be represented outside of HTML, e.g. in JSON-LD feeds.
   ///
-  static const LinkRole = IriTerm.prevalidated('https://schema.org/LinkRole');
+  static const LinkRole = const IriTerm('https://schema.org/LinkRole');
 
   /// IRI for schema:LiquorStore
   ///
   /// A shop that sells alcoholic drinks such as wine, beer, whisky and other spirits.
   ///
-  static const LiquorStore = IriTerm.prevalidated(
-    'https://schema.org/LiquorStore',
-  );
+  static const LiquorStore = const IriTerm('https://schema.org/LiquorStore');
 
   /// IRI for schema:ListItem
   ///
   /// An list item, e.g. a step in a checklist or how-to description.
   ///
-  static const ListItem = IriTerm.prevalidated('https://schema.org/ListItem');
+  static const ListItem = const IriTerm('https://schema.org/ListItem');
 
   /// IRI for schema:ListenAction
   ///
   /// The act of consuming audio content.
   ///
-  static const ListenAction = IriTerm.prevalidated(
-    'https://schema.org/ListenAction',
-  );
+  static const ListenAction = const IriTerm('https://schema.org/ListenAction');
 
   /// IRI for schema:LiteraryEvent
   ///
   /// Event type: Literary event.
   ///
-  static const LiteraryEvent = IriTerm.prevalidated(
+  static const LiteraryEvent = const IriTerm(
     'https://schema.org/LiteraryEvent',
   );
 
@@ -3399,7 +3163,7 @@ class Schema {
   ///
   /// A {[LiveBlogPosting]} is a {[BlogPosting]} intended to provide a rolling textual coverage of an ongoing event through continuous updates.
   ///
-  static const LiveBlogPosting = IriTerm.prevalidated(
+  static const LiveBlogPosting = const IriTerm(
     'https://schema.org/LiveBlogPosting',
   );
 
@@ -3407,15 +3171,13 @@ class Schema {
   ///
   /// A financial product for the loaning of an amount of money, or line of credit, under agreed terms and charges.
   ///
-  static const LoanOrCredit = IriTerm.prevalidated(
-    'https://schema.org/LoanOrCredit',
-  );
+  static const LoanOrCredit = const IriTerm('https://schema.org/LoanOrCredit');
 
   /// IRI for schema:LocalBusiness
   ///
   /// A particular physical business or branch of an organization. Examples of LocalBusiness include a restaurant, a particular branch of a restaurant chain, a branch of a bank, a medical practice, a club, a bowling alley, etc.
   ///
-  static const LocalBusiness = IriTerm.prevalidated(
+  static const LocalBusiness = const IriTerm(
     'https://schema.org/LocalBusiness',
   );
 
@@ -3423,7 +3185,7 @@ class Schema {
   ///
   /// Specifies a location feature by providing a structured value representing a feature of an accommodation as a property-value pair of varying degrees of formality.
   ///
-  static const LocationFeatureSpecification = IriTerm.prevalidated(
+  static const LocationFeatureSpecification = const IriTerm(
     'https://schema.org/LocationFeatureSpecification',
   );
 
@@ -3431,13 +3193,13 @@ class Schema {
   ///
   /// A locksmith.
   ///
-  static const Locksmith = IriTerm.prevalidated('https://schema.org/Locksmith');
+  static const Locksmith = const IriTerm('https://schema.org/Locksmith');
 
   /// IRI for schema:LodgingBusiness
   ///
   /// A lodging business, such as a motel, hotel, or inn.
   ///
-  static const LodgingBusiness = IriTerm.prevalidated(
+  static const LodgingBusiness = const IriTerm(
     'https://schema.org/LodgingBusiness',
   );
 
@@ -3445,7 +3207,7 @@ class Schema {
   ///
   /// A reservation for lodging at a hotel, motel, inn, etc.\n\nNote: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations.
   ///
-  static const LodgingReservation = IriTerm.prevalidated(
+  static const LodgingReservation = const IriTerm(
     'https://schema.org/LodgingReservation',
   );
 
@@ -3453,15 +3215,13 @@ class Schema {
   ///
   /// The act of being defeated in a competitive activity.
   ///
-  static const LoseAction = IriTerm.prevalidated(
-    'https://schema.org/LoseAction',
-  );
+  static const LoseAction = const IriTerm('https://schema.org/LoseAction');
 
   /// IRI for schema:LymphaticVessel
   ///
   /// A type of blood vessel that specifically carries lymph fluid unidirectionally toward the heart.
   ///
-  static const LymphaticVessel = IriTerm.prevalidated(
+  static const LymphaticVessel = const IriTerm(
     'https://schema.org/LymphaticVessel',
   );
 
@@ -3469,21 +3229,19 @@ class Schema {
   ///
   /// A book, document, or piece of music written by hand rather than typed or printed.
   ///
-  static const Manuscript = IriTerm.prevalidated(
-    'https://schema.org/Manuscript',
-  );
+  static const Manuscript = const IriTerm('https://schema.org/Manuscript');
 
   /// IRI for schema:Map
   ///
   /// A map.
   ///
-  static const Map = IriTerm.prevalidated('https://schema.org/Map');
+  static const Map = const IriTerm('https://schema.org/Map');
 
   /// IRI for schema:MapCategoryType
   ///
   /// An enumeration of several kinds of Map.
   ///
-  static const MapCategoryType = IriTerm.prevalidated(
+  static const MapCategoryType = const IriTerm(
     'https://schema.org/MapCategoryType',
   );
 
@@ -3491,29 +3249,25 @@ class Schema {
   ///
   /// The act of marrying a person.
   ///
-  static const MarryAction = IriTerm.prevalidated(
-    'https://schema.org/MarryAction',
-  );
+  static const MarryAction = const IriTerm('https://schema.org/MarryAction');
 
   /// IRI for schema:Mass
   ///
   /// Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of measure&gt;'. E.g., '7 kg'.
   ///
-  static const Mass = IriTerm.prevalidated('https://schema.org/Mass');
+  static const Mass = const IriTerm('https://schema.org/Mass');
 
   /// IRI for schema:MathSolver
   ///
   /// A math solver which is capable of solving a subset of mathematical problems.
   ///
-  static const MathSolver = IriTerm.prevalidated(
-    'https://schema.org/MathSolver',
-  );
+  static const MathSolver = const IriTerm('https://schema.org/MathSolver');
 
   /// IRI for schema:MaximumDoseSchedule
   ///
   /// The maximum dosing schedule considered safe for a drug or supplement as recommended by an authority or by the drug/supplement's manufacturer. Capture the recommending authority in the recognizingAuthority property of MedicalEntity.
   ///
-  static const MaximumDoseSchedule = IriTerm.prevalidated(
+  static const MaximumDoseSchedule = const IriTerm(
     'https://schema.org/MaximumDoseSchedule',
   );
 
@@ -3521,7 +3275,7 @@ class Schema {
   ///
   /// Enumeration(s) for use with {[measurementMethod]}.
   ///
-  static const MeasurementMethodEnum = IriTerm.prevalidated(
+  static const MeasurementMethodEnum = const IriTerm(
     'https://schema.org/MeasurementMethodEnum',
   );
 
@@ -3529,7 +3283,7 @@ class Schema {
   ///
   /// Enumeration of common measurement types (or dimensions), for example "chest" for a person, "inseam" for pants, "gauge" for screws, or "wheel" for bicycles.
   ///
-  static const MeasurementTypeEnumeration = IriTerm.prevalidated(
+  static const MeasurementTypeEnumeration = const IriTerm(
     'https://schema.org/MeasurementTypeEnumeration',
   );
 
@@ -3537,7 +3291,7 @@ class Schema {
   ///
   /// MediaEnumeration enumerations are lists of codes, labels etc. useful for describing media objects. They may be reflections of externally developed lists, or created at schema.org, or a combination.
   ///
-  static const MediaEnumeration = IriTerm.prevalidated(
+  static const MediaEnumeration = const IriTerm(
     'https://schema.org/MediaEnumeration',
   );
 
@@ -3545,15 +3299,13 @@ class Schema {
   ///
   /// Web page type: Media gallery page. A mixed-media page that can contain media such as images, videos, and other multimedia.
   ///
-  static const MediaGallery = IriTerm.prevalidated(
-    'https://schema.org/MediaGallery',
-  );
+  static const MediaGallery = const IriTerm('https://schema.org/MediaGallery');
 
   /// IRI for schema:MediaManipulationRatingEnumeration
   ///
   /// Codes for use with the {[mediaAuthenticityCategory]} property, indicating the authenticity of a media object (in the context of how it was published or shared). In general these codes are not mutually exclusive, although some combinations (such as 'original' versus 'transformed', 'edited' and 'staged') would be contradictory if applied in the same {[MediaReview]}. Note that the application of these codes is with regard to a piece of media shared or published in a particular context.
   ///
-  static const MediaManipulationRatingEnumeration = IriTerm.prevalidated(
+  static const MediaManipulationRatingEnumeration = const IriTerm(
     'https://schema.org/MediaManipulationRatingEnumeration',
   );
 
@@ -3561,9 +3313,7 @@ class Schema {
   ///
   /// A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 AudioObject's).
   ///
-  static const MediaObject = IriTerm.prevalidated(
-    'https://schema.org/MediaObject',
-  );
+  static const MediaObject = const IriTerm('https://schema.org/MediaObject');
 
   /// IRI for schema:MediaReview
   ///
@@ -3572,15 +3322,13 @@ class Schema {
   /// a work in progress. While the {[MediaManipulationRatingEnumeration]} list reflects significant community review amongst fact-checkers and others working
   /// to combat misinformation, the specific structures for representing media objects, their versions and publication context, are still evolving. Similarly, best practices for the relationship between {[MediaReview]} and {[ClaimReview]} markup have not yet been finalized.
   ///
-  static const MediaReview = IriTerm.prevalidated(
-    'https://schema.org/MediaReview',
-  );
+  static const MediaReview = const IriTerm('https://schema.org/MediaReview');
 
   /// IRI for schema:MediaReviewItem
   ///
   /// Represents an item or group of closely related items treated as a unit for the sake of evaluation in a {[MediaReview]}. Authorship etc. apply to the items rather than to the curation/grouping or reviewing party.
   ///
-  static const MediaReviewItem = IriTerm.prevalidated(
+  static const MediaReviewItem = const IriTerm(
     'https://schema.org/MediaReviewItem',
   );
 
@@ -3588,7 +3336,7 @@ class Schema {
   ///
   /// A subscription which allows a user to access media including audio, video, books, etc.
   ///
-  static const MediaSubscription = IriTerm.prevalidated(
+  static const MediaSubscription = const IriTerm(
     'https://schema.org/MediaSubscription',
   );
 
@@ -3596,7 +3344,7 @@ class Schema {
   ///
   /// Target audiences for medical web pages.
   ///
-  static const MedicalAudience = IriTerm.prevalidated(
+  static const MedicalAudience = const IriTerm(
     'https://schema.org/MedicalAudience',
   );
 
@@ -3604,7 +3352,7 @@ class Schema {
   ///
   /// Target audiences types for medical web pages. Enumerated type.
   ///
-  static const MedicalAudienceType = IriTerm.prevalidated(
+  static const MedicalAudienceType = const IriTerm(
     'https://schema.org/MedicalAudienceType',
   );
 
@@ -3612,7 +3360,7 @@ class Schema {
   ///
   /// A particular physical or virtual business of an organization for medical purposes. Examples of MedicalBusiness include different businesses run by health professionals.
   ///
-  static const MedicalBusiness = IriTerm.prevalidated(
+  static const MedicalBusiness = const IriTerm(
     'https://schema.org/MedicalBusiness',
   );
 
@@ -3620,15 +3368,13 @@ class Schema {
   ///
   /// The causative agent(s) that are responsible for the pathophysiologic process that eventually results in a medical condition, symptom or sign. In this schema, unless otherwise specified this is meant to be the proximate cause of the medical condition, symptom or sign. The proximate cause is defined as the causative agent that most directly results in the medical condition, symptom or sign. For example, the HIV virus could be considered a cause of AIDS. Or in a diagnostic context, if a patient fell and sustained a hip fracture and two days later sustained a pulmonary embolism which eventuated in a cardiac arrest, the cause of the cardiac arrest (the proximate cause) would be the pulmonary embolism and not the fall. Medical causes can include cardiovascular, chemical, dermatologic, endocrine, environmental, gastroenterologic, genetic, hematologic, gynecologic, iatrogenic, infectious, musculoskeletal, neurologic, nutritional, obstetric, oncologic, otolaryngologic, pharmacologic, psychiatric, pulmonary, renal, rheumatologic, toxic, traumatic, or urologic causes; medical conditions can be causes as well.
   ///
-  static const MedicalCause = IriTerm.prevalidated(
-    'https://schema.org/MedicalCause',
-  );
+  static const MedicalCause = const IriTerm('https://schema.org/MedicalCause');
 
   /// IRI for schema:MedicalClinic
   ///
   /// A facility, often associated with a hospital or medical school, that is devoted to the specific diagnosis and/or healthcare. Previously limited to outpatients but with evolution it may be open to inpatients as well.
   ///
-  static const MedicalClinic = IriTerm.prevalidated(
+  static const MedicalClinic = const IriTerm(
     'https://schema.org/MedicalClinic',
   );
 
@@ -3636,15 +3382,13 @@ class Schema {
   ///
   /// A code for a medical entity.
   ///
-  static const MedicalCode = IriTerm.prevalidated(
-    'https://schema.org/MedicalCode',
-  );
+  static const MedicalCode = const IriTerm('https://schema.org/MedicalCode');
 
   /// IRI for schema:MedicalCondition
   ///
   /// Any condition of the human body that affects the normal functioning of a person, whether physically or mentally. Includes diseases, injuries, disabilities, disorders, syndromes, etc.
   ///
-  static const MedicalCondition = IriTerm.prevalidated(
+  static const MedicalCondition = const IriTerm(
     'https://schema.org/MedicalCondition',
   );
 
@@ -3652,7 +3396,7 @@ class Schema {
   ///
   /// A stage of a medical condition, such as 'Stage IIIa'.
   ///
-  static const MedicalConditionStage = IriTerm.prevalidated(
+  static const MedicalConditionStage = const IriTerm(
     'https://schema.org/MedicalConditionStage',
   );
 
@@ -3660,7 +3404,7 @@ class Schema {
   ///
   /// A condition or factor that serves as a reason to withhold a certain medical therapy. Contraindications can be absolute (there are no reasonable circumstances for undertaking a course of action) or relative (the patient is at higher risk of complications, but these risks may be outweighed by other considerations or mitigated by other measures).
   ///
-  static const MedicalContraindication = IriTerm.prevalidated(
+  static const MedicalContraindication = const IriTerm(
     'https://schema.org/MedicalContraindication',
   );
 
@@ -3668,7 +3412,7 @@ class Schema {
   ///
   /// Any object used in a medical capacity, such as to diagnose or treat a patient.
   ///
-  static const MedicalDevice = IriTerm.prevalidated(
+  static const MedicalDevice = const IriTerm(
     'https://schema.org/MedicalDevice',
   );
 
@@ -3676,7 +3420,7 @@ class Schema {
   ///
   /// Categories of medical devices, organized by the purpose or intended use of the device.
   ///
-  static const MedicalDevicePurpose = IriTerm.prevalidated(
+  static const MedicalDevicePurpose = const IriTerm(
     'https://schema.org/MedicalDevicePurpose',
   );
 
@@ -3684,7 +3428,7 @@ class Schema {
   ///
   /// The most generic type of entity related to health and the practice of medicine.
   ///
-  static const MedicalEntity = IriTerm.prevalidated(
+  static const MedicalEntity = const IriTerm(
     'https://schema.org/MedicalEntity',
   );
 
@@ -3692,7 +3436,7 @@ class Schema {
   ///
   /// Enumerations related to health and the practice of medicine: A concept that is used to attribute a quality to another concept, as a qualifier, a collection of items or a listing of all of the elements of a set in medicine practice.
   ///
-  static const MedicalEnumeration = IriTerm.prevalidated(
+  static const MedicalEnumeration = const IriTerm(
     'https://schema.org/MedicalEnumeration',
   );
 
@@ -3700,7 +3444,7 @@ class Schema {
   ///
   /// Level of evidence for a medical guideline. Enumerated type.
   ///
-  static const MedicalEvidenceLevel = IriTerm.prevalidated(
+  static const MedicalEvidenceLevel = const IriTerm(
     'https://schema.org/MedicalEvidenceLevel',
   );
 
@@ -3708,7 +3452,7 @@ class Schema {
   ///
   /// Any recommendation made by a standard society (e.g. ACC/AHA) or consensus statement that denotes how to diagnose and treat a particular condition. Note: this type should be used to tag the actual guideline recommendation; if the guideline recommendation occurs in a larger scholarly article, use MedicalScholarlyArticle to tag the overall article, not this type. Note also: the organization making the recommendation should be captured in the recognizingAuthority base property of MedicalEntity.
   ///
-  static const MedicalGuideline = IriTerm.prevalidated(
+  static const MedicalGuideline = const IriTerm(
     'https://schema.org/MedicalGuideline',
   );
 
@@ -3716,7 +3460,7 @@ class Schema {
   ///
   /// A guideline contraindication that designates a process as harmful and where quality of the data supporting the contraindication is sound.
   ///
-  static const MedicalGuidelineContraindication = IriTerm.prevalidated(
+  static const MedicalGuidelineContraindication = const IriTerm(
     'https://schema.org/MedicalGuidelineContraindication',
   );
 
@@ -3724,7 +3468,7 @@ class Schema {
   ///
   /// A guideline recommendation that is regarded as efficacious and where quality of the data supporting the recommendation is sound.
   ///
-  static const MedicalGuidelineRecommendation = IriTerm.prevalidated(
+  static const MedicalGuidelineRecommendation = const IriTerm(
     'https://schema.org/MedicalGuidelineRecommendation',
   );
 
@@ -3732,7 +3476,7 @@ class Schema {
   ///
   /// Any medical imaging modality typically used for diagnostic purposes. Enumerated type.
   ///
-  static const MedicalImagingTechnique = IriTerm.prevalidated(
+  static const MedicalImagingTechnique = const IriTerm(
     'https://schema.org/MedicalImagingTechnique',
   );
 
@@ -3740,7 +3484,7 @@ class Schema {
   ///
   /// A condition or factor that indicates use of a medical therapy, including signs, symptoms, risk factors, anatomical states, etc.
   ///
-  static const MedicalIndication = IriTerm.prevalidated(
+  static const MedicalIndication = const IriTerm(
     'https://schema.org/MedicalIndication',
   );
 
@@ -3748,7 +3492,7 @@ class Schema {
   ///
   /// A utility class that serves as the umbrella for a number of 'intangible' things in the medical space.
   ///
-  static const MedicalIntangible = IriTerm.prevalidated(
+  static const MedicalIntangible = const IriTerm(
     'https://schema.org/MedicalIntangible',
   );
 
@@ -3756,7 +3500,7 @@ class Schema {
   ///
   /// An observational study is a type of medical study that attempts to infer the possible effect of a treatment through observation of a cohort of subjects over a period of time. In an observational study, the assignment of subjects into treatment groups versus control groups is outside the control of the investigator. This is in contrast with controlled studies, such as the randomized controlled trials represented by MedicalTrial, where each subject is randomly assigned to a treatment group or a control group before the start of the treatment.
   ///
-  static const MedicalObservationalStudy = IriTerm.prevalidated(
+  static const MedicalObservationalStudy = const IriTerm(
     'https://schema.org/MedicalObservationalStudy',
   );
 
@@ -3764,7 +3508,7 @@ class Schema {
   ///
   /// Design models for observational medical studies. Enumerated type.
   ///
-  static const MedicalObservationalStudyDesign = IriTerm.prevalidated(
+  static const MedicalObservationalStudyDesign = const IriTerm(
     'https://schema.org/MedicalObservationalStudyDesign',
   );
 
@@ -3772,7 +3516,7 @@ class Schema {
   ///
   /// A medical organization (physical or not), such as hospital, institution or clinic.
   ///
-  static const MedicalOrganization = IriTerm.prevalidated(
+  static const MedicalOrganization = const IriTerm(
     'https://schema.org/MedicalOrganization',
   );
 
@@ -3780,7 +3524,7 @@ class Schema {
   ///
   /// A process of care used in either a diagnostic, therapeutic, preventive or palliative capacity that relies on invasive (surgical), non-invasive, or other techniques.
   ///
-  static const MedicalProcedure = IriTerm.prevalidated(
+  static const MedicalProcedure = const IriTerm(
     'https://schema.org/MedicalProcedure',
   );
 
@@ -3788,7 +3532,7 @@ class Schema {
   ///
   /// An enumeration that describes different types of medical procedures.
   ///
-  static const MedicalProcedureType = IriTerm.prevalidated(
+  static const MedicalProcedureType = const IriTerm(
     'https://schema.org/MedicalProcedureType',
   );
 
@@ -3796,7 +3540,7 @@ class Schema {
   ///
   /// A complex mathematical calculation requiring an online calculator, used to assess prognosis. Note: use the url property of Thing to record any URLs for online calculators.
   ///
-  static const MedicalRiskCalculator = IriTerm.prevalidated(
+  static const MedicalRiskCalculator = const IriTerm(
     'https://schema.org/MedicalRiskCalculator',
   );
 
@@ -3804,7 +3548,7 @@ class Schema {
   ///
   /// Any rule set or interactive tool for estimating the risk of developing a complication or condition.
   ///
-  static const MedicalRiskEstimator = IriTerm.prevalidated(
+  static const MedicalRiskEstimator = const IriTerm(
     'https://schema.org/MedicalRiskEstimator',
   );
 
@@ -3812,7 +3556,7 @@ class Schema {
   ///
   /// A risk factor is anything that increases a person's likelihood of developing or contracting a disease, medical condition, or complication.
   ///
-  static const MedicalRiskFactor = IriTerm.prevalidated(
+  static const MedicalRiskFactor = const IriTerm(
     'https://schema.org/MedicalRiskFactor',
   );
 
@@ -3820,7 +3564,7 @@ class Schema {
   ///
   /// A simple system that adds up the number of risk factors to yield a score that is associated with prognosis, e.g. CHAD score, TIMI risk score.
   ///
-  static const MedicalRiskScore = IriTerm.prevalidated(
+  static const MedicalRiskScore = const IriTerm(
     'https://schema.org/MedicalRiskScore',
   );
 
@@ -3828,7 +3572,7 @@ class Schema {
   ///
   /// A scholarly article in the medical domain.
   ///
-  static const MedicalScholarlyArticle = IriTerm.prevalidated(
+  static const MedicalScholarlyArticle = const IriTerm(
     'https://schema.org/MedicalScholarlyArticle',
   );
 
@@ -3836,15 +3580,13 @@ class Schema {
   ///
   /// Any physical manifestation of a person's medical condition discoverable by objective diagnostic tests or physical examination.
   ///
-  static const MedicalSign = IriTerm.prevalidated(
-    'https://schema.org/MedicalSign',
-  );
+  static const MedicalSign = const IriTerm('https://schema.org/MedicalSign');
 
   /// IRI for schema:MedicalSignOrSymptom
   ///
   /// Any feature associated or not with a medical condition. In medicine a symptom is generally subjective while a sign is objective.
   ///
-  static const MedicalSignOrSymptom = IriTerm.prevalidated(
+  static const MedicalSignOrSymptom = const IriTerm(
     'https://schema.org/MedicalSignOrSymptom',
   );
 
@@ -3852,7 +3594,7 @@ class Schema {
   ///
   /// Any specific branch of medical science or practice. Medical specialities include clinical specialties that pertain to particular organ systems and their respective disease states, as well as allied health specialties. Enumerated type.
   ///
-  static const MedicalSpecialty = IriTerm.prevalidated(
+  static const MedicalSpecialty = const IriTerm(
     'https://schema.org/MedicalSpecialty',
   );
 
@@ -3860,15 +3602,13 @@ class Schema {
   ///
   /// A medical study is an umbrella type covering all kinds of research studies relating to human medicine or health, including observational studies and interventional trials and registries, randomized, controlled or not. When the specific type of study is known, use one of the extensions of this type, such as MedicalTrial or MedicalObservationalStudy. Also, note that this type should be used to mark up data that describes the study itself; to tag an article that publishes the results of a study, use MedicalScholarlyArticle. Note: use the code property of MedicalEntity to store study IDs, e.g. clinicaltrials.gov ID.
   ///
-  static const MedicalStudy = IriTerm.prevalidated(
-    'https://schema.org/MedicalStudy',
-  );
+  static const MedicalStudy = const IriTerm('https://schema.org/MedicalStudy');
 
   /// IRI for schema:MedicalStudyStatus
   ///
   /// The status of a medical study. Enumerated type.
   ///
-  static const MedicalStudyStatus = IriTerm.prevalidated(
+  static const MedicalStudyStatus = const IriTerm(
     'https://schema.org/MedicalStudyStatus',
   );
 
@@ -3876,7 +3616,7 @@ class Schema {
   ///
   /// Any complaint sensed and expressed by the patient (therefore defined as subjective)  like stomachache, lower-back pain, or fatigue.
   ///
-  static const MedicalSymptom = IriTerm.prevalidated(
+  static const MedicalSymptom = const IriTerm(
     'https://schema.org/MedicalSymptom',
   );
 
@@ -3884,15 +3624,13 @@ class Schema {
   ///
   /// Any medical test, typically performed for diagnostic purposes.
   ///
-  static const MedicalTest = IriTerm.prevalidated(
-    'https://schema.org/MedicalTest',
-  );
+  static const MedicalTest = const IriTerm('https://schema.org/MedicalTest');
 
   /// IRI for schema:MedicalTestPanel
   ///
   /// Any collection of tests commonly ordered together.
   ///
-  static const MedicalTestPanel = IriTerm.prevalidated(
+  static const MedicalTestPanel = const IriTerm(
     'https://schema.org/MedicalTestPanel',
   );
 
@@ -3900,7 +3638,7 @@ class Schema {
   ///
   /// Any medical intervention designed to prevent, treat, and cure human diseases and medical conditions, including both curative and palliative therapies. Medical therapies are typically processes of care relying upon pharmacotherapy, behavioral therapy, supportive therapy (with fluid or nutrition for example), or detoxification (e.g. hemodialysis) aimed at improving or preventing a health condition.
   ///
-  static const MedicalTherapy = IriTerm.prevalidated(
+  static const MedicalTherapy = const IriTerm(
     'https://schema.org/MedicalTherapy',
   );
 
@@ -3908,15 +3646,13 @@ class Schema {
   ///
   /// A medical trial is a type of medical study that uses a scientific process to compare the safety and efficacy of medical therapies or medical procedures. In general, medical trials are controlled and subjects are allocated at random to the different treatment and/or control groups.
   ///
-  static const MedicalTrial = IriTerm.prevalidated(
-    'https://schema.org/MedicalTrial',
-  );
+  static const MedicalTrial = const IriTerm('https://schema.org/MedicalTrial');
 
   /// IRI for schema:MedicalTrialDesign
   ///
   /// Design models for medical trials. Enumerated type.
   ///
-  static const MedicalTrialDesign = IriTerm.prevalidated(
+  static const MedicalTrialDesign = const IriTerm(
     'https://schema.org/MedicalTrialDesign',
   );
 
@@ -3924,7 +3660,7 @@ class Schema {
   ///
   /// A web page that provides medical information.
   ///
-  static const MedicalWebPage = IriTerm.prevalidated(
+  static const MedicalWebPage = const IriTerm(
     'https://schema.org/MedicalWebPage',
   );
 
@@ -3932,7 +3668,7 @@ class Schema {
   ///
   /// Systems of medical practice.
   ///
-  static const MedicineSystem = IriTerm.prevalidated(
+  static const MedicineSystem = const IriTerm(
     'https://schema.org/MedicineSystem',
   );
 
@@ -3943,15 +3679,13 @@ class Schema {
   /// See also the <a href="/docs/hotels.html">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.
   ///
   ///
-  static const MeetingRoom = IriTerm.prevalidated(
-    'https://schema.org/MeetingRoom',
-  );
+  static const MeetingRoom = const IriTerm('https://schema.org/MeetingRoom');
 
   /// IRI for schema:MemberProgram
   ///
   /// A MemberProgram defines a loyalty (or membership) program that provides its members with certain benefits, for example better pricing, free shipping or returns, or the ability to earn loyalty points. Member programs may have multiple tiers, for example silver and gold members, each with different benefits.
   ///
-  static const MemberProgram = IriTerm.prevalidated(
+  static const MemberProgram = const IriTerm(
     'https://schema.org/MemberProgram',
   );
 
@@ -3959,7 +3693,7 @@ class Schema {
   ///
   /// A MemberProgramTier specifies a tier under a loyalty (member) program, for example "gold".
   ///
-  static const MemberProgramTier = IriTerm.prevalidated(
+  static const MemberProgramTier = const IriTerm(
     'https://schema.org/MemberProgramTier',
   );
 
@@ -3967,7 +3701,7 @@ class Schema {
   ///
   /// A men's clothing store.
   ///
-  static const MensClothingStore = IriTerm.prevalidated(
+  static const MensClothingStore = const IriTerm(
     'https://schema.org/MensClothingStore',
   );
 
@@ -3975,27 +3709,25 @@ class Schema {
   ///
   /// A structured representation of food or drink items available from a FoodEstablishment.
   ///
-  static const Menu = IriTerm.prevalidated('https://schema.org/Menu');
+  static const Menu = const IriTerm('https://schema.org/Menu');
 
   /// IRI for schema:MenuItem
   ///
   /// A food or drink item listed in a menu or menu section.
   ///
-  static const MenuItem = IriTerm.prevalidated('https://schema.org/MenuItem');
+  static const MenuItem = const IriTerm('https://schema.org/MenuItem');
 
   /// IRI for schema:MenuSection
   ///
   /// A sub-grouping of food or drink items in a menu. E.g. courses (such as 'Dinner', 'Breakfast', etc.), specific type of dishes (such as 'Meat', 'Vegan', 'Drinks', etc.), or some other classification made by the menu provider.
   ///
-  static const MenuSection = IriTerm.prevalidated(
-    'https://schema.org/MenuSection',
-  );
+  static const MenuSection = const IriTerm('https://schema.org/MenuSection');
 
   /// IRI for schema:MerchantReturnEnumeration
   ///
   /// Enumerates several kinds of product return policies.
   ///
-  static const MerchantReturnEnumeration = IriTerm.prevalidated(
+  static const MerchantReturnEnumeration = const IriTerm(
     'https://schema.org/MerchantReturnEnumeration',
   );
 
@@ -4003,7 +3735,7 @@ class Schema {
   ///
   /// A MerchantReturnPolicy provides information about product return policies associated with an {[Organization]}, {[Product]}, or {[Offer]}.
   ///
-  static const MerchantReturnPolicy = IriTerm.prevalidated(
+  static const MerchantReturnPolicy = const IriTerm(
     'https://schema.org/MerchantReturnPolicy',
   );
 
@@ -4011,7 +3743,7 @@ class Schema {
   ///
   /// A seasonal override of a return policy, for example used for holidays.
   ///
-  static const MerchantReturnPolicySeasonalOverride = IriTerm.prevalidated(
+  static const MerchantReturnPolicySeasonalOverride = const IriTerm(
     'https://schema.org/MerchantReturnPolicySeasonalOverride',
   );
 
@@ -4019,21 +3751,19 @@ class Schema {
   ///
   /// A single message from a sender to one or more organizations or people.
   ///
-  static const Message = IriTerm.prevalidated('https://schema.org/Message');
+  static const Message = const IriTerm('https://schema.org/Message');
 
   /// IRI for schema:MiddleSchool
   ///
   /// A middle school (typically for children aged around 11-14, although this varies somewhat).
   ///
-  static const MiddleSchool = IriTerm.prevalidated(
-    'https://schema.org/MiddleSchool',
-  );
+  static const MiddleSchool = const IriTerm('https://schema.org/MiddleSchool');
 
   /// IRI for schema:MobileApplication
   ///
   /// A software application designed specifically to work well on a mobile device such as a telephone.
   ///
-  static const MobileApplication = IriTerm.prevalidated(
+  static const MobileApplication = const IriTerm(
     'https://schema.org/MobileApplication',
   );
 
@@ -4041,7 +3771,7 @@ class Schema {
   ///
   /// A store that sells mobile phones and related accessories.
   ///
-  static const MobilePhoneStore = IriTerm.prevalidated(
+  static const MobilePhoneStore = const IriTerm(
     'https://schema.org/MobilePhoneStore',
   );
 
@@ -4049,7 +3779,7 @@ class Schema {
   ///
   /// Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.
   ///
-  static const MolecularEntity = IriTerm.prevalidated(
+  static const MolecularEntity = const IriTerm(
     'https://schema.org/MolecularEntity',
   );
 
@@ -4057,7 +3787,7 @@ class Schema {
   ///
   /// A monetary value or range. This type can be used to describe an amount of money such as $50 USD, or a range as in describing a bank account being suitable for a balance between £1,000 and £1,000,000 GBP, or the value of a salary, etc. It is recommended to use {[PriceSpecification]} Types to describe the price of an Offer, Invoice, etc.
   ///
-  static const MonetaryAmount = IriTerm.prevalidated(
+  static const MonetaryAmount = const IriTerm(
     'https://schema.org/MonetaryAmount',
   );
 
@@ -4065,7 +3795,7 @@ class Schema {
   ///
   /// A statistical distribution of monetary amounts.
   ///
-  static const MonetaryAmountDistribution = IriTerm.prevalidated(
+  static const MonetaryAmountDistribution = const IriTerm(
     'https://schema.org/MonetaryAmountDistribution',
   );
 
@@ -4073,7 +3803,7 @@ class Schema {
   ///
   /// A monetary grant.
   ///
-  static const MonetaryGrant = IriTerm.prevalidated(
+  static const MonetaryGrant = const IriTerm(
     'https://schema.org/MonetaryGrant',
   );
 
@@ -4081,7 +3811,7 @@ class Schema {
   ///
   /// The act of transferring money from one place to another place. This may occur electronically or physically.
   ///
-  static const MoneyTransfer = IriTerm.prevalidated(
+  static const MoneyTransfer = const IriTerm(
     'https://schema.org/MoneyTransfer',
   );
 
@@ -4089,15 +3819,13 @@ class Schema {
   ///
   /// A loan in which property or real estate is used as collateral. (A loan securitized against some real estate.)
   ///
-  static const MortgageLoan = IriTerm.prevalidated(
-    'https://schema.org/MortgageLoan',
-  );
+  static const MortgageLoan = const IriTerm('https://schema.org/MortgageLoan');
 
   /// IRI for schema:Mosque
   ///
   /// A mosque.
   ///
-  static const Mosque = IriTerm.prevalidated('https://schema.org/Mosque');
+  static const Mosque = const IriTerm('https://schema.org/Mosque');
 
   /// IRI for schema:Motel
   ///
@@ -4106,21 +3834,19 @@ class Schema {
   /// See also the <a href="/docs/hotels.html">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.
   ///
   ///
-  static const Motel = IriTerm.prevalidated('https://schema.org/Motel');
+  static const Motel = const IriTerm('https://schema.org/Motel');
 
   /// IRI for schema:Motorcycle
   ///
   /// A motorcycle or motorbike is a single-track, two-wheeled motor vehicle.
   ///
-  static const Motorcycle = IriTerm.prevalidated(
-    'https://schema.org/Motorcycle',
-  );
+  static const Motorcycle = const IriTerm('https://schema.org/Motorcycle');
 
   /// IRI for schema:MotorcycleDealer
   ///
   /// A motorcycle dealer.
   ///
-  static const MotorcycleDealer = IriTerm.prevalidated(
+  static const MotorcycleDealer = const IriTerm(
     'https://schema.org/MotorcycleDealer',
   );
 
@@ -4128,7 +3854,7 @@ class Schema {
   ///
   /// A motorcycle repair shop.
   ///
-  static const MotorcycleRepair = IriTerm.prevalidated(
+  static const MotorcycleRepair = const IriTerm(
     'https://schema.org/MotorcycleRepair',
   );
 
@@ -4136,7 +3862,7 @@ class Schema {
   ///
   /// A motorized bicycle is a bicycle with an attached motor used to power the vehicle, or to assist with pedaling.
   ///
-  static const MotorizedBicycle = IriTerm.prevalidated(
+  static const MotorizedBicycle = const IriTerm(
     'https://schema.org/MotorizedBicycle',
   );
 
@@ -4144,33 +3870,31 @@ class Schema {
   ///
   /// A mountain, like Mount Whitney or Mount Everest.
   ///
-  static const Mountain = IriTerm.prevalidated('https://schema.org/Mountain');
+  static const Mountain = const IriTerm('https://schema.org/Mountain');
 
   /// IRI for schema:MoveAction
   ///
   /// The act of an agent relocating to a place.\n\nRelated actions:\n\n* {[TransferAction]}: Unlike TransferAction, the subject of the move is a living Person or Organization rather than an inanimate object.
   ///
-  static const MoveAction = IriTerm.prevalidated(
-    'https://schema.org/MoveAction',
-  );
+  static const MoveAction = const IriTerm('https://schema.org/MoveAction');
 
   /// IRI for schema:Movie
   ///
   /// A movie.
   ///
-  static const Movie = IriTerm.prevalidated('https://schema.org/Movie');
+  static const Movie = const IriTerm('https://schema.org/Movie');
 
   /// IRI for schema:MovieClip
   ///
   /// A short segment/part of a movie.
   ///
-  static const MovieClip = IriTerm.prevalidated('https://schema.org/MovieClip');
+  static const MovieClip = const IriTerm('https://schema.org/MovieClip');
 
   /// IRI for schema:MovieRentalStore
   ///
   /// A movie rental store.
   ///
-  static const MovieRentalStore = IriTerm.prevalidated(
+  static const MovieRentalStore = const IriTerm(
     'https://schema.org/MovieRentalStore',
   );
 
@@ -4178,23 +3902,19 @@ class Schema {
   ///
   /// A series of movies. Included movies can be indicated with the hasPart property.
   ///
-  static const MovieSeries = IriTerm.prevalidated(
-    'https://schema.org/MovieSeries',
-  );
+  static const MovieSeries = const IriTerm('https://schema.org/MovieSeries');
 
   /// IRI for schema:MovieTheater
   ///
   /// A movie theater.
   ///
-  static const MovieTheater = IriTerm.prevalidated(
-    'https://schema.org/MovieTheater',
-  );
+  static const MovieTheater = const IriTerm('https://schema.org/MovieTheater');
 
   /// IRI for schema:MovingCompany
   ///
   /// A moving company.
   ///
-  static const MovingCompany = IriTerm.prevalidated(
+  static const MovingCompany = const IriTerm(
     'https://schema.org/MovingCompany',
   );
 
@@ -4202,27 +3922,25 @@ class Schema {
   ///
   /// A muscle is an anatomical structure consisting of a contractile form of tissue that animals use to effect movement.
   ///
-  static const Muscle = IriTerm.prevalidated('https://schema.org/Muscle');
+  static const Muscle = const IriTerm('https://schema.org/Muscle');
 
   /// IRI for schema:Museum
   ///
   /// A museum.
   ///
-  static const Museum = IriTerm.prevalidated('https://schema.org/Museum');
+  static const Museum = const IriTerm('https://schema.org/Museum');
 
   /// IRI for schema:MusicAlbum
   ///
   /// A collection of music tracks.
   ///
-  static const MusicAlbum = IriTerm.prevalidated(
-    'https://schema.org/MusicAlbum',
-  );
+  static const MusicAlbum = const IriTerm('https://schema.org/MusicAlbum');
 
   /// IRI for schema:MusicAlbumProductionType
   ///
   /// Classification of the album by its type of content: soundtrack, live album, studio album, etc.
   ///
-  static const MusicAlbumProductionType = IriTerm.prevalidated(
+  static const MusicAlbumProductionType = const IriTerm(
     'https://schema.org/MusicAlbumProductionType',
   );
 
@@ -4230,7 +3948,7 @@ class Schema {
   ///
   /// The kind of release which this album is: single, EP or album.
   ///
-  static const MusicAlbumReleaseType = IriTerm.prevalidated(
+  static const MusicAlbumReleaseType = const IriTerm(
     'https://schema.org/MusicAlbumReleaseType',
   );
 
@@ -4238,7 +3956,7 @@ class Schema {
   ///
   /// A musical composition.
   ///
-  static const MusicComposition = IriTerm.prevalidated(
+  static const MusicComposition = const IriTerm(
     'https://schema.org/MusicComposition',
   );
 
@@ -4246,23 +3964,19 @@ class Schema {
   ///
   /// Event type: Music event.
   ///
-  static const MusicEvent = IriTerm.prevalidated(
-    'https://schema.org/MusicEvent',
-  );
+  static const MusicEvent = const IriTerm('https://schema.org/MusicEvent');
 
   /// IRI for schema:MusicGroup
   ///
   /// A musical group, such as a band, an orchestra, or a choir. Can also be a solo musician.
   ///
-  static const MusicGroup = IriTerm.prevalidated(
-    'https://schema.org/MusicGroup',
-  );
+  static const MusicGroup = const IriTerm('https://schema.org/MusicGroup');
 
   /// IRI for schema:MusicPlaylist
   ///
   /// A collection of music tracks in playlist form.
   ///
-  static const MusicPlaylist = IriTerm.prevalidated(
+  static const MusicPlaylist = const IriTerm(
     'https://schema.org/MusicPlaylist',
   );
 
@@ -4270,7 +3984,7 @@ class Schema {
   ///
   /// A music recording (track), usually a single song.
   ///
-  static const MusicRecording = IriTerm.prevalidated(
+  static const MusicRecording = const IriTerm(
     'https://schema.org/MusicRecording',
   );
 
@@ -4278,15 +3992,13 @@ class Schema {
   ///
   /// A MusicRelease is a specific release of a music album.
   ///
-  static const MusicRelease = IriTerm.prevalidated(
-    'https://schema.org/MusicRelease',
-  );
+  static const MusicRelease = const IriTerm('https://schema.org/MusicRelease');
 
   /// IRI for schema:MusicReleaseFormatType
   ///
   /// Format of this release (the type of recording media used, i.e. compact disc, digital media, LP, etc.).
   ///
-  static const MusicReleaseFormatType = IriTerm.prevalidated(
+  static const MusicReleaseFormatType = const IriTerm(
     'https://schema.org/MusicReleaseFormatType',
   );
 
@@ -4294,23 +4006,19 @@ class Schema {
   ///
   /// A music store.
   ///
-  static const MusicStore = IriTerm.prevalidated(
-    'https://schema.org/MusicStore',
-  );
+  static const MusicStore = const IriTerm('https://schema.org/MusicStore');
 
   /// IRI for schema:MusicVenue
   ///
   /// A music venue.
   ///
-  static const MusicVenue = IriTerm.prevalidated(
-    'https://schema.org/MusicVenue',
-  );
+  static const MusicVenue = const IriTerm('https://schema.org/MusicVenue');
 
   /// IRI for schema:MusicVideoObject
   ///
   /// A music video file.
   ///
-  static const MusicVideoObject = IriTerm.prevalidated(
+  static const MusicVideoObject = const IriTerm(
     'https://schema.org/MusicVideoObject',
   );
 
@@ -4318,13 +4026,13 @@ class Schema {
   ///
   /// Organization: Non-governmental Organization.
   ///
-  static const NGO = IriTerm.prevalidated('https://schema.org/NGO');
+  static const NGO = const IriTerm('https://schema.org/NGO');
 
   /// IRI for schema:NLNonprofitType
   ///
   /// NLNonprofitType: Non-profit organization type originating from the Netherlands.
   ///
-  static const NLNonprofitType = IriTerm.prevalidated(
+  static const NLNonprofitType = const IriTerm(
     'https://schema.org/NLNonprofitType',
   );
 
@@ -4332,13 +4040,13 @@ class Schema {
   ///
   /// A nail salon.
   ///
-  static const NailSalon = IriTerm.prevalidated('https://schema.org/NailSalon');
+  static const NailSalon = const IriTerm('https://schema.org/NailSalon');
 
   /// IRI for schema:Nerve
   ///
   /// A common pathway for the electrochemical nerve impulses that are transmitted along each of the axons.
   ///
-  static const Nerve = IriTerm.prevalidated('https://schema.org/Nerve');
+  static const Nerve = const IriTerm('https://schema.org/Nerve');
 
   /// IRI for schema:NewsArticle
   ///
@@ -4347,15 +4055,13 @@ class Schema {
   /// A more detailed overview of [schema.org News markup](/docs/news.html) is also available.
   ///
   ///
-  static const NewsArticle = IriTerm.prevalidated(
-    'https://schema.org/NewsArticle',
-  );
+  static const NewsArticle = const IriTerm('https://schema.org/NewsArticle');
 
   /// IRI for schema:NewsMediaOrganization
   ///
   /// A News/Media organization such as a newspaper or TV station.
   ///
-  static const NewsMediaOrganization = IriTerm.prevalidated(
+  static const NewsMediaOrganization = const IriTerm(
     'https://schema.org/NewsMediaOrganization',
   );
 
@@ -4363,19 +4069,19 @@ class Schema {
   ///
   /// A publication containing information about varied topics that are pertinent to general information, a geographic area, or a specific subject matter (i.e. business, culture, education). Often published daily.
   ///
-  static const Newspaper = IriTerm.prevalidated('https://schema.org/Newspaper');
+  static const Newspaper = const IriTerm('https://schema.org/Newspaper');
 
   /// IRI for schema:NightClub
   ///
   /// A nightclub or discotheque.
   ///
-  static const NightClub = IriTerm.prevalidated('https://schema.org/NightClub');
+  static const NightClub = const IriTerm('https://schema.org/NightClub');
 
   /// IRI for schema:NonprofitType
   ///
   /// NonprofitType enumerates several kinds of official non-profit types of which a non-profit organization can be.
   ///
-  static const NonprofitType = IriTerm.prevalidated(
+  static const NonprofitType = const IriTerm(
     'https://schema.org/NonprofitType',
   );
 
@@ -4383,13 +4089,13 @@ class Schema {
   ///
   /// A notary.
   ///
-  static const Notary = IriTerm.prevalidated('https://schema.org/Notary');
+  static const Notary = const IriTerm('https://schema.org/Notary');
 
   /// IRI for schema:NoteDigitalDocument
   ///
   /// A file containing a note, primarily for the author.
   ///
-  static const NoteDigitalDocument = IriTerm.prevalidated(
+  static const NoteDigitalDocument = const IriTerm(
     'https://schema.org/NoteDigitalDocument',
   );
 
@@ -4397,13 +4103,13 @@ class Schema {
   ///
   /// Data type: Number.\n\nUsage guidelines:\n\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.
   ///
-  static const Number = IriTerm.prevalidated('https://schema.org/Number');
+  static const Number = const IriTerm('https://schema.org/Number');
 
   /// IRI for schema:NutritionInformation
   ///
   /// Nutritional information about the recipe.
   ///
-  static const NutritionInformation = IriTerm.prevalidated(
+  static const NutritionInformation = const IriTerm(
     'https://schema.org/NutritionInformation',
   );
 
@@ -4416,23 +4122,19 @@ class Schema {
   /// In the context of a quantitative knowledge graph, typical properties could include {[measuredProperty]}, {[observationAbout]}, {[observationDate]}, {[value]}, {[unitCode]}, {[unitText]}, {[measurementMethod]}.
   ///
   ///
-  static const Observation = IriTerm.prevalidated(
-    'https://schema.org/Observation',
-  );
+  static const Observation = const IriTerm('https://schema.org/Observation');
 
   /// IRI for schema:Occupation
   ///
   /// A profession, may involve prolonged training and/or a formal qualification.
   ///
-  static const Occupation = IriTerm.prevalidated(
-    'https://schema.org/Occupation',
-  );
+  static const Occupation = const IriTerm('https://schema.org/Occupation');
 
   /// IRI for schema:OccupationalExperienceRequirements
   ///
   /// Indicates employment-related experience requirements, e.g. {[monthsOfExperience]}.
   ///
-  static const OccupationalExperienceRequirements = IriTerm.prevalidated(
+  static const OccupationalExperienceRequirements = const IriTerm(
     'https://schema.org/OccupationalExperienceRequirements',
   );
 
@@ -4440,7 +4142,7 @@ class Schema {
   ///
   /// A treatment of people with physical, emotional, or social problems, using purposeful activity to help them overcome or learn to deal with their problems.
   ///
-  static const OccupationalTherapy = IriTerm.prevalidated(
+  static const OccupationalTherapy = const IriTerm(
     'https://schema.org/OccupationalTherapy',
   );
 
@@ -4448,7 +4150,7 @@ class Schema {
   ///
   /// An ocean (for example, the Pacific).
   ///
-  static const OceanBodyOfWater = IriTerm.prevalidated(
+  static const OceanBodyOfWater = const IriTerm(
     'https://schema.org/OceanBodyOfWater',
   );
 
@@ -4456,15 +4158,13 @@ class Schema {
   ///
   /// An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book.\n\nNote: As the {[businessFunction]} property, which identifies the form of offer (e.g. sell, lease, repair, dispose), defaults to http://purl.org/goodrelations/v1#Sell; an Offer without a defined businessFunction value can be assumed to be an offer to sell.\n\nFor [GTIN](http://www.gs1.org/barcodes/technical/idkeys/gtin)-related fields, see [Check Digit calculator](http://www.gs1.org/barcodes/support/check_digit_calculator) and [validation guide](http://www.gs1us.org/resources/standards/gtin-validation-guide) from [GS1](http://www.gs1.org/).
   ///
-  static const Offer = IriTerm.prevalidated('https://schema.org/Offer');
+  static const Offer = const IriTerm('https://schema.org/Offer');
 
   /// IRI for schema:OfferCatalog
   ///
   /// An OfferCatalog is an ItemList that contains related Offers and/or further OfferCatalogs that are offeredBy the same provider.
   ///
-  static const OfferCatalog = IriTerm.prevalidated(
-    'https://schema.org/OfferCatalog',
-  );
+  static const OfferCatalog = const IriTerm('https://schema.org/OfferCatalog');
 
   /// IRI for schema:OfferForLease
   ///
@@ -4473,7 +4173,7 @@ class Schema {
   /// background on the underlying concepts.
   ///
   ///
-  static const OfferForLease = IriTerm.prevalidated(
+  static const OfferForLease = const IriTerm(
     'https://schema.org/OfferForLease',
   );
 
@@ -4484,7 +4184,7 @@ class Schema {
   /// background on the underlying concepts.
   ///
   ///
-  static const OfferForPurchase = IriTerm.prevalidated(
+  static const OfferForPurchase = const IriTerm(
     'https://schema.org/OfferForPurchase',
   );
 
@@ -4492,7 +4192,7 @@ class Schema {
   ///
   /// A list of possible conditions for the item.
   ///
-  static const OfferItemCondition = IriTerm.prevalidated(
+  static const OfferItemCondition = const IriTerm(
     'https://schema.org/OfferItemCondition',
   );
 
@@ -4511,7 +4211,7 @@ class Schema {
   /// E.g. Cheaper and slower: $5 in 5-7 days
   /// or Fast and expensive: $15 in 1-2 days.
   ///
-  static const OfferShippingDetails = IriTerm.prevalidated(
+  static const OfferShippingDetails = const IriTerm(
     'https://schema.org/OfferShippingDetails',
   );
 
@@ -4519,7 +4219,7 @@ class Schema {
   ///
   /// An office equipment store.
   ///
-  static const OfficeEquipmentStore = IriTerm.prevalidated(
+  static const OfficeEquipmentStore = const IriTerm(
     'https://schema.org/OfficeEquipmentStore',
   );
 
@@ -4527,7 +4227,7 @@ class Schema {
   ///
   /// A publication event, e.g. catch-up TV or radio podcast, during which a program is available on-demand.
   ///
-  static const OnDemandEvent = IriTerm.prevalidated(
+  static const OnDemandEvent = const IriTerm(
     'https://schema.org/OnDemandEvent',
   );
 
@@ -4535,17 +4235,23 @@ class Schema {
   ///
   /// A particular online business, either standalone or the online part of a broader organization. Examples include an eCommerce site, an online travel booking site, an online learning site, an online logistics and shipping provider, an online (virtual) doctor, etc.
   ///
-  static const OnlineBusiness = IriTerm.prevalidated(
+  static const OnlineBusiness = const IriTerm(
     'https://schema.org/OnlineBusiness',
+  );
+
+  /// IRI for schema:OnlineMarketplace
+  ///
+  /// An eCommerce marketplace.
+  ///
+  static const OnlineMarketplace = const IriTerm(
+    'https://schema.org/OnlineMarketplace',
   );
 
   /// IRI for schema:OnlineStore
   ///
   /// An eCommerce site.
   ///
-  static const OnlineStore = IriTerm.prevalidated(
-    'https://schema.org/OnlineStore',
-  );
+  static const OnlineStore = const IriTerm('https://schema.org/OnlineStore');
 
   /// IRI for schema:OpeningHoursSpecification
   ///
@@ -4553,7 +4259,7 @@ class Schema {
   /// The place is __open__ if the {[opens]} property is specified, and __closed__ otherwise.\n\nIf the value for the {[closes]} property is less than the value for the {[opens]} property then the hour range is assumed to span over the next day.
   ///
   ///
-  static const OpeningHoursSpecification = IriTerm.prevalidated(
+  static const OpeningHoursSpecification = const IriTerm(
     'https://schema.org/OpeningHoursSpecification',
   );
 
@@ -4561,7 +4267,7 @@ class Schema {
   ///
   /// An {[OpinionNewsArticle]} is a {[NewsArticle]} that primarily expresses opinions rather than journalistic reporting of news and events. For example, a {[NewsArticle]} consisting of a column or {[Blog]}/{[BlogPosting]} entry in the Opinions section of a news publication.
   ///
-  static const OpinionNewsArticle = IriTerm.prevalidated(
+  static const OpinionNewsArticle = const IriTerm(
     'https://schema.org/OpinionNewsArticle',
   );
 
@@ -4569,49 +4275,43 @@ class Schema {
   ///
   /// A store that sells reading glasses and similar devices for improving vision.
   ///
-  static const Optician = IriTerm.prevalidated('https://schema.org/Optician');
+  static const Optician = const IriTerm('https://schema.org/Optician');
 
   /// IRI for schema:Order
   ///
   /// An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.
   ///
-  static const Order = IriTerm.prevalidated('https://schema.org/Order');
+  static const Order = const IriTerm('https://schema.org/Order');
 
   /// IRI for schema:OrderAction
   ///
   /// An agent orders an object/product/service to be delivered/sent.
   ///
-  static const OrderAction = IriTerm.prevalidated(
-    'https://schema.org/OrderAction',
-  );
+  static const OrderAction = const IriTerm('https://schema.org/OrderAction');
 
   /// IRI for schema:OrderItem
   ///
   /// An order item is a line of an order. It includes the quantity and shipping details of a bought offer.
   ///
-  static const OrderItem = IriTerm.prevalidated('https://schema.org/OrderItem');
+  static const OrderItem = const IriTerm('https://schema.org/OrderItem');
 
   /// IRI for schema:OrderStatus
   ///
   /// Enumerated status values for Order.
   ///
-  static const OrderStatus = IriTerm.prevalidated(
-    'https://schema.org/OrderStatus',
-  );
+  static const OrderStatus = const IriTerm('https://schema.org/OrderStatus');
 
   /// IRI for schema:Organization
   ///
   /// An organization such as a school, NGO, corporation, club, etc.
   ///
-  static const Organization = IriTerm.prevalidated(
-    'https://schema.org/Organization',
-  );
+  static const Organization = const IriTerm('https://schema.org/Organization');
 
   /// IRI for schema:OrganizationRole
   ///
   /// A subclass of Role used to describe roles within organizations.
   ///
-  static const OrganizationRole = IriTerm.prevalidated(
+  static const OrganizationRole = const IriTerm(
     'https://schema.org/OrganizationRole',
   );
 
@@ -4619,7 +4319,7 @@ class Schema {
   ///
   /// The act of manipulating/administering/supervising/controlling one or more objects.
   ///
-  static const OrganizeAction = IriTerm.prevalidated(
+  static const OrganizeAction = const IriTerm(
     'https://schema.org/OrganizeAction',
   );
 
@@ -4627,15 +4327,13 @@ class Schema {
   ///
   /// An outlet store.
   ///
-  static const OutletStore = IriTerm.prevalidated(
-    'https://schema.org/OutletStore',
-  );
+  static const OutletStore = const IriTerm('https://schema.org/OutletStore');
 
   /// IRI for schema:OwnershipInfo
   ///
   /// A structured value providing information about when a certain organization or person owned a certain product.
   ///
-  static const OwnershipInfo = IriTerm.prevalidated(
+  static const OwnershipInfo = const IriTerm(
     'https://schema.org/OwnershipInfo',
   );
 
@@ -4643,21 +4341,19 @@ class Schema {
   ///
   /// The act of producing a painting, typically with paint and canvas as instruments.
   ///
-  static const PaintAction = IriTerm.prevalidated(
-    'https://schema.org/PaintAction',
-  );
+  static const PaintAction = const IriTerm('https://schema.org/PaintAction');
 
   /// IRI for schema:Painting
   ///
   /// A painting.
   ///
-  static const Painting = IriTerm.prevalidated('https://schema.org/Painting');
+  static const Painting = const IriTerm('https://schema.org/Painting');
 
   /// IRI for schema:PalliativeProcedure
   ///
   /// A medical procedure intended primarily for palliative purposes, aimed at relieving the symptoms of an underlying health condition.
   ///
-  static const PalliativeProcedure = IriTerm.prevalidated(
+  static const PalliativeProcedure = const IriTerm(
     'https://schema.org/PalliativeProcedure',
   );
 
@@ -4665,7 +4361,7 @@ class Schema {
   ///
   /// The delivery of a parcel either via the postal service or a commercial service.
   ///
-  static const ParcelDelivery = IriTerm.prevalidated(
+  static const ParcelDelivery = const IriTerm(
     'https://schema.org/ParcelDelivery',
   );
 
@@ -4673,7 +4369,7 @@ class Schema {
   ///
   /// A set of characteristics describing parents, who can be interested in viewing some content.
   ///
-  static const ParentAudience = IriTerm.prevalidated(
+  static const ParentAudience = const IriTerm(
     'https://schema.org/ParentAudience',
   );
 
@@ -4681,13 +4377,13 @@ class Schema {
   ///
   /// A park.
   ///
-  static const Park = IriTerm.prevalidated('https://schema.org/Park');
+  static const Park = const IriTerm('https://schema.org/Park');
 
   /// IRI for schema:ParkingFacility
   ///
   /// A parking lot or other parking facility.
   ///
-  static const ParkingFacility = IriTerm.prevalidated(
+  static const ParkingFacility = const IriTerm(
     'https://schema.org/ParkingFacility',
   );
 
@@ -4695,7 +4391,7 @@ class Schema {
   ///
   /// A medical test performed by a laboratory that typically involves examination of a tissue sample by a pathologist.
   ///
-  static const PathologyTest = IriTerm.prevalidated(
+  static const PathologyTest = const IriTerm(
     'https://schema.org/PathologyTest',
   );
 
@@ -4703,33 +4399,31 @@ class Schema {
   ///
   /// A patient is any person recipient of health care services.
   ///
-  static const Patient = IriTerm.prevalidated('https://schema.org/Patient');
+  static const Patient = const IriTerm('https://schema.org/Patient');
 
   /// IRI for schema:PawnShop
   ///
   /// A shop that will buy, or lend money against the security of, personal possessions.
   ///
-  static const PawnShop = IriTerm.prevalidated('https://schema.org/PawnShop');
+  static const PawnShop = const IriTerm('https://schema.org/PawnShop');
 
   /// IRI for schema:PayAction
   ///
   /// An agent pays a price to a participant.
   ///
-  static const PayAction = IriTerm.prevalidated('https://schema.org/PayAction');
+  static const PayAction = const IriTerm('https://schema.org/PayAction');
 
   /// IRI for schema:PaymentCard
   ///
   /// A payment method using a credit, debit, store or other card to associate the payment with an account.
   ///
-  static const PaymentCard = IriTerm.prevalidated(
-    'https://schema.org/PaymentCard',
-  );
+  static const PaymentCard = const IriTerm('https://schema.org/PaymentCard');
 
   /// IRI for schema:PaymentChargeSpecification
   ///
   /// The costs of settling the payment using a particular payment method.
   ///
-  static const PaymentChargeSpecification = IriTerm.prevalidated(
+  static const PaymentChargeSpecification = const IriTerm(
     'https://schema.org/PaymentChargeSpecification',
   );
 
@@ -4738,7 +4432,7 @@ class Schema {
   /// A payment method is a standardized procedure for transferring the monetary amount for a purchase. Payment methods are characterized by the legal and technical structures used, and by the organization or group carrying out the transaction. The following legacy values should be accepted:
   /// \n\n* http://purl.org/goodrelations/v1#ByBankTransferInAdvance\n* http://purl.org/goodrelations/v1#ByInvoice\n* http://purl.org/goodrelations/v1#Cash\n* http://purl.org/goodrelations/v1#CheckInAdvance\n* http://purl.org/goodrelations/v1#COD\n* http://purl.org/goodrelations/v1#DirectDebit\n* http://purl.org/goodrelations/v1#GoogleCheckout\n* http://purl.org/goodrelations/v1#PayPal\n* http://purl.org/goodrelations/v1#PaySwarm\n\nStructured values are recommended for newer payment methods.
   ///
-  static const PaymentMethod = IriTerm.prevalidated(
+  static const PaymentMethod = const IriTerm(
     'https://schema.org/PaymentMethod',
   );
 
@@ -4746,7 +4440,7 @@ class Schema {
   ///
   /// The type of payment method, only for generic payment types, specific forms of payments, like card payment should be expressed using subclasses of PaymentMethod.
   ///
-  static const PaymentMethodType = IriTerm.prevalidated(
+  static const PaymentMethodType = const IriTerm(
     'https://schema.org/PaymentMethodType',
   );
 
@@ -4754,7 +4448,7 @@ class Schema {
   ///
   /// A Service to transfer funds from a person or organization to a beneficiary person or organization.
   ///
-  static const PaymentService = IriTerm.prevalidated(
+  static const PaymentService = const IriTerm(
     'https://schema.org/PaymentService',
   );
 
@@ -4762,7 +4456,7 @@ class Schema {
   ///
   /// A specific payment status. For example, PaymentDue, PaymentComplete, etc.
   ///
-  static const PaymentStatusType = IriTerm.prevalidated(
+  static const PaymentStatusType = const IriTerm(
     'https://schema.org/PaymentStatusType',
   );
 
@@ -4770,7 +4464,7 @@ class Schema {
   ///
   /// A set of characteristics belonging to people, e.g. who compose an item's target audience.
   ///
-  static const PeopleAudience = IriTerm.prevalidated(
+  static const PeopleAudience = const IriTerm(
     'https://schema.org/PeopleAudience',
   );
 
@@ -4778,7 +4472,7 @@ class Schema {
   ///
   /// The act of participating in performance arts.
   ///
-  static const PerformAction = IriTerm.prevalidated(
+  static const PerformAction = const IriTerm(
     'https://schema.org/PerformAction',
   );
 
@@ -4786,7 +4480,7 @@ class Schema {
   ///
   /// A PerformanceRole is a Role that some entity places with regard to a theatrical performance, e.g. in a Movie, TVSeries etc.
   ///
-  static const PerformanceRole = IriTerm.prevalidated(
+  static const PerformanceRole = const IriTerm(
     'https://schema.org/PerformanceRole',
   );
 
@@ -4794,7 +4488,7 @@ class Schema {
   ///
   /// A theater or other performing art center.
   ///
-  static const PerformingArtsTheater = IriTerm.prevalidated(
+  static const PerformingArtsTheater = const IriTerm(
     'https://schema.org/PerformingArtsTheater',
   );
 
@@ -4802,55 +4496,51 @@ class Schema {
   ///
   /// A performance group, such as a band, an orchestra, or a circus.
   ///
-  static const PerformingGroup = IriTerm.prevalidated(
+  static const PerformingGroup = const IriTerm(
     'https://schema.org/PerformingGroup',
   );
 
   /// IRI for schema:Periodical
   ///
-  /// A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal, or newspaper.\n\nSee also [blog post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html).
+  /// A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal, or newspaper.\n\nSee also [blog post](https://blog.schema.org/2014/09/02/schema-org-support-for-bibliographic-relationships-and-periodicals/).
   ///
-  static const Periodical = IriTerm.prevalidated(
-    'https://schema.org/Periodical',
-  );
+  static const Periodical = const IriTerm('https://schema.org/Periodical');
 
   /// IRI for schema:Permit
   ///
   /// A permit issued by an organization, e.g. a parking pass.
   ///
-  static const Permit = IriTerm.prevalidated('https://schema.org/Permit');
+  static const Permit = const IriTerm('https://schema.org/Permit');
 
   /// IRI for schema:Person
   ///
   /// A person (alive, dead, undead, or fictional).
   ///
-  static const Person = IriTerm.prevalidated('https://schema.org/Person');
+  static const Person = const IriTerm('https://schema.org/Person');
 
   /// IRI for schema:PetStore
   ///
   /// A pet store.
   ///
-  static const PetStore = IriTerm.prevalidated('https://schema.org/PetStore');
+  static const PetStore = const IriTerm('https://schema.org/PetStore');
 
   /// IRI for schema:Pharmacy
   ///
   /// A pharmacy or drugstore.
   ///
-  static const Pharmacy = IriTerm.prevalidated('https://schema.org/Pharmacy');
+  static const Pharmacy = const IriTerm('https://schema.org/Pharmacy');
 
   /// IRI for schema:Photograph
   ///
   /// A photograph.
   ///
-  static const Photograph = IriTerm.prevalidated(
-    'https://schema.org/Photograph',
-  );
+  static const Photograph = const IriTerm('https://schema.org/Photograph');
 
   /// IRI for schema:PhotographAction
   ///
   /// The act of capturing still images of objects using a camera.
   ///
-  static const PhotographAction = IriTerm.prevalidated(
+  static const PhotographAction = const IriTerm(
     'https://schema.org/PhotographAction',
   );
 
@@ -4858,7 +4548,7 @@ class Schema {
   ///
   /// Any bodily activity that enhances or maintains physical fitness and overall health and wellness. Includes activity that is part of daily living and routine, structured exercise, and exercise prescribed as part of a medical treatment or recovery plan.
   ///
-  static const PhysicalActivity = IriTerm.prevalidated(
+  static const PhysicalActivity = const IriTerm(
     'https://schema.org/PhysicalActivity',
   );
 
@@ -4866,7 +4556,7 @@ class Schema {
   ///
   /// Categories of physical activity, organized by physiologic classification.
   ///
-  static const PhysicalActivityCategory = IriTerm.prevalidated(
+  static const PhysicalActivityCategory = const IriTerm(
     'https://schema.org/PhysicalActivityCategory',
   );
 
@@ -4874,15 +4564,13 @@ class Schema {
   ///
   /// A type of physical examination of a patient performed by a physician.
   ///
-  static const PhysicalExam = IriTerm.prevalidated(
-    'https://schema.org/PhysicalExam',
-  );
+  static const PhysicalExam = const IriTerm('https://schema.org/PhysicalExam');
 
   /// IRI for schema:PhysicalTherapy
   ///
   /// A process of progressive physical care and rehabilitation aimed at improving a health condition.
   ///
-  static const PhysicalTherapy = IriTerm.prevalidated(
+  static const PhysicalTherapy = const IriTerm(
     'https://schema.org/PhysicalTherapy',
   );
 
@@ -4890,13 +4578,13 @@ class Schema {
   ///
   /// An individual physician or a physician's office considered as a {[MedicalOrganization]}.
   ///
-  static const Physician = IriTerm.prevalidated('https://schema.org/Physician');
+  static const Physician = const IriTerm('https://schema.org/Physician');
 
   /// IRI for schema:PhysiciansOffice
   ///
   /// A doctor's office or clinic.
   ///
-  static const PhysiciansOffice = IriTerm.prevalidated(
+  static const PhysiciansOffice = const IriTerm(
     'https://schema.org/PhysiciansOffice',
   );
 
@@ -4904,13 +4592,13 @@ class Schema {
   ///
   /// Entities that have a somewhat fixed, physical extension.
   ///
-  static const Place = IriTerm.prevalidated('https://schema.org/Place');
+  static const Place = const IriTerm('https://schema.org/Place');
 
   /// IRI for schema:PlaceOfWorship
   ///
   /// Place of worship, such as a church, synagogue, or mosque.
   ///
-  static const PlaceOfWorship = IriTerm.prevalidated(
+  static const PlaceOfWorship = const IriTerm(
     'https://schema.org/PlaceOfWorship',
   );
 
@@ -4918,29 +4606,25 @@ class Schema {
   ///
   /// The act of planning the execution of an event/task/action/reservation/plan to a future date.
   ///
-  static const PlanAction = IriTerm.prevalidated(
-    'https://schema.org/PlanAction',
-  );
+  static const PlanAction = const IriTerm('https://schema.org/PlanAction');
 
   /// IRI for schema:Play
   ///
   /// A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note: A performance of a Play would be a {[TheaterEvent]} or {[BroadcastEvent]} - the *Play* being the {[workPerformed]}.
   ///
-  static const Play = IriTerm.prevalidated('https://schema.org/Play');
+  static const Play = const IriTerm('https://schema.org/Play');
 
   /// IRI for schema:PlayAction
   ///
   /// The act of playing/exercising/training/performing for enjoyment, leisure, recreation, competition or exercise.\n\nRelated actions:\n\n* {[ListenAction]}: Unlike ListenAction (which is under ConsumeAction), PlayAction refers to performing for an audience or at an event, rather than consuming music.\n* {[WatchAction]}: Unlike WatchAction (which is under ConsumeAction), PlayAction refers to showing/displaying for an audience or at an event, rather than consuming visual content.
   ///
-  static const PlayAction = IriTerm.prevalidated(
-    'https://schema.org/PlayAction',
-  );
+  static const PlayAction = const IriTerm('https://schema.org/PlayAction');
 
   /// IRI for schema:PlayGameAction
   ///
   /// The act of playing a video game.
   ///
-  static const PlayGameAction = IriTerm.prevalidated(
+  static const PlayGameAction = const IriTerm(
     'https://schema.org/PlayGameAction',
   );
 
@@ -4948,21 +4632,19 @@ class Schema {
   ///
   /// A playground.
   ///
-  static const Playground = IriTerm.prevalidated(
-    'https://schema.org/Playground',
-  );
+  static const Playground = const IriTerm('https://schema.org/Playground');
 
   /// IRI for schema:Plumber
   ///
   /// A plumbing service.
   ///
-  static const Plumber = IriTerm.prevalidated('https://schema.org/Plumber');
+  static const Plumber = const IriTerm('https://schema.org/Plumber');
 
   /// IRI for schema:PodcastEpisode
   ///
   /// A single episode of a podcast series.
   ///
-  static const PodcastEpisode = IriTerm.prevalidated(
+  static const PodcastEpisode = const IriTerm(
     'https://schema.org/PodcastEpisode',
   );
 
@@ -4970,7 +4652,7 @@ class Schema {
   ///
   /// A single season of a podcast. Many podcasts do not break down into separate seasons. In that case, PodcastSeries should be used.
   ///
-  static const PodcastSeason = IriTerm.prevalidated(
+  static const PodcastSeason = const IriTerm(
     'https://schema.org/PodcastSeason',
   );
 
@@ -4978,7 +4660,7 @@ class Schema {
   ///
   /// A podcast is an episodic series of digital audio or video files which a user can download and listen to.
   ///
-  static const PodcastSeries = IriTerm.prevalidated(
+  static const PodcastSeries = const IriTerm(
     'https://schema.org/PodcastSeries',
   );
 
@@ -4986,7 +4668,7 @@ class Schema {
   ///
   /// A police station.
   ///
-  static const PoliceStation = IriTerm.prevalidated(
+  static const PoliceStation = const IriTerm(
     'https://schema.org/PoliceStation',
   );
 
@@ -4994,7 +4676,7 @@ class Schema {
   ///
   /// Organization: Political Party.
   ///
-  static const PoliticalParty = IriTerm.prevalidated(
+  static const PoliticalParty = const IriTerm(
     'https://schema.org/PoliticalParty',
   );
 
@@ -5002,21 +4684,19 @@ class Schema {
   ///
   /// A pond.
   ///
-  static const Pond = IriTerm.prevalidated('https://schema.org/Pond');
+  static const Pond = const IriTerm('https://schema.org/Pond');
 
   /// IRI for schema:PostOffice
   ///
   /// A post office.
   ///
-  static const PostOffice = IriTerm.prevalidated(
-    'https://schema.org/PostOffice',
-  );
+  static const PostOffice = const IriTerm('https://schema.org/PostOffice');
 
   /// IRI for schema:PostalAddress
   ///
   /// The mailing address.
   ///
-  static const PostalAddress = IriTerm.prevalidated(
+  static const PostalAddress = const IriTerm(
     'https://schema.org/PostalAddress',
   );
 
@@ -5024,7 +4704,7 @@ class Schema {
   ///
   /// Indicates a range of postal codes, usually defined as the set of valid codes between {[postalCodeBegin]} and {[postalCodeEnd]}, inclusively.
   ///
-  static const PostalCodeRangeSpecification = IriTerm.prevalidated(
+  static const PostalCodeRangeSpecification = const IriTerm(
     'https://schema.org/PostalCodeRangeSpecification',
   );
 
@@ -5032,13 +4712,13 @@ class Schema {
   ///
   /// A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something.
   ///
-  static const Poster = IriTerm.prevalidated('https://schema.org/Poster');
+  static const Poster = const IriTerm('https://schema.org/Poster');
 
   /// IRI for schema:PreOrderAction
   ///
   /// An agent orders a (not yet released) object/product/service to be delivered/sent.
   ///
-  static const PreOrderAction = IriTerm.prevalidated(
+  static const PreOrderAction = const IriTerm(
     'https://schema.org/PreOrderAction',
   );
 
@@ -5046,7 +4726,7 @@ class Schema {
   ///
   /// The act of inserting at the beginning if an ordered collection.
   ///
-  static const PrependAction = IriTerm.prevalidated(
+  static const PrependAction = const IriTerm(
     'https://schema.org/PrependAction',
   );
 
@@ -5054,13 +4734,13 @@ class Schema {
   ///
   /// A preschool.
   ///
-  static const Preschool = IriTerm.prevalidated('https://schema.org/Preschool');
+  static const Preschool = const IriTerm('https://schema.org/Preschool');
 
   /// IRI for schema:PresentationDigitalDocument
   ///
   /// A file containing slides or used for a presentation.
   ///
-  static const PresentationDigitalDocument = IriTerm.prevalidated(
+  static const PresentationDigitalDocument = const IriTerm(
     'https://schema.org/PresentationDigitalDocument',
   );
 
@@ -5068,7 +4748,7 @@ class Schema {
   ///
   /// An indication for preventing an underlying condition, symptom, etc.
   ///
-  static const PreventionIndication = IriTerm.prevalidated(
+  static const PreventionIndication = const IriTerm(
     'https://schema.org/PreventionIndication',
   );
 
@@ -5076,7 +4756,7 @@ class Schema {
   ///
   /// Enumerates different price components that together make up the total price for an offered product.
   ///
-  static const PriceComponentTypeEnumeration = IriTerm.prevalidated(
+  static const PriceComponentTypeEnumeration = const IriTerm(
     'https://schema.org/PriceComponentTypeEnumeration',
   );
 
@@ -5084,7 +4764,7 @@ class Schema {
   ///
   /// A structured value representing a price or price range. Typically, only the subclasses of this type are used for markup. It is recommended to use {[MonetaryAmount]} to describe independent amounts of money such as a salary, credit card limits, etc.
   ///
-  static const PriceSpecification = IriTerm.prevalidated(
+  static const PriceSpecification = const IriTerm(
     'https://schema.org/PriceSpecification',
   );
 
@@ -5092,7 +4772,7 @@ class Schema {
   ///
   /// Enumerates different price types, for example list price, invoice price, and sale price.
   ///
-  static const PriceTypeEnumeration = IriTerm.prevalidated(
+  static const PriceTypeEnumeration = const IriTerm(
     'https://schema.org/PriceTypeEnumeration',
   );
 
@@ -5100,13 +4780,13 @@ class Schema {
   ///
   /// Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.
   ///
-  static const Product = IriTerm.prevalidated('https://schema.org/Product');
+  static const Product = const IriTerm('https://schema.org/Product');
 
   /// IRI for schema:ProductCollection
   ///
   /// A set of products (either {[ProductGroup]}s or specific variants) that are listed together e.g. in an {[Offer]}.
   ///
-  static const ProductCollection = IriTerm.prevalidated(
+  static const ProductCollection = const IriTerm(
     'https://schema.org/ProductCollection',
   );
 
@@ -5116,17 +4796,13 @@ class Schema {
   ///
   /// While a ProductGroup itself is not directly offered for sale, the various varying products that it represents can be. The ProductGroup serves as a prototype or template, standing in for all of the products who have an {[isVariantOf]} relationship to it. As such, properties (including additional types) can be applied to the ProductGroup to represent characteristics shared by each of the (possibly very many) variants. Properties that reference a ProductGroup are not included in this mechanism; neither are the following specific properties {[variesBy]}, {[hasVariant]}, {[url]}.
   ///
-  static const ProductGroup = IriTerm.prevalidated(
-    'https://schema.org/ProductGroup',
-  );
+  static const ProductGroup = const IriTerm('https://schema.org/ProductGroup');
 
   /// IRI for schema:ProductModel
   ///
   /// A datasheet or vendor specification of a product (in the sense of a prototypical description).
   ///
-  static const ProductModel = IriTerm.prevalidated(
-    'https://schema.org/ProductModel',
-  );
+  static const ProductModel = const IriTerm('https://schema.org/ProductModel');
 
   /// IRI for schema:ProfessionalService
   ///
@@ -5134,7 +4810,7 @@ class Schema {
   /// {[AccountingService]}, {[Attorney]}, {[Notary]}, as well as types for several kinds of {[HomeAndConstructionBusiness]}: {[Electrician]}, {[GeneralContractor]},
   /// {[HousePainter]}, {[Locksmith]}, {[Plumber]}, {[RoofingContractor]}. {[LegalService]} was introduced as a more inclusive supertype of {[Attorney]}.
   ///
-  static const ProfessionalService = IriTerm.prevalidated(
+  static const ProfessionalService = const IriTerm(
     'https://schema.org/ProfessionalService',
   );
 
@@ -5142,15 +4818,13 @@ class Schema {
   ///
   /// Web page type: Profile page.
   ///
-  static const ProfilePage = IriTerm.prevalidated(
-    'https://schema.org/ProfilePage',
-  );
+  static const ProfilePage = const IriTerm('https://schema.org/ProfilePage');
 
   /// IRI for schema:ProgramMembership
   ///
   /// Used to describe membership in a loyalty programs (e.g. "StarAliance"), traveler clubs (e.g. "AAA"), purchase clubs ("Safeway Club"), etc.
   ///
-  static const ProgramMembership = IriTerm.prevalidated(
+  static const ProgramMembership = const IriTerm(
     'https://schema.org/ProgramMembership',
   );
 
@@ -5160,13 +4834,13 @@ class Schema {
   /// Use properties from {[Organization]}, {[subOrganization]}/{[parentOrganization]} to indicate project sub-structures.
   ///
   ///
-  static const Project = IriTerm.prevalidated('https://schema.org/Project');
+  static const Project = const IriTerm('https://schema.org/Project');
 
   /// IRI for schema:PronounceableText
   ///
   /// Data type: PronounceableText.
   ///
-  static const PronounceableText = IriTerm.prevalidated(
+  static const PronounceableText = const IriTerm(
     'https://schema.org/PronounceableText',
   );
 
@@ -5174,14 +4848,14 @@ class Schema {
   ///
   /// A property, used to indicate attributes and relationships of some Thing; equivalent to rdf:Property.
   ///
-  static const Property = IriTerm.prevalidated('https://schema.org/Property');
+  static const Property = const IriTerm('https://schema.org/Property');
 
   /// IRI for schema:PropertyValue
   ///
   /// A property-value pair, e.g. representing a feature of a product or place. Use the 'name' property for the name of the property. If there is an additional human-readable version of the value, put that into the 'description' property.\n\n Always use specific schema.org properties when a) they exist and b) you can populate them. Using PropertyValue as a substitute will typically not trigger the same effect as using the original, specific property.
   ///
   ///
-  static const PropertyValue = IriTerm.prevalidated(
+  static const PropertyValue = const IriTerm(
     'https://schema.org/PropertyValue',
   );
 
@@ -5189,7 +4863,7 @@ class Schema {
   ///
   /// A Property value specification.
   ///
-  static const PropertyValueSpecification = IriTerm.prevalidated(
+  static const PropertyValueSpecification = const IriTerm(
     'https://schema.org/PropertyValueSpecification',
   );
 
@@ -5197,13 +4871,13 @@ class Schema {
   ///
   /// Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group) or even a single molecule that one can point to are all of type :Protein. A protein can thus be a subclass of another protein, e.g. :Protein as a UniProt record can have multiple isoforms inside it which would also be :Protein. They can be imagined, synthetic, hypothetical or naturally occurring.
   ///
-  static const Protein = IriTerm.prevalidated('https://schema.org/Protein');
+  static const Protein = const IriTerm('https://schema.org/Protein');
 
   /// IRI for schema:PsychologicalTreatment
   ///
   /// A process of care relying upon counseling, dialogue and communication  aimed at improving a mental health condition without use of drugs.
   ///
-  static const PsychologicalTreatment = IriTerm.prevalidated(
+  static const PsychologicalTreatment = const IriTerm(
     'https://schema.org/PsychologicalTreatment',
   );
 
@@ -5211,7 +4885,7 @@ class Schema {
   ///
   /// A public swimming pool.
   ///
-  static const PublicSwimmingPool = IriTerm.prevalidated(
+  static const PublicSwimmingPool = const IriTerm(
     'https://schema.org/PublicSwimmingPool',
   );
 
@@ -5219,15 +4893,13 @@ class Schema {
   ///
   /// A public toilet is a room or small building containing one or more toilets (and possibly also urinals) which is available for use by the general public, or by customers or employees of certain businesses.
   ///
-  static const PublicToilet = IriTerm.prevalidated(
-    'https://schema.org/PublicToilet',
-  );
+  static const PublicToilet = const IriTerm('https://schema.org/PublicToilet');
 
   /// IRI for schema:PublicationEvent
   ///
   /// A PublicationEvent corresponds indifferently to the event of publication for a CreativeWork of any type, e.g. a broadcast event, an on-demand event, a book/journal publication via a variety of delivery media.
   ///
-  static const PublicationEvent = IriTerm.prevalidated(
+  static const PublicationEvent = const IriTerm(
     'https://schema.org/PublicationEvent',
   );
 
@@ -5235,7 +4907,7 @@ class Schema {
   ///
   /// A part of a successively published publication such as a periodical or publication volume, often numbered, usually containing a grouping of works such as articles.\n\nSee also [blog post](https://blog-schema.org/2014/09/02/schema-org-support-for-bibliographic-relationships-and-periodicals/).
   ///
-  static const PublicationIssue = IriTerm.prevalidated(
+  static const PublicationIssue = const IriTerm(
     'https://schema.org/PublicationIssue',
   );
 
@@ -5243,7 +4915,7 @@ class Schema {
   ///
   /// A part of a successively published publication such as a periodical or multi-volume work, often numbered. It may represent a time span, such as a year.\n\nSee also [blog post](https://blog-schema.org/2014/09/02/schema-org-support-for-bibliographic-relationships-and-periodicals/).
   ///
-  static const PublicationVolume = IriTerm.prevalidated(
+  static const PublicationVolume = const IriTerm(
     'https://schema.org/PublicationVolume',
   );
 
@@ -5251,21 +4923,19 @@ class Schema {
   ///
   /// Enumerates a purchase type for an item.
   ///
-  static const PurchaseType = IriTerm.prevalidated(
-    'https://schema.org/PurchaseType',
-  );
+  static const PurchaseType = const IriTerm('https://schema.org/PurchaseType');
 
   /// IRI for schema:QAPage
   ///
   /// A QAPage is a WebPage focussed on a specific Question and its Answer(s), e.g. in a question answering site or documenting Frequently Asked Questions (FAQs).
   ///
-  static const QAPage = IriTerm.prevalidated('https://schema.org/QAPage');
+  static const QAPage = const IriTerm('https://schema.org/QAPage');
 
   /// IRI for schema:QualitativeValue
   ///
   /// A predefined value for a product characteristic, e.g. the power cord plug type 'US' or the garment sizes 'S', 'M', 'L', and 'XL'.
   ///
-  static const QualitativeValue = IriTerm.prevalidated(
+  static const QualitativeValue = const IriTerm(
     'https://schema.org/QualitativeValue',
   );
 
@@ -5273,7 +4943,7 @@ class Schema {
   ///
   /// A point value or interval for product characteristics and other purposes.
   ///
-  static const QuantitativeValue = IriTerm.prevalidated(
+  static const QuantitativeValue = const IriTerm(
     'https://schema.org/QuantitativeValue',
   );
 
@@ -5281,7 +4951,7 @@ class Schema {
   ///
   /// A statistical distribution of values.
   ///
-  static const QuantitativeValueDistribution = IriTerm.prevalidated(
+  static const QuantitativeValueDistribution = const IriTerm(
     'https://schema.org/QuantitativeValueDistribution',
   );
 
@@ -5289,45 +4959,43 @@ class Schema {
   ///
   /// Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are entities like '3 kg' or '4 milligrams'.
   ///
-  static const Quantity = IriTerm.prevalidated('https://schema.org/Quantity');
+  static const Quantity = const IriTerm('https://schema.org/Quantity');
 
   /// IRI for schema:Question
   ///
   /// A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document.
   ///
-  static const Question = IriTerm.prevalidated('https://schema.org/Question');
+  static const Question = const IriTerm('https://schema.org/Question');
 
   /// IRI for schema:Quiz
   ///
   /// Quiz: A test of knowledge, skills and abilities.
   ///
-  static const Quiz = IriTerm.prevalidated('https://schema.org/Quiz');
+  static const Quiz = const IriTerm('https://schema.org/Quiz');
 
   /// IRI for schema:Quotation
   ///
   /// A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use {[isBasedOn]} to link to source/origin. The {[recordedIn]} property can be used to reference a Quotation from an {[Event]}.
   ///
-  static const Quotation = IriTerm.prevalidated('https://schema.org/Quotation');
+  static const Quotation = const IriTerm('https://schema.org/Quotation');
 
   /// IRI for schema:QuoteAction
   ///
   /// An agent quotes/estimates/appraises an object/product/service with a price at a location/store.
   ///
-  static const QuoteAction = IriTerm.prevalidated(
-    'https://schema.org/QuoteAction',
-  );
+  static const QuoteAction = const IriTerm('https://schema.org/QuoteAction');
 
   /// IRI for schema:RVPark
   ///
   /// A place offering space for "Recreational Vehicles", Caravans, mobile homes and the like.
   ///
-  static const RVPark = IriTerm.prevalidated('https://schema.org/RVPark');
+  static const RVPark = const IriTerm('https://schema.org/RVPark');
 
   /// IRI for schema:RadiationTherapy
   ///
   /// A process of care using radiation aimed at improving a health condition.
   ///
-  static const RadiationTherapy = IriTerm.prevalidated(
+  static const RadiationTherapy = const IriTerm(
     'https://schema.org/RadiationTherapy',
   );
 
@@ -5335,7 +5003,7 @@ class Schema {
   ///
   /// A delivery service through which radio content is provided via broadcast over the air or online.
   ///
-  static const RadioBroadcastService = IriTerm.prevalidated(
+  static const RadioBroadcastService = const IriTerm(
     'https://schema.org/RadioBroadcastService',
   );
 
@@ -5343,75 +5011,61 @@ class Schema {
   ///
   /// A unique instance of a radio BroadcastService on a CableOrSatelliteService lineup.
   ///
-  static const RadioChannel = IriTerm.prevalidated(
-    'https://schema.org/RadioChannel',
-  );
+  static const RadioChannel = const IriTerm('https://schema.org/RadioChannel');
 
   /// IRI for schema:RadioClip
   ///
   /// A short radio program or a segment/part of a radio program.
   ///
-  static const RadioClip = IriTerm.prevalidated('https://schema.org/RadioClip');
+  static const RadioClip = const IriTerm('https://schema.org/RadioClip');
 
   /// IRI for schema:RadioEpisode
   ///
   /// A radio episode which can be part of a series or season.
   ///
-  static const RadioEpisode = IriTerm.prevalidated(
-    'https://schema.org/RadioEpisode',
-  );
+  static const RadioEpisode = const IriTerm('https://schema.org/RadioEpisode');
 
   /// IRI for schema:RadioSeason
   ///
   /// Season dedicated to radio broadcast and associated online delivery.
   ///
-  static const RadioSeason = IriTerm.prevalidated(
-    'https://schema.org/RadioSeason',
-  );
+  static const RadioSeason = const IriTerm('https://schema.org/RadioSeason');
 
   /// IRI for schema:RadioSeries
   ///
   /// CreativeWorkSeries dedicated to radio broadcast and associated online delivery.
   ///
-  static const RadioSeries = IriTerm.prevalidated(
-    'https://schema.org/RadioSeries',
-  );
+  static const RadioSeries = const IriTerm('https://schema.org/RadioSeries');
 
   /// IRI for schema:RadioStation
   ///
   /// A radio station.
   ///
-  static const RadioStation = IriTerm.prevalidated(
-    'https://schema.org/RadioStation',
-  );
+  static const RadioStation = const IriTerm('https://schema.org/RadioStation');
 
   /// IRI for schema:Rating
   ///
   /// A rating is an evaluation on a numeric scale, such as 1 to 5 stars.
   ///
-  static const Rating = IriTerm.prevalidated('https://schema.org/Rating');
+  static const Rating = const IriTerm('https://schema.org/Rating');
 
   /// IRI for schema:ReactAction
   ///
   /// The act of responding instinctively and emotionally to an object, expressing a sentiment.
   ///
-  static const ReactAction = IriTerm.prevalidated(
-    'https://schema.org/ReactAction',
-  );
+  static const ReactAction = const IriTerm('https://schema.org/ReactAction');
 
   /// IRI for schema:ReadAction
   ///
   /// The act of consuming written content.
   ///
-  static const ReadAction = IriTerm.prevalidated(
-    'https://schema.org/ReadAction',
-  );
+  static const ReadAction = const IriTerm('https://schema.org/ReadAction');
 
   /// IRI for schema:RealEstateAgent
   ///
   /// A real-estate agent.
   ///
-  static const RealEstateAgent = IriTerm.prevalidated(
+  static const RealEstateAgent = const IriTerm(
     'https://schema.org/RealEstateAgent',
   );
 
@@ -5421,7 +5075,7 @@ class Schema {
   /// The {[RealEstateListing]} type itself represents the overall listing, as manifested in some {[WebPage]}.
   ///
   ///
-  static const RealEstateListing = IriTerm.prevalidated(
+  static const RealEstateListing = const IriTerm(
     'https://schema.org/RealEstateListing',
   );
 
@@ -5429,7 +5083,7 @@ class Schema {
   ///
   /// The act of physically/electronically taking delivery of an object that has been transferred from an origin to a destination. Reciprocal of SendAction.\n\nRelated actions:\n\n* {[SendAction]}: The reciprocal of ReceiveAction.\n* {[TakeAction]}: Unlike TakeAction, ReceiveAction does not imply that the ownership has been transferred (e.g. I can receive a package, but it does not mean the package is now mine).
   ///
-  static const ReceiveAction = IriTerm.prevalidated(
+  static const ReceiveAction = const IriTerm(
     'https://schema.org/ReceiveAction',
   );
 
@@ -5437,13 +5091,13 @@ class Schema {
   ///
   /// A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via {[suitableForDiet]}. The {[keywords]} property can also be used to add more detail.
   ///
-  static const Recipe = IriTerm.prevalidated('https://schema.org/Recipe');
+  static const Recipe = const IriTerm('https://schema.org/Recipe');
 
   /// IRI for schema:Recommendation
   ///
   /// {[Recommendation]} is a type of {[Review]} that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concrete things, as in the case of a ranked list or product guide. A {[Guide]} may list multiple recommendations for different categories. For example, in a {[Guide]} about which TVs to buy, the author may have several {[Recommendation]}s.
   ///
-  static const Recommendation = IriTerm.prevalidated(
+  static const Recommendation = const IriTerm(
     'https://schema.org/Recommendation',
   );
 
@@ -5451,7 +5105,7 @@ class Schema {
   ///
   /// A recommended dosing schedule for a drug or supplement as prescribed or recommended by an authority or by the drug/supplement's manufacturer. Capture the recommending authority in the recognizingAuthority property of MedicalEntity.
   ///
-  static const RecommendedDoseSchedule = IriTerm.prevalidated(
+  static const RecommendedDoseSchedule = const IriTerm(
     'https://schema.org/RecommendedDoseSchedule',
   );
 
@@ -5459,7 +5113,7 @@ class Schema {
   ///
   /// A recycling center.
   ///
-  static const RecyclingCenter = IriTerm.prevalidated(
+  static const RecyclingCenter = const IriTerm(
     'https://schema.org/RecyclingCenter',
   );
 
@@ -5467,7 +5121,7 @@ class Schema {
   ///
   /// Enumerates several kinds of product return refund types.
   ///
-  static const RefundTypeEnumeration = IriTerm.prevalidated(
+  static const RefundTypeEnumeration = const IriTerm(
     'https://schema.org/RefundTypeEnumeration',
   );
 
@@ -5475,7 +5129,7 @@ class Schema {
   ///
   /// The act of registering to be a user of a service, product or web page.\n\nRelated actions:\n\n* {[JoinAction]}: Unlike JoinAction, RegisterAction implies you are registering to be a user of a service, *not* a group/team of people.\n* {[FollowAction]}: Unlike FollowAction, RegisterAction doesn't imply that the agent is expecting to poll for updates from the object.\n* {[SubscribeAction]}: Unlike SubscribeAction, RegisterAction doesn't imply that the agent is expecting updates from the object.
   ///
-  static const RegisterAction = IriTerm.prevalidated(
+  static const RegisterAction = const IriTerm(
     'https://schema.org/RegisterAction',
   );
 
@@ -5483,23 +5137,19 @@ class Schema {
   ///
   /// The act of rejecting to/adopting an object.\n\nRelated actions:\n\n* {[AcceptAction]}: The antonym of RejectAction.
   ///
-  static const RejectAction = IriTerm.prevalidated(
-    'https://schema.org/RejectAction',
-  );
+  static const RejectAction = const IriTerm('https://schema.org/RejectAction');
 
   /// IRI for schema:RentAction
   ///
   /// The act of giving money in return for temporary use, but not ownership, of an object such as a vehicle or property. For example, an agent rents a property from a landlord in exchange for a periodic payment.
   ///
-  static const RentAction = IriTerm.prevalidated(
-    'https://schema.org/RentAction',
-  );
+  static const RentAction = const IriTerm('https://schema.org/RentAction');
 
   /// IRI for schema:RentalCarReservation
   ///
   /// A reservation for a rental car.\n\nNote: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations.
   ///
-  static const RentalCarReservation = IriTerm.prevalidated(
+  static const RentalCarReservation = const IriTerm(
     'https://schema.org/RentalCarReservation',
   );
 
@@ -5507,7 +5157,7 @@ class Schema {
   ///
   /// A structured value representing repayment.
   ///
-  static const RepaymentSpecification = IriTerm.prevalidated(
+  static const RepaymentSpecification = const IriTerm(
     'https://schema.org/RepaymentSpecification',
   );
 
@@ -5515,7 +5165,7 @@ class Schema {
   ///
   /// The act of editing a recipient by replacing an old object with a new object.
   ///
-  static const ReplaceAction = IriTerm.prevalidated(
+  static const ReplaceAction = const IriTerm(
     'https://schema.org/ReplaceAction',
   );
 
@@ -5523,15 +5173,13 @@ class Schema {
   ///
   /// The act of responding to a question/message asked/sent by the object. Related to {[AskAction]}.\n\nRelated actions:\n\n* {[AskAction]}: Appears generally as an origin of a ReplyAction.
   ///
-  static const ReplyAction = IriTerm.prevalidated(
-    'https://schema.org/ReplyAction',
-  );
+  static const ReplyAction = const IriTerm('https://schema.org/ReplyAction');
 
   /// IRI for schema:Report
   ///
   /// A Report generated by governmental or non-governmental organization.
   ///
-  static const Report = IriTerm.prevalidated('https://schema.org/Report');
+  static const Report = const IriTerm('https://schema.org/Report');
 
   /// IRI for schema:ReportageNewsArticle
   ///
@@ -5545,7 +5193,7 @@ class Schema {
   /// A {[ReportageNewsArticle]} which goes deeper into analysis can also be marked with an additional type of {[AnalysisNewsArticle]}.
   ///
   ///
-  static const ReportageNewsArticle = IriTerm.prevalidated(
+  static const ReportageNewsArticle = const IriTerm(
     'https://schema.org/ReportageNewsArticle',
   );
 
@@ -5553,7 +5201,7 @@ class Schema {
   ///
   /// A patient-reported or observed dosing schedule for a drug or supplement.
   ///
-  static const ReportedDoseSchedule = IriTerm.prevalidated(
+  static const ReportedDoseSchedule = const IriTerm(
     'https://schema.org/ReportedDoseSchedule',
   );
 
@@ -5561,7 +5209,7 @@ class Schema {
   ///
   /// A Research Organization (e.g. scientific institute, research company).
   ///
-  static const ResearchOrganization = IriTerm.prevalidated(
+  static const ResearchOrganization = const IriTerm(
     'https://schema.org/ResearchOrganization',
   );
 
@@ -5569,7 +5217,7 @@ class Schema {
   ///
   /// A Research project.
   ///
-  static const ResearchProject = IriTerm.prevalidated(
+  static const ResearchProject = const IriTerm(
     'https://schema.org/ResearchProject',
   );
 
@@ -5577,23 +5225,19 @@ class Schema {
   ///
   /// Researchers.
   ///
-  static const Researcher = IriTerm.prevalidated(
-    'https://schema.org/Researcher',
-  );
+  static const Researcher = const IriTerm('https://schema.org/Researcher');
 
   /// IRI for schema:Reservation
   ///
   /// Describes a reservation for travel, dining or an event. Some reservations require tickets. \n\nNote: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, restaurant reservations, flights, or rental cars, use {[Offer]}.
   ///
-  static const Reservation = IriTerm.prevalidated(
-    'https://schema.org/Reservation',
-  );
+  static const Reservation = const IriTerm('https://schema.org/Reservation');
 
   /// IRI for schema:ReservationPackage
   ///
   /// A group of multiple reservations with common values for all sub-reservations.
   ///
-  static const ReservationPackage = IriTerm.prevalidated(
+  static const ReservationPackage = const IriTerm(
     'https://schema.org/ReservationPackage',
   );
 
@@ -5601,7 +5245,7 @@ class Schema {
   ///
   /// Enumerated status values for Reservation.
   ///
-  static const ReservationStatusType = IriTerm.prevalidated(
+  static const ReservationStatusType = const IriTerm(
     'https://schema.org/ReservationStatusType',
   );
 
@@ -5609,7 +5253,7 @@ class Schema {
   ///
   /// Reserving a concrete object.\n\nRelated actions:\n\n* {[ScheduleAction]}: Unlike ScheduleAction, ReserveAction reserves concrete objects (e.g. a table, a hotel) towards a time slot / spatial allocation.
   ///
-  static const ReserveAction = IriTerm.prevalidated(
+  static const ReserveAction = const IriTerm(
     'https://schema.org/ReserveAction',
   );
 
@@ -5617,13 +5261,13 @@ class Schema {
   ///
   /// A reservoir of water, typically an artificially created lake, like the Lake Kariba reservoir.
   ///
-  static const Reservoir = IriTerm.prevalidated('https://schema.org/Reservoir');
+  static const Reservoir = const IriTerm('https://schema.org/Reservoir');
 
   /// IRI for schema:Residence
   ///
   /// The place where a person lives.
   ///
-  static const Residence = IriTerm.prevalidated('https://schema.org/Residence');
+  static const Residence = const IriTerm('https://schema.org/Residence');
 
   /// IRI for schema:Resort
   ///
@@ -5632,21 +5276,19 @@ class Schema {
   /// See also the <a href="/docs/hotels.html">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.
   ///
   ///
-  static const Resort = IriTerm.prevalidated('https://schema.org/Resort');
+  static const Resort = const IriTerm('https://schema.org/Resort');
 
   /// IRI for schema:Restaurant
   ///
   /// A restaurant.
   ///
-  static const Restaurant = IriTerm.prevalidated(
-    'https://schema.org/Restaurant',
-  );
+  static const Restaurant = const IriTerm('https://schema.org/Restaurant');
 
   /// IRI for schema:RestrictedDiet
   ///
   /// A diet restricted to certain foods or preparations for cultural, religious, health or lifestyle reasons.
   ///
-  static const RestrictedDiet = IriTerm.prevalidated(
+  static const RestrictedDiet = const IriTerm(
     'https://schema.org/RestrictedDiet',
   );
 
@@ -5654,23 +5296,19 @@ class Schema {
   ///
   /// The act of resuming a device or application which was formerly paused (e.g. resume music playback or resume a timer).
   ///
-  static const ResumeAction = IriTerm.prevalidated(
-    'https://schema.org/ResumeAction',
-  );
+  static const ResumeAction = const IriTerm('https://schema.org/ResumeAction');
 
   /// IRI for schema:ReturnAction
   ///
   /// The act of returning to the origin that which was previously received (concrete objects) or taken (ownership).
   ///
-  static const ReturnAction = IriTerm.prevalidated(
-    'https://schema.org/ReturnAction',
-  );
+  static const ReturnAction = const IriTerm('https://schema.org/ReturnAction');
 
   /// IRI for schema:ReturnFeesEnumeration
   ///
   /// Enumerates several kinds of policies for product return fees.
   ///
-  static const ReturnFeesEnumeration = IriTerm.prevalidated(
+  static const ReturnFeesEnumeration = const IriTerm(
     'https://schema.org/ReturnFeesEnumeration',
   );
 
@@ -5678,7 +5316,7 @@ class Schema {
   ///
   /// Enumerates several types of return labels for product returns.
   ///
-  static const ReturnLabelSourceEnumeration = IriTerm.prevalidated(
+  static const ReturnLabelSourceEnumeration = const IriTerm(
     'https://schema.org/ReturnLabelSourceEnumeration',
   );
 
@@ -5686,7 +5324,7 @@ class Schema {
   ///
   /// Enumerates several types of product return methods.
   ///
-  static const ReturnMethodEnumeration = IriTerm.prevalidated(
+  static const ReturnMethodEnumeration = const IriTerm(
     'https://schema.org/ReturnMethodEnumeration',
   );
 
@@ -5694,21 +5332,19 @@ class Schema {
   ///
   /// A review of an item - for example, of a restaurant, movie, or store.
   ///
-  static const Review = IriTerm.prevalidated('https://schema.org/Review');
+  static const Review = const IriTerm('https://schema.org/Review');
 
   /// IRI for schema:ReviewAction
   ///
   /// The act of producing a balanced opinion about the object for an audience. An agent reviews an object with participants resulting in a review.
   ///
-  static const ReviewAction = IriTerm.prevalidated(
-    'https://schema.org/ReviewAction',
-  );
+  static const ReviewAction = const IriTerm('https://schema.org/ReviewAction');
 
   /// IRI for schema:ReviewNewsArticle
   ///
   /// A {[NewsArticle]} and {[CriticReview]} providing a professional critic's assessment of a service, product, performance, or artistic or literary work.
   ///
-  static const ReviewNewsArticle = IriTerm.prevalidated(
+  static const ReviewNewsArticle = const IriTerm(
     'https://schema.org/ReviewNewsArticle',
   );
 
@@ -5716,21 +5352,21 @@ class Schema {
   ///
   /// A river (for example, the broad majestic Shannon).
   ///
-  static const RiverBodyOfWater = IriTerm.prevalidated(
+  static const RiverBodyOfWater = const IriTerm(
     'https://schema.org/RiverBodyOfWater',
   );
 
   /// IRI for schema:Role
   ///
-  /// Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a particular time period. Or that a Person's 'actor' role in a Movie was for some particular characterName. Such properties can be attached to a Role entity, which is then associated with the main entities using ordinary properties like 'member' or 'actor'.\n\nSee also [blog post](http://blog.schema.org/2014/06/introducing-role.html).
+  /// Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a particular time period. Or that a Person's 'actor' role in a Movie was for some particular characterName. Such properties can be attached to a Role entity, which is then associated with the main entities using ordinary properties like 'member' or 'actor'.\n\nSee also [blog post](https://blog.schema.org/2014/06/16/introducing-role/).
   ///
-  static const Role = IriTerm.prevalidated('https://schema.org/Role');
+  static const Role = const IriTerm('https://schema.org/Role');
 
   /// IRI for schema:RoofingContractor
   ///
   /// A roofing contractor.
   ///
-  static const RoofingContractor = IriTerm.prevalidated(
+  static const RoofingContractor = const IriTerm(
     'https://schema.org/RoofingContractor',
   );
 
@@ -5741,21 +5377,19 @@ class Schema {
   /// See also the <a href="/docs/hotels.html">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.
   ///
   ///
-  static const Room = IriTerm.prevalidated('https://schema.org/Room');
+  static const Room = const IriTerm('https://schema.org/Room');
 
   /// IRI for schema:RsvpAction
   ///
   /// The act of notifying an event organizer as to whether you expect to attend the event.
   ///
-  static const RsvpAction = IriTerm.prevalidated(
-    'https://schema.org/RsvpAction',
-  );
+  static const RsvpAction = const IriTerm('https://schema.org/RsvpAction');
 
   /// IRI for schema:RsvpResponseType
   ///
   /// RsvpResponseType is an enumeration type whose instances represent responding to an RSVP request.
   ///
-  static const RsvpResponseType = IriTerm.prevalidated(
+  static const RsvpResponseType = const IriTerm(
     'https://schema.org/RsvpResponseType',
   );
 
@@ -5763,13 +5397,13 @@ class Schema {
   ///
   /// Event type: Sales event.
   ///
-  static const SaleEvent = IriTerm.prevalidated('https://schema.org/SaleEvent');
+  static const SaleEvent = const IriTerm('https://schema.org/SaleEvent');
 
   /// IRI for schema:SatiricalArticle
   ///
   /// An {[Article]} whose content is primarily {[satirical]}(https://en.wikipedia.org/wiki/Satire) in nature, i.e. unlikely to be literally true. A satirical article is sometimes but not necessarily also a {[NewsArticle]}. {[ScholarlyArticle]}s are also sometimes satirized.
   ///
-  static const SatiricalArticle = IriTerm.prevalidated(
+  static const SatiricalArticle = const IriTerm(
     'https://schema.org/SatiricalArticle',
   );
 
@@ -5779,13 +5413,13 @@ class Schema {
   /// This includes identifying the day(s) of the week or month when the recurring event will take place, in addition to its start and end time. Schedules may also
   /// have start and end dates to indicate when they are active, e.g. to define a limited calendar of events.
   ///
-  static const Schedule = IriTerm.prevalidated('https://schema.org/Schedule');
+  static const Schedule = const IriTerm('https://schema.org/Schedule');
 
   /// IRI for schema:ScheduleAction
   ///
   /// Scheduling future actions, events, or tasks.\n\nRelated actions:\n\n* {[ReserveAction]}: Unlike ReserveAction, ScheduleAction allocates future actions (e.g. an event, a task, etc) towards a time slot / spatial allocation.
   ///
-  static const ScheduleAction = IriTerm.prevalidated(
+  static const ScheduleAction = const IriTerm(
     'https://schema.org/ScheduleAction',
   );
 
@@ -5793,7 +5427,7 @@ class Schema {
   ///
   /// A scholarly article.
   ///
-  static const ScholarlyArticle = IriTerm.prevalidated(
+  static const ScholarlyArticle = const IriTerm(
     'https://schema.org/ScholarlyArticle',
   );
 
@@ -5801,13 +5435,13 @@ class Schema {
   ///
   /// A school.
   ///
-  static const School = IriTerm.prevalidated('https://schema.org/School');
+  static const School = const IriTerm('https://schema.org/School');
 
   /// IRI for schema:SchoolDistrict
   ///
   /// A School District is an administrative area for the administration of schools.
   ///
-  static const SchoolDistrict = IriTerm.prevalidated(
+  static const SchoolDistrict = const IriTerm(
     'https://schema.org/SchoolDistrict',
   );
 
@@ -5815,7 +5449,7 @@ class Schema {
   ///
   /// A screening of a movie or other video.
   ///
-  static const ScreeningEvent = IriTerm.prevalidated(
+  static const ScreeningEvent = const IriTerm(
     'https://schema.org/ScreeningEvent',
   );
 
@@ -5823,13 +5457,13 @@ class Schema {
   ///
   /// A piece of sculpture.
   ///
-  static const Sculpture = IriTerm.prevalidated('https://schema.org/Sculpture');
+  static const Sculpture = const IriTerm('https://schema.org/Sculpture');
 
   /// IRI for schema:SeaBodyOfWater
   ///
   /// A sea (for example, the Caspian sea).
   ///
-  static const SeaBodyOfWater = IriTerm.prevalidated(
+  static const SeaBodyOfWater = const IriTerm(
     'https://schema.org/SeaBodyOfWater',
   );
 
@@ -5837,15 +5471,13 @@ class Schema {
   ///
   /// The act of searching for an object.\n\nRelated actions:\n\n* {[FindAction]}: SearchAction generally leads to a FindAction, but not necessarily.
   ///
-  static const SearchAction = IriTerm.prevalidated(
-    'https://schema.org/SearchAction',
-  );
+  static const SearchAction = const IriTerm('https://schema.org/SearchAction');
 
   /// IRI for schema:SearchRescueOrganization
   ///
   /// A Search and Rescue organization of some kind.
   ///
-  static const SearchRescueOrganization = IriTerm.prevalidated(
+  static const SearchRescueOrganization = const IriTerm(
     'https://schema.org/SearchRescueOrganization',
   );
 
@@ -5853,7 +5485,7 @@ class Schema {
   ///
   /// Web page type: Search results page.
   ///
-  static const SearchResultsPage = IriTerm.prevalidated(
+  static const SearchResultsPage = const IriTerm(
     'https://schema.org/SearchResultsPage',
   );
 
@@ -5861,63 +5493,55 @@ class Schema {
   ///
   /// A media season, e.g. TV, radio, video game etc.
   ///
-  static const Season = IriTerm.prevalidated('https://schema.org/Season');
+  static const Season = const IriTerm('https://schema.org/Season');
 
   /// IRI for schema:Seat
   ///
   /// Used to describe a seat, such as a reserved seat in an event reservation.
   ///
-  static const Seat = IriTerm.prevalidated('https://schema.org/Seat');
+  static const Seat = const IriTerm('https://schema.org/Seat');
 
   /// IRI for schema:SeekToAction
   ///
   /// This is the {[Action]} of navigating to a specific {[startOffset]} timestamp within a {[VideoObject]}, typically represented with a URL template structure.
   ///
-  static const SeekToAction = IriTerm.prevalidated(
-    'https://schema.org/SeekToAction',
-  );
+  static const SeekToAction = const IriTerm('https://schema.org/SeekToAction');
 
   /// IRI for schema:SelfStorage
   ///
   /// A self-storage facility.
   ///
-  static const SelfStorage = IriTerm.prevalidated(
-    'https://schema.org/SelfStorage',
-  );
+  static const SelfStorage = const IriTerm('https://schema.org/SelfStorage');
 
   /// IRI for schema:SellAction
   ///
   /// The act of taking money from a buyer in exchange for goods or services rendered. An agent sells an object, product, or service to a buyer for a price. Reciprocal of BuyAction.
   ///
-  static const SellAction = IriTerm.prevalidated(
-    'https://schema.org/SellAction',
-  );
+  static const SellAction = const IriTerm('https://schema.org/SellAction');
 
   /// IRI for schema:SendAction
   ///
   /// The act of physically/electronically dispatching an object for transfer from an origin to a destination. Related actions:\n\n* {[ReceiveAction]}: The reciprocal of SendAction.\n* {[GiveAction]}: Unlike GiveAction, SendAction does not imply the transfer of ownership (e.g. I can send you my laptop, but I'm not necessarily giving it to you).
   ///
-  static const SendAction = IriTerm.prevalidated(
-    'https://schema.org/SendAction',
-  );
+  static const SendAction = const IriTerm('https://schema.org/SendAction');
 
   /// IRI for schema:Series
   ///
   /// A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also {[CreativeWorkSeries]}, {[EventSeries]}.
   ///
-  static const Series = IriTerm.prevalidated('https://schema.org/Series');
+  static const Series = const IriTerm('https://schema.org/Series');
 
   /// IRI for schema:Service
   ///
   /// A service provided by an organization, e.g. delivery service, print services, etc.
   ///
-  static const Service = IriTerm.prevalidated('https://schema.org/Service');
+  static const Service = const IriTerm('https://schema.org/Service');
 
   /// IRI for schema:ServiceChannel
   ///
   /// A means for accessing a service, e.g. a government office location, web site, or phone number.
   ///
-  static const ServiceChannel = IriTerm.prevalidated(
+  static const ServiceChannel = const IriTerm(
     'https://schema.org/ServiceChannel',
   );
 
@@ -5925,7 +5549,7 @@ class Schema {
   ///
   /// ServicePeriod represents a duration with some constraints about cutoff time and business days. This is used e.g. in shipping for handling times or transit time.
   ///
-  static const ServicePeriod = IriTerm.prevalidated(
+  static const ServicePeriod = const IriTerm(
     'https://schema.org/ServicePeriod',
   );
 
@@ -5933,23 +5557,19 @@ class Schema {
   ///
   /// The act of distributing content to people for their amusement or edification.
   ///
-  static const ShareAction = IriTerm.prevalidated(
-    'https://schema.org/ShareAction',
-  );
+  static const ShareAction = const IriTerm('https://schema.org/ShareAction');
 
   /// IRI for schema:SheetMusic
   ///
   /// Printed music, as opposed to performed or recorded music.
   ///
-  static const SheetMusic = IriTerm.prevalidated(
-    'https://schema.org/SheetMusic',
-  );
+  static const SheetMusic = const IriTerm('https://schema.org/SheetMusic');
 
   /// IRI for schema:ShippingConditions
   ///
   /// ShippingConditions represent a set of constraints and information about the conditions of shipping a product. Such conditions may apply to only a subset of the products being shipped, depending on aspects of the product like weight, size, price, destination, and others. All the specified conditions must be met for this ShippingConditions to apply.
   ///
-  static const ShippingConditions = IriTerm.prevalidated(
+  static const ShippingConditions = const IriTerm(
     'https://schema.org/ShippingConditions',
   );
 
@@ -5957,7 +5577,7 @@ class Schema {
   ///
   /// ShippingDeliveryTime provides various pieces of information about delivery times for shipping.
   ///
-  static const ShippingDeliveryTime = IriTerm.prevalidated(
+  static const ShippingDeliveryTime = const IriTerm(
     'https://schema.org/ShippingDeliveryTime',
   );
 
@@ -5965,7 +5585,7 @@ class Schema {
   ///
   /// A ShippingRateSettings represents re-usable pieces of shipping information. It is designed for publication on an URL that may be referenced via the {[shippingSettingsLink]} property of an {[OfferShippingDetails]}. Several occurrences can be published, distinguished and matched (i.e. identified/referenced) by their different values for {[shippingLabel]}.
   ///
-  static const ShippingRateSettings = IriTerm.prevalidated(
+  static const ShippingRateSettings = const IriTerm(
     'https://schema.org/ShippingRateSettings',
   );
 
@@ -5973,7 +5593,7 @@ class Schema {
   ///
   /// ShippingService represents the criteria used to determine if and how an offer could be shipped to a customer.
   ///
-  static const ShippingService = IriTerm.prevalidated(
+  static const ShippingService = const IriTerm(
     'https://schema.org/ShippingService',
   );
 
@@ -5981,13 +5601,13 @@ class Schema {
   ///
   /// A shoe store.
   ///
-  static const ShoeStore = IriTerm.prevalidated('https://schema.org/ShoeStore');
+  static const ShoeStore = const IriTerm('https://schema.org/ShoeStore');
 
   /// IRI for schema:ShoppingCenter
   ///
   /// A shopping center or mall.
   ///
-  static const ShoppingCenter = IriTerm.prevalidated(
+  static const ShoppingCenter = const IriTerm(
     'https://schema.org/ShoppingCenter',
   );
 
@@ -5995,15 +5615,13 @@ class Schema {
   ///
   /// Short story or tale. A brief work of literature, usually written in narrative prose.
   ///
-  static const ShortStory = IriTerm.prevalidated(
-    'https://schema.org/ShortStory',
-  );
+  static const ShortStory = const IriTerm('https://schema.org/ShortStory');
 
   /// IRI for schema:SingleFamilyResidence
   ///
   /// Residence type: Single-family home.
   ///
-  static const SingleFamilyResidence = IriTerm.prevalidated(
+  static const SingleFamilyResidence = const IriTerm(
     'https://schema.org/SingleFamilyResidence',
   );
 
@@ -6011,7 +5629,7 @@ class Schema {
   ///
   /// A navigation element of the page.
   ///
-  static const SiteNavigationElement = IriTerm.prevalidated(
+  static const SiteNavigationElement = const IriTerm(
     'https://schema.org/SiteNavigationElement',
   );
 
@@ -6019,7 +5637,7 @@ class Schema {
   ///
   /// Enumerates common size groups for various product categories.
   ///
-  static const SizeGroupEnumeration = IriTerm.prevalidated(
+  static const SizeGroupEnumeration = const IriTerm(
     'https://schema.org/SizeGroupEnumeration',
   );
 
@@ -6027,7 +5645,7 @@ class Schema {
   ///
   /// Size related properties of a product, typically a size code ({[name]}) and optionally a {[sizeSystem]}, {[sizeGroup]}, and product measurements ({[hasMeasurement]}). In addition, the intended audience can be defined through {[suggestedAge]}, {[suggestedGender]}, and suggested body measurements ({[suggestedMeasurement]}).
   ///
-  static const SizeSpecification = IriTerm.prevalidated(
+  static const SizeSpecification = const IriTerm(
     'https://schema.org/SizeSpecification',
   );
 
@@ -6035,7 +5653,7 @@ class Schema {
   ///
   /// Enumerates common size systems for different categories of products, for example "EN-13402" or "UK" for wearables or "Imperial" for screws.
   ///
-  static const SizeSystemEnumeration = IriTerm.prevalidated(
+  static const SizeSystemEnumeration = const IriTerm(
     'https://schema.org/SizeSystemEnumeration',
   );
 
@@ -6043,21 +5661,19 @@ class Schema {
   ///
   /// A ski resort.
   ///
-  static const SkiResort = IriTerm.prevalidated('https://schema.org/SkiResort');
+  static const SkiResort = const IriTerm('https://schema.org/SkiResort');
 
   /// IRI for schema:SocialEvent
   ///
   /// Event type: Social event.
   ///
-  static const SocialEvent = IriTerm.prevalidated(
-    'https://schema.org/SocialEvent',
-  );
+  static const SocialEvent = const IriTerm('https://schema.org/SocialEvent');
 
   /// IRI for schema:SocialMediaPosting
   ///
   /// A post to a social media platform, including blog posts, tweets, Facebook posts, etc.
   ///
-  static const SocialMediaPosting = IriTerm.prevalidated(
+  static const SocialMediaPosting = const IriTerm(
     'https://schema.org/SocialMediaPosting',
   );
 
@@ -6065,7 +5681,7 @@ class Schema {
   ///
   /// A software application.
   ///
-  static const SoftwareApplication = IriTerm.prevalidated(
+  static const SoftwareApplication = const IriTerm(
     'https://schema.org/SoftwareApplication',
   );
 
@@ -6073,7 +5689,7 @@ class Schema {
   ///
   /// Computer programming source code. Example: Full (compile ready) solutions, code snippet samples, scripts, templates.
   ///
-  static const SoftwareSourceCode = IriTerm.prevalidated(
+  static const SoftwareSourceCode = const IriTerm(
     'https://schema.org/SoftwareSourceCode',
   );
 
@@ -6081,7 +5697,7 @@ class Schema {
   ///
   /// The action that takes in a math expression and directs users to a page potentially capable of solving/simplifying that expression.
   ///
-  static const SolveMathAction = IriTerm.prevalidated(
+  static const SolveMathAction = const IriTerm(
     'https://schema.org/SolveMathAction',
   );
 
@@ -6089,15 +5705,13 @@ class Schema {
   ///
   /// A placeholder for multiple similar products of the same kind.
   ///
-  static const SomeProducts = IriTerm.prevalidated(
-    'https://schema.org/SomeProducts',
-  );
+  static const SomeProducts = const IriTerm('https://schema.org/SomeProducts');
 
   /// IRI for schema:SpeakableSpecification
   ///
   /// A SpeakableSpecification indicates (typically via {[xpath]} or {[cssSelector]}) sections of a document that are highlighted as particularly {[speakable]}. Instances of this type are expected to be used primarily as values of the {[speakable]} property.
   ///
-  static const SpeakableSpecification = IriTerm.prevalidated(
+  static const SpeakableSpecification = const IriTerm(
     'https://schema.org/SpeakableSpecification',
   );
 
@@ -6140,7 +5754,7 @@ class Schema {
   /// media type information, e.g. "application/rss+xml" or "application/atom+xml".
   ///
   ///
-  static const SpecialAnnouncement = IriTerm.prevalidated(
+  static const SpecialAnnouncement = const IriTerm(
     'https://schema.org/SpecialAnnouncement',
   );
 
@@ -6148,13 +5762,13 @@ class Schema {
   ///
   /// Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort.
   ///
-  static const Specialty = IriTerm.prevalidated('https://schema.org/Specialty');
+  static const Specialty = const IriTerm('https://schema.org/Specialty');
 
   /// IRI for schema:SportingGoodsStore
   ///
   /// A sporting goods store.
   ///
-  static const SportingGoodsStore = IriTerm.prevalidated(
+  static const SportingGoodsStore = const IriTerm(
     'https://schema.org/SportingGoodsStore',
   );
 
@@ -6162,7 +5776,7 @@ class Schema {
   ///
   /// A sports location, such as a playing field.
   ///
-  static const SportsActivityLocation = IriTerm.prevalidated(
+  static const SportsActivityLocation = const IriTerm(
     'https://schema.org/SportsActivityLocation',
   );
 
@@ -6170,23 +5784,19 @@ class Schema {
   ///
   /// A sports club.
   ///
-  static const SportsClub = IriTerm.prevalidated(
-    'https://schema.org/SportsClub',
-  );
+  static const SportsClub = const IriTerm('https://schema.org/SportsClub');
 
   /// IRI for schema:SportsEvent
   ///
   /// Event type: Sports event.
   ///
-  static const SportsEvent = IriTerm.prevalidated(
-    'https://schema.org/SportsEvent',
-  );
+  static const SportsEvent = const IriTerm('https://schema.org/SportsEvent');
 
   /// IRI for schema:SportsOrganization
   ///
   /// Represents the collection of all sports organizations, including sports teams, governing bodies, and sports associations.
   ///
-  static const SportsOrganization = IriTerm.prevalidated(
+  static const SportsOrganization = const IriTerm(
     'https://schema.org/SportsOrganization',
   );
 
@@ -6194,15 +5804,13 @@ class Schema {
   ///
   /// Organization: Sports team.
   ///
-  static const SportsTeam = IriTerm.prevalidated(
-    'https://schema.org/SportsTeam',
-  );
+  static const SportsTeam = const IriTerm('https://schema.org/SportsTeam');
 
   /// IRI for schema:SpreadsheetDigitalDocument
   ///
   /// A spreadsheet file.
   ///
-  static const SpreadsheetDigitalDocument = IriTerm.prevalidated(
+  static const SpreadsheetDigitalDocument = const IriTerm(
     'https://schema.org/SpreadsheetDigitalDocument',
   );
 
@@ -6210,7 +5818,7 @@ class Schema {
   ///
   /// A stadium.
   ///
-  static const StadiumOrArena = IriTerm.prevalidated(
+  static const StadiumOrArena = const IriTerm(
     'https://schema.org/StadiumOrArena',
   );
 
@@ -6218,13 +5826,13 @@ class Schema {
   ///
   /// A state or province of a country.
   ///
-  static const State = IriTerm.prevalidated('https://schema.org/State');
+  static const State = const IriTerm('https://schema.org/State');
 
   /// IRI for schema:Statement
   ///
   /// A statement about something, for example a fun or interesting fact. If known, the main entity this statement is about can be indicated using mainEntity. For more formal claims (e.g. in Fact Checking), consider using {[Claim]} instead. Use the {[text]} property to capture the text of the statement.
   ///
-  static const Statement = IriTerm.prevalidated('https://schema.org/Statement');
+  static const Statement = const IriTerm('https://schema.org/Statement');
 
   /// IRI for schema:StatisticalPopulation
   ///
@@ -6232,7 +5840,7 @@ class Schema {
   /// The properties {[numConstraints]} and {[constraintProperty]} are used to specify which of the populations properties are used to specify the population. Note that the sense of "population" used here is the general sense of a statistical
   /// population, and does not imply that the population consists of people. For example, a {[populationType]} of {[Event]} or {[NewsArticle]} could be used. See also {[Observation]}, where a {[populationType]} such as {[Person]} or {[Event]} can be indicated directly. In most cases it may be better to use {[StatisticalVariable]} instead of {[StatisticalPopulation]}.
   ///
-  static const StatisticalPopulation = IriTerm.prevalidated(
+  static const StatisticalPopulation = const IriTerm(
     'https://schema.org/StatisticalPopulation',
   );
 
@@ -6240,7 +5848,7 @@ class Schema {
   ///
   /// {[StatisticalVariable]} represents any type of statistical metric that can be measured at a place and time. The usage pattern for {[StatisticalVariable]} is typically expressed using {[Observation]} with an explicit {[populationType]}, which is a type, typically drawn from Schema.org. Each {[StatisticalVariable]} is marked as a {[ConstraintNode]}, meaning that some properties (those listed using {[constraintProperty]}) serve in this setting solely to define the statistical variable rather than literally describe a specific person, place or thing. For example, a {[StatisticalVariable]} Median_Height_Person_Female representing the median height of women, could be written as follows: the population type is {[Person]}; the measuredProperty {[height]}; the {[statType]} {[median]}; the {[gender]} {[Female]}. It is important to note that there are many kinds of scientific quantitative observation which are not fully, perfectly or unambiguously described following this pattern, or with solely Schema.org terminology. The approach taken here is designed to allow partial, incremental or minimal description of {[StatisticalVariable]}s, and the use of detailed sets of entity and property IDs from external repositories. The {[measurementMethod]}, {[unitCode]} and {[unitText]} properties can also be used to clarify the specific nature and notation of an observed measurement.
   ///
-  static const StatisticalVariable = IriTerm.prevalidated(
+  static const StatisticalVariable = const IriTerm(
     'https://schema.org/StatisticalVariable',
   );
 
@@ -6248,7 +5856,7 @@ class Schema {
   ///
   /// Lists or enumerations dealing with status types.
   ///
-  static const StatusEnumeration = IriTerm.prevalidated(
+  static const StatusEnumeration = const IriTerm(
     'https://schema.org/StatusEnumeration',
   );
 
@@ -6256,7 +5864,7 @@ class Schema {
   ///
   /// A value indicating a steering position.
   ///
-  static const SteeringPositionValue = IriTerm.prevalidated(
+  static const SteeringPositionValue = const IriTerm(
     'https://schema.org/SteeringPositionValue',
   );
 
@@ -6264,13 +5872,13 @@ class Schema {
   ///
   /// A retail good store.
   ///
-  static const Store = IriTerm.prevalidated('https://schema.org/Store');
+  static const Store = const IriTerm('https://schema.org/Store');
 
   /// IRI for schema:StructuredValue
   ///
   /// Structured values are used when the value of a property has a more complex structure than simply being a textual value or a reference to another thing.
   ///
-  static const StructuredValue = IriTerm.prevalidated(
+  static const StructuredValue = const IriTerm(
     'https://schema.org/StructuredValue',
   );
 
@@ -6278,7 +5886,7 @@ class Schema {
   ///
   /// The act of forming a personal connection with someone/something (object) unidirectionally/asymmetrically to get updates pushed to.\n\nRelated actions:\n\n* {[FollowAction]}: Unlike FollowAction, SubscribeAction implies that the subscriber acts as a passive agent being constantly/actively pushed for updates.\n* {[RegisterAction]}: Unlike RegisterAction, SubscribeAction implies that the agent is interested in continuing receiving updates from the object.\n* {[JoinAction]}: Unlike JoinAction, SubscribeAction implies that the agent is interested in continuing receiving updates from the object.
   ///
-  static const SubscribeAction = IriTerm.prevalidated(
+  static const SubscribeAction = const IriTerm(
     'https://schema.org/SubscribeAction',
   );
 
@@ -6286,13 +5894,13 @@ class Schema {
   ///
   /// Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical.
   ///
-  static const Substance = IriTerm.prevalidated('https://schema.org/Substance');
+  static const Substance = const IriTerm('https://schema.org/Substance');
 
   /// IRI for schema:SubwayStation
   ///
   /// A subway station.
   ///
-  static const SubwayStation = IriTerm.prevalidated(
+  static const SubwayStation = const IriTerm(
     'https://schema.org/SubwayStation',
   );
 
@@ -6303,13 +5911,13 @@ class Schema {
   /// See also the <a href="/docs/hotels.html">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.
   ///
   ///
-  static const Suite = IriTerm.prevalidated('https://schema.org/Suite');
+  static const Suite = const IriTerm('https://schema.org/Suite');
 
   /// IRI for schema:SuperficialAnatomy
   ///
   /// Anatomical features that can be observed by sight (without dissection), including the form and proportions of the human body as well as surface landmarks that correspond to deeper subcutaneous structures. Superficial anatomy plays an important role in sports medicine, phlebotomy, and other medical specialties as underlying anatomical structures can be identified through surface palpation. For example, during back surgery, superficial anatomy can be used to palpate and count vertebrae to find the site of incision. Or in phlebotomy, superficial anatomy can be used to locate an underlying vein; for example, the median cubital vein can be located by palpating the borders of the cubital fossa (such as the epicondyles of the humerus) and then looking for the superficial signs of the vein, such as size, prominence, ability to refill after depression, and feel of surrounding tissue support. As another example, in a subluxation (dislocation) of the glenohumeral joint, the bony structure becomes pronounced with the deltoid muscle failing to cover the glenohumeral joint allowing the edges of the scapula to be superficially visible. Here, the superficial anatomy is the visible edges of the scapula, implying the underlying dislocation of the joint (the related anatomical structure).
   ///
-  static const SuperficialAnatomy = IriTerm.prevalidated(
+  static const SuperficialAnatomy = const IriTerm(
     'https://schema.org/SuperficialAnatomy',
   );
 
@@ -6317,7 +5925,7 @@ class Schema {
   ///
   /// A medical procedure involving an incision with instruments; performed for diagnose, or therapeutic purposes.
   ///
-  static const SurgicalProcedure = IriTerm.prevalidated(
+  static const SurgicalProcedure = const IriTerm(
     'https://schema.org/SurgicalProcedure',
   );
 
@@ -6325,7 +5933,7 @@ class Schema {
   ///
   /// The act of momentarily pausing a device or application (e.g. pause music playback or pause a timer).
   ///
-  static const SuspendAction = IriTerm.prevalidated(
+  static const SuspendAction = const IriTerm(
     'https://schema.org/SuspendAction',
   );
 
@@ -6333,71 +5941,67 @@ class Schema {
   ///
   /// A syllabus that describes the material covered in a course, often with several such sections per {[Course]} so that a distinct {[timeRequired]} can be provided for that section of the {[Course]}.
   ///
-  static const Syllabus = IriTerm.prevalidated('https://schema.org/Syllabus');
+  static const Syllabus = const IriTerm('https://schema.org/Syllabus');
 
   /// IRI for schema:Synagogue
   ///
   /// A synagogue.
   ///
-  static const Synagogue = IriTerm.prevalidated('https://schema.org/Synagogue');
+  static const Synagogue = const IriTerm('https://schema.org/Synagogue');
 
   /// IRI for schema:TVClip
   ///
   /// A short TV program or a segment/part of a TV program.
   ///
-  static const TVClip = IriTerm.prevalidated('https://schema.org/TVClip');
+  static const TVClip = const IriTerm('https://schema.org/TVClip');
 
   /// IRI for schema:TVEpisode
   ///
   /// A TV episode which can be part of a series or season.
   ///
-  static const TVEpisode = IriTerm.prevalidated('https://schema.org/TVEpisode');
+  static const TVEpisode = const IriTerm('https://schema.org/TVEpisode');
 
   /// IRI for schema:TVSeason
   ///
   /// Season dedicated to TV broadcast and associated online delivery.
   ///
-  static const TVSeason = IriTerm.prevalidated('https://schema.org/TVSeason');
+  static const TVSeason = const IriTerm('https://schema.org/TVSeason');
 
   /// IRI for schema:TVSeries
   ///
   /// CreativeWorkSeries dedicated to TV broadcast and associated online delivery.
   ///
-  static const TVSeries = IriTerm.prevalidated('https://schema.org/TVSeries');
+  static const TVSeries = const IriTerm('https://schema.org/TVSeries');
 
   /// IRI for schema:Table
   ///
   /// A table on a Web page.
   ///
-  static const Table = IriTerm.prevalidated('https://schema.org/Table');
+  static const Table = const IriTerm('https://schema.org/Table');
 
   /// IRI for schema:TakeAction
   ///
   /// The act of gaining ownership of an object from an origin. Reciprocal of GiveAction.\n\nRelated actions:\n\n* {[GiveAction]}: The reciprocal of TakeAction.\n* {[ReceiveAction]}: Unlike ReceiveAction, TakeAction implies that ownership has been transferred.
   ///
-  static const TakeAction = IriTerm.prevalidated(
-    'https://schema.org/TakeAction',
-  );
+  static const TakeAction = const IriTerm('https://schema.org/TakeAction');
 
   /// IRI for schema:TattooParlor
   ///
   /// A tattoo parlor.
   ///
-  static const TattooParlor = IriTerm.prevalidated(
-    'https://schema.org/TattooParlor',
-  );
+  static const TattooParlor = const IriTerm('https://schema.org/TattooParlor');
 
   /// IRI for schema:Taxi
   ///
   /// A taxi.
   ///
-  static const Taxi = IriTerm.prevalidated('https://schema.org/Taxi');
+  static const Taxi = const IriTerm('https://schema.org/Taxi');
 
   /// IRI for schema:TaxiReservation
   ///
   /// A reservation for a taxi.\n\nNote: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use {[Offer]}.
   ///
-  static const TaxiReservation = IriTerm.prevalidated(
+  static const TaxiReservation = const IriTerm(
     'https://schema.org/TaxiReservation',
   );
 
@@ -6405,35 +6009,31 @@ class Schema {
   ///
   /// A service for a vehicle for hire with a driver for local travel. Fares are usually calculated based on distance traveled.
   ///
-  static const TaxiService = IriTerm.prevalidated(
-    'https://schema.org/TaxiService',
-  );
+  static const TaxiService = const IriTerm('https://schema.org/TaxiService');
 
   /// IRI for schema:TaxiStand
   ///
   /// A taxi stand.
   ///
-  static const TaxiStand = IriTerm.prevalidated('https://schema.org/TaxiStand');
+  static const TaxiStand = const IriTerm('https://schema.org/TaxiStand');
 
   /// IRI for schema:Taxon
   ///
   /// A set of organisms asserted to represent a natural cohesive biological unit.
   ///
-  static const Taxon = IriTerm.prevalidated('https://schema.org/Taxon');
+  static const Taxon = const IriTerm('https://schema.org/Taxon');
 
   /// IRI for schema:TechArticle
   ///
   /// A technical article - Example: How-to (task) topics, step-by-step, procedural troubleshooting, specifications, etc.
   ///
-  static const TechArticle = IriTerm.prevalidated(
-    'https://schema.org/TechArticle',
-  );
+  static const TechArticle = const IriTerm('https://schema.org/TechArticle');
 
   /// IRI for schema:TelevisionChannel
   ///
   /// A unique instance of a television BroadcastService on a CableOrSatelliteService lineup.
   ///
-  static const TelevisionChannel = IriTerm.prevalidated(
+  static const TelevisionChannel = const IriTerm(
     'https://schema.org/TelevisionChannel',
   );
 
@@ -6441,7 +6041,7 @@ class Schema {
   ///
   /// A television station.
   ///
-  static const TelevisionStation = IriTerm.prevalidated(
+  static const TelevisionStation = const IriTerm(
     'https://schema.org/TelevisionStation',
   );
 
@@ -6449,7 +6049,7 @@ class Schema {
   ///
   /// A tennis complex.
   ///
-  static const TennisComplex = IriTerm.prevalidated(
+  static const TennisComplex = const IriTerm(
     'https://schema.org/TennisComplex',
   );
 
@@ -6457,13 +6057,13 @@ class Schema {
   ///
   /// Data type: Text.
   ///
-  static const Text = IriTerm.prevalidated('https://schema.org/Text');
+  static const Text = const IriTerm('https://schema.org/Text');
 
   /// IRI for schema:TextDigitalDocument
   ///
   /// A file composed primarily of text.
   ///
-  static const TextDigitalDocument = IriTerm.prevalidated(
+  static const TextDigitalDocument = const IriTerm(
     'https://schema.org/TextDigitalDocument',
   );
 
@@ -6471,31 +6071,25 @@ class Schema {
   ///
   /// A text file. The text can be unformatted or contain markup, html, etc.
   ///
-  static const TextObject = IriTerm.prevalidated(
-    'https://schema.org/TextObject',
-  );
+  static const TextObject = const IriTerm('https://schema.org/TextObject');
 
   /// IRI for schema:TheaterEvent
   ///
   /// Event type: Theater performance.
   ///
-  static const TheaterEvent = IriTerm.prevalidated(
-    'https://schema.org/TheaterEvent',
-  );
+  static const TheaterEvent = const IriTerm('https://schema.org/TheaterEvent');
 
   /// IRI for schema:TheaterGroup
   ///
   /// A theater group or company, for example, the Royal Shakespeare Company or Druid Theatre.
   ///
-  static const TheaterGroup = IriTerm.prevalidated(
-    'https://schema.org/TheaterGroup',
-  );
+  static const TheaterGroup = const IriTerm('https://schema.org/TheaterGroup');
 
   /// IRI for schema:TherapeuticProcedure
   ///
   /// A medical procedure intended primarily for therapeutic purposes, aimed at improving a health condition.
   ///
-  static const TherapeuticProcedure = IriTerm.prevalidated(
+  static const TherapeuticProcedure = const IriTerm(
     'https://schema.org/TherapeuticProcedure',
   );
 
@@ -6503,31 +6097,31 @@ class Schema {
   ///
   /// A thesis or dissertation document submitted in support of candidature for an academic degree or professional qualification.
   ///
-  static const Thesis = IriTerm.prevalidated('https://schema.org/Thesis');
+  static const Thesis = const IriTerm('https://schema.org/Thesis');
 
   /// IRI for schema:Thing
   ///
   /// The most generic type of item.
   ///
-  static const Thing = IriTerm.prevalidated('https://schema.org/Thing');
+  static const Thing = const IriTerm('https://schema.org/Thing');
 
   /// IRI for schema:Ticket
   ///
   /// Used to describe a ticket to an event, a flight, a bus ride, etc.
   ///
-  static const Ticket = IriTerm.prevalidated('https://schema.org/Ticket');
+  static const Ticket = const IriTerm('https://schema.org/Ticket');
 
   /// IRI for schema:TieAction
   ///
   /// The act of reaching a draw in a competitive activity.
   ///
-  static const TieAction = IriTerm.prevalidated('https://schema.org/TieAction');
+  static const TieAction = const IriTerm('https://schema.org/TieAction');
 
   /// IRI for schema:TierBenefitEnumeration
   ///
   /// An enumeration of possible benefits as part of a loyalty (members) program.
   ///
-  static const TierBenefitEnumeration = IriTerm.prevalidated(
+  static const TierBenefitEnumeration = const IriTerm(
     'https://schema.org/TierBenefitEnumeration',
   );
 
@@ -6535,25 +6129,25 @@ class Schema {
   ///
   /// A point in time recurring on multiple days in the form hh:mm:ss[Z|(+|-)hh:mm] (see [XML schema for details](http://www.w3.org/TR/xmlschema-2/#time)).
   ///
-  static const Time = IriTerm.prevalidated('https://schema.org/Time');
+  static const Time = const IriTerm('https://schema.org/Time');
 
   /// IRI for schema:TipAction
   ///
   /// The act of giving money voluntarily to a beneficiary in recognition of services rendered.
   ///
-  static const TipAction = IriTerm.prevalidated('https://schema.org/TipAction');
+  static const TipAction = const IriTerm('https://schema.org/TipAction');
 
   /// IRI for schema:TireShop
   ///
   /// A tire shop.
   ///
-  static const TireShop = IriTerm.prevalidated('https://schema.org/TireShop');
+  static const TireShop = const IriTerm('https://schema.org/TireShop');
 
   /// IRI for schema:TouristAttraction
   ///
   /// A tourist attraction.  In principle any Thing can be a {[TouristAttraction]}, from a {[Mountain]} and {[LandmarksOrHistoricalBuildings]} to a {[LocalBusiness]}.  This Type can be used on its own to describe a general {[TouristAttraction]}, or be used as an {[additionalType]} to add tourist attraction properties to any other type.  (See examples below)
   ///
-  static const TouristAttraction = IriTerm.prevalidated(
+  static const TouristAttraction = const IriTerm(
     'https://schema.org/TouristAttraction',
   );
 
@@ -6562,7 +6156,7 @@ class Schema {
   /// A tourist destination. In principle any {[Place]} can be a {[TouristDestination]} from a {[City]}, Region or {[Country]} to an {[AmusementPark]} or {[Hotel]}. This Type can be used on its own to describe a general {[TouristDestination]}, or be used as an {[additionalType]} to add tourist relevant properties to any other {[Place]}.  A {[TouristDestination]} is defined as a {[Place]} that contains, or is colocated with, one or more {[TouristAttraction]}s, often linked by a similar theme or interest to a particular {[touristType]}. The [UNWTO](http://www2.unwto.org/) defines Destination (main destination of a tourism trip) as the place visited that is central to the decision to take the trip.
   /// (See examples below.)
   ///
-  static const TouristDestination = IriTerm.prevalidated(
+  static const TouristDestination = const IriTerm(
     'https://schema.org/TouristDestination',
   );
 
@@ -6570,7 +6164,7 @@ class Schema {
   ///
   /// A tourist information center.
   ///
-  static const TouristInformationCenter = IriTerm.prevalidated(
+  static const TouristInformationCenter = const IriTerm(
     'https://schema.org/TouristInformationCenter',
   );
 
@@ -6579,37 +6173,31 @@ class Schema {
   /// A tourist trip. A created itinerary of visits to one or more places of interest ({[TouristAttraction]}/{[TouristDestination]}) often linked by a similar theme, geographic area, or interest to a particular {[touristType]}. The [UNWTO](http://www2.unwto.org/) defines tourism trip as the Trip taken by visitors.
   /// (See examples below.)
   ///
-  static const TouristTrip = IriTerm.prevalidated(
-    'https://schema.org/TouristTrip',
-  );
+  static const TouristTrip = const IriTerm('https://schema.org/TouristTrip');
 
   /// IRI for schema:ToyStore
   ///
   /// A toy store.
   ///
-  static const ToyStore = IriTerm.prevalidated('https://schema.org/ToyStore');
+  static const ToyStore = const IriTerm('https://schema.org/ToyStore');
 
   /// IRI for schema:TrackAction
   ///
   /// An agent tracks an object for updates.\n\nRelated actions:\n\n* {[FollowAction]}: Unlike FollowAction, TrackAction refers to the interest on the location of innanimates objects.\n* {[SubscribeAction]}: Unlike SubscribeAction, TrackAction refers to  the interest on the location of innanimate objects.
   ///
-  static const TrackAction = IriTerm.prevalidated(
-    'https://schema.org/TrackAction',
-  );
+  static const TrackAction = const IriTerm('https://schema.org/TrackAction');
 
   /// IRI for schema:TradeAction
   ///
   /// The act of participating in an exchange of goods and services for monetary compensation. An agent trades an object, product or service with a participant in exchange for a one time or periodic payment.
   ///
-  static const TradeAction = IriTerm.prevalidated(
-    'https://schema.org/TradeAction',
-  );
+  static const TradeAction = const IriTerm('https://schema.org/TradeAction');
 
   /// IRI for schema:TrainReservation
   ///
   /// A reservation for train travel.\n\nNote: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use {[Offer]}.
   ///
-  static const TrainReservation = IriTerm.prevalidated(
+  static const TrainReservation = const IriTerm(
     'https://schema.org/TrainReservation',
   );
 
@@ -6617,21 +6205,19 @@ class Schema {
   ///
   /// A train station.
   ///
-  static const TrainStation = IriTerm.prevalidated(
-    'https://schema.org/TrainStation',
-  );
+  static const TrainStation = const IriTerm('https://schema.org/TrainStation');
 
   /// IRI for schema:TrainTrip
   ///
   /// A trip on a commercial train line.
   ///
-  static const TrainTrip = IriTerm.prevalidated('https://schema.org/TrainTrip');
+  static const TrainTrip = const IriTerm('https://schema.org/TrainTrip');
 
   /// IRI for schema:TransferAction
   ///
   /// The act of transferring/moving (abstract or concrete) animate or inanimate objects from one place to another.
   ///
-  static const TransferAction = IriTerm.prevalidated(
+  static const TransferAction = const IriTerm(
     'https://schema.org/TransferAction',
   );
 
@@ -6639,23 +6225,19 @@ class Schema {
   ///
   /// The act of traveling from a fromLocation to a destination by a specified mode of transport, optionally with participants.
   ///
-  static const TravelAction = IriTerm.prevalidated(
-    'https://schema.org/TravelAction',
-  );
+  static const TravelAction = const IriTerm('https://schema.org/TravelAction');
 
   /// IRI for schema:TravelAgency
   ///
   /// A travel agency.
   ///
-  static const TravelAgency = IriTerm.prevalidated(
-    'https://schema.org/TravelAgency',
-  );
+  static const TravelAgency = const IriTerm('https://schema.org/TravelAgency');
 
   /// IRI for schema:TreatmentIndication
   ///
   /// An indication for treating an underlying condition, symptom, etc.
   ///
-  static const TreatmentIndication = IriTerm.prevalidated(
+  static const TreatmentIndication = const IriTerm(
     'https://schema.org/TreatmentIndication',
   );
 
@@ -6663,13 +6245,13 @@ class Schema {
   ///
   /// A trip or journey. An itinerary of visits to one or more places.
   ///
-  static const Trip = IriTerm.prevalidated('https://schema.org/Trip');
+  static const Trip = const IriTerm('https://schema.org/Trip');
 
   /// IRI for schema:TypeAndQuantityNode
   ///
   /// A structured value indicating the quantity, unit of measurement, and business function of goods included in a bundle offer.
   ///
-  static const TypeAndQuantityNode = IriTerm.prevalidated(
+  static const TypeAndQuantityNode = const IriTerm(
     'https://schema.org/TypeAndQuantityNode',
   );
 
@@ -6677,7 +6259,7 @@ class Schema {
   ///
   /// UKNonprofitType: Non-profit organization type originating from the United Kingdom.
   ///
-  static const UKNonprofitType = IriTerm.prevalidated(
+  static const UKNonprofitType = const IriTerm(
     'https://schema.org/UKNonprofitType',
   );
 
@@ -6685,13 +6267,13 @@ class Schema {
   ///
   /// Data type: URL.
   ///
-  static const URL = IriTerm.prevalidated('https://schema.org/URL');
+  static const URL = const IriTerm('https://schema.org/URL');
 
   /// IRI for schema:USNonprofitType
   ///
   /// USNonprofitType: Non-profit organization type originating from the United States.
   ///
-  static const USNonprofitType = IriTerm.prevalidated(
+  static const USNonprofitType = const IriTerm(
     'https://schema.org/USNonprofitType',
   );
 
@@ -6699,7 +6281,7 @@ class Schema {
   ///
   /// The act of un-registering from a service.\n\nRelated actions:\n\n* {[RegisterAction]}: antonym of UnRegisterAction.\n* {[LeaveAction]}: Unlike LeaveAction, UnRegisterAction implies that you are unregistering from a service you were previously registered, rather than leaving a team/group of people.
   ///
-  static const UnRegisterAction = IriTerm.prevalidated(
+  static const UnRegisterAction = const IriTerm(
     'https://schema.org/UnRegisterAction',
   );
 
@@ -6707,7 +6289,7 @@ class Schema {
   ///
   /// The price asked for a given offer by the respective organization or person.
   ///
-  static const UnitPriceSpecification = IriTerm.prevalidated(
+  static const UnitPriceSpecification = const IriTerm(
     'https://schema.org/UnitPriceSpecification',
   );
 
@@ -6715,45 +6297,37 @@ class Schema {
   ///
   /// The act of managing by changing/editing the state of the object.
   ///
-  static const UpdateAction = IriTerm.prevalidated(
-    'https://schema.org/UpdateAction',
-  );
+  static const UpdateAction = const IriTerm('https://schema.org/UpdateAction');
 
   /// IRI for schema:UseAction
   ///
   /// The act of applying an object to its intended purpose.
   ///
-  static const UseAction = IriTerm.prevalidated('https://schema.org/UseAction');
+  static const UseAction = const IriTerm('https://schema.org/UseAction');
 
   /// IRI for schema:UserBlocks
   ///
   /// UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use {[Action]}-based vocabulary, alongside types such as {[Comment]}.
   ///
-  static const UserBlocks = IriTerm.prevalidated(
-    'https://schema.org/UserBlocks',
-  );
+  static const UserBlocks = const IriTerm('https://schema.org/UserBlocks');
 
   /// IRI for schema:UserCheckins
   ///
   /// UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use {[Action]}-based vocabulary, alongside types such as {[Comment]}.
   ///
-  static const UserCheckins = IriTerm.prevalidated(
-    'https://schema.org/UserCheckins',
-  );
+  static const UserCheckins = const IriTerm('https://schema.org/UserCheckins');
 
   /// IRI for schema:UserComments
   ///
   /// UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use {[Action]}-based vocabulary, alongside types such as {[Comment]}.
   ///
-  static const UserComments = IriTerm.prevalidated(
-    'https://schema.org/UserComments',
-  );
+  static const UserComments = const IriTerm('https://schema.org/UserComments');
 
   /// IRI for schema:UserDownloads
   ///
   /// UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use {[Action]}-based vocabulary, alongside types such as {[Comment]}.
   ///
-  static const UserDownloads = IriTerm.prevalidated(
+  static const UserDownloads = const IriTerm(
     'https://schema.org/UserDownloads',
   );
 
@@ -6761,7 +6335,7 @@ class Schema {
   ///
   /// UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use {[Action]}-based vocabulary, alongside types such as {[Comment]}.
   ///
-  static const UserInteraction = IriTerm.prevalidated(
+  static const UserInteraction = const IriTerm(
     'https://schema.org/UserInteraction',
   );
 
@@ -6769,13 +6343,13 @@ class Schema {
   ///
   /// UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use {[Action]}-based vocabulary, alongside types such as {[Comment]}.
   ///
-  static const UserLikes = IriTerm.prevalidated('https://schema.org/UserLikes');
+  static const UserLikes = const IriTerm('https://schema.org/UserLikes');
 
   /// IRI for schema:UserPageVisits
   ///
   /// UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use {[Action]}-based vocabulary, alongside types such as {[Comment]}.
   ///
-  static const UserPageVisits = IriTerm.prevalidated(
+  static const UserPageVisits = const IriTerm(
     'https://schema.org/UserPageVisits',
   );
 
@@ -6783,37 +6357,31 @@ class Schema {
   ///
   /// UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use {[Action]}-based vocabulary, alongside types such as {[Comment]}.
   ///
-  static const UserPlays = IriTerm.prevalidated('https://schema.org/UserPlays');
+  static const UserPlays = const IriTerm('https://schema.org/UserPlays');
 
   /// IRI for schema:UserPlusOnes
   ///
   /// UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use {[Action]}-based vocabulary, alongside types such as {[Comment]}.
   ///
-  static const UserPlusOnes = IriTerm.prevalidated(
-    'https://schema.org/UserPlusOnes',
-  );
+  static const UserPlusOnes = const IriTerm('https://schema.org/UserPlusOnes');
 
   /// IRI for schema:UserReview
   ///
   /// A review created by an end-user (e.g. consumer, purchaser, attendee etc.), in contrast with {[CriticReview]}.
   ///
-  static const UserReview = IriTerm.prevalidated(
-    'https://schema.org/UserReview',
-  );
+  static const UserReview = const IriTerm('https://schema.org/UserReview');
 
   /// IRI for schema:UserTweets
   ///
   /// UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use {[Action]}-based vocabulary, alongside types such as {[Comment]}.
   ///
-  static const UserTweets = IriTerm.prevalidated(
-    'https://schema.org/UserTweets',
-  );
+  static const UserTweets = const IriTerm('https://schema.org/UserTweets');
 
   /// IRI for schema:VacationRental
   ///
   /// A kind of lodging business that focuses on renting single properties for limited time.
   ///
-  static const VacationRental = IriTerm.prevalidated(
+  static const VacationRental = const IriTerm(
     'https://schema.org/VacationRental',
   );
 
@@ -6821,25 +6389,25 @@ class Schema {
   ///
   /// A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space.
   ///
-  static const Vehicle = IriTerm.prevalidated('https://schema.org/Vehicle');
+  static const Vehicle = const IriTerm('https://schema.org/Vehicle');
 
   /// IRI for schema:Vein
   ///
   /// A type of blood vessel that specifically carries blood to the heart.
   ///
-  static const Vein = IriTerm.prevalidated('https://schema.org/Vein');
+  static const Vein = const IriTerm('https://schema.org/Vein');
 
   /// IRI for schema:Vessel
   ///
   /// A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body.
   ///
-  static const Vessel = IriTerm.prevalidated('https://schema.org/Vessel');
+  static const Vessel = const IriTerm('https://schema.org/Vessel');
 
   /// IRI for schema:VeterinaryCare
   ///
   /// A vet's office.
   ///
-  static const VeterinaryCare = IriTerm.prevalidated(
+  static const VeterinaryCare = const IriTerm(
     'https://schema.org/VeterinaryCare',
   );
 
@@ -6847,21 +6415,19 @@ class Schema {
   ///
   /// Web page type: Video gallery page.
   ///
-  static const VideoGallery = IriTerm.prevalidated(
-    'https://schema.org/VideoGallery',
-  );
+  static const VideoGallery = const IriTerm('https://schema.org/VideoGallery');
 
   /// IRI for schema:VideoGame
   ///
   /// A video game is an electronic game that involves human interaction with a user interface to generate visual feedback on a video device.
   ///
-  static const VideoGame = IriTerm.prevalidated('https://schema.org/VideoGame');
+  static const VideoGame = const IriTerm('https://schema.org/VideoGame');
 
   /// IRI for schema:VideoGameClip
   ///
   /// A short segment/part of a video game.
   ///
-  static const VideoGameClip = IriTerm.prevalidated(
+  static const VideoGameClip = const IriTerm(
     'https://schema.org/VideoGameClip',
   );
 
@@ -6869,7 +6435,7 @@ class Schema {
   ///
   /// A video game series.
   ///
-  static const VideoGameSeries = IriTerm.prevalidated(
+  static const VideoGameSeries = const IriTerm(
     'https://schema.org/VideoGameSeries',
   );
 
@@ -6877,15 +6443,13 @@ class Schema {
   ///
   /// A video file.
   ///
-  static const VideoObject = IriTerm.prevalidated(
-    'https://schema.org/VideoObject',
-  );
+  static const VideoObject = const IriTerm('https://schema.org/VideoObject');
 
   /// IRI for schema:VideoObjectSnapshot
   ///
   /// A specific and exact (byte-for-byte) version of a {[VideoObject]}. Two byte-for-byte identical files, for the purposes of this type, considered identical. If they have different embedded metadata the files will differ. Different external facts about the files, e.g. creator or dateCreated that aren't represented in their actual content, do not affect this notion of identity.
   ///
-  static const VideoObjectSnapshot = IriTerm.prevalidated(
+  static const VideoObjectSnapshot = const IriTerm(
     'https://schema.org/VideoObjectSnapshot',
   );
 
@@ -6893,15 +6457,13 @@ class Schema {
   ///
   /// The act of consuming static visual content.
   ///
-  static const ViewAction = IriTerm.prevalidated(
-    'https://schema.org/ViewAction',
-  );
+  static const ViewAction = const IriTerm('https://schema.org/ViewAction');
 
   /// IRI for schema:VirtualLocation
   ///
   /// An online or virtual location for attending events. For example, one may attend an online seminar or educational event. While a virtual location may be used as the location of an event, virtual locations should not be confused with physical locations in the real world.
   ///
-  static const VirtualLocation = IriTerm.prevalidated(
+  static const VirtualLocation = const IriTerm(
     'https://schema.org/VirtualLocation',
   );
 
@@ -6909,7 +6471,7 @@ class Schema {
   ///
   /// Event type: Visual arts event.
   ///
-  static const VisualArtsEvent = IriTerm.prevalidated(
+  static const VisualArtsEvent = const IriTerm(
     'https://schema.org/VisualArtsEvent',
   );
 
@@ -6917,7 +6479,7 @@ class Schema {
   ///
   /// A work of art that is primarily visual in character.
   ///
-  static const VisualArtwork = IriTerm.prevalidated(
+  static const VisualArtwork = const IriTerm(
     'https://schema.org/VisualArtwork',
   );
 
@@ -6925,59 +6487,55 @@ class Schema {
   ///
   /// Vital signs are measures of various physiological functions in order to assess the most basic body functions.
   ///
-  static const VitalSign = IriTerm.prevalidated('https://schema.org/VitalSign');
+  static const VitalSign = const IriTerm('https://schema.org/VitalSign');
 
   /// IRI for schema:Volcano
   ///
   /// A volcano, like Fujisan.
   ///
-  static const Volcano = IriTerm.prevalidated('https://schema.org/Volcano');
+  static const Volcano = const IriTerm('https://schema.org/Volcano');
 
   /// IRI for schema:VoteAction
   ///
   /// The act of expressing a preference from a fixed/finite/structured set of choices/options.
   ///
-  static const VoteAction = IriTerm.prevalidated(
-    'https://schema.org/VoteAction',
-  );
+  static const VoteAction = const IriTerm('https://schema.org/VoteAction');
 
   /// IRI for schema:WPAdBlock
   ///
   /// An advertising section of the page.
   ///
-  static const WPAdBlock = IriTerm.prevalidated('https://schema.org/WPAdBlock');
+  static const WPAdBlock = const IriTerm('https://schema.org/WPAdBlock');
 
   /// IRI for schema:WPFooter
   ///
   /// The footer section of the page.
   ///
-  static const WPFooter = IriTerm.prevalidated('https://schema.org/WPFooter');
+  static const WPFooter = const IriTerm('https://schema.org/WPFooter');
 
   /// IRI for schema:WPHeader
   ///
   /// The header section of the page.
   ///
-  static const WPHeader = IriTerm.prevalidated('https://schema.org/WPHeader');
+  static const WPHeader = const IriTerm('https://schema.org/WPHeader');
 
   /// IRI for schema:WPSideBar
   ///
   /// A sidebar section of the page.
   ///
-  static const WPSideBar = IriTerm.prevalidated('https://schema.org/WPSideBar');
+  static const WPSideBar = const IriTerm('https://schema.org/WPSideBar');
 
   /// IRI for schema:WantAction
   ///
   /// The act of expressing a desire about the object. An agent wants an object.
   ///
-  static const WantAction = IriTerm.prevalidated(
-    'https://schema.org/WantAction',
-  );
+  static const WantAction = const IriTerm('https://schema.org/WantAction');
 
   /// IRI for schema:WarrantyPromise
   ///
   /// A structured value representing the duration and scope of services that will be provided to a customer free of charge in case of a defect or malfunction of a product.
   ///
-  static const WarrantyPromise = IriTerm.prevalidated(
+  static const WarrantyPromise = const IriTerm(
     'https://schema.org/WarrantyPromise',
   );
 
@@ -6986,7 +6544,7 @@ class Schema {
   /// A range of services that will be provided to a customer free of charge in case of a defect or malfunction of a product.\n\nCommonly used values:\n\n* http://purl.org/goodrelations/v1#Labor-BringIn\n* http://purl.org/goodrelations/v1#PartsAndLabor-BringIn\n* http://purl.org/goodrelations/v1#PartsAndLabor-PickUp
   ///
   ///
-  static const WarrantyScope = IriTerm.prevalidated(
+  static const WarrantyScope = const IriTerm(
     'https://schema.org/WarrantyScope',
   );
 
@@ -6994,29 +6552,25 @@ class Schema {
   ///
   /// The act of consuming dynamic/moving visual content.
   ///
-  static const WatchAction = IriTerm.prevalidated(
-    'https://schema.org/WatchAction',
-  );
+  static const WatchAction = const IriTerm('https://schema.org/WatchAction');
 
   /// IRI for schema:Waterfall
   ///
   /// A waterfall, like Niagara.
   ///
-  static const Waterfall = IriTerm.prevalidated('https://schema.org/Waterfall');
+  static const Waterfall = const IriTerm('https://schema.org/Waterfall');
 
   /// IRI for schema:WearAction
   ///
   /// The act of dressing oneself in clothing.
   ///
-  static const WearAction = IriTerm.prevalidated(
-    'https://schema.org/WearAction',
-  );
+  static const WearAction = const IriTerm('https://schema.org/WearAction');
 
   /// IRI for schema:WearableMeasurementTypeEnumeration
   ///
   /// Enumerates common types of measurement for wearables products.
   ///
-  static const WearableMeasurementTypeEnumeration = IriTerm.prevalidated(
+  static const WearableMeasurementTypeEnumeration = const IriTerm(
     'https://schema.org/WearableMeasurementTypeEnumeration',
   );
 
@@ -7024,7 +6578,7 @@ class Schema {
   ///
   /// Enumerates common size groups (also known as "size types") for wearable products.
   ///
-  static const WearableSizeGroupEnumeration = IriTerm.prevalidated(
+  static const WearableSizeGroupEnumeration = const IriTerm(
     'https://schema.org/WearableSizeGroupEnumeration',
   );
 
@@ -7032,7 +6586,7 @@ class Schema {
   ///
   /// Enumerates common size systems specific for wearable products.
   ///
-  static const WearableSizeSystemEnumeration = IriTerm.prevalidated(
+  static const WearableSizeSystemEnumeration = const IriTerm(
     'https://schema.org/WearableSizeSystemEnumeration',
   );
 
@@ -7040,13 +6594,13 @@ class Schema {
   ///
   /// An application programming interface accessible over Web/Internet technologies.
   ///
-  static const WebAPI = IriTerm.prevalidated('https://schema.org/WebAPI');
+  static const WebAPI = const IriTerm('https://schema.org/WebAPI');
 
   /// IRI for schema:WebApplication
   ///
   /// Web applications.
   ///
-  static const WebApplication = IriTerm.prevalidated(
+  static const WebApplication = const IriTerm(
     'https://schema.org/WebApplication',
   );
 
@@ -7054,21 +6608,19 @@ class Schema {
   ///
   /// WebContent is a type representing all {[WebPage]}, {[WebSite]} and {[WebPageElement]} content. It is sometimes the case that detailed distinctions between Web pages, sites and their parts are not always important or obvious. The  {[WebContent]} type makes it easier to describe Web-addressable content without requiring such distinctions to always be stated. (The intent is that the existing types {[WebPage]}, {[WebSite]} and {[WebPageElement]} will eventually be declared as subtypes of {[WebContent]}.)
   ///
-  static const WebContent = IriTerm.prevalidated(
-    'https://schema.org/WebContent',
-  );
+  static const WebContent = const IriTerm('https://schema.org/WebContent');
 
   /// IRI for schema:WebPage
   ///
   /// A web page. Every web page is implicitly assumed to be declared to be of type WebPage, so the various properties about that webpage, such as <code>breadcrumb</code> may be used. We recommend explicit declaration if these properties are specified, but if they are found outside of an itemscope, they will be assumed to be about the page.
   ///
-  static const WebPage = IriTerm.prevalidated('https://schema.org/WebPage');
+  static const WebPage = const IriTerm('https://schema.org/WebPage');
 
   /// IRI for schema:WebPageElement
   ///
   /// A web page element, like a table or an image.
   ///
-  static const WebPageElement = IriTerm.prevalidated(
+  static const WebPageElement = const IriTerm(
     'https://schema.org/WebPageElement',
   );
 
@@ -7076,13 +6628,13 @@ class Schema {
   ///
   /// A WebSite is a set of related web pages and other items typically served from a single web domain and accessible via URLs.
   ///
-  static const WebSite = IriTerm.prevalidated('https://schema.org/WebSite');
+  static const WebSite = const IriTerm('https://schema.org/WebSite');
 
   /// IRI for schema:WholesaleStore
   ///
   /// A wholesale store.
   ///
-  static const WholesaleStore = IriTerm.prevalidated(
+  static const WholesaleStore = const IriTerm(
     'https://schema.org/WholesaleStore',
   );
 
@@ -7090,19 +6642,19 @@ class Schema {
   ///
   /// The act of achieving victory in a competitive activity.
   ///
-  static const WinAction = IriTerm.prevalidated('https://schema.org/WinAction');
+  static const WinAction = const IriTerm('https://schema.org/WinAction');
 
   /// IRI for schema:Winery
   ///
   /// A winery.
   ///
-  static const Winery = IriTerm.prevalidated('https://schema.org/Winery');
+  static const Winery = const IriTerm('https://schema.org/Winery');
 
   /// IRI for schema:WorkBasedProgram
   ///
   /// A program with both an educational and employment component. Typically based at a workplace and structured around work-based learning, with the aim of instilling competencies related to an occupation. WorkBasedProgram is used to distinguish programs such as apprenticeships from school, college or other classroom based educational programs.
   ///
-  static const WorkBasedProgram = IriTerm.prevalidated(
+  static const WorkBasedProgram = const IriTerm(
     'https://schema.org/WorkBasedProgram',
   );
 
@@ -7110,35 +6662,31 @@ class Schema {
   ///
   /// A Workers Union (also known as a Labor Union, Labour Union, or Trade Union) is an organization that promotes the interests of its worker members by collectively bargaining with management, organizing, and political lobbying.
   ///
-  static const WorkersUnion = IriTerm.prevalidated(
-    'https://schema.org/WorkersUnion',
-  );
+  static const WorkersUnion = const IriTerm('https://schema.org/WorkersUnion');
 
   /// IRI for schema:WriteAction
   ///
   /// The act of authoring written creative content.
   ///
-  static const WriteAction = IriTerm.prevalidated(
-    'https://schema.org/WriteAction',
-  );
+  static const WriteAction = const IriTerm('https://schema.org/WriteAction');
 
   /// IRI for schema:XPathType
   ///
   /// Text representing an XPath (typically but not necessarily version 1.0).
   ///
-  static const XPathType = IriTerm.prevalidated('https://schema.org/XPathType');
+  static const XPathType = const IriTerm('https://schema.org/XPathType');
 
   /// IRI for schema:Zoo
   ///
   /// A zoo.
   ///
-  static const Zoo = IriTerm.prevalidated('https://schema.org/Zoo');
+  static const Zoo = const IriTerm('https://schema.org/Zoo');
 
   /// IRI for schema:CommunityHealth
   ///
   /// A field of public health focusing on improving health characteristics of a defined population in relation with their geographical or environment areas.
   ///
-  static const CommunityHealth = IriTerm.prevalidated(
+  static const CommunityHealth = const IriTerm(
     'https://schema.org/CommunityHealth',
   );
 
@@ -7146,7 +6694,7 @@ class Schema {
   ///
   /// Dietetics and nutrition as a medical specialty.
   ///
-  static const DietNutrition = IriTerm.prevalidated(
+  static const DietNutrition = const IriTerm(
     'https://schema.org/DietNutrition',
   );
 
@@ -7154,59 +6702,55 @@ class Schema {
   ///
   /// A specific branch of medical science that deals with the evaluation and initial treatment of medical conditions caused by trauma or sudden illness.
   ///
-  static const Emergency = IriTerm.prevalidated('https://schema.org/Emergency');
+  static const Emergency = const IriTerm('https://schema.org/Emergency');
 
   /// IRI for schema:Geriatric
   ///
   /// A specific branch of medical science that is concerned with the diagnosis and treatment of diseases, debilities and provision of care to the aged.
   ///
-  static const Geriatric = IriTerm.prevalidated('https://schema.org/Geriatric');
+  static const Geriatric = const IriTerm('https://schema.org/Geriatric');
 
   /// IRI for schema:Gynecologic
   ///
   /// A specific branch of medical science that pertains to the health care of women, particularly in the diagnosis and treatment of disorders affecting the female reproductive system.
   ///
-  static const Gynecologic = IriTerm.prevalidated(
-    'https://schema.org/Gynecologic',
-  );
+  static const Gynecologic = const IriTerm('https://schema.org/Gynecologic');
 
   /// IRI for schema:Midwifery
   ///
   /// A nurse-like health profession that deals with pregnancy, childbirth, and the postpartum period (including care of the newborn), besides sexual and reproductive health of women throughout their lives.
   ///
-  static const Midwifery = IriTerm.prevalidated('https://schema.org/Midwifery');
+  static const Midwifery = const IriTerm('https://schema.org/Midwifery');
 
   /// IRI for schema:Nursing
   ///
   /// A health profession of a person formally educated and trained in the care of the sick or infirm person.
   ///
-  static const Nursing = IriTerm.prevalidated('https://schema.org/Nursing');
+  static const Nursing = const IriTerm('https://schema.org/Nursing');
 
   /// IRI for schema:Obstetric
   ///
   /// A specific branch of medical science that specializes in the care of women during the prenatal and postnatal care and with the delivery of the child.
   ///
-  static const Obstetric = IriTerm.prevalidated('https://schema.org/Obstetric');
+  static const Obstetric = const IriTerm('https://schema.org/Obstetric');
 
   /// IRI for schema:Oncologic
   ///
   /// A specific branch of medical science that deals with benign and malignant tumors, including the study of their development, diagnosis, treatment and prevention.
   ///
-  static const Oncologic = IriTerm.prevalidated('https://schema.org/Oncologic');
+  static const Oncologic = const IriTerm('https://schema.org/Oncologic');
 
   /// IRI for schema:Optometric
   ///
   /// The science or practice of testing visual acuity and prescribing corrective lenses.
   ///
-  static const Optometric = IriTerm.prevalidated(
-    'https://schema.org/Optometric',
-  );
+  static const Optometric = const IriTerm('https://schema.org/Optometric');
 
   /// IRI for schema:Otolaryngologic
   ///
   /// A specific branch of medical science that is concerned with the ear, nose and throat and their respective disease states.
   ///
-  static const Otolaryngologic = IriTerm.prevalidated(
+  static const Otolaryngologic = const IriTerm(
     'https://schema.org/Otolaryngologic',
   );
 
@@ -7214,13 +6758,13 @@ class Schema {
   ///
   /// A specific branch of medical science that specializes in the care of infants, children and adolescents.
   ///
-  static const Pediatric = IriTerm.prevalidated('https://schema.org/Pediatric');
+  static const Pediatric = const IriTerm('https://schema.org/Pediatric');
 
   /// IRI for schema:Physiotherapy
   ///
   /// The practice of treatment of disease, injury, or deformity by physical methods such as massage, heat treatment, and exercise rather than by drugs or surgery.
   ///
-  static const Physiotherapy = IriTerm.prevalidated(
+  static const Physiotherapy = const IriTerm(
     'https://schema.org/Physiotherapy',
   );
 
@@ -7228,7 +6772,7 @@ class Schema {
   ///
   /// A specific branch of medical science that pertains to therapeutic or cosmetic repair or re-formation of missing, injured or malformed tissues or body parts by manual and instrumental means.
   ///
-  static const PlasticSurgery = IriTerm.prevalidated(
+  static const PlasticSurgery = const IriTerm(
     'https://schema.org/PlasticSurgery',
   );
 
@@ -7236,37 +6780,31 @@ class Schema {
   ///
   /// Podiatry is the care of the human foot, especially the diagnosis and treatment of foot disorders.
   ///
-  static const Podiatric = IriTerm.prevalidated('https://schema.org/Podiatric');
+  static const Podiatric = const IriTerm('https://schema.org/Podiatric');
 
   /// IRI for schema:PrimaryCare
   ///
   /// The medical care by a physician, or other health-care professional, who is the patient's first contact with the health-care system and who may recommend a specialist if necessary.
   ///
-  static const PrimaryCare = IriTerm.prevalidated(
-    'https://schema.org/PrimaryCare',
-  );
+  static const PrimaryCare = const IriTerm('https://schema.org/PrimaryCare');
 
   /// IRI for schema:Psychiatric
   ///
   /// A specific branch of medical science that is concerned with the study, treatment, and prevention of mental illness, using both medical and psychological therapies.
   ///
-  static const Psychiatric = IriTerm.prevalidated(
-    'https://schema.org/Psychiatric',
-  );
+  static const Psychiatric = const IriTerm('https://schema.org/Psychiatric');
 
   /// IRI for schema:PublicHealth
   ///
   /// Branch of medicine that pertains to the health services to improve and protect community health, especially epidemiology, sanitation, immunization, and preventive medicine.
   ///
-  static const PublicHealth = IriTerm.prevalidated(
-    'https://schema.org/PublicHealth',
-  );
+  static const PublicHealth = const IriTerm('https://schema.org/PublicHealth');
 
   /// IRI for schema:RespiratoryTherapy
   ///
   /// The therapy that is concerned with the maintenance or improvement of respiratory function (as in patients with pulmonary disease).
   ///
-  static const RespiratoryTherapy = IriTerm.prevalidated(
+  static const RespiratoryTherapy = const IriTerm(
     'https://schema.org/RespiratoryTherapy',
   );
 
@@ -7274,21 +6812,19 @@ class Schema {
   ///
   /// A specific branch of medical science that pertains to diagnosis and treatment of disorders of skin.
   ///
-  static const Dermatology = IriTerm.prevalidated(
-    'https://schema.org/Dermatology',
-  );
+  static const Dermatology = const IriTerm('https://schema.org/Dermatology');
 
   /// IRI for schema:Abdomen
   ///
   /// Abdomen clinical examination.
   ///
-  static const Abdomen = IriTerm.prevalidated('https://schema.org/Abdomen');
+  static const Abdomen = const IriTerm('https://schema.org/Abdomen');
 
   /// IRI for schema:ActivationFee
   ///
   /// Represents the activation fee part of the total price for an offered product, for example a cellphone contract.
   ///
-  static const ActivationFee = IriTerm.prevalidated(
+  static const ActivationFee = const IriTerm(
     'https://schema.org/ActivationFee',
   );
 
@@ -7296,7 +6832,7 @@ class Schema {
   ///
   /// An in-progress action (e.g., while watching the movie, or driving to a location).
   ///
-  static const ActiveActionStatus = IriTerm.prevalidated(
+  static const ActiveActionStatus = const IriTerm(
     'https://schema.org/ActiveActionStatus',
   );
 
@@ -7304,7 +6840,7 @@ class Schema {
   ///
   /// Active, but not recruiting new participants.
   ///
-  static const ActiveNotRecruiting = IriTerm.prevalidated(
+  static const ActiveNotRecruiting = const IriTerm(
     'https://schema.org/ActiveNotRecruiting',
   );
 
@@ -7312,7 +6848,7 @@ class Schema {
   ///
   /// Physical activity of relatively low intensity that depends primarily on the aerobic energy-generating process; during activity, the aerobic metabolism uses oxygen to adequately meet energy demands during exercise.
   ///
-  static const AerobicActivity = IriTerm.prevalidated(
+  static const AerobicActivity = const IriTerm(
     'https://schema.org/AerobicActivity',
   );
 
@@ -7320,15 +6856,13 @@ class Schema {
   ///
   /// AlbumRelease.
   ///
-  static const AlbumRelease = IriTerm.prevalidated(
-    'https://schema.org/AlbumRelease',
-  );
+  static const AlbumRelease = const IriTerm('https://schema.org/AlbumRelease');
 
   /// IRI for schema:AlcoholConsideration
   ///
   /// Item contains alcohol or promotes alcohol consumption.
   ///
-  static const AlcoholConsideration = IriTerm.prevalidated(
+  static const AlcoholConsideration = const IriTerm(
     'https://schema.org/AlcoholConsideration',
   );
 
@@ -7336,7 +6870,7 @@ class Schema {
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/algorithmicMedia">algorithmic media</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const AlgorithmicMediaDigitalSource = IriTerm.prevalidated(
+  static const AlgorithmicMediaDigitalSource = const IriTerm(
     'https://schema.org/AlgorithmicMediaDigitalSource',
   );
 
@@ -7344,7 +6878,7 @@ class Schema {
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/algorithmicallyEnhanced">algorithmically enhanced</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const AlgorithmicallyEnhancedDigitalSource = IriTerm.prevalidated(
+  static const AlgorithmicallyEnhancedDigitalSource = const IriTerm(
     'https://schema.org/AlgorithmicallyEnhancedDigitalSource',
   );
 
@@ -7352,7 +6886,7 @@ class Schema {
   ///
   /// All-wheel Drive is a transmission layout where the engine drives all four wheels.
   ///
-  static const AllWheelDriveConfiguration = IriTerm.prevalidated(
+  static const AllWheelDriveConfiguration = const IriTerm(
     'https://schema.org/AllWheelDriveConfiguration',
   );
 
@@ -7360,7 +6894,7 @@ class Schema {
   ///
   /// Content about the allergy-related aspects of a health topic.
   ///
-  static const AllergiesHealthAspect = IriTerm.prevalidated(
+  static const AllergiesHealthAspect = const IriTerm(
     'https://schema.org/AllergiesHealthAspect',
   );
 
@@ -7368,7 +6902,7 @@ class Schema {
   ///
   /// Physical activity that is of high-intensity which utilizes the anaerobic metabolism of the body.
   ///
-  static const AnaerobicActivity = IriTerm.prevalidated(
+  static const AnaerobicActivity = const IriTerm(
     'https://schema.org/AnaerobicActivity',
   );
 
@@ -7376,7 +6910,7 @@ class Schema {
   ///
   /// Represents the broad notion of Android-based operating systems.
   ///
-  static const AndroidPlatform = IriTerm.prevalidated(
+  static const AndroidPlatform = const IriTerm(
     'https://schema.org/AndroidPlatform',
   );
 
@@ -7384,23 +6918,19 @@ class Schema {
   ///
   /// A specific branch of medical science that pertains to study of anesthetics and their application.
   ///
-  static const Anesthesia = IriTerm.prevalidated(
-    'https://schema.org/Anesthesia',
-  );
+  static const Anesthesia = const IriTerm('https://schema.org/Anesthesia');
 
   /// IRI for schema:Appearance
   ///
   /// Appearance assessment with clinical examination.
   ///
-  static const Appearance = IriTerm.prevalidated(
-    'https://schema.org/Appearance',
-  );
+  static const Appearance = const IriTerm('https://schema.org/Appearance');
 
   /// IRI for schema:AudiobookFormat
   ///
   /// Book format: Audiobook. This is an enumerated value for use with the bookFormat property. There is also a type 'Audiobook' in the bib extension which includes Audiobook specific properties.
   ///
-  static const AudiobookFormat = IriTerm.prevalidated(
+  static const AudiobookFormat = const IriTerm(
     'https://schema.org/AudiobookFormat',
   );
 
@@ -7408,7 +6938,7 @@ class Schema {
   ///
   /// Indicates that the publisher gives some special status to the publication of the document. ("The Queens Printer" version of a UK Act of Parliament, or the PDF version of a Directive published by the EU Office of Publications). Something "Authoritative" is considered to be also {[OfficialLegalValue]}".
   ///
-  static const AuthoritativeLegalValue = IriTerm.prevalidated(
+  static const AuthoritativeLegalValue = const IriTerm(
     'https://schema.org/AuthoritativeLegalValue',
   );
 
@@ -7416,39 +6946,37 @@ class Schema {
   ///
   /// A system of medicine that originated in India over thousands of years and that focuses on integrating and balancing the body, mind, and spirit.
   ///
-  static const Ayurvedic = IriTerm.prevalidated('https://schema.org/Ayurvedic');
+  static const Ayurvedic = const IriTerm('https://schema.org/Ayurvedic');
 
   /// IRI for schema:BackOrder
   ///
   /// Indicates that the item is available on back order.
   ///
-  static const BackOrder = IriTerm.prevalidated('https://schema.org/BackOrder');
+  static const BackOrder = const IriTerm('https://schema.org/BackOrder');
 
   /// IRI for schema:Bacteria
   ///
   /// Pathogenic bacteria that cause bacterial infection.
   ///
-  static const Bacteria = IriTerm.prevalidated('https://schema.org/Bacteria');
+  static const Bacteria = const IriTerm('https://schema.org/Bacteria');
 
   /// IRI for schema:Balance
   ///
   /// Physical activity that is engaged to help maintain posture and balance.
   ///
-  static const Balance = IriTerm.prevalidated('https://schema.org/Balance');
+  static const Balance = const IriTerm('https://schema.org/Balance');
 
   /// IRI for schema:BasicIncome
   ///
   /// BasicIncome: this is a benefit for basic income.
   ///
-  static const BasicIncome = IriTerm.prevalidated(
-    'https://schema.org/BasicIncome',
-  );
+  static const BasicIncome = const IriTerm('https://schema.org/BasicIncome');
 
   /// IRI for schema:BenefitsHealthAspect
   ///
   /// Content about the benefits and advantages of usage or utilization of topic.
   ///
-  static const BenefitsHealthAspect = IriTerm.prevalidated(
+  static const BenefitsHealthAspect = const IriTerm(
     'https://schema.org/BenefitsHealthAspect',
   );
 
@@ -7456,7 +6984,7 @@ class Schema {
   ///
   /// Arm length (measured between arms/shoulder line intersection and the prominent wrist bone). Used, for example, to fit shirts.
   ///
-  static const BodyMeasurementArm = IriTerm.prevalidated(
+  static const BodyMeasurementArm = const IriTerm(
     'https://schema.org/BodyMeasurementArm',
   );
 
@@ -7464,7 +6992,7 @@ class Schema {
   ///
   /// Maximum girth of bust. Used, for example, to fit women's suits.
   ///
-  static const BodyMeasurementBust = IriTerm.prevalidated(
+  static const BodyMeasurementBust = const IriTerm(
     'https://schema.org/BodyMeasurementBust',
   );
 
@@ -7472,7 +7000,7 @@ class Schema {
   ///
   /// Maximum girth of chest. Used, for example, to fit men's suits.
   ///
-  static const BodyMeasurementChest = IriTerm.prevalidated(
+  static const BodyMeasurementChest = const IriTerm(
     'https://schema.org/BodyMeasurementChest',
   );
 
@@ -7480,7 +7008,7 @@ class Schema {
   ///
   /// Foot length (measured between end of the most prominent toe and the most prominent part of the heel). Used, for example, to measure socks.
   ///
-  static const BodyMeasurementFoot = IriTerm.prevalidated(
+  static const BodyMeasurementFoot = const IriTerm(
     'https://schema.org/BodyMeasurementFoot',
   );
 
@@ -7488,7 +7016,7 @@ class Schema {
   ///
   /// Maximum hand girth (measured over the knuckles of the open right hand excluding thumb, fingers together). Used, for example, to fit gloves.
   ///
-  static const BodyMeasurementHand = IriTerm.prevalidated(
+  static const BodyMeasurementHand = const IriTerm(
     'https://schema.org/BodyMeasurementHand',
   );
 
@@ -7496,7 +7024,7 @@ class Schema {
   ///
   /// Maximum girth of head above the ears. Used, for example, to fit hats.
   ///
-  static const BodyMeasurementHead = IriTerm.prevalidated(
+  static const BodyMeasurementHead = const IriTerm(
     'https://schema.org/BodyMeasurementHead',
   );
 
@@ -7504,7 +7032,7 @@ class Schema {
   ///
   /// Body height (measured between crown of head and soles of feet). Used, for example, to fit jackets.
   ///
-  static const BodyMeasurementHeight = IriTerm.prevalidated(
+  static const BodyMeasurementHeight = const IriTerm(
     'https://schema.org/BodyMeasurementHeight',
   );
 
@@ -7512,7 +7040,7 @@ class Schema {
   ///
   /// Girth of hips (measured around the buttocks). Used, for example, to fit skirts.
   ///
-  static const BodyMeasurementHips = IriTerm.prevalidated(
+  static const BodyMeasurementHips = const IriTerm(
     'https://schema.org/BodyMeasurementHips',
   );
 
@@ -7520,7 +7048,7 @@ class Schema {
   ///
   /// Inside leg (measured between crotch and soles of feet). Used, for example, to fit pants.
   ///
-  static const BodyMeasurementInsideLeg = IriTerm.prevalidated(
+  static const BodyMeasurementInsideLeg = const IriTerm(
     'https://schema.org/BodyMeasurementInsideLeg',
   );
 
@@ -7528,7 +7056,7 @@ class Schema {
   ///
   /// Girth of neck. Used, for example, to fit shirts.
   ///
-  static const BodyMeasurementNeck = IriTerm.prevalidated(
+  static const BodyMeasurementNeck = const IriTerm(
     'https://schema.org/BodyMeasurementNeck',
   );
 
@@ -7536,7 +7064,7 @@ class Schema {
   ///
   /// Girth of body just below the bust. Used, for example, to fit women's swimwear.
   ///
-  static const BodyMeasurementUnderbust = IriTerm.prevalidated(
+  static const BodyMeasurementUnderbust = const IriTerm(
     'https://schema.org/BodyMeasurementUnderbust',
   );
 
@@ -7544,7 +7072,7 @@ class Schema {
   ///
   /// Girth of natural waistline (between hip bones and lower ribs). Used, for example, to fit pants.
   ///
-  static const BodyMeasurementWaist = IriTerm.prevalidated(
+  static const BodyMeasurementWaist = const IriTerm(
     'https://schema.org/BodyMeasurementWaist',
   );
 
@@ -7552,7 +7080,7 @@ class Schema {
   ///
   /// Body weight. Used, for example, to measure pantyhose.
   ///
-  static const BodyMeasurementWeight = IriTerm.prevalidated(
+  static const BodyMeasurementWeight = const IriTerm(
     'https://schema.org/BodyMeasurementWeight',
   );
 
@@ -7560,7 +7088,7 @@ class Schema {
   ///
   /// BroadcastRelease.
   ///
-  static const BroadcastRelease = IriTerm.prevalidated(
+  static const BroadcastRelease = const IriTerm(
     'https://schema.org/BroadcastRelease',
   );
 
@@ -7568,7 +7096,7 @@ class Schema {
   ///
   /// BusinessSupport: this is a benefit for supporting businesses.
   ///
-  static const BusinessSupport = IriTerm.prevalidated(
+  static const BusinessSupport = const IriTerm(
     'https://schema.org/BusinessSupport',
   );
 
@@ -7576,7 +7104,7 @@ class Schema {
   ///
   /// Payment in advance by bank transfer, equivalent to <code>http://purl.org/goodrelations/v1#ByBankTransferInAdvance</code>.
   ///
-  static const ByBankTransferInAdvance = IriTerm.prevalidated(
+  static const ByBankTransferInAdvance = const IriTerm(
     'https://schema.org/ByBankTransferInAdvance',
   );
 
@@ -7584,31 +7112,31 @@ class Schema {
   ///
   /// Payment by invoice, typically after the goods were delivered, equivalent to <code>http://purl.org/goodrelations/v1#ByInvoice</code>.
   ///
-  static const ByInvoice = IriTerm.prevalidated('https://schema.org/ByInvoice');
+  static const ByInvoice = const IriTerm('https://schema.org/ByInvoice');
 
   /// IRI for schema:CDFormat
   ///
   /// CDFormat.
   ///
-  static const CDFormat = IriTerm.prevalidated('https://schema.org/CDFormat');
+  static const CDFormat = const IriTerm('https://schema.org/CDFormat');
 
   /// IRI for schema:COD
   ///
   /// Cash on Delivery (COD) payment, equivalent to <code>http://purl.org/goodrelations/v1#COD</code>.
   ///
-  static const COD = IriTerm.prevalidated('https://schema.org/COD');
+  static const COD = const IriTerm('https://schema.org/COD');
 
   /// IRI for schema:CT
   ///
   /// X-ray computed tomography imaging.
   ///
-  static const CT = IriTerm.prevalidated('https://schema.org/CT');
+  static const CT = const IriTerm('https://schema.org/CT');
 
   /// IRI for schema:Cardiovascular
   ///
   /// A specific branch of medical science that pertains to diagnosis and treatment of disorders of heart and vasculature.
   ///
-  static const Cardiovascular = IriTerm.prevalidated(
+  static const Cardiovascular = const IriTerm(
     'https://schema.org/Cardiovascular',
   );
 
@@ -7616,7 +7144,7 @@ class Schema {
   ///
   /// Cardiovascular system assessment with clinical examination.
   ///
-  static const CardiovascularExam = IriTerm.prevalidated(
+  static const CardiovascularExam = const IriTerm(
     'https://schema.org/CardiovascularExam',
   );
 
@@ -7624,21 +7152,19 @@ class Schema {
   ///
   /// A case series (also known as a clinical series) is a medical research study that tracks patients with a known exposure given similar treatment or examines their medical records for exposure and outcome. A case series can be retrospective or prospective and usually involves a smaller number of patients than the more powerful case-control studies or randomized controlled trials. Case series may be consecutive or non-consecutive, depending on whether all cases presenting to the reporting authors over a period of time were included, or only a selection.
   ///
-  static const CaseSeries = IriTerm.prevalidated(
-    'https://schema.org/CaseSeries',
-  );
+  static const CaseSeries = const IriTerm('https://schema.org/CaseSeries');
 
   /// IRI for schema:Cash
   ///
   /// Payment using cash, on premises, equivalent to <code>http://purl.org/goodrelations/v1#Cash</code>.
   ///
-  static const Cash = IriTerm.prevalidated('https://schema.org/Cash');
+  static const Cash = const IriTerm('https://schema.org/Cash');
 
   /// IRI for schema:CassetteFormat
   ///
   /// CassetteFormat.
   ///
-  static const CassetteFormat = IriTerm.prevalidated(
+  static const CassetteFormat = const IriTerm(
     'https://schema.org/CassetteFormat',
   );
 
@@ -7646,7 +7172,7 @@ class Schema {
   ///
   /// Information about the causes and main actions that gave rise to the topic.
   ///
-  static const CausesHealthAspect = IriTerm.prevalidated(
+  static const CausesHealthAspect = const IriTerm(
     'https://schema.org/CausesHealthAspect',
   );
 
@@ -7654,7 +7180,7 @@ class Schema {
   ///
   /// Specifies that a certification is active.
   ///
-  static const CertificationActive = IriTerm.prevalidated(
+  static const CertificationActive = const IriTerm(
     'https://schema.org/CertificationActive',
   );
 
@@ -7662,7 +7188,7 @@ class Schema {
   ///
   /// Specifies that a certification is inactive (no longer in effect).
   ///
-  static const CertificationInactive = IriTerm.prevalidated(
+  static const CertificationInactive = const IriTerm(
     'https://schema.org/CertificationInactive',
   );
 
@@ -7670,7 +7196,7 @@ class Schema {
   ///
   /// CharitableIncorporatedOrganization: Non-profit type referring to a Charitable Incorporated Organization (UK).
   ///
-  static const CharitableIncorporatedOrganization = IriTerm.prevalidated(
+  static const CharitableIncorporatedOrganization = const IriTerm(
     'https://schema.org/CharitableIncorporatedOrganization',
   );
 
@@ -7678,7 +7204,7 @@ class Schema {
   ///
   /// Payment in advance by sending a check, equivalent to <code>http://purl.org/goodrelations/v1#CheckInAdvance</code>.
   ///
-  static const CheckInAdvance = IriTerm.prevalidated(
+  static const CheckInAdvance = const IriTerm(
     'https://schema.org/CheckInAdvance',
   );
 
@@ -7686,43 +7212,37 @@ class Schema {
   ///
   /// A system of medicine focused on the relationship between the body's structure, mainly the spine, and its functioning.
   ///
-  static const Chiropractic = IriTerm.prevalidated(
-    'https://schema.org/Chiropractic',
-  );
+  static const Chiropractic = const IriTerm('https://schema.org/Chiropractic');
 
   /// IRI for schema:CleaningFee
   ///
   /// Represents the cleaning fee part of the total price for an offered product, for example a vacation rental.
   ///
-  static const CleaningFee = IriTerm.prevalidated(
-    'https://schema.org/CleaningFee',
-  );
+  static const CleaningFee = const IriTerm('https://schema.org/CleaningFee');
 
   /// IRI for schema:Clinician
   ///
   /// Medical clinicians, including practicing physicians and other medical professionals involved in clinical practice.
   ///
-  static const Clinician = IriTerm.prevalidated('https://schema.org/Clinician');
+  static const Clinician = const IriTerm('https://schema.org/Clinician');
 
   /// IRI for schema:CoOp
   ///
   /// Play mode: CoOp. Co-operative games, where you play on the same team with friends.
   ///
-  static const CoOp = IriTerm.prevalidated('https://schema.org/CoOp');
+  static const CoOp = const IriTerm('https://schema.org/CoOp');
 
   /// IRI for schema:CohortStudy
   ///
   /// Also known as a panel study. A cohort study is a form of longitudinal study used in medicine and social science. It is one type of study design and should be compared with a cross-sectional study.  A cohort is a group of people who share a common characteristic or experience within a defined period (e.g., are born, leave school, lose their job, are exposed to a drug or a vaccine, etc.). The comparison group may be the general population from which the cohort is drawn, or it may be another cohort of persons thought to have had little or no exposure to the substance under investigation, but otherwise similar. Alternatively, subgroups within the cohort may be compared with each other.
   ///
-  static const CohortStudy = IriTerm.prevalidated(
-    'https://schema.org/CohortStudy',
-  );
+  static const CohortStudy = const IriTerm('https://schema.org/CohortStudy');
 
   /// IRI for schema:CommentPermission
   ///
   /// Permission to add comments to the document.
   ///
-  static const CommentPermission = IriTerm.prevalidated(
+  static const CommentPermission = const IriTerm(
     'https://schema.org/CommentPermission',
   );
 
@@ -7730,7 +7250,7 @@ class Schema {
   ///
   /// CompilationAlbum.
   ///
-  static const CompilationAlbum = IriTerm.prevalidated(
+  static const CompilationAlbum = const IriTerm(
     'https://schema.org/CompilationAlbum',
   );
 
@@ -7738,13 +7258,13 @@ class Schema {
   ///
   /// Completed.
   ///
-  static const Completed = IriTerm.prevalidated('https://schema.org/Completed');
+  static const Completed = const IriTerm('https://schema.org/Completed');
 
   /// IRI for schema:CompletedActionStatus
   ///
   /// An action that has already taken place.
   ///
-  static const CompletedActionStatus = IriTerm.prevalidated(
+  static const CompletedActionStatus = const IriTerm(
     'https://schema.org/CompletedActionStatus',
   );
 
@@ -7752,7 +7272,7 @@ class Schema {
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/compositeCapture">composite capture</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const CompositeCaptureDigitalSource = IriTerm.prevalidated(
+  static const CompositeCaptureDigitalSource = const IriTerm(
     'https://schema.org/CompositeCaptureDigitalSource',
   );
 
@@ -7760,7 +7280,7 @@ class Schema {
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/algorithmicMedia">algorithmic media</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const CompositeDigitalSource = IriTerm.prevalidated(
+  static const CompositeDigitalSource = const IriTerm(
     'https://schema.org/CompositeDigitalSource',
   );
 
@@ -7768,7 +7288,7 @@ class Schema {
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/compositeSynthetic">composite synthetic</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const CompositeSyntheticDigitalSource = IriTerm.prevalidated(
+  static const CompositeSyntheticDigitalSource = const IriTerm(
     'https://schema.org/CompositeSyntheticDigitalSource',
   );
 
@@ -7777,7 +7297,7 @@ class Schema {
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/compositeWithTrainedAlgorithmicMedia">composite with trained algorithmic media</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
   static const CompositeWithTrainedAlgorithmicMediaDigitalSource =
-      IriTerm.prevalidated(
+      const IriTerm(
         'https://schema.org/CompositeWithTrainedAlgorithmicMediaDigitalSource',
       );
 
@@ -7785,7 +7305,7 @@ class Schema {
   ///
   /// Content about contagion mechanisms and contagiousness information over the topic.
   ///
-  static const ContagiousnessHealthAspect = IriTerm.prevalidated(
+  static const ContagiousnessHealthAspect = const IriTerm(
     'https://schema.org/ContagiousnessHealthAspect',
   );
 
@@ -7793,7 +7313,7 @@ class Schema {
   ///
   /// Studies carried out on pre-existing data (usually from 'snapshot' surveys), such as that collected by the Census Bureau. Sometimes called Prevalence Studies.
   ///
-  static const CrossSectional = IriTerm.prevalidated(
+  static const CrossSectional = const IriTerm(
     'https://schema.org/CrossSectional',
   );
 
@@ -7801,21 +7321,19 @@ class Schema {
   ///
   /// DJMixAlbum.
   ///
-  static const DJMixAlbum = IriTerm.prevalidated(
-    'https://schema.org/DJMixAlbum',
-  );
+  static const DJMixAlbum = const IriTerm('https://schema.org/DJMixAlbum');
 
   /// IRI for schema:DVDFormat
   ///
   /// DVDFormat.
   ///
-  static const DVDFormat = IriTerm.prevalidated('https://schema.org/DVDFormat');
+  static const DVDFormat = const IriTerm('https://schema.org/DVDFormat');
 
   /// IRI for schema:DamagedCondition
   ///
   /// Indicates that the item is damaged.
   ///
-  static const DamagedCondition = IriTerm.prevalidated(
+  static const DamagedCondition = const IriTerm(
     'https://schema.org/DamagedCondition',
   );
 
@@ -7823,7 +7341,7 @@ class Schema {
   ///
   /// The item is dangerous and requires careful handling and/or special training of the user. See also the [UN Model Classification](https://unece.org/DAM/trans/danger/publi/unrec/rev17/English/02EREv17_Part2.pdf) defining the 9 classes of dangerous goods such as explosives, gases, flammables, and more.
   ///
-  static const DangerousGoodConsideration = IriTerm.prevalidated(
+  static const DangerousGoodConsideration = const IriTerm(
     'https://schema.org/DangerousGoodConsideration',
   );
 
@@ -7831,7 +7349,7 @@ class Schema {
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/dataDrivenMedia">data driven media</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const DataDrivenMediaDigitalSource = IriTerm.prevalidated(
+  static const DataDrivenMediaDigitalSource = const IriTerm(
     'https://schema.org/DataDrivenMediaDigitalSource',
   );
 
@@ -7848,7 +7366,7 @@ class Schema {
   /// For an {[AudioObject]} to be 'missing context': Unaltered audio presented in an inaccurate manner that misrepresents it. For example, using incorrect dates or locations, or sharing brief clips from a longer recording to mislead viewers. (Audio rated “original” can also be missing context.)
   ///
   ///
-  static const DecontextualizedContent = IriTerm.prevalidated(
+  static const DecontextualizedContent = const IriTerm(
     'https://schema.org/DecontextualizedContent',
   );
 
@@ -7857,7 +7375,7 @@ class Schema {
   /// Indicates a document for which the text is conclusively what the law says and is legally binding. (e.g. The digitally signed version of an Official Journal.)
   /// Something "Definitive" is considered to be also {[AuthoritativeLegalValue]}.
   ///
-  static const DefinitiveLegalValue = IriTerm.prevalidated(
+  static const DefinitiveLegalValue = const IriTerm(
     'https://schema.org/DefinitiveLegalValue',
   );
 
@@ -7865,13 +7383,13 @@ class Schema {
   ///
   /// DemoAlbum.
   ///
-  static const DemoAlbum = IriTerm.prevalidated('https://schema.org/DemoAlbum');
+  static const DemoAlbum = const IriTerm('https://schema.org/DemoAlbum');
 
   /// IRI for schema:DemoGameAvailability
   ///
   /// Indicates demo game availability, i.e. a somehow limited demonstration of the full game.
   ///
-  static const DemoGameAvailability = IriTerm.prevalidated(
+  static const DemoGameAvailability = const IriTerm(
     'https://schema.org/DemoGameAvailability',
   );
 
@@ -7879,21 +7397,19 @@ class Schema {
   ///
   /// A branch of medicine that is involved in the dental care.
   ///
-  static const Dentistry = IriTerm.prevalidated('https://schema.org/Dentistry');
+  static const Dentistry = const IriTerm('https://schema.org/Dentistry');
 
   /// IRI for schema:Dermatologic
   ///
   /// Something relating to or practicing dermatology.
   ///
-  static const Dermatologic = IriTerm.prevalidated(
-    'https://schema.org/Dermatologic',
-  );
+  static const Dermatologic = const IriTerm('https://schema.org/Dermatologic');
 
   /// IRI for schema:DesktopWebPlatform
   ///
   /// Represents the broad notion of 'desktop' browsers as a Web Platform.
   ///
-  static const DesktopWebPlatform = IriTerm.prevalidated(
+  static const DesktopWebPlatform = const IriTerm(
     'https://schema.org/DesktopWebPlatform',
   );
 
@@ -7901,23 +7417,19 @@ class Schema {
   ///
   /// A diet appropriate for people with diabetes.
   ///
-  static const DiabeticDiet = IriTerm.prevalidated(
-    'https://schema.org/DiabeticDiet',
-  );
+  static const DiabeticDiet = const IriTerm('https://schema.org/DiabeticDiet');
 
   /// IRI for schema:Diagnostic
   ///
   /// A medical device used for diagnostic purposes.
   ///
-  static const Diagnostic = IriTerm.prevalidated(
-    'https://schema.org/Diagnostic',
-  );
+  static const Diagnostic = const IriTerm('https://schema.org/Diagnostic');
 
   /// IRI for schema:DigitalArtDigitalSource
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/digitalArt">digital art</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const DigitalArtDigitalSource = IriTerm.prevalidated(
+  static const DigitalArtDigitalSource = const IriTerm(
     'https://schema.org/DigitalArtDigitalSource',
   );
 
@@ -7925,7 +7437,7 @@ class Schema {
   ///
   /// DigitalAudioTapeFormat.
   ///
-  static const DigitalAudioTapeFormat = IriTerm.prevalidated(
+  static const DigitalAudioTapeFormat = const IriTerm(
     'https://schema.org/DigitalAudioTapeFormat',
   );
 
@@ -7933,7 +7445,7 @@ class Schema {
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/digitalCapture">digital capture</a></a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const DigitalCaptureDigitalSource = IriTerm.prevalidated(
+  static const DigitalCaptureDigitalSource = const IriTerm(
     'https://schema.org/DigitalCaptureDigitalSource',
   );
 
@@ -7941,7 +7453,7 @@ class Schema {
   ///
   /// DigitalFormat.
   ///
-  static const DigitalFormat = IriTerm.prevalidated(
+  static const DigitalFormat = const IriTerm(
     'https://schema.org/DigitalFormat',
   );
 
@@ -7949,15 +7461,13 @@ class Schema {
   ///
   /// Payment in advance by direct debit from the bank, equivalent to <code>http://purl.org/goodrelations/v1#DirectDebit</code>.
   ///
-  static const DirectDebit = IriTerm.prevalidated(
-    'https://schema.org/DirectDebit',
-  );
+  static const DirectDebit = const IriTerm('https://schema.org/DirectDebit');
 
   /// IRI for schema:DisabilitySupport
   ///
   /// DisabilitySupport: this is a benefit for disability support.
   ///
-  static const DisabilitySupport = IriTerm.prevalidated(
+  static const DisabilitySupport = const IriTerm(
     'https://schema.org/DisabilitySupport',
   );
 
@@ -7965,23 +7475,19 @@ class Schema {
   ///
   /// Indicates that the item has been discontinued.
   ///
-  static const Discontinued = IriTerm.prevalidated(
-    'https://schema.org/Discontinued',
-  );
+  static const Discontinued = const IriTerm('https://schema.org/Discontinued');
 
   /// IRI for schema:DistanceFee
   ///
   /// Represents the distance fee (e.g., price per km or mile) part of the total price for an offered product, for example a car rental.
   ///
-  static const DistanceFee = IriTerm.prevalidated(
-    'https://schema.org/DistanceFee',
-  );
+  static const DistanceFee = const IriTerm('https://schema.org/DistanceFee');
 
   /// IRI for schema:DoubleBlindedTrial
   ///
   /// A trial design in which neither the researcher nor the patient knows the details of the treatment the patient was randomly assigned to.
   ///
-  static const DoubleBlindedTrial = IriTerm.prevalidated(
+  static const DoubleBlindedTrial = const IriTerm(
     'https://schema.org/DoubleBlindedTrial',
   );
 
@@ -7989,15 +7495,13 @@ class Schema {
   ///
   /// Represents the downpayment (up-front payment) price component of the total price for an offered product that has additional installment payments.
   ///
-  static const Downpayment = IriTerm.prevalidated(
-    'https://schema.org/Downpayment',
-  );
+  static const Downpayment = const IriTerm('https://schema.org/Downpayment');
 
   /// IRI for schema:DrivingSchoolVehicleUsage
   ///
   /// Indicates the usage of the vehicle for driving school.
   ///
-  static const DrivingSchoolVehicleUsage = IriTerm.prevalidated(
+  static const DrivingSchoolVehicleUsage = const IriTerm(
     'https://schema.org/DrivingSchoolVehicleUsage',
   );
 
@@ -8005,19 +7509,19 @@ class Schema {
   ///
   /// Book format: Ebook.
   ///
-  static const EBook = IriTerm.prevalidated('https://schema.org/EBook');
+  static const EBook = const IriTerm('https://schema.org/EBook');
 
   /// IRI for schema:EPRelease
   ///
   /// EPRelease.
   ///
-  static const EPRelease = IriTerm.prevalidated('https://schema.org/EPRelease');
+  static const EPRelease = const IriTerm('https://schema.org/EPRelease');
 
   /// IRI for schema:EUEnergyEfficiencyCategoryA
   ///
   /// Represents EU Energy Efficiency Class A as defined in EU energy labeling regulations.
   ///
-  static const EUEnergyEfficiencyCategoryA = IriTerm.prevalidated(
+  static const EUEnergyEfficiencyCategoryA = const IriTerm(
     'https://schema.org/EUEnergyEfficiencyCategoryA',
   );
 
@@ -8025,7 +7529,7 @@ class Schema {
   ///
   /// Represents EU Energy Efficiency Class A+ as defined in EU energy labeling regulations.
   ///
-  static const EUEnergyEfficiencyCategoryA1Plus = IriTerm.prevalidated(
+  static const EUEnergyEfficiencyCategoryA1Plus = const IriTerm(
     'https://schema.org/EUEnergyEfficiencyCategoryA1Plus',
   );
 
@@ -8033,7 +7537,7 @@ class Schema {
   ///
   /// Represents EU Energy Efficiency Class A++ as defined in EU energy labeling regulations.
   ///
-  static const EUEnergyEfficiencyCategoryA2Plus = IriTerm.prevalidated(
+  static const EUEnergyEfficiencyCategoryA2Plus = const IriTerm(
     'https://schema.org/EUEnergyEfficiencyCategoryA2Plus',
   );
 
@@ -8041,7 +7545,7 @@ class Schema {
   ///
   /// Represents EU Energy Efficiency Class A+++ as defined in EU energy labeling regulations.
   ///
-  static const EUEnergyEfficiencyCategoryA3Plus = IriTerm.prevalidated(
+  static const EUEnergyEfficiencyCategoryA3Plus = const IriTerm(
     'https://schema.org/EUEnergyEfficiencyCategoryA3Plus',
   );
 
@@ -8049,7 +7553,7 @@ class Schema {
   ///
   /// Represents EU Energy Efficiency Class B as defined in EU energy labeling regulations.
   ///
-  static const EUEnergyEfficiencyCategoryB = IriTerm.prevalidated(
+  static const EUEnergyEfficiencyCategoryB = const IriTerm(
     'https://schema.org/EUEnergyEfficiencyCategoryB',
   );
 
@@ -8057,7 +7561,7 @@ class Schema {
   ///
   /// Represents EU Energy Efficiency Class C as defined in EU energy labeling regulations.
   ///
-  static const EUEnergyEfficiencyCategoryC = IriTerm.prevalidated(
+  static const EUEnergyEfficiencyCategoryC = const IriTerm(
     'https://schema.org/EUEnergyEfficiencyCategoryC',
   );
 
@@ -8065,7 +7569,7 @@ class Schema {
   ///
   /// Represents EU Energy Efficiency Class D as defined in EU energy labeling regulations.
   ///
-  static const EUEnergyEfficiencyCategoryD = IriTerm.prevalidated(
+  static const EUEnergyEfficiencyCategoryD = const IriTerm(
     'https://schema.org/EUEnergyEfficiencyCategoryD',
   );
 
@@ -8073,7 +7577,7 @@ class Schema {
   ///
   /// Represents EU Energy Efficiency Class E as defined in EU energy labeling regulations.
   ///
-  static const EUEnergyEfficiencyCategoryE = IriTerm.prevalidated(
+  static const EUEnergyEfficiencyCategoryE = const IriTerm(
     'https://schema.org/EUEnergyEfficiencyCategoryE',
   );
 
@@ -8081,7 +7585,7 @@ class Schema {
   ///
   /// Represents EU Energy Efficiency Class F as defined in EU energy labeling regulations.
   ///
-  static const EUEnergyEfficiencyCategoryF = IriTerm.prevalidated(
+  static const EUEnergyEfficiencyCategoryF = const IriTerm(
     'https://schema.org/EUEnergyEfficiencyCategoryF',
   );
 
@@ -8089,7 +7593,7 @@ class Schema {
   ///
   /// Represents EU Energy Efficiency Class G as defined in EU energy labeling regulations.
   ///
-  static const EUEnergyEfficiencyCategoryG = IriTerm.prevalidated(
+  static const EUEnergyEfficiencyCategoryG = const IriTerm(
     'https://schema.org/EUEnergyEfficiencyCategoryG',
   );
 
@@ -8097,7 +7601,7 @@ class Schema {
   ///
   /// Ear function assessment with clinical examination.
   ///
-  static const Ear = IriTerm.prevalidated('https://schema.org/Ear');
+  static const Ear = const IriTerm('https://schema.org/Ear');
 
   /// IRI for schema:EditedOrCroppedContent
   ///
@@ -8112,7 +7616,7 @@ class Schema {
   /// For an {[AudioObject]} to be 'edited or cropped content': The audio has been edited or rearranged. This category applies to time edits, including editing multiple audio clips together to alter the story being told or editing out large portions from the recording.
   ///
   ///
-  static const EditedOrCroppedContent = IriTerm.prevalidated(
+  static const EditedOrCroppedContent = const IriTerm(
     'https://schema.org/EditedOrCroppedContent',
   );
 
@@ -8120,7 +7624,7 @@ class Schema {
   ///
   /// Content about the effectiveness-related aspects of a health topic.
   ///
-  static const EffectivenessHealthAspect = IriTerm.prevalidated(
+  static const EffectivenessHealthAspect = const IriTerm(
     'https://schema.org/EffectivenessHealthAspect',
   );
 
@@ -8128,13 +7632,13 @@ class Schema {
   ///
   /// A specific branch of medical science that pertains to diagnosis and treatment of disorders of endocrine glands and their secretions.
   ///
-  static const Endocrine = IriTerm.prevalidated('https://schema.org/Endocrine');
+  static const Endocrine = const IriTerm('https://schema.org/Endocrine');
 
   /// IRI for schema:EnergyStarCertified
   ///
   /// Represents EnergyStar certification.
   ///
-  static const EnergyStarCertified = IriTerm.prevalidated(
+  static const EnergyStarCertified = const IriTerm(
     'https://schema.org/EnergyStarCertified',
   );
 
@@ -8142,7 +7646,7 @@ class Schema {
   ///
   /// Enrolling participants by invitation only.
   ///
-  static const EnrollingByInvitation = IriTerm.prevalidated(
+  static const EnrollingByInvitation = const IriTerm(
     'https://schema.org/EnrollingByInvitation',
   );
 
@@ -8150,7 +7654,7 @@ class Schema {
   ///
   /// The event has been cancelled. If the event has multiple startDate values, all are assumed to be cancelled. Either startDate or previousStartDate may be used to specify the event's cancelled date(s).
   ///
-  static const EventCancelled = IriTerm.prevalidated(
+  static const EventCancelled = const IriTerm(
     'https://schema.org/EventCancelled',
   );
 
@@ -8158,7 +7662,7 @@ class Schema {
   ///
   /// Indicates that the event was changed to allow online participation. See {[eventAttendanceMode]} for specifics of whether it is now fully or partially online.
   ///
-  static const EventMovedOnline = IriTerm.prevalidated(
+  static const EventMovedOnline = const IriTerm(
     'https://schema.org/EventMovedOnline',
   );
 
@@ -8166,7 +7670,7 @@ class Schema {
   ///
   /// The event has been postponed and no new date has been set. The event's previousStartDate should be set.
   ///
-  static const EventPostponed = IriTerm.prevalidated(
+  static const EventPostponed = const IriTerm(
     'https://schema.org/EventPostponed',
   );
 
@@ -8174,7 +7678,7 @@ class Schema {
   ///
   /// The event has been rescheduled. The event's previousStartDate should be set to the old date and the startDate should be set to the event's new date. (If the event has been rescheduled multiple times, the previousStartDate property may be repeated.)
   ///
-  static const EventRescheduled = IriTerm.prevalidated(
+  static const EventRescheduled = const IriTerm(
     'https://schema.org/EventRescheduled',
   );
 
@@ -8182,7 +7686,7 @@ class Schema {
   ///
   /// The event is taking place or has taken place on the startDate as scheduled. Use of this value is optional, as it is assumed by default.
   ///
-  static const EventScheduled = IriTerm.prevalidated(
+  static const EventScheduled = const IriTerm(
     'https://schema.org/EventScheduled',
   );
 
@@ -8190,7 +7694,7 @@ class Schema {
   ///
   /// Data derived from multiple randomized clinical trials or meta-analyses.
   ///
-  static const EvidenceLevelA = IriTerm.prevalidated(
+  static const EvidenceLevelA = const IriTerm(
     'https://schema.org/EvidenceLevelA',
   );
 
@@ -8198,7 +7702,7 @@ class Schema {
   ///
   /// Data derived from a single randomized trial, or nonrandomized studies.
   ///
-  static const EvidenceLevelB = IriTerm.prevalidated(
+  static const EvidenceLevelB = const IriTerm(
     'https://schema.org/EvidenceLevelB',
   );
 
@@ -8206,7 +7710,7 @@ class Schema {
   ///
   /// Only consensus opinion of experts, case studies, or standard-of-care.
   ///
-  static const EvidenceLevelC = IriTerm.prevalidated(
+  static const EvidenceLevelC = const IriTerm(
     'https://schema.org/EvidenceLevelC',
   );
 
@@ -8214,7 +7718,7 @@ class Schema {
   ///
   /// An example {[MeasurementMethodEnum]} (to remove when real enums are added).
   ///
-  static const ExampleMeasurementMethodEnum = IriTerm.prevalidated(
+  static const ExampleMeasurementMethodEnum = const IriTerm(
     'https://schema.org/ExampleMeasurementMethodEnum',
   );
 
@@ -8222,7 +7726,7 @@ class Schema {
   ///
   /// Specifies that a refund can be done as an exchange for the same product.
   ///
-  static const ExchangeRefund = IriTerm.prevalidated(
+  static const ExchangeRefund = const IriTerm(
     'https://schema.org/ExchangeRefund',
   );
 
@@ -8230,53 +7734,43 @@ class Schema {
   ///
   /// Eye or ophthalmological function assessment with clinical examination.
   ///
-  static const Eye = IriTerm.prevalidated('https://schema.org/Eye');
+  static const Eye = const IriTerm('https://schema.org/Eye');
 
   /// IRI for schema:FDAcategoryA
   ///
   /// A designation by the US FDA signifying that adequate and well-controlled studies have failed to demonstrate a risk to the fetus in the first trimester of pregnancy (and there is no evidence of risk in later trimesters).
   ///
-  static const FDAcategoryA = IriTerm.prevalidated(
-    'https://schema.org/FDAcategoryA',
-  );
+  static const FDAcategoryA = const IriTerm('https://schema.org/FDAcategoryA');
 
   /// IRI for schema:FDAcategoryB
   ///
   /// A designation by the US FDA signifying that animal reproduction studies have failed to demonstrate a risk to the fetus and there are no adequate and well-controlled studies in pregnant women.
   ///
-  static const FDAcategoryB = IriTerm.prevalidated(
-    'https://schema.org/FDAcategoryB',
-  );
+  static const FDAcategoryB = const IriTerm('https://schema.org/FDAcategoryB');
 
   /// IRI for schema:FDAcategoryC
   ///
   /// A designation by the US FDA signifying that animal reproduction studies have shown an adverse effect on the fetus and there are no adequate and well-controlled studies in humans, but potential benefits may warrant use of the drug in pregnant women despite potential risks.
   ///
-  static const FDAcategoryC = IriTerm.prevalidated(
-    'https://schema.org/FDAcategoryC',
-  );
+  static const FDAcategoryC = const IriTerm('https://schema.org/FDAcategoryC');
 
   /// IRI for schema:FDAcategoryD
   ///
   /// A designation by the US FDA signifying that there is positive evidence of human fetal risk based on adverse reaction data from investigational or marketing experience or studies in humans, but potential benefits may warrant use of the drug in pregnant women despite potential risks.
   ///
-  static const FDAcategoryD = IriTerm.prevalidated(
-    'https://schema.org/FDAcategoryD',
-  );
+  static const FDAcategoryD = const IriTerm('https://schema.org/FDAcategoryD');
 
   /// IRI for schema:FDAcategoryX
   ///
   /// A designation by the US FDA signifying that studies in animals or humans have demonstrated fetal abnormalities and/or there is positive evidence of human fetal risk based on adverse reaction data from investigational or marketing experience, and the risks involved in use of the drug in pregnant women clearly outweigh potential benefits.
   ///
-  static const FDAcategoryX = IriTerm.prevalidated(
-    'https://schema.org/FDAcategoryX',
-  );
+  static const FDAcategoryX = const IriTerm('https://schema.org/FDAcategoryX');
 
   /// IRI for schema:FDAnotEvaluated
   ///
   /// A designation that the drug in question has not been assigned a pregnancy category designation by the US FDA.
   ///
-  static const FDAnotEvaluated = IriTerm.prevalidated(
+  static const FDAnotEvaluated = const IriTerm(
     'https://schema.org/FDAnotEvaluated',
   );
 
@@ -8284,7 +7778,7 @@ class Schema {
   ///
   /// An action that failed to complete. The action's error property and the HTTP return code contain more information about the failure.
   ///
-  static const FailedActionStatus = IriTerm.prevalidated(
+  static const FailedActionStatus = const IriTerm(
     'https://schema.org/FailedActionStatus',
   );
 
@@ -8292,27 +7786,25 @@ class Schema {
   ///
   /// The boolean value false.
   ///
-  static const False = IriTerm.prevalidated('https://schema.org/False');
+  static const False = const IriTerm('https://schema.org/False');
 
   /// IRI for schema:Female
   ///
   /// The female gender.
   ///
-  static const Female = IriTerm.prevalidated('https://schema.org/Female');
+  static const Female = const IriTerm('https://schema.org/Female');
 
   /// IRI for schema:Flexibility
   ///
   /// Physical activity that is engaged in to improve joint and muscle flexibility.
   ///
-  static const Flexibility = IriTerm.prevalidated(
-    'https://schema.org/Flexibility',
-  );
+  static const Flexibility = const IriTerm('https://schema.org/Flexibility');
 
   /// IRI for schema:FourWheelDriveConfiguration
   ///
   /// Four-wheel drive is a transmission layout where the engine primarily drives two wheels with a part-time four-wheel drive capability.
   ///
-  static const FourWheelDriveConfiguration = IriTerm.prevalidated(
+  static const FourWheelDriveConfiguration = const IriTerm(
     'https://schema.org/FourWheelDriveConfiguration',
   );
 
@@ -8320,21 +7812,19 @@ class Schema {
   ///
   /// Specifies that product returns are free of charge for the customer.
   ///
-  static const FreeReturn = IriTerm.prevalidated(
-    'https://schema.org/FreeReturn',
-  );
+  static const FreeReturn = const IriTerm('https://schema.org/FreeReturn');
 
   /// IRI for schema:Friday
   ///
   /// The day of the week between Thursday and Saturday.
   ///
-  static const Friday = IriTerm.prevalidated('https://schema.org/Friday');
+  static const Friday = const IriTerm('https://schema.org/Friday');
 
   /// IRI for schema:FrontWheelDriveConfiguration
   ///
   /// Front-wheel drive is a transmission layout where the engine drives the front wheels.
   ///
-  static const FrontWheelDriveConfiguration = IriTerm.prevalidated(
+  static const FrontWheelDriveConfiguration = const IriTerm(
     'https://schema.org/FrontWheelDriveConfiguration',
   );
 
@@ -8342,7 +7832,7 @@ class Schema {
   ///
   /// Fulfillment to a collection point location.
   ///
-  static const FulfillmentTypeCollectionPoint = IriTerm.prevalidated(
+  static const FulfillmentTypeCollectionPoint = const IriTerm(
     'https://schema.org/FulfillmentTypeCollectionPoint',
   );
 
@@ -8350,7 +7840,7 @@ class Schema {
   ///
   /// Fulfillment to a customer selected address.
   ///
-  static const FulfillmentTypeDelivery = IriTerm.prevalidated(
+  static const FulfillmentTypeDelivery = const IriTerm(
     'https://schema.org/FulfillmentTypeDelivery',
   );
 
@@ -8358,7 +7848,7 @@ class Schema {
   ///
   /// Fulfillment through pick-up drop-off locations.
   ///
-  static const FulfillmentTypePickupDropoff = IriTerm.prevalidated(
+  static const FulfillmentTypePickupDropoff = const IriTerm(
     'https://schema.org/FulfillmentTypePickupDropoff',
   );
 
@@ -8366,7 +7856,7 @@ class Schema {
   ///
   /// Fulfillment through pick-up in a store.
   ///
-  static const FulfillmentTypePickupInStore = IriTerm.prevalidated(
+  static const FulfillmentTypePickupInStore = const IriTerm(
     'https://schema.org/FulfillmentTypePickupInStore',
   );
 
@@ -8374,7 +7864,7 @@ class Schema {
   ///
   /// Fulfillment to a customer selected address after scheduling with the customer.
   ///
-  static const FulfillmentTypeScheduledDelivery = IriTerm.prevalidated(
+  static const FulfillmentTypeScheduledDelivery = const IriTerm(
     'https://schema.org/FulfillmentTypeScheduledDelivery',
   );
 
@@ -8382,7 +7872,7 @@ class Schema {
   ///
   /// Indicates full game availability.
   ///
-  static const FullGameAvailability = IriTerm.prevalidated(
+  static const FullGameAvailability = const IriTerm(
     'https://schema.org/FullGameAvailability',
   );
 
@@ -8390,21 +7880,19 @@ class Schema {
   ///
   /// Specifies that a refund can be done in the full amount the customer paid for the product.
   ///
-  static const FullRefund = IriTerm.prevalidated(
-    'https://schema.org/FullRefund',
-  );
+  static const FullRefund = const IriTerm('https://schema.org/FullRefund');
 
   /// IRI for schema:Fungus
   ///
   /// Pathogenic fungus.
   ///
-  static const Fungus = IriTerm.prevalidated('https://schema.org/Fungus');
+  static const Fungus = const IriTerm('https://schema.org/Fungus');
 
   /// IRI for schema:Gastroenterologic
   ///
   /// A specific branch of medical science that pertains to diagnosis and treatment of disorders of digestive system.
   ///
-  static const Gastroenterologic = IriTerm.prevalidated(
+  static const Gastroenterologic = const IriTerm(
     'https://schema.org/Gastroenterologic',
   );
 
@@ -8412,7 +7900,7 @@ class Schema {
   ///
   /// Represents the generic notion of the Web Platform. More specific codes include {[MobileWebPlatform]} and {[DesktopWebPlatform]}, as an incomplete list.
   ///
-  static const GenericWebPlatform = IriTerm.prevalidated(
+  static const GenericWebPlatform = const IriTerm(
     'https://schema.org/GenericWebPlatform',
   );
 
@@ -8420,13 +7908,13 @@ class Schema {
   ///
   /// A specific branch of medical science that pertains to hereditary transmission and the variation of inherited characteristics and disorders.
   ///
-  static const Genetic = IriTerm.prevalidated('https://schema.org/Genetic');
+  static const Genetic = const IriTerm('https://schema.org/Genetic');
 
   /// IRI for schema:Genitourinary
   ///
   /// Genitourinary system function assessment with clinical examination.
   ///
-  static const Genitourinary = IriTerm.prevalidated(
+  static const Genitourinary = const IriTerm(
     'https://schema.org/Genitourinary',
   );
 
@@ -8434,7 +7922,7 @@ class Schema {
   ///
   /// Content that discusses practical and policy aspects for getting access to specific kinds of healthcare (e.g. distribution mechanisms for vaccines).
   ///
-  static const GettingAccessHealthAspect = IriTerm.prevalidated(
+  static const GettingAccessHealthAspect = const IriTerm(
     'https://schema.org/GettingAccessHealthAspect',
   );
 
@@ -8442,7 +7930,7 @@ class Schema {
   ///
   /// A diet exclusive of gluten.
   ///
-  static const GlutenFreeDiet = IriTerm.prevalidated(
+  static const GlutenFreeDiet = const IriTerm(
     'https://schema.org/GlutenFreeDiet',
   );
 
@@ -8450,15 +7938,13 @@ class Schema {
   ///
   /// Book format: GraphicNovel. May represent a bound collection of ComicIssue instances.
   ///
-  static const GraphicNovel = IriTerm.prevalidated(
-    'https://schema.org/GraphicNovel',
-  );
+  static const GraphicNovel = const IriTerm('https://schema.org/GraphicNovel');
 
   /// IRI for schema:GroupBoardingPolicy
   ///
   /// The airline boards by groups based on check-in time, priority, etc.
   ///
-  static const GroupBoardingPolicy = IriTerm.prevalidated(
+  static const GroupBoardingPolicy = const IriTerm(
     'https://schema.org/GroupBoardingPolicy',
   );
 
@@ -8466,33 +7952,31 @@ class Schema {
   ///
   /// A diet conforming to Islamic dietary practices.
   ///
-  static const HalalDiet = IriTerm.prevalidated('https://schema.org/HalalDiet');
+  static const HalalDiet = const IriTerm('https://schema.org/HalalDiet');
 
   /// IRI for schema:Hardcover
   ///
   /// Book format: Hardcover.
   ///
-  static const Hardcover = IriTerm.prevalidated('https://schema.org/Hardcover');
+  static const Hardcover = const IriTerm('https://schema.org/Hardcover');
 
   /// IRI for schema:Head
   ///
   /// Head assessment with clinical examination.
   ///
-  static const Head = IriTerm.prevalidated('https://schema.org/Head');
+  static const Head = const IriTerm('https://schema.org/Head');
 
   /// IRI for schema:HealthCare
   ///
   /// HealthCare: this is a benefit for health care.
   ///
-  static const HealthCare = IriTerm.prevalidated(
-    'https://schema.org/HealthCare',
-  );
+  static const HealthCare = const IriTerm('https://schema.org/HealthCare');
 
   /// IRI for schema:HealthcareConsideration
   ///
   /// Item is a pharmaceutical (e.g., a prescription or OTC drug) or a restricted medical device.
   ///
-  static const HealthcareConsideration = IriTerm.prevalidated(
+  static const HealthcareConsideration = const IriTerm(
     'https://schema.org/HealthcareConsideration',
   );
 
@@ -8500,7 +7984,7 @@ class Schema {
   ///
   /// Uses devices to support users with hearing impairments.
   ///
-  static const HearingImpairedSupported = IriTerm.prevalidated(
+  static const HearingImpairedSupported = const IriTerm(
     'https://schema.org/HearingImpairedSupported',
   );
 
@@ -8508,29 +7992,25 @@ class Schema {
   ///
   /// A specific branch of medical science that pertains to diagnosis and treatment of disorders of blood and blood producing organs.
   ///
-  static const Hematologic = IriTerm.prevalidated(
-    'https://schema.org/Hematologic',
-  );
+  static const Hematologic = const IriTerm('https://schema.org/Hematologic');
 
   /// IRI for schema:HinduDiet
   ///
   /// A diet conforming to Hindu dietary practices, in particular, beef-free.
   ///
-  static const HinduDiet = IriTerm.prevalidated('https://schema.org/HinduDiet');
+  static const HinduDiet = const IriTerm('https://schema.org/HinduDiet');
 
   /// IRI for schema:Homeopathic
   ///
   /// A system of medicine based on the principle that a disease can be cured by a substance that produces similar symptoms in healthy people.
   ///
-  static const Homeopathic = IriTerm.prevalidated(
-    'https://schema.org/Homeopathic',
-  );
+  static const Homeopathic = const IriTerm('https://schema.org/Homeopathic');
 
   /// IRI for schema:HowItWorksHealthAspect
   ///
   /// Content that discusses and explains how a particular health-related topic works, e.g. in terms of mechanisms and underlying science.
   ///
-  static const HowItWorksHealthAspect = IriTerm.prevalidated(
+  static const HowItWorksHealthAspect = const IriTerm(
     'https://schema.org/HowItWorksHealthAspect',
   );
 
@@ -8538,7 +8018,7 @@ class Schema {
   ///
   /// Information about how or where to find a topic. Also may contain location data that can be used for where to look for help if the topic is observed.
   ///
-  static const HowOrWhereHealthAspect = IriTerm.prevalidated(
+  static const HowOrWhereHealthAspect = const IriTerm(
     'https://schema.org/HowOrWhereHealthAspect',
   );
 
@@ -8546,35 +8026,31 @@ class Schema {
   ///
   /// Represents the broad notion of iOS-based operating systems.
   ///
-  static const IOSPlatform = IriTerm.prevalidated(
-    'https://schema.org/IOSPlatform',
-  );
+  static const IOSPlatform = const IriTerm('https://schema.org/IOSPlatform');
 
   /// IRI for schema:InForce
   ///
   /// Indicates that a legislation is in force.
   ///
-  static const InForce = IriTerm.prevalidated('https://schema.org/InForce');
+  static const InForce = const IriTerm('https://schema.org/InForce');
 
   /// IRI for schema:InStock
   ///
   /// Indicates that the item is in stock.
   ///
-  static const InStock = IriTerm.prevalidated('https://schema.org/InStock');
+  static const InStock = const IriTerm('https://schema.org/InStock');
 
   /// IRI for schema:InStoreOnly
   ///
   /// Indicates that the item is available only at physical locations.
   ///
-  static const InStoreOnly = IriTerm.prevalidated(
-    'https://schema.org/InStoreOnly',
-  );
+  static const InStoreOnly = const IriTerm('https://schema.org/InStoreOnly');
 
   /// IRI for schema:InStorePrepay
   ///
   /// Payment in advance in some form of shop or kiosk for goods purchased online.
   ///
-  static const InStorePrepay = IriTerm.prevalidated(
+  static const InStorePrepay = const IriTerm(
     'https://schema.org/InStorePrepay',
   );
 
@@ -8582,7 +8058,7 @@ class Schema {
   ///
   /// This incentive applies to goods only.
   ///
-  static const IncentiveQualifiedExpenseTypeGoodsOnly = IriTerm.prevalidated(
+  static const IncentiveQualifiedExpenseTypeGoodsOnly = const IriTerm(
     'https://schema.org/IncentiveQualifiedExpenseTypeGoodsOnly',
   );
 
@@ -8590,16 +8066,15 @@ class Schema {
   ///
   /// This incentive can apply to either goods or services (or both).
   ///
-  static const IncentiveQualifiedExpenseTypeGoodsOrServices =
-      IriTerm.prevalidated(
-        'https://schema.org/IncentiveQualifiedExpenseTypeGoodsOrServices',
-      );
+  static const IncentiveQualifiedExpenseTypeGoodsOrServices = const IriTerm(
+    'https://schema.org/IncentiveQualifiedExpenseTypeGoodsOrServices',
+  );
 
   /// IRI for schema:IncentiveQualifiedExpenseTypeServicesOnly
   ///
   /// This incentive applies to services only.
   ///
-  static const IncentiveQualifiedExpenseTypeServicesOnly = IriTerm.prevalidated(
+  static const IncentiveQualifiedExpenseTypeServicesOnly = const IriTerm(
     'https://schema.org/IncentiveQualifiedExpenseTypeServicesOnly',
   );
 
@@ -8607,7 +8082,7 @@ class Schema {
   ///
   /// This incentive applies to utility bills.
   ///
-  static const IncentiveQualifiedExpenseTypeUtilityBill = IriTerm.prevalidated(
+  static const IncentiveQualifiedExpenseTypeUtilityBill = const IriTerm(
     'https://schema.org/IncentiveQualifiedExpenseTypeUtilityBill',
   );
 
@@ -8615,7 +8090,7 @@ class Schema {
   ///
   /// This incentive is currently active.
   ///
-  static const IncentiveStatusActive = IriTerm.prevalidated(
+  static const IncentiveStatusActive = const IriTerm(
     'https://schema.org/IncentiveStatusActive',
   );
 
@@ -8623,7 +8098,7 @@ class Schema {
   ///
   /// This incentive is currently being developed, and may become active/retired in the future.
   ///
-  static const IncentiveStatusInDevelopment = IriTerm.prevalidated(
+  static const IncentiveStatusInDevelopment = const IriTerm(
     'https://schema.org/IncentiveStatusInDevelopment',
   );
 
@@ -8631,7 +8106,7 @@ class Schema {
   ///
   /// This incentive is currently active, but may not be accepting new applicants (e.g. max number of redemptions reached for a year)
   ///
-  static const IncentiveStatusOnHold = IriTerm.prevalidated(
+  static const IncentiveStatusOnHold = const IriTerm(
     'https://schema.org/IncentiveStatusOnHold',
   );
 
@@ -8639,7 +8114,7 @@ class Schema {
   ///
   /// This incentive is not longer available.
   ///
-  static const IncentiveStatusRetired = IriTerm.prevalidated(
+  static const IncentiveStatusRetired = const IriTerm(
     'https://schema.org/IncentiveStatusRetired',
   );
 
@@ -8647,7 +8122,7 @@ class Schema {
   ///
   /// An incentive where the recipient can receive additional funding for the purchase/lease of the good/service, which must be paid back.
   ///
-  static const IncentiveTypeLoan = IriTerm.prevalidated(
+  static const IncentiveTypeLoan = const IriTerm(
     'https://schema.org/IncentiveTypeLoan',
   );
 
@@ -8655,7 +8130,7 @@ class Schema {
   ///
   /// An incentive that reduces the purchase/lease cost of the good/service in question.
   ///
-  static const IncentiveTypeRebateOrSubsidy = IriTerm.prevalidated(
+  static const IncentiveTypeRebateOrSubsidy = const IriTerm(
     'https://schema.org/IncentiveTypeRebateOrSubsidy',
   );
 
@@ -8663,7 +8138,7 @@ class Schema {
   ///
   /// An incentive that directly reduces the amount of tax owed by the recipient.
   ///
-  static const IncentiveTypeTaxCredit = IriTerm.prevalidated(
+  static const IncentiveTypeTaxCredit = const IriTerm(
     'https://schema.org/IncentiveTypeTaxCredit',
   );
 
@@ -8671,7 +8146,7 @@ class Schema {
   ///
   /// An incentive that reduces the recipient's amount of taxable income.
   ///
-  static const IncentiveTypeTaxDeduction = IriTerm.prevalidated(
+  static const IncentiveTypeTaxDeduction = const IriTerm(
     'https://schema.org/IncentiveTypeTaxDeduction',
   );
 
@@ -8679,7 +8154,7 @@ class Schema {
   ///
   /// An incentive that reduces/exempts the recipient from taxation applicable to the incentivized good/service (e.g. luxury taxes, registration taxes, circulation tax).
   ///
-  static const IncentiveTypeTaxWaiver = IriTerm.prevalidated(
+  static const IncentiveTypeTaxWaiver = const IriTerm(
     'https://schema.org/IncentiveTypeTaxWaiver',
   );
 
@@ -8687,15 +8162,13 @@ class Schema {
   ///
   /// Something in medical science that pertains to infectious diseases, i.e. caused by bacterial, viral, fungal or parasitic infections.
   ///
-  static const Infectious = IriTerm.prevalidated(
-    'https://schema.org/Infectious',
-  );
+  static const Infectious = const IriTerm('https://schema.org/Infectious');
 
   /// IRI for schema:IngredientsHealthAspect
   ///
   /// Content discussing ingredients-related aspects of a health topic.
   ///
-  static const IngredientsHealthAspect = IriTerm.prevalidated(
+  static const IngredientsHealthAspect = const IriTerm(
     'https://schema.org/IngredientsHealthAspect',
   );
 
@@ -8703,15 +8176,13 @@ class Schema {
   ///
   /// Represents the installment pricing component of the total price for an offered product.
   ///
-  static const Installment = IriTerm.prevalidated(
-    'https://schema.org/Installment',
-  );
+  static const Installment = const IriTerm('https://schema.org/Installment');
 
   /// IRI for schema:InternationalTrial
   ///
   /// An international trial.
   ///
-  static const InternationalTrial = IriTerm.prevalidated(
+  static const InternationalTrial = const IriTerm(
     'https://schema.org/InternationalTrial',
   );
 
@@ -8719,15 +8190,13 @@ class Schema {
   ///
   /// Represents the invoice price of an offered product.
   ///
-  static const InvoicePrice = IriTerm.prevalidated(
-    'https://schema.org/InvoicePrice',
-  );
+  static const InvoicePrice = const IriTerm('https://schema.org/InvoicePrice');
 
   /// IRI for schema:ItemListOrderAscending
   ///
   /// An ItemList ordered with lower values listed first.
   ///
-  static const ItemListOrderAscending = IriTerm.prevalidated(
+  static const ItemListOrderAscending = const IriTerm(
     'https://schema.org/ItemListOrderAscending',
   );
 
@@ -8735,7 +8204,7 @@ class Schema {
   ///
   /// An ItemList ordered with higher values listed first.
   ///
-  static const ItemListOrderDescending = IriTerm.prevalidated(
+  static const ItemListOrderDescending = const IriTerm(
     'https://schema.org/ItemListOrderDescending',
   );
 
@@ -8743,7 +8212,7 @@ class Schema {
   ///
   /// An ItemList ordered with no explicit order.
   ///
-  static const ItemListUnordered = IriTerm.prevalidated(
+  static const ItemListUnordered = const IriTerm(
     'https://schema.org/ItemListUnordered',
   );
 
@@ -8751,23 +8220,19 @@ class Schema {
   ///
   /// Specifies that the consumer can keep the product, even when receiving a refund or store credit.
   ///
-  static const KeepProduct = IriTerm.prevalidated(
-    'https://schema.org/KeepProduct',
-  );
+  static const KeepProduct = const IriTerm('https://schema.org/KeepProduct');
 
   /// IRI for schema:KosherDiet
   ///
   /// A diet conforming to Jewish dietary practices.
   ///
-  static const KosherDiet = IriTerm.prevalidated(
-    'https://schema.org/KosherDiet',
-  );
+  static const KosherDiet = const IriTerm('https://schema.org/KosherDiet');
 
   /// IRI for schema:LaboratoryScience
   ///
   /// A medical science pertaining to chemical, hematological, immunologic, microscopic, or bacteriological diagnostic analyses or research.
   ///
-  static const LaboratoryScience = IriTerm.prevalidated(
+  static const LaboratoryScience = const IriTerm(
     'https://schema.org/LaboratoryScience',
   );
 
@@ -8775,7 +8240,7 @@ class Schema {
   ///
   /// LaserDiscFormat.
   ///
-  static const LaserDiscFormat = IriTerm.prevalidated(
+  static const LaserDiscFormat = const IriTerm(
     'https://schema.org/LaserDiscFormat',
   );
 
@@ -8783,7 +8248,7 @@ class Schema {
   ///
   /// The steering position is on the left side of the vehicle (viewed from the main direction of driving).
   ///
-  static const LeftHandDriving = IriTerm.prevalidated(
+  static const LeftHandDriving = const IriTerm(
     'https://schema.org/LeftHandDriving',
   );
 
@@ -8791,7 +8256,7 @@ class Schema {
   ///
   /// Any physical activity engaged in for recreational purposes. Examples may include ballroom dancing, roller skating, canoeing, fishing, etc.
   ///
-  static const LeisureTimeActivity = IriTerm.prevalidated(
+  static const LeisureTimeActivity = const IriTerm(
     'https://schema.org/LeisureTimeActivity',
   );
 
@@ -8799,7 +8264,7 @@ class Schema {
   ///
   /// Indicates that the item has limited availability.
   ///
-  static const LimitedAvailability = IriTerm.prevalidated(
+  static const LimitedAvailability = const IriTerm(
     'https://schema.org/LimitedAvailability',
   );
 
@@ -8807,7 +8272,7 @@ class Schema {
   ///
   /// LimitedByGuaranteeCharity: Non-profit type referring to a charitable company that is limited by guarantee (UK).
   ///
-  static const LimitedByGuaranteeCharity = IriTerm.prevalidated(
+  static const LimitedByGuaranteeCharity = const IriTerm(
     'https://schema.org/LimitedByGuaranteeCharity',
   );
 
@@ -8815,19 +8280,19 @@ class Schema {
   ///
   /// Represents the list price of an offered product. Typically the same as the [MSRP](https://schema.org/MSRP).
   ///
-  static const ListPrice = IriTerm.prevalidated('https://schema.org/ListPrice');
+  static const ListPrice = const IriTerm('https://schema.org/ListPrice');
 
   /// IRI for schema:LiveAlbum
   ///
   /// LiveAlbum.
   ///
-  static const LiveAlbum = IriTerm.prevalidated('https://schema.org/LiveAlbum');
+  static const LiveAlbum = const IriTerm('https://schema.org/LiveAlbum');
 
   /// IRI for schema:LivingWithHealthAspect
   ///
   /// Information about coping or life related to the topic.
   ///
-  static const LivingWithHealthAspect = IriTerm.prevalidated(
+  static const LivingWithHealthAspect = const IriTerm(
     'https://schema.org/LivingWithHealthAspect',
   );
 
@@ -8835,7 +8300,7 @@ class Schema {
   ///
   /// A DeliveryMethod in which an item is made available via locker.
   ///
-  static const LockerDelivery = IriTerm.prevalidated(
+  static const LockerDelivery = const IriTerm(
     'https://schema.org/LockerDelivery',
   );
 
@@ -8843,15 +8308,13 @@ class Schema {
   ///
   /// Unlike cross-sectional studies, longitudinal studies track the same people, and therefore the differences observed in those people are less likely to be the result of cultural differences across generations. Longitudinal studies are also used in medicine to uncover predictors of certain diseases.
   ///
-  static const Longitudinal = IriTerm.prevalidated(
-    'https://schema.org/Longitudinal',
-  );
+  static const Longitudinal = const IriTerm('https://schema.org/Longitudinal');
 
   /// IRI for schema:LowCalorieDiet
   ///
   /// A diet focused on reduced calorie intake.
   ///
-  static const LowCalorieDiet = IriTerm.prevalidated(
+  static const LowCalorieDiet = const IriTerm(
     'https://schema.org/LowCalorieDiet',
   );
 
@@ -8859,15 +8322,13 @@ class Schema {
   ///
   /// A diet focused on reduced fat and cholesterol intake.
   ///
-  static const LowFatDiet = IriTerm.prevalidated(
-    'https://schema.org/LowFatDiet',
-  );
+  static const LowFatDiet = const IriTerm('https://schema.org/LowFatDiet');
 
   /// IRI for schema:LowLactoseDiet
   ///
   /// A diet appropriate for people with lactose intolerance.
   ///
-  static const LowLactoseDiet = IriTerm.prevalidated(
+  static const LowLactoseDiet = const IriTerm(
     'https://schema.org/LowLactoseDiet',
   );
 
@@ -8875,47 +8336,43 @@ class Schema {
   ///
   /// A diet focused on reduced sodium intake.
   ///
-  static const LowSaltDiet = IriTerm.prevalidated(
-    'https://schema.org/LowSaltDiet',
-  );
+  static const LowSaltDiet = const IriTerm('https://schema.org/LowSaltDiet');
 
   /// IRI for schema:Lung
   ///
   /// Lung and respiratory system clinical examination.
   ///
-  static const Lung = IriTerm.prevalidated('https://schema.org/Lung');
+  static const Lung = const IriTerm('https://schema.org/Lung');
 
   /// IRI for schema:MRI
   ///
   /// Magnetic resonance imaging.
   ///
-  static const MRI = IriTerm.prevalidated('https://schema.org/MRI');
+  static const MRI = const IriTerm('https://schema.org/MRI');
 
   /// IRI for schema:MSRP
   ///
   /// Represents the manufacturer suggested retail price ("MSRP") of an offered product.
   ///
-  static const MSRP = IriTerm.prevalidated('https://schema.org/MSRP');
+  static const MSRP = const IriTerm('https://schema.org/MSRP');
 
   /// IRI for schema:MadeToOrder
   ///
   /// Indicates that the item is made to order (custom made).
   ///
-  static const MadeToOrder = IriTerm.prevalidated(
-    'https://schema.org/MadeToOrder',
-  );
+  static const MadeToOrder = const IriTerm('https://schema.org/MadeToOrder');
 
   /// IRI for schema:Male
   ///
   /// The male gender.
   ///
-  static const Male = IriTerm.prevalidated('https://schema.org/Male');
+  static const Male = const IriTerm('https://schema.org/Male');
 
   /// IRI for schema:MayTreatHealthAspect
   ///
   /// Related topics may be treated by a Topic.
   ///
-  static const MayTreatHealthAspect = IriTerm.prevalidated(
+  static const MayTreatHealthAspect = const IriTerm(
     'https://schema.org/MayTreatHealthAspect',
   );
 
@@ -8923,7 +8380,7 @@ class Schema {
   ///
   /// Medical researchers.
   ///
-  static const MedicalResearcher = IriTerm.prevalidated(
+  static const MedicalResearcher = const IriTerm(
     'https://schema.org/MedicalResearcher',
   );
 
@@ -8931,7 +8388,7 @@ class Schema {
   ///
   /// Specifies that there is a finite window for product returns.
   ///
-  static const MerchantReturnFiniteReturnWindow = IriTerm.prevalidated(
+  static const MerchantReturnFiniteReturnWindow = const IriTerm(
     'https://schema.org/MerchantReturnFiniteReturnWindow',
   );
 
@@ -8939,7 +8396,7 @@ class Schema {
   ///
   /// Specifies that product returns are not permitted.
   ///
-  static const MerchantReturnNotPermitted = IriTerm.prevalidated(
+  static const MerchantReturnNotPermitted = const IriTerm(
     'https://schema.org/MerchantReturnNotPermitted',
   );
 
@@ -8947,7 +8404,7 @@ class Schema {
   ///
   /// Specifies that there is an unlimited window for product returns.
   ///
-  static const MerchantReturnUnlimitedWindow = IriTerm.prevalidated(
+  static const MerchantReturnUnlimitedWindow = const IriTerm(
     'https://schema.org/MerchantReturnUnlimitedWindow',
   );
 
@@ -8955,7 +8412,7 @@ class Schema {
   ///
   /// Specifies that a product return policy is not provided.
   ///
-  static const MerchantReturnUnspecified = IriTerm.prevalidated(
+  static const MerchantReturnUnspecified = const IriTerm(
     'https://schema.org/MerchantReturnUnspecified',
   );
 
@@ -8963,7 +8420,7 @@ class Schema {
   ///
   /// Represents the minimum advertised price ("MAP") (as dictated by the manufacturer) of an offered product.
   ///
-  static const MinimumAdvertisedPrice = IriTerm.prevalidated(
+  static const MinimumAdvertisedPrice = const IriTerm(
     'https://schema.org/MinimumAdvertisedPrice',
   );
 
@@ -8971,7 +8428,7 @@ class Schema {
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/minorHumanEdits">minor human edits</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const MinorHumanEditsDigitalSource = IriTerm.prevalidated(
+  static const MinorHumanEditsDigitalSource = const IriTerm(
     'https://schema.org/MinorHumanEditsDigitalSource',
   );
 
@@ -8979,7 +8436,7 @@ class Schema {
   ///
   /// Content about common misconceptions and myths that are related to a topic.
   ///
-  static const MisconceptionsHealthAspect = IriTerm.prevalidated(
+  static const MisconceptionsHealthAspect = const IriTerm(
     'https://schema.org/MisconceptionsHealthAspect',
   );
 
@@ -8987,7 +8444,7 @@ class Schema {
   ///
   /// MixedEventAttendanceMode - an event that is conducted as a combination of both offline and online modes.
   ///
-  static const MixedEventAttendanceMode = IriTerm.prevalidated(
+  static const MixedEventAttendanceMode = const IriTerm(
     'https://schema.org/MixedEventAttendanceMode',
   );
 
@@ -8995,15 +8452,13 @@ class Schema {
   ///
   /// MixtapeAlbum.
   ///
-  static const MixtapeAlbum = IriTerm.prevalidated(
-    'https://schema.org/MixtapeAlbum',
-  );
+  static const MixtapeAlbum = const IriTerm('https://schema.org/MixtapeAlbum');
 
   /// IRI for schema:MobileWebPlatform
   ///
   /// Represents the broad notion of 'mobile' browsers as a Web Platform.
   ///
-  static const MobileWebPlatform = IriTerm.prevalidated(
+  static const MobileWebPlatform = const IriTerm(
     'https://schema.org/MobileWebPlatform',
   );
 
@@ -9011,13 +8466,13 @@ class Schema {
   ///
   /// The day of the week between Sunday and Tuesday.
   ///
-  static const Monday = IriTerm.prevalidated('https://schema.org/Monday');
+  static const Monday = const IriTerm('https://schema.org/Monday');
 
   /// IRI for schema:MultiCenterTrial
   ///
   /// A trial that takes place at multiple centers.
   ///
-  static const MultiCenterTrial = IriTerm.prevalidated(
+  static const MultiCenterTrial = const IriTerm(
     'https://schema.org/MultiCenterTrial',
   );
 
@@ -9025,24 +8480,21 @@ class Schema {
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/algorithmicMedia">algorithmic media</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const MultiFrameComputationalCaptureDigitalSource =
-      IriTerm.prevalidated(
-        'https://schema.org/MultiFrameComputationalCaptureDigitalSource',
-      );
+  static const MultiFrameComputationalCaptureDigitalSource = const IriTerm(
+    'https://schema.org/MultiFrameComputationalCaptureDigitalSource',
+  );
 
   /// IRI for schema:MultiPlayer
   ///
   /// Play mode: MultiPlayer. Requiring or allowing multiple human players to play simultaneously.
   ///
-  static const MultiPlayer = IriTerm.prevalidated(
-    'https://schema.org/MultiPlayer',
-  );
+  static const MultiPlayer = const IriTerm('https://schema.org/MultiPlayer');
 
   /// IRI for schema:MulticellularParasite
   ///
   /// Multicellular parasite that causes an infection.
   ///
-  static const MulticellularParasite = IriTerm.prevalidated(
+  static const MulticellularParasite = const IriTerm(
     'https://schema.org/MulticellularParasite',
   );
 
@@ -9050,7 +8502,7 @@ class Schema {
   ///
   /// A specific branch of medical science that pertains to diagnosis and treatment of disorders of muscles, ligaments and skeletal system.
   ///
-  static const Musculoskeletal = IriTerm.prevalidated(
+  static const Musculoskeletal = const IriTerm(
     'https://schema.org/Musculoskeletal',
   );
 
@@ -9058,7 +8510,7 @@ class Schema {
   ///
   /// Musculoskeletal system clinical examination.
   ///
-  static const MusculoskeletalExam = IriTerm.prevalidated(
+  static const MusculoskeletalExam = const IriTerm(
     'https://schema.org/MusculoskeletalExam',
   );
 
@@ -9066,7 +8518,7 @@ class Schema {
   ///
   /// Item is a narcotic as defined by the [1961 UN convention](https://www.incb.org/incb/en/narcotic-drugs/Yellowlist/yellow-list.html), for example marijuana or heroin.
   ///
-  static const NarcoticConsideration = IriTerm.prevalidated(
+  static const NarcoticConsideration = const IriTerm(
     'https://schema.org/NarcoticConsideration',
   );
 
@@ -9074,13 +8526,13 @@ class Schema {
   ///
   /// Neck assessment with clinical examination.
   ///
-  static const Neck = IriTerm.prevalidated('https://schema.org/Neck');
+  static const Neck = const IriTerm('https://schema.org/Neck');
 
   /// IRI for schema:NegativeFilmDigitalSource
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/negativeFilm">negative film</a></a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const NegativeFilmDigitalSource = IriTerm.prevalidated(
+  static const NegativeFilmDigitalSource = const IriTerm(
     'https://schema.org/NegativeFilmDigitalSource',
   );
 
@@ -9088,29 +8540,25 @@ class Schema {
   ///
   /// Neurological system clinical examination.
   ///
-  static const Neuro = IriTerm.prevalidated('https://schema.org/Neuro');
+  static const Neuro = const IriTerm('https://schema.org/Neuro');
 
   /// IRI for schema:Neurologic
   ///
   /// A specific branch of medical science that studies the nerves and nervous system and its respective disease states.
   ///
-  static const Neurologic = IriTerm.prevalidated(
-    'https://schema.org/Neurologic',
-  );
+  static const Neurologic = const IriTerm('https://schema.org/Neurologic');
 
   /// IRI for schema:NewCondition
   ///
   /// Indicates that the item is new.
   ///
-  static const NewCondition = IriTerm.prevalidated(
-    'https://schema.org/NewCondition',
-  );
+  static const NewCondition = const IriTerm('https://schema.org/NewCondition');
 
   /// IRI for schema:NoninvasiveProcedure
   ///
   /// A type of medical procedure that involves noninvasive techniques.
   ///
-  static const NoninvasiveProcedure = IriTerm.prevalidated(
+  static const NoninvasiveProcedure = const IriTerm(
     'https://schema.org/NoninvasiveProcedure',
   );
 
@@ -9118,7 +8566,7 @@ class Schema {
   ///
   /// Nonprofit501a: Non-profit type referring to Farmers’ Cooperative Associations.
   ///
-  static const Nonprofit501a = IriTerm.prevalidated(
+  static const Nonprofit501a = const IriTerm(
     'https://schema.org/Nonprofit501a',
   );
 
@@ -9126,7 +8574,7 @@ class Schema {
   ///
   /// Nonprofit501c1: Non-profit type referring to Corporations Organized Under Act of Congress, including Federal Credit Unions and National Farm Loan Associations.
   ///
-  static const Nonprofit501c1 = IriTerm.prevalidated(
+  static const Nonprofit501c1 = const IriTerm(
     'https://schema.org/Nonprofit501c1',
   );
 
@@ -9134,7 +8582,7 @@ class Schema {
   ///
   /// Nonprofit501c10: Non-profit type referring to Domestic Fraternal Societies and Associations.
   ///
-  static const Nonprofit501c10 = IriTerm.prevalidated(
+  static const Nonprofit501c10 = const IriTerm(
     'https://schema.org/Nonprofit501c10',
   );
 
@@ -9142,7 +8590,7 @@ class Schema {
   ///
   /// Nonprofit501c11: Non-profit type referring to Teachers' Retirement Fund Associations.
   ///
-  static const Nonprofit501c11 = IriTerm.prevalidated(
+  static const Nonprofit501c11 = const IriTerm(
     'https://schema.org/Nonprofit501c11',
   );
 
@@ -9150,7 +8598,7 @@ class Schema {
   ///
   /// Nonprofit501c12: Non-profit type referring to Benevolent Life Insurance Associations, Mutual Ditch or Irrigation Companies, Mutual or Cooperative Telephone Companies.
   ///
-  static const Nonprofit501c12 = IriTerm.prevalidated(
+  static const Nonprofit501c12 = const IriTerm(
     'https://schema.org/Nonprofit501c12',
   );
 
@@ -9158,7 +8606,7 @@ class Schema {
   ///
   /// Nonprofit501c13: Non-profit type referring to Cemetery Companies.
   ///
-  static const Nonprofit501c13 = IriTerm.prevalidated(
+  static const Nonprofit501c13 = const IriTerm(
     'https://schema.org/Nonprofit501c13',
   );
 
@@ -9166,7 +8614,7 @@ class Schema {
   ///
   /// Nonprofit501c14: Non-profit type referring to State-Chartered Credit Unions, Mutual Reserve Funds.
   ///
-  static const Nonprofit501c14 = IriTerm.prevalidated(
+  static const Nonprofit501c14 = const IriTerm(
     'https://schema.org/Nonprofit501c14',
   );
 
@@ -9174,7 +8622,7 @@ class Schema {
   ///
   /// Nonprofit501c15: Non-profit type referring to Mutual Insurance Companies or Associations.
   ///
-  static const Nonprofit501c15 = IriTerm.prevalidated(
+  static const Nonprofit501c15 = const IriTerm(
     'https://schema.org/Nonprofit501c15',
   );
 
@@ -9182,7 +8630,7 @@ class Schema {
   ///
   /// Nonprofit501c16: Non-profit type referring to Cooperative Organizations to Finance Crop Operations.
   ///
-  static const Nonprofit501c16 = IriTerm.prevalidated(
+  static const Nonprofit501c16 = const IriTerm(
     'https://schema.org/Nonprofit501c16',
   );
 
@@ -9190,7 +8638,7 @@ class Schema {
   ///
   /// Nonprofit501c17: Non-profit type referring to Supplemental Unemployment Benefit Trusts.
   ///
-  static const Nonprofit501c17 = IriTerm.prevalidated(
+  static const Nonprofit501c17 = const IriTerm(
     'https://schema.org/Nonprofit501c17',
   );
 
@@ -9198,7 +8646,7 @@ class Schema {
   ///
   /// Nonprofit501c18: Non-profit type referring to Employee Funded Pension Trust (created before 25 June 1959).
   ///
-  static const Nonprofit501c18 = IriTerm.prevalidated(
+  static const Nonprofit501c18 = const IriTerm(
     'https://schema.org/Nonprofit501c18',
   );
 
@@ -9206,7 +8654,7 @@ class Schema {
   ///
   /// Nonprofit501c19: Non-profit type referring to Post or Organization of Past or Present Members of the Armed Forces.
   ///
-  static const Nonprofit501c19 = IriTerm.prevalidated(
+  static const Nonprofit501c19 = const IriTerm(
     'https://schema.org/Nonprofit501c19',
   );
 
@@ -9214,7 +8662,7 @@ class Schema {
   ///
   /// Nonprofit501c2: Non-profit type referring to Title-holding Corporations for Exempt Organizations.
   ///
-  static const Nonprofit501c2 = IriTerm.prevalidated(
+  static const Nonprofit501c2 = const IriTerm(
     'https://schema.org/Nonprofit501c2',
   );
 
@@ -9222,7 +8670,7 @@ class Schema {
   ///
   /// Nonprofit501c20: Non-profit type referring to Group Legal Services Plan Organizations.
   ///
-  static const Nonprofit501c20 = IriTerm.prevalidated(
+  static const Nonprofit501c20 = const IriTerm(
     'https://schema.org/Nonprofit501c20',
   );
 
@@ -9230,7 +8678,7 @@ class Schema {
   ///
   /// Nonprofit501c21: Non-profit type referring to Black Lung Benefit Trusts.
   ///
-  static const Nonprofit501c21 = IriTerm.prevalidated(
+  static const Nonprofit501c21 = const IriTerm(
     'https://schema.org/Nonprofit501c21',
   );
 
@@ -9238,7 +8686,7 @@ class Schema {
   ///
   /// Nonprofit501c22: Non-profit type referring to Withdrawal Liability Payment Funds.
   ///
-  static const Nonprofit501c22 = IriTerm.prevalidated(
+  static const Nonprofit501c22 = const IriTerm(
     'https://schema.org/Nonprofit501c22',
   );
 
@@ -9246,7 +8694,7 @@ class Schema {
   ///
   /// Nonprofit501c23: Non-profit type referring to Veterans Organizations.
   ///
-  static const Nonprofit501c23 = IriTerm.prevalidated(
+  static const Nonprofit501c23 = const IriTerm(
     'https://schema.org/Nonprofit501c23',
   );
 
@@ -9254,7 +8702,7 @@ class Schema {
   ///
   /// Nonprofit501c24: Non-profit type referring to Section 4049 ERISA Trusts.
   ///
-  static const Nonprofit501c24 = IriTerm.prevalidated(
+  static const Nonprofit501c24 = const IriTerm(
     'https://schema.org/Nonprofit501c24',
   );
 
@@ -9262,7 +8710,7 @@ class Schema {
   ///
   /// Nonprofit501c25: Non-profit type referring to Real Property Title-Holding Corporations or Trusts with Multiple Parents.
   ///
-  static const Nonprofit501c25 = IriTerm.prevalidated(
+  static const Nonprofit501c25 = const IriTerm(
     'https://schema.org/Nonprofit501c25',
   );
 
@@ -9270,7 +8718,7 @@ class Schema {
   ///
   /// Nonprofit501c26: Non-profit type referring to State-Sponsored Organizations Providing Health Coverage for High-Risk Individuals.
   ///
-  static const Nonprofit501c26 = IriTerm.prevalidated(
+  static const Nonprofit501c26 = const IriTerm(
     'https://schema.org/Nonprofit501c26',
   );
 
@@ -9278,7 +8726,7 @@ class Schema {
   ///
   /// Nonprofit501c27: Non-profit type referring to State-Sponsored Workers' Compensation Reinsurance Organizations.
   ///
-  static const Nonprofit501c27 = IriTerm.prevalidated(
+  static const Nonprofit501c27 = const IriTerm(
     'https://schema.org/Nonprofit501c27',
   );
 
@@ -9286,7 +8734,7 @@ class Schema {
   ///
   /// Nonprofit501c28: Non-profit type referring to National Railroad Retirement Investment Trusts.
   ///
-  static const Nonprofit501c28 = IriTerm.prevalidated(
+  static const Nonprofit501c28 = const IriTerm(
     'https://schema.org/Nonprofit501c28',
   );
 
@@ -9294,7 +8742,7 @@ class Schema {
   ///
   /// Nonprofit501c3: Non-profit type referring to Religious, Educational, Charitable, Scientific, Literary, Testing for Public Safety, Fostering National or International Amateur Sports Competition, or Prevention of Cruelty to Children or Animals Organizations.
   ///
-  static const Nonprofit501c3 = IriTerm.prevalidated(
+  static const Nonprofit501c3 = const IriTerm(
     'https://schema.org/Nonprofit501c3',
   );
 
@@ -9302,7 +8750,7 @@ class Schema {
   ///
   /// Nonprofit501c4: Non-profit type referring to Civic Leagues, Social Welfare Organizations, and Local Associations of Employees.
   ///
-  static const Nonprofit501c4 = IriTerm.prevalidated(
+  static const Nonprofit501c4 = const IriTerm(
     'https://schema.org/Nonprofit501c4',
   );
 
@@ -9310,7 +8758,7 @@ class Schema {
   ///
   /// Nonprofit501c5: Non-profit type referring to Labor, Agricultural and Horticultural Organizations.
   ///
-  static const Nonprofit501c5 = IriTerm.prevalidated(
+  static const Nonprofit501c5 = const IriTerm(
     'https://schema.org/Nonprofit501c5',
   );
 
@@ -9318,7 +8766,7 @@ class Schema {
   ///
   /// Nonprofit501c6: Non-profit type referring to Business Leagues, Chambers of Commerce, Real Estate Boards.
   ///
-  static const Nonprofit501c6 = IriTerm.prevalidated(
+  static const Nonprofit501c6 = const IriTerm(
     'https://schema.org/Nonprofit501c6',
   );
 
@@ -9326,7 +8774,7 @@ class Schema {
   ///
   /// Nonprofit501c7: Non-profit type referring to Social and Recreational Clubs.
   ///
-  static const Nonprofit501c7 = IriTerm.prevalidated(
+  static const Nonprofit501c7 = const IriTerm(
     'https://schema.org/Nonprofit501c7',
   );
 
@@ -9334,7 +8782,7 @@ class Schema {
   ///
   /// Nonprofit501c8: Non-profit type referring to Fraternal Beneficiary Societies and Associations.
   ///
-  static const Nonprofit501c8 = IriTerm.prevalidated(
+  static const Nonprofit501c8 = const IriTerm(
     'https://schema.org/Nonprofit501c8',
   );
 
@@ -9342,7 +8790,7 @@ class Schema {
   ///
   /// Nonprofit501c9: Non-profit type referring to Voluntary Employee Beneficiary Associations.
   ///
-  static const Nonprofit501c9 = IriTerm.prevalidated(
+  static const Nonprofit501c9 = const IriTerm(
     'https://schema.org/Nonprofit501c9',
   );
 
@@ -9350,7 +8798,7 @@ class Schema {
   ///
   /// Nonprofit501d: Non-profit type referring to Religious and Apostolic Associations.
   ///
-  static const Nonprofit501d = IriTerm.prevalidated(
+  static const Nonprofit501d = const IriTerm(
     'https://schema.org/Nonprofit501d',
   );
 
@@ -9358,7 +8806,7 @@ class Schema {
   ///
   /// Nonprofit501e: Non-profit type referring to Cooperative Hospital Service Organizations.
   ///
-  static const Nonprofit501e = IriTerm.prevalidated(
+  static const Nonprofit501e = const IriTerm(
     'https://schema.org/Nonprofit501e',
   );
 
@@ -9366,7 +8814,7 @@ class Schema {
   ///
   /// Nonprofit501f: Non-profit type referring to Cooperative Service Organizations.
   ///
-  static const Nonprofit501f = IriTerm.prevalidated(
+  static const Nonprofit501f = const IriTerm(
     'https://schema.org/Nonprofit501f',
   );
 
@@ -9374,7 +8822,7 @@ class Schema {
   ///
   /// Nonprofit501k: Non-profit type referring to Child Care Organizations.
   ///
-  static const Nonprofit501k = IriTerm.prevalidated(
+  static const Nonprofit501k = const IriTerm(
     'https://schema.org/Nonprofit501k',
   );
 
@@ -9382,7 +8830,7 @@ class Schema {
   ///
   /// Nonprofit501n: Non-profit type referring to Charitable Risk Pools.
   ///
-  static const Nonprofit501n = IriTerm.prevalidated(
+  static const Nonprofit501n = const IriTerm(
     'https://schema.org/Nonprofit501n',
   );
 
@@ -9390,7 +8838,7 @@ class Schema {
   ///
   /// Nonprofit501q: Non-profit type referring to Credit Counseling Organizations.
   ///
-  static const Nonprofit501q = IriTerm.prevalidated(
+  static const Nonprofit501q = const IriTerm(
     'https://schema.org/Nonprofit501q',
   );
 
@@ -9398,15 +8846,13 @@ class Schema {
   ///
   /// Nonprofit527: Non-profit type referring to political organizations.
   ///
-  static const Nonprofit527 = IriTerm.prevalidated(
-    'https://schema.org/Nonprofit527',
-  );
+  static const Nonprofit527 = const IriTerm('https://schema.org/Nonprofit527');
 
   /// IRI for schema:NonprofitANBI
   ///
   /// NonprofitANBI: Non-profit type referring to a Public Benefit Organization (NL).
   ///
-  static const NonprofitANBI = IriTerm.prevalidated(
+  static const NonprofitANBI = const IriTerm(
     'https://schema.org/NonprofitANBI',
   );
 
@@ -9414,7 +8860,7 @@ class Schema {
   ///
   /// NonprofitSBBI: Non-profit type referring to a Social Interest Promoting Institution (NL).
   ///
-  static const NonprofitSBBI = IriTerm.prevalidated(
+  static const NonprofitSBBI = const IriTerm(
     'https://schema.org/NonprofitSBBI',
   );
 
@@ -9422,21 +8868,19 @@ class Schema {
   ///
   /// Nose function assessment with clinical examination.
   ///
-  static const Nose = IriTerm.prevalidated('https://schema.org/Nose');
+  static const Nose = const IriTerm('https://schema.org/Nose');
 
   /// IRI for schema:NotInForce
   ///
   /// Indicates that a legislation is currently not in force.
   ///
-  static const NotInForce = IriTerm.prevalidated(
-    'https://schema.org/NotInForce',
-  );
+  static const NotInForce = const IriTerm('https://schema.org/NotInForce');
 
   /// IRI for schema:NotYetRecruiting
   ///
   /// Not yet recruiting.
   ///
-  static const NotYetRecruiting = IriTerm.prevalidated(
+  static const NotYetRecruiting = const IriTerm(
     'https://schema.org/NotYetRecruiting',
   );
 
@@ -9444,13 +8888,13 @@ class Schema {
   ///
   /// The character of a medical substance, typically a medicine, of being available over the counter or not.
   ///
-  static const OTC = IriTerm.prevalidated('https://schema.org/OTC');
+  static const OTC = const IriTerm('https://schema.org/OTC');
 
   /// IRI for schema:Observational
   ///
   /// An observational study design.
   ///
-  static const Observational = IriTerm.prevalidated(
+  static const Observational = const IriTerm(
     'https://schema.org/Observational',
   );
 
@@ -9458,7 +8902,7 @@ class Schema {
   ///
   /// Any physical activity engaged in for job-related purposes. Examples may include waiting tables, maid service, carrying a mailbag, picking fruits or vegetables, construction work, etc.
   ///
-  static const OccupationalActivity = IriTerm.prevalidated(
+  static const OccupationalActivity = const IriTerm(
     'https://schema.org/OccupationalActivity',
   );
 
@@ -9466,7 +8910,7 @@ class Schema {
   ///
   /// All the documents published by an official publisher should have at least the legal value level "OfficialLegalValue". This indicates that the document was published by an organisation with the public task of making it available (e.g. a consolidated version of a EU directive published by the EU Office of Publications).
   ///
-  static const OfficialLegalValue = IriTerm.prevalidated(
+  static const OfficialLegalValue = const IriTerm(
     'https://schema.org/OfficialLegalValue',
   );
 
@@ -9474,7 +8918,7 @@ class Schema {
   ///
   /// OfflineEventAttendanceMode - an event that is primarily conducted offline.
   ///
-  static const OfflineEventAttendanceMode = IriTerm.prevalidated(
+  static const OfflineEventAttendanceMode = const IriTerm(
     'https://schema.org/OfflineEventAttendanceMode',
   );
 
@@ -9482,7 +8926,7 @@ class Schema {
   ///
   /// Game server status: OfflinePermanently. Server is offline and not available.
   ///
-  static const OfflinePermanently = IriTerm.prevalidated(
+  static const OfflinePermanently = const IriTerm(
     'https://schema.org/OfflinePermanently',
   );
 
@@ -9490,7 +8934,7 @@ class Schema {
   ///
   /// Game server status: OfflineTemporarily. Server is offline now but it can be online soon.
   ///
-  static const OfflineTemporarily = IriTerm.prevalidated(
+  static const OfflineTemporarily = const IriTerm(
     'https://schema.org/OfflineTemporarily',
   );
 
@@ -9498,15 +8942,13 @@ class Schema {
   ///
   /// A DeliveryMethod in which an item is collected on site, e.g. in a store or at a box office.
   ///
-  static const OnSitePickup = IriTerm.prevalidated(
-    'https://schema.org/OnSitePickup',
-  );
+  static const OnSitePickup = const IriTerm('https://schema.org/OnSitePickup');
 
   /// IRI for schema:OneTimePayments
   ///
   /// OneTimePayments: this is a benefit for one-time payments for individuals.
   ///
-  static const OneTimePayments = IriTerm.prevalidated(
+  static const OneTimePayments = const IriTerm(
     'https://schema.org/OneTimePayments',
   );
 
@@ -9514,13 +8956,13 @@ class Schema {
   ///
   /// Game server status: Online. Server is available.
   ///
-  static const Online = IriTerm.prevalidated('https://schema.org/Online');
+  static const Online = const IriTerm('https://schema.org/Online');
 
   /// IRI for schema:OnlineEventAttendanceMode
   ///
   /// OnlineEventAttendanceMode - an event that is primarily conducted online.
   ///
-  static const OnlineEventAttendanceMode = IriTerm.prevalidated(
+  static const OnlineEventAttendanceMode = const IriTerm(
     'https://schema.org/OnlineEventAttendanceMode',
   );
 
@@ -9528,29 +8970,25 @@ class Schema {
   ///
   /// Game server status: OnlineFull. Server is online but unavailable. The maximum number of players has reached.
   ///
-  static const OnlineFull = IriTerm.prevalidated(
-    'https://schema.org/OnlineFull',
-  );
+  static const OnlineFull = const IriTerm('https://schema.org/OnlineFull');
 
   /// IRI for schema:OnlineOnly
   ///
   /// Indicates that the item is available only online.
   ///
-  static const OnlineOnly = IriTerm.prevalidated(
-    'https://schema.org/OnlineOnly',
-  );
+  static const OnlineOnly = const IriTerm('https://schema.org/OnlineOnly');
 
   /// IRI for schema:OpenTrial
   ///
   /// A trial design in which the researcher knows the full details of the treatment, and so does the patient.
   ///
-  static const OpenTrial = IriTerm.prevalidated('https://schema.org/OpenTrial');
+  static const OpenTrial = const IriTerm('https://schema.org/OpenTrial');
 
   /// IRI for schema:OrderCancelled
   ///
   /// OrderStatus representing cancellation of an order.
   ///
-  static const OrderCancelled = IriTerm.prevalidated(
+  static const OrderCancelled = const IriTerm(
     'https://schema.org/OrderCancelled',
   );
 
@@ -9558,7 +8996,7 @@ class Schema {
   ///
   /// OrderStatus representing successful delivery of an order.
   ///
-  static const OrderDelivered = IriTerm.prevalidated(
+  static const OrderDelivered = const IriTerm(
     'https://schema.org/OrderDelivered',
   );
 
@@ -9566,7 +9004,7 @@ class Schema {
   ///
   /// OrderStatus representing that an order is in transit.
   ///
-  static const OrderInTransit = IriTerm.prevalidated(
+  static const OrderInTransit = const IriTerm(
     'https://schema.org/OrderInTransit',
   );
 
@@ -9574,7 +9012,7 @@ class Schema {
   ///
   /// OrderStatus representing that payment is due on an order.
   ///
-  static const OrderPaymentDue = IriTerm.prevalidated(
+  static const OrderPaymentDue = const IriTerm(
     'https://schema.org/OrderPaymentDue',
   );
 
@@ -9582,7 +9020,7 @@ class Schema {
   ///
   /// OrderStatus representing availability of an order for pickup.
   ///
-  static const OrderPickupAvailable = IriTerm.prevalidated(
+  static const OrderPickupAvailable = const IriTerm(
     'https://schema.org/OrderPickupAvailable',
   );
 
@@ -9590,15 +9028,13 @@ class Schema {
   ///
   /// OrderStatus representing that there is a problem with the order.
   ///
-  static const OrderProblem = IriTerm.prevalidated(
-    'https://schema.org/OrderProblem',
-  );
+  static const OrderProblem = const IriTerm('https://schema.org/OrderProblem');
 
   /// IRI for schema:OrderProcessing
   ///
   /// OrderStatus representing that an order is being processed.
   ///
-  static const OrderProcessing = IriTerm.prevalidated(
+  static const OrderProcessing = const IriTerm(
     'https://schema.org/OrderProcessing',
   );
 
@@ -9606,7 +9042,7 @@ class Schema {
   ///
   /// OrderStatus representing that an order has been returned.
   ///
-  static const OrderReturned = IriTerm.prevalidated(
+  static const OrderReturned = const IriTerm(
     'https://schema.org/OrderReturned',
   );
 
@@ -9623,7 +9059,7 @@ class Schema {
   /// For an {[AudioObject]} to be 'original': No evidence the audio has been misleadingly altered or manipulated, though it may contain false or misleading claims.
   ///
   ///
-  static const OriginalMediaContent = IriTerm.prevalidated(
+  static const OriginalMediaContent = const IriTerm(
     'https://schema.org/OriginalMediaContent',
   );
 
@@ -9631,7 +9067,7 @@ class Schema {
   ///
   /// Specifies that the customer must pay the original shipping costs when returning a product.
   ///
-  static const OriginalShippingFees = IriTerm.prevalidated(
+  static const OriginalShippingFees = const IriTerm(
     'https://schema.org/OriginalShippingFees',
   );
 
@@ -9639,23 +9075,19 @@ class Schema {
   ///
   /// A system of medicine focused on promoting the body's innate ability to heal itself.
   ///
-  static const Osteopathic = IriTerm.prevalidated(
-    'https://schema.org/Osteopathic',
-  );
+  static const Osteopathic = const IriTerm('https://schema.org/Osteopathic');
 
   /// IRI for schema:OutOfStock
   ///
   /// Indicates that the item is out of stock.
   ///
-  static const OutOfStock = IriTerm.prevalidated(
-    'https://schema.org/OutOfStock',
-  );
+  static const OutOfStock = const IriTerm('https://schema.org/OutOfStock');
 
   /// IRI for schema:OverviewHealthAspect
   ///
   /// Overview of the content. Contains a summarized view of the topic with the most relevant information for an introduction.
   ///
-  static const OverviewHealthAspect = IriTerm.prevalidated(
+  static const OverviewHealthAspect = const IriTerm(
     'https://schema.org/OverviewHealthAspect',
   );
 
@@ -9663,26 +9095,26 @@ class Schema {
   ///
   /// Positron emission tomography imaging.
   ///
-  static const PET = IriTerm.prevalidated('https://schema.org/PET');
+  static const PET = const IriTerm('https://schema.org/PET');
 
   /// IRI for schema:PaidLeave
   ///
   /// PaidLeave: this is a benefit for paid leave.
   ///
-  static const PaidLeave = IriTerm.prevalidated('https://schema.org/PaidLeave');
+  static const PaidLeave = const IriTerm('https://schema.org/PaidLeave');
 
   /// IRI for schema:Paperback
   ///
   /// Book format: Paperback.
   ///
-  static const Paperback = IriTerm.prevalidated('https://schema.org/Paperback');
+  static const Paperback = const IriTerm('https://schema.org/Paperback');
 
   /// IRI for schema:ParcelService
   ///
   /// A private parcel service as the delivery mode available for a certain offer.\n\nCommonly used values:\n\n* http://purl.org/goodrelations/v1#DHL\n* http://purl.org/goodrelations/v1#FederalExpress\n* http://purl.org/goodrelations/v1#UPS
   ///
   ///
-  static const ParcelService = IriTerm.prevalidated(
+  static const ParcelService = const IriTerm(
     'https://schema.org/ParcelService',
   );
 
@@ -9690,7 +9122,7 @@ class Schema {
   ///
   /// ParentalSupport: this is a benefit for parental support.
   ///
-  static const ParentalSupport = IriTerm.prevalidated(
+  static const ParentalSupport = const IriTerm(
     'https://schema.org/ParentalSupport',
   );
 
@@ -9698,15 +9130,13 @@ class Schema {
   ///
   /// A parking map.
   ///
-  static const ParkingMap = IriTerm.prevalidated(
-    'https://schema.org/ParkingMap',
-  );
+  static const ParkingMap = const IriTerm('https://schema.org/ParkingMap');
 
   /// IRI for schema:PartiallyInForce
   ///
   /// Indicates that parts of the legislation are in force, and parts are not.
   ///
-  static const PartiallyInForce = IriTerm.prevalidated(
+  static const PartiallyInForce = const IriTerm(
     'https://schema.org/PartiallyInForce',
   );
 
@@ -9714,13 +9144,13 @@ class Schema {
   ///
   /// A specific branch of medical science that is concerned with the study of the cause, origin and nature of a disease state, including its consequences as a result of manifestation of the disease. In clinical care, the term is used to designate a branch of medicine using laboratory tests to diagnose and determine the prognostic significance of illness.
   ///
-  static const Pathology = IriTerm.prevalidated('https://schema.org/Pathology');
+  static const Pathology = const IriTerm('https://schema.org/Pathology');
 
   /// IRI for schema:PatientExperienceHealthAspect
   ///
   /// Content about the real life experience of patients or people that have lived a similar experience about the topic. May be forums, topics, Q-and-A and related material.
   ///
-  static const PatientExperienceHealthAspect = IriTerm.prevalidated(
+  static const PatientExperienceHealthAspect = const IriTerm(
     'https://schema.org/PatientExperienceHealthAspect',
   );
 
@@ -9728,7 +9158,7 @@ class Schema {
   ///
   /// An automatic payment system is in place and will be used.
   ///
-  static const PaymentAutomaticallyApplied = IriTerm.prevalidated(
+  static const PaymentAutomaticallyApplied = const IriTerm(
     'https://schema.org/PaymentAutomaticallyApplied',
   );
 
@@ -9736,7 +9166,7 @@ class Schema {
   ///
   /// The payment has been received and processed.
   ///
-  static const PaymentComplete = IriTerm.prevalidated(
+  static const PaymentComplete = const IriTerm(
     'https://schema.org/PaymentComplete',
   );
 
@@ -9744,7 +9174,7 @@ class Schema {
   ///
   /// The payee received the payment, but it was declined for some reason.
   ///
-  static const PaymentDeclined = IriTerm.prevalidated(
+  static const PaymentDeclined = const IriTerm(
     'https://schema.org/PaymentDeclined',
   );
 
@@ -9752,15 +9182,13 @@ class Schema {
   ///
   /// The payment is due, but still within an acceptable time to be received.
   ///
-  static const PaymentDue = IriTerm.prevalidated(
-    'https://schema.org/PaymentDue',
-  );
+  static const PaymentDue = const IriTerm('https://schema.org/PaymentDue');
 
   /// IRI for schema:PaymentPastDue
   ///
   /// The payment is due and considered late.
   ///
-  static const PaymentPastDue = IriTerm.prevalidated(
+  static const PaymentPastDue = const IriTerm(
     'https://schema.org/PaymentPastDue',
   );
 
@@ -9768,7 +9196,7 @@ class Schema {
   ///
   /// A type of medical procedure that involves percutaneous techniques, where access to organs or tissue is achieved via needle-puncture of the skin. For example, catheter-based procedures like stent delivery.
   ///
-  static const PercutaneousProcedure = IriTerm.prevalidated(
+  static const PercutaneousProcedure = const IriTerm(
     'https://schema.org/PercutaneousProcedure',
   );
 
@@ -9776,7 +9204,7 @@ class Schema {
   ///
   /// The practice or art and science of preparing and dispensing drugs and medicines.
   ///
-  static const PharmacySpecialty = IriTerm.prevalidated(
+  static const PharmacySpecialty = const IriTerm(
     'https://schema.org/PharmacySpecialty',
   );
 
@@ -9784,7 +9212,7 @@ class Schema {
   ///
   /// Payment by billing via the phone carrier.
   ///
-  static const PhoneCarrierPayment = IriTerm.prevalidated(
+  static const PhoneCarrierPayment = const IriTerm(
     'https://schema.org/PhoneCarrierPayment',
   );
 
@@ -9792,7 +9220,7 @@ class Schema {
   ///
   /// A placebo-controlled trial design.
   ///
-  static const PlaceboControlledTrial = IriTerm.prevalidated(
+  static const PlaceboControlledTrial = const IriTerm(
     'https://schema.org/PlaceboControlledTrial',
   );
 
@@ -9800,7 +9228,7 @@ class Schema {
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/positiveFilm">positive film</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const PositiveFilmDigitalSource = IriTerm.prevalidated(
+  static const PositiveFilmDigitalSource = const IriTerm(
     'https://schema.org/PositiveFilmDigitalSource',
   );
 
@@ -9808,7 +9236,7 @@ class Schema {
   ///
   /// A description of an action that is supported.
   ///
-  static const PotentialActionStatus = IriTerm.prevalidated(
+  static const PotentialActionStatus = const IriTerm(
     'https://schema.org/PotentialActionStatus',
   );
 
@@ -9816,19 +9244,19 @@ class Schema {
   ///
   /// Indicates that the item is available for pre-order.
   ///
-  static const PreOrder = IriTerm.prevalidated('https://schema.org/PreOrder');
+  static const PreOrder = const IriTerm('https://schema.org/PreOrder');
 
   /// IRI for schema:PreSale
   ///
   /// Indicates that the item is available for ordering and delivery before general availability.
   ///
-  static const PreSale = IriTerm.prevalidated('https://schema.org/PreSale');
+  static const PreSale = const IriTerm('https://schema.org/PreSale');
 
   /// IRI for schema:PregnancyHealthAspect
   ///
   /// Content discussing pregnancy-related aspects of a health topic.
   ///
-  static const PregnancyHealthAspect = IriTerm.prevalidated(
+  static const PregnancyHealthAspect = const IriTerm(
     'https://schema.org/PregnancyHealthAspect',
   );
 
@@ -9836,7 +9264,7 @@ class Schema {
   ///
   /// Available by prescription only.
   ///
-  static const PrescriptionOnly = IriTerm.prevalidated(
+  static const PrescriptionOnly = const IriTerm(
     'https://schema.org/PrescriptionOnly',
   );
 
@@ -9844,7 +9272,7 @@ class Schema {
   ///
   /// Information about actions or measures that can be taken to avoid getting the topic or reaching a critical situation related to the topic.
   ///
-  static const PreventionHealthAspect = IriTerm.prevalidated(
+  static const PreventionHealthAspect = const IriTerm(
     'https://schema.org/PreventionHealthAspect',
   );
 
@@ -9852,7 +9280,7 @@ class Schema {
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/print">print</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const PrintDigitalSource = IriTerm.prevalidated(
+  static const PrintDigitalSource = const IriTerm(
     'https://schema.org/PrintDigitalSource',
   );
 
@@ -9860,13 +9288,13 @@ class Schema {
   ///
   /// A prion is an infectious agent composed of protein in a misfolded form.
   ///
-  static const Prion = IriTerm.prevalidated('https://schema.org/Prion');
+  static const Prion = const IriTerm('https://schema.org/Prion');
 
   /// IRI for schema:PrognosisHealthAspect
   ///
   /// Typical progression and happenings of life course of the topic.
   ///
-  static const PrognosisHealthAspect = IriTerm.prevalidated(
+  static const PrognosisHealthAspect = const IriTerm(
     'https://schema.org/PrognosisHealthAspect',
   );
 
@@ -9874,13 +9302,13 @@ class Schema {
   ///
   /// Single-celled organism that causes an infection.
   ///
-  static const Protozoa = IriTerm.prevalidated('https://schema.org/Protozoa');
+  static const Protozoa = const IriTerm('https://schema.org/Protozoa');
 
   /// IRI for schema:PublicHolidays
   ///
   /// This stands for any day that is a public holiday; it is a placeholder for all official public holidays in some particular location. While not technically a "day of the week", it can be used with {[OpeningHoursSpecification]}. In the context of an opening hours specification it can be used to indicate opening hours on public holidays, overriding general opening hours for the day of the week on which a public holiday occurs.
   ///
-  static const PublicHolidays = IriTerm.prevalidated(
+  static const PublicHolidays = const IriTerm(
     'https://schema.org/PublicHolidays',
   );
 
@@ -9888,13 +9316,13 @@ class Schema {
   ///
   /// A specific branch of medical science that pertains to the study of the respiratory system and its respective disease states.
   ///
-  static const Pulmonary = IriTerm.prevalidated('https://schema.org/Pulmonary');
+  static const Pulmonary = const IriTerm('https://schema.org/Pulmonary');
 
   /// IRI for schema:PurchaseTypeLease
   ///
   /// This is a lease of an item.
   ///
-  static const PurchaseTypeLease = IriTerm.prevalidated(
+  static const PurchaseTypeLease = const IriTerm(
     'https://schema.org/PurchaseTypeLease',
   );
 
@@ -9902,7 +9330,7 @@ class Schema {
   ///
   /// This is a purchase of a new item.
   ///
-  static const PurchaseTypeNewPurchase = IriTerm.prevalidated(
+  static const PurchaseTypeNewPurchase = const IriTerm(
     'https://schema.org/PurchaseTypeNewPurchase',
   );
 
@@ -9910,7 +9338,7 @@ class Schema {
   ///
   /// This is a trade-in for an item.
   ///
-  static const PurchaseTypeTradeIn = IriTerm.prevalidated(
+  static const PurchaseTypeTradeIn = const IriTerm(
     'https://schema.org/PurchaseTypeTradeIn',
   );
 
@@ -9918,7 +9346,7 @@ class Schema {
   ///
   /// This is a purchase of a used item.
   ///
-  static const PurchaseTypeUsedPurchase = IriTerm.prevalidated(
+  static const PurchaseTypeUsedPurchase = const IriTerm(
     'https://schema.org/PurchaseTypeUsedPurchase',
   );
 
@@ -9926,15 +9354,13 @@ class Schema {
   ///
   /// Radiography is an imaging technique that uses electromagnetic radiation other than visible light, especially X-rays, to view the internal structure of a non-uniformly composed and opaque object such as the human body.
   ///
-  static const Radiography = IriTerm.prevalidated(
-    'https://schema.org/Radiography',
-  );
+  static const Radiography = const IriTerm('https://schema.org/Radiography');
 
   /// IRI for schema:RandomizedTrial
   ///
   /// A randomized trial design.
   ///
-  static const RandomizedTrial = IriTerm.prevalidated(
+  static const RandomizedTrial = const IriTerm(
     'https://schema.org/RandomizedTrial',
   );
 
@@ -9942,7 +9368,7 @@ class Schema {
   ///
   /// Permission to read or view the document.
   ///
-  static const ReadPermission = IriTerm.prevalidated(
+  static const ReadPermission = const IriTerm(
     'https://schema.org/ReadPermission',
   );
 
@@ -9950,7 +9376,7 @@ class Schema {
   ///
   /// Real-wheel drive is a transmission layout where the engine drives the rear wheels.
   ///
-  static const RearWheelDriveConfiguration = IriTerm.prevalidated(
+  static const RearWheelDriveConfiguration = const IriTerm(
     'https://schema.org/RearWheelDriveConfiguration',
   );
 
@@ -9958,15 +9384,13 @@ class Schema {
   ///
   /// Recruiting participants.
   ///
-  static const Recruiting = IriTerm.prevalidated(
-    'https://schema.org/Recruiting',
-  );
+  static const Recruiting = const IriTerm('https://schema.org/Recruiting');
 
   /// IRI for schema:ReducedRelevanceForChildrenConsideration
   ///
   /// A general code for cases where relevance to children is reduced, e.g. adult education, mortgages, retirement-related products, etc.
   ///
-  static const ReducedRelevanceForChildrenConsideration = IriTerm.prevalidated(
+  static const ReducedRelevanceForChildrenConsideration = const IriTerm(
     'https://schema.org/ReducedRelevanceForChildrenConsideration',
   );
 
@@ -9974,7 +9398,7 @@ class Schema {
   ///
   /// Indicates that the item is refurbished.
   ///
-  static const RefurbishedCondition = IriTerm.prevalidated(
+  static const RefurbishedCondition = const IriTerm(
     'https://schema.org/RefurbishedCondition',
   );
 
@@ -9982,21 +9406,19 @@ class Schema {
   ///
   /// A registry-based study design.
   ///
-  static const Registry = IriTerm.prevalidated('https://schema.org/Registry');
+  static const Registry = const IriTerm('https://schema.org/Registry');
 
   /// IRI for schema:RegularPrice
   ///
   /// Represents the regular price of an offered product. This is usually the advertised price before a temporary sale. Once the sale period ends the advertised price will go back to the regular price.
   ///
-  static const RegularPrice = IriTerm.prevalidated(
-    'https://schema.org/RegularPrice',
-  );
+  static const RegularPrice = const IriTerm('https://schema.org/RegularPrice');
 
   /// IRI for schema:ReimbursementCap
   ///
   /// The drug's cost represents the maximum reimbursement paid by an insurer for the drug.
   ///
-  static const ReimbursementCap = IriTerm.prevalidated(
+  static const ReimbursementCap = const IriTerm(
     'https://schema.org/ReimbursementCap',
   );
 
@@ -10004,7 +9426,7 @@ class Schema {
   ///
   /// Other prominent or relevant topics tied to the main topic.
   ///
-  static const RelatedTopicsHealthAspect = IriTerm.prevalidated(
+  static const RelatedTopicsHealthAspect = const IriTerm(
     'https://schema.org/RelatedTopicsHealthAspect',
   );
 
@@ -10012,21 +9434,19 @@ class Schema {
   ///
   /// RemixAlbum.
   ///
-  static const RemixAlbum = IriTerm.prevalidated(
-    'https://schema.org/RemixAlbum',
-  );
+  static const RemixAlbum = const IriTerm('https://schema.org/RemixAlbum');
 
   /// IRI for schema:Renal
   ///
   /// A specific branch of medical science that pertains to the study of the kidneys and its respective disease states.
   ///
-  static const Renal = IriTerm.prevalidated('https://schema.org/Renal');
+  static const Renal = const IriTerm('https://schema.org/Renal');
 
   /// IRI for schema:RentalVehicleUsage
   ///
   /// Indicates the usage of the vehicle as a rental car.
   ///
-  static const RentalVehicleUsage = IriTerm.prevalidated(
+  static const RentalVehicleUsage = const IriTerm(
     'https://schema.org/RentalVehicleUsage',
   );
 
@@ -10034,7 +9454,7 @@ class Schema {
   ///
   /// The status for a previously confirmed reservation that is now cancelled.
   ///
-  static const ReservationCancelled = IriTerm.prevalidated(
+  static const ReservationCancelled = const IriTerm(
     'https://schema.org/ReservationCancelled',
   );
 
@@ -10042,7 +9462,7 @@ class Schema {
   ///
   /// The status of a confirmed reservation.
   ///
-  static const ReservationConfirmed = IriTerm.prevalidated(
+  static const ReservationConfirmed = const IriTerm(
     'https://schema.org/ReservationConfirmed',
   );
 
@@ -10050,7 +9470,7 @@ class Schema {
   ///
   /// The status of a reservation on hold pending an update like credit card number or flight changes.
   ///
-  static const ReservationHold = IriTerm.prevalidated(
+  static const ReservationHold = const IriTerm(
     'https://schema.org/ReservationHold',
   );
 
@@ -10058,7 +9478,7 @@ class Schema {
   ///
   /// The status of a reservation when a request has been sent, but not confirmed.
   ///
-  static const ReservationPending = IriTerm.prevalidated(
+  static const ReservationPending = const IriTerm(
     'https://schema.org/ReservationPending',
   );
 
@@ -10066,13 +9486,13 @@ class Schema {
   ///
   /// Indicates that the item is reserved and therefore not available.
   ///
-  static const Reserved = IriTerm.prevalidated('https://schema.org/Reserved');
+  static const Reserved = const IriTerm('https://schema.org/Reserved');
 
   /// IRI for schema:RestockingFees
   ///
   /// Specifies that the customer must pay a restocking fee when returning a product.
   ///
-  static const RestockingFees = IriTerm.prevalidated(
+  static const RestockingFees = const IriTerm(
     'https://schema.org/RestockingFees',
   );
 
@@ -10080,7 +9500,7 @@ class Schema {
   ///
   /// Results are available.
   ///
-  static const ResultsAvailable = IriTerm.prevalidated(
+  static const ResultsAvailable = const IriTerm(
     'https://schema.org/ResultsAvailable',
   );
 
@@ -10088,7 +9508,7 @@ class Schema {
   ///
   /// Results are not available.
   ///
-  static const ResultsNotAvailable = IriTerm.prevalidated(
+  static const ResultsNotAvailable = const IriTerm(
     'https://schema.org/ResultsNotAvailable',
   );
 
@@ -10096,13 +9516,13 @@ class Schema {
   ///
   /// The drug's cost represents the retail cost of the drug.
   ///
-  static const Retail = IriTerm.prevalidated('https://schema.org/Retail');
+  static const Retail = const IriTerm('https://schema.org/Retail');
 
   /// IRI for schema:ReturnAtKiosk
   ///
   /// Specifies that product returns must be made at a kiosk.
   ///
-  static const ReturnAtKiosk = IriTerm.prevalidated(
+  static const ReturnAtKiosk = const IriTerm(
     'https://schema.org/ReturnAtKiosk',
   );
 
@@ -10110,15 +9530,13 @@ class Schema {
   ///
   /// Specifies that product returns must be done by mail.
   ///
-  static const ReturnByMail = IriTerm.prevalidated(
-    'https://schema.org/ReturnByMail',
-  );
+  static const ReturnByMail = const IriTerm('https://schema.org/ReturnByMail');
 
   /// IRI for schema:ReturnFeesCustomerResponsibility
   ///
   /// Specifies that product returns must be paid for, and are the responsibility of, the customer.
   ///
-  static const ReturnFeesCustomerResponsibility = IriTerm.prevalidated(
+  static const ReturnFeesCustomerResponsibility = const IriTerm(
     'https://schema.org/ReturnFeesCustomerResponsibility',
   );
 
@@ -10126,7 +9544,7 @@ class Schema {
   ///
   /// Specifies that product returns must be made in a store.
   ///
-  static const ReturnInStore = IriTerm.prevalidated(
+  static const ReturnInStore = const IriTerm(
     'https://schema.org/ReturnInStore',
   );
 
@@ -10134,7 +9552,7 @@ class Schema {
   ///
   /// Indicated that creating a return label is the responsibility of the customer.
   ///
-  static const ReturnLabelCustomerResponsibility = IriTerm.prevalidated(
+  static const ReturnLabelCustomerResponsibility = const IriTerm(
     'https://schema.org/ReturnLabelCustomerResponsibility',
   );
 
@@ -10142,7 +9560,7 @@ class Schema {
   ///
   /// Indicated that a return label must be downloaded and printed by the customer.
   ///
-  static const ReturnLabelDownloadAndPrint = IriTerm.prevalidated(
+  static const ReturnLabelDownloadAndPrint = const IriTerm(
     'https://schema.org/ReturnLabelDownloadAndPrint',
   );
 
@@ -10150,7 +9568,7 @@ class Schema {
   ///
   /// Specifies that a return label will be provided by the seller in the shipping box.
   ///
-  static const ReturnLabelInBox = IriTerm.prevalidated(
+  static const ReturnLabelInBox = const IriTerm(
     'https://schema.org/ReturnLabelInBox',
   );
 
@@ -10158,7 +9576,7 @@ class Schema {
   ///
   /// Specifies that the customer must pay the return shipping costs when returning a product.
   ///
-  static const ReturnShippingFees = IriTerm.prevalidated(
+  static const ReturnShippingFees = const IriTerm(
     'https://schema.org/ReturnShippingFees',
   );
 
@@ -10166,7 +9584,7 @@ class Schema {
   ///
   /// A specific branch of medical science that deals with the study and treatment of rheumatic, autoimmune or joint diseases.
   ///
-  static const Rheumatologic = IriTerm.prevalidated(
+  static const Rheumatologic = const IriTerm(
     'https://schema.org/Rheumatologic',
   );
 
@@ -10174,7 +9592,7 @@ class Schema {
   ///
   /// The steering position is on the right side of the vehicle (viewed from the main direction of driving).
   ///
-  static const RightHandDriving = IriTerm.prevalidated(
+  static const RightHandDriving = const IriTerm(
     'https://schema.org/RightHandDriving',
   );
 
@@ -10182,7 +9600,7 @@ class Schema {
   ///
   /// Information about the risk factors and possible complications that may follow a topic.
   ///
-  static const RisksOrComplicationsHealthAspect = IriTerm.prevalidated(
+  static const RisksOrComplicationsHealthAspect = const IriTerm(
     'https://schema.org/RisksOrComplicationsHealthAspect',
   );
 
@@ -10190,7 +9608,7 @@ class Schema {
   ///
   /// The invitee may or may not attend.
   ///
-  static const RsvpResponseMaybe = IriTerm.prevalidated(
+  static const RsvpResponseMaybe = const IriTerm(
     'https://schema.org/RsvpResponseMaybe',
   );
 
@@ -10198,7 +9616,7 @@ class Schema {
   ///
   /// The invitee will not attend.
   ///
-  static const RsvpResponseNo = IriTerm.prevalidated(
+  static const RsvpResponseNo = const IriTerm(
     'https://schema.org/RsvpResponseNo',
   );
 
@@ -10206,7 +9624,7 @@ class Schema {
   ///
   /// The invitee will attend.
   ///
-  static const RsvpResponseYes = IriTerm.prevalidated(
+  static const RsvpResponseYes = const IriTerm(
     'https://schema.org/RsvpResponseYes',
   );
 
@@ -10214,13 +9632,13 @@ class Schema {
   ///
   /// Represents the suggested retail price ("SRP") of an offered product.
   ///
-  static const SRP = IriTerm.prevalidated('https://schema.org/SRP');
+  static const SRP = const IriTerm('https://schema.org/SRP');
 
   /// IRI for schema:SafetyHealthAspect
   ///
   /// Content about the safety-related aspects of a health topic.
   ///
-  static const SafetyHealthAspect = IriTerm.prevalidated(
+  static const SafetyHealthAspect = const IriTerm(
     'https://schema.org/SafetyHealthAspect',
   );
 
@@ -10228,7 +9646,7 @@ class Schema {
   ///
   /// Represents a sale price (usually active for a limited period) of an offered product.
   ///
-  static const SalePrice = IriTerm.prevalidated('https://schema.org/SalePrice');
+  static const SalePrice = const IriTerm('https://schema.org/SalePrice');
 
   /// IRI for schema:SatireOrParodyContent
   ///
@@ -10243,7 +9661,7 @@ class Schema {
   /// For an {[AudioObject]} to be 'satire or parody content': Audio that was created as political or humorous commentary and is presented in that context. (Reshares of satire/parody content that do not include relevant context are more likely to fall under the “missing context” rating.)
   ///
   ///
-  static const SatireOrParodyContent = IriTerm.prevalidated(
+  static const SatireOrParodyContent = const IriTerm(
     'https://schema.org/SatireOrParodyContent',
   );
 
@@ -10251,13 +9669,13 @@ class Schema {
   ///
   /// The day of the week between Friday and Sunday.
   ///
-  static const Saturday = IriTerm.prevalidated('https://schema.org/Saturday');
+  static const Saturday = const IriTerm('https://schema.org/Saturday');
 
   /// IRI for schema:ScreenCaptureDigitalSource
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/algorithmicMedia">algorithmic media</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const ScreenCaptureDigitalSource = IriTerm.prevalidated(
+  static const ScreenCaptureDigitalSource = const IriTerm(
     'https://schema.org/ScreenCaptureDigitalSource',
   );
 
@@ -10265,7 +9683,7 @@ class Schema {
   ///
   /// Content about how to screen or further filter a topic.
   ///
-  static const ScreeningHealthAspect = IriTerm.prevalidated(
+  static const ScreeningHealthAspect = const IriTerm(
     'https://schema.org/ScreeningHealthAspect',
   );
 
@@ -10273,15 +9691,13 @@ class Schema {
   ///
   /// A seating map.
   ///
-  static const SeatingMap = IriTerm.prevalidated(
-    'https://schema.org/SeatingMap',
-  );
+  static const SeatingMap = const IriTerm('https://schema.org/SeatingMap');
 
   /// IRI for schema:SeeDoctorHealthAspect
   ///
   /// Information about questions that may be asked, when to see a professional, measures before seeing a doctor or content about the first consultation.
   ///
-  static const SeeDoctorHealthAspect = IriTerm.prevalidated(
+  static const SeeDoctorHealthAspect = const IriTerm(
     'https://schema.org/SeeDoctorHealthAspect',
   );
 
@@ -10289,7 +9705,7 @@ class Schema {
   ///
   /// Self care actions or measures that can be taken to sooth, health or avoid a topic. This may be carried at home and can be carried/managed by the person itself.
   ///
-  static const SelfCareHealthAspect = IriTerm.prevalidated(
+  static const SelfCareHealthAspect = const IriTerm(
     'https://schema.org/SelfCareHealthAspect',
   );
 
@@ -10297,7 +9713,7 @@ class Schema {
   ///
   /// The item contains sexually oriented content such as nudity, suggestive or explicit material, or related online services, or is intended to enhance sexual activity. Examples: Erotic videos or magazine, sexual enhancement devices, sex toys.
   ///
-  static const SexualContentConsideration = IriTerm.prevalidated(
+  static const SexualContentConsideration = const IriTerm(
     'https://schema.org/SexualContentConsideration',
   );
 
@@ -10305,7 +9721,7 @@ class Schema {
   ///
   /// Side effects that can be observed from the usage of the topic.
   ///
-  static const SideEffectsHealthAspect = IriTerm.prevalidated(
+  static const SideEffectsHealthAspect = const IriTerm(
     'https://schema.org/SideEffectsHealthAspect',
   );
 
@@ -10313,7 +9729,7 @@ class Schema {
   ///
   /// A trial design in which the researcher knows which treatment the patient was randomly assigned to but the patient does not.
   ///
-  static const SingleBlindedTrial = IriTerm.prevalidated(
+  static const SingleBlindedTrial = const IriTerm(
     'https://schema.org/SingleBlindedTrial',
   );
 
@@ -10321,7 +9737,7 @@ class Schema {
   ///
   /// A trial that takes place at a single center.
   ///
-  static const SingleCenterTrial = IriTerm.prevalidated(
+  static const SingleCenterTrial = const IriTerm(
     'https://schema.org/SingleCenterTrial',
   );
 
@@ -10329,15 +9745,13 @@ class Schema {
   ///
   /// Play mode: SinglePlayer. Which is played by a lone player.
   ///
-  static const SinglePlayer = IriTerm.prevalidated(
-    'https://schema.org/SinglePlayer',
-  );
+  static const SinglePlayer = const IriTerm('https://schema.org/SinglePlayer');
 
   /// IRI for schema:SingleRelease
   ///
   /// SingleRelease.
   ///
-  static const SingleRelease = IriTerm.prevalidated(
+  static const SingleRelease = const IriTerm(
     'https://schema.org/SingleRelease',
   );
 
@@ -10345,7 +9759,7 @@ class Schema {
   ///
   /// Imperial size system.
   ///
-  static const SizeSystemImperial = IriTerm.prevalidated(
+  static const SizeSystemImperial = const IriTerm(
     'https://schema.org/SizeSystemImperial',
   );
 
@@ -10353,7 +9767,7 @@ class Schema {
   ///
   /// Metric size system.
   ///
-  static const SizeSystemMetric = IriTerm.prevalidated(
+  static const SizeSystemMetric = const IriTerm(
     'https://schema.org/SizeSystemMetric',
   );
 
@@ -10361,19 +9775,19 @@ class Schema {
   ///
   /// Skin assessment with clinical examination.
   ///
-  static const Skin = IriTerm.prevalidated('https://schema.org/Skin');
+  static const Skin = const IriTerm('https://schema.org/Skin');
 
   /// IRI for schema:SoldOut
   ///
   /// Indicates that the item has sold out.
   ///
-  static const SoldOut = IriTerm.prevalidated('https://schema.org/SoldOut');
+  static const SoldOut = const IriTerm('https://schema.org/SoldOut');
 
   /// IRI for schema:SoundtrackAlbum
   ///
   /// SoundtrackAlbum.
   ///
-  static const SoundtrackAlbum = IriTerm.prevalidated(
+  static const SoundtrackAlbum = const IriTerm(
     'https://schema.org/SoundtrackAlbum',
   );
 
@@ -10381,7 +9795,7 @@ class Schema {
   ///
   /// The scientific study and treatment of defects, disorders, and malfunctions of speech and voice, as stuttering, lisping, or lalling, and of language disturbances, as aphasia or delayed language acquisition.
   ///
-  static const SpeechPathology = IriTerm.prevalidated(
+  static const SpeechPathology = const IriTerm(
     'https://schema.org/SpeechPathology',
   );
 
@@ -10389,7 +9803,7 @@ class Schema {
   ///
   /// SpokenWordAlbum.
   ///
-  static const SpokenWordAlbum = IriTerm.prevalidated(
+  static const SpokenWordAlbum = const IriTerm(
     'https://schema.org/SpokenWordAlbum',
   );
 
@@ -10406,7 +9820,7 @@ class Schema {
   /// For an {[AudioObject]} to be 'staged content': Audio that has been created using actors or similarly contrived.
   ///
   ///
-  static const StagedContent = IriTerm.prevalidated(
+  static const StagedContent = const IriTerm(
     'https://schema.org/StagedContent',
   );
 
@@ -10414,7 +9828,7 @@ class Schema {
   ///
   /// Stages that can be observed from a topic.
   ///
-  static const StagesHealthAspect = IriTerm.prevalidated(
+  static const StagesHealthAspect = const IriTerm(
     'https://schema.org/StagesHealthAspect',
   );
 
@@ -10422,7 +9836,7 @@ class Schema {
   ///
   /// Specifies that the customer receives a store credit as refund when returning a product.
   ///
-  static const StoreCreditRefund = IriTerm.prevalidated(
+  static const StoreCreditRefund = const IriTerm(
     'https://schema.org/StoreCreditRefund',
   );
 
@@ -10430,7 +9844,7 @@ class Schema {
   ///
   /// Physical activity that is engaged in to improve muscle and bone strength. Also referred to as resistance training.
   ///
-  static const StrengthTraining = IriTerm.prevalidated(
+  static const StrengthTraining = const IriTerm(
     'https://schema.org/StrengthTraining',
   );
 
@@ -10438,7 +9852,7 @@ class Schema {
   ///
   /// Represents the strikethrough price (the previous advertised price) of an offered product.
   ///
-  static const StrikethroughPrice = IriTerm.prevalidated(
+  static const StrikethroughPrice = const IriTerm(
     'https://schema.org/StrikethroughPrice',
   );
 
@@ -10446,41 +9860,37 @@ class Schema {
   ///
   /// StudioAlbum.
   ///
-  static const StudioAlbum = IriTerm.prevalidated(
-    'https://schema.org/StudioAlbum',
-  );
+  static const StudioAlbum = const IriTerm('https://schema.org/StudioAlbum');
 
   /// IRI for schema:Subscription
   ///
   /// Represents the subscription pricing component of the total price for an offered product.
   ///
-  static const Subscription = IriTerm.prevalidated(
-    'https://schema.org/Subscription',
-  );
+  static const Subscription = const IriTerm('https://schema.org/Subscription');
 
   /// IRI for schema:Sunday
   ///
   /// The day of the week between Saturday and Monday.
   ///
-  static const Sunday = IriTerm.prevalidated('https://schema.org/Sunday');
+  static const Sunday = const IriTerm('https://schema.org/Sunday');
 
   /// IRI for schema:Surgical
   ///
   /// A specific branch of medical science that pertains to treating diseases, injuries and deformities by manual and instrumental means.
   ///
-  static const Surgical = IriTerm.prevalidated('https://schema.org/Surgical');
+  static const Surgical = const IriTerm('https://schema.org/Surgical');
 
   /// IRI for schema:Suspended
   ///
   /// Suspended.
   ///
-  static const Suspended = IriTerm.prevalidated('https://schema.org/Suspended');
+  static const Suspended = const IriTerm('https://schema.org/Suspended');
 
   /// IRI for schema:SymptomsHealthAspect
   ///
   /// Symptoms or related symptoms of a Topic.
   ///
-  static const SymptomsHealthAspect = IriTerm.prevalidated(
+  static const SymptomsHealthAspect = const IriTerm(
     'https://schema.org/SymptomsHealthAspect',
   );
 
@@ -10488,7 +9898,7 @@ class Schema {
   ///
   /// Indicates the usage of the car as a taxi.
   ///
-  static const TaxiVehicleUsage = IriTerm.prevalidated(
+  static const TaxiVehicleUsage = const IriTerm(
     'https://schema.org/TaxiVehicleUsage',
   );
 
@@ -10496,35 +9906,31 @@ class Schema {
   ///
   /// Terminated.
   ///
-  static const Terminated = IriTerm.prevalidated(
-    'https://schema.org/Terminated',
-  );
+  static const Terminated = const IriTerm('https://schema.org/Terminated');
 
   /// IRI for schema:Therapeutic
   ///
   /// A medical device used for therapeutic purposes.
   ///
-  static const Therapeutic = IriTerm.prevalidated(
-    'https://schema.org/Therapeutic',
-  );
+  static const Therapeutic = const IriTerm('https://schema.org/Therapeutic');
 
   /// IRI for schema:Throat
   ///
   /// Throat assessment with  clinical examination.
   ///
-  static const Throat = IriTerm.prevalidated('https://schema.org/Throat');
+  static const Throat = const IriTerm('https://schema.org/Throat');
 
   /// IRI for schema:Thursday
   ///
   /// The day of the week between Wednesday and Friday.
   ///
-  static const Thursday = IriTerm.prevalidated('https://schema.org/Thursday');
+  static const Thursday = const IriTerm('https://schema.org/Thursday');
 
   /// IRI for schema:TierBenefitLoyaltyPoints
   ///
   /// Benefit of the tier is earning of loyalty points.
   ///
-  static const TierBenefitLoyaltyPoints = IriTerm.prevalidated(
+  static const TierBenefitLoyaltyPoints = const IriTerm(
     'https://schema.org/TierBenefitLoyaltyPoints',
   );
 
@@ -10532,7 +9938,7 @@ class Schema {
   ///
   /// Benefit of the tier is a members-only price.
   ///
-  static const TierBenefitLoyaltyPrice = IriTerm.prevalidated(
+  static const TierBenefitLoyaltyPrice = const IriTerm(
     'https://schema.org/TierBenefitLoyaltyPrice',
   );
 
@@ -10540,7 +9946,7 @@ class Schema {
   ///
   /// Benefit of the tier is members-only returns, for example free unlimited returns.
   ///
-  static const TierBenefitLoyaltyReturns = IriTerm.prevalidated(
+  static const TierBenefitLoyaltyReturns = const IriTerm(
     'https://schema.org/TierBenefitLoyaltyReturns',
   );
 
@@ -10548,7 +9954,7 @@ class Schema {
   ///
   /// Benefit of the tier is a members-only shipping price or speed (for example free shipping or 1-day shipping).
   ///
-  static const TierBenefitLoyaltyShipping = IriTerm.prevalidated(
+  static const TierBenefitLoyaltyShipping = const IriTerm(
     'https://schema.org/TierBenefitLoyaltyShipping',
   );
 
@@ -10556,7 +9962,7 @@ class Schema {
   ///
   /// Item contains tobacco and/or nicotine, for example cigars, cigarettes, chewing tobacco, e-cigarettes, or hookahs.
   ///
-  static const TobaccoNicotineConsideration = IriTerm.prevalidated(
+  static const TobaccoNicotineConsideration = const IriTerm(
     'https://schema.org/TobaccoNicotineConsideration',
   );
 
@@ -10564,21 +9970,19 @@ class Schema {
   ///
   /// The associated telephone number is toll free.
   ///
-  static const TollFree = IriTerm.prevalidated('https://schema.org/TollFree');
+  static const TollFree = const IriTerm('https://schema.org/TollFree');
 
   /// IRI for schema:Toxicologic
   ///
   /// A specific branch of medical science that is concerned with poisons, their nature, effects and detection and involved in the treatment of poisoning.
   ///
-  static const Toxicologic = IriTerm.prevalidated(
-    'https://schema.org/Toxicologic',
-  );
+  static const Toxicologic = const IriTerm('https://schema.org/Toxicologic');
 
   /// IRI for schema:TraditionalChinese
   ///
   /// A system of medicine based on common theoretical concepts that originated in China and evolved over thousands of years, that uses herbs, acupuncture, exercise, massage, dietary therapy, and other methods to treat a wide range of conditions.
   ///
-  static const TraditionalChinese = IriTerm.prevalidated(
+  static const TraditionalChinese = const IriTerm(
     'https://schema.org/TraditionalChinese',
   );
 
@@ -10586,7 +9990,7 @@ class Schema {
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia">trained algorithmic media</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const TrainedAlgorithmicMediaDigitalSource = IriTerm.prevalidated(
+  static const TrainedAlgorithmicMediaDigitalSource = const IriTerm(
     'https://schema.org/TrainedAlgorithmicMediaDigitalSource',
   );
 
@@ -10603,7 +10007,7 @@ class Schema {
   /// For an {[AudioObject]} to be 'transformed content': Part or all of the audio has been manipulated to alter the words or sounds, or the audio has been synthetically generated, such as to create a sound-alike voice.
   ///
   ///
-  static const TransformedContent = IriTerm.prevalidated(
+  static const TransformedContent = const IriTerm(
     'https://schema.org/TransformedContent',
   );
 
@@ -10611,15 +10015,13 @@ class Schema {
   ///
   /// A transit map.
   ///
-  static const TransitMap = IriTerm.prevalidated(
-    'https://schema.org/TransitMap',
-  );
+  static const TransitMap = const IriTerm('https://schema.org/TransitMap');
 
   /// IRI for schema:TreatmentsHealthAspect
   ///
   /// Treatments or related therapies for a Topic.
   ///
-  static const TreatmentsHealthAspect = IriTerm.prevalidated(
+  static const TreatmentsHealthAspect = const IriTerm(
     'https://schema.org/TreatmentsHealthAspect',
   );
 
@@ -10627,7 +10029,7 @@ class Schema {
   ///
   /// A trial design in which neither the researcher, the person administering the therapy nor the patient knows the details of the treatment the patient was randomly assigned to.
   ///
-  static const TripleBlindedTrial = IriTerm.prevalidated(
+  static const TripleBlindedTrial = const IriTerm(
     'https://schema.org/TripleBlindedTrial',
   );
 
@@ -10635,19 +10037,19 @@ class Schema {
   ///
   /// The boolean value true.
   ///
-  static const True = IriTerm.prevalidated('https://schema.org/True');
+  static const True = const IriTerm('https://schema.org/True');
 
   /// IRI for schema:Tuesday
   ///
   /// The day of the week between Monday and Wednesday.
   ///
-  static const Tuesday = IriTerm.prevalidated('https://schema.org/Tuesday');
+  static const Tuesday = const IriTerm('https://schema.org/Tuesday');
 
   /// IRI for schema:TypesHealthAspect
   ///
   /// Categorization and other types related to a topic.
   ///
-  static const TypesHealthAspect = IriTerm.prevalidated(
+  static const TypesHealthAspect = const IriTerm(
     'https://schema.org/TypesHealthAspect',
   );
 
@@ -10655,21 +10057,19 @@ class Schema {
   ///
   /// UKTrust: Non-profit type referring to a UK trust.
   ///
-  static const UKTrust = IriTerm.prevalidated('https://schema.org/UKTrust');
+  static const UKTrust = const IriTerm('https://schema.org/UKTrust');
 
   /// IRI for schema:Ultrasound
   ///
   /// Ultrasound imaging.
   ///
-  static const Ultrasound = IriTerm.prevalidated(
-    'https://schema.org/Ultrasound',
-  );
+  static const Ultrasound = const IriTerm('https://schema.org/Ultrasound');
 
   /// IRI for schema:UnclassifiedAdultConsideration
   ///
   /// The item is suitable only for adults, without indicating why. Due to widespread use of "adult" as a euphemism for "sexual", many such items are likely suited also for the SexualContentConsideration code.
   ///
-  static const UnclassifiedAdultConsideration = IriTerm.prevalidated(
+  static const UnclassifiedAdultConsideration = const IriTerm(
     'https://schema.org/UnclassifiedAdultConsideration',
   );
 
@@ -10677,7 +10077,7 @@ class Schema {
   ///
   /// UnemploymentSupport: this is a benefit for unemployment support.
   ///
-  static const UnemploymentSupport = IriTerm.prevalidated(
+  static const UnemploymentSupport = const IriTerm(
     'https://schema.org/UnemploymentSupport',
   );
 
@@ -10685,7 +10085,7 @@ class Schema {
   ///
   /// UnincorporatedAssociationCharity: Non-profit type referring to a charitable company that is not incorporated (UK).
   ///
-  static const UnincorporatedAssociationCharity = IriTerm.prevalidated(
+  static const UnincorporatedAssociationCharity = const IriTerm(
     'https://schema.org/UnincorporatedAssociationCharity',
   );
 
@@ -10693,7 +10093,7 @@ class Schema {
   ///
   /// Indicates that a document has no particular or special standing (e.g. a republication of a law by a private publisher).
   ///
-  static const UnofficialLegalValue = IriTerm.prevalidated(
+  static const UnofficialLegalValue = const IriTerm(
     'https://schema.org/UnofficialLegalValue',
   );
 
@@ -10701,13 +10101,13 @@ class Schema {
   ///
   /// A specific branch of medical science that is concerned with the diagnosis and treatment of diseases pertaining to the urinary tract and the urogenital system.
   ///
-  static const Urologic = IriTerm.prevalidated('https://schema.org/Urologic');
+  static const Urologic = const IriTerm('https://schema.org/Urologic');
 
   /// IRI for schema:UsageOrScheduleHealthAspect
   ///
   /// Content about how, when, frequency and dosage of a topic.
   ///
-  static const UsageOrScheduleHealthAspect = IriTerm.prevalidated(
+  static const UsageOrScheduleHealthAspect = const IriTerm(
     'https://schema.org/UsageOrScheduleHealthAspect',
   );
 
@@ -10715,7 +10115,7 @@ class Schema {
   ///
   /// Indicates that the item is used.
   ///
-  static const UsedCondition = IriTerm.prevalidated(
+  static const UsedCondition = const IriTerm(
     'https://schema.org/UsedCondition',
   );
 
@@ -10723,13 +10123,13 @@ class Schema {
   ///
   /// A diet exclusive of all animal products.
   ///
-  static const VeganDiet = IriTerm.prevalidated('https://schema.org/VeganDiet');
+  static const VeganDiet = const IriTerm('https://schema.org/VeganDiet');
 
   /// IRI for schema:VegetarianDiet
   ///
   /// A diet exclusive of animal meat.
   ///
-  static const VegetarianDiet = IriTerm.prevalidated(
+  static const VegetarianDiet = const IriTerm(
     'https://schema.org/VegetarianDiet',
   );
 
@@ -10737,21 +10137,19 @@ class Schema {
   ///
   /// A venue map (e.g. for malls, auditoriums, museums, etc.).
   ///
-  static const VenueMap = IriTerm.prevalidated('https://schema.org/VenueMap');
+  static const VenueMap = const IriTerm('https://schema.org/VenueMap');
 
   /// IRI for schema:VinylFormat
   ///
   /// VinylFormat.
   ///
-  static const VinylFormat = IriTerm.prevalidated(
-    'https://schema.org/VinylFormat',
-  );
+  static const VinylFormat = const IriTerm('https://schema.org/VinylFormat');
 
   /// IRI for schema:ViolenceConsideration
   ///
   /// Item shows or promotes violence.
   ///
-  static const ViolenceConsideration = IriTerm.prevalidated(
+  static const ViolenceConsideration = const IriTerm(
     'https://schema.org/ViolenceConsideration',
   );
 
@@ -10759,7 +10157,7 @@ class Schema {
   ///
   /// Content coded as '<a href="https://cv.iptc.org/newscodes/digitalsourcetype/virtualRecording">virtual recording</a>' using the IPTC <a href="https://cv.iptc.org/newscodes/digitalsourcetype/">digital source type</a> vocabulary.
   ///
-  static const VirtualRecordingDigitalSource = IriTerm.prevalidated(
+  static const VirtualRecordingDigitalSource = const IriTerm(
     'https://schema.org/VirtualRecordingDigitalSource',
   );
 
@@ -10767,13 +10165,13 @@ class Schema {
   ///
   /// Pathogenic virus that causes viral infection.
   ///
-  static const Virus = IriTerm.prevalidated('https://schema.org/Virus');
+  static const Virus = const IriTerm('https://schema.org/Virus');
 
   /// IRI for schema:WeaponConsideration
   ///
   /// The item is intended to induce bodily harm, for example guns, mace, combat knives, brass knuckles, nail or other bombs, and spears.
   ///
-  static const WeaponConsideration = IriTerm.prevalidated(
+  static const WeaponConsideration = const IriTerm(
     'https://schema.org/WeaponConsideration',
   );
 
@@ -10781,7 +10179,7 @@ class Schema {
   ///
   /// Measurement of the back section, for example of a jacket.
   ///
-  static const WearableMeasurementBack = IriTerm.prevalidated(
+  static const WearableMeasurementBack = const IriTerm(
     'https://schema.org/WearableMeasurementBack',
   );
 
@@ -10789,7 +10187,7 @@ class Schema {
   ///
   /// Measurement of the chest/bust section, for example of a suit.
   ///
-  static const WearableMeasurementChestOrBust = IriTerm.prevalidated(
+  static const WearableMeasurementChestOrBust = const IriTerm(
     'https://schema.org/WearableMeasurementChestOrBust',
   );
 
@@ -10797,7 +10195,7 @@ class Schema {
   ///
   /// Measurement of the collar, for example of a shirt.
   ///
-  static const WearableMeasurementCollar = IriTerm.prevalidated(
+  static const WearableMeasurementCollar = const IriTerm(
     'https://schema.org/WearableMeasurementCollar',
   );
 
@@ -10805,7 +10203,7 @@ class Schema {
   ///
   /// Measurement of the cup, for example of a bra.
   ///
-  static const WearableMeasurementCup = IriTerm.prevalidated(
+  static const WearableMeasurementCup = const IriTerm(
     'https://schema.org/WearableMeasurementCup',
   );
 
@@ -10813,7 +10211,7 @@ class Schema {
   ///
   /// Measurement of the height, for example the heel height of a shoe.
   ///
-  static const WearableMeasurementHeight = IriTerm.prevalidated(
+  static const WearableMeasurementHeight = const IriTerm(
     'https://schema.org/WearableMeasurementHeight',
   );
 
@@ -10821,7 +10219,7 @@ class Schema {
   ///
   /// Measurement of the hip section, for example of a skirt.
   ///
-  static const WearableMeasurementHips = IriTerm.prevalidated(
+  static const WearableMeasurementHips = const IriTerm(
     'https://schema.org/WearableMeasurementHips',
   );
 
@@ -10829,7 +10227,7 @@ class Schema {
   ///
   /// Measurement of the inseam, for example of pants.
   ///
-  static const WearableMeasurementInseam = IriTerm.prevalidated(
+  static const WearableMeasurementInseam = const IriTerm(
     'https://schema.org/WearableMeasurementInseam',
   );
 
@@ -10837,7 +10235,7 @@ class Schema {
   ///
   /// Represents the length, for example of a dress.
   ///
-  static const WearableMeasurementLength = IriTerm.prevalidated(
+  static const WearableMeasurementLength = const IriTerm(
     'https://schema.org/WearableMeasurementLength',
   );
 
@@ -10845,7 +10243,7 @@ class Schema {
   ///
   /// Measurement of the outside leg, for example of pants.
   ///
-  static const WearableMeasurementOutsideLeg = IriTerm.prevalidated(
+  static const WearableMeasurementOutsideLeg = const IriTerm(
     'https://schema.org/WearableMeasurementOutsideLeg',
   );
 
@@ -10853,7 +10251,7 @@ class Schema {
   ///
   /// Measurement of the sleeve length, for example of a shirt.
   ///
-  static const WearableMeasurementSleeve = IriTerm.prevalidated(
+  static const WearableMeasurementSleeve = const IriTerm(
     'https://schema.org/WearableMeasurementSleeve',
   );
 
@@ -10861,7 +10259,7 @@ class Schema {
   ///
   /// Measurement of the waist section, for example of pants.
   ///
-  static const WearableMeasurementWaist = IriTerm.prevalidated(
+  static const WearableMeasurementWaist = const IriTerm(
     'https://schema.org/WearableMeasurementWaist',
   );
 
@@ -10869,7 +10267,7 @@ class Schema {
   ///
   /// Measurement of the width, for example of shoes.
   ///
-  static const WearableMeasurementWidth = IriTerm.prevalidated(
+  static const WearableMeasurementWidth = const IriTerm(
     'https://schema.org/WearableMeasurementWidth',
   );
 
@@ -10877,7 +10275,7 @@ class Schema {
   ///
   /// Size group "Big" for wearables.
   ///
-  static const WearableSizeGroupBig = IriTerm.prevalidated(
+  static const WearableSizeGroupBig = const IriTerm(
     'https://schema.org/WearableSizeGroupBig',
   );
 
@@ -10885,7 +10283,7 @@ class Schema {
   ///
   /// Size group "Boys" for wearables.
   ///
-  static const WearableSizeGroupBoys = IriTerm.prevalidated(
+  static const WearableSizeGroupBoys = const IriTerm(
     'https://schema.org/WearableSizeGroupBoys',
   );
 
@@ -10893,7 +10291,7 @@ class Schema {
   ///
   /// Size group "Extra Short" for wearables.
   ///
-  static const WearableSizeGroupExtraShort = IriTerm.prevalidated(
+  static const WearableSizeGroupExtraShort = const IriTerm(
     'https://schema.org/WearableSizeGroupExtraShort',
   );
 
@@ -10901,7 +10299,7 @@ class Schema {
   ///
   /// Size group "Extra Tall" for wearables.
   ///
-  static const WearableSizeGroupExtraTall = IriTerm.prevalidated(
+  static const WearableSizeGroupExtraTall = const IriTerm(
     'https://schema.org/WearableSizeGroupExtraTall',
   );
 
@@ -10909,7 +10307,7 @@ class Schema {
   ///
   /// Size group "Girls" for wearables.
   ///
-  static const WearableSizeGroupGirls = IriTerm.prevalidated(
+  static const WearableSizeGroupGirls = const IriTerm(
     'https://schema.org/WearableSizeGroupGirls',
   );
 
@@ -10917,7 +10315,7 @@ class Schema {
   ///
   /// Size group "Husky" (or "Stocky") for wearables.
   ///
-  static const WearableSizeGroupHusky = IriTerm.prevalidated(
+  static const WearableSizeGroupHusky = const IriTerm(
     'https://schema.org/WearableSizeGroupHusky',
   );
 
@@ -10925,7 +10323,7 @@ class Schema {
   ///
   /// Size group "Infants" for wearables.
   ///
-  static const WearableSizeGroupInfants = IriTerm.prevalidated(
+  static const WearableSizeGroupInfants = const IriTerm(
     'https://schema.org/WearableSizeGroupInfants',
   );
 
@@ -10933,7 +10331,7 @@ class Schema {
   ///
   /// Size group "Juniors" for wearables.
   ///
-  static const WearableSizeGroupJuniors = IriTerm.prevalidated(
+  static const WearableSizeGroupJuniors = const IriTerm(
     'https://schema.org/WearableSizeGroupJuniors',
   );
 
@@ -10941,7 +10339,7 @@ class Schema {
   ///
   /// Size group "Maternity" for wearables.
   ///
-  static const WearableSizeGroupMaternity = IriTerm.prevalidated(
+  static const WearableSizeGroupMaternity = const IriTerm(
     'https://schema.org/WearableSizeGroupMaternity',
   );
 
@@ -10949,7 +10347,7 @@ class Schema {
   ///
   /// Size group "Mens" for wearables.
   ///
-  static const WearableSizeGroupMens = IriTerm.prevalidated(
+  static const WearableSizeGroupMens = const IriTerm(
     'https://schema.org/WearableSizeGroupMens',
   );
 
@@ -10957,7 +10355,7 @@ class Schema {
   ///
   /// Size group "Misses" (also known as "Missy") for wearables.
   ///
-  static const WearableSizeGroupMisses = IriTerm.prevalidated(
+  static const WearableSizeGroupMisses = const IriTerm(
     'https://schema.org/WearableSizeGroupMisses',
   );
 
@@ -10965,7 +10363,7 @@ class Schema {
   ///
   /// Size group "Petite" for wearables.
   ///
-  static const WearableSizeGroupPetite = IriTerm.prevalidated(
+  static const WearableSizeGroupPetite = const IriTerm(
     'https://schema.org/WearableSizeGroupPetite',
   );
 
@@ -10973,7 +10371,7 @@ class Schema {
   ///
   /// Size group "Plus" for wearables.
   ///
-  static const WearableSizeGroupPlus = IriTerm.prevalidated(
+  static const WearableSizeGroupPlus = const IriTerm(
     'https://schema.org/WearableSizeGroupPlus',
   );
 
@@ -10981,7 +10379,7 @@ class Schema {
   ///
   /// Size group "Regular" for wearables.
   ///
-  static const WearableSizeGroupRegular = IriTerm.prevalidated(
+  static const WearableSizeGroupRegular = const IriTerm(
     'https://schema.org/WearableSizeGroupRegular',
   );
 
@@ -10989,7 +10387,7 @@ class Schema {
   ///
   /// Size group "Short" for wearables.
   ///
-  static const WearableSizeGroupShort = IriTerm.prevalidated(
+  static const WearableSizeGroupShort = const IriTerm(
     'https://schema.org/WearableSizeGroupShort',
   );
 
@@ -10997,7 +10395,7 @@ class Schema {
   ///
   /// Size group "Tall" for wearables.
   ///
-  static const WearableSizeGroupTall = IriTerm.prevalidated(
+  static const WearableSizeGroupTall = const IriTerm(
     'https://schema.org/WearableSizeGroupTall',
   );
 
@@ -11005,7 +10403,7 @@ class Schema {
   ///
   /// Size group "Womens" for wearables.
   ///
-  static const WearableSizeGroupWomens = IriTerm.prevalidated(
+  static const WearableSizeGroupWomens = const IriTerm(
     'https://schema.org/WearableSizeGroupWomens',
   );
 
@@ -11013,7 +10411,7 @@ class Schema {
   ///
   /// Australian size system for wearables.
   ///
-  static const WearableSizeSystemAU = IriTerm.prevalidated(
+  static const WearableSizeSystemAU = const IriTerm(
     'https://schema.org/WearableSizeSystemAU',
   );
 
@@ -11021,7 +10419,7 @@ class Schema {
   ///
   /// Brazilian size system for wearables.
   ///
-  static const WearableSizeSystemBR = IriTerm.prevalidated(
+  static const WearableSizeSystemBR = const IriTerm(
     'https://schema.org/WearableSizeSystemBR',
   );
 
@@ -11029,7 +10427,7 @@ class Schema {
   ///
   /// Chinese size system for wearables.
   ///
-  static const WearableSizeSystemCN = IriTerm.prevalidated(
+  static const WearableSizeSystemCN = const IriTerm(
     'https://schema.org/WearableSizeSystemCN',
   );
 
@@ -11037,7 +10435,7 @@ class Schema {
   ///
   /// Continental size system for wearables.
   ///
-  static const WearableSizeSystemContinental = IriTerm.prevalidated(
+  static const WearableSizeSystemContinental = const IriTerm(
     'https://schema.org/WearableSizeSystemContinental',
   );
 
@@ -11045,7 +10443,7 @@ class Schema {
   ///
   /// German size system for wearables.
   ///
-  static const WearableSizeSystemDE = IriTerm.prevalidated(
+  static const WearableSizeSystemDE = const IriTerm(
     'https://schema.org/WearableSizeSystemDE',
   );
 
@@ -11053,7 +10451,7 @@ class Schema {
   ///
   /// EN 13402 (joint European standard for size labelling of clothes).
   ///
-  static const WearableSizeSystemEN13402 = IriTerm.prevalidated(
+  static const WearableSizeSystemEN13402 = const IriTerm(
     'https://schema.org/WearableSizeSystemEN13402',
   );
 
@@ -11061,7 +10459,7 @@ class Schema {
   ///
   /// European size system for wearables.
   ///
-  static const WearableSizeSystemEurope = IriTerm.prevalidated(
+  static const WearableSizeSystemEurope = const IriTerm(
     'https://schema.org/WearableSizeSystemEurope',
   );
 
@@ -11069,7 +10467,7 @@ class Schema {
   ///
   /// French size system for wearables.
   ///
-  static const WearableSizeSystemFR = IriTerm.prevalidated(
+  static const WearableSizeSystemFR = const IriTerm(
     'https://schema.org/WearableSizeSystemFR',
   );
 
@@ -11077,7 +10475,7 @@ class Schema {
   ///
   /// GS1 (formerly NRF) size system for wearables.
   ///
-  static const WearableSizeSystemGS1 = IriTerm.prevalidated(
+  static const WearableSizeSystemGS1 = const IriTerm(
     'https://schema.org/WearableSizeSystemGS1',
   );
 
@@ -11085,7 +10483,7 @@ class Schema {
   ///
   /// Italian size system for wearables.
   ///
-  static const WearableSizeSystemIT = IriTerm.prevalidated(
+  static const WearableSizeSystemIT = const IriTerm(
     'https://schema.org/WearableSizeSystemIT',
   );
 
@@ -11093,7 +10491,7 @@ class Schema {
   ///
   /// Japanese size system for wearables.
   ///
-  static const WearableSizeSystemJP = IriTerm.prevalidated(
+  static const WearableSizeSystemJP = const IriTerm(
     'https://schema.org/WearableSizeSystemJP',
   );
 
@@ -11101,7 +10499,7 @@ class Schema {
   ///
   /// Mexican size system for wearables.
   ///
-  static const WearableSizeSystemMX = IriTerm.prevalidated(
+  static const WearableSizeSystemMX = const IriTerm(
     'https://schema.org/WearableSizeSystemMX',
   );
 
@@ -11109,7 +10507,7 @@ class Schema {
   ///
   /// United Kingdom size system for wearables.
   ///
-  static const WearableSizeSystemUK = IriTerm.prevalidated(
+  static const WearableSizeSystemUK = const IriTerm(
     'https://schema.org/WearableSizeSystemUK',
   );
 
@@ -11117,7 +10515,7 @@ class Schema {
   ///
   /// United States size system for wearables.
   ///
-  static const WearableSizeSystemUS = IriTerm.prevalidated(
+  static const WearableSizeSystemUS = const IriTerm(
     'https://schema.org/WearableSizeSystemUS',
   );
 
@@ -11125,13 +10523,13 @@ class Schema {
   ///
   /// The day of the week between Tuesday and Thursday.
   ///
-  static const Wednesday = IriTerm.prevalidated('https://schema.org/Wednesday');
+  static const Wednesday = const IriTerm('https://schema.org/Wednesday');
 
   /// IRI for schema:WesternConventional
   ///
   /// The conventional Western system of medicine, that aims to apply the best available evidence gained from the scientific method to clinical decision making. Also known as conventional or Western medicine.
   ///
-  static const WesternConventional = IriTerm.prevalidated(
+  static const WesternConventional = const IriTerm(
     'https://schema.org/WesternConventional',
   );
 
@@ -11139,19 +10537,19 @@ class Schema {
   ///
   /// The drug's cost represents the wholesale acquisition cost of the drug.
   ///
-  static const Wholesale = IriTerm.prevalidated('https://schema.org/Wholesale');
+  static const Wholesale = const IriTerm('https://schema.org/Wholesale');
 
   /// IRI for schema:Withdrawn
   ///
   /// Withdrawn.
   ///
-  static const Withdrawn = IriTerm.prevalidated('https://schema.org/Withdrawn');
+  static const Withdrawn = const IriTerm('https://schema.org/Withdrawn');
 
   /// IRI for schema:WritePermission
   ///
   /// Permission to write or edit the document.
   ///
-  static const WritePermission = IriTerm.prevalidated(
+  static const WritePermission = const IriTerm(
     'https://schema.org/WritePermission',
   );
 
@@ -11159,13 +10557,13 @@ class Schema {
   ///
   /// X-ray imaging.
   ///
-  static const XRay = IriTerm.prevalidated('https://schema.org/XRay');
+  static const XRay = const IriTerm('https://schema.org/XRay');
 
   /// IRI for schema:ZoneBoardingPolicy
   ///
   /// The airline boards by zones of the plane.
   ///
-  static const ZoneBoardingPolicy = IriTerm.prevalidated(
+  static const ZoneBoardingPolicy = const IriTerm(
     'https://schema.org/ZoneBoardingPolicy',
   );
 
@@ -11173,7 +10571,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_STI_Accommodation_Ontology = IriTerm.prevalidated(
+  static const docs_collab_STI_Accommodation_Ontology = const IriTerm(
     'https://schema.org/docs/collab/STI_Accommodation_Ontology',
   );
 
@@ -11181,7 +10579,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_ActionCollabClass = IriTerm.prevalidated(
+  static const docs_collab_ActionCollabClass = const IriTerm(
     'https://schema.org/docs/collab/ActionCollabClass',
   );
 
@@ -11189,7 +10587,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_TP = IriTerm.prevalidated(
+  static const docs_collab_TP = const IriTerm(
     'https://schema.org/docs/collab/TP',
   );
 
@@ -11197,7 +10595,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_LRMIClass = IriTerm.prevalidated(
+  static const docs_collab_LRMIClass = const IriTerm(
     'https://schema.org/docs/collab/LRMIClass',
   );
 
@@ -11205,7 +10603,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_QAStackExchange = IriTerm.prevalidated(
+  static const docs_collab_QAStackExchange = const IriTerm(
     'https://schema.org/docs/collab/QAStackExchange',
   );
 
@@ -11213,7 +10611,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_rNews = IriTerm.prevalidated(
+  static const docs_collab_rNews = const IriTerm(
     'https://schema.org/docs/collab/rNews',
   );
 
@@ -11221,32 +10619,23 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_FIBO = IriTerm.prevalidated(
+  static const docs_collab_FIBO = const IriTerm(
     'https://schema.org/docs/collab/FIBO',
-  );
-
-  /// IRI for schema:docs_collab_GoodRelationsClass
-  ///
-  ///
-  ///
-  static const docs_collab_GoodRelationsClass = IriTerm.prevalidated(
-    'https://schema.org/docs/collab/GoodRelationsClass',
   );
 
   /// IRI for schema:docs_collab_Automotive_Ontology_Working_Group
   ///
   ///
   ///
-  static const docs_collab_Automotive_Ontology_Working_Group =
-      IriTerm.prevalidated(
-        'https://schema.org/docs/collab/Automotive_Ontology_Working_Group',
-      );
+  static const docs_collab_Automotive_Ontology_Working_Group = const IriTerm(
+    'https://schema.org/docs/collab/Automotive_Ontology_Working_Group',
+  );
 
   /// IRI for schema:docs_collab_DatasetClass
   ///
   ///
   ///
-  static const docs_collab_DatasetClass = IriTerm.prevalidated(
+  static const docs_collab_DatasetClass = const IriTerm(
     'https://schema.org/docs/collab/DatasetClass',
   );
 
@@ -11254,7 +10643,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_FundInfoCollab = IriTerm.prevalidated(
+  static const docs_collab_FundInfoCollab = const IriTerm(
     'https://schema.org/docs/collab/FundInfoCollab',
   );
 
@@ -11262,7 +10651,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_ELI = IriTerm.prevalidated(
+  static const docs_collab_ELI = const IriTerm(
     'https://schema.org/docs/collab/ELI',
   );
 
@@ -11270,7 +10659,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_WikiDoc = IriTerm.prevalidated(
+  static const docs_collab_WikiDoc = const IriTerm(
     'https://schema.org/docs/collab/WikiDoc',
   );
 
@@ -11278,7 +10667,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_MBZ = IriTerm.prevalidated(
+  static const docs_collab_MBZ = const IriTerm(
     'https://schema.org/docs/collab/MBZ',
   );
 
@@ -11286,7 +10675,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_GoodRelationsTerms = IriTerm.prevalidated(
+  static const docs_collab_GoodRelationsTerms = const IriTerm(
     'https://schema.org/docs/collab/GoodRelationsTerms',
   );
 
@@ -11294,7 +10683,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_bibex = IriTerm.prevalidated(
+  static const docs_collab_bibex = const IriTerm(
     'https://schema.org/docs/collab/bibex',
   );
 
@@ -11302,7 +10691,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_IIT_CNR_it = IriTerm.prevalidated(
+  static const docs_collab_IIT_CNR_it = const IriTerm(
     'https://schema.org/docs/collab/IIT-CNR.it',
   );
 
@@ -11310,7 +10699,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_Tourism = IriTerm.prevalidated(
+  static const docs_collab_Tourism = const IriTerm(
     'https://schema.org/docs/collab/Tourism',
   );
 
@@ -11318,7 +10707,7 @@ class Schema {
   ///
   ///
   ///
-  static const DeliveryTimeSettings = IriTerm.prevalidated(
+  static const DeliveryTimeSettings = const IriTerm(
     'https://schema.org/DeliveryTimeSettings',
   );
 
@@ -11326,7 +10715,7 @@ class Schema {
   ///
   ///
   ///
-  static const docs_collab_GLEIF = IriTerm.prevalidated(
+  static const docs_collab_GLEIF = const IriTerm(
     'https://schema.org/docs/collab/GLEIF',
   );
 
@@ -11336,7 +10725,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Book
   ///
-  static const abridged = IriTerm.prevalidated('https://schema.org/abridged');
+  static const abridged = const IriTerm('https://schema.org/abridged');
 
   /// IRI for schema:abstract_ [Expects: https://schema.org/Text]
   ///
@@ -11344,7 +10733,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const abstract_ = IriTerm.prevalidated('https://schema.org/abstract');
+  static const abstract_ = const IriTerm('https://schema.org/abstract');
 
   /// IRI for schema:accelerationTime [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -11352,7 +10741,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const accelerationTime = IriTerm.prevalidated(
+  static const accelerationTime = const IriTerm(
     'https://schema.org/accelerationTime',
   );
 
@@ -11362,7 +10751,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Question
   ///
-  static const acceptedAnswer = IriTerm.prevalidated(
+  static const acceptedAnswer = const IriTerm(
     'https://schema.org/acceptedAnswer',
   );
 
@@ -11372,7 +10761,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order
   ///
-  static const acceptedOffer = IriTerm.prevalidated(
+  static const acceptedOffer = const IriTerm(
     'https://schema.org/acceptedOffer',
   );
 
@@ -11382,7 +10771,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/Organization
   ///
-  static const acceptedPaymentMethod = IriTerm.prevalidated(
+  static const acceptedPaymentMethod = const IriTerm(
     'https://schema.org/acceptedPaymentMethod',
   );
 
@@ -11392,7 +10781,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FoodEstablishment
   ///
-  static const acceptsReservations = IriTerm.prevalidated(
+  static const acceptsReservations = const IriTerm(
     'https://schema.org/acceptsReservations',
   );
 
@@ -11402,9 +10791,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DeliveryEvent
   ///
-  static const accessCode = IriTerm.prevalidated(
-    'https://schema.org/accessCode',
-  );
+  static const accessCode = const IriTerm('https://schema.org/accessCode');
 
   /// IRI for schema:accessMode [Expects: https://schema.org/Text]
   ///
@@ -11412,9 +10799,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessMode = IriTerm.prevalidated(
-    'https://schema.org/accessMode',
-  );
+  static const accessMode = const IriTerm('https://schema.org/accessMode');
 
   /// IRI for schema:accessModeSufficient [Expects: https://schema.org/ItemList]
   ///
@@ -11422,7 +10807,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessModeSufficient = IriTerm.prevalidated(
+  static const accessModeSufficient = const IriTerm(
     'https://schema.org/accessModeSufficient',
   );
 
@@ -11432,7 +10817,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessibilityAPI = IriTerm.prevalidated(
+  static const accessibilityAPI = const IriTerm(
     'https://schema.org/accessibilityAPI',
   );
 
@@ -11442,7 +10827,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessibilityControl = IriTerm.prevalidated(
+  static const accessibilityControl = const IriTerm(
     'https://schema.org/accessibilityControl',
   );
 
@@ -11452,7 +10837,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessibilityFeature = IriTerm.prevalidated(
+  static const accessibilityFeature = const IriTerm(
     'https://schema.org/accessibilityFeature',
   );
 
@@ -11462,7 +10847,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessibilityHazard = IriTerm.prevalidated(
+  static const accessibilityHazard = const IriTerm(
     'https://schema.org/accessibilityHazard',
   );
 
@@ -11472,7 +10857,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accessibilitySummary = IriTerm.prevalidated(
+  static const accessibilitySummary = const IriTerm(
     'https://schema.org/accessibilitySummary',
   );
 
@@ -11482,7 +10867,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation
   ///
-  static const accommodationCategory = IriTerm.prevalidated(
+  static const accommodationCategory = const IriTerm(
     'https://schema.org/accommodationCategory',
   );
 
@@ -11492,7 +10877,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/Residence
   ///
-  static const accommodationFloorPlan = IriTerm.prevalidated(
+  static const accommodationFloorPlan = const IriTerm(
     'https://schema.org/accommodationFloorPlan',
   );
 
@@ -11502,7 +10887,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice
   ///
-  static const accountId = IriTerm.prevalidated('https://schema.org/accountId');
+  static const accountId = const IriTerm('https://schema.org/accountId');
 
   /// IRI for schema:accountMinimumInflow [Expects: https://schema.org/MonetaryAmount]
   ///
@@ -11510,7 +10895,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BankAccount
   ///
-  static const accountMinimumInflow = IriTerm.prevalidated(
+  static const accountMinimumInflow = const IriTerm(
     'https://schema.org/accountMinimumInflow',
   );
 
@@ -11520,7 +10905,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BankAccount
   ///
-  static const accountOverdraftLimit = IriTerm.prevalidated(
+  static const accountOverdraftLimit = const IriTerm(
     'https://schema.org/accountOverdraftLimit',
   );
 
@@ -11530,7 +10915,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const accountablePerson = IriTerm.prevalidated(
+  static const accountablePerson = const IriTerm(
     'https://schema.org/accountablePerson',
   );
 
@@ -11540,7 +10925,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const acquireLicensePage = IriTerm.prevalidated(
+  static const acquireLicensePage = const IriTerm(
     'https://schema.org/acquireLicensePage',
   );
 
@@ -11550,9 +10935,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OwnershipInfo
   ///
-  static const acquiredFrom = IriTerm.prevalidated(
-    'https://schema.org/acquiredFrom',
-  );
+  static const acquiredFrom = const IriTerm('https://schema.org/acquiredFrom');
 
   /// IRI for schema:acrissCode [Expects: https://schema.org/Text]
   ///
@@ -11560,9 +10943,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BusOrCoach, https://schema.org/Car
   ///
-  static const acrissCode = IriTerm.prevalidated(
-    'https://schema.org/acrissCode',
-  );
+  static const acrissCode = const IriTerm('https://schema.org/acrissCode');
 
   /// IRI for schema:actionAccessibilityRequirement [Expects: https://schema.org/ActionAccessSpecification]
   ///
@@ -11570,7 +10951,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ConsumeAction
   ///
-  static const actionAccessibilityRequirement = IriTerm.prevalidated(
+  static const actionAccessibilityRequirement = const IriTerm(
     'https://schema.org/actionAccessibilityRequirement',
   );
 
@@ -11580,7 +10961,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EntryPoint
   ///
-  static const actionPlatform = IriTerm.prevalidated(
+  static const actionPlatform = const IriTerm(
     'https://schema.org/actionPlatform',
   );
 
@@ -11590,7 +10971,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Action
   ///
-  static const actionProcess = IriTerm.prevalidated(
+  static const actionProcess = const IriTerm(
     'https://schema.org/actionProcess',
   );
 
@@ -11600,9 +10981,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Action
   ///
-  static const actionStatus = IriTerm.prevalidated(
-    'https://schema.org/actionStatus',
-  );
+  static const actionStatus = const IriTerm('https://schema.org/actionStatus');
 
   /// IRI for schema:actionableFeedbackPolicy [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -11610,7 +10989,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsMediaOrganization, https://schema.org/Organization
   ///
-  static const actionableFeedbackPolicy = IriTerm.prevalidated(
+  static const actionableFeedbackPolicy = const IriTerm(
     'https://schema.org/actionableFeedbackPolicy',
   );
 
@@ -11620,7 +10999,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DietarySupplement, https://schema.org/Drug, https://schema.org/DrugStrength, https://schema.org/Substance
   ///
-  static const activeIngredient = IriTerm.prevalidated(
+  static const activeIngredient = const IriTerm(
     'https://schema.org/activeIngredient',
   );
 
@@ -11630,7 +11009,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExercisePlan
   ///
-  static const activityDuration = IriTerm.prevalidated(
+  static const activityDuration = const IriTerm(
     'https://schema.org/activityDuration',
   );
 
@@ -11640,7 +11019,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExercisePlan
   ///
-  static const activityFrequency = IriTerm.prevalidated(
+  static const activityFrequency = const IriTerm(
     'https://schema.org/activityFrequency',
   );
 
@@ -11650,7 +11029,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Clip, https://schema.org/Episode, https://schema.org/Movie, https://schema.org/MovieSeries, https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGame, https://schema.org/VideoGameSeries, https://schema.org/VideoObject
   ///
-  static const actors = IriTerm.prevalidated('https://schema.org/actors');
+  static const actors = const IriTerm('https://schema.org/actors');
 
   /// IRI for schema:addOn [Expects: https://schema.org/Offer]
   ///
@@ -11658,7 +11037,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Offer
   ///
-  static const addOn = IriTerm.prevalidated('https://schema.org/addOn');
+  static const addOn = const IriTerm('https://schema.org/addOn');
 
   /// IRI for schema:additionalName [Expects: https://schema.org/Text]
   ///
@@ -11666,7 +11045,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const additionalName = IriTerm.prevalidated(
+  static const additionalName = const IriTerm(
     'https://schema.org/additionalName',
   );
 
@@ -11676,7 +11055,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RsvpAction
   ///
-  static const additionalNumberOfGuests = IriTerm.prevalidated(
+  static const additionalNumberOfGuests = const IriTerm(
     'https://schema.org/additionalNumberOfGuests',
   );
 
@@ -11687,7 +11066,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy, https://schema.org/Offer, https://schema.org/Place, https://schema.org/Product, https://schema.org/QualitativeValue, https://schema.org/QuantitativeValue
   ///
-  static const additionalProperty = IriTerm.prevalidated(
+  static const additionalProperty = const IriTerm(
     'https://schema.org/additionalProperty',
   );
 
@@ -11698,7 +11077,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const additionalType = IriTerm.prevalidated(
+  static const additionalType = const IriTerm(
     'https://schema.org/additionalType',
   );
 
@@ -11708,7 +11087,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExercisePlan
   ///
-  static const additionalVariable = IriTerm.prevalidated(
+  static const additionalVariable = const IriTerm(
     'https://schema.org/additionalVariable',
   );
 
@@ -11718,7 +11097,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeoCoordinates, https://schema.org/GeoShape, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place
   ///
-  static const address = IriTerm.prevalidated('https://schema.org/address');
+  static const address = const IriTerm('https://schema.org/address');
 
   /// IRI for schema:addressCountry [Expects: https://schema.org/Country, https://schema.org/Text]
   ///
@@ -11726,7 +11105,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DefinedRegion, https://schema.org/GeoCoordinates, https://schema.org/GeoShape, https://schema.org/PostalAddress
   ///
-  static const addressCountry = IriTerm.prevalidated(
+  static const addressCountry = const IriTerm(
     'https://schema.org/addressCountry',
   );
 
@@ -11736,7 +11115,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PostalAddress
   ///
-  static const addressLocality = IriTerm.prevalidated(
+  static const addressLocality = const IriTerm(
     'https://schema.org/addressLocality',
   );
 
@@ -11746,7 +11125,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DefinedRegion, https://schema.org/PostalAddress
   ///
-  static const addressRegion = IriTerm.prevalidated(
+  static const addressRegion = const IriTerm(
     'https://schema.org/addressRegion',
   );
 
@@ -11756,7 +11135,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const administrationRoute = IriTerm.prevalidated(
+  static const administrationRoute = const IriTerm(
     'https://schema.org/administrationRoute',
   );
 
@@ -11766,7 +11145,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer
   ///
-  static const advanceBookingRequirement = IriTerm.prevalidated(
+  static const advanceBookingRequirement = const IriTerm(
     'https://schema.org/advanceBookingRequirement',
   );
 
@@ -11776,7 +11155,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalDevice, https://schema.org/TherapeuticProcedure
   ///
-  static const adverseOutcome = IriTerm.prevalidated(
+  static const adverseOutcome = const IriTerm(
     'https://schema.org/adverseOutcome',
   );
 
@@ -11786,9 +11165,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalTest
   ///
-  static const affectedBy = IriTerm.prevalidated(
-    'https://schema.org/affectedBy',
-  );
+  static const affectedBy = const IriTerm('https://schema.org/affectedBy');
 
   /// IRI for schema:affiliation [Expects: https://schema.org/Organization]
   ///
@@ -11796,9 +11173,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const affiliation = IriTerm.prevalidated(
-    'https://schema.org/affiliation',
-  );
+  static const affiliation = const IriTerm('https://schema.org/affiliation');
 
   /// IRI for schema:afterMedia [Expects: https://schema.org/MediaObject, https://schema.org/URL]
   ///
@@ -11806,9 +11181,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HowToDirection
   ///
-  static const afterMedia = IriTerm.prevalidated(
-    'https://schema.org/afterMedia',
-  );
+  static const afterMedia = const IriTerm('https://schema.org/afterMedia');
 
   /// IRI for schema:agent [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -11816,7 +11189,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Action
   ///
-  static const agent = IriTerm.prevalidated('https://schema.org/agent');
+  static const agent = const IriTerm('https://schema.org/agent');
 
   /// IRI for schema:agentInteractionStatistic [Expects: https://schema.org/InteractionCounter]
   ///
@@ -11824,7 +11197,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const agentInteractionStatistic = IriTerm.prevalidated(
+  static const agentInteractionStatistic = const IriTerm(
     'https://schema.org/agentInteractionStatistic',
   );
 
@@ -11834,7 +11207,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ItemList
   ///
-  static const aggregateElement = IriTerm.prevalidated(
+  static const aggregateElement = const IriTerm(
     'https://schema.org/aggregateElement',
   );
 
@@ -11844,7 +11217,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const aggregateRating = IriTerm.prevalidated(
+  static const aggregateRating = const IriTerm(
     'https://schema.org/aggregateRating',
   );
 
@@ -11854,7 +11227,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Flight
   ///
-  static const aircraft = IriTerm.prevalidated('https://schema.org/aircraft');
+  static const aircraft = const IriTerm('https://schema.org/aircraft');
 
   /// IRI for schema:albumProductionType [Expects: https://schema.org/MusicAlbumProductionType]
   ///
@@ -11862,7 +11235,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicAlbum
   ///
-  static const albumProductionType = IriTerm.prevalidated(
+  static const albumProductionType = const IriTerm(
     'https://schema.org/albumProductionType',
   );
 
@@ -11872,7 +11245,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicAlbum
   ///
-  static const albumReleaseType = IriTerm.prevalidated(
+  static const albumReleaseType = const IriTerm(
     'https://schema.org/albumReleaseType',
   );
 
@@ -11882,7 +11255,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicGroup
   ///
-  static const albums = IriTerm.prevalidated('https://schema.org/albums');
+  static const albums = const IriTerm('https://schema.org/albums');
 
   /// IRI for schema:alcoholWarning [Expects: https://schema.org/Text]
   ///
@@ -11890,7 +11263,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const alcoholWarning = IriTerm.prevalidated(
+  static const alcoholWarning = const IriTerm(
     'https://schema.org/alcoholWarning',
   );
 
@@ -11900,7 +11273,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalRiskScore
   ///
-  static const algorithm = IriTerm.prevalidated('https://schema.org/algorithm');
+  static const algorithm = const IriTerm('https://schema.org/algorithm');
 
   /// IRI for schema:alignmentType [Expects: https://schema.org/Text]
   ///
@@ -11908,7 +11281,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AlignmentObject
   ///
-  static const alignmentType = IriTerm.prevalidated(
+  static const alignmentType = const IriTerm(
     'https://schema.org/alignmentType',
   );
 
@@ -11918,7 +11291,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const alternativeHeadline = IriTerm.prevalidated(
+  static const alternativeHeadline = const IriTerm(
     'https://schema.org/alternativeHeadline',
   );
 
@@ -11928,7 +11301,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Gene
   ///
-  static const alternativeOf = IriTerm.prevalidated(
+  static const alternativeOf = const IriTerm(
     'https://schema.org/alternativeOf',
   );
 
@@ -11938,7 +11311,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/FloorPlan, https://schema.org/LodgingBusiness, https://schema.org/Place
   ///
-  static const amenityFeature = IriTerm.prevalidated(
+  static const amenityFeature = const IriTerm(
     'https://schema.org/amenityFeature',
   );
 
@@ -11948,7 +11321,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DatedMoneySpecification, https://schema.org/InvestmentOrDeposit, https://schema.org/LoanOrCredit, https://schema.org/MonetaryGrant, https://schema.org/MoneyTransfer
   ///
-  static const amount = IriTerm.prevalidated('https://schema.org/amount');
+  static const amount = const IriTerm('https://schema.org/amount');
 
   /// IRI for schema:amountOfThisGood [Expects: https://schema.org/Number]
   ///
@@ -11956,7 +11329,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/TypeAndQuantityNode
   ///
-  static const amountOfThisGood = IriTerm.prevalidated(
+  static const amountOfThisGood = const IriTerm(
     'https://schema.org/amountOfThisGood',
   );
 
@@ -11966,7 +11339,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SpecialAnnouncement
   ///
-  static const announcementLocation = IriTerm.prevalidated(
+  static const announcementLocation = const IriTerm(
     'https://schema.org/announcementLocation',
   );
 
@@ -11976,7 +11349,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FinancialProduct
   ///
-  static const annualPercentageRate = IriTerm.prevalidated(
+  static const annualPercentageRate = const IriTerm(
     'https://schema.org/annualPercentageRate',
   );
 
@@ -11986,9 +11359,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Question
   ///
-  static const answerCount = IriTerm.prevalidated(
-    'https://schema.org/answerCount',
-  );
+  static const answerCount = const IriTerm('https://schema.org/answerCount');
 
   /// IRI for schema:answerExplanation [Expects: https://schema.org/Comment, https://schema.org/WebContent]
   ///
@@ -11996,7 +11367,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Answer
   ///
-  static const answerExplanation = IriTerm.prevalidated(
+  static const answerExplanation = const IriTerm(
     'https://schema.org/answerExplanation',
   );
 
@@ -12006,9 +11377,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Muscle
   ///
-  static const antagonist = IriTerm.prevalidated(
-    'https://schema.org/antagonist',
-  );
+  static const antagonist = const IriTerm('https://schema.org/antagonist');
 
   /// IRI for schema:appearance [Expects: https://schema.org/CreativeWork]
   ///
@@ -12016,9 +11385,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Claim
   ///
-  static const appearance = IriTerm.prevalidated(
-    'https://schema.org/appearance',
-  );
+  static const appearance = const IriTerm('https://schema.org/appearance');
 
   /// IRI for schema:applicableCountry [Expects: https://schema.org/Country, https://schema.org/Text]
   ///
@@ -12026,7 +11393,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy
   ///
-  static const applicableCountry = IriTerm.prevalidated(
+  static const applicableCountry = const IriTerm(
     'https://schema.org/applicableCountry',
   );
 
@@ -12036,7 +11403,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DrugCost, https://schema.org/DrugLegalStatus
   ///
-  static const applicableLocation = IriTerm.prevalidated(
+  static const applicableLocation = const IriTerm(
     'https://schema.org/applicableLocation',
   );
 
@@ -12046,7 +11413,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const applicantLocationRequirements = IriTerm.prevalidated(
+  static const applicantLocationRequirements = const IriTerm(
     'https://schema.org/applicantLocationRequirements',
   );
 
@@ -12056,9 +11423,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EntryPoint
   ///
-  static const application = IriTerm.prevalidated(
-    'https://schema.org/application',
-  );
+  static const application = const IriTerm('https://schema.org/application');
 
   /// IRI for schema:applicationCategory [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -12066,7 +11431,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const applicationCategory = IriTerm.prevalidated(
+  static const applicationCategory = const IriTerm(
     'https://schema.org/applicationCategory',
   );
 
@@ -12076,7 +11441,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const applicationContact = IriTerm.prevalidated(
+  static const applicationContact = const IriTerm(
     'https://schema.org/applicationContact',
   );
 
@@ -12086,7 +11451,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const applicationDeadline = IriTerm.prevalidated(
+  static const applicationDeadline = const IriTerm(
     'https://schema.org/applicationDeadline',
   );
 
@@ -12096,7 +11461,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const applicationStartDate = IriTerm.prevalidated(
+  static const applicationStartDate = const IriTerm(
     'https://schema.org/applicationStartDate',
   );
 
@@ -12106,7 +11471,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const applicationSubCategory = IriTerm.prevalidated(
+  static const applicationSubCategory = const IriTerm(
     'https://schema.org/applicationSubCategory',
   );
 
@@ -12116,7 +11481,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const applicationSuite = IriTerm.prevalidated(
+  static const applicationSuite = const IriTerm(
     'https://schema.org/applicationSuite',
   );
 
@@ -12126,7 +11491,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DeliveryChargeSpecification, https://schema.org/PaymentChargeSpecification
   ///
-  static const appliesToDeliveryMethod = IriTerm.prevalidated(
+  static const appliesToDeliveryMethod = const IriTerm(
     'https://schema.org/appliesToDeliveryMethod',
   );
 
@@ -12136,7 +11501,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PaymentChargeSpecification
   ///
-  static const appliesToPaymentMethod = IriTerm.prevalidated(
+  static const appliesToPaymentMethod = const IriTerm(
     'https://schema.org/appliesToPaymentMethod',
   );
 
@@ -12146,9 +11511,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const archivedAt = IriTerm.prevalidated(
-    'https://schema.org/archivedAt',
-  );
+  static const archivedAt = const IriTerm('https://schema.org/archivedAt');
 
   /// IRI for schema:area [Expects: https://schema.org/Place]
   ///
@@ -12156,7 +11519,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const area = IriTerm.prevalidated('https://schema.org/area');
+  static const area = const IriTerm('https://schema.org/area');
 
   /// IRI for schema:arrivalAirport [Expects: https://schema.org/Airport]
   ///
@@ -12164,7 +11527,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Flight
   ///
-  static const arrivalAirport = IriTerm.prevalidated(
+  static const arrivalAirport = const IriTerm(
     'https://schema.org/arrivalAirport',
   );
 
@@ -12174,7 +11537,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BoatTrip
   ///
-  static const arrivalBoatTerminal = IriTerm.prevalidated(
+  static const arrivalBoatTerminal = const IriTerm(
     'https://schema.org/arrivalBoatTerminal',
   );
 
@@ -12184,7 +11547,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BusTrip
   ///
-  static const arrivalBusStop = IriTerm.prevalidated(
+  static const arrivalBusStop = const IriTerm(
     'https://schema.org/arrivalBusStop',
   );
 
@@ -12194,9 +11557,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Flight
   ///
-  static const arrivalGate = IriTerm.prevalidated(
-    'https://schema.org/arrivalGate',
-  );
+  static const arrivalGate = const IriTerm('https://schema.org/arrivalGate');
 
   /// IRI for schema:arrivalPlatform [Expects: https://schema.org/Text]
   ///
@@ -12204,7 +11565,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/TrainTrip
   ///
-  static const arrivalPlatform = IriTerm.prevalidated(
+  static const arrivalPlatform = const IriTerm(
     'https://schema.org/arrivalPlatform',
   );
 
@@ -12214,7 +11575,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/TrainTrip
   ///
-  static const arrivalStation = IriTerm.prevalidated(
+  static const arrivalStation = const IriTerm(
     'https://schema.org/arrivalStation',
   );
 
@@ -12224,7 +11585,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Flight
   ///
-  static const arrivalTerminal = IriTerm.prevalidated(
+  static const arrivalTerminal = const IriTerm(
     'https://schema.org/arrivalTerminal',
   );
 
@@ -12234,9 +11595,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Trip
   ///
-  static const arrivalTime = IriTerm.prevalidated(
-    'https://schema.org/arrivalTime',
-  );
+  static const arrivalTime = const IriTerm('https://schema.org/arrivalTime');
 
   /// IRI for schema:artEdition [Expects: https://schema.org/Integer, https://schema.org/Text]
   ///
@@ -12244,9 +11603,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VisualArtwork
   ///
-  static const artEdition = IriTerm.prevalidated(
-    'https://schema.org/artEdition',
-  );
+  static const artEdition = const IriTerm('https://schema.org/artEdition');
 
   /// IRI for schema:artMedium [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -12254,7 +11611,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VisualArtwork
   ///
-  static const artMedium = IriTerm.prevalidated('https://schema.org/artMedium');
+  static const artMedium = const IriTerm('https://schema.org/artMedium');
 
   /// IRI for schema:artform [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -12262,7 +11619,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VisualArtwork
   ///
-  static const artform = IriTerm.prevalidated('https://schema.org/artform');
+  static const artform = const IriTerm('https://schema.org/artform');
 
   /// IRI for schema:articleBody [Expects: https://schema.org/Text]
   ///
@@ -12270,9 +11627,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Article
   ///
-  static const articleBody = IriTerm.prevalidated(
-    'https://schema.org/articleBody',
-  );
+  static const articleBody = const IriTerm('https://schema.org/articleBody');
 
   /// IRI for schema:articleSection [Expects: https://schema.org/Text]
   ///
@@ -12280,7 +11635,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Article
   ///
-  static const articleSection = IriTerm.prevalidated(
+  static const articleSection = const IriTerm(
     'https://schema.org/articleSection',
   );
 
@@ -12292,7 +11647,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ComicIssue, https://schema.org/ComicStory, https://schema.org/VisualArtwork
   ///
-  static const artist = IriTerm.prevalidated('https://schema.org/artist');
+  static const artist = const IriTerm('https://schema.org/artist');
 
   /// IRI for schema:asin [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -12303,7 +11658,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/Product
   ///
-  static const asin = IriTerm.prevalidated('https://schema.org/asin');
+  static const asin = const IriTerm('https://schema.org/asin');
 
   /// IRI for schema:aspect [Expects: https://schema.org/Text]
   ///
@@ -12311,7 +11666,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalWebPage
   ///
-  static const aspect = IriTerm.prevalidated('https://schema.org/aspect');
+  static const aspect = const IriTerm('https://schema.org/aspect');
 
   /// IRI for schema:assembly [Expects: https://schema.org/Text]
   ///
@@ -12319,7 +11674,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/APIReference
   ///
-  static const assembly = IriTerm.prevalidated('https://schema.org/assembly');
+  static const assembly = const IriTerm('https://schema.org/assembly');
 
   /// IRI for schema:assemblyVersion [Expects: https://schema.org/Text]
   ///
@@ -12327,7 +11682,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/APIReference
   ///
-  static const assemblyVersion = IriTerm.prevalidated(
+  static const assemblyVersion = const IriTerm(
     'https://schema.org/assemblyVersion',
   );
 
@@ -12337,7 +11692,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/EducationEvent, https://schema.org/LearningResource
   ///
-  static const assesses = IriTerm.prevalidated('https://schema.org/assesses');
+  static const assesses = const IriTerm('https://schema.org/assesses');
 
   /// IRI for schema:associatedAnatomy [Expects: https://schema.org/AnatomicalStructure, https://schema.org/AnatomicalSystem, https://schema.org/SuperficialAnatomy]
   ///
@@ -12345,7 +11700,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition, https://schema.org/PhysicalActivity
   ///
-  static const associatedAnatomy = IriTerm.prevalidated(
+  static const associatedAnatomy = const IriTerm(
     'https://schema.org/associatedAnatomy',
   );
 
@@ -12355,7 +11710,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaObject
   ///
-  static const associatedArticle = IriTerm.prevalidated(
+  static const associatedArticle = const IriTerm(
     'https://schema.org/associatedArticle',
   );
 
@@ -12365,7 +11720,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Review
   ///
-  static const associatedClaimReview = IriTerm.prevalidated(
+  static const associatedClaimReview = const IriTerm(
     'https://schema.org/associatedClaimReview',
   );
 
@@ -12375,7 +11730,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BioChemEntity
   ///
-  static const associatedDisease = IriTerm.prevalidated(
+  static const associatedDisease = const IriTerm(
     'https://schema.org/associatedDisease',
   );
 
@@ -12385,7 +11740,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/HyperToc, https://schema.org/HyperTocEntry
   ///
-  static const associatedMedia = IriTerm.prevalidated(
+  static const associatedMedia = const IriTerm(
     'https://schema.org/associatedMedia',
   );
 
@@ -12395,7 +11750,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Review
   ///
-  static const associatedMediaReview = IriTerm.prevalidated(
+  static const associatedMediaReview = const IriTerm(
     'https://schema.org/associatedMediaReview',
   );
 
@@ -12405,7 +11760,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AnatomicalStructure, https://schema.org/AnatomicalSystem, https://schema.org/SuperficialAnatomy
   ///
-  static const associatedPathophysiology = IriTerm.prevalidated(
+  static const associatedPathophysiology = const IriTerm(
     'https://schema.org/associatedPathophysiology',
   );
 
@@ -12415,7 +11770,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SportsTeam
   ///
-  static const athlete = IriTerm.prevalidated('https://schema.org/athlete');
+  static const athlete = const IriTerm('https://schema.org/athlete');
 
   /// IRI for schema:attendees [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -12423,7 +11778,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const attendees = IriTerm.prevalidated('https://schema.org/attendees');
+  static const attendees = const IriTerm('https://schema.org/attendees');
 
   /// IRI for schema:audienceType [Expects: https://schema.org/Text]
   ///
@@ -12431,9 +11786,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Audience
   ///
-  static const audienceType = IriTerm.prevalidated(
-    'https://schema.org/audienceType',
-  );
+  static const audienceType = const IriTerm('https://schema.org/audienceType');
 
   /// IRI for schema:audio [Expects: https://schema.org/AudioObject, https://schema.org/Clip, https://schema.org/MusicRecording]
   ///
@@ -12441,7 +11794,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const audio = IriTerm.prevalidated('https://schema.org/audio');
+  static const audio = const IriTerm('https://schema.org/audio');
 
   /// IRI for schema:auditDate [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -12449,7 +11802,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Certification
   ///
-  static const auditDate = IriTerm.prevalidated('https://schema.org/auditDate');
+  static const auditDate = const IriTerm('https://schema.org/auditDate');
 
   /// IRI for schema:authenticator [Expects: https://schema.org/Organization]
   ///
@@ -12457,7 +11810,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaSubscription
   ///
-  static const authenticator = IriTerm.prevalidated(
+  static const authenticator = const IriTerm(
     'https://schema.org/authenticator',
   );
 
@@ -12467,7 +11820,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Rating
   ///
-  static const author = IriTerm.prevalidated('https://schema.org/author');
+  static const author = const IriTerm('https://schema.org/author');
 
   /// IRI for schema:availability [Expects: https://schema.org/ItemAvailability]
   ///
@@ -12475,9 +11828,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer
   ///
-  static const availability = IriTerm.prevalidated(
-    'https://schema.org/availability',
-  );
+  static const availability = const IriTerm('https://schema.org/availability');
 
   /// IRI for schema:availabilityEnds [Expects: https://schema.org/Date, https://schema.org/DateTime, https://schema.org/Time]
   ///
@@ -12485,7 +11836,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ActionAccessSpecification, https://schema.org/Demand, https://schema.org/Offer
   ///
-  static const availabilityEnds = IriTerm.prevalidated(
+  static const availabilityEnds = const IriTerm(
     'https://schema.org/availabilityEnds',
   );
 
@@ -12495,7 +11846,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ActionAccessSpecification, https://schema.org/Demand, https://schema.org/Offer
   ///
-  static const availabilityStarts = IriTerm.prevalidated(
+  static const availabilityStarts = const IriTerm(
     'https://schema.org/availabilityStarts',
   );
 
@@ -12505,7 +11856,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer
   ///
-  static const availableAtOrFrom = IriTerm.prevalidated(
+  static const availableAtOrFrom = const IriTerm(
     'https://schema.org/availableAtOrFrom',
   );
 
@@ -12515,7 +11866,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const availableChannel = IriTerm.prevalidated(
+  static const availableChannel = const IriTerm(
     'https://schema.org/availableChannel',
   );
 
@@ -12525,7 +11876,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer
   ///
-  static const availableDeliveryMethod = IriTerm.prevalidated(
+  static const availableDeliveryMethod = const IriTerm(
     'https://schema.org/availableDeliveryMethod',
   );
 
@@ -12535,7 +11886,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DeliveryEvent
   ///
-  static const availableFrom = IriTerm.prevalidated(
+  static const availableFrom = const IriTerm(
     'https://schema.org/availableFrom',
   );
 
@@ -12545,9 +11896,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DrugStrength
   ///
-  static const availableIn = IriTerm.prevalidated(
-    'https://schema.org/availableIn',
-  );
+  static const availableIn = const IriTerm('https://schema.org/availableIn');
 
   /// IRI for schema:availableLanguage [Expects: https://schema.org/Language, https://schema.org/Text]
   ///
@@ -12555,7 +11904,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/Course, https://schema.org/LodgingBusiness, https://schema.org/ServiceChannel, https://schema.org/TouristAttraction
   ///
-  static const availableLanguage = IriTerm.prevalidated(
+  static const availableLanguage = const IriTerm(
     'https://schema.org/availableLanguage',
   );
 
@@ -12565,7 +11914,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Hospital, https://schema.org/MedicalClinic, https://schema.org/Physician
   ///
-  static const availableService = IriTerm.prevalidated(
+  static const availableService = const IriTerm(
     'https://schema.org/availableService',
   );
 
@@ -12575,7 +11924,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const availableStrength = IriTerm.prevalidated(
+  static const availableStrength = const IriTerm(
     'https://schema.org/availableStrength',
   );
 
@@ -12585,7 +11934,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DiagnosticLab
   ///
-  static const availableTest = IriTerm.prevalidated(
+  static const availableTest = const IriTerm(
     'https://schema.org/availableTest',
   );
 
@@ -12595,7 +11944,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DeliveryEvent
   ///
-  static const availableThrough = IriTerm.prevalidated(
+  static const availableThrough = const IriTerm(
     'https://schema.org/availableThrough',
   );
 
@@ -12605,7 +11954,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product
   ///
-  static const awards = IriTerm.prevalidated('https://schema.org/awards');
+  static const awards = const IriTerm('https://schema.org/awards');
 
   /// IRI for schema:awayTeam [Expects: https://schema.org/Person, https://schema.org/SportsTeam]
   ///
@@ -12613,7 +11962,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SportsEvent
   ///
-  static const awayTeam = IriTerm.prevalidated('https://schema.org/awayTeam');
+  static const awayTeam = const IriTerm('https://schema.org/awayTeam');
 
   /// IRI for schema:backstory [Expects: https://schema.org/CreativeWork, https://schema.org/Text]
   ///
@@ -12621,7 +11970,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Article
   ///
-  static const backstory = IriTerm.prevalidated('https://schema.org/backstory');
+  static const backstory = const IriTerm('https://schema.org/backstory');
 
   /// IRI for schema:bankAccountType [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -12629,7 +11978,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BankAccount
   ///
-  static const bankAccountType = IriTerm.prevalidated(
+  static const bankAccountType = const IriTerm(
     'https://schema.org/bankAccountType',
   );
 
@@ -12639,9 +11988,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EmployeeRole, https://schema.org/JobPosting
   ///
-  static const baseSalary = IriTerm.prevalidated(
-    'https://schema.org/baseSalary',
-  );
+  static const baseSalary = const IriTerm('https://schema.org/baseSalary');
 
   /// IRI for schema:bccRecipient [Expects: https://schema.org/ContactPoint, https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -12649,9 +11996,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Message
   ///
-  static const bccRecipient = IriTerm.prevalidated(
-    'https://schema.org/bccRecipient',
-  );
+  static const bccRecipient = const IriTerm('https://schema.org/bccRecipient');
 
   /// IRI for schema:bed [Expects: https://schema.org/BedDetails, https://schema.org/BedType, https://schema.org/Text]
   ///
@@ -12660,7 +12005,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/HotelRoom, https://schema.org/Suite
   ///
-  static const bed = IriTerm.prevalidated('https://schema.org/bed');
+  static const bed = const IriTerm('https://schema.org/bed');
 
   /// IRI for schema:beforeMedia [Expects: https://schema.org/MediaObject, https://schema.org/URL]
   ///
@@ -12668,9 +12013,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HowToDirection
   ///
-  static const beforeMedia = IriTerm.prevalidated(
-    'https://schema.org/beforeMedia',
-  );
+  static const beforeMedia = const IriTerm('https://schema.org/beforeMedia');
 
   /// IRI for schema:beneficiaryBank [Expects: https://schema.org/BankOrCreditUnion, https://schema.org/Text]
   ///
@@ -12678,7 +12021,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MoneyTransfer
   ///
-  static const beneficiaryBank = IriTerm.prevalidated(
+  static const beneficiaryBank = const IriTerm(
     'https://schema.org/beneficiaryBank',
   );
 
@@ -12688,7 +12031,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const benefits = IriTerm.prevalidated('https://schema.org/benefits');
+  static const benefits = const IriTerm('https://schema.org/benefits');
 
   /// IRI for schema:benefitsSummaryUrl [Expects: https://schema.org/URL]
   ///
@@ -12696,7 +12039,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthInsurancePlan
   ///
-  static const benefitsSummaryUrl = IriTerm.prevalidated(
+  static const benefitsSummaryUrl = const IriTerm(
     'https://schema.org/benefitsSummaryUrl',
   );
 
@@ -12706,9 +12049,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Rating
   ///
-  static const bestRating = IriTerm.prevalidated(
-    'https://schema.org/bestRating',
-  );
+  static const bestRating = const IriTerm('https://schema.org/bestRating');
 
   /// IRI for schema:billingAddress [Expects: https://schema.org/PostalAddress]
   ///
@@ -12716,7 +12057,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order
   ///
-  static const billingAddress = IriTerm.prevalidated(
+  static const billingAddress = const IriTerm(
     'https://schema.org/billingAddress',
   );
 
@@ -12726,7 +12067,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/UnitPriceSpecification
   ///
-  static const billingDuration = IriTerm.prevalidated(
+  static const billingDuration = const IriTerm(
     'https://schema.org/billingDuration',
   );
 
@@ -12736,7 +12077,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/UnitPriceSpecification
   ///
-  static const billingIncrement = IriTerm.prevalidated(
+  static const billingIncrement = const IriTerm(
     'https://schema.org/billingIncrement',
   );
 
@@ -12746,7 +12087,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice
   ///
-  static const billingPeriod = IriTerm.prevalidated(
+  static const billingPeriod = const IriTerm(
     'https://schema.org/billingPeriod',
   );
 
@@ -12756,9 +12097,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/UnitPriceSpecification
   ///
-  static const billingStart = IriTerm.prevalidated(
-    'https://schema.org/billingStart',
-  );
+  static const billingStart = const IriTerm('https://schema.org/billingStart');
 
   /// IRI for schema:bioChemInteraction [Expects: https://schema.org/BioChemEntity]
   ///
@@ -12766,7 +12105,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BioChemEntity
   ///
-  static const bioChemInteraction = IriTerm.prevalidated(
+  static const bioChemInteraction = const IriTerm(
     'https://schema.org/bioChemInteraction',
   );
 
@@ -12776,7 +12115,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BioChemEntity
   ///
-  static const bioChemSimilarity = IriTerm.prevalidated(
+  static const bioChemSimilarity = const IriTerm(
     'https://schema.org/bioChemSimilarity',
   );
 
@@ -12786,7 +12125,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BioChemEntity
   ///
-  static const biologicalRole = IriTerm.prevalidated(
+  static const biologicalRole = const IriTerm(
     'https://schema.org/biologicalRole',
   );
 
@@ -12796,7 +12135,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Joint
   ///
-  static const biomechnicalClass = IriTerm.prevalidated(
+  static const biomechnicalClass = const IriTerm(
     'https://schema.org/biomechnicalClass',
   );
 
@@ -12806,7 +12145,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const birthDate = IriTerm.prevalidated('https://schema.org/birthDate');
+  static const birthDate = const IriTerm('https://schema.org/birthDate');
 
   /// IRI for schema:birthPlace [Expects: https://schema.org/Place]
   ///
@@ -12814,9 +12153,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const birthPlace = IriTerm.prevalidated(
-    'https://schema.org/birthPlace',
-  );
+  static const birthPlace = const IriTerm('https://schema.org/birthPlace');
 
   /// IRI for schema:bitrate [Expects: https://schema.org/Text]
   ///
@@ -12824,7 +12161,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaObject
   ///
-  static const bitrate = IriTerm.prevalidated('https://schema.org/bitrate');
+  static const bitrate = const IriTerm('https://schema.org/bitrate');
 
   /// IRI for schema:blogPosts [Expects: https://schema.org/BlogPosting]
   ///
@@ -12832,7 +12169,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Blog
   ///
-  static const blogPosts = IriTerm.prevalidated('https://schema.org/blogPosts');
+  static const blogPosts = const IriTerm('https://schema.org/blogPosts');
 
   /// IRI for schema:bloodSupply [Expects: https://schema.org/Vessel]
   ///
@@ -12840,9 +12177,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Muscle
   ///
-  static const bloodSupply = IriTerm.prevalidated(
-    'https://schema.org/bloodSupply',
-  );
+  static const bloodSupply = const IriTerm('https://schema.org/bloodSupply');
 
   /// IRI for schema:boardingGroup [Expects: https://schema.org/Text]
   ///
@@ -12850,7 +12185,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FlightReservation
   ///
-  static const boardingGroup = IriTerm.prevalidated(
+  static const boardingGroup = const IriTerm(
     'https://schema.org/boardingGroup',
   );
 
@@ -12860,7 +12195,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Airline, https://schema.org/Flight
   ///
-  static const boardingPolicy = IriTerm.prevalidated(
+  static const boardingPolicy = const IriTerm(
     'https://schema.org/boardingPolicy',
   );
 
@@ -12870,9 +12205,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AnatomicalStructure, https://schema.org/MedicalProcedure
   ///
-  static const bodyLocation = IriTerm.prevalidated(
-    'https://schema.org/bodyLocation',
-  );
+  static const bodyLocation = const IriTerm('https://schema.org/bodyLocation');
 
   /// IRI for schema:bodyType [Expects: https://schema.org/QualitativeValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -12880,7 +12213,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const bodyType = IriTerm.prevalidated('https://schema.org/bodyType');
+  static const bodyType = const IriTerm('https://schema.org/bodyType');
 
   /// IRI for schema:bookEdition [Expects: https://schema.org/Text]
   ///
@@ -12888,9 +12221,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Book
   ///
-  static const bookEdition = IriTerm.prevalidated(
-    'https://schema.org/bookEdition',
-  );
+  static const bookEdition = const IriTerm('https://schema.org/bookEdition');
 
   /// IRI for schema:bookFormat [Expects: https://schema.org/BookFormatType]
   ///
@@ -12898,9 +12229,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Book
   ///
-  static const bookFormat = IriTerm.prevalidated(
-    'https://schema.org/bookFormat',
-  );
+  static const bookFormat = const IriTerm('https://schema.org/bookFormat');
 
   /// IRI for schema:bookingAgent [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -12908,9 +12237,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Reservation
   ///
-  static const bookingAgent = IriTerm.prevalidated(
-    'https://schema.org/bookingAgent',
-  );
+  static const bookingAgent = const IriTerm('https://schema.org/bookingAgent');
 
   /// IRI for schema:bookingTime [Expects: https://schema.org/DateTime]
   ///
@@ -12918,9 +12245,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Reservation
   ///
-  static const bookingTime = IriTerm.prevalidated(
-    'https://schema.org/bookingTime',
-  );
+  static const bookingTime = const IriTerm('https://schema.org/bookingTime');
 
   /// IRI for schema:borrower [Expects: https://schema.org/Person]
   ///
@@ -12928,7 +12253,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LendAction
   ///
-  static const borrower = IriTerm.prevalidated('https://schema.org/borrower');
+  static const borrower = const IriTerm('https://schema.org/borrower');
 
   /// IRI for schema:box [Expects: https://schema.org/Text]
   ///
@@ -12936,7 +12261,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeoShape
   ///
-  static const box = IriTerm.prevalidated('https://schema.org/box');
+  static const box = const IriTerm('https://schema.org/box');
 
   /// IRI for schema:branch [Expects: https://schema.org/AnatomicalStructure]
   ///
@@ -12944,7 +12269,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Nerve
   ///
-  static const branch = IriTerm.prevalidated('https://schema.org/branch');
+  static const branch = const IriTerm('https://schema.org/branch');
 
   /// IRI for schema:branchCode [Expects: https://schema.org/Text]
   ///
@@ -12953,9 +12278,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const branchCode = IriTerm.prevalidated(
-    'https://schema.org/branchCode',
-  );
+  static const branchCode = const IriTerm('https://schema.org/branchCode');
 
   /// IRI for schema:branchOf [Expects: https://schema.org/Organization]
   ///
@@ -12963,7 +12286,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LocalBusiness
   ///
-  static const branchOf = IriTerm.prevalidated('https://schema.org/branchOf');
+  static const branchOf = const IriTerm('https://schema.org/branchOf');
 
   /// IRI for schema:brand [Expects: https://schema.org/Brand, https://schema.org/Organization]
   ///
@@ -12971,7 +12294,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product, https://schema.org/Service
   ///
-  static const brand = IriTerm.prevalidated('https://schema.org/brand');
+  static const brand = const IriTerm('https://schema.org/brand');
 
   /// IRI for schema:breadcrumb [Expects: https://schema.org/BreadcrumbList, https://schema.org/Text]
   ///
@@ -12979,9 +12302,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WebPage
   ///
-  static const breadcrumb = IriTerm.prevalidated(
-    'https://schema.org/breadcrumb',
-  );
+  static const breadcrumb = const IriTerm('https://schema.org/breadcrumb');
 
   /// IRI for schema:breastfeedingWarning [Expects: https://schema.org/Text]
   ///
@@ -12989,7 +12310,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const breastfeedingWarning = IriTerm.prevalidated(
+  static const breastfeedingWarning = const IriTerm(
     'https://schema.org/breastfeedingWarning',
   );
 
@@ -12999,7 +12320,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const broadcastAffiliateOf = IriTerm.prevalidated(
+  static const broadcastAffiliateOf = const IriTerm(
     'https://schema.org/broadcastAffiliateOf',
   );
 
@@ -13009,7 +12330,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastChannel
   ///
-  static const broadcastChannelId = IriTerm.prevalidated(
+  static const broadcastChannelId = const IriTerm(
     'https://schema.org/broadcastChannelId',
   );
 
@@ -13019,7 +12340,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const broadcastDisplayName = IriTerm.prevalidated(
+  static const broadcastDisplayName = const IriTerm(
     'https://schema.org/broadcastDisplayName',
   );
 
@@ -13029,7 +12350,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastChannel, https://schema.org/BroadcastService
   ///
-  static const broadcastFrequency = IriTerm.prevalidated(
+  static const broadcastFrequency = const IriTerm(
     'https://schema.org/broadcastFrequency',
   );
 
@@ -13039,7 +12360,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastFrequencySpecification
   ///
-  static const broadcastFrequencyValue = IriTerm.prevalidated(
+  static const broadcastFrequencyValue = const IriTerm(
     'https://schema.org/broadcastFrequencyValue',
   );
 
@@ -13049,7 +12370,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastEvent
   ///
-  static const broadcastOfEvent = IriTerm.prevalidated(
+  static const broadcastOfEvent = const IriTerm(
     'https://schema.org/broadcastOfEvent',
   );
 
@@ -13059,7 +12380,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastChannel
   ///
-  static const broadcastServiceTier = IriTerm.prevalidated(
+  static const broadcastServiceTier = const IriTerm(
     'https://schema.org/broadcastServiceTier',
   );
 
@@ -13069,7 +12390,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastFrequencySpecification
   ///
-  static const broadcastSignalModulation = IriTerm.prevalidated(
+  static const broadcastSignalModulation = const IriTerm(
     'https://schema.org/broadcastSignalModulation',
   );
 
@@ -13079,7 +12400,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastFrequencySpecification
   ///
-  static const broadcastSubChannel = IriTerm.prevalidated(
+  static const broadcastSubChannel = const IriTerm(
     'https://schema.org/broadcastSubChannel',
   );
 
@@ -13089,7 +12410,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const broadcastTimezone = IriTerm.prevalidated(
+  static const broadcastTimezone = const IriTerm(
     'https://schema.org/broadcastTimezone',
   );
 
@@ -13099,9 +12420,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const broadcaster = IriTerm.prevalidated(
-    'https://schema.org/broadcaster',
-  );
+  static const broadcaster = const IriTerm('https://schema.org/broadcaster');
 
   /// IRI for schema:browserRequirements [Expects: https://schema.org/Text]
   ///
@@ -13109,7 +12428,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WebApplication
   ///
-  static const browserRequirements = IriTerm.prevalidated(
+  static const browserRequirements = const IriTerm(
     'https://schema.org/browserRequirements',
   );
 
@@ -13119,7 +12438,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BusTrip
   ///
-  static const busName = IriTerm.prevalidated('https://schema.org/busName');
+  static const busName = const IriTerm('https://schema.org/busName');
 
   /// IRI for schema:busNumber [Expects: https://schema.org/Text]
   ///
@@ -13127,7 +12446,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BusTrip
   ///
-  static const busNumber = IriTerm.prevalidated('https://schema.org/busNumber');
+  static const busNumber = const IriTerm('https://schema.org/busNumber');
 
   /// IRI for schema:businessDays [Expects: https://schema.org/DayOfWeek, https://schema.org/OpeningHoursSpecification]
   ///
@@ -13135,9 +12454,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ServicePeriod, https://schema.org/ShippingDeliveryTime
   ///
-  static const businessDays = IriTerm.prevalidated(
-    'https://schema.org/businessDays',
-  );
+  static const businessDays = const IriTerm('https://schema.org/businessDays');
 
   /// IRI for schema:businessFunction [Expects: https://schema.org/BusinessFunction]
   ///
@@ -13145,7 +12462,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/TypeAndQuantityNode
   ///
-  static const businessFunction = IriTerm.prevalidated(
+  static const businessFunction = const IriTerm(
     'https://schema.org/businessFunction',
   );
 
@@ -13155,7 +12472,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SellAction
   ///
-  static const buyer = IriTerm.prevalidated('https://schema.org/buyer');
+  static const buyer = const IriTerm('https://schema.org/buyer');
 
   /// IRI for schema:byArtist [Expects: https://schema.org/MusicGroup, https://schema.org/Person]
   ///
@@ -13163,7 +12480,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicAlbum, https://schema.org/MusicRecording
   ///
-  static const byArtist = IriTerm.prevalidated('https://schema.org/byArtist');
+  static const byArtist = const IriTerm('https://schema.org/byArtist');
 
   /// IRI for schema:byDay [Expects: https://schema.org/DayOfWeek, https://schema.org/Text]
   ///
@@ -13171,7 +12488,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Schedule
   ///
-  static const byDay = IriTerm.prevalidated('https://schema.org/byDay');
+  static const byDay = const IriTerm('https://schema.org/byDay');
 
   /// IRI for schema:byMonth [Expects: https://schema.org/Integer]
   ///
@@ -13179,7 +12496,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Schedule
   ///
-  static const byMonth = IriTerm.prevalidated('https://schema.org/byMonth');
+  static const byMonth = const IriTerm('https://schema.org/byMonth');
 
   /// IRI for schema:byMonthDay [Expects: https://schema.org/Integer]
   ///
@@ -13187,9 +12504,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Schedule
   ///
-  static const byMonthDay = IriTerm.prevalidated(
-    'https://schema.org/byMonthDay',
-  );
+  static const byMonthDay = const IriTerm('https://schema.org/byMonthDay');
 
   /// IRI for schema:byMonthWeek [Expects: https://schema.org/Integer]
   ///
@@ -13197,9 +12512,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Schedule
   ///
-  static const byMonthWeek = IriTerm.prevalidated(
-    'https://schema.org/byMonthWeek',
-  );
+  static const byMonthWeek = const IriTerm('https://schema.org/byMonthWeek');
 
   /// IRI for schema:callSign [Expects: https://schema.org/Text]
   ///
@@ -13207,7 +12520,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastService, https://schema.org/Person, https://schema.org/Vehicle
   ///
-  static const callSign = IriTerm.prevalidated('https://schema.org/callSign');
+  static const callSign = const IriTerm('https://schema.org/callSign');
 
   /// IRI for schema:calories [Expects: https://schema.org/Energy]
   ///
@@ -13215,7 +12528,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const calories = IriTerm.prevalidated('https://schema.org/calories');
+  static const calories = const IriTerm('https://schema.org/calories');
 
   /// IRI for schema:candidate [Expects: https://schema.org/Person]
   ///
@@ -13223,7 +12536,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VoteAction
   ///
-  static const candidate = IriTerm.prevalidated('https://schema.org/candidate');
+  static const candidate = const IriTerm('https://schema.org/candidate');
 
   /// IRI for schema:carbohydrateContent [Expects: https://schema.org/Mass]
   ///
@@ -13231,7 +12544,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const carbohydrateContent = IriTerm.prevalidated(
+  static const carbohydrateContent = const IriTerm(
     'https://schema.org/carbohydrateContent',
   );
 
@@ -13241,9 +12554,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const cargoVolume = IriTerm.prevalidated(
-    'https://schema.org/cargoVolume',
-  );
+  static const cargoVolume = const IriTerm('https://schema.org/cargoVolume');
 
   /// IRI for schema:carrier [Expects: https://schema.org/Organization]
   ///
@@ -13251,7 +12562,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Flight, https://schema.org/ParcelDelivery
   ///
-  static const carrier = IriTerm.prevalidated('https://schema.org/carrier');
+  static const carrier = const IriTerm('https://schema.org/carrier');
 
   /// IRI for schema:carrierRequirements [Expects: https://schema.org/Text]
   ///
@@ -13259,7 +12570,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MobileApplication
   ///
-  static const carrierRequirements = IriTerm.prevalidated(
+  static const carrierRequirements = const IriTerm(
     'https://schema.org/carrierRequirements',
   );
 
@@ -13269,7 +12580,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PaymentCard
   ///
-  static const cashBack = IriTerm.prevalidated('https://schema.org/cashBack');
+  static const cashBack = const IriTerm('https://schema.org/cashBack');
 
   /// IRI for schema:catalog [Expects: https://schema.org/DataCatalog]
   ///
@@ -13277,7 +12588,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Dataset
   ///
-  static const catalog = IriTerm.prevalidated('https://schema.org/catalog');
+  static const catalog = const IriTerm('https://schema.org/catalog');
 
   /// IRI for schema:catalogNumber [Expects: https://schema.org/Text]
   ///
@@ -13285,7 +12596,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicRelease
   ///
-  static const catalogNumber = IriTerm.prevalidated(
+  static const catalogNumber = const IriTerm(
     'https://schema.org/catalogNumber',
   );
 
@@ -13295,7 +12606,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCause
   ///
-  static const causeOf = IriTerm.prevalidated('https://schema.org/causeOf');
+  static const causeOf = const IriTerm('https://schema.org/causeOf');
 
   /// IRI for schema:ccRecipient [Expects: https://schema.org/ContactPoint, https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -13303,9 +12614,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Message
   ///
-  static const ccRecipient = IriTerm.prevalidated(
-    'https://schema.org/ccRecipient',
-  );
+  static const ccRecipient = const IriTerm('https://schema.org/ccRecipient');
 
   /// IRI for schema:certificationIdentification [Expects: https://schema.org/DefinedTerm, https://schema.org/Text]
   ///
@@ -13313,7 +12622,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Certification
   ///
-  static const certificationIdentification = IriTerm.prevalidated(
+  static const certificationIdentification = const IriTerm(
     'https://schema.org/certificationIdentification',
   );
 
@@ -13323,7 +12632,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Certification
   ///
-  static const certificationRating = IriTerm.prevalidated(
+  static const certificationRating = const IriTerm(
     'https://schema.org/certificationRating',
   );
 
@@ -13333,7 +12642,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Certification
   ///
-  static const certificationStatus = IriTerm.prevalidated(
+  static const certificationStatus = const IriTerm(
     'https://schema.org/certificationStatus',
   );
 
@@ -13343,7 +12652,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const character = IriTerm.prevalidated('https://schema.org/character');
+  static const character = const IriTerm('https://schema.org/character');
 
   /// IRI for schema:characterAttribute [Expects: https://schema.org/Thing]
   ///
@@ -13351,7 +12660,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Game, https://schema.org/VideoGameSeries
   ///
-  static const characterAttribute = IriTerm.prevalidated(
+  static const characterAttribute = const IriTerm(
     'https://schema.org/characterAttribute',
   );
 
@@ -13361,7 +12670,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PerformanceRole
   ///
-  static const characterName = IriTerm.prevalidated(
+  static const characterName = const IriTerm(
     'https://schema.org/characterName',
   );
 
@@ -13371,7 +12680,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VideoGame, https://schema.org/VideoGameSeries
   ///
-  static const cheatCode = IriTerm.prevalidated('https://schema.org/cheatCode');
+  static const cheatCode = const IriTerm('https://schema.org/cheatCode');
 
   /// IRI for schema:checkinTime [Expects: https://schema.org/DateTime, https://schema.org/Time]
   ///
@@ -13379,9 +12688,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LodgingBusiness, https://schema.org/LodgingReservation
   ///
-  static const checkinTime = IriTerm.prevalidated(
-    'https://schema.org/checkinTime',
-  );
+  static const checkinTime = const IriTerm('https://schema.org/checkinTime');
 
   /// IRI for schema:checkoutPageURLTemplate [Expects: https://schema.org/Text]
   ///
@@ -13389,7 +12696,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Offer
   ///
-  static const checkoutPageURLTemplate = IriTerm.prevalidated(
+  static const checkoutPageURLTemplate = const IriTerm(
     'https://schema.org/checkoutPageURLTemplate',
   );
 
@@ -13399,9 +12706,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LodgingBusiness, https://schema.org/LodgingReservation
   ///
-  static const checkoutTime = IriTerm.prevalidated(
-    'https://schema.org/checkoutTime',
-  );
+  static const checkoutTime = const IriTerm('https://schema.org/checkoutTime');
 
   /// IRI for schema:chemicalComposition [Expects: https://schema.org/Text]
   ///
@@ -13409,7 +12714,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ChemicalSubstance
   ///
-  static const chemicalComposition = IriTerm.prevalidated(
+  static const chemicalComposition = const IriTerm(
     'https://schema.org/chemicalComposition',
   );
 
@@ -13419,9 +12724,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ChemicalSubstance, https://schema.org/MolecularEntity
   ///
-  static const chemicalRole = IriTerm.prevalidated(
-    'https://schema.org/chemicalRole',
-  );
+  static const chemicalRole = const IriTerm('https://schema.org/chemicalRole');
 
   /// IRI for schema:childMaxAge [Expects: https://schema.org/Number]
   ///
@@ -13429,9 +12732,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ParentAudience
   ///
-  static const childMaxAge = IriTerm.prevalidated(
-    'https://schema.org/childMaxAge',
-  );
+  static const childMaxAge = const IriTerm('https://schema.org/childMaxAge');
 
   /// IRI for schema:childMinAge [Expects: https://schema.org/Number]
   ///
@@ -13439,9 +12740,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ParentAudience
   ///
-  static const childMinAge = IriTerm.prevalidated(
-    'https://schema.org/childMinAge',
-  );
+  static const childMinAge = const IriTerm('https://schema.org/childMinAge');
 
   /// IRI for schema:children [Expects: https://schema.org/Person]
   ///
@@ -13449,7 +12748,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const children = IriTerm.prevalidated('https://schema.org/children');
+  static const children = const IriTerm('https://schema.org/children');
 
   /// IRI for schema:cholesterolContent [Expects: https://schema.org/Mass]
   ///
@@ -13457,7 +12756,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const cholesterolContent = IriTerm.prevalidated(
+  static const cholesterolContent = const IriTerm(
     'https://schema.org/cholesterolContent',
   );
 
@@ -13467,7 +12766,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeoShape
   ///
-  static const circle = IriTerm.prevalidated('https://schema.org/circle');
+  static const circle = const IriTerm('https://schema.org/circle');
 
   /// IRI for schema:citation [Expects: https://schema.org/CreativeWork, https://schema.org/Text]
   ///
@@ -13475,7 +12774,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const citation = IriTerm.prevalidated('https://schema.org/citation');
+  static const citation = const IriTerm('https://schema.org/citation');
 
   /// IRI for schema:claimInterpreter [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -13483,7 +12782,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Claim
   ///
-  static const claimInterpreter = IriTerm.prevalidated(
+  static const claimInterpreter = const IriTerm(
     'https://schema.org/claimInterpreter',
   );
 
@@ -13493,7 +12792,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ClaimReview
   ///
-  static const claimReviewed = IriTerm.prevalidated(
+  static const claimReviewed = const IriTerm(
     'https://schema.org/claimReviewed',
   );
 
@@ -13503,7 +12802,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const clincalPharmacology = IriTerm.prevalidated(
+  static const clincalPharmacology = const IriTerm(
     'https://schema.org/clincalPharmacology',
   );
 
@@ -13513,9 +12812,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Clip
   ///
-  static const clipNumber = IriTerm.prevalidated(
-    'https://schema.org/clipNumber',
-  );
+  static const clipNumber = const IriTerm('https://schema.org/clipNumber');
 
   /// IRI for schema:closes [Expects: https://schema.org/Time]
   ///
@@ -13523,7 +12820,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OpeningHoursSpecification
   ///
-  static const closes = IriTerm.prevalidated('https://schema.org/closes');
+  static const closes = const IriTerm('https://schema.org/closes');
 
   /// IRI for schema:coach [Expects: https://schema.org/Person]
   ///
@@ -13531,7 +12828,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SportsTeam
   ///
-  static const coach = IriTerm.prevalidated('https://schema.org/coach');
+  static const coach = const IriTerm('https://schema.org/coach');
 
   /// IRI for schema:code [Expects: https://schema.org/MedicalCode]
   ///
@@ -13539,7 +12836,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalEntity
   ///
-  static const code = IriTerm.prevalidated('https://schema.org/code');
+  static const code = const IriTerm('https://schema.org/code');
 
   /// IRI for schema:codeRepository [Expects: https://schema.org/URL]
   ///
@@ -13547,7 +12844,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareSourceCode
   ///
-  static const codeRepository = IriTerm.prevalidated(
+  static const codeRepository = const IriTerm(
     'https://schema.org/codeRepository',
   );
 
@@ -13557,7 +12854,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CategoryCode, https://schema.org/MedicalCode
   ///
-  static const codeValue = IriTerm.prevalidated('https://schema.org/codeValue');
+  static const codeValue = const IriTerm('https://schema.org/codeValue');
 
   /// IRI for schema:codingSystem [Expects: https://schema.org/Text]
   ///
@@ -13565,9 +12862,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCode
   ///
-  static const codingSystem = IriTerm.prevalidated(
-    'https://schema.org/codingSystem',
-  );
+  static const codingSystem = const IriTerm('https://schema.org/codingSystem');
 
   /// IRI for schema:colleagues [Expects: https://schema.org/Person]
   ///
@@ -13575,9 +12870,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const colleagues = IriTerm.prevalidated(
-    'https://schema.org/colleagues',
-  );
+  static const colleagues = const IriTerm('https://schema.org/colleagues');
 
   /// IRI for schema:collection [Expects: https://schema.org/Thing]
   ///
@@ -13585,9 +12878,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/UpdateAction
   ///
-  static const collection = IriTerm.prevalidated(
-    'https://schema.org/collection',
-  );
+  static const collection = const IriTerm('https://schema.org/collection');
 
   /// IRI for schema:collectionSize [Expects: https://schema.org/Integer]
   ///
@@ -13595,7 +12886,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Collection
   ///
-  static const collectionSize = IriTerm.prevalidated(
+  static const collectionSize = const IriTerm(
     'https://schema.org/collectionSize',
   );
 
@@ -13605,7 +12896,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product
   ///
-  static const color = IriTerm.prevalidated('https://schema.org/color');
+  static const color = const IriTerm('https://schema.org/color');
 
   /// IRI for schema:colorSwatch [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -13613,9 +12904,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product
   ///
-  static const colorSwatch = IriTerm.prevalidated(
-    'https://schema.org/colorSwatch',
-  );
+  static const colorSwatch = const IriTerm('https://schema.org/colorSwatch');
 
   /// IRI for schema:colorist [Expects: https://schema.org/Person]
   ///
@@ -13623,7 +12912,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ComicIssue, https://schema.org/ComicStory, https://schema.org/VisualArtwork
   ///
-  static const colorist = IriTerm.prevalidated('https://schema.org/colorist');
+  static const colorist = const IriTerm('https://schema.org/colorist');
 
   /// IRI for schema:comment [Expects: https://schema.org/Comment]
   ///
@@ -13631,7 +12920,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/RsvpAction
   ///
-  static const comment = IriTerm.prevalidated('https://schema.org/comment');
+  static const comment = const IriTerm('https://schema.org/comment');
 
   /// IRI for schema:commentCount [Expects: https://schema.org/Integer]
   ///
@@ -13639,9 +12928,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const commentCount = IriTerm.prevalidated(
-    'https://schema.org/commentCount',
-  );
+  static const commentCount = const IriTerm('https://schema.org/commentCount');
 
   /// IRI for schema:commentText [Expects: https://schema.org/Text]
   ///
@@ -13649,9 +12936,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/UserComments
   ///
-  static const commentText = IriTerm.prevalidated(
-    'https://schema.org/commentText',
-  );
+  static const commentText = const IriTerm('https://schema.org/commentText');
 
   /// IRI for schema:commentTime [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -13659,9 +12944,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/UserComments
   ///
-  static const commentTime = IriTerm.prevalidated(
-    'https://schema.org/commentTime',
-  );
+  static const commentTime = const IriTerm('https://schema.org/commentTime');
 
   /// IRI for schema:companyRegistration [Expects: https://schema.org/Certification]
   ///
@@ -13669,7 +12952,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const companyRegistration = IriTerm.prevalidated(
+  static const companyRegistration = const IriTerm(
     'https://schema.org/companyRegistration',
   );
 
@@ -13679,7 +12962,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalCredential, https://schema.org/LearningResource
   ///
-  static const competencyRequired = IriTerm.prevalidated(
+  static const competencyRequired = const IriTerm(
     'https://schema.org/competencyRequired',
   );
 
@@ -13689,7 +12972,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event, https://schema.org/MusicComposition
   ///
-  static const composer = IriTerm.prevalidated('https://schema.org/composer');
+  static const composer = const IriTerm('https://schema.org/composer');
 
   /// IRI for schema:comprisedOf [Expects: https://schema.org/AnatomicalStructure, https://schema.org/AnatomicalSystem]
   ///
@@ -13697,9 +12980,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AnatomicalSystem
   ///
-  static const comprisedOf = IriTerm.prevalidated(
-    'https://schema.org/comprisedOf',
-  );
+  static const comprisedOf = const IriTerm('https://schema.org/comprisedOf');
 
   /// IRI for schema:conditionsOfAccess [Expects: https://schema.org/Text]
   ///
@@ -13707,7 +12988,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const conditionsOfAccess = IriTerm.prevalidated(
+  static const conditionsOfAccess = const IriTerm(
     'https://schema.org/conditionsOfAccess',
   );
 
@@ -13717,7 +12998,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice, https://schema.org/Order
   ///
-  static const confirmationNumber = IriTerm.prevalidated(
+  static const confirmationNumber = const IriTerm(
     'https://schema.org/confirmationNumber',
   );
 
@@ -13727,9 +13008,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AnatomicalStructure
   ///
-  static const connectedTo = IriTerm.prevalidated(
-    'https://schema.org/connectedTo',
-  );
+  static const connectedTo = const IriTerm('https://schema.org/connectedTo');
 
   /// IRI for schema:constraintProperty [Expects: https://schema.org/Property, https://schema.org/URL]
   ///
@@ -13737,7 +13016,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ConstraintNode
   ///
-  static const constraintProperty = IriTerm.prevalidated(
+  static const constraintProperty = const IriTerm(
     'https://schema.org/constraintProperty',
   );
 
@@ -13747,7 +13026,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ContactPoint
   ///
-  static const contactOption = IriTerm.prevalidated(
+  static const contactOption = const IriTerm(
     'https://schema.org/contactOption',
   );
 
@@ -13757,7 +13036,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const contactPoints = IriTerm.prevalidated(
+  static const contactPoints = const IriTerm(
     'https://schema.org/contactPoints',
   );
 
@@ -13767,9 +13046,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ContactPoint
   ///
-  static const contactType = IriTerm.prevalidated(
-    'https://schema.org/contactType',
-  );
+  static const contactType = const IriTerm('https://schema.org/contactType');
 
   /// IRI for schema:contactlessPayment [Expects: https://schema.org/Boolean]
   ///
@@ -13777,7 +13054,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PaymentCard
   ///
-  static const contactlessPayment = IriTerm.prevalidated(
+  static const contactlessPayment = const IriTerm(
     'https://schema.org/contactlessPayment',
   );
 
@@ -13787,9 +13064,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const containedIn = IriTerm.prevalidated(
-    'https://schema.org/containedIn',
-  );
+  static const containedIn = const IriTerm('https://schema.org/containedIn');
 
   /// IRI for schema:contentRating [Expects: https://schema.org/Rating, https://schema.org/Text]
   ///
@@ -13797,7 +13072,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const contentRating = IriTerm.prevalidated(
+  static const contentRating = const IriTerm(
     'https://schema.org/contentRating',
   );
 
@@ -13807,7 +13082,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const contentReferenceTime = IriTerm.prevalidated(
+  static const contentReferenceTime = const IriTerm(
     'https://schema.org/contentReferenceTime',
   );
 
@@ -13817,9 +13092,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaObject
   ///
-  static const contentSize = IriTerm.prevalidated(
-    'https://schema.org/contentSize',
-  );
+  static const contentSize = const IriTerm('https://schema.org/contentSize');
 
   /// IRI for schema:contentType [Expects: https://schema.org/Text]
   ///
@@ -13827,9 +13100,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EntryPoint
   ///
-  static const contentType = IriTerm.prevalidated(
-    'https://schema.org/contentType',
-  );
+  static const contentType = const IriTerm('https://schema.org/contentType');
 
   /// IRI for schema:contentUrl [Expects: https://schema.org/URL]
   ///
@@ -13837,9 +13108,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaObject
   ///
-  static const contentUrl = IriTerm.prevalidated(
-    'https://schema.org/contentUrl',
-  );
+  static const contentUrl = const IriTerm('https://schema.org/contentUrl');
 
   /// IRI for schema:contraindication [Expects: https://schema.org/MedicalContraindication, https://schema.org/Text]
   ///
@@ -13847,7 +13116,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalDevice, https://schema.org/MedicalTherapy
   ///
-  static const contraindication = IriTerm.prevalidated(
+  static const contraindication = const IriTerm(
     'https://schema.org/contraindication',
   );
 
@@ -13857,9 +13126,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event
   ///
-  static const contributor = IriTerm.prevalidated(
-    'https://schema.org/contributor',
-  );
+  static const contributor = const IriTerm('https://schema.org/contributor');
 
   /// IRI for schema:cookTime [Expects: https://schema.org/Duration]
   ///
@@ -13867,7 +13134,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Recipe
   ///
-  static const cookTime = IriTerm.prevalidated('https://schema.org/cookTime');
+  static const cookTime = const IriTerm('https://schema.org/cookTime');
 
   /// IRI for schema:cookingMethod [Expects: https://schema.org/Text]
   ///
@@ -13875,7 +13142,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Recipe
   ///
-  static const cookingMethod = IriTerm.prevalidated(
+  static const cookingMethod = const IriTerm(
     'https://schema.org/cookingMethod',
   );
 
@@ -13885,7 +13152,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const copyrightHolder = IriTerm.prevalidated(
+  static const copyrightHolder = const IriTerm(
     'https://schema.org/copyrightHolder',
   );
 
@@ -13895,7 +13162,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const copyrightNotice = IriTerm.prevalidated(
+  static const copyrightNotice = const IriTerm(
     'https://schema.org/copyrightNotice',
   );
 
@@ -13905,7 +13172,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const copyrightYear = IriTerm.prevalidated(
+  static const copyrightYear = const IriTerm(
     'https://schema.org/copyrightYear',
   );
 
@@ -13915,9 +13182,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const correction = IriTerm.prevalidated(
-    'https://schema.org/correction',
-  );
+  static const correction = const IriTerm('https://schema.org/correction');
 
   /// IRI for schema:correctionsPolicy [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -13925,7 +13190,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsMediaOrganization, https://schema.org/Organization
   ///
-  static const correctionsPolicy = IriTerm.prevalidated(
+  static const correctionsPolicy = const IriTerm(
     'https://schema.org/correctionsPolicy',
   );
 
@@ -13935,9 +13200,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DrugCost
   ///
-  static const costCategory = IriTerm.prevalidated(
-    'https://schema.org/costCategory',
-  );
+  static const costCategory = const IriTerm('https://schema.org/costCategory');
 
   /// IRI for schema:costCurrency [Expects: https://schema.org/Text]
   ///
@@ -13945,9 +13208,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DrugCost
   ///
-  static const costCurrency = IriTerm.prevalidated(
-    'https://schema.org/costCurrency',
-  );
+  static const costCurrency = const IriTerm('https://schema.org/costCurrency');
 
   /// IRI for schema:costOrigin [Expects: https://schema.org/Text]
   ///
@@ -13955,9 +13216,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DrugCost
   ///
-  static const costOrigin = IriTerm.prevalidated(
-    'https://schema.org/costOrigin',
-  );
+  static const costOrigin = const IriTerm('https://schema.org/costOrigin');
 
   /// IRI for schema:costPerUnit [Expects: https://schema.org/Number, https://schema.org/QualitativeValue, https://schema.org/Text]
   ///
@@ -13965,9 +13224,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DrugCost
   ///
-  static const costPerUnit = IriTerm.prevalidated(
-    'https://schema.org/costPerUnit',
-  );
+  static const costPerUnit = const IriTerm('https://schema.org/costPerUnit');
 
   /// IRI for schema:countriesNotSupported [Expects: https://schema.org/Text]
   ///
@@ -13975,7 +13232,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const countriesNotSupported = IriTerm.prevalidated(
+  static const countriesNotSupported = const IriTerm(
     'https://schema.org/countriesNotSupported',
   );
 
@@ -13985,7 +13242,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const countriesSupported = IriTerm.prevalidated(
+  static const countriesSupported = const IriTerm(
     'https://schema.org/countriesSupported',
   );
 
@@ -13995,7 +13252,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product
   ///
-  static const countryOfAssembly = IriTerm.prevalidated(
+  static const countryOfAssembly = const IriTerm(
     'https://schema.org/countryOfAssembly',
   );
 
@@ -14005,7 +13262,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product
   ///
-  static const countryOfLastProcessing = IriTerm.prevalidated(
+  static const countryOfLastProcessing = const IriTerm(
     'https://schema.org/countryOfLastProcessing',
   );
 
@@ -14019,7 +13276,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Movie, https://schema.org/Product, https://schema.org/TVEpisode, https://schema.org/TVSeason, https://schema.org/TVSeries
   ///
-  static const countryOfOrigin = IriTerm.prevalidated(
+  static const countryOfOrigin = const IriTerm(
     'https://schema.org/countryOfOrigin',
   );
 
@@ -14029,7 +13286,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExerciseAction
   ///
-  static const course = IriTerm.prevalidated('https://schema.org/course');
+  static const course = const IriTerm('https://schema.org/course');
 
   /// IRI for schema:courseCode [Expects: https://schema.org/Text]
   ///
@@ -14037,9 +13294,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Course
   ///
-  static const courseCode = IriTerm.prevalidated(
-    'https://schema.org/courseCode',
-  );
+  static const courseCode = const IriTerm('https://schema.org/courseCode');
 
   /// IRI for schema:courseMode [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -14047,9 +13302,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CourseInstance
   ///
-  static const courseMode = IriTerm.prevalidated(
-    'https://schema.org/courseMode',
-  );
+  static const courseMode = const IriTerm('https://schema.org/courseMode');
 
   /// IRI for schema:coursePrerequisites [Expects: https://schema.org/AlignmentObject, https://schema.org/Course, https://schema.org/Text]
   ///
@@ -14057,7 +13310,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Course
   ///
-  static const coursePrerequisites = IriTerm.prevalidated(
+  static const coursePrerequisites = const IriTerm(
     'https://schema.org/coursePrerequisites',
   );
 
@@ -14067,7 +13320,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CourseInstance
   ///
-  static const courseSchedule = IriTerm.prevalidated(
+  static const courseSchedule = const IriTerm(
     'https://schema.org/courseSchedule',
   );
 
@@ -14077,7 +13330,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CourseInstance
   ///
-  static const courseWorkload = IriTerm.prevalidated(
+  static const courseWorkload = const IriTerm(
     'https://schema.org/courseWorkload',
   );
 
@@ -14087,7 +13340,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LiveBlogPosting
   ///
-  static const coverageEndTime = IriTerm.prevalidated(
+  static const coverageEndTime = const IriTerm(
     'https://schema.org/coverageEndTime',
   );
 
@@ -14097,7 +13350,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LiveBlogPosting
   ///
-  static const coverageStartTime = IriTerm.prevalidated(
+  static const coverageStartTime = const IriTerm(
     'https://schema.org/coverageStartTime',
   );
 
@@ -14107,7 +13360,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const creativeWorkStatus = IriTerm.prevalidated(
+  static const creativeWorkStatus = const IriTerm(
     'https://schema.org/creativeWorkStatus',
   );
 
@@ -14117,7 +13370,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalCredential
   ///
-  static const credentialCategory = IriTerm.prevalidated(
+  static const credentialCategory = const IriTerm(
     'https://schema.org/credentialCategory',
   );
 
@@ -14127,9 +13380,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const creditText = IriTerm.prevalidated(
-    'https://schema.org/creditText',
-  );
+  static const creditText = const IriTerm('https://schema.org/creditText');
 
   /// IRI for schema:creditedTo [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -14137,9 +13388,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicRelease
   ///
-  static const creditedTo = IriTerm.prevalidated(
-    'https://schema.org/creditedTo',
-  );
+  static const creditedTo = const IriTerm('https://schema.org/creditedTo');
 
   /// IRI for schema:cssSelector [Expects: https://schema.org/CssSelectorType]
   ///
@@ -14147,9 +13396,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SpeakableSpecification, https://schema.org/WebPageElement
   ///
-  static const cssSelector = IriTerm.prevalidated(
-    'https://schema.org/cssSelector',
-  );
+  static const cssSelector = const IriTerm('https://schema.org/cssSelector');
 
   /// IRI for schema:currenciesAccepted [Expects: https://schema.org/Text]
   ///
@@ -14157,7 +13404,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LocalBusiness
   ///
-  static const currenciesAccepted = IriTerm.prevalidated(
+  static const currenciesAccepted = const IriTerm(
     'https://schema.org/currenciesAccepted',
   );
 
@@ -14167,7 +13414,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DatedMoneySpecification, https://schema.org/ExchangeRateSpecification, https://schema.org/LoanOrCredit, https://schema.org/MonetaryAmount, https://schema.org/MonetaryAmountDistribution
   ///
-  static const currency = IriTerm.prevalidated('https://schema.org/currency');
+  static const currency = const IriTerm('https://schema.org/currency');
 
   /// IRI for schema:currentExchangeRate [Expects: https://schema.org/UnitPriceSpecification]
   ///
@@ -14175,7 +13422,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExchangeRateSpecification
   ///
-  static const currentExchangeRate = IriTerm.prevalidated(
+  static const currentExchangeRate = const IriTerm(
     'https://schema.org/currentExchangeRate',
   );
 
@@ -14185,7 +13432,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice, https://schema.org/Order
   ///
-  static const customer = IriTerm.prevalidated('https://schema.org/customer');
+  static const customer = const IriTerm('https://schema.org/customer');
 
   /// IRI for schema:customerRemorseReturnFees [Expects: https://schema.org/ReturnFeesEnumeration]
   ///
@@ -14193,7 +13440,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy
   ///
-  static const customerRemorseReturnFees = IriTerm.prevalidated(
+  static const customerRemorseReturnFees = const IriTerm(
     'https://schema.org/customerRemorseReturnFees',
   );
 
@@ -14203,7 +13450,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy
   ///
-  static const customerRemorseReturnLabelSource = IriTerm.prevalidated(
+  static const customerRemorseReturnLabelSource = const IriTerm(
     'https://schema.org/customerRemorseReturnLabelSource',
   );
 
@@ -14213,7 +13460,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy
   ///
-  static const customerRemorseReturnShippingFeesAmount = IriTerm.prevalidated(
+  static const customerRemorseReturnShippingFeesAmount = const IriTerm(
     'https://schema.org/customerRemorseReturnShippingFeesAmount',
   );
 
@@ -14223,9 +13470,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ServicePeriod, https://schema.org/ShippingDeliveryTime
   ///
-  static const cutoffTime = IriTerm.prevalidated(
-    'https://schema.org/cutoffTime',
-  );
+  static const cutoffTime = const IriTerm('https://schema.org/cutoffTime');
 
   /// IRI for schema:cvdCollectionDate [Expects: https://schema.org/DateTime, https://schema.org/Text]
   ///
@@ -14233,7 +13478,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdCollectionDate = IriTerm.prevalidated(
+  static const cvdCollectionDate = const IriTerm(
     'https://schema.org/cvdCollectionDate',
   );
 
@@ -14243,7 +13488,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdFacilityCounty = IriTerm.prevalidated(
+  static const cvdFacilityCounty = const IriTerm(
     'https://schema.org/cvdFacilityCounty',
   );
 
@@ -14253,7 +13498,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdFacilityId = IriTerm.prevalidated(
+  static const cvdFacilityId = const IriTerm(
     'https://schema.org/cvdFacilityId',
   );
 
@@ -14263,9 +13508,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumBeds = IriTerm.prevalidated(
-    'https://schema.org/cvdNumBeds',
-  );
+  static const cvdNumBeds = const IriTerm('https://schema.org/cvdNumBeds');
 
   /// IRI for schema:cvdNumBedsOcc [Expects: https://schema.org/Number]
   ///
@@ -14273,7 +13516,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumBedsOcc = IriTerm.prevalidated(
+  static const cvdNumBedsOcc = const IriTerm(
     'https://schema.org/cvdNumBedsOcc',
   );
 
@@ -14283,7 +13526,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumC19Died = IriTerm.prevalidated(
+  static const cvdNumC19Died = const IriTerm(
     'https://schema.org/cvdNumC19Died',
   );
 
@@ -14293,7 +13536,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumC19HOPats = IriTerm.prevalidated(
+  static const cvdNumC19HOPats = const IriTerm(
     'https://schema.org/cvdNumC19HOPats',
   );
 
@@ -14303,7 +13546,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumC19HospPats = IriTerm.prevalidated(
+  static const cvdNumC19HospPats = const IriTerm(
     'https://schema.org/cvdNumC19HospPats',
   );
 
@@ -14313,7 +13556,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumC19MechVentPats = IriTerm.prevalidated(
+  static const cvdNumC19MechVentPats = const IriTerm(
     'https://schema.org/cvdNumC19MechVentPats',
   );
 
@@ -14323,7 +13566,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumC19OFMechVentPats = IriTerm.prevalidated(
+  static const cvdNumC19OFMechVentPats = const IriTerm(
     'https://schema.org/cvdNumC19OFMechVentPats',
   );
 
@@ -14333,7 +13576,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumC19OverflowPats = IriTerm.prevalidated(
+  static const cvdNumC19OverflowPats = const IriTerm(
     'https://schema.org/cvdNumC19OverflowPats',
   );
 
@@ -14343,7 +13586,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumICUBeds = IriTerm.prevalidated(
+  static const cvdNumICUBeds = const IriTerm(
     'https://schema.org/cvdNumICUBeds',
   );
 
@@ -14353,7 +13596,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumICUBedsOcc = IriTerm.prevalidated(
+  static const cvdNumICUBedsOcc = const IriTerm(
     'https://schema.org/cvdNumICUBedsOcc',
   );
 
@@ -14363,7 +13606,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumTotBeds = IriTerm.prevalidated(
+  static const cvdNumTotBeds = const IriTerm(
     'https://schema.org/cvdNumTotBeds',
   );
 
@@ -14373,9 +13616,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumVent = IriTerm.prevalidated(
-    'https://schema.org/cvdNumVent',
-  );
+  static const cvdNumVent = const IriTerm('https://schema.org/cvdNumVent');
 
   /// IRI for schema:cvdNumVentUse [Expects: https://schema.org/Number]
   ///
@@ -14383,7 +13624,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord
   ///
-  static const cvdNumVentUse = IriTerm.prevalidated(
+  static const cvdNumVentUse = const IriTerm(
     'https://schema.org/cvdNumVentUse',
   );
 
@@ -14393,7 +13634,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DataFeed
   ///
-  static const dataFeedElement = IriTerm.prevalidated(
+  static const dataFeedElement = const IriTerm(
     'https://schema.org/dataFeedElement',
   );
 
@@ -14403,7 +13644,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Dataset
   ///
-  static const datasetTimeInterval = IriTerm.prevalidated(
+  static const datasetTimeInterval = const IriTerm(
     'https://schema.org/datasetTimeInterval',
   );
 
@@ -14413,9 +13654,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DataFeedItem
   ///
-  static const dateDeleted = IriTerm.prevalidated(
-    'https://schema.org/dateDeleted',
-  );
+  static const dateDeleted = const IriTerm('https://schema.org/dateDeleted');
 
   /// IRI for schema:dateIssued [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -14423,9 +13662,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Ticket
   ///
-  static const dateIssued = IriTerm.prevalidated(
-    'https://schema.org/dateIssued',
-  );
+  static const dateIssued = const IriTerm('https://schema.org/dateIssued');
 
   /// IRI for schema:dateModified [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -14433,9 +13670,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/DataFeedItem
   ///
-  static const dateModified = IriTerm.prevalidated(
-    'https://schema.org/dateModified',
-  );
+  static const dateModified = const IriTerm('https://schema.org/dateModified');
 
   /// IRI for schema:datePosted [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -14443,9 +13678,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CDCPMDRecord, https://schema.org/JobPosting, https://schema.org/RealEstateListing, https://schema.org/SpecialAnnouncement
   ///
-  static const datePosted = IriTerm.prevalidated(
-    'https://schema.org/datePosted',
-  );
+  static const datePosted = const IriTerm('https://schema.org/datePosted');
 
   /// IRI for schema:datePublished [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -14453,7 +13686,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Certification, https://schema.org/CreativeWork
   ///
-  static const datePublished = IriTerm.prevalidated(
+  static const datePublished = const IriTerm(
     'https://schema.org/datePublished',
   );
 
@@ -14463,7 +13696,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Message
   ///
-  static const dateRead = IriTerm.prevalidated('https://schema.org/dateRead');
+  static const dateRead = const IriTerm('https://schema.org/dateRead');
 
   /// IRI for schema:dateReceived [Expects: https://schema.org/DateTime]
   ///
@@ -14471,9 +13704,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Message
   ///
-  static const dateReceived = IriTerm.prevalidated(
-    'https://schema.org/dateReceived',
-  );
+  static const dateReceived = const IriTerm('https://schema.org/dateReceived');
 
   /// IRI for schema:dateSent [Expects: https://schema.org/DateTime]
   ///
@@ -14481,7 +13712,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Message
   ///
-  static const dateSent = IriTerm.prevalidated('https://schema.org/dateSent');
+  static const dateSent = const IriTerm('https://schema.org/dateSent');
 
   /// IRI for schema:dateVehicleFirstRegistered [Expects: https://schema.org/Date]
   ///
@@ -14489,7 +13720,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const dateVehicleFirstRegistered = IriTerm.prevalidated(
+  static const dateVehicleFirstRegistered = const IriTerm(
     'https://schema.org/dateVehicleFirstRegistered',
   );
 
@@ -14504,7 +13735,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsArticle
   ///
-  static const dateline = IriTerm.prevalidated('https://schema.org/dateline');
+  static const dateline = const IriTerm('https://schema.org/dateline');
 
   /// IRI for schema:dayOfWeek [Expects: https://schema.org/DayOfWeek]
   ///
@@ -14512,7 +13743,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram, https://schema.org/OpeningHoursSpecification
   ///
-  static const dayOfWeek = IriTerm.prevalidated('https://schema.org/dayOfWeek');
+  static const dayOfWeek = const IriTerm('https://schema.org/dayOfWeek');
 
   /// IRI for schema:deathDate [Expects: https://schema.org/Date]
   ///
@@ -14520,7 +13751,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const deathDate = IriTerm.prevalidated('https://schema.org/deathDate');
+  static const deathDate = const IriTerm('https://schema.org/deathDate');
 
   /// IRI for schema:deathPlace [Expects: https://schema.org/Place]
   ///
@@ -14528,9 +13759,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const deathPlace = IriTerm.prevalidated(
-    'https://schema.org/deathPlace',
-  );
+  static const deathPlace = const IriTerm('https://schema.org/deathPlace');
 
   /// IRI for schema:defaultValue [Expects: https://schema.org/Text, https://schema.org/Thing]
   ///
@@ -14538,9 +13767,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PropertyValueSpecification
   ///
-  static const defaultValue = IriTerm.prevalidated(
-    'https://schema.org/defaultValue',
-  );
+  static const defaultValue = const IriTerm('https://schema.org/defaultValue');
 
   /// IRI for schema:deliveryAddress [Expects: https://schema.org/PostalAddress]
   ///
@@ -14548,7 +13775,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ParcelDelivery
   ///
-  static const deliveryAddress = IriTerm.prevalidated(
+  static const deliveryAddress = const IriTerm(
     'https://schema.org/deliveryAddress',
   );
 
@@ -14558,7 +13785,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer
   ///
-  static const deliveryLeadTime = IriTerm.prevalidated(
+  static const deliveryLeadTime = const IriTerm(
     'https://schema.org/deliveryLeadTime',
   );
 
@@ -14568,7 +13795,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OrderAction, https://schema.org/ReceiveAction, https://schema.org/SendAction, https://schema.org/TrackAction
   ///
-  static const deliveryMethod = IriTerm.prevalidated(
+  static const deliveryMethod = const IriTerm(
     'https://schema.org/deliveryMethod',
   );
 
@@ -14578,7 +13805,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ParcelDelivery
   ///
-  static const deliveryStatus = IriTerm.prevalidated(
+  static const deliveryStatus = const IriTerm(
     'https://schema.org/deliveryStatus',
   );
 
@@ -14588,9 +13815,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DeliveryTimeSettings, https://schema.org/OfferShippingDetails
   ///
-  static const deliveryTime = IriTerm.prevalidated(
-    'https://schema.org/deliveryTime',
-  );
+  static const deliveryTime = const IriTerm('https://schema.org/deliveryTime');
 
   /// IRI for schema:department [Expects: https://schema.org/Organization]
   ///
@@ -14598,9 +13823,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const department = IriTerm.prevalidated(
-    'https://schema.org/department',
-  );
+  static const department = const IriTerm('https://schema.org/department');
 
   /// IRI for schema:departureAirport [Expects: https://schema.org/Airport]
   ///
@@ -14608,7 +13831,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Flight
   ///
-  static const departureAirport = IriTerm.prevalidated(
+  static const departureAirport = const IriTerm(
     'https://schema.org/departureAirport',
   );
 
@@ -14618,7 +13841,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BoatTrip
   ///
-  static const departureBoatTerminal = IriTerm.prevalidated(
+  static const departureBoatTerminal = const IriTerm(
     'https://schema.org/departureBoatTerminal',
   );
 
@@ -14628,7 +13851,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BusTrip
   ///
-  static const departureBusStop = IriTerm.prevalidated(
+  static const departureBusStop = const IriTerm(
     'https://schema.org/departureBusStop',
   );
 
@@ -14638,7 +13861,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Flight
   ///
-  static const departureGate = IriTerm.prevalidated(
+  static const departureGate = const IriTerm(
     'https://schema.org/departureGate',
   );
 
@@ -14648,7 +13871,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/TrainTrip
   ///
-  static const departurePlatform = IriTerm.prevalidated(
+  static const departurePlatform = const IriTerm(
     'https://schema.org/departurePlatform',
   );
 
@@ -14658,7 +13881,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/TrainTrip
   ///
-  static const departureStation = IriTerm.prevalidated(
+  static const departureStation = const IriTerm(
     'https://schema.org/departureStation',
   );
 
@@ -14668,7 +13891,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Flight
   ///
-  static const departureTerminal = IriTerm.prevalidated(
+  static const departureTerminal = const IriTerm(
     'https://schema.org/departureTerminal',
   );
 
@@ -14678,7 +13901,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Trip
   ///
-  static const departureTime = IriTerm.prevalidated(
+  static const departureTime = const IriTerm(
     'https://schema.org/departureTime',
   );
 
@@ -14688,9 +13911,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/TechArticle
   ///
-  static const dependencies = IriTerm.prevalidated(
-    'https://schema.org/dependencies',
-  );
+  static const dependencies = const IriTerm('https://schema.org/dependencies');
 
   /// IRI for schema:depth [Expects: https://schema.org/Distance, https://schema.org/QuantitativeValue]
   ///
@@ -14698,7 +13919,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OfferShippingDetails, https://schema.org/Product, https://schema.org/ShippingConditions, https://schema.org/VisualArtwork
   ///
-  static const depth = IriTerm.prevalidated('https://schema.org/depth');
+  static const depth = const IriTerm('https://schema.org/depth');
 
   /// IRI for schema:device [Expects: https://schema.org/Text]
   ///
@@ -14706,7 +13927,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const device = IriTerm.prevalidated('https://schema.org/device');
+  static const device = const IriTerm('https://schema.org/device');
 
   /// IRI for schema:diagnosis [Expects: https://schema.org/MedicalCondition]
   ///
@@ -14714,7 +13935,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DDxElement, https://schema.org/Patient
   ///
-  static const diagnosis = IriTerm.prevalidated('https://schema.org/diagnosis');
+  static const diagnosis = const IriTerm('https://schema.org/diagnosis');
 
   /// IRI for schema:diagram [Expects: https://schema.org/ImageObject]
   ///
@@ -14722,7 +13943,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AnatomicalStructure
   ///
-  static const diagram = IriTerm.prevalidated('https://schema.org/diagram');
+  static const diagram = const IriTerm('https://schema.org/diagram');
 
   /// IRI for schema:diet [Expects: https://schema.org/Diet]
   ///
@@ -14730,7 +13951,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExerciseAction
   ///
-  static const diet = IriTerm.prevalidated('https://schema.org/diet');
+  static const diet = const IriTerm('https://schema.org/diet');
 
   /// IRI for schema:dietFeatures [Expects: https://schema.org/Text]
   ///
@@ -14738,9 +13959,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Diet
   ///
-  static const dietFeatures = IriTerm.prevalidated(
-    'https://schema.org/dietFeatures',
-  );
+  static const dietFeatures = const IriTerm('https://schema.org/dietFeatures');
 
   /// IRI for schema:differentialDiagnosis [Expects: https://schema.org/DDxElement]
   ///
@@ -14748,7 +13967,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition
   ///
-  static const differentialDiagnosis = IriTerm.prevalidated(
+  static const differentialDiagnosis = const IriTerm(
     'https://schema.org/differentialDiagnosis',
   );
 
@@ -14758,7 +13977,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const digitalSourceType = IriTerm.prevalidated(
+  static const digitalSourceType = const IriTerm(
     'https://schema.org/digitalSourceType',
   );
 
@@ -14768,9 +13987,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const directApply = IriTerm.prevalidated(
-    'https://schema.org/directApply',
-  );
+  static const directApply = const IriTerm('https://schema.org/directApply');
 
   /// IRI for schema:directors [Expects: https://schema.org/Person]
   ///
@@ -14778,7 +13995,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Clip, https://schema.org/Episode, https://schema.org/Movie, https://schema.org/MovieSeries, https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGame, https://schema.org/VideoGameSeries, https://schema.org/VideoObject
   ///
-  static const directors = IriTerm.prevalidated('https://schema.org/directors');
+  static const directors = const IriTerm('https://schema.org/directors');
 
   /// IRI for schema:disambiguatingDescription [Expects: https://schema.org/Text]
   ///
@@ -14786,7 +14003,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const disambiguatingDescription = IriTerm.prevalidated(
+  static const disambiguatingDescription = const IriTerm(
     'https://schema.org/disambiguatingDescription',
   );
 
@@ -14796,7 +14013,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order
   ///
-  static const discount = IriTerm.prevalidated('https://schema.org/discount');
+  static const discount = const IriTerm('https://schema.org/discount');
 
   /// IRI for schema:discountCode [Expects: https://schema.org/Text]
   ///
@@ -14804,9 +14021,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order
   ///
-  static const discountCode = IriTerm.prevalidated(
-    'https://schema.org/discountCode',
-  );
+  static const discountCode = const IriTerm('https://schema.org/discountCode');
 
   /// IRI for schema:discountCurrency [Expects: https://schema.org/Text]
   ///
@@ -14814,7 +14029,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order
   ///
-  static const discountCurrency = IriTerm.prevalidated(
+  static const discountCurrency = const IriTerm(
     'https://schema.org/discountCurrency',
   );
 
@@ -14824,7 +14039,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/UserComments
   ///
-  static const discusses = IriTerm.prevalidated('https://schema.org/discusses');
+  static const discusses = const IriTerm('https://schema.org/discusses');
 
   /// IRI for schema:discussionUrl [Expects: https://schema.org/URL]
   ///
@@ -14832,7 +14047,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const discussionUrl = IriTerm.prevalidated(
+  static const discussionUrl = const IriTerm(
     'https://schema.org/discussionUrl',
   );
 
@@ -14842,7 +14057,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SpecialAnnouncement
   ///
-  static const diseasePreventionInfo = IriTerm.prevalidated(
+  static const diseasePreventionInfo = const IriTerm(
     'https://schema.org/diseasePreventionInfo',
   );
 
@@ -14854,7 +14069,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SpecialAnnouncement
   ///
-  static const diseaseSpreadStatistics = IriTerm.prevalidated(
+  static const diseaseSpreadStatistics = const IriTerm(
     'https://schema.org/diseaseSpreadStatistics',
   );
 
@@ -14864,7 +14079,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const dissolutionDate = IriTerm.prevalidated(
+  static const dissolutionDate = const IriTerm(
     'https://schema.org/dissolutionDate',
   );
 
@@ -14874,7 +14089,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExerciseAction, https://schema.org/TravelAction
   ///
-  static const distance = IriTerm.prevalidated('https://schema.org/distance');
+  static const distance = const IriTerm('https://schema.org/distance');
 
   /// IRI for schema:distinguishingSign [Expects: https://schema.org/MedicalSignOrSymptom]
   ///
@@ -14882,7 +14097,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DDxElement
   ///
-  static const distinguishingSign = IriTerm.prevalidated(
+  static const distinguishingSign = const IriTerm(
     'https://schema.org/distinguishingSign',
   );
 
@@ -14892,9 +14107,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Dataset
   ///
-  static const distribution = IriTerm.prevalidated(
-    'https://schema.org/distribution',
-  );
+  static const distribution = const IriTerm('https://schema.org/distribution');
 
   /// IRI for schema:diversityPolicy [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -14902,7 +14115,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsMediaOrganization, https://schema.org/Organization
   ///
-  static const diversityPolicy = IriTerm.prevalidated(
+  static const diversityPolicy = const IriTerm(
     'https://schema.org/diversityPolicy',
   );
 
@@ -14912,7 +14125,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsMediaOrganization, https://schema.org/Organization
   ///
-  static const diversityStaffingReport = IriTerm.prevalidated(
+  static const diversityStaffingReport = const IriTerm(
     'https://schema.org/diversityStaffingReport',
   );
 
@@ -14922,7 +14135,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WebAPI
   ///
-  static const documentation = IriTerm.prevalidated(
+  static const documentation = const IriTerm(
     'https://schema.org/documentation',
   );
 
@@ -14932,9 +14145,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OfferShippingDetails, https://schema.org/ShippingConditions, https://schema.org/ShippingRateSettings
   ///
-  static const doesNotShip = IriTerm.prevalidated(
-    'https://schema.org/doesNotShip',
-  );
+  static const doesNotShip = const IriTerm('https://schema.org/doesNotShip');
 
   /// IRI for schema:domainIncludes [Expects: https://schema.org/Class]
   ///
@@ -14942,7 +14153,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Property
   ///
-  static const domainIncludes = IriTerm.prevalidated(
+  static const domainIncludes = const IriTerm(
     'https://schema.org/domainIncludes',
   );
 
@@ -14952,7 +14163,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MortgageLoan
   ///
-  static const domiciledMortgage = IriTerm.prevalidated(
+  static const domiciledMortgage = const IriTerm(
     'https://schema.org/domiciledMortgage',
   );
 
@@ -14962,7 +14173,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const doorTime = IriTerm.prevalidated('https://schema.org/doorTime');
+  static const doorTime = const IriTerm('https://schema.org/doorTime');
 
   /// IRI for schema:dosageForm [Expects: https://schema.org/Text]
   ///
@@ -14970,9 +14181,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const dosageForm = IriTerm.prevalidated(
-    'https://schema.org/dosageForm',
-  );
+  static const dosageForm = const IriTerm('https://schema.org/dosageForm');
 
   /// IRI for schema:doseSchedule [Expects: https://schema.org/DoseSchedule]
   ///
@@ -14980,9 +14189,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug, https://schema.org/TherapeuticProcedure
   ///
-  static const doseSchedule = IriTerm.prevalidated(
-    'https://schema.org/doseSchedule',
-  );
+  static const doseSchedule = const IriTerm('https://schema.org/doseSchedule');
 
   /// IRI for schema:doseUnit [Expects: https://schema.org/Text]
   ///
@@ -14990,7 +14197,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DoseSchedule
   ///
-  static const doseUnit = IriTerm.prevalidated('https://schema.org/doseUnit');
+  static const doseUnit = const IriTerm('https://schema.org/doseUnit');
 
   /// IRI for schema:doseValue [Expects: https://schema.org/Number, https://schema.org/QualitativeValue]
   ///
@@ -14998,7 +14205,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DoseSchedule
   ///
-  static const doseValue = IriTerm.prevalidated('https://schema.org/doseValue');
+  static const doseValue = const IriTerm('https://schema.org/doseValue');
 
   /// IRI for schema:downPayment [Expects: https://schema.org/MonetaryAmount, https://schema.org/Number]
   ///
@@ -15006,9 +14213,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RepaymentSpecification
   ///
-  static const downPayment = IriTerm.prevalidated(
-    'https://schema.org/downPayment',
-  );
+  static const downPayment = const IriTerm('https://schema.org/downPayment');
 
   /// IRI for schema:downloadUrl [Expects: https://schema.org/URL]
   ///
@@ -15016,9 +14221,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const downloadUrl = IriTerm.prevalidated(
-    'https://schema.org/downloadUrl',
-  );
+  static const downloadUrl = const IriTerm('https://schema.org/downloadUrl');
 
   /// IRI for schema:downvoteCount [Expects: https://schema.org/Integer]
   ///
@@ -15026,7 +14229,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Comment
   ///
-  static const downvoteCount = IriTerm.prevalidated(
+  static const downvoteCount = const IriTerm(
     'https://schema.org/downvoteCount',
   );
 
@@ -15036,7 +14239,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vein
   ///
-  static const drainsTo = IriTerm.prevalidated('https://schema.org/drainsTo');
+  static const drainsTo = const IriTerm('https://schema.org/drainsTo');
 
   /// IRI for schema:driveWheelConfiguration [Expects: https://schema.org/DriveWheelConfigurationValue, https://schema.org/Text]
   ///
@@ -15044,7 +14247,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const driveWheelConfiguration = IriTerm.prevalidated(
+  static const driveWheelConfiguration = const IriTerm(
     'https://schema.org/driveWheelConfiguration',
   );
 
@@ -15054,7 +14257,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RentalCarReservation
   ///
-  static const dropoffLocation = IriTerm.prevalidated(
+  static const dropoffLocation = const IriTerm(
     'https://schema.org/dropoffLocation',
   );
 
@@ -15064,9 +14267,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RentalCarReservation
   ///
-  static const dropoffTime = IriTerm.prevalidated(
-    'https://schema.org/dropoffTime',
-  );
+  static const dropoffTime = const IriTerm('https://schema.org/dropoffTime');
 
   /// IRI for schema:drug [Expects: https://schema.org/Drug]
   ///
@@ -15074,7 +14275,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DrugClass, https://schema.org/MedicalCondition, https://schema.org/Patient, https://schema.org/TherapeuticProcedure
   ///
-  static const drug = IriTerm.prevalidated('https://schema.org/drug');
+  static const drug = const IriTerm('https://schema.org/drug');
 
   /// IRI for schema:drugClass [Expects: https://schema.org/DrugClass]
   ///
@@ -15082,7 +14283,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const drugClass = IriTerm.prevalidated('https://schema.org/drugClass');
+  static const drugClass = const IriTerm('https://schema.org/drugClass');
 
   /// IRI for schema:drugUnit [Expects: https://schema.org/Text]
   ///
@@ -15090,7 +14291,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug, https://schema.org/DrugCost
   ///
-  static const drugUnit = IriTerm.prevalidated('https://schema.org/drugUnit');
+  static const drugUnit = const IriTerm('https://schema.org/drugUnit');
 
   /// IRI for schema:duns [Expects: https://schema.org/Text]
   ///
@@ -15098,7 +14299,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const duns = IriTerm.prevalidated('https://schema.org/duns');
+  static const duns = const IriTerm('https://schema.org/duns');
 
   /// IRI for schema:duplicateTherapy [Expects: https://schema.org/MedicalTherapy]
   ///
@@ -15106,7 +14307,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalTherapy
   ///
-  static const duplicateTherapy = IriTerm.prevalidated(
+  static const duplicateTherapy = const IriTerm(
     'https://schema.org/duplicateTherapy',
   );
 
@@ -15116,7 +14317,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WarrantyPromise
   ///
-  static const durationOfWarranty = IriTerm.prevalidated(
+  static const durationOfWarranty = const IriTerm(
     'https://schema.org/durationOfWarranty',
   );
 
@@ -15126,9 +14327,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HowToDirection
   ///
-  static const duringMedia = IriTerm.prevalidated(
-    'https://schema.org/duringMedia',
-  );
+  static const duringMedia = const IriTerm('https://schema.org/duringMedia');
 
   /// IRI for schema:earlyPrepaymentPenalty [Expects: https://schema.org/MonetaryAmount]
   ///
@@ -15136,7 +14335,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RepaymentSpecification
   ///
-  static const earlyPrepaymentPenalty = IriTerm.prevalidated(
+  static const earlyPrepaymentPenalty = const IriTerm(
     'https://schema.org/earlyPrepaymentPenalty',
   );
 
@@ -15151,7 +14350,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const editEIDR = IriTerm.prevalidated('https://schema.org/editEIDR');
+  static const editEIDR = const IriTerm('https://schema.org/editEIDR');
 
   /// IRI for schema:editor [Expects: https://schema.org/Person]
   ///
@@ -15159,7 +14358,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const editor = IriTerm.prevalidated('https://schema.org/editor');
+  static const editor = const IriTerm('https://schema.org/editor');
 
   /// IRI for schema:eduQuestionType [Expects: https://schema.org/Text]
   ///
@@ -15167,7 +14366,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Question, https://schema.org/SolveMathAction
   ///
-  static const eduQuestionType = IriTerm.prevalidated(
+  static const eduQuestionType = const IriTerm(
     'https://schema.org/eduQuestionType',
   );
 
@@ -15177,7 +14376,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting, https://schema.org/Occupation
   ///
-  static const educationRequirements = IriTerm.prevalidated(
+  static const educationRequirements = const IriTerm(
     'https://schema.org/educationRequirements',
   );
 
@@ -15189,7 +14388,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/LearningResource
   ///
-  static const educationalAlignment = IriTerm.prevalidated(
+  static const educationalAlignment = const IriTerm(
     'https://schema.org/educationalAlignment',
   );
 
@@ -15199,7 +14398,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Course, https://schema.org/EducationalOccupationalProgram
   ///
-  static const educationalCredentialAwarded = IriTerm.prevalidated(
+  static const educationalCredentialAwarded = const IriTerm(
     'https://schema.org/educationalCredentialAwarded',
   );
 
@@ -15209,7 +14408,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AlignmentObject
   ///
-  static const educationalFramework = IriTerm.prevalidated(
+  static const educationalFramework = const IriTerm(
     'https://schema.org/educationalFramework',
   );
 
@@ -15219,7 +14418,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/EducationEvent, https://schema.org/EducationalOccupationalCredential, https://schema.org/LearningResource
   ///
-  static const educationalLevel = IriTerm.prevalidated(
+  static const educationalLevel = const IriTerm(
     'https://schema.org/educationalLevel',
   );
 
@@ -15229,7 +14428,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const educationalProgramMode = IriTerm.prevalidated(
+  static const educationalProgramMode = const IriTerm(
     'https://schema.org/educationalProgramMode',
   );
 
@@ -15239,7 +14438,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalAudience
   ///
-  static const educationalRole = IriTerm.prevalidated(
+  static const educationalRole = const IriTerm(
     'https://schema.org/educationalRole',
   );
 
@@ -15249,7 +14448,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/LearningResource
   ///
-  static const educationalUse = IriTerm.prevalidated(
+  static const educationalUse = const IriTerm(
     'https://schema.org/educationalUse',
   );
 
@@ -15259,7 +14458,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeoCoordinates, https://schema.org/GeoShape
   ///
-  static const elevation = IriTerm.prevalidated('https://schema.org/elevation');
+  static const elevation = const IriTerm('https://schema.org/elevation');
 
   /// IRI for schema:eligibilityToWorkRequirement [Expects: https://schema.org/Text]
   ///
@@ -15267,7 +14466,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const eligibilityToWorkRequirement = IriTerm.prevalidated(
+  static const eligibilityToWorkRequirement = const IriTerm(
     'https://schema.org/eligibilityToWorkRequirement',
   );
 
@@ -15277,7 +14476,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer
   ///
-  static const eligibleCustomerType = IriTerm.prevalidated(
+  static const eligibleCustomerType = const IriTerm(
     'https://schema.org/eligibleCustomerType',
   );
 
@@ -15287,7 +14486,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer
   ///
-  static const eligibleDuration = IriTerm.prevalidated(
+  static const eligibleDuration = const IriTerm(
     'https://schema.org/eligibleDuration',
   );
 
@@ -15297,7 +14496,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/PriceSpecification
   ///
-  static const eligibleQuantity = IriTerm.prevalidated(
+  static const eligibleQuantity = const IriTerm(
     'https://schema.org/eligibleQuantity',
   );
 
@@ -15308,7 +14507,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ActionAccessSpecification, https://schema.org/DeliveryChargeSpecification, https://schema.org/Demand, https://schema.org/Offer
   ///
-  static const eligibleRegion = IriTerm.prevalidated(
+  static const eligibleRegion = const IriTerm(
     'https://schema.org/eligibleRegion',
   );
 
@@ -15318,7 +14517,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/PriceSpecification
   ///
-  static const eligibleTransactionVolume = IriTerm.prevalidated(
+  static const eligibleTransactionVolume = const IriTerm(
     'https://schema.org/eligibleTransactionVolume',
   );
 
@@ -15328,7 +14527,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FinancialIncentive
   ///
-  static const eligibleWithSupplier = IriTerm.prevalidated(
+  static const eligibleWithSupplier = const IriTerm(
     'https://schema.org/eligibleWithSupplier',
   );
 
@@ -15338,7 +14537,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/Organization, https://schema.org/Person
   ///
-  static const email = IriTerm.prevalidated('https://schema.org/email');
+  static const email = const IriTerm('https://schema.org/email');
 
   /// IRI for schema:embedUrl [Expects: https://schema.org/URL]
   ///
@@ -15346,7 +14545,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaObject
   ///
-  static const embedUrl = IriTerm.prevalidated('https://schema.org/embedUrl');
+  static const embedUrl = const IriTerm('https://schema.org/embedUrl');
 
   /// IRI for schema:embeddedTextCaption [Expects: https://schema.org/Text]
   ///
@@ -15354,7 +14553,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AudioObject, https://schema.org/ImageObject, https://schema.org/VideoObject
   ///
-  static const embeddedTextCaption = IriTerm.prevalidated(
+  static const embeddedTextCaption = const IriTerm(
     'https://schema.org/embeddedTextCaption',
   );
 
@@ -15364,9 +14563,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const emissionsCO2 = IriTerm.prevalidated(
-    'https://schema.org/emissionsCO2',
-  );
+  static const emissionsCO2 = const IriTerm('https://schema.org/emissionsCO2');
 
   /// IRI for schema:employees [Expects: https://schema.org/Person]
   ///
@@ -15374,7 +14571,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const employees = IriTerm.prevalidated('https://schema.org/employees');
+  static const employees = const IriTerm('https://schema.org/employees');
 
   /// IRI for schema:employerOverview [Expects: https://schema.org/Text]
   ///
@@ -15382,7 +14579,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const employerOverview = IriTerm.prevalidated(
+  static const employerOverview = const IriTerm(
     'https://schema.org/employerOverview',
   );
 
@@ -15392,7 +14589,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const employmentType = IriTerm.prevalidated(
+  static const employmentType = const IriTerm(
     'https://schema.org/employmentType',
   );
 
@@ -15402,7 +14599,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const employmentUnit = IriTerm.prevalidated(
+  static const employmentUnit = const IriTerm(
     'https://schema.org/employmentUnit',
   );
 
@@ -15412,9 +14609,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EntryPoint
   ///
-  static const encodingType = IriTerm.prevalidated(
-    'https://schema.org/encodingType',
-  );
+  static const encodingType = const IriTerm('https://schema.org/encodingType');
 
   /// IRI for schema:encodings [Expects: https://schema.org/MediaObject]
   ///
@@ -15422,7 +14617,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const encodings = IriTerm.prevalidated('https://schema.org/encodings');
+  static const encodings = const IriTerm('https://schema.org/encodings');
 
   /// IRI for schema:endDate [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -15430,7 +14625,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWorkSeason, https://schema.org/CreativeWorkSeries, https://schema.org/DatedMoneySpecification, https://schema.org/EducationalOccupationalProgram, https://schema.org/Event, https://schema.org/MerchantReturnPolicySeasonalOverride, https://schema.org/Role, https://schema.org/Schedule
   ///
-  static const endDate = IriTerm.prevalidated('https://schema.org/endDate');
+  static const endDate = const IriTerm('https://schema.org/endDate');
 
   /// IRI for schema:endOffset [Expects: https://schema.org/HyperTocEntry, https://schema.org/Number]
   ///
@@ -15438,7 +14633,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Clip
   ///
-  static const endOffset = IriTerm.prevalidated('https://schema.org/endOffset');
+  static const endOffset = const IriTerm('https://schema.org/endOffset');
 
   /// IRI for schema:endTime [Expects: https://schema.org/DateTime, https://schema.org/Time]
   ///
@@ -15446,7 +14641,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Action, https://schema.org/FoodEstablishmentReservation, https://schema.org/InteractionCounter, https://schema.org/MediaObject, https://schema.org/Schedule
   ///
-  static const endTime = IriTerm.prevalidated('https://schema.org/endTime');
+  static const endTime = const IriTerm('https://schema.org/endTime');
 
   /// IRI for schema:endorsee [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -15454,7 +14649,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EndorseAction
   ///
-  static const endorsee = IriTerm.prevalidated('https://schema.org/endorsee');
+  static const endorsee = const IriTerm('https://schema.org/endorsee');
 
   /// IRI for schema:endorsers [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -15462,7 +14657,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Diet
   ///
-  static const endorsers = IriTerm.prevalidated('https://schema.org/endorsers');
+  static const endorsers = const IriTerm('https://schema.org/endorsers');
 
   /// IRI for schema:energyEfficiencyScaleMax [Expects: https://schema.org/EUEnergyEfficiencyEnumeration]
   ///
@@ -15470,7 +14665,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EnergyConsumptionDetails
   ///
-  static const energyEfficiencyScaleMax = IriTerm.prevalidated(
+  static const energyEfficiencyScaleMax = const IriTerm(
     'https://schema.org/energyEfficiencyScaleMax',
   );
 
@@ -15480,7 +14675,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EnergyConsumptionDetails
   ///
-  static const energyEfficiencyScaleMin = IriTerm.prevalidated(
+  static const energyEfficiencyScaleMin = const IriTerm(
     'https://schema.org/energyEfficiencyScaleMin',
   );
 
@@ -15490,7 +14685,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EngineSpecification
   ///
-  static const engineDisplacement = IriTerm.prevalidated(
+  static const engineDisplacement = const IriTerm(
     'https://schema.org/engineDisplacement',
   );
 
@@ -15501,9 +14696,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EngineSpecification
   ///
-  static const enginePower = IriTerm.prevalidated(
-    'https://schema.org/enginePower',
-  );
+  static const enginePower = const IriTerm('https://schema.org/enginePower');
 
   /// IRI for schema:engineType [Expects: https://schema.org/QualitativeValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -15511,9 +14704,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EngineSpecification
   ///
-  static const engineType = IriTerm.prevalidated(
-    'https://schema.org/engineType',
-  );
+  static const engineType = const IriTerm('https://schema.org/engineType');
 
   /// IRI for schema:entertainmentBusiness [Expects: https://schema.org/EntertainmentBusiness]
   ///
@@ -15521,7 +14712,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PerformAction
   ///
-  static const entertainmentBusiness = IriTerm.prevalidated(
+  static const entertainmentBusiness = const IriTerm(
     'https://schema.org/entertainmentBusiness',
   );
 
@@ -15531,9 +14722,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition, https://schema.org/PhysicalActivity
   ///
-  static const epidemiology = IriTerm.prevalidated(
-    'https://schema.org/epidemiology',
-  );
+  static const epidemiology = const IriTerm('https://schema.org/epidemiology');
 
   /// IRI for schema:episodeNumber [Expects: https://schema.org/Integer, https://schema.org/Text]
   ///
@@ -15541,7 +14730,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Episode
   ///
-  static const episodeNumber = IriTerm.prevalidated(
+  static const episodeNumber = const IriTerm(
     'https://schema.org/episodeNumber',
   );
 
@@ -15551,7 +14740,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWorkSeason, https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGameSeries
   ///
-  static const episodes = IriTerm.prevalidated('https://schema.org/episodes');
+  static const episodes = const IriTerm('https://schema.org/episodes');
 
   /// IRI for schema:equal [Expects: https://schema.org/QualitativeValue]
   ///
@@ -15559,7 +14748,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/QualitativeValue
   ///
-  static const equal = IriTerm.prevalidated('https://schema.org/equal');
+  static const equal = const IriTerm('https://schema.org/equal');
 
   /// IRI for schema:error [Expects: https://schema.org/Thing]
   ///
@@ -15567,7 +14756,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Action
   ///
-  static const error = IriTerm.prevalidated('https://schema.org/error');
+  static const error = const IriTerm('https://schema.org/error');
 
   /// IRI for schema:estimatedCost [Expects: https://schema.org/MonetaryAmount, https://schema.org/Text]
   ///
@@ -15575,7 +14764,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HowTo, https://schema.org/HowToSupply
   ///
-  static const estimatedCost = IriTerm.prevalidated(
+  static const estimatedCost = const IriTerm(
     'https://schema.org/estimatedCost',
   );
 
@@ -15585,7 +14774,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Flight
   ///
-  static const estimatedFlightDuration = IriTerm.prevalidated(
+  static const estimatedFlightDuration = const IriTerm(
     'https://schema.org/estimatedFlightDuration',
   );
 
@@ -15595,7 +14784,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting, https://schema.org/Occupation
   ///
-  static const estimatedSalary = IriTerm.prevalidated(
+  static const estimatedSalary = const IriTerm(
     'https://schema.org/estimatedSalary',
   );
 
@@ -15605,7 +14794,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalRiskEstimator
   ///
-  static const estimatesRiskOf = IriTerm.prevalidated(
+  static const estimatesRiskOf = const IriTerm(
     'https://schema.org/estimatesRiskOf',
   );
 
@@ -15615,9 +14804,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsMediaOrganization, https://schema.org/Organization
   ///
-  static const ethicsPolicy = IriTerm.prevalidated(
-    'https://schema.org/ethicsPolicy',
-  );
+  static const ethicsPolicy = const IriTerm('https://schema.org/ethicsPolicy');
 
   /// IRI for schema:eventAttendanceMode [Expects: https://schema.org/EventAttendanceModeEnumeration]
   ///
@@ -15625,7 +14812,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const eventAttendanceMode = IriTerm.prevalidated(
+  static const eventAttendanceMode = const IriTerm(
     'https://schema.org/eventAttendanceMode',
   );
 
@@ -15640,7 +14827,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const eventSchedule = IriTerm.prevalidated(
+  static const eventSchedule = const IriTerm(
     'https://schema.org/eventSchedule',
   );
 
@@ -15650,9 +14837,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const eventStatus = IriTerm.prevalidated(
-    'https://schema.org/eventStatus',
-  );
+  static const eventStatus = const IriTerm('https://schema.org/eventStatus');
 
   /// IRI for schema:events [Expects: https://schema.org/Event]
   ///
@@ -15660,7 +14845,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Place
   ///
-  static const events = IriTerm.prevalidated('https://schema.org/events');
+  static const events = const IriTerm('https://schema.org/events');
 
   /// IRI for schema:evidenceLevel [Expects: https://schema.org/MedicalEvidenceLevel]
   ///
@@ -15668,7 +14853,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalGuideline
   ///
-  static const evidenceLevel = IriTerm.prevalidated(
+  static const evidenceLevel = const IriTerm(
     'https://schema.org/evidenceLevel',
   );
 
@@ -15678,7 +14863,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalGuideline
   ///
-  static const evidenceOrigin = IriTerm.prevalidated(
+  static const evidenceOrigin = const IriTerm(
     'https://schema.org/evidenceOrigin',
   );
 
@@ -15691,9 +14876,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Schedule
   ///
-  static const exceptDate = IriTerm.prevalidated(
-    'https://schema.org/exceptDate',
-  );
+  static const exceptDate = const IriTerm('https://schema.org/exceptDate');
 
   /// IRI for schema:exchangeRateSpread [Expects: https://schema.org/MonetaryAmount, https://schema.org/Number]
   ///
@@ -15701,7 +14884,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExchangeRateSpecification
   ///
-  static const exchangeRateSpread = IriTerm.prevalidated(
+  static const exchangeRateSpread = const IriTerm(
     'https://schema.org/exchangeRateSpread',
   );
 
@@ -15711,9 +14894,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExerciseAction
   ///
-  static const exercisePlan = IriTerm.prevalidated(
-    'https://schema.org/exercisePlan',
-  );
+  static const exercisePlan = const IriTerm('https://schema.org/exercisePlan');
 
   /// IRI for schema:exerciseRelatedDiet [Expects: https://schema.org/Diet]
   ///
@@ -15721,7 +14902,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExerciseAction
   ///
-  static const exerciseRelatedDiet = IriTerm.prevalidated(
+  static const exerciseRelatedDiet = const IriTerm(
     'https://schema.org/exerciseRelatedDiet',
   );
 
@@ -15731,9 +14912,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExerciseAction, https://schema.org/ExercisePlan
   ///
-  static const exerciseType = IriTerm.prevalidated(
-    'https://schema.org/exerciseType',
-  );
+  static const exerciseType = const IriTerm('https://schema.org/exerciseType');
 
   /// IRI for schema:exifData [Expects: https://schema.org/PropertyValue, https://schema.org/Text]
   ///
@@ -15741,7 +14920,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ImageObject
   ///
-  static const exifData = IriTerm.prevalidated('https://schema.org/exifData');
+  static const exifData = const IriTerm('https://schema.org/exifData');
 
   /// IRI for schema:expectedArrivalFrom [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -15749,7 +14928,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ParcelDelivery
   ///
-  static const expectedArrivalFrom = IriTerm.prevalidated(
+  static const expectedArrivalFrom = const IriTerm(
     'https://schema.org/expectedArrivalFrom',
   );
 
@@ -15759,7 +14938,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ParcelDelivery
   ///
-  static const expectedArrivalUntil = IriTerm.prevalidated(
+  static const expectedArrivalUntil = const IriTerm(
     'https://schema.org/expectedArrivalUntil',
   );
 
@@ -15769,7 +14948,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition
   ///
-  static const expectedPrognosis = IriTerm.prevalidated(
+  static const expectedPrognosis = const IriTerm(
     'https://schema.org/expectedPrognosis',
   );
 
@@ -15779,7 +14958,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ActionAccessSpecification, https://schema.org/ConsumeAction, https://schema.org/MediaSubscription
   ///
-  static const expectsAcceptanceOf = IriTerm.prevalidated(
+  static const expectsAcceptanceOf = const IriTerm(
     'https://schema.org/expectsAcceptanceOf',
   );
 
@@ -15789,7 +14968,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const experienceInPlaceOfEducation = IriTerm.prevalidated(
+  static const experienceInPlaceOfEducation = const IriTerm(
     'https://schema.org/experienceInPlaceOfEducation',
   );
 
@@ -15799,7 +14978,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting, https://schema.org/Occupation
   ///
-  static const experienceRequirements = IriTerm.prevalidated(
+  static const experienceRequirements = const IriTerm(
     'https://schema.org/experienceRequirements',
   );
 
@@ -15809,7 +14988,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Diet
   ///
-  static const expertConsiderations = IriTerm.prevalidated(
+  static const expertConsiderations = const IriTerm(
     'https://schema.org/expertConsiderations',
   );
 
@@ -15819,7 +14998,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Certification, https://schema.org/CreativeWork
   ///
-  static const expires = IriTerm.prevalidated('https://schema.org/expires');
+  static const expires = const IriTerm('https://schema.org/expires');
 
   /// IRI for schema:expressedIn [Expects: https://schema.org/AnatomicalStructure, https://schema.org/AnatomicalSystem, https://schema.org/BioChemEntity, https://schema.org/DefinedTerm]
   ///
@@ -15827,9 +15006,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Gene
   ///
-  static const expressedIn = IriTerm.prevalidated(
-    'https://schema.org/expressedIn',
-  );
+  static const expressedIn = const IriTerm('https://schema.org/expressedIn');
 
   /// IRI for schema:extendedAddress [Expects: https://schema.org/Text]
   ///
@@ -15837,7 +15014,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PostalAddress
   ///
-  static const extendedAddress = IriTerm.prevalidated(
+  static const extendedAddress = const IriTerm(
     'https://schema.org/extendedAddress',
   );
 
@@ -15847,9 +15024,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const familyName = IriTerm.prevalidated(
-    'https://schema.org/familyName',
-  );
+  static const familyName = const IriTerm('https://schema.org/familyName');
 
   /// IRI for schema:fatContent [Expects: https://schema.org/Mass]
   ///
@@ -15857,9 +15032,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const fatContent = IriTerm.prevalidated(
-    'https://schema.org/fatContent',
-  );
+  static const fatContent = const IriTerm('https://schema.org/fatContent');
 
   /// IRI for schema:faxNumber [Expects: https://schema.org/Text]
   ///
@@ -15867,7 +15040,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place
   ///
-  static const faxNumber = IriTerm.prevalidated('https://schema.org/faxNumber');
+  static const faxNumber = const IriTerm('https://schema.org/faxNumber');
 
   /// IRI for schema:featureList [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -15875,9 +15048,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const featureList = IriTerm.prevalidated(
-    'https://schema.org/featureList',
-  );
+  static const featureList = const IriTerm('https://schema.org/featureList');
 
   /// IRI for schema:feesAndCommissionsSpecification [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -15885,7 +15056,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FinancialProduct, https://schema.org/FinancialService
   ///
-  static const feesAndCommissionsSpecification = IriTerm.prevalidated(
+  static const feesAndCommissionsSpecification = const IriTerm(
     'https://schema.org/feesAndCommissionsSpecification',
   );
 
@@ -15895,9 +15066,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const fiberContent = IriTerm.prevalidated(
-    'https://schema.org/fiberContent',
-  );
+  static const fiberContent = const IriTerm('https://schema.org/fiberContent');
 
   /// IRI for schema:fileFormat [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -15905,9 +15074,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const fileFormat = IriTerm.prevalidated(
-    'https://schema.org/fileFormat',
-  );
+  static const fileFormat = const IriTerm('https://schema.org/fileFormat');
 
   /// IRI for schema:fileSize [Expects: https://schema.org/Text]
   ///
@@ -15915,7 +15082,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const fileSize = IriTerm.prevalidated('https://schema.org/fileSize');
+  static const fileSize = const IriTerm('https://schema.org/fileSize');
 
   /// IRI for schema:financialAidEligible [Expects: https://schema.org/DefinedTerm, https://schema.org/Text]
   ///
@@ -15923,7 +15090,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Course, https://schema.org/EducationalOccupationalProgram
   ///
-  static const financialAidEligible = IriTerm.prevalidated(
+  static const financialAidEligible = const IriTerm(
     'https://schema.org/financialAidEligible',
   );
 
@@ -15933,7 +15100,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Claim
   ///
-  static const firstAppearance = IriTerm.prevalidated(
+  static const firstAppearance = const IriTerm(
     'https://schema.org/firstAppearance',
   );
 
@@ -15943,7 +15110,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicComposition
   ///
-  static const firstPerformance = IriTerm.prevalidated(
+  static const firstPerformance = const IriTerm(
     'https://schema.org/firstPerformance',
   );
 
@@ -15953,7 +15120,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Flight
   ///
-  static const flightDistance = IriTerm.prevalidated(
+  static const flightDistance = const IriTerm(
     'https://schema.org/flightDistance',
   );
 
@@ -15963,9 +15130,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Flight
   ///
-  static const flightNumber = IriTerm.prevalidated(
-    'https://schema.org/flightNumber',
-  );
+  static const flightNumber = const IriTerm('https://schema.org/flightNumber');
 
   /// IRI for schema:floorLevel [Expects: https://schema.org/Text]
   ///
@@ -15974,9 +15139,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation
   ///
-  static const floorLevel = IriTerm.prevalidated(
-    'https://schema.org/floorLevel',
-  );
+  static const floorLevel = const IriTerm('https://schema.org/floorLevel');
 
   /// IRI for schema:floorLimit [Expects: https://schema.org/MonetaryAmount]
   ///
@@ -15984,9 +15147,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PaymentCard
   ///
-  static const floorLimit = IriTerm.prevalidated(
-    'https://schema.org/floorLimit',
-  );
+  static const floorLimit = const IriTerm('https://schema.org/floorLimit');
 
   /// IRI for schema:floorSize [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -15995,7 +15156,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/FloorPlan
   ///
-  static const floorSize = IriTerm.prevalidated('https://schema.org/floorSize');
+  static const floorSize = const IriTerm('https://schema.org/floorSize');
 
   /// IRI for schema:followee [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -16003,7 +15164,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FollowAction
   ///
-  static const followee = IriTerm.prevalidated('https://schema.org/followee');
+  static const followee = const IriTerm('https://schema.org/followee');
 
   /// IRI for schema:follows [Expects: https://schema.org/Person]
   ///
@@ -16011,7 +15172,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const follows = IriTerm.prevalidated('https://schema.org/follows');
+  static const follows = const IriTerm('https://schema.org/follows');
 
   /// IRI for schema:followup [Expects: https://schema.org/Text]
   ///
@@ -16019,7 +15180,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalProcedure
   ///
-  static const followup = IriTerm.prevalidated('https://schema.org/followup');
+  static const followup = const IriTerm('https://schema.org/followup');
 
   /// IRI for schema:foodEstablishment [Expects: https://schema.org/FoodEstablishment, https://schema.org/Place]
   ///
@@ -16027,7 +15188,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CookAction
   ///
-  static const foodEstablishment = IriTerm.prevalidated(
+  static const foodEstablishment = const IriTerm(
     'https://schema.org/foodEstablishment',
   );
 
@@ -16037,7 +15198,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CookAction
   ///
-  static const foodEvent = IriTerm.prevalidated('https://schema.org/foodEvent');
+  static const foodEvent = const IriTerm('https://schema.org/foodEvent');
 
   /// IRI for schema:foodWarning [Expects: https://schema.org/Text]
   ///
@@ -16045,9 +15206,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const foodWarning = IriTerm.prevalidated(
-    'https://schema.org/foodWarning',
-  );
+  static const foodWarning = const IriTerm('https://schema.org/foodWarning');
 
   /// IRI for schema:founders [Expects: https://schema.org/Person]
   ///
@@ -16055,7 +15214,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const founders = IriTerm.prevalidated('https://schema.org/founders');
+  static const founders = const IriTerm('https://schema.org/founders');
 
   /// IRI for schema:foundingDate [Expects: https://schema.org/Date]
   ///
@@ -16063,9 +15222,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const foundingDate = IriTerm.prevalidated(
-    'https://schema.org/foundingDate',
-  );
+  static const foundingDate = const IriTerm('https://schema.org/foundingDate');
 
   /// IRI for schema:foundingLocation [Expects: https://schema.org/Place]
   ///
@@ -16073,7 +15230,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const foundingLocation = IriTerm.prevalidated(
+  static const foundingLocation = const IriTerm(
     'https://schema.org/foundingLocation',
   );
 
@@ -16083,7 +15240,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PublicationEvent
   ///
-  static const free = IriTerm.prevalidated('https://schema.org/free');
+  static const free = const IriTerm('https://schema.org/free');
 
   /// IRI for schema:freeShippingThreshold [Expects: https://schema.org/DeliveryChargeSpecification, https://schema.org/MonetaryAmount]
   ///
@@ -16091,7 +15248,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ShippingRateSettings
   ///
-  static const freeShippingThreshold = IriTerm.prevalidated(
+  static const freeShippingThreshold = const IriTerm(
     'https://schema.org/freeShippingThreshold',
   );
 
@@ -16101,9 +15258,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExerciseAction, https://schema.org/MoveAction, https://schema.org/TransferAction
   ///
-  static const fromLocation = IriTerm.prevalidated(
-    'https://schema.org/fromLocation',
-  );
+  static const fromLocation = const IriTerm('https://schema.org/fromLocation');
 
   /// IRI for schema:fuelCapacity [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -16111,9 +15266,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const fuelCapacity = IriTerm.prevalidated(
-    'https://schema.org/fuelCapacity',
-  );
+  static const fuelCapacity = const IriTerm('https://schema.org/fuelCapacity');
 
   /// IRI for schema:fuelConsumption [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -16121,7 +15274,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const fuelConsumption = IriTerm.prevalidated(
+  static const fuelConsumption = const IriTerm(
     'https://schema.org/fuelConsumption',
   );
 
@@ -16131,7 +15284,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const fuelEfficiency = IriTerm.prevalidated(
+  static const fuelEfficiency = const IriTerm(
     'https://schema.org/fuelEfficiency',
   );
 
@@ -16141,7 +15294,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EngineSpecification, https://schema.org/Vehicle
   ///
-  static const fuelType = IriTerm.prevalidated('https://schema.org/fuelType');
+  static const fuelType = const IriTerm('https://schema.org/fuelType');
 
   /// IRI for schema:fulfillmentType [Expects: https://schema.org/FulfillmentTypeEnumeration]
   ///
@@ -16149,7 +15302,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ShippingService
   ///
-  static const fulfillmentType = IriTerm.prevalidated(
+  static const fulfillmentType = const IriTerm(
     'https://schema.org/fulfillmentType',
   );
 
@@ -16159,7 +15312,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Joint
   ///
-  static const functionalClass = IriTerm.prevalidated(
+  static const functionalClass = const IriTerm(
     'https://schema.org/functionalClass',
   );
 
@@ -16169,7 +15322,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Grant, https://schema.org/MonetaryGrant, https://schema.org/Organization, https://schema.org/Person
   ///
-  static const funder = IriTerm.prevalidated('https://schema.org/funder');
+  static const funder = const IriTerm('https://schema.org/funder');
 
   /// IRI for schema:gameAvailabilityType [Expects: https://schema.org/GameAvailabilityEnumeration, https://schema.org/Text]
   ///
@@ -16177,7 +15330,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PlayGameAction
   ///
-  static const gameAvailabilityType = IriTerm.prevalidated(
+  static const gameAvailabilityType = const IriTerm(
     'https://schema.org/gameAvailabilityType',
   );
 
@@ -16187,9 +15340,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VideoGame
   ///
-  static const gameEdition = IriTerm.prevalidated(
-    'https://schema.org/gameEdition',
-  );
+  static const gameEdition = const IriTerm('https://schema.org/gameEdition');
 
   /// IRI for schema:gameItem [Expects: https://schema.org/Thing]
   ///
@@ -16197,7 +15348,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Game, https://schema.org/VideoGameSeries
   ///
-  static const gameItem = IriTerm.prevalidated('https://schema.org/gameItem');
+  static const gameItem = const IriTerm('https://schema.org/gameItem');
 
   /// IRI for schema:gameLocation [Expects: https://schema.org/Place, https://schema.org/PostalAddress, https://schema.org/URL]
   ///
@@ -16205,9 +15356,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Game, https://schema.org/VideoGameSeries
   ///
-  static const gameLocation = IriTerm.prevalidated(
-    'https://schema.org/gameLocation',
-  );
+  static const gameLocation = const IriTerm('https://schema.org/gameLocation');
 
   /// IRI for schema:gamePlatform [Expects: https://schema.org/Text, https://schema.org/Thing, https://schema.org/URL]
   ///
@@ -16215,9 +15364,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VideoGame, https://schema.org/VideoGameSeries
   ///
-  static const gamePlatform = IriTerm.prevalidated(
-    'https://schema.org/gamePlatform',
-  );
+  static const gamePlatform = const IriTerm('https://schema.org/gamePlatform');
 
   /// IRI for schema:gameTip [Expects: https://schema.org/CreativeWork]
   ///
@@ -16225,7 +15372,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VideoGame
   ///
-  static const gameTip = IriTerm.prevalidated('https://schema.org/gameTip');
+  static const gameTip = const IriTerm('https://schema.org/gameTip');
 
   /// IRI for schema:gender [Expects: https://schema.org/GenderType, https://schema.org/Text]
   ///
@@ -16233,7 +15380,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person, https://schema.org/SportsTeam
   ///
-  static const gender = IriTerm.prevalidated('https://schema.org/gender');
+  static const gender = const IriTerm('https://schema.org/gender');
 
   /// IRI for schema:geo [Expects: https://schema.org/GeoCoordinates, https://schema.org/GeoShape]
   ///
@@ -16241,7 +15388,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const geo = IriTerm.prevalidated('https://schema.org/geo');
+  static const geo = const IriTerm('https://schema.org/geo');
 
   /// IRI for schema:geoContains [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -16249,9 +15396,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoContains = IriTerm.prevalidated(
-    'https://schema.org/geoContains',
-  );
+  static const geoContains = const IriTerm('https://schema.org/geoContains');
 
   /// IRI for schema:geoCoveredBy [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -16259,9 +15404,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoCoveredBy = IriTerm.prevalidated(
-    'https://schema.org/geoCoveredBy',
-  );
+  static const geoCoveredBy = const IriTerm('https://schema.org/geoCoveredBy');
 
   /// IRI for schema:geoCovers [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -16269,7 +15412,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoCovers = IriTerm.prevalidated('https://schema.org/geoCovers');
+  static const geoCovers = const IriTerm('https://schema.org/geoCovers');
 
   /// IRI for schema:geoCrosses [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -16277,9 +15420,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoCrosses = IriTerm.prevalidated(
-    'https://schema.org/geoCrosses',
-  );
+  static const geoCrosses = const IriTerm('https://schema.org/geoCrosses');
 
   /// IRI for schema:geoDisjoint [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -16287,9 +15428,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoDisjoint = IriTerm.prevalidated(
-    'https://schema.org/geoDisjoint',
-  );
+  static const geoDisjoint = const IriTerm('https://schema.org/geoDisjoint');
 
   /// IRI for schema:geoEquals [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -16297,7 +15436,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoEquals = IriTerm.prevalidated('https://schema.org/geoEquals');
+  static const geoEquals = const IriTerm('https://schema.org/geoEquals');
 
   /// IRI for schema:geoIntersects [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -16305,7 +15444,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoIntersects = IriTerm.prevalidated(
+  static const geoIntersects = const IriTerm(
     'https://schema.org/geoIntersects',
   );
 
@@ -16315,9 +15454,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeoCircle
   ///
-  static const geoMidpoint = IriTerm.prevalidated(
-    'https://schema.org/geoMidpoint',
-  );
+  static const geoMidpoint = const IriTerm('https://schema.org/geoMidpoint');
 
   /// IRI for schema:geoOverlaps [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -16325,9 +15462,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoOverlaps = IriTerm.prevalidated(
-    'https://schema.org/geoOverlaps',
-  );
+  static const geoOverlaps = const IriTerm('https://schema.org/geoOverlaps');
 
   /// IRI for schema:geoRadius [Expects: https://schema.org/Distance, https://schema.org/Number, https://schema.org/Text]
   ///
@@ -16335,7 +15470,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeoCircle
   ///
-  static const geoRadius = IriTerm.prevalidated('https://schema.org/geoRadius');
+  static const geoRadius = const IriTerm('https://schema.org/geoRadius');
 
   /// IRI for schema:geoTouches [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -16343,9 +15478,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoTouches = IriTerm.prevalidated(
-    'https://schema.org/geoTouches',
-  );
+  static const geoTouches = const IriTerm('https://schema.org/geoTouches');
 
   /// IRI for schema:geoWithin [Expects: https://schema.org/GeospatialGeometry, https://schema.org/Place]
   ///
@@ -16353,7 +15486,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeospatialGeometry, https://schema.org/Place
   ///
-  static const geoWithin = IriTerm.prevalidated('https://schema.org/geoWithin');
+  static const geoWithin = const IriTerm('https://schema.org/geoWithin');
 
   /// IRI for schema:geographicArea [Expects: https://schema.org/AdministrativeArea]
   ///
@@ -16361,7 +15494,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Audience
   ///
-  static const geographicArea = IriTerm.prevalidated(
+  static const geographicArea = const IriTerm(
     'https://schema.org/geographicArea',
   );
 
@@ -16371,7 +15504,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SpecialAnnouncement
   ///
-  static const gettingTestedInfo = IriTerm.prevalidated(
+  static const gettingTestedInfo = const IriTerm(
     'https://schema.org/gettingTestedInfo',
   );
 
@@ -16381,7 +15514,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const givenName = IriTerm.prevalidated('https://schema.org/givenName');
+  static const givenName = const IriTerm('https://schema.org/givenName');
 
   /// IRI for schema:globalLocationNumber [Expects: https://schema.org/Text]
   ///
@@ -16389,7 +15522,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place
   ///
-  static const globalLocationNumber = IriTerm.prevalidated(
+  static const globalLocationNumber = const IriTerm(
     'https://schema.org/globalLocationNumber',
   );
 
@@ -16399,7 +15532,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SpecialAnnouncement
   ///
-  static const governmentBenefitsInfo = IriTerm.prevalidated(
+  static const governmentBenefitsInfo = const IriTerm(
     'https://schema.org/governmentBenefitsInfo',
   );
 
@@ -16409,9 +15542,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LoanOrCredit
   ///
-  static const gracePeriod = IriTerm.prevalidated(
-    'https://schema.org/gracePeriod',
-  );
+  static const gracePeriod = const IriTerm('https://schema.org/gracePeriod');
 
   /// IRI for schema:grantee [Expects: https://schema.org/Audience, https://schema.org/ContactPoint, https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -16419,7 +15550,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DigitalDocumentPermission
   ///
-  static const grantee = IriTerm.prevalidated('https://schema.org/grantee');
+  static const grantee = const IriTerm('https://schema.org/grantee');
 
   /// IRI for schema:greater [Expects: https://schema.org/QualitativeValue]
   ///
@@ -16427,7 +15558,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/QualitativeValue
   ///
-  static const greater = IriTerm.prevalidated('https://schema.org/greater');
+  static const greater = const IriTerm('https://schema.org/greater');
 
   /// IRI for schema:greaterOrEqual [Expects: https://schema.org/QualitativeValue]
   ///
@@ -16435,7 +15566,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/QualitativeValue
   ///
-  static const greaterOrEqual = IriTerm.prevalidated(
+  static const greaterOrEqual = const IriTerm(
     'https://schema.org/greaterOrEqual',
   );
 
@@ -16445,7 +15576,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/Product
   ///
-  static const gtin12 = IriTerm.prevalidated('https://schema.org/gtin12');
+  static const gtin12 = const IriTerm('https://schema.org/gtin12');
 
   /// IRI for schema:gtin13 [Expects: https://schema.org/Text]
   ///
@@ -16453,7 +15584,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/Product
   ///
-  static const gtin13 = IriTerm.prevalidated('https://schema.org/gtin13');
+  static const gtin13 = const IriTerm('https://schema.org/gtin13');
 
   /// IRI for schema:gtin14 [Expects: https://schema.org/Text]
   ///
@@ -16461,7 +15592,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/Product
   ///
-  static const gtin14 = IriTerm.prevalidated('https://schema.org/gtin14');
+  static const gtin14 = const IriTerm('https://schema.org/gtin14');
 
   /// IRI for schema:gtin8 [Expects: https://schema.org/Text]
   ///
@@ -16469,7 +15600,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/Product
   ///
-  static const gtin8 = IriTerm.prevalidated('https://schema.org/gtin8');
+  static const gtin8 = const IriTerm('https://schema.org/gtin8');
 
   /// IRI for schema:guideline [Expects: https://schema.org/MedicalGuideline]
   ///
@@ -16477,7 +15608,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalEntity
   ///
-  static const guideline = IriTerm.prevalidated('https://schema.org/guideline');
+  static const guideline = const IriTerm('https://schema.org/guideline');
 
   /// IRI for schema:guidelineDate [Expects: https://schema.org/Date]
   ///
@@ -16485,7 +15616,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalGuideline
   ///
-  static const guidelineDate = IriTerm.prevalidated(
+  static const guidelineDate = const IriTerm(
     'https://schema.org/guidelineDate',
   );
 
@@ -16495,7 +15626,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalGuideline
   ///
-  static const guidelineSubject = IriTerm.prevalidated(
+  static const guidelineSubject = const IriTerm(
     'https://schema.org/guidelineSubject',
   );
 
@@ -16509,9 +15640,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ShippingDeliveryTime, https://schema.org/ShippingService
   ///
-  static const handlingTime = IriTerm.prevalidated(
-    'https://schema.org/handlingTime',
-  );
+  static const handlingTime = const IriTerm('https://schema.org/handlingTime');
 
   /// IRI for schema:hasAdultConsideration [Expects: https://schema.org/AdultOrientedEnumeration]
   ///
@@ -16519,7 +15648,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Offer, https://schema.org/Product
   ///
-  static const hasAdultConsideration = IriTerm.prevalidated(
+  static const hasAdultConsideration = const IriTerm(
     'https://schema.org/hasAdultConsideration',
   );
 
@@ -16529,7 +15658,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Gene, https://schema.org/Protein
   ///
-  static const hasBioPolymerSequence = IriTerm.prevalidated(
+  static const hasBioPolymerSequence = const IriTerm(
     'https://schema.org/hasBioPolymerSequence',
   );
 
@@ -16539,7 +15668,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CategoryCodeSet
   ///
-  static const hasCategoryCode = IriTerm.prevalidated(
+  static const hasCategoryCode = const IriTerm(
     'https://schema.org/hasCategoryCode',
   );
 
@@ -16549,7 +15678,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const hasCertification = IriTerm.prevalidated(
+  static const hasCertification = const IriTerm(
     'https://schema.org/hasCertification',
   );
 
@@ -16559,7 +15688,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const hasCourse = IriTerm.prevalidated('https://schema.org/hasCourse');
+  static const hasCourse = const IriTerm('https://schema.org/hasCourse');
 
   /// IRI for schema:hasCourseInstance [Expects: https://schema.org/CourseInstance]
   ///
@@ -16567,7 +15696,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Course
   ///
-  static const hasCourseInstance = IriTerm.prevalidated(
+  static const hasCourseInstance = const IriTerm(
     'https://schema.org/hasCourseInstance',
   );
 
@@ -16577,7 +15706,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const hasCredential = IriTerm.prevalidated(
+  static const hasCredential = const IriTerm(
     'https://schema.org/hasCredential',
   );
 
@@ -16587,7 +15716,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DeliveryEvent, https://schema.org/ParcelDelivery
   ///
-  static const hasDeliveryMethod = IriTerm.prevalidated(
+  static const hasDeliveryMethod = const IriTerm(
     'https://schema.org/hasDeliveryMethod',
   );
 
@@ -16597,7 +15726,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DigitalDocument
   ///
-  static const hasDigitalDocumentPermission = IriTerm.prevalidated(
+  static const hasDigitalDocumentPermission = const IriTerm(
     'https://schema.org/hasDigitalDocumentPermission',
   );
 
@@ -16607,7 +15736,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const hasDriveThroughService = IriTerm.prevalidated(
+  static const hasDriveThroughService = const IriTerm(
     'https://schema.org/hasDriveThroughService',
   );
 
@@ -16617,7 +15746,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product
   ///
-  static const hasEnergyConsumptionDetails = IriTerm.prevalidated(
+  static const hasEnergyConsumptionDetails = const IriTerm(
     'https://schema.org/hasEnergyConsumptionDetails',
   );
 
@@ -16627,7 +15756,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EnergyConsumptionDetails
   ///
-  static const hasEnergyEfficiencyCategory = IriTerm.prevalidated(
+  static const hasEnergyEfficiencyCategory = const IriTerm(
     'https://schema.org/hasEnergyEfficiencyCategory',
   );
 
@@ -16637,7 +15766,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product
   ///
-  static const hasGS1DigitalLink = IriTerm.prevalidated(
+  static const hasGS1DigitalLink = const IriTerm(
     'https://schema.org/hasGS1DigitalLink',
   );
 
@@ -16647,7 +15776,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthTopicContent
   ///
-  static const hasHealthAspect = IriTerm.prevalidated(
+  static const hasHealthAspect = const IriTerm(
     'https://schema.org/hasHealthAspect',
   );
 
@@ -16657,7 +15786,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Certification, https://schema.org/Offer, https://schema.org/Product, https://schema.org/SizeSpecification
   ///
-  static const hasMeasurement = IriTerm.prevalidated(
+  static const hasMeasurement = const IriTerm(
     'https://schema.org/hasMeasurement',
   );
 
@@ -16667,7 +15796,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const hasMemberProgram = IriTerm.prevalidated(
+  static const hasMemberProgram = const IriTerm(
     'https://schema.org/hasMemberProgram',
   );
 
@@ -16677,9 +15806,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Menu, https://schema.org/MenuSection
   ///
-  static const hasMenuItem = IriTerm.prevalidated(
-    'https://schema.org/hasMenuItem',
-  );
+  static const hasMenuItem = const IriTerm('https://schema.org/hasMenuItem');
 
   /// IRI for schema:hasMenuSection [Expects: https://schema.org/MenuSection]
   ///
@@ -16687,7 +15814,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Menu, https://schema.org/MenuSection
   ///
-  static const hasMenuSection = IriTerm.prevalidated(
+  static const hasMenuSection = const IriTerm(
     'https://schema.org/hasMenuSection',
   );
 
@@ -16697,7 +15824,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Product
   ///
-  static const hasMerchantReturnPolicy = IriTerm.prevalidated(
+  static const hasMerchantReturnPolicy = const IriTerm(
     'https://schema.org/hasMerchantReturnPolicy',
   );
 
@@ -16707,7 +15834,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BioChemEntity
   ///
-  static const hasMolecularFunction = IriTerm.prevalidated(
+  static const hasMolecularFunction = const IriTerm(
     'https://schema.org/hasMolecularFunction',
   );
 
@@ -16717,7 +15844,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const hasOccupation = IriTerm.prevalidated(
+  static const hasOccupation = const IriTerm(
     'https://schema.org/hasOccupation',
   );
 
@@ -16727,7 +15854,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Service
   ///
-  static const hasOfferCatalog = IriTerm.prevalidated(
+  static const hasOfferCatalog = const IriTerm(
     'https://schema.org/hasOfferCatalog',
   );
 
@@ -16737,7 +15864,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const hasPOS = IriTerm.prevalidated('https://schema.org/hasPOS');
+  static const hasPOS = const IriTerm('https://schema.org/hasPOS');
 
   /// IRI for schema:hasShippingService [Expects: https://schema.org/ShippingService]
   ///
@@ -16745,9 +15872,17 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OfferShippingDetails, https://schema.org/Organization
   ///
-  static const hasShippingService = IriTerm.prevalidated(
+  static const hasShippingService = const IriTerm(
     'https://schema.org/hasShippingService',
   );
+
+  /// IRI for schema:hasStore [Expects: https://schema.org/OnlineStore]
+  ///
+  /// An eCommerce store part of an online marketplace.
+  ///
+  /// Can be used on: https://schema.org/OnlineMarketplace
+  ///
+  static const hasStore = const IriTerm('https://schema.org/hasStore');
 
   /// IRI for schema:hasTierBenefit [Expects: https://schema.org/TierBenefitEnumeration]
   ///
@@ -16755,7 +15890,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MemberProgramTier
   ///
-  static const hasTierBenefit = IriTerm.prevalidated(
+  static const hasTierBenefit = const IriTerm(
     'https://schema.org/hasTierBenefit',
   );
 
@@ -16765,7 +15900,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MemberProgramTier
   ///
-  static const hasTierRequirement = IriTerm.prevalidated(
+  static const hasTierRequirement = const IriTerm(
     'https://schema.org/hasTierRequirement',
   );
 
@@ -16775,7 +15910,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const headline = IriTerm.prevalidated('https://schema.org/headline');
+  static const headline = const IriTerm('https://schema.org/headline');
 
   /// IRI for schema:healthCondition [Expects: https://schema.org/MedicalCondition]
   ///
@@ -16783,7 +15918,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalStudy, https://schema.org/Patient, https://schema.org/PeopleAudience
   ///
-  static const healthCondition = IriTerm.prevalidated(
+  static const healthCondition = const IriTerm(
     'https://schema.org/healthCondition',
   );
 
@@ -16793,7 +15928,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthPlanCostSharingSpecification
   ///
-  static const healthPlanCoinsuranceOption = IriTerm.prevalidated(
+  static const healthPlanCoinsuranceOption = const IriTerm(
     'https://schema.org/healthPlanCoinsuranceOption',
   );
 
@@ -16803,7 +15938,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthPlanCostSharingSpecification
   ///
-  static const healthPlanCoinsuranceRate = IriTerm.prevalidated(
+  static const healthPlanCoinsuranceRate = const IriTerm(
     'https://schema.org/healthPlanCoinsuranceRate',
   );
 
@@ -16813,7 +15948,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthPlanCostSharingSpecification
   ///
-  static const healthPlanCopay = IriTerm.prevalidated(
+  static const healthPlanCopay = const IriTerm(
     'https://schema.org/healthPlanCopay',
   );
 
@@ -16823,7 +15958,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthPlanCostSharingSpecification
   ///
-  static const healthPlanCopayOption = IriTerm.prevalidated(
+  static const healthPlanCopayOption = const IriTerm(
     'https://schema.org/healthPlanCopayOption',
   );
 
@@ -16833,7 +15968,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthPlanFormulary, https://schema.org/HealthPlanNetwork
   ///
-  static const healthPlanCostSharing = IriTerm.prevalidated(
+  static const healthPlanCostSharing = const IriTerm(
     'https://schema.org/healthPlanCostSharing',
   );
 
@@ -16843,7 +15978,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthInsurancePlan
   ///
-  static const healthPlanDrugOption = IriTerm.prevalidated(
+  static const healthPlanDrugOption = const IriTerm(
     'https://schema.org/healthPlanDrugOption',
   );
 
@@ -16853,7 +15988,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthInsurancePlan, https://schema.org/HealthPlanFormulary
   ///
-  static const healthPlanDrugTier = IriTerm.prevalidated(
+  static const healthPlanDrugTier = const IriTerm(
     'https://schema.org/healthPlanDrugTier',
   );
 
@@ -16863,9 +15998,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthInsurancePlan
   ///
-  static const healthPlanId = IriTerm.prevalidated(
-    'https://schema.org/healthPlanId',
-  );
+  static const healthPlanId = const IriTerm('https://schema.org/healthPlanId');
 
   /// IRI for schema:healthPlanMarketingUrl [Expects: https://schema.org/URL]
   ///
@@ -16873,7 +16006,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthInsurancePlan
   ///
-  static const healthPlanMarketingUrl = IriTerm.prevalidated(
+  static const healthPlanMarketingUrl = const IriTerm(
     'https://schema.org/healthPlanMarketingUrl',
   );
 
@@ -16883,7 +16016,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthPlanNetwork, https://schema.org/MedicalOrganization
   ///
-  static const healthPlanNetworkId = IriTerm.prevalidated(
+  static const healthPlanNetworkId = const IriTerm(
     'https://schema.org/healthPlanNetworkId',
   );
 
@@ -16893,7 +16026,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthPlanNetwork
   ///
-  static const healthPlanNetworkTier = IriTerm.prevalidated(
+  static const healthPlanNetworkTier = const IriTerm(
     'https://schema.org/healthPlanNetworkTier',
   );
 
@@ -16903,7 +16036,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthPlanCostSharingSpecification
   ///
-  static const healthPlanPharmacyCategory = IriTerm.prevalidated(
+  static const healthPlanPharmacyCategory = const IriTerm(
     'https://schema.org/healthPlanPharmacyCategory',
   );
 
@@ -16913,7 +16046,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Hospital
   ///
-  static const healthcareReportingData = IriTerm.prevalidated(
+  static const healthcareReportingData = const IriTerm(
     'https://schema.org/healthcareReportingData',
   );
 
@@ -16923,7 +16056,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaObject, https://schema.org/OfferShippingDetails, https://schema.org/Person, https://schema.org/Product, https://schema.org/ShippingConditions, https://schema.org/VisualArtwork
   ///
-  static const height = IriTerm.prevalidated('https://schema.org/height');
+  static const height = const IriTerm('https://schema.org/height');
 
   /// IRI for schema:highPrice [Expects: https://schema.org/Number, https://schema.org/Text]
   ///
@@ -16931,7 +16064,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AggregateOffer
   ///
-  static const highPrice = IriTerm.prevalidated('https://schema.org/highPrice');
+  static const highPrice = const IriTerm('https://schema.org/highPrice');
 
   /// IRI for schema:hiringOrganization [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -16939,7 +16072,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const hiringOrganization = IriTerm.prevalidated(
+  static const hiringOrganization = const IriTerm(
     'https://schema.org/hiringOrganization',
   );
 
@@ -16949,9 +16082,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const homeLocation = IriTerm.prevalidated(
-    'https://schema.org/homeLocation',
-  );
+  static const homeLocation = const IriTerm('https://schema.org/homeLocation');
 
   /// IRI for schema:homeTeam [Expects: https://schema.org/Person, https://schema.org/SportsTeam]
   ///
@@ -16959,7 +16090,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SportsEvent
   ///
-  static const homeTeam = IriTerm.prevalidated('https://schema.org/homeTeam');
+  static const homeTeam = const IriTerm('https://schema.org/homeTeam');
 
   /// IRI for schema:honorificPrefix [Expects: https://schema.org/Text]
   ///
@@ -16967,7 +16098,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const honorificPrefix = IriTerm.prevalidated(
+  static const honorificPrefix = const IriTerm(
     'https://schema.org/honorificPrefix',
   );
 
@@ -16977,7 +16108,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const honorificSuffix = IriTerm.prevalidated(
+  static const honorificSuffix = const IriTerm(
     'https://schema.org/honorificSuffix',
   );
 
@@ -16987,7 +16118,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Physician
   ///
-  static const hospitalAffiliation = IriTerm.prevalidated(
+  static const hospitalAffiliation = const IriTerm(
     'https://schema.org/hospitalAffiliation',
   );
 
@@ -16997,7 +16128,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MemberProgram, https://schema.org/ProgramMembership
   ///
-  static const hostingOrganization = IriTerm.prevalidated(
+  static const hostingOrganization = const IriTerm(
     'https://schema.org/hostingOrganization',
   );
 
@@ -17007,7 +16138,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/LocationFeatureSpecification, https://schema.org/Service
   ///
-  static const hoursAvailable = IriTerm.prevalidated(
+  static const hoursAvailable = const IriTerm(
     'https://schema.org/hoursAvailable',
   );
 
@@ -17017,9 +16148,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalProcedure
   ///
-  static const howPerformed = IriTerm.prevalidated(
-    'https://schema.org/howPerformed',
-  );
+  static const howPerformed = const IriTerm('https://schema.org/howPerformed');
 
   /// IRI for schema:httpMethod [Expects: https://schema.org/Text]
   ///
@@ -17027,9 +16156,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EntryPoint
   ///
-  static const httpMethod = IriTerm.prevalidated(
-    'https://schema.org/httpMethod',
-  );
+  static const httpMethod = const IriTerm('https://schema.org/httpMethod');
 
   /// IRI for schema:iataCode [Expects: https://schema.org/Text]
   ///
@@ -17037,7 +16164,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Airline, https://schema.org/Airport
   ///
-  static const iataCode = IriTerm.prevalidated('https://schema.org/iataCode');
+  static const iataCode = const IriTerm('https://schema.org/iataCode');
 
   /// IRI for schema:icaoCode [Expects: https://schema.org/Text]
   ///
@@ -17045,7 +16172,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Airport
   ///
-  static const icaoCode = IriTerm.prevalidated('https://schema.org/icaoCode');
+  static const icaoCode = const IriTerm('https://schema.org/icaoCode');
 
   /// IRI for schema:identifyingExam [Expects: https://schema.org/PhysicalExam]
   ///
@@ -17053,7 +16180,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalSign
   ///
-  static const identifyingExam = IriTerm.prevalidated(
+  static const identifyingExam = const IriTerm(
     'https://schema.org/identifyingExam',
   );
 
@@ -17063,7 +16190,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalSign
   ///
-  static const identifyingTest = IriTerm.prevalidated(
+  static const identifyingTest = const IriTerm(
     'https://schema.org/identifyingTest',
   );
 
@@ -17073,9 +16200,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Book
   ///
-  static const illustrator = IriTerm.prevalidated(
-    'https://schema.org/illustrator',
-  );
+  static const illustrator = const IriTerm('https://schema.org/illustrator');
 
   /// IRI for schema:imagingTechnique [Expects: https://schema.org/MedicalImagingTechnique]
   ///
@@ -17083,7 +16208,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ImagingTest
   ///
-  static const imagingTechnique = IriTerm.prevalidated(
+  static const imagingTechnique = const IriTerm(
     'https://schema.org/imagingTechnique',
   );
 
@@ -17093,7 +16218,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicRecording
   ///
-  static const inAlbum = IriTerm.prevalidated('https://schema.org/inAlbum');
+  static const inAlbum = const IriTerm('https://schema.org/inAlbum');
 
   /// IRI for schema:inBroadcastLineup [Expects: https://schema.org/CableOrSatelliteService]
   ///
@@ -17101,7 +16226,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastChannel
   ///
-  static const inBroadcastLineup = IriTerm.prevalidated(
+  static const inBroadcastLineup = const IriTerm(
     'https://schema.org/inBroadcastLineup',
   );
 
@@ -17111,7 +16236,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MolecularEntity
   ///
-  static const inChI = IriTerm.prevalidated('https://schema.org/inChI');
+  static const inChI = const IriTerm('https://schema.org/inChI');
 
   /// IRI for schema:inChIKey [Expects: https://schema.org/Text]
   ///
@@ -17119,7 +16244,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MolecularEntity
   ///
-  static const inChIKey = IriTerm.prevalidated('https://schema.org/inChIKey');
+  static const inChIKey = const IriTerm('https://schema.org/inChIKey');
 
   /// IRI for schema:inCodeSet [Expects: https://schema.org/CategoryCodeSet, https://schema.org/URL]
   ///
@@ -17127,7 +16252,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CategoryCode
   ///
-  static const inCodeSet = IriTerm.prevalidated('https://schema.org/inCodeSet');
+  static const inCodeSet = const IriTerm('https://schema.org/inCodeSet');
 
   /// IRI for schema:inPlaylist [Expects: https://schema.org/MusicPlaylist]
   ///
@@ -17135,9 +16260,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicRecording
   ///
-  static const inPlaylist = IriTerm.prevalidated(
-    'https://schema.org/inPlaylist',
-  );
+  static const inPlaylist = const IriTerm('https://schema.org/inPlaylist');
 
   /// IRI for schema:inProductGroupWithID [Expects: https://schema.org/Text]
   ///
@@ -17145,7 +16268,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product
   ///
-  static const inProductGroupWithID = IriTerm.prevalidated(
+  static const inProductGroupWithID = const IriTerm(
     'https://schema.org/inProductGroupWithID',
   );
 
@@ -17155,7 +16278,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy
   ///
-  static const inStoreReturnsOffered = IriTerm.prevalidated(
+  static const inStoreReturnsOffered = const IriTerm(
     'https://schema.org/inStoreReturnsOffered',
   );
 
@@ -17165,9 +16288,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Thesis
   ///
-  static const inSupportOf = IriTerm.prevalidated(
-    'https://schema.org/inSupportOf',
-  );
+  static const inSupportOf = const IriTerm('https://schema.org/inSupportOf');
 
   /// IRI for schema:incentiveAmount [Expects: https://schema.org/LoanOrCredit, https://schema.org/QuantitativeValue, https://schema.org/UnitPriceSpecification]
   ///
@@ -17238,7 +16359,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FinancialIncentive
   ///
-  static const incentiveAmount = IriTerm.prevalidated(
+  static const incentiveAmount = const IriTerm(
     'https://schema.org/incentiveAmount',
   );
 
@@ -17248,7 +16369,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FinancialIncentive
   ///
-  static const incentiveStatus = IriTerm.prevalidated(
+  static const incentiveStatus = const IriTerm(
     'https://schema.org/incentiveStatus',
   );
 
@@ -17258,7 +16379,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FinancialIncentive
   ///
-  static const incentiveType = IriTerm.prevalidated(
+  static const incentiveType = const IriTerm(
     'https://schema.org/incentiveType',
   );
 
@@ -17268,9 +16389,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const incentives = IriTerm.prevalidated(
-    'https://schema.org/incentives',
-  );
+  static const incentives = const IriTerm('https://schema.org/incentives');
 
   /// IRI for schema:incentivizedItem [Expects: https://schema.org/DefinedTerm, https://schema.org/Product]
   ///
@@ -17292,7 +16411,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FinancialIncentive
   ///
-  static const incentivizedItem = IriTerm.prevalidated(
+  static const incentivizedItem = const IriTerm(
     'https://schema.org/incentivizedItem',
   );
 
@@ -17302,7 +16421,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicComposition
   ///
-  static const includedComposition = IriTerm.prevalidated(
+  static const includedComposition = const IriTerm(
     'https://schema.org/includedComposition',
   );
 
@@ -17312,7 +16431,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Dataset
   ///
-  static const includedDataCatalog = IriTerm.prevalidated(
+  static const includedDataCatalog = const IriTerm(
     'https://schema.org/includedDataCatalog',
   );
 
@@ -17322,7 +16441,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const includedInHealthInsurancePlan = IriTerm.prevalidated(
+  static const includedInHealthInsurancePlan = const IriTerm(
     'https://schema.org/includedInHealthInsurancePlan',
   );
 
@@ -17332,7 +16451,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalRiskEstimator
   ///
-  static const includedRiskFactor = IriTerm.prevalidated(
+  static const includedRiskFactor = const IriTerm(
     'https://schema.org/includedRiskFactor',
   );
 
@@ -17342,7 +16461,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/TouristDestination
   ///
-  static const includesAttraction = IriTerm.prevalidated(
+  static const includesAttraction = const IriTerm(
     'https://schema.org/includesAttraction',
   );
 
@@ -17352,7 +16471,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthInsurancePlan
   ///
-  static const includesHealthPlanFormulary = IriTerm.prevalidated(
+  static const includesHealthPlanFormulary = const IriTerm(
     'https://schema.org/includesHealthPlanFormulary',
   );
 
@@ -17362,7 +16481,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthInsurancePlan
   ///
-  static const includesHealthPlanNetwork = IriTerm.prevalidated(
+  static const includesHealthPlanNetwork = const IriTerm(
     'https://schema.org/includesHealthPlanNetwork',
   );
 
@@ -17372,7 +16491,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/ProductCollection
   ///
-  static const includesObject = IriTerm.prevalidated(
+  static const includesObject = const IriTerm(
     'https://schema.org/includesObject',
   );
 
@@ -17391,9 +16510,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FinancialIncentive
   ///
-  static const incomeLimit = IriTerm.prevalidated(
-    'https://schema.org/incomeLimit',
-  );
+  static const incomeLimit = const IriTerm('https://schema.org/incomeLimit');
 
   /// IRI for schema:increasesRiskOf [Expects: https://schema.org/MedicalEntity]
   ///
@@ -17401,7 +16518,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalRiskFactor
   ///
-  static const increasesRiskOf = IriTerm.prevalidated(
+  static const increasesRiskOf = const IriTerm(
     'https://schema.org/increasesRiskOf',
   );
 
@@ -17411,7 +16528,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const industry = IriTerm.prevalidated('https://schema.org/industry');
+  static const industry = const IriTerm('https://schema.org/industry');
 
   /// IRI for schema:ineligibleRegion [Expects: https://schema.org/GeoShape, https://schema.org/Place, https://schema.org/Text]
   ///
@@ -17420,7 +16537,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ActionAccessSpecification, https://schema.org/DeliveryChargeSpecification, https://schema.org/Demand, https://schema.org/MediaObject, https://schema.org/Offer
   ///
-  static const ineligibleRegion = IriTerm.prevalidated(
+  static const ineligibleRegion = const IriTerm(
     'https://schema.org/ineligibleRegion',
   );
 
@@ -17430,7 +16547,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/InfectiousDisease
   ///
-  static const infectiousAgent = IriTerm.prevalidated(
+  static const infectiousAgent = const IriTerm(
     'https://schema.org/infectiousAgent',
   );
 
@@ -17440,7 +16557,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/InfectiousDisease
   ///
-  static const infectiousAgentClass = IriTerm.prevalidated(
+  static const infectiousAgentClass = const IriTerm(
     'https://schema.org/infectiousAgentClass',
   );
 
@@ -17450,9 +16567,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Recipe
   ///
-  static const ingredients = IriTerm.prevalidated(
-    'https://schema.org/ingredients',
-  );
+  static const ingredients = const IriTerm('https://schema.org/ingredients');
 
   /// IRI for schema:inker [Expects: https://schema.org/Person]
   ///
@@ -17460,7 +16575,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ComicIssue, https://schema.org/ComicStory, https://schema.org/VisualArtwork
   ///
-  static const inker = IriTerm.prevalidated('https://schema.org/inker');
+  static const inker = const IriTerm('https://schema.org/inker');
 
   /// IRI for schema:insertion [Expects: https://schema.org/AnatomicalStructure]
   ///
@@ -17468,7 +16583,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Muscle
   ///
-  static const insertion = IriTerm.prevalidated('https://schema.org/insertion');
+  static const insertion = const IriTerm('https://schema.org/insertion');
 
   /// IRI for schema:installUrl [Expects: https://schema.org/URL]
   ///
@@ -17476,9 +16591,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const installUrl = IriTerm.prevalidated(
-    'https://schema.org/installUrl',
-  );
+  static const installUrl = const IriTerm('https://schema.org/installUrl');
 
   /// IRI for schema:instructor [Expects: https://schema.org/Person]
   ///
@@ -17486,9 +16599,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CourseInstance
   ///
-  static const instructor = IriTerm.prevalidated(
-    'https://schema.org/instructor',
-  );
+  static const instructor = const IriTerm('https://schema.org/instructor');
 
   /// IRI for schema:intensity [Expects: https://schema.org/QuantitativeValue, https://schema.org/Text]
   ///
@@ -17496,7 +16607,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExercisePlan
   ///
-  static const intensity = IriTerm.prevalidated('https://schema.org/intensity');
+  static const intensity = const IriTerm('https://schema.org/intensity');
 
   /// IRI for schema:interactingDrug [Expects: https://schema.org/Drug]
   ///
@@ -17504,7 +16615,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const interactingDrug = IriTerm.prevalidated(
+  static const interactingDrug = const IriTerm(
     'https://schema.org/interactingDrug',
   );
 
@@ -17514,7 +16625,7 @@ class Schema {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const interactionCount = IriTerm.prevalidated(
+  static const interactionCount = const IriTerm(
     'https://schema.org/interactionCount',
   );
 
@@ -17524,7 +16635,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/InteractionCounter
   ///
-  static const interactionService = IriTerm.prevalidated(
+  static const interactionService = const IriTerm(
     'https://schema.org/interactionService',
   );
 
@@ -17534,7 +16645,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/InteractionCounter
   ///
-  static const interactionType = IriTerm.prevalidated(
+  static const interactionType = const IriTerm(
     'https://schema.org/interactionType',
   );
 
@@ -17544,7 +16655,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const interactivityType = IriTerm.prevalidated(
+  static const interactivityType = const IriTerm(
     'https://schema.org/interactivityType',
   );
 
@@ -17554,9 +16665,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FinancialProduct
   ///
-  static const interestRate = IriTerm.prevalidated(
-    'https://schema.org/interestRate',
-  );
+  static const interestRate = const IriTerm('https://schema.org/interestRate');
 
   /// IRI for schema:interpretedAsClaim [Expects: https://schema.org/Claim]
   ///
@@ -17564,7 +16673,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/MediaObject
   ///
-  static const interpretedAsClaim = IriTerm.prevalidated(
+  static const interpretedAsClaim = const IriTerm(
     'https://schema.org/interpretedAsClaim',
   );
 
@@ -17574,7 +16683,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/SomeProducts
   ///
-  static const inventoryLevel = IriTerm.prevalidated(
+  static const inventoryLevel = const IriTerm(
     'https://schema.org/inventoryLevel',
   );
 
@@ -17584,7 +16693,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Property
   ///
-  static const inverseOf = IriTerm.prevalidated('https://schema.org/inverseOf');
+  static const inverseOf = const IriTerm('https://schema.org/inverseOf');
 
   /// IRI for schema:isAcceptingNewPatients [Expects: https://schema.org/Boolean]
   ///
@@ -17592,7 +16701,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalOrganization
   ///
-  static const isAcceptingNewPatients = IriTerm.prevalidated(
+  static const isAcceptingNewPatients = const IriTerm(
     'https://schema.org/isAcceptingNewPatients',
   );
 
@@ -17602,7 +16711,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product
   ///
-  static const isAccessoryOrSparePartFor = IriTerm.prevalidated(
+  static const isAccessoryOrSparePartFor = const IriTerm(
     'https://schema.org/isAccessoryOrSparePartFor',
   );
 
@@ -17612,7 +16721,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const isAvailableGenerically = IriTerm.prevalidated(
+  static const isAvailableGenerically = const IriTerm(
     'https://schema.org/isAvailableGenerically',
   );
 
@@ -17622,9 +16731,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const isBasedOnUrl = IriTerm.prevalidated(
-    'https://schema.org/isBasedOnUrl',
-  );
+  static const isBasedOnUrl = const IriTerm('https://schema.org/isBasedOnUrl');
 
   /// IRI for schema:isConsumableFor [Expects: https://schema.org/Product]
   ///
@@ -17632,7 +16739,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product
   ///
-  static const isConsumableFor = IriTerm.prevalidated(
+  static const isConsumableFor = const IriTerm(
     'https://schema.org/isConsumableFor',
   );
 
@@ -17642,7 +16749,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Offer, https://schema.org/Product
   ///
-  static const isFamilyFriendly = IriTerm.prevalidated(
+  static const isFamilyFriendly = const IriTerm(
     'https://schema.org/isFamilyFriendly',
   );
 
@@ -17652,7 +16759,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order
   ///
-  static const isGift = IriTerm.prevalidated('https://schema.org/isGift');
+  static const isGift = const IriTerm('https://schema.org/isGift');
 
   /// IRI for schema:isInvolvedInBiologicalProcess [Expects: https://schema.org/DefinedTerm, https://schema.org/PropertyValue, https://schema.org/URL]
   ///
@@ -17660,7 +16767,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BioChemEntity
   ///
-  static const isInvolvedInBiologicalProcess = IriTerm.prevalidated(
+  static const isInvolvedInBiologicalProcess = const IriTerm(
     'https://schema.org/isInvolvedInBiologicalProcess',
   );
 
@@ -17670,7 +16777,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastEvent
   ///
-  static const isLiveBroadcast = IriTerm.prevalidated(
+  static const isLiveBroadcast = const IriTerm(
     'https://schema.org/isLiveBroadcast',
   );
 
@@ -17680,7 +16787,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BioChemEntity
   ///
-  static const isLocatedInSubcellularLocation = IriTerm.prevalidated(
+  static const isLocatedInSubcellularLocation = const IriTerm(
     'https://schema.org/isLocatedInSubcellularLocation',
   );
 
@@ -17690,7 +16797,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FloorPlan
   ///
-  static const isPlanForApartment = IriTerm.prevalidated(
+  static const isPlanForApartment = const IriTerm(
     'https://schema.org/isPlanForApartment',
   );
 
@@ -17700,7 +16807,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DietarySupplement, https://schema.org/Drug
   ///
-  static const isProprietary = IriTerm.prevalidated(
+  static const isProprietary = const IriTerm(
     'https://schema.org/isProprietary',
   );
 
@@ -17710,9 +16817,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product, https://schema.org/Service
   ///
-  static const isRelatedTo = IriTerm.prevalidated(
-    'https://schema.org/isRelatedTo',
-  );
+  static const isRelatedTo = const IriTerm('https://schema.org/isRelatedTo');
 
   /// IRI for schema:isResizable [Expects: https://schema.org/Boolean]
   ///
@@ -17720,9 +16825,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/3DModel
   ///
-  static const isResizable = IriTerm.prevalidated(
-    'https://schema.org/isResizable',
-  );
+  static const isResizable = const IriTerm('https://schema.org/isResizable');
 
   /// IRI for schema:isSimilarTo [Expects: https://schema.org/Product, https://schema.org/Service]
   ///
@@ -17730,9 +16833,15 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product, https://schema.org/Service
   ///
-  static const isSimilarTo = IriTerm.prevalidated(
-    'https://schema.org/isSimilarTo',
-  );
+  static const isSimilarTo = const IriTerm('https://schema.org/isSimilarTo');
+
+  /// IRI for schema:isStoreOn [Expects: https://schema.org/OnlineMarketplace]
+  ///
+  /// The eCommerce marketplace this online store is on.
+  ///
+  /// Can be used on: https://schema.org/OnlineStore
+  ///
+  static const isStoreOn = const IriTerm('https://schema.org/isStoreOn');
 
   /// IRI for schema:isUnlabelledFallback [Expects: https://schema.org/Boolean]
   ///
@@ -17740,7 +16849,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DeliveryTimeSettings, https://schema.org/ShippingRateSettings
   ///
-  static const isUnlabelledFallback = IriTerm.prevalidated(
+  static const isUnlabelledFallback = const IriTerm(
     'https://schema.org/isUnlabelledFallback',
   );
 
@@ -17750,7 +16859,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Book
   ///
-  static const isbn = IriTerm.prevalidated('https://schema.org/isbn');
+  static const isbn = const IriTerm('https://schema.org/isbn');
 
   /// IRI for schema:isicV4 [Expects: https://schema.org/Text]
   ///
@@ -17758,7 +16867,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place
   ///
-  static const isicV4 = IriTerm.prevalidated('https://schema.org/isicV4');
+  static const isicV4 = const IriTerm('https://schema.org/isicV4');
 
   /// IRI for schema:iso6523Code [Expects: https://schema.org/Text]
   ///
@@ -17766,9 +16875,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const iso6523Code = IriTerm.prevalidated(
-    'https://schema.org/iso6523Code',
-  );
+  static const iso6523Code = const IriTerm('https://schema.org/iso6523Code');
 
   /// IRI for schema:isrcCode [Expects: https://schema.org/Text]
   ///
@@ -17776,7 +16883,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicRecording
   ///
-  static const isrcCode = IriTerm.prevalidated('https://schema.org/isrcCode');
+  static const isrcCode = const IriTerm('https://schema.org/isrcCode');
 
   /// IRI for schema:issn [Expects: https://schema.org/Text]
   ///
@@ -17784,7 +16891,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Blog, https://schema.org/CreativeWorkSeries, https://schema.org/Dataset, https://schema.org/WebSite
   ///
-  static const issn = IriTerm.prevalidated('https://schema.org/issn');
+  static const issn = const IriTerm('https://schema.org/issn');
 
   /// IRI for schema:issueNumber [Expects: https://schema.org/Integer, https://schema.org/Text]
   ///
@@ -17792,9 +16899,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PublicationIssue
   ///
-  static const issueNumber = IriTerm.prevalidated(
-    'https://schema.org/issueNumber',
-  );
+  static const issueNumber = const IriTerm('https://schema.org/issueNumber');
 
   /// IRI for schema:issuedBy [Expects: https://schema.org/Organization]
   ///
@@ -17802,7 +16907,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Certification, https://schema.org/Permit, https://schema.org/Ticket
   ///
-  static const issuedBy = IriTerm.prevalidated('https://schema.org/issuedBy');
+  static const issuedBy = const IriTerm('https://schema.org/issuedBy');
 
   /// IRI for schema:issuedThrough [Expects: https://schema.org/Service]
   ///
@@ -17810,7 +16915,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Permit
   ///
-  static const issuedThrough = IriTerm.prevalidated(
+  static const issuedThrough = const IriTerm(
     'https://schema.org/issuedThrough',
   );
 
@@ -17820,7 +16925,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicComposition
   ///
-  static const iswcCode = IriTerm.prevalidated('https://schema.org/iswcCode');
+  static const iswcCode = const IriTerm('https://schema.org/iswcCode');
 
   /// IRI for schema:item [Expects: https://schema.org/Thing]
   ///
@@ -17828,7 +16933,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DataFeedItem, https://schema.org/ListItem
   ///
-  static const item = IriTerm.prevalidated('https://schema.org/item');
+  static const item = const IriTerm('https://schema.org/item');
 
   /// IRI for schema:itemCondition [Expects: https://schema.org/OfferItemCondition]
   ///
@@ -17836,7 +16941,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/MerchantReturnPolicy, https://schema.org/Offer, https://schema.org/Product
   ///
-  static const itemCondition = IriTerm.prevalidated(
+  static const itemCondition = const IriTerm(
     'https://schema.org/itemCondition',
   );
 
@@ -17846,7 +16951,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy
   ///
-  static const itemDefectReturnFees = IriTerm.prevalidated(
+  static const itemDefectReturnFees = const IriTerm(
     'https://schema.org/itemDefectReturnFees',
   );
 
@@ -17856,7 +16961,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy
   ///
-  static const itemDefectReturnLabelSource = IriTerm.prevalidated(
+  static const itemDefectReturnLabelSource = const IriTerm(
     'https://schema.org/itemDefectReturnLabelSource',
   );
 
@@ -17866,7 +16971,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy
   ///
-  static const itemDefectReturnShippingFeesAmount = IriTerm.prevalidated(
+  static const itemDefectReturnShippingFeesAmount = const IriTerm(
     'https://schema.org/itemDefectReturnShippingFeesAmount',
   );
 
@@ -17876,7 +16981,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ItemList
   ///
-  static const itemListElement = IriTerm.prevalidated(
+  static const itemListElement = const IriTerm(
     'https://schema.org/itemListElement',
   );
 
@@ -17886,7 +16991,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ItemList
   ///
-  static const itemListOrder = IriTerm.prevalidated(
+  static const itemListOrder = const IriTerm(
     'https://schema.org/itemListOrder',
   );
 
@@ -17896,9 +17001,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ArchiveComponent
   ///
-  static const itemLocation = IriTerm.prevalidated(
-    'https://schema.org/itemLocation',
-  );
+  static const itemLocation = const IriTerm('https://schema.org/itemLocation');
 
   /// IRI for schema:itemReviewed [Expects: https://schema.org/Thing]
   ///
@@ -17906,9 +17009,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AggregateRating, https://schema.org/Review
   ///
-  static const itemReviewed = IriTerm.prevalidated(
-    'https://schema.org/itemReviewed',
-  );
+  static const itemReviewed = const IriTerm('https://schema.org/itemReviewed');
 
   /// IRI for schema:itemShipped [Expects: https://schema.org/Product]
   ///
@@ -17916,9 +17017,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ParcelDelivery
   ///
-  static const itemShipped = IriTerm.prevalidated(
-    'https://schema.org/itemShipped',
-  );
+  static const itemShipped = const IriTerm('https://schema.org/itemShipped');
 
   /// IRI for schema:itinerary [Expects: https://schema.org/ItemList, https://schema.org/Place]
   ///
@@ -17926,7 +17025,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Trip
   ///
-  static const itinerary = IriTerm.prevalidated('https://schema.org/itinerary');
+  static const itinerary = const IriTerm('https://schema.org/itinerary');
 
   /// IRI for schema:iupacName [Expects: https://schema.org/Text]
   ///
@@ -17934,7 +17033,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MolecularEntity
   ///
-  static const iupacName = IriTerm.prevalidated('https://schema.org/iupacName');
+  static const iupacName = const IriTerm('https://schema.org/iupacName');
 
   /// IRI for schema:jobImmediateStart [Expects: https://schema.org/Boolean]
   ///
@@ -17942,7 +17041,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const jobImmediateStart = IriTerm.prevalidated(
+  static const jobImmediateStart = const IriTerm(
     'https://schema.org/jobImmediateStart',
   );
 
@@ -17952,9 +17051,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const jobLocation = IriTerm.prevalidated(
-    'https://schema.org/jobLocation',
-  );
+  static const jobLocation = const IriTerm('https://schema.org/jobLocation');
 
   /// IRI for schema:jobLocationType [Expects: https://schema.org/Text]
   ///
@@ -17962,7 +17059,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const jobLocationType = IriTerm.prevalidated(
+  static const jobLocationType = const IriTerm(
     'https://schema.org/jobLocationType',
   );
 
@@ -17972,9 +17069,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const jobStartDate = IriTerm.prevalidated(
-    'https://schema.org/jobStartDate',
-  );
+  static const jobStartDate = const IriTerm('https://schema.org/jobStartDate');
 
   /// IRI for schema:jobTitle [Expects: https://schema.org/DefinedTerm, https://schema.org/Text]
   ///
@@ -17982,7 +17077,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const jobTitle = IriTerm.prevalidated('https://schema.org/jobTitle');
+  static const jobTitle = const IriTerm('https://schema.org/jobTitle');
 
   /// IRI for schema:keywords [Expects: https://schema.org/DefinedTerm, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -17990,7 +17085,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product
   ///
-  static const keywords = IriTerm.prevalidated('https://schema.org/keywords');
+  static const keywords = const IriTerm('https://schema.org/keywords');
 
   /// IRI for schema:knownVehicleDamages [Expects: https://schema.org/Text]
   ///
@@ -17998,7 +17093,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const knownVehicleDamages = IriTerm.prevalidated(
+  static const knownVehicleDamages = const IriTerm(
     'https://schema.org/knownVehicleDamages',
   );
 
@@ -18008,7 +17103,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const knows = IriTerm.prevalidated('https://schema.org/knows');
+  static const knows = const IriTerm('https://schema.org/knows');
 
   /// IRI for schema:knowsAbout [Expects: https://schema.org/Text, https://schema.org/Thing, https://schema.org/URL]
   ///
@@ -18016,9 +17111,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const knowsAbout = IriTerm.prevalidated(
-    'https://schema.org/knowsAbout',
-  );
+  static const knowsAbout = const IriTerm('https://schema.org/knowsAbout');
 
   /// IRI for schema:knowsLanguage [Expects: https://schema.org/Language, https://schema.org/Text]
   ///
@@ -18026,7 +17119,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const knowsLanguage = IriTerm.prevalidated(
+  static const knowsLanguage = const IriTerm(
     'https://schema.org/knowsLanguage',
   );
 
@@ -18036,9 +17129,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const labelDetails = IriTerm.prevalidated(
-    'https://schema.org/labelDetails',
-  );
+  static const labelDetails = const IriTerm('https://schema.org/labelDetails');
 
   /// IRI for schema:landlord [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -18046,7 +17137,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RentAction
   ///
-  static const landlord = IriTerm.prevalidated('https://schema.org/landlord');
+  static const landlord = const IriTerm('https://schema.org/landlord');
 
   /// IRI for schema:language [Expects: https://schema.org/Language]
   ///
@@ -18054,7 +17145,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CommunicateAction, https://schema.org/WriteAction
   ///
-  static const language = IriTerm.prevalidated('https://schema.org/language');
+  static const language = const IriTerm('https://schema.org/language');
 
   /// IRI for schema:lastReviewed [Expects: https://schema.org/Date]
   ///
@@ -18062,9 +17153,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WebPage
   ///
-  static const lastReviewed = IriTerm.prevalidated(
-    'https://schema.org/lastReviewed',
-  );
+  static const lastReviewed = const IriTerm('https://schema.org/lastReviewed');
 
   /// IRI for schema:latitude [Expects: https://schema.org/Number, https://schema.org/Text]
   ///
@@ -18072,7 +17161,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeoCoordinates, https://schema.org/Place
   ///
-  static const latitude = IriTerm.prevalidated('https://schema.org/latitude');
+  static const latitude = const IriTerm('https://schema.org/latitude');
 
   /// IRI for schema:layoutImage [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -18080,9 +17169,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FloorPlan
   ///
-  static const layoutImage = IriTerm.prevalidated(
-    'https://schema.org/layoutImage',
-  );
+  static const layoutImage = const IriTerm('https://schema.org/layoutImage');
 
   /// IRI for schema:learningResourceType [Expects: https://schema.org/DefinedTerm, https://schema.org/Text]
   ///
@@ -18090,7 +17177,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/LearningResource
   ///
-  static const learningResourceType = IriTerm.prevalidated(
+  static const learningResourceType = const IriTerm(
     'https://schema.org/learningResourceType',
   );
 
@@ -18100,9 +17187,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/Offer, https://schema.org/RealEstateListing
   ///
-  static const leaseLength = IriTerm.prevalidated(
-    'https://schema.org/leaseLength',
-  );
+  static const leaseLength = const IriTerm('https://schema.org/leaseLength');
 
   /// IRI for schema:legalAddress [Expects: https://schema.org/PostalAddress]
   ///
@@ -18110,9 +17195,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const legalAddress = IriTerm.prevalidated(
-    'https://schema.org/legalAddress',
-  );
+  static const legalAddress = const IriTerm('https://schema.org/legalAddress');
 
   /// IRI for schema:legalName [Expects: https://schema.org/Text]
   ///
@@ -18120,7 +17203,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const legalName = IriTerm.prevalidated('https://schema.org/legalName');
+  static const legalName = const IriTerm('https://schema.org/legalName');
 
   /// IRI for schema:legalRepresentative [Expects: https://schema.org/Person]
   ///
@@ -18128,7 +17211,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const legalRepresentative = IriTerm.prevalidated(
+  static const legalRepresentative = const IriTerm(
     'https://schema.org/legalRepresentative',
   );
 
@@ -18138,9 +17221,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DietarySupplement, https://schema.org/Drug, https://schema.org/MedicalEntity
   ///
-  static const legalStatus = IriTerm.prevalidated(
-    'https://schema.org/legalStatus',
-  );
+  static const legalStatus = const IriTerm('https://schema.org/legalStatus');
 
   /// IRI for schema:legislationAmends [Expects: https://schema.org/Legislation]
   ///
@@ -18148,7 +17229,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationAmends = IriTerm.prevalidated(
+  static const legislationAmends = const IriTerm(
     'https://schema.org/legislationAmends',
   );
 
@@ -18158,7 +17239,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationCommences = IriTerm.prevalidated(
+  static const legislationCommences = const IriTerm(
     'https://schema.org/legislationCommences',
   );
 
@@ -18168,7 +17249,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationConsolidates = IriTerm.prevalidated(
+  static const legislationConsolidates = const IriTerm(
     'https://schema.org/legislationConsolidates',
   );
 
@@ -18178,7 +17259,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationCorrects = IriTerm.prevalidated(
+  static const legislationCorrects = const IriTerm(
     'https://schema.org/legislationCorrects',
   );
 
@@ -18188,7 +17269,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationCountersignedBy = IriTerm.prevalidated(
+  static const legislationCountersignedBy = const IriTerm(
     'https://schema.org/legislationCountersignedBy',
   );
 
@@ -18198,7 +17279,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationDate = IriTerm.prevalidated(
+  static const legislationDate = const IriTerm(
     'https://schema.org/legislationDate',
   );
 
@@ -18208,7 +17289,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationDateOfApplicability = IriTerm.prevalidated(
+  static const legislationDateOfApplicability = const IriTerm(
     'https://schema.org/legislationDateOfApplicability',
   );
 
@@ -18218,7 +17299,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationDateVersion = IriTerm.prevalidated(
+  static const legislationDateVersion = const IriTerm(
     'https://schema.org/legislationDateVersion',
   );
 
@@ -18228,7 +17309,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationEnsuresImplementationOf = IriTerm.prevalidated(
+  static const legislationEnsuresImplementationOf = const IriTerm(
     'https://schema.org/legislationEnsuresImplementationOf',
   );
 
@@ -18238,7 +17319,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationIdentifier = IriTerm.prevalidated(
+  static const legislationIdentifier = const IriTerm(
     'https://schema.org/legislationIdentifier',
   );
 
@@ -18248,7 +17329,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationJurisdiction = IriTerm.prevalidated(
+  static const legislationJurisdiction = const IriTerm(
     'https://schema.org/legislationJurisdiction',
   );
 
@@ -18258,7 +17339,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationLegalForce = IriTerm.prevalidated(
+  static const legislationLegalForce = const IriTerm(
     'https://schema.org/legislationLegalForce',
   );
 
@@ -18268,7 +17349,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LegislationObject
   ///
-  static const legislationLegalValue = IriTerm.prevalidated(
+  static const legislationLegalValue = const IriTerm(
     'https://schema.org/legislationLegalValue',
   );
 
@@ -18278,7 +17359,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationPassedBy = IriTerm.prevalidated(
+  static const legislationPassedBy = const IriTerm(
     'https://schema.org/legislationPassedBy',
   );
 
@@ -18288,7 +17369,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationRepeals = IriTerm.prevalidated(
+  static const legislationRepeals = const IriTerm(
     'https://schema.org/legislationRepeals',
   );
 
@@ -18298,7 +17379,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationResponsible = IriTerm.prevalidated(
+  static const legislationResponsible = const IriTerm(
     'https://schema.org/legislationResponsible',
   );
 
@@ -18308,7 +17389,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationTransposes = IriTerm.prevalidated(
+  static const legislationTransposes = const IriTerm(
     'https://schema.org/legislationTransposes',
   );
 
@@ -18318,7 +17399,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationType = IriTerm.prevalidated(
+  static const legislationType = const IriTerm(
     'https://schema.org/legislationType',
   );
 
@@ -18328,7 +17409,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const leiCode = IriTerm.prevalidated('https://schema.org/leiCode');
+  static const leiCode = const IriTerm('https://schema.org/leiCode');
 
   /// IRI for schema:lender [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -18336,7 +17417,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BorrowAction
   ///
-  static const lender = IriTerm.prevalidated('https://schema.org/lender');
+  static const lender = const IriTerm('https://schema.org/lender');
 
   /// IRI for schema:lesser [Expects: https://schema.org/QualitativeValue]
   ///
@@ -18344,7 +17425,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/QualitativeValue
   ///
-  static const lesser = IriTerm.prevalidated('https://schema.org/lesser');
+  static const lesser = const IriTerm('https://schema.org/lesser');
 
   /// IRI for schema:lesserOrEqual [Expects: https://schema.org/QualitativeValue]
   ///
@@ -18352,7 +17433,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/QualitativeValue
   ///
-  static const lesserOrEqual = IriTerm.prevalidated(
+  static const lesserOrEqual = const IriTerm(
     'https://schema.org/lesserOrEqual',
   );
 
@@ -18362,7 +17443,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ComicIssue, https://schema.org/ComicStory, https://schema.org/VisualArtwork
   ///
-  static const letterer = IriTerm.prevalidated('https://schema.org/letterer');
+  static const letterer = const IriTerm('https://schema.org/letterer');
 
   /// IRI for schema:license [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -18370,7 +17451,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const license = IriTerm.prevalidated('https://schema.org/license');
+  static const license = const IriTerm('https://schema.org/license');
 
   /// IRI for schema:line [Expects: https://schema.org/Text]
   ///
@@ -18378,7 +17459,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeoShape
   ///
-  static const line = IriTerm.prevalidated('https://schema.org/line');
+  static const line = const IriTerm('https://schema.org/line');
 
   /// IRI for schema:linkRelationship [Expects: https://schema.org/Text]
   ///
@@ -18386,7 +17467,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LinkRole
   ///
-  static const linkRelationship = IriTerm.prevalidated(
+  static const linkRelationship = const IriTerm(
     'https://schema.org/linkRelationship',
   );
 
@@ -18396,7 +17477,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LiveBlogPosting
   ///
-  static const liveBlogUpdate = IriTerm.prevalidated(
+  static const liveBlogUpdate = const IriTerm(
     'https://schema.org/liveBlogUpdate',
   );
 
@@ -18406,7 +17487,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MortgageLoan
   ///
-  static const loanMortgageMandateAmount = IriTerm.prevalidated(
+  static const loanMortgageMandateAmount = const IriTerm(
     'https://schema.org/loanMortgageMandateAmount',
   );
 
@@ -18416,7 +17497,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RepaymentSpecification
   ///
-  static const loanPaymentAmount = IriTerm.prevalidated(
+  static const loanPaymentAmount = const IriTerm(
     'https://schema.org/loanPaymentAmount',
   );
 
@@ -18426,7 +17507,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RepaymentSpecification
   ///
-  static const loanPaymentFrequency = IriTerm.prevalidated(
+  static const loanPaymentFrequency = const IriTerm(
     'https://schema.org/loanPaymentFrequency',
   );
 
@@ -18436,7 +17517,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LoanOrCredit
   ///
-  static const loanRepaymentForm = IriTerm.prevalidated(
+  static const loanRepaymentForm = const IriTerm(
     'https://schema.org/loanRepaymentForm',
   );
 
@@ -18446,7 +17527,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LoanOrCredit
   ///
-  static const loanTerm = IriTerm.prevalidated('https://schema.org/loanTerm');
+  static const loanTerm = const IriTerm('https://schema.org/loanTerm');
 
   /// IRI for schema:loanType [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -18454,7 +17535,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LoanOrCredit
   ///
-  static const loanType = IriTerm.prevalidated('https://schema.org/loanType');
+  static const loanType = const IriTerm('https://schema.org/loanType');
 
   /// IRI for schema:locationCreated [Expects: https://schema.org/Place]
   ///
@@ -18462,7 +17543,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const locationCreated = IriTerm.prevalidated(
+  static const locationCreated = const IriTerm(
     'https://schema.org/locationCreated',
   );
 
@@ -18472,7 +17553,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LodgingReservation
   ///
-  static const lodgingUnitDescription = IriTerm.prevalidated(
+  static const lodgingUnitDescription = const IriTerm(
     'https://schema.org/lodgingUnitDescription',
   );
 
@@ -18482,7 +17563,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LodgingReservation
   ///
-  static const lodgingUnitType = IriTerm.prevalidated(
+  static const lodgingUnitType = const IriTerm(
     'https://schema.org/lodgingUnitType',
   );
 
@@ -18492,7 +17573,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/Certification, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const logo = IriTerm.prevalidated('https://schema.org/logo');
+  static const logo = const IriTerm('https://schema.org/logo');
 
   /// IRI for schema:longitude [Expects: https://schema.org/Number, https://schema.org/Text]
   ///
@@ -18500,7 +17581,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeoCoordinates, https://schema.org/Place
   ///
-  static const longitude = IriTerm.prevalidated('https://schema.org/longitude');
+  static const longitude = const IriTerm('https://schema.org/longitude');
 
   /// IRI for schema:loser [Expects: https://schema.org/Person]
   ///
@@ -18508,7 +17589,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WinAction
   ///
-  static const loser = IriTerm.prevalidated('https://schema.org/loser');
+  static const loser = const IriTerm('https://schema.org/loser');
 
   /// IRI for schema:lowPrice [Expects: https://schema.org/Number, https://schema.org/Text]
   ///
@@ -18516,7 +17597,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AggregateOffer
   ///
-  static const lowPrice = IriTerm.prevalidated('https://schema.org/lowPrice');
+  static const lowPrice = const IriTerm('https://schema.org/lowPrice');
 
   /// IRI for schema:lyricist [Expects: https://schema.org/Person]
   ///
@@ -18524,7 +17605,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicComposition
   ///
-  static const lyricist = IriTerm.prevalidated('https://schema.org/lyricist');
+  static const lyricist = const IriTerm('https://schema.org/lyricist');
 
   /// IRI for schema:lyrics [Expects: https://schema.org/CreativeWork]
   ///
@@ -18532,7 +17613,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicComposition
   ///
-  static const lyrics = IriTerm.prevalidated('https://schema.org/lyrics');
+  static const lyrics = const IriTerm('https://schema.org/lyrics');
 
   /// IRI for schema:maintainer [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -18541,9 +17622,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const maintainer = IriTerm.prevalidated(
-    'https://schema.org/maintainer',
-  );
+  static const maintainer = const IriTerm('https://schema.org/maintainer');
 
   /// IRI for schema:manufacturer [Expects: https://schema.org/Organization]
   ///
@@ -18551,9 +17630,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product
   ///
-  static const manufacturer = IriTerm.prevalidated(
-    'https://schema.org/manufacturer',
-  );
+  static const manufacturer = const IriTerm('https://schema.org/manufacturer');
 
   /// IRI for schema:map [Expects: https://schema.org/URL]
   ///
@@ -18561,7 +17638,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const map = IriTerm.prevalidated('https://schema.org/map');
+  static const map = const IriTerm('https://schema.org/map');
 
   /// IRI for schema:mapType [Expects: https://schema.org/MapCategoryType]
   ///
@@ -18569,7 +17646,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Map
   ///
-  static const mapType = IriTerm.prevalidated('https://schema.org/mapType');
+  static const mapType = const IriTerm('https://schema.org/mapType');
 
   /// IRI for schema:maps [Expects: https://schema.org/URL]
   ///
@@ -18577,7 +17654,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const maps = IriTerm.prevalidated('https://schema.org/maps');
+  static const maps = const IriTerm('https://schema.org/maps');
 
   /// IRI for schema:marginOfError [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -18585,7 +17662,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Observation
   ///
-  static const marginOfError = IriTerm.prevalidated(
+  static const marginOfError = const IriTerm(
     'https://schema.org/marginOfError',
   );
 
@@ -18595,7 +17672,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsMediaOrganization
   ///
-  static const masthead = IriTerm.prevalidated('https://schema.org/masthead');
+  static const masthead = const IriTerm('https://schema.org/masthead');
 
   /// IRI for schema:materialExtent [Expects: https://schema.org/QuantitativeValue, https://schema.org/Text]
   ///
@@ -18603,7 +17680,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const materialExtent = IriTerm.prevalidated(
+  static const materialExtent = const IriTerm(
     'https://schema.org/materialExtent',
   );
 
@@ -18613,7 +17690,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MathSolver
   ///
-  static const mathExpression = IriTerm.prevalidated(
+  static const mathExpression = const IriTerm(
     'https://schema.org/mathExpression',
   );
 
@@ -18623,7 +17700,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PriceSpecification
   ///
-  static const maxPrice = IriTerm.prevalidated('https://schema.org/maxPrice');
+  static const maxPrice = const IriTerm('https://schema.org/maxPrice');
 
   /// IRI for schema:maxValue [Expects: https://schema.org/Number]
   ///
@@ -18631,7 +17708,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MonetaryAmount, https://schema.org/PropertyValue, https://schema.org/PropertyValueSpecification, https://schema.org/QuantitativeValue
   ///
-  static const maxValue = IriTerm.prevalidated('https://schema.org/maxValue');
+  static const maxValue = const IriTerm('https://schema.org/maxValue');
 
   /// IRI for schema:maximumAttendeeCapacity [Expects: https://schema.org/Integer]
   ///
@@ -18639,7 +17716,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event, https://schema.org/Place
   ///
-  static const maximumAttendeeCapacity = IriTerm.prevalidated(
+  static const maximumAttendeeCapacity = const IriTerm(
     'https://schema.org/maximumAttendeeCapacity',
   );
 
@@ -18649,7 +17726,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const maximumEnrollment = IriTerm.prevalidated(
+  static const maximumEnrollment = const IriTerm(
     'https://schema.org/maximumEnrollment',
   );
 
@@ -18659,7 +17736,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DietarySupplement, https://schema.org/Drug, https://schema.org/DrugStrength, https://schema.org/Substance
   ///
-  static const maximumIntake = IriTerm.prevalidated(
+  static const maximumIntake = const IriTerm(
     'https://schema.org/maximumIntake',
   );
 
@@ -18669,7 +17746,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const maximumPhysicalAttendeeCapacity = IriTerm.prevalidated(
+  static const maximumPhysicalAttendeeCapacity = const IriTerm(
     'https://schema.org/maximumPhysicalAttendeeCapacity',
   );
 
@@ -18679,7 +17756,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const maximumVirtualAttendeeCapacity = IriTerm.prevalidated(
+  static const maximumVirtualAttendeeCapacity = const IriTerm(
     'https://schema.org/maximumVirtualAttendeeCapacity',
   );
 
@@ -18689,9 +17766,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Flight
   ///
-  static const mealService = IriTerm.prevalidated(
-    'https://schema.org/mealService',
-  );
+  static const mealService = const IriTerm('https://schema.org/mealService');
 
   /// IRI for schema:measuredProperty [Expects: https://schema.org/Property]
   ///
@@ -18699,7 +17774,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Observation, https://schema.org/StatisticalVariable
   ///
-  static const measuredProperty = IriTerm.prevalidated(
+  static const measuredProperty = const IriTerm(
     'https://schema.org/measuredProperty',
   );
 
@@ -18709,7 +17784,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Observation, https://schema.org/StatisticalVariable
   ///
-  static const measurementDenominator = IriTerm.prevalidated(
+  static const measurementDenominator = const IriTerm(
     'https://schema.org/measurementDenominator',
   );
 
@@ -18719,7 +17794,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DataCatalog, https://schema.org/DataDownload, https://schema.org/Dataset, https://schema.org/Observation, https://schema.org/PropertyValue, https://schema.org/StatisticalVariable
   ///
-  static const measurementMethod = IriTerm.prevalidated(
+  static const measurementMethod = const IriTerm(
     'https://schema.org/measurementMethod',
   );
 
@@ -18729,7 +17804,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Observation, https://schema.org/StatisticalVariable
   ///
-  static const measurementQualifier = IriTerm.prevalidated(
+  static const measurementQualifier = const IriTerm(
     'https://schema.org/measurementQualifier',
   );
 
@@ -18739,7 +17814,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DietarySupplement, https://schema.org/Drug
   ///
-  static const mechanismOfAction = IriTerm.prevalidated(
+  static const mechanismOfAction = const IriTerm(
     'https://schema.org/mechanismOfAction',
   );
 
@@ -18749,7 +17824,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaReview
   ///
-  static const mediaAuthenticityCategory = IriTerm.prevalidated(
+  static const mediaAuthenticityCategory = const IriTerm(
     'https://schema.org/mediaAuthenticityCategory',
   );
 
@@ -18759,7 +17834,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaReviewItem
   ///
-  static const mediaItemAppearance = IriTerm.prevalidated(
+  static const mediaItemAppearance = const IriTerm(
     'https://schema.org/mediaItemAppearance',
   );
 
@@ -18769,7 +17844,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/QuantitativeValueDistribution
   ///
-  static const median = IriTerm.prevalidated('https://schema.org/median');
+  static const median = const IriTerm('https://schema.org/median');
 
   /// IRI for schema:medicalAudience [Expects: https://schema.org/MedicalAudience, https://schema.org/MedicalAudienceType]
   ///
@@ -18777,7 +17852,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalWebPage
   ///
-  static const medicalAudience = IriTerm.prevalidated(
+  static const medicalAudience = const IriTerm(
     'https://schema.org/medicalAudience',
   );
 
@@ -18787,7 +17862,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Hospital, https://schema.org/MedicalClinic, https://schema.org/MedicalOrganization, https://schema.org/Physician
   ///
-  static const medicalSpecialty = IriTerm.prevalidated(
+  static const medicalSpecialty = const IriTerm(
     'https://schema.org/medicalSpecialty',
   );
 
@@ -18797,7 +17872,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalEntity
   ///
-  static const medicineSystem = IriTerm.prevalidated(
+  static const medicineSystem = const IriTerm(
     'https://schema.org/medicineSystem',
   );
 
@@ -18807,7 +17882,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const meetsEmissionStandard = IriTerm.prevalidated(
+  static const meetsEmissionStandard = const IriTerm(
     'https://schema.org/meetsEmissionStandard',
   );
 
@@ -18817,7 +17892,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/ProgramMembership
   ///
-  static const members = IriTerm.prevalidated('https://schema.org/members');
+  static const members = const IriTerm('https://schema.org/members');
 
   /// IRI for schema:membershipNumber [Expects: https://schema.org/Text]
   ///
@@ -18825,7 +17900,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ProgramMembership
   ///
-  static const membershipNumber = IriTerm.prevalidated(
+  static const membershipNumber = const IriTerm(
     'https://schema.org/membershipNumber',
   );
 
@@ -18835,7 +17910,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MemberProgramTier, https://schema.org/PriceSpecification, https://schema.org/ProgramMembership
   ///
-  static const membershipPointsEarned = IriTerm.prevalidated(
+  static const membershipPointsEarned = const IriTerm(
     'https://schema.org/membershipPointsEarned',
   );
 
@@ -18845,7 +17920,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const memoryRequirements = IriTerm.prevalidated(
+  static const memoryRequirements = const IriTerm(
     'https://schema.org/memoryRequirements',
   );
 
@@ -18855,7 +17930,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const mentions = IriTerm.prevalidated('https://schema.org/mentions');
+  static const mentions = const IriTerm('https://schema.org/mentions');
 
   /// IRI for schema:menu [Expects: https://schema.org/Menu, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -18863,7 +17938,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FoodEstablishment
   ///
-  static const menu = IriTerm.prevalidated('https://schema.org/menu');
+  static const menu = const IriTerm('https://schema.org/menu');
 
   /// IRI for schema:menuAddOn [Expects: https://schema.org/MenuItem, https://schema.org/MenuSection]
   ///
@@ -18871,7 +17946,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MenuItem
   ///
-  static const menuAddOn = IriTerm.prevalidated('https://schema.org/menuAddOn');
+  static const menuAddOn = const IriTerm('https://schema.org/menuAddOn');
 
   /// IRI for schema:merchant [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -18879,7 +17954,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order
   ///
-  static const merchant = IriTerm.prevalidated('https://schema.org/merchant');
+  static const merchant = const IriTerm('https://schema.org/merchant');
 
   /// IRI for schema:merchantReturnDays [Expects: https://schema.org/Date, https://schema.org/DateTime, https://schema.org/Integer]
   ///
@@ -18887,7 +17962,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy, https://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const merchantReturnDays = IriTerm.prevalidated(
+  static const merchantReturnDays = const IriTerm(
     'https://schema.org/merchantReturnDays',
   );
 
@@ -18897,7 +17972,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy
   ///
-  static const merchantReturnLink = IriTerm.prevalidated(
+  static const merchantReturnLink = const IriTerm(
     'https://schema.org/merchantReturnLink',
   );
 
@@ -18907,7 +17982,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Message
   ///
-  static const messageAttachment = IriTerm.prevalidated(
+  static const messageAttachment = const IriTerm(
     'https://schema.org/messageAttachment',
   );
 
@@ -18917,7 +17992,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const mileageFromOdometer = IriTerm.prevalidated(
+  static const mileageFromOdometer = const IriTerm(
     'https://schema.org/mileageFromOdometer',
   );
 
@@ -18927,7 +18002,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PriceSpecification
   ///
-  static const minPrice = IriTerm.prevalidated('https://schema.org/minPrice');
+  static const minPrice = const IriTerm('https://schema.org/minPrice');
 
   /// IRI for schema:minValue [Expects: https://schema.org/Number]
   ///
@@ -18935,7 +18010,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MonetaryAmount, https://schema.org/PropertyValue, https://schema.org/PropertyValueSpecification, https://schema.org/QuantitativeValue
   ///
-  static const minValue = IriTerm.prevalidated('https://schema.org/minValue');
+  static const minValue = const IriTerm('https://schema.org/minValue');
 
   /// IRI for schema:minimumPaymentDue [Expects: https://schema.org/MonetaryAmount, https://schema.org/PriceSpecification]
   ///
@@ -18943,7 +18018,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice
   ///
-  static const minimumPaymentDue = IriTerm.prevalidated(
+  static const minimumPaymentDue = const IriTerm(
     'https://schema.org/minimumPaymentDue',
   );
 
@@ -18953,7 +18028,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsMediaOrganization
   ///
-  static const missionCoveragePrioritiesPolicy = IriTerm.prevalidated(
+  static const missionCoveragePrioritiesPolicy = const IriTerm(
     'https://schema.org/missionCoveragePrioritiesPolicy',
   );
 
@@ -18966,7 +18041,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Offer, https://schema.org/Product
   ///
-  static const mobileUrl = IriTerm.prevalidated('https://schema.org/mobileUrl');
+  static const mobileUrl = const IriTerm('https://schema.org/mobileUrl');
 
   /// IRI for schema:model [Expects: https://schema.org/ProductModel, https://schema.org/Text]
   ///
@@ -18974,7 +18049,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product
   ///
-  static const model = IriTerm.prevalidated('https://schema.org/model');
+  static const model = const IriTerm('https://schema.org/model');
 
   /// IRI for schema:modelDate [Expects: https://schema.org/Date]
   ///
@@ -18982,7 +18057,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const modelDate = IriTerm.prevalidated('https://schema.org/modelDate');
+  static const modelDate = const IriTerm('https://schema.org/modelDate');
 
   /// IRI for schema:modifiedTime [Expects: https://schema.org/DateTime]
   ///
@@ -18990,9 +18065,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Reservation
   ///
-  static const modifiedTime = IriTerm.prevalidated(
-    'https://schema.org/modifiedTime',
-  );
+  static const modifiedTime = const IriTerm('https://schema.org/modifiedTime');
 
   /// IRI for schema:molecularFormula [Expects: https://schema.org/Text]
   ///
@@ -19000,7 +18073,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MolecularEntity
   ///
-  static const molecularFormula = IriTerm.prevalidated(
+  static const molecularFormula = const IriTerm(
     'https://schema.org/molecularFormula',
   );
 
@@ -19010,7 +18083,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MolecularEntity
   ///
-  static const molecularWeight = IriTerm.prevalidated(
+  static const molecularWeight = const IriTerm(
     'https://schema.org/molecularWeight',
   );
 
@@ -19020,7 +18093,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MolecularEntity
   ///
-  static const monoisotopicMolecularWeight = IriTerm.prevalidated(
+  static const monoisotopicMolecularWeight = const IriTerm(
     'https://schema.org/monoisotopicMolecularWeight',
   );
 
@@ -19030,7 +18103,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PaymentCard
   ///
-  static const monthlyMinimumRepaymentAmount = IriTerm.prevalidated(
+  static const monthlyMinimumRepaymentAmount = const IriTerm(
     'https://schema.org/monthlyMinimumRepaymentAmount',
   );
 
@@ -19040,7 +18113,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OccupationalExperienceRequirements
   ///
-  static const monthsOfExperience = IriTerm.prevalidated(
+  static const monthsOfExperience = const IriTerm(
     'https://schema.org/monthsOfExperience',
   );
 
@@ -19050,7 +18123,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/Product
   ///
-  static const mpn = IriTerm.prevalidated('https://schema.org/mpn');
+  static const mpn = const IriTerm('https://schema.org/mpn');
 
   /// IRI for schema:multipleValues [Expects: https://schema.org/Boolean]
   ///
@@ -19058,7 +18131,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PropertyValueSpecification
   ///
-  static const multipleValues = IriTerm.prevalidated(
+  static const multipleValues = const IriTerm(
     'https://schema.org/multipleValues',
   );
 
@@ -19068,9 +18141,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Muscle
   ///
-  static const muscleAction = IriTerm.prevalidated(
-    'https://schema.org/muscleAction',
-  );
+  static const muscleAction = const IriTerm('https://schema.org/muscleAction');
 
   /// IRI for schema:musicArrangement [Expects: https://schema.org/MusicComposition]
   ///
@@ -19078,7 +18149,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicComposition
   ///
-  static const musicArrangement = IriTerm.prevalidated(
+  static const musicArrangement = const IriTerm(
     'https://schema.org/musicArrangement',
   );
 
@@ -19088,7 +18159,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Clip, https://schema.org/Episode, https://schema.org/Movie, https://schema.org/MovieSeries, https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGame, https://schema.org/VideoGameSeries, https://schema.org/VideoObject
   ///
-  static const musicBy = IriTerm.prevalidated('https://schema.org/musicBy');
+  static const musicBy = const IriTerm('https://schema.org/musicBy');
 
   /// IRI for schema:musicCompositionForm [Expects: https://schema.org/Text]
   ///
@@ -19096,7 +18167,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicComposition
   ///
-  static const musicCompositionForm = IriTerm.prevalidated(
+  static const musicCompositionForm = const IriTerm(
     'https://schema.org/musicCompositionForm',
   );
 
@@ -19106,7 +18177,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicGroup
   ///
-  static const musicGroupMember = IriTerm.prevalidated(
+  static const musicGroupMember = const IriTerm(
     'https://schema.org/musicGroupMember',
   );
 
@@ -19116,7 +18187,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicRelease
   ///
-  static const musicReleaseFormat = IriTerm.prevalidated(
+  static const musicReleaseFormat = const IriTerm(
     'https://schema.org/musicReleaseFormat',
   );
 
@@ -19126,9 +18197,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicComposition
   ///
-  static const musicalKey = IriTerm.prevalidated(
-    'https://schema.org/musicalKey',
-  );
+  static const musicalKey = const IriTerm('https://schema.org/musicalKey');
 
   /// IRI for schema:naics [Expects: https://schema.org/Text]
   ///
@@ -19136,7 +18205,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const naics = IriTerm.prevalidated('https://schema.org/naics');
+  static const naics = const IriTerm('https://schema.org/naics');
 
   /// IRI for schema:name [Expects: https://schema.org/Text]
   ///
@@ -19144,7 +18213,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const name = IriTerm.prevalidated('https://schema.org/name');
+  static const name = const IriTerm('https://schema.org/name');
 
   /// IRI for schema:namedPosition [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -19152,7 +18221,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Role
   ///
-  static const namedPosition = IriTerm.prevalidated(
+  static const namedPosition = const IriTerm(
     'https://schema.org/namedPosition',
   );
 
@@ -19162,9 +18231,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const nationality = IriTerm.prevalidated(
-    'https://schema.org/nationality',
-  );
+  static const nationality = const IriTerm('https://schema.org/nationality');
 
   /// IRI for schema:naturalProgression [Expects: https://schema.org/Text]
   ///
@@ -19172,7 +18239,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition
   ///
-  static const naturalProgression = IriTerm.prevalidated(
+  static const naturalProgression = const IriTerm(
     'https://schema.org/naturalProgression',
   );
 
@@ -19187,7 +18254,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product, https://schema.org/Review
   ///
-  static const negativeNotes = IriTerm.prevalidated(
+  static const negativeNotes = const IriTerm(
     'https://schema.org/negativeNotes',
   );
 
@@ -19197,7 +18264,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Muscle
   ///
-  static const nerve = IriTerm.prevalidated('https://schema.org/nerve');
+  static const nerve = const IriTerm('https://schema.org/nerve');
 
   /// IRI for schema:nerveMotor [Expects: https://schema.org/Muscle]
   ///
@@ -19205,9 +18272,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Nerve
   ///
-  static const nerveMotor = IriTerm.prevalidated(
-    'https://schema.org/nerveMotor',
-  );
+  static const nerveMotor = const IriTerm('https://schema.org/nerveMotor');
 
   /// IRI for schema:netWorth [Expects: https://schema.org/MonetaryAmount, https://schema.org/PriceSpecification]
   ///
@@ -19215,7 +18280,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const netWorth = IriTerm.prevalidated('https://schema.org/netWorth');
+  static const netWorth = const IriTerm('https://schema.org/netWorth');
 
   /// IRI for schema:newsUpdatesAndGuidelines [Expects: https://schema.org/URL, https://schema.org/WebContent]
   ///
@@ -19223,7 +18288,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SpecialAnnouncement
   ///
-  static const newsUpdatesAndGuidelines = IriTerm.prevalidated(
+  static const newsUpdatesAndGuidelines = const IriTerm(
     'https://schema.org/newsUpdatesAndGuidelines',
   );
 
@@ -19233,7 +18298,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ListItem
   ///
-  static const nextItem = IriTerm.prevalidated('https://schema.org/nextItem');
+  static const nextItem = const IriTerm('https://schema.org/nextItem');
 
   /// IRI for schema:noBylinesPolicy [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -19241,7 +18306,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsMediaOrganization
   ///
-  static const noBylinesPolicy = IriTerm.prevalidated(
+  static const noBylinesPolicy = const IriTerm(
     'https://schema.org/noBylinesPolicy',
   );
 
@@ -19251,7 +18316,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/QualitativeValue
   ///
-  static const nonEqual = IriTerm.prevalidated('https://schema.org/nonEqual');
+  static const nonEqual = const IriTerm('https://schema.org/nonEqual');
 
   /// IRI for schema:nonProprietaryName [Expects: https://schema.org/Text]
   ///
@@ -19259,7 +18324,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DietarySupplement, https://schema.org/Drug
   ///
-  static const nonProprietaryName = IriTerm.prevalidated(
+  static const nonProprietaryName = const IriTerm(
     'https://schema.org/nonProprietaryName',
   );
 
@@ -19269,7 +18334,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const nonprofitStatus = IriTerm.prevalidated(
+  static const nonprofitStatus = const IriTerm(
     'https://schema.org/nonprofitStatus',
   );
 
@@ -19279,9 +18344,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalTest
   ///
-  static const normalRange = IriTerm.prevalidated(
-    'https://schema.org/normalRange',
-  );
+  static const normalRange = const IriTerm('https://schema.org/normalRange');
 
   /// IRI for schema:nsn [Expects: https://schema.org/Text]
   ///
@@ -19289,7 +18352,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product
   ///
-  static const nsn = IriTerm.prevalidated('https://schema.org/nsn');
+  static const nsn = const IriTerm('https://schema.org/nsn');
 
   /// IRI for schema:numAdults [Expects: https://schema.org/Integer, https://schema.org/QuantitativeValue]
   ///
@@ -19297,7 +18360,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LodgingReservation
   ///
-  static const numAdults = IriTerm.prevalidated('https://schema.org/numAdults');
+  static const numAdults = const IriTerm('https://schema.org/numAdults');
 
   /// IRI for schema:numChildren [Expects: https://schema.org/Integer, https://schema.org/QuantitativeValue]
   ///
@@ -19305,9 +18368,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LodgingReservation
   ///
-  static const numChildren = IriTerm.prevalidated(
-    'https://schema.org/numChildren',
-  );
+  static const numChildren = const IriTerm('https://schema.org/numChildren');
 
   /// IRI for schema:numConstraints [Expects: https://schema.org/Integer]
   ///
@@ -19315,7 +18376,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ConstraintNode
   ///
-  static const numConstraints = IriTerm.prevalidated(
+  static const numConstraints = const IriTerm(
     'https://schema.org/numConstraints',
   );
 
@@ -19325,7 +18386,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ShippingConditions
   ///
-  static const numItems = IriTerm.prevalidated('https://schema.org/numItems');
+  static const numItems = const IriTerm('https://schema.org/numItems');
 
   /// IRI for schema:numTracks [Expects: https://schema.org/Integer]
   ///
@@ -19333,7 +18394,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicPlaylist
   ///
-  static const numTracks = IriTerm.prevalidated('https://schema.org/numTracks');
+  static const numTracks = const IriTerm('https://schema.org/numTracks');
 
   /// IRI for schema:numberOfAccommodationUnits [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -19341,7 +18402,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ApartmentComplex, https://schema.org/FloorPlan
   ///
-  static const numberOfAccommodationUnits = IriTerm.prevalidated(
+  static const numberOfAccommodationUnits = const IriTerm(
     'https://schema.org/numberOfAccommodationUnits',
   );
 
@@ -19351,7 +18412,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const numberOfAirbags = IriTerm.prevalidated(
+  static const numberOfAirbags = const IriTerm(
     'https://schema.org/numberOfAirbags',
   );
 
@@ -19361,7 +18422,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ApartmentComplex, https://schema.org/FloorPlan
   ///
-  static const numberOfAvailableAccommodationUnits = IriTerm.prevalidated(
+  static const numberOfAvailableAccommodationUnits = const IriTerm(
     'https://schema.org/numberOfAvailableAccommodationUnits',
   );
 
@@ -19371,7 +18432,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const numberOfAxles = IriTerm.prevalidated(
+  static const numberOfAxles = const IriTerm(
     'https://schema.org/numberOfAxles',
   );
 
@@ -19381,7 +18442,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/FloorPlan
   ///
-  static const numberOfBathroomsTotal = IriTerm.prevalidated(
+  static const numberOfBathroomsTotal = const IriTerm(
     'https://schema.org/numberOfBathroomsTotal',
   );
 
@@ -19391,7 +18452,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/ApartmentComplex, https://schema.org/FloorPlan
   ///
-  static const numberOfBedrooms = IriTerm.prevalidated(
+  static const numberOfBedrooms = const IriTerm(
     'https://schema.org/numberOfBedrooms',
   );
 
@@ -19401,9 +18462,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BedDetails
   ///
-  static const numberOfBeds = IriTerm.prevalidated(
-    'https://schema.org/numberOfBeds',
-  );
+  static const numberOfBeds = const IriTerm('https://schema.org/numberOfBeds');
 
   /// IRI for schema:numberOfCredits [Expects: https://schema.org/Integer, https://schema.org/StructuredValue]
   ///
@@ -19411,7 +18470,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Course, https://schema.org/EducationalOccupationalProgram
   ///
-  static const numberOfCredits = IriTerm.prevalidated(
+  static const numberOfCredits = const IriTerm(
     'https://schema.org/numberOfCredits',
   );
 
@@ -19421,7 +18480,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const numberOfDoors = IriTerm.prevalidated(
+  static const numberOfDoors = const IriTerm(
     'https://schema.org/numberOfDoors',
   );
 
@@ -19431,7 +18490,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BusinessAudience, https://schema.org/Organization
   ///
-  static const numberOfEmployees = IriTerm.prevalidated(
+  static const numberOfEmployees = const IriTerm(
     'https://schema.org/numberOfEmployees',
   );
 
@@ -19441,7 +18500,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWorkSeason, https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGameSeries
   ///
-  static const numberOfEpisodes = IriTerm.prevalidated(
+  static const numberOfEpisodes = const IriTerm(
     'https://schema.org/numberOfEpisodes',
   );
 
@@ -19451,7 +18510,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const numberOfForwardGears = IriTerm.prevalidated(
+  static const numberOfForwardGears = const IriTerm(
     'https://schema.org/numberOfForwardGears',
   );
 
@@ -19461,7 +18520,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/FloorPlan
   ///
-  static const numberOfFullBathrooms = IriTerm.prevalidated(
+  static const numberOfFullBathrooms = const IriTerm(
     'https://schema.org/numberOfFullBathrooms',
   );
 
@@ -19471,7 +18530,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ItemList
   ///
-  static const numberOfItems = IriTerm.prevalidated(
+  static const numberOfItems = const IriTerm(
     'https://schema.org/numberOfItems',
   );
 
@@ -19481,7 +18540,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RepaymentSpecification
   ///
-  static const numberOfLoanPayments = IriTerm.prevalidated(
+  static const numberOfLoanPayments = const IriTerm(
     'https://schema.org/numberOfLoanPayments',
   );
 
@@ -19491,7 +18550,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Book
   ///
-  static const numberOfPages = IriTerm.prevalidated(
+  static const numberOfPages = const IriTerm(
     'https://schema.org/numberOfPages',
   );
 
@@ -19501,7 +18560,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/FloorPlan
   ///
-  static const numberOfPartialBathrooms = IriTerm.prevalidated(
+  static const numberOfPartialBathrooms = const IriTerm(
     'https://schema.org/numberOfPartialBathrooms',
   );
 
@@ -19511,7 +18570,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Game, https://schema.org/VideoGameSeries
   ///
-  static const numberOfPlayers = IriTerm.prevalidated(
+  static const numberOfPlayers = const IriTerm(
     'https://schema.org/numberOfPlayers',
   );
 
@@ -19521,7 +18580,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const numberOfPreviousOwners = IriTerm.prevalidated(
+  static const numberOfPreviousOwners = const IriTerm(
     'https://schema.org/numberOfPreviousOwners',
   );
 
@@ -19532,7 +18591,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/Apartment, https://schema.org/FloorPlan, https://schema.org/House, https://schema.org/LodgingBusiness, https://schema.org/SingleFamilyResidence, https://schema.org/Suite
   ///
-  static const numberOfRooms = IriTerm.prevalidated(
+  static const numberOfRooms = const IriTerm(
     'https://schema.org/numberOfRooms',
   );
 
@@ -19542,7 +18601,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGameSeries
   ///
-  static const numberOfSeasons = IriTerm.prevalidated(
+  static const numberOfSeasons = const IriTerm(
     'https://schema.org/numberOfSeasons',
   );
 
@@ -19552,7 +18611,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OrganizationRole
   ///
-  static const numberedPosition = IriTerm.prevalidated(
+  static const numberedPosition = const IriTerm(
     'https://schema.org/numberedPosition',
   );
 
@@ -19562,7 +18621,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MenuItem, https://schema.org/Recipe
   ///
-  static const nutrition = IriTerm.prevalidated('https://schema.org/nutrition');
+  static const nutrition = const IriTerm('https://schema.org/nutrition');
 
   /// IRI for schema:observationAbout [Expects: https://schema.org/Place, https://schema.org/Thing]
   ///
@@ -19570,7 +18629,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Observation
   ///
-  static const observationAbout = IriTerm.prevalidated(
+  static const observationAbout = const IriTerm(
     'https://schema.org/observationAbout',
   );
 
@@ -19580,7 +18639,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Observation
   ///
-  static const observationDate = IriTerm.prevalidated(
+  static const observationDate = const IriTerm(
     'https://schema.org/observationDate',
   );
 
@@ -19590,7 +18649,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Observation
   ///
-  static const observationPeriod = IriTerm.prevalidated(
+  static const observationPeriod = const IriTerm(
     'https://schema.org/observationPeriod',
   );
 
@@ -19601,7 +18660,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/Apartment, https://schema.org/HotelRoom, https://schema.org/SingleFamilyResidence, https://schema.org/Suite
   ///
-  static const occupancy = IriTerm.prevalidated('https://schema.org/occupancy');
+  static const occupancy = const IriTerm('https://schema.org/occupancy');
 
   /// IRI for schema:occupationLocation [Expects: https://schema.org/AdministrativeArea]
   ///
@@ -19609,7 +18668,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Occupation
   ///
-  static const occupationLocation = IriTerm.prevalidated(
+  static const occupationLocation = const IriTerm(
     'https://schema.org/occupationLocation',
   );
 
@@ -19620,7 +18679,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram, https://schema.org/JobPosting, https://schema.org/Occupation, https://schema.org/Physician, https://schema.org/WorkBasedProgram
   ///
-  static const occupationalCategory = IriTerm.prevalidated(
+  static const occupationalCategory = const IriTerm(
     'https://schema.org/occupationalCategory',
   );
 
@@ -19630,7 +18689,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Course, https://schema.org/EducationalOccupationalProgram
   ///
-  static const occupationalCredentialAwarded = IriTerm.prevalidated(
+  static const occupationalCredentialAwarded = const IriTerm(
     'https://schema.org/occupationalCredentialAwarded',
   );
 
@@ -19640,9 +18699,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AggregateOffer
   ///
-  static const offerCount = IriTerm.prevalidated(
-    'https://schema.org/offerCount',
-  );
+  static const offerCount = const IriTerm('https://schema.org/offerCount');
 
   /// IRI for schema:offersPrescriptionByMail [Expects: https://schema.org/Boolean]
   ///
@@ -19650,7 +18707,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthPlanFormulary
   ///
-  static const offersPrescriptionByMail = IriTerm.prevalidated(
+  static const offersPrescriptionByMail = const IriTerm(
     'https://schema.org/offersPrescriptionByMail',
   );
 
@@ -19660,9 +18717,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CivicStructure, https://schema.org/LocalBusiness
   ///
-  static const openingHours = IriTerm.prevalidated(
-    'https://schema.org/openingHours',
-  );
+  static const openingHours = const IriTerm('https://schema.org/openingHours');
 
   /// IRI for schema:openingHoursSpecification [Expects: https://schema.org/OpeningHoursSpecification]
   ///
@@ -19670,7 +18725,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const openingHoursSpecification = IriTerm.prevalidated(
+  static const openingHoursSpecification = const IriTerm(
     'https://schema.org/openingHoursSpecification',
   );
 
@@ -19680,7 +18735,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OpeningHoursSpecification
   ///
-  static const opens = IriTerm.prevalidated('https://schema.org/opens');
+  static const opens = const IriTerm('https://schema.org/opens');
 
   /// IRI for schema:operatingSystem [Expects: https://schema.org/Text]
   ///
@@ -19688,7 +18743,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const operatingSystem = IriTerm.prevalidated(
+  static const operatingSystem = const IriTerm(
     'https://schema.org/operatingSystem',
   );
 
@@ -19698,7 +18753,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExerciseAction
   ///
-  static const opponent = IriTerm.prevalidated('https://schema.org/opponent');
+  static const opponent = const IriTerm('https://schema.org/opponent');
 
   /// IRI for schema:option [Expects: https://schema.org/Text, https://schema.org/Thing]
   ///
@@ -19706,7 +18761,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ChooseAction
   ///
-  static const option = IriTerm.prevalidated('https://schema.org/option');
+  static const option = const IriTerm('https://schema.org/option');
 
   /// IRI for schema:orderDate [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -19714,7 +18769,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order
   ///
-  static const orderDate = IriTerm.prevalidated('https://schema.org/orderDate');
+  static const orderDate = const IriTerm('https://schema.org/orderDate');
 
   /// IRI for schema:orderDelivery [Expects: https://schema.org/ParcelDelivery]
   ///
@@ -19722,7 +18777,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order, https://schema.org/OrderItem
   ///
-  static const orderDelivery = IriTerm.prevalidated(
+  static const orderDelivery = const IriTerm(
     'https://schema.org/orderDelivery',
   );
 
@@ -19732,7 +18787,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OrderItem
   ///
-  static const orderItemNumber = IriTerm.prevalidated(
+  static const orderItemNumber = const IriTerm(
     'https://schema.org/orderItemNumber',
   );
 
@@ -19742,7 +18797,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OrderItem
   ///
-  static const orderItemStatus = IriTerm.prevalidated(
+  static const orderItemStatus = const IriTerm(
     'https://schema.org/orderItemStatus',
   );
 
@@ -19752,9 +18807,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order
   ///
-  static const orderNumber = IriTerm.prevalidated(
-    'https://schema.org/orderNumber',
-  );
+  static const orderNumber = const IriTerm('https://schema.org/orderNumber');
 
   /// IRI for schema:orderPercentage [Expects: https://schema.org/Number]
   ///
@@ -19762,7 +18815,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ShippingRateSettings
   ///
-  static const orderPercentage = IriTerm.prevalidated(
+  static const orderPercentage = const IriTerm(
     'https://schema.org/orderPercentage',
   );
 
@@ -19772,7 +18825,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OrderItem
   ///
-  static const orderQuantity = IriTerm.prevalidated(
+  static const orderQuantity = const IriTerm(
     'https://schema.org/orderQuantity',
   );
 
@@ -19782,9 +18835,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order
   ///
-  static const orderStatus = IriTerm.prevalidated(
-    'https://schema.org/orderStatus',
-  );
+  static const orderStatus = const IriTerm('https://schema.org/orderStatus');
 
   /// IRI for schema:orderValue [Expects: https://schema.org/MonetaryAmount]
   ///
@@ -19792,9 +18843,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ShippingConditions
   ///
-  static const orderValue = IriTerm.prevalidated(
-    'https://schema.org/orderValue',
-  );
+  static const orderValue = const IriTerm('https://schema.org/orderValue');
 
   /// IRI for schema:orderedItem [Expects: https://schema.org/OrderItem, https://schema.org/Product, https://schema.org/Service]
   ///
@@ -19802,9 +18851,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order, https://schema.org/OrderItem
   ///
-  static const orderedItem = IriTerm.prevalidated(
-    'https://schema.org/orderedItem',
-  );
+  static const orderedItem = const IriTerm('https://schema.org/orderedItem');
 
   /// IRI for schema:organizer [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -19812,7 +18859,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const organizer = IriTerm.prevalidated('https://schema.org/organizer');
+  static const organizer = const IriTerm('https://schema.org/organizer');
 
   /// IRI for schema:originAddress [Expects: https://schema.org/PostalAddress]
   ///
@@ -19820,7 +18867,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ParcelDelivery
   ///
-  static const originAddress = IriTerm.prevalidated(
+  static const originAddress = const IriTerm(
     'https://schema.org/originAddress',
   );
 
@@ -19830,7 +18877,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaReview
   ///
-  static const originalMediaContextDescription = IriTerm.prevalidated(
+  static const originalMediaContextDescription = const IriTerm(
     'https://schema.org/originalMediaContextDescription',
   );
 
@@ -19840,7 +18887,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaReview
   ///
-  static const originalMediaLink = IriTerm.prevalidated(
+  static const originalMediaLink = const IriTerm(
     'https://schema.org/originalMediaLink',
   );
 
@@ -19850,7 +18897,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LymphaticVessel
   ///
-  static const originatesFrom = IriTerm.prevalidated(
+  static const originatesFrom = const IriTerm(
     'https://schema.org/originatesFrom',
   );
 
@@ -19860,9 +18907,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const overdosage = IriTerm.prevalidated(
-    'https://schema.org/overdosage',
-  );
+  static const overdosage = const IriTerm('https://schema.org/overdosage');
 
   /// IRI for schema:ownedFrom [Expects: https://schema.org/DateTime]
   ///
@@ -19870,7 +18915,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OwnershipInfo
   ///
-  static const ownedFrom = IriTerm.prevalidated('https://schema.org/ownedFrom');
+  static const ownedFrom = const IriTerm('https://schema.org/ownedFrom');
 
   /// IRI for schema:ownedThrough [Expects: https://schema.org/DateTime]
   ///
@@ -19878,9 +18923,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OwnershipInfo
   ///
-  static const ownedThrough = IriTerm.prevalidated(
-    'https://schema.org/ownedThrough',
-  );
+  static const ownedThrough = const IriTerm('https://schema.org/ownedThrough');
 
   /// IRI for schema:ownershipFundingInfo [Expects: https://schema.org/AboutPage, https://schema.org/CreativeWork, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -19888,7 +18931,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsMediaOrganization, https://schema.org/Organization
   ///
-  static const ownershipFundingInfo = IriTerm.prevalidated(
+  static const ownershipFundingInfo = const IriTerm(
     'https://schema.org/ownershipFundingInfo',
   );
 
@@ -19898,7 +18941,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const owns = IriTerm.prevalidated('https://schema.org/owns');
+  static const owns = const IriTerm('https://schema.org/owns');
 
   /// IRI for schema:pageEnd [Expects: https://schema.org/Integer, https://schema.org/Text]
   ///
@@ -19906,7 +18949,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Article, https://schema.org/Chapter, https://schema.org/PublicationIssue, https://schema.org/PublicationVolume
   ///
-  static const pageEnd = IriTerm.prevalidated('https://schema.org/pageEnd');
+  static const pageEnd = const IriTerm('https://schema.org/pageEnd');
 
   /// IRI for schema:pageStart [Expects: https://schema.org/Integer, https://schema.org/Text]
   ///
@@ -19914,7 +18957,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Article, https://schema.org/Chapter, https://schema.org/PublicationIssue, https://schema.org/PublicationVolume
   ///
-  static const pageStart = IriTerm.prevalidated('https://schema.org/pageStart');
+  static const pageStart = const IriTerm('https://schema.org/pageStart');
 
   /// IRI for schema:pagination [Expects: https://schema.org/Text]
   ///
@@ -19922,9 +18965,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Article, https://schema.org/Chapter, https://schema.org/PublicationIssue, https://schema.org/PublicationVolume
   ///
-  static const pagination = IriTerm.prevalidated(
-    'https://schema.org/pagination',
-  );
+  static const pagination = const IriTerm('https://schema.org/pagination');
 
   /// IRI for schema:parentItem [Expects: https://schema.org/Comment, https://schema.org/CreativeWork]
   ///
@@ -19932,9 +18973,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Answer, https://schema.org/Comment, https://schema.org/Question
   ///
-  static const parentItem = IriTerm.prevalidated(
-    'https://schema.org/parentItem',
-  );
+  static const parentItem = const IriTerm('https://schema.org/parentItem');
 
   /// IRI for schema:parentService [Expects: https://schema.org/BroadcastService]
   ///
@@ -19942,7 +18981,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const parentService = IriTerm.prevalidated(
+  static const parentService = const IriTerm(
     'https://schema.org/parentService',
   );
 
@@ -19952,7 +18991,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const parents = IriTerm.prevalidated('https://schema.org/parents');
+  static const parents = const IriTerm('https://schema.org/parents');
 
   /// IRI for schema:partOfEpisode [Expects: https://schema.org/Episode]
   ///
@@ -19960,7 +18999,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Clip
   ///
-  static const partOfEpisode = IriTerm.prevalidated(
+  static const partOfEpisode = const IriTerm(
     'https://schema.org/partOfEpisode',
   );
 
@@ -19970,7 +19009,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order
   ///
-  static const partOfInvoice = IriTerm.prevalidated(
+  static const partOfInvoice = const IriTerm(
     'https://schema.org/partOfInvoice',
   );
 
@@ -19980,9 +19019,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ParcelDelivery
   ///
-  static const partOfOrder = IriTerm.prevalidated(
-    'https://schema.org/partOfOrder',
-  );
+  static const partOfOrder = const IriTerm('https://schema.org/partOfOrder');
 
   /// IRI for schema:partOfSeason [Expects: https://schema.org/CreativeWorkSeason]
   ///
@@ -19990,9 +19027,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Clip, https://schema.org/Episode
   ///
-  static const partOfSeason = IriTerm.prevalidated(
-    'https://schema.org/partOfSeason',
-  );
+  static const partOfSeason = const IriTerm('https://schema.org/partOfSeason');
 
   /// IRI for schema:partOfSystem [Expects: https://schema.org/AnatomicalSystem]
   ///
@@ -20000,9 +19035,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AnatomicalStructure
   ///
-  static const partOfSystem = IriTerm.prevalidated(
-    'https://schema.org/partOfSystem',
-  );
+  static const partOfSystem = const IriTerm('https://schema.org/partOfSystem');
 
   /// IRI for schema:partOfTVSeries [Expects: https://schema.org/TVSeries]
   ///
@@ -20010,7 +19043,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/TVClip, https://schema.org/TVEpisode, https://schema.org/TVSeason
   ///
-  static const partOfTVSeries = IriTerm.prevalidated(
+  static const partOfTVSeries = const IriTerm(
     'https://schema.org/partOfTVSeries',
   );
 
@@ -20020,7 +19053,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FoodEstablishmentReservation, https://schema.org/TaxiReservation
   ///
-  static const partySize = IriTerm.prevalidated('https://schema.org/partySize');
+  static const partySize = const IriTerm('https://schema.org/partySize');
 
   /// IRI for schema:passengerPriorityStatus [Expects: https://schema.org/QualitativeValue, https://schema.org/Text]
   ///
@@ -20028,7 +19061,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FlightReservation
   ///
-  static const passengerPriorityStatus = IriTerm.prevalidated(
+  static const passengerPriorityStatus = const IriTerm(
     'https://schema.org/passengerPriorityStatus',
   );
 
@@ -20038,7 +19071,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FlightReservation
   ///
-  static const passengerSequenceNumber = IriTerm.prevalidated(
+  static const passengerSequenceNumber = const IriTerm(
     'https://schema.org/passengerSequenceNumber',
   );
 
@@ -20048,7 +19081,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition, https://schema.org/PhysicalActivity
   ///
-  static const pathophysiology = IriTerm.prevalidated(
+  static const pathophysiology = const IriTerm(
     'https://schema.org/pathophysiology',
   );
 
@@ -20058,7 +19091,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Product
   ///
-  static const pattern = IriTerm.prevalidated('https://schema.org/pattern');
+  static const pattern = const IriTerm('https://schema.org/pattern');
 
   /// IRI for schema:payload [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -20066,7 +19099,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const payload = IriTerm.prevalidated('https://schema.org/payload');
+  static const payload = const IriTerm('https://schema.org/payload');
 
   /// IRI for schema:paymentAccepted [Expects: https://schema.org/Text]
   ///
@@ -20074,7 +19107,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LocalBusiness
   ///
-  static const paymentAccepted = IriTerm.prevalidated(
+  static const paymentAccepted = const IriTerm(
     'https://schema.org/paymentAccepted',
   );
 
@@ -20084,9 +19117,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice, https://schema.org/Order
   ///
-  static const paymentDue = IriTerm.prevalidated(
-    'https://schema.org/paymentDue',
-  );
+  static const paymentDue = const IriTerm('https://schema.org/paymentDue');
 
   /// IRI for schema:paymentMethod [Expects: https://schema.org/PaymentMethod, https://schema.org/Text]
   ///
@@ -20094,7 +19125,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice, https://schema.org/Order
   ///
-  static const paymentMethod = IriTerm.prevalidated(
+  static const paymentMethod = const IriTerm(
     'https://schema.org/paymentMethod',
   );
 
@@ -20104,7 +19135,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice, https://schema.org/Order
   ///
-  static const paymentMethodId = IriTerm.prevalidated(
+  static const paymentMethodId = const IriTerm(
     'https://schema.org/paymentMethodId',
   );
 
@@ -20114,7 +19145,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PaymentMethod
   ///
-  static const paymentMethodType = IriTerm.prevalidated(
+  static const paymentMethodType = const IriTerm(
     'https://schema.org/paymentMethodType',
   );
 
@@ -20124,7 +19155,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice
   ///
-  static const paymentStatus = IriTerm.prevalidated(
+  static const paymentStatus = const IriTerm(
     'https://schema.org/paymentStatus',
   );
 
@@ -20134,9 +19165,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Order
   ///
-  static const paymentUrl = IriTerm.prevalidated(
-    'https://schema.org/paymentUrl',
-  );
+  static const paymentUrl = const IriTerm('https://schema.org/paymentUrl');
 
   /// IRI for schema:penciler [Expects: https://schema.org/Person]
   ///
@@ -20144,7 +19173,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ComicIssue, https://schema.org/ComicStory, https://schema.org/VisualArtwork
   ///
-  static const penciler = IriTerm.prevalidated('https://schema.org/penciler');
+  static const penciler = const IriTerm('https://schema.org/penciler');
 
   /// IRI for schema:percentile10 [Expects: https://schema.org/Number]
   ///
@@ -20152,9 +19181,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/QuantitativeValueDistribution
   ///
-  static const percentile10 = IriTerm.prevalidated(
-    'https://schema.org/percentile10',
-  );
+  static const percentile10 = const IriTerm('https://schema.org/percentile10');
 
   /// IRI for schema:percentile25 [Expects: https://schema.org/Number]
   ///
@@ -20162,9 +19189,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/QuantitativeValueDistribution
   ///
-  static const percentile25 = IriTerm.prevalidated(
-    'https://schema.org/percentile25',
-  );
+  static const percentile25 = const IriTerm('https://schema.org/percentile25');
 
   /// IRI for schema:percentile75 [Expects: https://schema.org/Number]
   ///
@@ -20172,9 +19197,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/QuantitativeValueDistribution
   ///
-  static const percentile75 = IriTerm.prevalidated(
-    'https://schema.org/percentile75',
-  );
+  static const percentile75 = const IriTerm('https://schema.org/percentile75');
 
   /// IRI for schema:percentile90 [Expects: https://schema.org/Number]
   ///
@@ -20182,9 +19205,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/QuantitativeValueDistribution
   ///
-  static const percentile90 = IriTerm.prevalidated(
-    'https://schema.org/percentile90',
-  );
+  static const percentile90 = const IriTerm('https://schema.org/percentile90');
 
   /// IRI for schema:performerIn [Expects: https://schema.org/Event]
   ///
@@ -20192,9 +19213,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const performerIn = IriTerm.prevalidated(
-    'https://schema.org/performerIn',
-  );
+  static const performerIn = const IriTerm('https://schema.org/performerIn');
 
   /// IRI for schema:performers [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -20202,9 +19221,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const performers = IriTerm.prevalidated(
-    'https://schema.org/performers',
-  );
+  static const performers = const IriTerm('https://schema.org/performers');
 
   /// IRI for schema:permissionType [Expects: https://schema.org/DigitalDocumentPermissionType]
   ///
@@ -20212,7 +19229,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DigitalDocumentPermission
   ///
-  static const permissionType = IriTerm.prevalidated(
+  static const permissionType = const IriTerm(
     'https://schema.org/permissionType',
   );
 
@@ -20222,9 +19239,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const permissions = IriTerm.prevalidated(
-    'https://schema.org/permissions',
-  );
+  static const permissions = const IriTerm('https://schema.org/permissions');
 
   /// IRI for schema:permitAudience [Expects: https://schema.org/Audience]
   ///
@@ -20232,7 +19247,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Permit
   ///
-  static const permitAudience = IriTerm.prevalidated(
+  static const permitAudience = const IriTerm(
     'https://schema.org/permitAudience',
   );
 
@@ -20242,7 +19257,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation
   ///
-  static const permittedUsage = IriTerm.prevalidated(
+  static const permittedUsage = const IriTerm(
     'https://schema.org/permittedUsage',
   );
 
@@ -20252,9 +19267,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/ApartmentComplex, https://schema.org/FloorPlan, https://schema.org/LodgingBusiness
   ///
-  static const petsAllowed = IriTerm.prevalidated(
-    'https://schema.org/petsAllowed',
-  );
+  static const petsAllowed = const IriTerm('https://schema.org/petsAllowed');
 
   /// IRI for schema:phoneticText [Expects: https://schema.org/Text]
   ///
@@ -20262,9 +19275,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PronounceableText
   ///
-  static const phoneticText = IriTerm.prevalidated(
-    'https://schema.org/phoneticText',
-  );
+  static const phoneticText = const IriTerm('https://schema.org/phoneticText');
 
   /// IRI for schema:photos [Expects: https://schema.org/ImageObject, https://schema.org/Photograph]
   ///
@@ -20272,7 +19283,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const photos = IriTerm.prevalidated('https://schema.org/photos');
+  static const photos = const IriTerm('https://schema.org/photos');
 
   /// IRI for schema:physicalRequirement [Expects: https://schema.org/DefinedTerm, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -20280,7 +19291,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const physicalRequirement = IriTerm.prevalidated(
+  static const physicalRequirement = const IriTerm(
     'https://schema.org/physicalRequirement',
   );
 
@@ -20290,7 +19301,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Diet
   ///
-  static const physiologicalBenefits = IriTerm.prevalidated(
+  static const physiologicalBenefits = const IriTerm(
     'https://schema.org/physiologicalBenefits',
   );
 
@@ -20300,7 +19311,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RentalCarReservation, https://schema.org/TaxiReservation
   ///
-  static const pickupLocation = IriTerm.prevalidated(
+  static const pickupLocation = const IriTerm(
     'https://schema.org/pickupLocation',
   );
 
@@ -20310,9 +19321,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RentalCarReservation, https://schema.org/TaxiReservation
   ///
-  static const pickupTime = IriTerm.prevalidated(
-    'https://schema.org/pickupTime',
-  );
+  static const pickupTime = const IriTerm('https://schema.org/pickupTime');
 
   /// IRI for schema:playMode [Expects: https://schema.org/GamePlayMode]
   ///
@@ -20320,7 +19329,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VideoGame, https://schema.org/VideoGameSeries
   ///
-  static const playMode = IriTerm.prevalidated('https://schema.org/playMode');
+  static const playMode = const IriTerm('https://schema.org/playMode');
 
   /// IRI for schema:playerType [Expects: https://schema.org/Text]
   ///
@@ -20328,9 +19337,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaObject
   ///
-  static const playerType = IriTerm.prevalidated(
-    'https://schema.org/playerType',
-  );
+  static const playerType = const IriTerm('https://schema.org/playerType');
 
   /// IRI for schema:playersOnline [Expects: https://schema.org/Integer]
   ///
@@ -20338,7 +19345,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GameServer
   ///
-  static const playersOnline = IriTerm.prevalidated(
+  static const playersOnline = const IriTerm(
     'https://schema.org/playersOnline',
   );
 
@@ -20348,7 +19355,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GeoShape
   ///
-  static const polygon = IriTerm.prevalidated('https://schema.org/polygon');
+  static const polygon = const IriTerm('https://schema.org/polygon');
 
   /// IRI for schema:populationType [Expects: https://schema.org/Class]
   ///
@@ -20356,7 +19363,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/StatisticalPopulation, https://schema.org/StatisticalVariable
   ///
-  static const populationType = IriTerm.prevalidated(
+  static const populationType = const IriTerm(
     'https://schema.org/populationType',
   );
 
@@ -20370,7 +19377,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product, https://schema.org/Review
   ///
-  static const positiveNotes = IriTerm.prevalidated(
+  static const positiveNotes = const IriTerm(
     'https://schema.org/positiveNotes',
   );
 
@@ -20380,7 +19387,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition
   ///
-  static const possibleComplication = IriTerm.prevalidated(
+  static const possibleComplication = const IriTerm(
     'https://schema.org/possibleComplication',
   );
 
@@ -20390,7 +19397,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition, https://schema.org/MedicalSignOrSymptom
   ///
-  static const possibleTreatment = IriTerm.prevalidated(
+  static const possibleTreatment = const IriTerm(
     'https://schema.org/possibleTreatment',
   );
 
@@ -20400,7 +19407,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PostalAddress
   ///
-  static const postOfficeBoxNumber = IriTerm.prevalidated(
+  static const postOfficeBoxNumber = const IriTerm(
     'https://schema.org/postOfficeBoxNumber',
   );
 
@@ -20410,7 +19417,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalDevice
   ///
-  static const postOp = IriTerm.prevalidated('https://schema.org/postOp');
+  static const postOp = const IriTerm('https://schema.org/postOp');
 
   /// IRI for schema:postalCode [Expects: https://schema.org/Text]
   ///
@@ -20418,9 +19425,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DefinedRegion, https://schema.org/GeoCoordinates, https://schema.org/GeoShape, https://schema.org/PostalAddress
   ///
-  static const postalCode = IriTerm.prevalidated(
-    'https://schema.org/postalCode',
-  );
+  static const postalCode = const IriTerm('https://schema.org/postalCode');
 
   /// IRI for schema:postalCodeBegin [Expects: https://schema.org/Text]
   ///
@@ -20428,7 +19433,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PostalCodeRangeSpecification
   ///
-  static const postalCodeBegin = IriTerm.prevalidated(
+  static const postalCodeBegin = const IriTerm(
     'https://schema.org/postalCodeBegin',
   );
 
@@ -20438,7 +19443,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PostalCodeRangeSpecification
   ///
-  static const postalCodeEnd = IriTerm.prevalidated(
+  static const postalCodeEnd = const IriTerm(
     'https://schema.org/postalCodeEnd',
   );
 
@@ -20448,7 +19453,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DefinedRegion
   ///
-  static const postalCodePrefix = IriTerm.prevalidated(
+  static const postalCodePrefix = const IriTerm(
     'https://schema.org/postalCodePrefix',
   );
 
@@ -20458,7 +19463,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DefinedRegion
   ///
-  static const postalCodeRange = IriTerm.prevalidated(
+  static const postalCodeRange = const IriTerm(
     'https://schema.org/postalCodeRange',
   );
 
@@ -20468,7 +19473,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const potentialAction = IriTerm.prevalidated(
+  static const potentialAction = const IriTerm(
     'https://schema.org/potentialAction',
   );
 
@@ -20478,9 +19483,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ChemicalSubstance, https://schema.org/MolecularEntity
   ///
-  static const potentialUse = IriTerm.prevalidated(
-    'https://schema.org/potentialUse',
-  );
+  static const potentialUse = const IriTerm('https://schema.org/potentialUse');
 
   /// IRI for schema:practicesAt [Expects: https://schema.org/MedicalOrganization]
   ///
@@ -20488,9 +19491,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/IndividualPhysician
   ///
-  static const practicesAt = IriTerm.prevalidated(
-    'https://schema.org/practicesAt',
-  );
+  static const practicesAt = const IriTerm('https://schema.org/practicesAt');
 
   /// IRI for schema:preOp [Expects: https://schema.org/Text]
   ///
@@ -20498,7 +19499,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalDevice
   ///
-  static const preOp = IriTerm.prevalidated('https://schema.org/preOp');
+  static const preOp = const IriTerm('https://schema.org/preOp');
 
   /// IRI for schema:predecessorOf [Expects: https://schema.org/ProductModel]
   ///
@@ -20506,7 +19507,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ProductModel
   ///
-  static const predecessorOf = IriTerm.prevalidated(
+  static const predecessorOf = const IriTerm(
     'https://schema.org/predecessorOf',
   );
 
@@ -20516,7 +19517,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const pregnancyCategory = IriTerm.prevalidated(
+  static const pregnancyCategory = const IriTerm(
     'https://schema.org/pregnancyCategory',
   );
 
@@ -20526,7 +19527,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const pregnancyWarning = IriTerm.prevalidated(
+  static const pregnancyWarning = const IriTerm(
     'https://schema.org/pregnancyWarning',
   );
 
@@ -20536,7 +19537,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HowTo, https://schema.org/HowToDirection
   ///
-  static const prepTime = IriTerm.prevalidated('https://schema.org/prepTime');
+  static const prepTime = const IriTerm('https://schema.org/prepTime');
 
   /// IRI for schema:preparation [Expects: https://schema.org/MedicalEntity, https://schema.org/Text]
   ///
@@ -20544,9 +19545,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalProcedure
   ///
-  static const preparation = IriTerm.prevalidated(
-    'https://schema.org/preparation',
-  );
+  static const preparation = const IriTerm('https://schema.org/preparation');
 
   /// IRI for schema:prescribingInfo [Expects: https://schema.org/URL]
   ///
@@ -20554,7 +19553,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const prescribingInfo = IriTerm.prevalidated(
+  static const prescribingInfo = const IriTerm(
     'https://schema.org/prescribingInfo',
   );
 
@@ -20564,7 +19563,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const prescriptionStatus = IriTerm.prevalidated(
+  static const prescriptionStatus = const IriTerm(
     'https://schema.org/prescriptionStatus',
   );
 
@@ -20574,9 +19573,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ListItem
   ///
-  static const previousItem = IriTerm.prevalidated(
-    'https://schema.org/previousItem',
-  );
+  static const previousItem = const IriTerm('https://schema.org/previousItem');
 
   /// IRI for schema:previousStartDate [Expects: https://schema.org/Date]
   ///
@@ -20584,7 +19581,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const previousStartDate = IriTerm.prevalidated(
+  static const previousStartDate = const IriTerm(
     'https://schema.org/previousStartDate',
   );
 
@@ -20595,7 +19592,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DonateAction, https://schema.org/Offer, https://schema.org/PriceSpecification, https://schema.org/TradeAction
   ///
-  static const price = IriTerm.prevalidated('https://schema.org/price');
+  static const price = const IriTerm('https://schema.org/price');
 
   /// IRI for schema:priceComponent [Expects: https://schema.org/UnitPriceSpecification]
   ///
@@ -20603,7 +19600,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CompoundPriceSpecification
   ///
-  static const priceComponent = IriTerm.prevalidated(
+  static const priceComponent = const IriTerm(
     'https://schema.org/priceComponent',
   );
 
@@ -20613,7 +19610,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/UnitPriceSpecification
   ///
-  static const priceComponentType = IriTerm.prevalidated(
+  static const priceComponentType = const IriTerm(
     'https://schema.org/priceComponentType',
   );
 
@@ -20623,7 +19620,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DonateAction, https://schema.org/Offer, https://schema.org/PriceSpecification, https://schema.org/Reservation, https://schema.org/Ticket, https://schema.org/TradeAction
   ///
-  static const priceCurrency = IriTerm.prevalidated(
+  static const priceCurrency = const IriTerm(
     'https://schema.org/priceCurrency',
   );
 
@@ -20633,9 +19630,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LocalBusiness
   ///
-  static const priceRange = IriTerm.prevalidated(
-    'https://schema.org/priceRange',
-  );
+  static const priceRange = const IriTerm('https://schema.org/priceRange');
 
   /// IRI for schema:priceSpecification [Expects: https://schema.org/PriceSpecification]
   ///
@@ -20643,7 +19638,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/DonateAction, https://schema.org/Offer, https://schema.org/TradeAction
   ///
-  static const priceSpecification = IriTerm.prevalidated(
+  static const priceSpecification = const IriTerm(
     'https://schema.org/priceSpecification',
   );
 
@@ -20653,7 +19648,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CompoundPriceSpecification, https://schema.org/UnitPriceSpecification
   ///
-  static const priceType = IriTerm.prevalidated('https://schema.org/priceType');
+  static const priceType = const IriTerm('https://schema.org/priceType');
 
   /// IRI for schema:priceValidUntil [Expects: https://schema.org/Date]
   ///
@@ -20661,7 +19656,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Offer
   ///
-  static const priceValidUntil = IriTerm.prevalidated(
+  static const priceValidUntil = const IriTerm(
     'https://schema.org/priceValidUntil',
   );
 
@@ -20671,7 +19666,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WebPage
   ///
-  static const primaryImageOfPage = IriTerm.prevalidated(
+  static const primaryImageOfPage = const IriTerm(
     'https://schema.org/primaryImageOfPage',
   );
 
@@ -20681,7 +19676,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition
   ///
-  static const primaryPrevention = IriTerm.prevalidated(
+  static const primaryPrevention = const IriTerm(
     'https://schema.org/primaryPrevention',
   );
 
@@ -20691,9 +19686,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsArticle
   ///
-  static const printColumn = IriTerm.prevalidated(
-    'https://schema.org/printColumn',
-  );
+  static const printColumn = const IriTerm('https://schema.org/printColumn');
 
   /// IRI for schema:printEdition [Expects: https://schema.org/Text]
   ///
@@ -20701,9 +19694,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsArticle
   ///
-  static const printEdition = IriTerm.prevalidated(
-    'https://schema.org/printEdition',
-  );
+  static const printEdition = const IriTerm('https://schema.org/printEdition');
 
   /// IRI for schema:printPage [Expects: https://schema.org/Text]
   ///
@@ -20711,7 +19702,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsArticle
   ///
-  static const printPage = IriTerm.prevalidated('https://schema.org/printPage');
+  static const printPage = const IriTerm('https://schema.org/printPage');
 
   /// IRI for schema:printSection [Expects: https://schema.org/Text]
   ///
@@ -20719,9 +19710,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsArticle
   ///
-  static const printSection = IriTerm.prevalidated(
-    'https://schema.org/printSection',
-  );
+  static const printSection = const IriTerm('https://schema.org/printSection');
 
   /// IRI for schema:procedure [Expects: https://schema.org/Text]
   ///
@@ -20729,7 +19718,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalDevice
   ///
-  static const procedure = IriTerm.prevalidated('https://schema.org/procedure');
+  static const procedure = const IriTerm('https://schema.org/procedure');
 
   /// IRI for schema:procedureType [Expects: https://schema.org/MedicalProcedureType]
   ///
@@ -20737,7 +19726,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalProcedure
   ///
-  static const procedureType = IriTerm.prevalidated(
+  static const procedureType = const IriTerm(
     'https://schema.org/procedureType',
   );
 
@@ -20747,7 +19736,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ServiceChannel
   ///
-  static const processingTime = IriTerm.prevalidated(
+  static const processingTime = const IriTerm(
     'https://schema.org/processingTime',
   );
 
@@ -20757,7 +19746,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const processorRequirements = IriTerm.prevalidated(
+  static const processorRequirements = const IriTerm(
     'https://schema.org/processorRequirements',
   );
 
@@ -20767,7 +19756,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const producer = IriTerm.prevalidated('https://schema.org/producer');
+  static const producer = const IriTerm('https://schema.org/producer');
 
   /// IRI for schema:produces [Expects: https://schema.org/Thing]
   ///
@@ -20775,7 +19764,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const produces = IriTerm.prevalidated('https://schema.org/produces');
+  static const produces = const IriTerm('https://schema.org/produces');
 
   /// IRI for schema:productGroupID [Expects: https://schema.org/Text]
   ///
@@ -20783,7 +19772,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ProductGroup
   ///
-  static const productGroupID = IriTerm.prevalidated(
+  static const productGroupID = const IriTerm(
     'https://schema.org/productGroupID',
   );
 
@@ -20793,7 +19782,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product
   ///
-  static const productID = IriTerm.prevalidated('https://schema.org/productID');
+  static const productID = const IriTerm('https://schema.org/productID');
 
   /// IRI for schema:productSupported [Expects: https://schema.org/Product, https://schema.org/Text]
   ///
@@ -20801,7 +19790,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ContactPoint
   ///
-  static const productSupported = IriTerm.prevalidated(
+  static const productSupported = const IriTerm(
     'https://schema.org/productSupported',
   );
 
@@ -20811,7 +19800,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWorkSeason, https://schema.org/Episode, https://schema.org/MediaObject, https://schema.org/Movie, https://schema.org/MovieSeries, https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGameSeries
   ///
-  static const productionCompany = IriTerm.prevalidated(
+  static const productionCompany = const IriTerm(
     'https://schema.org/productionCompany',
   );
 
@@ -20821,7 +19810,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product, https://schema.org/Vehicle
   ///
-  static const productionDate = IriTerm.prevalidated(
+  static const productionDate = const IriTerm(
     'https://schema.org/productionDate',
   );
 
@@ -20831,7 +19820,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/TechArticle
   ///
-  static const proficiencyLevel = IriTerm.prevalidated(
+  static const proficiencyLevel = const IriTerm(
     'https://schema.org/proficiencyLevel',
   );
 
@@ -20841,7 +19830,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ProgramMembership
   ///
-  static const program = IriTerm.prevalidated('https://schema.org/program');
+  static const program = const IriTerm('https://schema.org/program');
 
   /// IRI for schema:programMembershipUsed [Expects: https://schema.org/ProgramMembership]
   ///
@@ -20849,7 +19838,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Reservation
   ///
-  static const programMembershipUsed = IriTerm.prevalidated(
+  static const programMembershipUsed = const IriTerm(
     'https://schema.org/programMembershipUsed',
   );
 
@@ -20859,9 +19848,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ProgramMembership
   ///
-  static const programName = IriTerm.prevalidated(
-    'https://schema.org/programName',
-  );
+  static const programName = const IriTerm('https://schema.org/programName');
 
   /// IRI for schema:programPrerequisites [Expects: https://schema.org/AlignmentObject, https://schema.org/Course, https://schema.org/EducationalOccupationalCredential, https://schema.org/Text]
   ///
@@ -20869,7 +19856,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const programPrerequisites = IriTerm.prevalidated(
+  static const programPrerequisites = const IriTerm(
     'https://schema.org/programPrerequisites',
   );
 
@@ -20879,9 +19866,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const programType = IriTerm.prevalidated(
-    'https://schema.org/programType',
-  );
+  static const programType = const IriTerm('https://schema.org/programType');
 
   /// IRI for schema:programmingLanguage [Expects: https://schema.org/ComputerLanguage, https://schema.org/Text]
   ///
@@ -20889,7 +19874,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareSourceCode
   ///
-  static const programmingLanguage = IriTerm.prevalidated(
+  static const programmingLanguage = const IriTerm(
     'https://schema.org/programmingLanguage',
   );
 
@@ -20899,7 +19884,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/APIReference
   ///
-  static const programmingModel = IriTerm.prevalidated(
+  static const programmingModel = const IriTerm(
     'https://schema.org/programmingModel',
   );
 
@@ -20912,7 +19897,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const pronouns = IriTerm.prevalidated('https://schema.org/pronouns');
+  static const pronouns = const IriTerm('https://schema.org/pronouns');
 
   /// IRI for schema:propertyID [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -20923,9 +19908,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PropertyValue
   ///
-  static const propertyID = IriTerm.prevalidated(
-    'https://schema.org/propertyID',
-  );
+  static const propertyID = const IriTerm('https://schema.org/propertyID');
 
   /// IRI for schema:proprietaryName [Expects: https://schema.org/Text]
   ///
@@ -20933,7 +19916,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DietarySupplement, https://schema.org/Drug
   ///
-  static const proprietaryName = IriTerm.prevalidated(
+  static const proprietaryName = const IriTerm(
     'https://schema.org/proprietaryName',
   );
 
@@ -20943,7 +19926,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const proteinContent = IriTerm.prevalidated(
+  static const proteinContent = const IriTerm(
     'https://schema.org/proteinContent',
   );
 
@@ -20953,7 +19936,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const providerMobility = IriTerm.prevalidated(
+  static const providerMobility = const IriTerm(
     'https://schema.org/providerMobility',
   );
 
@@ -20963,7 +19946,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ServiceChannel
   ///
-  static const providesService = IriTerm.prevalidated(
+  static const providesService = const IriTerm(
     'https://schema.org/providesService',
   );
 
@@ -20973,9 +19956,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const publicAccess = IriTerm.prevalidated(
-    'https://schema.org/publicAccess',
-  );
+  static const publicAccess = const IriTerm('https://schema.org/publicAccess');
 
   /// IRI for schema:publicTransportClosuresInfo [Expects: https://schema.org/URL, https://schema.org/WebContent]
   ///
@@ -20983,7 +19964,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SpecialAnnouncement
   ///
-  static const publicTransportClosuresInfo = IriTerm.prevalidated(
+  static const publicTransportClosuresInfo = const IriTerm(
     'https://schema.org/publicTransportClosuresInfo',
   );
 
@@ -20993,9 +19974,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const publication = IriTerm.prevalidated(
-    'https://schema.org/publication',
-  );
+  static const publication = const IriTerm('https://schema.org/publication');
 
   /// IRI for schema:publicationType [Expects: https://schema.org/Text]
   ///
@@ -21003,7 +19982,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalScholarlyArticle
   ///
-  static const publicationType = IriTerm.prevalidated(
+  static const publicationType = const IriTerm(
     'https://schema.org/publicationType',
   );
 
@@ -21013,9 +19992,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PublicationEvent
   ///
-  static const publishedBy = IriTerm.prevalidated(
-    'https://schema.org/publishedBy',
-  );
+  static const publishedBy = const IriTerm('https://schema.org/publishedBy');
 
   /// IRI for schema:publishedOn [Expects: https://schema.org/BroadcastService]
   ///
@@ -21023,9 +20000,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PublicationEvent
   ///
-  static const publishedOn = IriTerm.prevalidated(
-    'https://schema.org/publishedOn',
-  );
+  static const publishedOn = const IriTerm('https://schema.org/publishedOn');
 
   /// IRI for schema:publisher [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -21033,7 +20008,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/FinancialIncentive
   ///
-  static const publisher = IriTerm.prevalidated('https://schema.org/publisher');
+  static const publisher = const IriTerm('https://schema.org/publisher');
 
   /// IRI for schema:publisherImprint [Expects: https://schema.org/Organization]
   ///
@@ -21041,7 +20016,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const publisherImprint = IriTerm.prevalidated(
+  static const publisherImprint = const IriTerm(
     'https://schema.org/publisherImprint',
   );
 
@@ -21051,9 +20026,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product, https://schema.org/Vehicle
   ///
-  static const purchaseDate = IriTerm.prevalidated(
-    'https://schema.org/purchaseDate',
-  );
+  static const purchaseDate = const IriTerm('https://schema.org/purchaseDate');
 
   /// IRI for schema:purchasePriceLimit [Expects: https://schema.org/MonetaryAmount]
   ///
@@ -21061,7 +20034,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FinancialIncentive
   ///
-  static const purchasePriceLimit = IriTerm.prevalidated(
+  static const purchasePriceLimit = const IriTerm(
     'https://schema.org/purchasePriceLimit',
   );
 
@@ -21071,9 +20044,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FinancialIncentive
   ///
-  static const purchaseType = IriTerm.prevalidated(
-    'https://schema.org/purchaseType',
-  );
+  static const purchaseType = const IriTerm('https://schema.org/purchaseType');
 
   /// IRI for schema:qualifications [Expects: https://schema.org/EducationalOccupationalCredential, https://schema.org/Text]
   ///
@@ -21081,7 +20052,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting, https://schema.org/Occupation
   ///
-  static const qualifications = IriTerm.prevalidated(
+  static const qualifications = const IriTerm(
     'https://schema.org/qualifications',
   );
 
@@ -21091,7 +20062,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FinancialIncentive
   ///
-  static const qualifiedExpense = IriTerm.prevalidated(
+  static const qualifiedExpense = const IriTerm(
     'https://schema.org/qualifiedExpense',
   );
 
@@ -21101,7 +20072,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SpecialAnnouncement
   ///
-  static const quarantineGuidelines = IriTerm.prevalidated(
+  static const quarantineGuidelines = const IriTerm(
     'https://schema.org/quarantineGuidelines',
   );
 
@@ -21111,7 +20082,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SearchAction
   ///
-  static const query = IriTerm.prevalidated('https://schema.org/query');
+  static const query = const IriTerm('https://schema.org/query');
 
   /// IRI for schema:quest [Expects: https://schema.org/Thing]
   ///
@@ -21119,7 +20090,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Game, https://schema.org/VideoGameSeries
   ///
-  static const quest = IriTerm.prevalidated('https://schema.org/quest');
+  static const quest = const IriTerm('https://schema.org/quest');
 
   /// IRI for schema:question [Expects: https://schema.org/Question]
   ///
@@ -21127,7 +20098,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AskAction
   ///
-  static const question = IriTerm.prevalidated('https://schema.org/question');
+  static const question = const IriTerm('https://schema.org/question');
 
   /// IRI for schema:rangeIncludes [Expects: https://schema.org/Class]
   ///
@@ -21135,7 +20106,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Property
   ///
-  static const rangeIncludes = IriTerm.prevalidated(
+  static const rangeIncludes = const IriTerm(
     'https://schema.org/rangeIncludes',
   );
 
@@ -21145,9 +20116,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AggregateRating
   ///
-  static const ratingCount = IriTerm.prevalidated(
-    'https://schema.org/ratingCount',
-  );
+  static const ratingCount = const IriTerm('https://schema.org/ratingCount');
 
   /// IRI for schema:ratingExplanation [Expects: https://schema.org/Text]
   ///
@@ -21155,7 +20124,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Rating
   ///
-  static const ratingExplanation = IriTerm.prevalidated(
+  static const ratingExplanation = const IriTerm(
     'https://schema.org/ratingExplanation',
   );
 
@@ -21165,9 +20134,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Rating
   ///
-  static const ratingValue = IriTerm.prevalidated(
-    'https://schema.org/ratingValue',
-  );
+  static const ratingValue = const IriTerm('https://schema.org/ratingValue');
 
   /// IRI for schema:readBy [Expects: https://schema.org/Person]
   ///
@@ -21175,7 +20142,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Audiobook
   ///
-  static const readBy = IriTerm.prevalidated('https://schema.org/readBy');
+  static const readBy = const IriTerm('https://schema.org/readBy');
 
   /// IRI for schema:readonlyValue [Expects: https://schema.org/Boolean]
   ///
@@ -21183,7 +20150,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PropertyValueSpecification
   ///
-  static const readonlyValue = IriTerm.prevalidated(
+  static const readonlyValue = const IriTerm(
     'https://schema.org/readonlyValue',
   );
 
@@ -21193,7 +20160,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RentAction
   ///
-  static const realEstateAgent = IriTerm.prevalidated(
+  static const realEstateAgent = const IriTerm(
     'https://schema.org/realEstateAgent',
   );
 
@@ -21203,7 +20170,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CookAction
   ///
-  static const recipe = IriTerm.prevalidated('https://schema.org/recipe');
+  static const recipe = const IriTerm('https://schema.org/recipe');
 
   /// IRI for schema:recipeCategory [Expects: https://schema.org/Text]
   ///
@@ -21211,7 +20178,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Recipe
   ///
-  static const recipeCategory = IriTerm.prevalidated(
+  static const recipeCategory = const IriTerm(
     'https://schema.org/recipeCategory',
   );
 
@@ -21221,7 +20188,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Recipe
   ///
-  static const recipeCuisine = IriTerm.prevalidated(
+  static const recipeCuisine = const IriTerm(
     'https://schema.org/recipeCuisine',
   );
 
@@ -21231,7 +20198,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Recipe
   ///
-  static const recipeInstructions = IriTerm.prevalidated(
+  static const recipeInstructions = const IriTerm(
     'https://schema.org/recipeInstructions',
   );
 
@@ -21241,9 +20208,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Recipe
   ///
-  static const recipeYield = IriTerm.prevalidated(
-    'https://schema.org/recipeYield',
-  );
+  static const recipeYield = const IriTerm('https://schema.org/recipeYield');
 
   /// IRI for schema:recognizedBy [Expects: https://schema.org/Organization]
   ///
@@ -21251,9 +20216,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalCredential
   ///
-  static const recognizedBy = IriTerm.prevalidated(
-    'https://schema.org/recognizedBy',
-  );
+  static const recognizedBy = const IriTerm('https://schema.org/recognizedBy');
 
   /// IRI for schema:recognizingAuthority [Expects: https://schema.org/Organization]
   ///
@@ -21261,7 +20224,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalEntity
   ///
-  static const recognizingAuthority = IriTerm.prevalidated(
+  static const recognizingAuthority = const IriTerm(
     'https://schema.org/recognizingAuthority',
   );
 
@@ -21271,7 +20234,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalGuidelineRecommendation
   ///
-  static const recommendationStrength = IriTerm.prevalidated(
+  static const recommendationStrength = const IriTerm(
     'https://schema.org/recommendationStrength',
   );
 
@@ -21281,7 +20244,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DietarySupplement
   ///
-  static const recommendedIntake = IriTerm.prevalidated(
+  static const recommendedIntake = const IriTerm(
     'https://schema.org/recommendedIntake',
   );
 
@@ -21291,9 +20254,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicRelease
   ///
-  static const recordLabel = IriTerm.prevalidated(
-    'https://schema.org/recordLabel',
-  );
+  static const recordLabel = const IriTerm('https://schema.org/recordLabel');
 
   /// IRI for schema:recourseLoan [Expects: https://schema.org/Boolean]
   ///
@@ -21301,9 +20262,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LoanOrCredit
   ///
-  static const recourseLoan = IriTerm.prevalidated(
-    'https://schema.org/recourseLoan',
-  );
+  static const recourseLoan = const IriTerm('https://schema.org/recourseLoan');
 
   /// IRI for schema:referee [Expects: https://schema.org/Person]
   ///
@@ -21311,7 +20270,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SportsEvent
   ///
-  static const referee = IriTerm.prevalidated('https://schema.org/referee');
+  static const referee = const IriTerm('https://schema.org/referee');
 
   /// IRI for schema:referenceQuantity [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -21319,7 +20278,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/UnitPriceSpecification
   ///
-  static const referenceQuantity = IriTerm.prevalidated(
+  static const referenceQuantity = const IriTerm(
     'https://schema.org/referenceQuantity',
   );
 
@@ -21329,7 +20288,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice
   ///
-  static const referencesOrder = IriTerm.prevalidated(
+  static const referencesOrder = const IriTerm(
     'https://schema.org/referencesOrder',
   );
 
@@ -21339,9 +20298,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy, https://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const refundType = IriTerm.prevalidated(
-    'https://schema.org/refundType',
-  );
+  static const refundType = const IriTerm('https://schema.org/refundType');
 
   /// IRI for schema:regionDrained [Expects: https://schema.org/AnatomicalStructure, https://schema.org/AnatomicalSystem]
   ///
@@ -21349,7 +20306,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LymphaticVessel, https://schema.org/Vein
   ///
-  static const regionDrained = IriTerm.prevalidated(
+  static const regionDrained = const IriTerm(
     'https://schema.org/regionDrained',
   );
 
@@ -21359,7 +20316,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaObject
   ///
-  static const regionsAllowed = IriTerm.prevalidated(
+  static const regionsAllowed = const IriTerm(
     'https://schema.org/regionsAllowed',
   );
 
@@ -21369,7 +20326,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SuperficialAnatomy
   ///
-  static const relatedAnatomy = IriTerm.prevalidated(
+  static const relatedAnatomy = const IriTerm(
     'https://schema.org/relatedAnatomy',
   );
 
@@ -21379,7 +20336,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AnatomicalStructure, https://schema.org/AnatomicalSystem, https://schema.org/SuperficialAnatomy
   ///
-  static const relatedCondition = IriTerm.prevalidated(
+  static const relatedCondition = const IriTerm(
     'https://schema.org/relatedCondition',
   );
 
@@ -21389,9 +20346,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const relatedDrug = IriTerm.prevalidated(
-    'https://schema.org/relatedDrug',
-  );
+  static const relatedDrug = const IriTerm('https://schema.org/relatedDrug');
 
   /// IRI for schema:relatedLink [Expects: https://schema.org/URL]
   ///
@@ -21399,9 +20354,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WebPage
   ///
-  static const relatedLink = IriTerm.prevalidated(
-    'https://schema.org/relatedLink',
-  );
+  static const relatedLink = const IriTerm('https://schema.org/relatedLink');
 
   /// IRI for schema:relatedStructure [Expects: https://schema.org/AnatomicalStructure]
   ///
@@ -21409,7 +20362,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AnatomicalSystem
   ///
-  static const relatedStructure = IriTerm.prevalidated(
+  static const relatedStructure = const IriTerm(
     'https://schema.org/relatedStructure',
   );
 
@@ -21419,7 +20372,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AnatomicalStructure, https://schema.org/AnatomicalSystem, https://schema.org/SuperficialAnatomy
   ///
-  static const relatedTherapy = IriTerm.prevalidated(
+  static const relatedTherapy = const IriTerm(
     'https://schema.org/relatedTherapy',
   );
 
@@ -21429,7 +20382,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const relatedTo = IriTerm.prevalidated('https://schema.org/relatedTo');
+  static const relatedTo = const IriTerm('https://schema.org/relatedTo');
 
   /// IRI for schema:releaseDate [Expects: https://schema.org/Date]
   ///
@@ -21437,9 +20390,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product
   ///
-  static const releaseDate = IriTerm.prevalidated(
-    'https://schema.org/releaseDate',
-  );
+  static const releaseDate = const IriTerm('https://schema.org/releaseDate');
 
   /// IRI for schema:releaseNotes [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -21447,9 +20398,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const releaseNotes = IriTerm.prevalidated(
-    'https://schema.org/releaseNotes',
-  );
+  static const releaseNotes = const IriTerm('https://schema.org/releaseNotes');
 
   /// IRI for schema:releasedEvent [Expects: https://schema.org/PublicationEvent]
   ///
@@ -21457,7 +20406,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const releasedEvent = IriTerm.prevalidated(
+  static const releasedEvent = const IriTerm(
     'https://schema.org/releasedEvent',
   );
 
@@ -21467,7 +20416,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const relevantOccupation = IriTerm.prevalidated(
+  static const relevantOccupation = const IriTerm(
     'https://schema.org/relevantOccupation',
   );
 
@@ -21477,7 +20426,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalEntity
   ///
-  static const relevantSpecialty = IriTerm.prevalidated(
+  static const relevantSpecialty = const IriTerm(
     'https://schema.org/relevantSpecialty',
   );
 
@@ -21487,7 +20436,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const remainingAttendeeCapacity = IriTerm.prevalidated(
+  static const remainingAttendeeCapacity = const IriTerm(
     'https://schema.org/remainingAttendeeCapacity',
   );
 
@@ -21497,7 +20446,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LoanOrCredit
   ///
-  static const renegotiableLoan = IriTerm.prevalidated(
+  static const renegotiableLoan = const IriTerm(
     'https://schema.org/renegotiableLoan',
   );
 
@@ -21507,9 +20456,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Schedule
   ///
-  static const repeatCount = IriTerm.prevalidated(
-    'https://schema.org/repeatCount',
-  );
+  static const repeatCount = const IriTerm('https://schema.org/repeatCount');
 
   /// IRI for schema:repeatFrequency [Expects: https://schema.org/Duration, https://schema.org/Text]
   ///
@@ -21518,7 +20465,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Schedule
   ///
-  static const repeatFrequency = IriTerm.prevalidated(
+  static const repeatFrequency = const IriTerm(
     'https://schema.org/repeatFrequency',
   );
 
@@ -21528,9 +20475,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExercisePlan
   ///
-  static const repetitions = IriTerm.prevalidated(
-    'https://schema.org/repetitions',
-  );
+  static const repetitions = const IriTerm('https://schema.org/repetitions');
 
   /// IRI for schema:replacee [Expects: https://schema.org/Thing]
   ///
@@ -21538,7 +20483,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ReplaceAction
   ///
-  static const replacee = IriTerm.prevalidated('https://schema.org/replacee');
+  static const replacee = const IriTerm('https://schema.org/replacee');
 
   /// IRI for schema:replacer [Expects: https://schema.org/Thing]
   ///
@@ -21546,7 +20491,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ReplaceAction
   ///
-  static const replacer = IriTerm.prevalidated('https://schema.org/replacer');
+  static const replacer = const IriTerm('https://schema.org/replacer');
 
   /// IRI for schema:replyToUrl [Expects: https://schema.org/URL]
   ///
@@ -21554,9 +20499,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/UserComments
   ///
-  static const replyToUrl = IriTerm.prevalidated(
-    'https://schema.org/replyToUrl',
-  );
+  static const replyToUrl = const IriTerm('https://schema.org/replyToUrl');
 
   /// IRI for schema:reportNumber [Expects: https://schema.org/Text]
   ///
@@ -21564,9 +20507,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Report
   ///
-  static const reportNumber = IriTerm.prevalidated(
-    'https://schema.org/reportNumber',
-  );
+  static const reportNumber = const IriTerm('https://schema.org/reportNumber');
 
   /// IRI for schema:representativeOfPage [Expects: https://schema.org/Boolean]
   ///
@@ -21574,7 +20515,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ImageObject
   ///
-  static const representativeOfPage = IriTerm.prevalidated(
+  static const representativeOfPage = const IriTerm(
     'https://schema.org/representativeOfPage',
   );
 
@@ -21584,7 +20525,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LoanOrCredit
   ///
-  static const requiredCollateral = IriTerm.prevalidated(
+  static const requiredCollateral = const IriTerm(
     'https://schema.org/requiredCollateral',
   );
 
@@ -21594,7 +20535,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PeopleAudience
   ///
-  static const requiredGender = IriTerm.prevalidated(
+  static const requiredGender = const IriTerm(
     'https://schema.org/requiredGender',
   );
 
@@ -21604,7 +20545,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PeopleAudience
   ///
-  static const requiredMaxAge = IriTerm.prevalidated(
+  static const requiredMaxAge = const IriTerm(
     'https://schema.org/requiredMaxAge',
   );
 
@@ -21614,7 +20555,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PeopleAudience
   ///
-  static const requiredMinAge = IriTerm.prevalidated(
+  static const requiredMinAge = const IriTerm(
     'https://schema.org/requiredMinAge',
   );
 
@@ -21624,7 +20565,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HowToItem
   ///
-  static const requiredQuantity = IriTerm.prevalidated(
+  static const requiredQuantity = const IriTerm(
     'https://schema.org/requiredQuantity',
   );
 
@@ -21634,9 +20575,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const requirements = IriTerm.prevalidated(
-    'https://schema.org/requirements',
-  );
+  static const requirements = const IriTerm('https://schema.org/requirements');
 
   /// IRI for schema:requiresSubscription [Expects: https://schema.org/Boolean, https://schema.org/MediaSubscription]
   ///
@@ -21644,7 +20583,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ActionAccessSpecification, https://schema.org/MediaObject
   ///
-  static const requiresSubscription = IriTerm.prevalidated(
+  static const requiresSubscription = const IriTerm(
     'https://schema.org/requiresSubscription',
   );
 
@@ -21654,7 +20593,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Reservation
   ///
-  static const reservationFor = IriTerm.prevalidated(
+  static const reservationFor = const IriTerm(
     'https://schema.org/reservationFor',
   );
 
@@ -21664,7 +20603,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Reservation
   ///
-  static const reservationId = IriTerm.prevalidated(
+  static const reservationId = const IriTerm(
     'https://schema.org/reservationId',
   );
 
@@ -21674,7 +20613,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Reservation
   ///
-  static const reservationStatus = IriTerm.prevalidated(
+  static const reservationStatus = const IriTerm(
     'https://schema.org/reservationStatus',
   );
 
@@ -21684,7 +20623,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Reservation
   ///
-  static const reservedTicket = IriTerm.prevalidated(
+  static const reservedTicket = const IriTerm(
     'https://schema.org/reservedTicket',
   );
 
@@ -21694,7 +20633,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting, https://schema.org/Occupation
   ///
-  static const responsibilities = IriTerm.prevalidated(
+  static const responsibilities = const IriTerm(
     'https://schema.org/responsibilities',
   );
 
@@ -21704,9 +20643,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExercisePlan
   ///
-  static const restPeriods = IriTerm.prevalidated(
-    'https://schema.org/restPeriods',
-  );
+  static const restPeriods = const IriTerm('https://schema.org/restPeriods');
 
   /// IRI for schema:restockingFee [Expects: https://schema.org/MonetaryAmount, https://schema.org/Number]
   ///
@@ -21714,7 +20651,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy, https://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const restockingFee = IriTerm.prevalidated(
+  static const restockingFee = const IriTerm(
     'https://schema.org/restockingFee',
   );
 
@@ -21724,7 +20661,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CommentAction, https://schema.org/ReplyAction
   ///
-  static const resultComment = IriTerm.prevalidated(
+  static const resultComment = const IriTerm(
     'https://schema.org/resultComment',
   );
 
@@ -21734,9 +20671,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ReviewAction
   ///
-  static const resultReview = IriTerm.prevalidated(
-    'https://schema.org/resultReview',
-  );
+  static const resultReview = const IriTerm('https://schema.org/resultReview');
 
   /// IRI for schema:returnFees [Expects: https://schema.org/ReturnFeesEnumeration]
   ///
@@ -21744,9 +20679,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy, https://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const returnFees = IriTerm.prevalidated(
-    'https://schema.org/returnFees',
-  );
+  static const returnFees = const IriTerm('https://schema.org/returnFees');
 
   /// IRI for schema:returnLabelSource [Expects: https://schema.org/ReturnLabelSourceEnumeration]
   ///
@@ -21754,7 +20687,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy
   ///
-  static const returnLabelSource = IriTerm.prevalidated(
+  static const returnLabelSource = const IriTerm(
     'https://schema.org/returnLabelSource',
   );
 
@@ -21764,9 +20697,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy, https://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const returnMethod = IriTerm.prevalidated(
-    'https://schema.org/returnMethod',
-  );
+  static const returnMethod = const IriTerm('https://schema.org/returnMethod');
 
   /// IRI for schema:returnPolicyCategory [Expects: https://schema.org/MerchantReturnEnumeration]
   ///
@@ -21774,7 +20705,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy, https://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const returnPolicyCategory = IriTerm.prevalidated(
+  static const returnPolicyCategory = const IriTerm(
     'https://schema.org/returnPolicyCategory',
   );
 
@@ -21784,7 +20715,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy
   ///
-  static const returnPolicyCountry = IriTerm.prevalidated(
+  static const returnPolicyCountry = const IriTerm(
     'https://schema.org/returnPolicyCountry',
   );
 
@@ -21794,7 +20725,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy
   ///
-  static const returnPolicySeasonalOverride = IriTerm.prevalidated(
+  static const returnPolicySeasonalOverride = const IriTerm(
     'https://schema.org/returnPolicySeasonalOverride',
   );
 
@@ -21804,7 +20735,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy, https://schema.org/MerchantReturnPolicySeasonalOverride
   ///
-  static const returnShippingFeesAmount = IriTerm.prevalidated(
+  static const returnShippingFeesAmount = const IriTerm(
     'https://schema.org/returnShippingFeesAmount',
   );
 
@@ -21814,9 +20745,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Guide, https://schema.org/Rating, https://schema.org/Review
   ///
-  static const reviewAspect = IriTerm.prevalidated(
-    'https://schema.org/reviewAspect',
-  );
+  static const reviewAspect = const IriTerm('https://schema.org/reviewAspect');
 
   /// IRI for schema:reviewBody [Expects: https://schema.org/Text]
   ///
@@ -21824,9 +20753,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Review
   ///
-  static const reviewBody = IriTerm.prevalidated(
-    'https://schema.org/reviewBody',
-  );
+  static const reviewBody = const IriTerm('https://schema.org/reviewBody');
 
   /// IRI for schema:reviewCount [Expects: https://schema.org/Integer]
   ///
@@ -21834,9 +20761,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AggregateRating
   ///
-  static const reviewCount = IriTerm.prevalidated(
-    'https://schema.org/reviewCount',
-  );
+  static const reviewCount = const IriTerm('https://schema.org/reviewCount');
 
   /// IRI for schema:reviewRating [Expects: https://schema.org/Rating]
   ///
@@ -21844,9 +20769,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Review
   ///
-  static const reviewRating = IriTerm.prevalidated(
-    'https://schema.org/reviewRating',
-  );
+  static const reviewRating = const IriTerm('https://schema.org/reviewRating');
 
   /// IRI for schema:reviewedBy [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -21854,9 +20777,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WebPage
   ///
-  static const reviewedBy = IriTerm.prevalidated(
-    'https://schema.org/reviewedBy',
-  );
+  static const reviewedBy = const IriTerm('https://schema.org/reviewedBy');
 
   /// IRI for schema:reviews [Expects: https://schema.org/Review]
   ///
@@ -21864,7 +20785,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product
   ///
-  static const reviews = IriTerm.prevalidated('https://schema.org/reviews');
+  static const reviews = const IriTerm('https://schema.org/reviews');
 
   /// IRI for schema:riskFactor [Expects: https://schema.org/MedicalRiskFactor]
   ///
@@ -21872,9 +20793,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition
   ///
-  static const riskFactor = IriTerm.prevalidated(
-    'https://schema.org/riskFactor',
-  );
+  static const riskFactor = const IriTerm('https://schema.org/riskFactor');
 
   /// IRI for schema:risks [Expects: https://schema.org/Text]
   ///
@@ -21882,7 +20801,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Diet
   ///
-  static const risks = IriTerm.prevalidated('https://schema.org/risks');
+  static const risks = const IriTerm('https://schema.org/risks');
 
   /// IRI for schema:roofLoad [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -21890,7 +20809,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BusOrCoach, https://schema.org/Car
   ///
-  static const roofLoad = IriTerm.prevalidated('https://schema.org/roofLoad');
+  static const roofLoad = const IriTerm('https://schema.org/roofLoad');
 
   /// IRI for schema:rsvpResponse [Expects: https://schema.org/RsvpResponseType]
   ///
@@ -21898,9 +20817,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RsvpAction
   ///
-  static const rsvpResponse = IriTerm.prevalidated(
-    'https://schema.org/rsvpResponse',
-  );
+  static const rsvpResponse = const IriTerm('https://schema.org/rsvpResponse');
 
   /// IRI for schema:runsTo [Expects: https://schema.org/Vessel]
   ///
@@ -21908,7 +20825,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LymphaticVessel
   ///
-  static const runsTo = IriTerm.prevalidated('https://schema.org/runsTo');
+  static const runsTo = const IriTerm('https://schema.org/runsTo');
 
   /// IRI for schema:runtime [Expects: https://schema.org/Text]
   ///
@@ -21916,7 +20833,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareSourceCode
   ///
-  static const runtime = IriTerm.prevalidated('https://schema.org/runtime');
+  static const runtime = const IriTerm('https://schema.org/runtime');
 
   /// IRI for schema:rxcui [Expects: https://schema.org/Text]
   ///
@@ -21924,7 +20841,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const rxcui = IriTerm.prevalidated('https://schema.org/rxcui');
+  static const rxcui = const IriTerm('https://schema.org/rxcui');
 
   /// IRI for schema:safetyConsideration [Expects: https://schema.org/Text]
   ///
@@ -21932,7 +20849,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DietarySupplement
   ///
-  static const safetyConsideration = IriTerm.prevalidated(
+  static const safetyConsideration = const IriTerm(
     'https://schema.org/safetyConsideration',
   );
 
@@ -21942,7 +20859,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EmployeeRole, https://schema.org/JobPosting
   ///
-  static const salaryCurrency = IriTerm.prevalidated(
+  static const salaryCurrency = const IriTerm(
     'https://schema.org/salaryCurrency',
   );
 
@@ -21952,7 +20869,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const salaryUponCompletion = IriTerm.prevalidated(
+  static const salaryUponCompletion = const IriTerm(
     'https://schema.org/salaryUponCompletion',
   );
 
@@ -21962,7 +20879,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const sameAs = IriTerm.prevalidated('https://schema.org/sameAs');
+  static const sameAs = const IriTerm('https://schema.org/sameAs');
 
   /// IRI for schema:sampleType [Expects: https://schema.org/Text]
   ///
@@ -21970,9 +20887,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareSourceCode
   ///
-  static const sampleType = IriTerm.prevalidated(
-    'https://schema.org/sampleType',
-  );
+  static const sampleType = const IriTerm('https://schema.org/sampleType');
 
   /// IRI for schema:saturatedFatContent [Expects: https://schema.org/Mass]
   ///
@@ -21980,7 +20895,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const saturatedFatContent = IriTerm.prevalidated(
+  static const saturatedFatContent = const IriTerm(
     'https://schema.org/saturatedFatContent',
   );
 
@@ -21990,7 +20905,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Schedule
   ///
-  static const scheduleTimezone = IriTerm.prevalidated(
+  static const scheduleTimezone = const IriTerm(
     'https://schema.org/scheduleTimezone',
   );
 
@@ -22000,7 +20915,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice
   ///
-  static const scheduledPaymentDate = IriTerm.prevalidated(
+  static const scheduledPaymentDate = const IriTerm(
     'https://schema.org/scheduledPaymentDate',
   );
 
@@ -22010,7 +20925,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PlanAction
   ///
-  static const scheduledTime = IriTerm.prevalidated(
+  static const scheduledTime = const IriTerm(
     'https://schema.org/scheduledTime',
   );
 
@@ -22021,7 +20936,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const schemaVersion = IriTerm.prevalidated(
+  static const schemaVersion = const IriTerm(
     'https://schema.org/schemaVersion',
   );
 
@@ -22031,7 +20946,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SpecialAnnouncement
   ///
-  static const schoolClosuresInfo = IriTerm.prevalidated(
+  static const schoolClosuresInfo = const IriTerm(
     'https://schema.org/schoolClosuresInfo',
   );
 
@@ -22041,9 +20956,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MovieTheater
   ///
-  static const screenCount = IriTerm.prevalidated(
-    'https://schema.org/screenCount',
-  );
+  static const screenCount = const IriTerm('https://schema.org/screenCount');
 
   /// IRI for schema:screenshot [Expects: https://schema.org/ImageObject, https://schema.org/URL]
   ///
@@ -22051,9 +20964,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const screenshot = IriTerm.prevalidated(
-    'https://schema.org/screenshot',
-  );
+  static const screenshot = const IriTerm('https://schema.org/screenshot');
 
   /// IRI for schema:sdDatePublished [Expects: https://schema.org/Date]
   ///
@@ -22061,7 +20972,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const sdDatePublished = IriTerm.prevalidated(
+  static const sdDatePublished = const IriTerm(
     'https://schema.org/sdDatePublished',
   );
 
@@ -22071,7 +20982,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const sdLicense = IriTerm.prevalidated('https://schema.org/sdLicense');
+  static const sdLicense = const IriTerm('https://schema.org/sdLicense');
 
   /// IRI for schema:sdPublisher [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -22080,9 +20991,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const sdPublisher = IriTerm.prevalidated(
-    'https://schema.org/sdPublisher',
-  );
+  static const sdPublisher = const IriTerm('https://schema.org/sdPublisher');
 
   /// IRI for schema:seasonNumber [Expects: https://schema.org/Integer, https://schema.org/Text]
   ///
@@ -22090,9 +20999,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWorkSeason
   ///
-  static const seasonNumber = IriTerm.prevalidated(
-    'https://schema.org/seasonNumber',
-  );
+  static const seasonNumber = const IriTerm('https://schema.org/seasonNumber');
 
   /// IRI for schema:seasonalOverride [Expects: https://schema.org/OpeningHoursSpecification]
   ///
@@ -22100,7 +21007,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ShippingConditions
   ///
-  static const seasonalOverride = IriTerm.prevalidated(
+  static const seasonalOverride = const IriTerm(
     'https://schema.org/seasonalOverride',
   );
 
@@ -22110,7 +21017,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGameSeries
   ///
-  static const seasons = IriTerm.prevalidated('https://schema.org/seasons');
+  static const seasons = const IriTerm('https://schema.org/seasons');
 
   /// IRI for schema:seatNumber [Expects: https://schema.org/Text]
   ///
@@ -22118,9 +21025,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Seat
   ///
-  static const seatNumber = IriTerm.prevalidated(
-    'https://schema.org/seatNumber',
-  );
+  static const seatNumber = const IriTerm('https://schema.org/seatNumber');
 
   /// IRI for schema:seatRow [Expects: https://schema.org/Text]
   ///
@@ -22128,7 +21033,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Seat
   ///
-  static const seatRow = IriTerm.prevalidated('https://schema.org/seatRow');
+  static const seatRow = const IriTerm('https://schema.org/seatRow');
 
   /// IRI for schema:seatSection [Expects: https://schema.org/Text]
   ///
@@ -22136,9 +21041,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Seat
   ///
-  static const seatSection = IriTerm.prevalidated(
-    'https://schema.org/seatSection',
-  );
+  static const seatSection = const IriTerm('https://schema.org/seatSection');
 
   /// IRI for schema:seatingCapacity [Expects: https://schema.org/Number, https://schema.org/QuantitativeValue]
   ///
@@ -22146,7 +21049,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const seatingCapacity = IriTerm.prevalidated(
+  static const seatingCapacity = const IriTerm(
     'https://schema.org/seatingCapacity',
   );
 
@@ -22156,9 +21059,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Seat
   ///
-  static const seatingType = IriTerm.prevalidated(
-    'https://schema.org/seatingType',
-  );
+  static const seatingType = const IriTerm('https://schema.org/seatingType');
 
   /// IRI for schema:secondaryPrevention [Expects: https://schema.org/MedicalTherapy]
   ///
@@ -22166,7 +21067,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition
   ///
-  static const secondaryPrevention = IriTerm.prevalidated(
+  static const secondaryPrevention = const IriTerm(
     'https://schema.org/secondaryPrevention',
   );
 
@@ -22176,7 +21077,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const securityClearanceRequirement = IriTerm.prevalidated(
+  static const securityClearanceRequirement = const IriTerm(
     'https://schema.org/securityClearanceRequirement',
   );
 
@@ -22186,7 +21087,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FlightReservation
   ///
-  static const securityScreening = IriTerm.prevalidated(
+  static const securityScreening = const IriTerm(
     'https://schema.org/securityScreening',
   );
 
@@ -22196,7 +21097,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const seeks = IriTerm.prevalidated('https://schema.org/seeks');
+  static const seeks = const IriTerm('https://schema.org/seeks');
 
   /// IRI for schema:sender [Expects: https://schema.org/Audience, https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -22204,7 +21105,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Message, https://schema.org/ReceiveAction
   ///
-  static const sender = IriTerm.prevalidated('https://schema.org/sender');
+  static const sender = const IriTerm('https://schema.org/sender');
 
   /// IRI for schema:sensoryRequirement [Expects: https://schema.org/DefinedTerm, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -22212,7 +21113,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const sensoryRequirement = IriTerm.prevalidated(
+  static const sensoryRequirement = const IriTerm(
     'https://schema.org/sensoryRequirement',
   );
 
@@ -22222,9 +21123,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Nerve
   ///
-  static const sensoryUnit = IriTerm.prevalidated(
-    'https://schema.org/sensoryUnit',
-  );
+  static const sensoryUnit = const IriTerm('https://schema.org/sensoryUnit');
 
   /// IRI for schema:seriousAdverseOutcome [Expects: https://schema.org/MedicalEntity]
   ///
@@ -22232,7 +21131,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalDevice, https://schema.org/MedicalTherapy
   ///
-  static const seriousAdverseOutcome = IriTerm.prevalidated(
+  static const seriousAdverseOutcome = const IriTerm(
     'https://schema.org/seriousAdverseOutcome',
   );
 
@@ -22242,9 +21141,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GameServer
   ///
-  static const serverStatus = IriTerm.prevalidated(
-    'https://schema.org/serverStatus',
-  );
+  static const serverStatus = const IriTerm('https://schema.org/serverStatus');
 
   /// IRI for schema:servesCuisine [Expects: https://schema.org/Text]
   ///
@@ -22252,7 +21149,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FoodEstablishment
   ///
-  static const servesCuisine = IriTerm.prevalidated(
+  static const servesCuisine = const IriTerm(
     'https://schema.org/servesCuisine',
   );
 
@@ -22262,7 +21159,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const serviceAudience = IriTerm.prevalidated(
+  static const serviceAudience = const IriTerm(
     'https://schema.org/serviceAudience',
   );
 
@@ -22272,7 +21169,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ServiceChannel
   ///
-  static const serviceLocation = IriTerm.prevalidated(
+  static const serviceLocation = const IriTerm(
     'https://schema.org/serviceLocation',
   );
 
@@ -22282,7 +21179,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GovernmentService
   ///
-  static const serviceOperator = IriTerm.prevalidated(
+  static const serviceOperator = const IriTerm(
     'https://schema.org/serviceOperator',
   );
 
@@ -22292,9 +21189,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ServiceChannel
   ///
-  static const servicePhone = IriTerm.prevalidated(
-    'https://schema.org/servicePhone',
-  );
+  static const servicePhone = const IriTerm('https://schema.org/servicePhone');
 
   /// IRI for schema:servicePostalAddress [Expects: https://schema.org/PostalAddress]
   ///
@@ -22302,7 +21197,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ServiceChannel
   ///
-  static const servicePostalAddress = IriTerm.prevalidated(
+  static const servicePostalAddress = const IriTerm(
     'https://schema.org/servicePostalAddress',
   );
 
@@ -22312,7 +21207,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ServiceChannel
   ///
-  static const serviceSmsNumber = IriTerm.prevalidated(
+  static const serviceSmsNumber = const IriTerm(
     'https://schema.org/serviceSmsNumber',
   );
 
@@ -22322,9 +21217,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const serviceType = IriTerm.prevalidated(
-    'https://schema.org/serviceType',
-  );
+  static const serviceType = const IriTerm('https://schema.org/serviceType');
 
   /// IRI for schema:serviceUrl [Expects: https://schema.org/URL]
   ///
@@ -22332,9 +21225,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ServiceChannel
   ///
-  static const serviceUrl = IriTerm.prevalidated(
-    'https://schema.org/serviceUrl',
-  );
+  static const serviceUrl = const IriTerm('https://schema.org/serviceUrl');
 
   /// IRI for schema:servingSize [Expects: https://schema.org/Text]
   ///
@@ -22342,9 +21233,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const servingSize = IriTerm.prevalidated(
-    'https://schema.org/servingSize',
-  );
+  static const servingSize = const IriTerm('https://schema.org/servingSize');
 
   /// IRI for schema:sha256 [Expects: https://schema.org/Text]
   ///
@@ -22352,7 +21241,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaObject
   ///
-  static const sha256 = IriTerm.prevalidated('https://schema.org/sha256');
+  static const sha256 = const IriTerm('https://schema.org/sha256');
 
   /// IRI for schema:sharedContent [Expects: https://schema.org/CreativeWork]
   ///
@@ -22360,7 +21249,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Comment, https://schema.org/SocialMediaPosting
   ///
-  static const sharedContent = IriTerm.prevalidated(
+  static const sharedContent = const IriTerm(
     'https://schema.org/sharedContent',
   );
 
@@ -22370,7 +21259,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ShippingService
   ///
-  static const shippingConditions = IriTerm.prevalidated(
+  static const shippingConditions = const IriTerm(
     'https://schema.org/shippingConditions',
   );
 
@@ -22380,7 +21269,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DeliveryTimeSettings, https://schema.org/OfferShippingDetails, https://schema.org/ShippingConditions, https://schema.org/ShippingRateSettings
   ///
-  static const shippingDestination = IriTerm.prevalidated(
+  static const shippingDestination = const IriTerm(
     'https://schema.org/shippingDestination',
   );
 
@@ -22390,7 +21279,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Offer
   ///
-  static const shippingDetails = IriTerm.prevalidated(
+  static const shippingDetails = const IriTerm(
     'https://schema.org/shippingDetails',
   );
 
@@ -22400,7 +21289,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OfferShippingDetails, https://schema.org/ShippingConditions
   ///
-  static const shippingOrigin = IriTerm.prevalidated(
+  static const shippingOrigin = const IriTerm(
     'https://schema.org/shippingOrigin',
   );
 
@@ -22410,9 +21299,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OfferShippingDetails, https://schema.org/ShippingConditions, https://schema.org/ShippingRateSettings
   ///
-  static const shippingRate = IriTerm.prevalidated(
-    'https://schema.org/shippingRate',
-  );
+  static const shippingRate = const IriTerm('https://schema.org/shippingRate');
 
   /// IRI for schema:siblings [Expects: https://schema.org/Person]
   ///
@@ -22420,7 +21307,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const siblings = IriTerm.prevalidated('https://schema.org/siblings');
+  static const siblings = const IriTerm('https://schema.org/siblings');
 
   /// IRI for schema:signDetected [Expects: https://schema.org/MedicalSign]
   ///
@@ -22428,9 +21315,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalTest
   ///
-  static const signDetected = IriTerm.prevalidated(
-    'https://schema.org/signDetected',
-  );
+  static const signDetected = const IriTerm('https://schema.org/signDetected');
 
   /// IRI for schema:signOrSymptom [Expects: https://schema.org/MedicalSignOrSymptom]
   ///
@@ -22438,7 +21323,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition
   ///
-  static const signOrSymptom = IriTerm.prevalidated(
+  static const signOrSymptom = const IriTerm(
     'https://schema.org/signOrSymptom',
   );
 
@@ -22448,9 +21333,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SuperficialAnatomy
   ///
-  static const significance = IriTerm.prevalidated(
-    'https://schema.org/significance',
-  );
+  static const significance = const IriTerm('https://schema.org/significance');
 
   /// IRI for schema:significantLinks [Expects: https://schema.org/URL]
   ///
@@ -22458,7 +21341,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WebPage
   ///
-  static const significantLinks = IriTerm.prevalidated(
+  static const significantLinks = const IriTerm(
     'https://schema.org/significantLinks',
   );
 
@@ -22468,7 +21351,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Product
   ///
-  static const size = IriTerm.prevalidated('https://schema.org/size');
+  static const size = const IriTerm('https://schema.org/size');
 
   /// IRI for schema:sizeGroup [Expects: https://schema.org/SizeGroupEnumeration, https://schema.org/Text]
   ///
@@ -22476,7 +21359,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SizeSpecification
   ///
-  static const sizeGroup = IriTerm.prevalidated('https://schema.org/sizeGroup');
+  static const sizeGroup = const IriTerm('https://schema.org/sizeGroup');
 
   /// IRI for schema:sizeSystem [Expects: https://schema.org/SizeSystemEnumeration, https://schema.org/Text]
   ///
@@ -22484,9 +21367,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SizeSpecification
   ///
-  static const sizeSystem = IriTerm.prevalidated(
-    'https://schema.org/sizeSystem',
-  );
+  static const sizeSystem = const IriTerm('https://schema.org/sizeSystem');
 
   /// IRI for schema:skills [Expects: https://schema.org/DefinedTerm, https://schema.org/Text]
   ///
@@ -22494,7 +21375,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting, https://schema.org/Occupation, https://schema.org/Organization, https://schema.org/Person
   ///
-  static const skills = IriTerm.prevalidated('https://schema.org/skills');
+  static const skills = const IriTerm('https://schema.org/skills');
 
   /// IRI for schema:sku [Expects: https://schema.org/Text]
   ///
@@ -22502,7 +21383,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/Product
   ///
-  static const sku = IriTerm.prevalidated('https://schema.org/sku');
+  static const sku = const IriTerm('https://schema.org/sku');
 
   /// IRI for schema:slogan [Expects: https://schema.org/Text]
   ///
@@ -22510,7 +21391,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const slogan = IriTerm.prevalidated('https://schema.org/slogan');
+  static const slogan = const IriTerm('https://schema.org/slogan');
 
   /// IRI for schema:smiles [Expects: https://schema.org/Text]
   ///
@@ -22518,7 +21399,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MolecularEntity
   ///
-  static const smiles = IriTerm.prevalidated('https://schema.org/smiles');
+  static const smiles = const IriTerm('https://schema.org/smiles');
 
   /// IRI for schema:smokingAllowed [Expects: https://schema.org/Boolean]
   ///
@@ -22526,7 +21407,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const smokingAllowed = IriTerm.prevalidated(
+  static const smokingAllowed = const IriTerm(
     'https://schema.org/smokingAllowed',
   );
 
@@ -22536,7 +21417,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const sodiumContent = IriTerm.prevalidated(
+  static const sodiumContent = const IriTerm(
     'https://schema.org/sodiumContent',
   );
 
@@ -22546,7 +21427,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const softwareAddOn = IriTerm.prevalidated(
+  static const softwareAddOn = const IriTerm(
     'https://schema.org/softwareAddOn',
   );
 
@@ -22556,9 +21437,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const softwareHelp = IriTerm.prevalidated(
-    'https://schema.org/softwareHelp',
-  );
+  static const softwareHelp = const IriTerm('https://schema.org/softwareHelp');
 
   /// IRI for schema:softwareVersion [Expects: https://schema.org/Text]
   ///
@@ -22566,7 +21445,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const softwareVersion = IriTerm.prevalidated(
+  static const softwareVersion = const IriTerm(
     'https://schema.org/softwareVersion',
   );
 
@@ -22576,7 +21455,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const sourceOrganization = IriTerm.prevalidated(
+  static const sourceOrganization = const IriTerm(
     'https://schema.org/sourceOrganization',
   );
 
@@ -22586,9 +21465,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Nerve
   ///
-  static const sourcedFrom = IriTerm.prevalidated(
-    'https://schema.org/sourcedFrom',
-  );
+  static const sourcedFrom = const IriTerm('https://schema.org/sourcedFrom');
 
   /// IRI for schema:spatial [Expects: https://schema.org/Place]
   ///
@@ -22597,7 +21474,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const spatial = IriTerm.prevalidated('https://schema.org/spatial');
+  static const spatial = const IriTerm('https://schema.org/spatial');
 
   /// IRI for schema:speakable [Expects: https://schema.org/SpeakableSpecification, https://schema.org/URL]
   ///
@@ -22618,7 +21495,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Article, https://schema.org/WebPage
   ///
-  static const speakable = IriTerm.prevalidated('https://schema.org/speakable');
+  static const speakable = const IriTerm('https://schema.org/speakable');
 
   /// IRI for schema:specialCommitments [Expects: https://schema.org/Text]
   ///
@@ -22626,7 +21503,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const specialCommitments = IriTerm.prevalidated(
+  static const specialCommitments = const IriTerm(
     'https://schema.org/specialCommitments',
   );
 
@@ -22637,7 +21514,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const specialOpeningHoursSpecification = IriTerm.prevalidated(
+  static const specialOpeningHoursSpecification = const IriTerm(
     'https://schema.org/specialOpeningHoursSpecification',
   );
 
@@ -22647,7 +21524,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WebPage
   ///
-  static const specialty = IriTerm.prevalidated('https://schema.org/specialty');
+  static const specialty = const IriTerm('https://schema.org/specialty');
 
   /// IRI for schema:speechToTextMarkup [Expects: https://schema.org/Text]
   ///
@@ -22655,7 +21532,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PronounceableText
   ///
-  static const speechToTextMarkup = IriTerm.prevalidated(
+  static const speechToTextMarkup = const IriTerm(
     'https://schema.org/speechToTextMarkup',
   );
 
@@ -22665,7 +21542,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const speed = IriTerm.prevalidated('https://schema.org/speed');
+  static const speed = const IriTerm('https://schema.org/speed');
 
   /// IRI for schema:spokenByCharacter [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -22673,7 +21550,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Quotation
   ///
-  static const spokenByCharacter = IriTerm.prevalidated(
+  static const spokenByCharacter = const IriTerm(
     'https://schema.org/spokenByCharacter',
   );
 
@@ -22683,7 +21560,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SportsEvent, https://schema.org/SportsOrganization
   ///
-  static const sport = IriTerm.prevalidated('https://schema.org/sport');
+  static const sport = const IriTerm('https://schema.org/sport');
 
   /// IRI for schema:sportsActivityLocation [Expects: https://schema.org/SportsActivityLocation]
   ///
@@ -22691,7 +21568,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExerciseAction
   ///
-  static const sportsActivityLocation = IriTerm.prevalidated(
+  static const sportsActivityLocation = const IriTerm(
     'https://schema.org/sportsActivityLocation',
   );
 
@@ -22701,9 +21578,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExerciseAction
   ///
-  static const sportsEvent = IriTerm.prevalidated(
-    'https://schema.org/sportsEvent',
-  );
+  static const sportsEvent = const IriTerm('https://schema.org/sportsEvent');
 
   /// IRI for schema:sportsTeam [Expects: https://schema.org/SportsTeam]
   ///
@@ -22711,9 +21586,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExerciseAction
   ///
-  static const sportsTeam = IriTerm.prevalidated(
-    'https://schema.org/sportsTeam',
-  );
+  static const sportsTeam = const IriTerm('https://schema.org/sportsTeam');
 
   /// IRI for schema:spouse [Expects: https://schema.org/Person]
   ///
@@ -22721,7 +21594,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const spouse = IriTerm.prevalidated('https://schema.org/spouse');
+  static const spouse = const IriTerm('https://schema.org/spouse');
 
   /// IRI for schema:stage [Expects: https://schema.org/MedicalConditionStage]
   ///
@@ -22729,7 +21602,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition
   ///
-  static const stage = IriTerm.prevalidated('https://schema.org/stage');
+  static const stage = const IriTerm('https://schema.org/stage');
 
   /// IRI for schema:stageAsNumber [Expects: https://schema.org/Number]
   ///
@@ -22737,7 +21610,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalConditionStage
   ///
-  static const stageAsNumber = IriTerm.prevalidated(
+  static const stageAsNumber = const IriTerm(
     'https://schema.org/stageAsNumber',
   );
 
@@ -22747,9 +21620,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FoodEstablishment, https://schema.org/LodgingBusiness
   ///
-  static const starRating = IriTerm.prevalidated(
-    'https://schema.org/starRating',
-  );
+  static const starRating = const IriTerm('https://schema.org/starRating');
 
   /// IRI for schema:startDate [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -22757,7 +21628,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWorkSeason, https://schema.org/CreativeWorkSeries, https://schema.org/DatedMoneySpecification, https://schema.org/EducationalOccupationalProgram, https://schema.org/Event, https://schema.org/MerchantReturnPolicySeasonalOverride, https://schema.org/Role, https://schema.org/Schedule
   ///
-  static const startDate = IriTerm.prevalidated('https://schema.org/startDate');
+  static const startDate = const IriTerm('https://schema.org/startDate');
 
   /// IRI for schema:startOffset [Expects: https://schema.org/HyperTocEntry, https://schema.org/Number]
   ///
@@ -22765,9 +21636,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Clip, https://schema.org/SeekToAction
   ///
-  static const startOffset = IriTerm.prevalidated(
-    'https://schema.org/startOffset',
-  );
+  static const startOffset = const IriTerm('https://schema.org/startOffset');
 
   /// IRI for schema:startTime [Expects: https://schema.org/DateTime, https://schema.org/Time]
   ///
@@ -22775,7 +21644,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Action, https://schema.org/FoodEstablishmentReservation, https://schema.org/InteractionCounter, https://schema.org/MediaObject, https://schema.org/Schedule
   ///
-  static const startTime = IriTerm.prevalidated('https://schema.org/startTime');
+  static const startTime = const IriTerm('https://schema.org/startTime');
 
   /// IRI for schema:statType [Expects: https://schema.org/Property, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -22783,7 +21652,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/StatisticalVariable
   ///
-  static const statType = IriTerm.prevalidated('https://schema.org/statType');
+  static const statType = const IriTerm('https://schema.org/statType');
 
   /// IRI for schema:status [Expects: https://schema.org/EventStatusType, https://schema.org/MedicalStudyStatus, https://schema.org/Text]
   ///
@@ -22791,7 +21660,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition, https://schema.org/MedicalProcedure, https://schema.org/MedicalStudy
   ///
-  static const status = IriTerm.prevalidated('https://schema.org/status');
+  static const status = const IriTerm('https://schema.org/status');
 
   /// IRI for schema:steeringPosition [Expects: https://schema.org/SteeringPositionValue]
   ///
@@ -22799,7 +21668,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const steeringPosition = IriTerm.prevalidated(
+  static const steeringPosition = const IriTerm(
     'https://schema.org/steeringPosition',
   );
 
@@ -22809,7 +21678,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PropertyValueSpecification
   ///
-  static const stepValue = IriTerm.prevalidated('https://schema.org/stepValue');
+  static const stepValue = const IriTerm('https://schema.org/stepValue');
 
   /// IRI for schema:steps [Expects: https://schema.org/CreativeWork, https://schema.org/ItemList, https://schema.org/Text]
   ///
@@ -22817,7 +21686,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HowTo, https://schema.org/HowToSection
   ///
-  static const steps = IriTerm.prevalidated('https://schema.org/steps');
+  static const steps = const IriTerm('https://schema.org/steps');
 
   /// IRI for schema:storageRequirements [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -22825,7 +21694,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const storageRequirements = IriTerm.prevalidated(
+  static const storageRequirements = const IriTerm(
     'https://schema.org/storageRequirements',
   );
 
@@ -22835,7 +21704,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PostalAddress
   ///
-  static const streetAddress = IriTerm.prevalidated(
+  static const streetAddress = const IriTerm(
     'https://schema.org/streetAddress',
   );
 
@@ -22845,9 +21714,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DrugStrength
   ///
-  static const strengthUnit = IriTerm.prevalidated(
-    'https://schema.org/strengthUnit',
-  );
+  static const strengthUnit = const IriTerm('https://schema.org/strengthUnit');
 
   /// IRI for schema:strengthValue [Expects: https://schema.org/Number]
   ///
@@ -22855,7 +21722,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DrugStrength
   ///
-  static const strengthValue = IriTerm.prevalidated(
+  static const strengthValue = const IriTerm(
     'https://schema.org/strengthValue',
   );
 
@@ -22865,7 +21732,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Joint
   ///
-  static const structuralClass = IriTerm.prevalidated(
+  static const structuralClass = const IriTerm(
     'https://schema.org/structuralClass',
   );
 
@@ -22875,7 +21742,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalEntity
   ///
-  static const study = IriTerm.prevalidated('https://schema.org/study');
+  static const study = const IriTerm('https://schema.org/study');
 
   /// IRI for schema:studyDesign [Expects: https://schema.org/MedicalObservationalStudyDesign]
   ///
@@ -22883,9 +21750,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalObservationalStudy
   ///
-  static const studyDesign = IriTerm.prevalidated(
-    'https://schema.org/studyDesign',
-  );
+  static const studyDesign = const IriTerm('https://schema.org/studyDesign');
 
   /// IRI for schema:studyLocation [Expects: https://schema.org/AdministrativeArea]
   ///
@@ -22893,7 +21758,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalStudy
   ///
-  static const studyLocation = IriTerm.prevalidated(
+  static const studyLocation = const IriTerm(
     'https://schema.org/studyLocation',
   );
 
@@ -22903,9 +21768,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalStudy
   ///
-  static const studySubject = IriTerm.prevalidated(
-    'https://schema.org/studySubject',
-  );
+  static const studySubject = const IriTerm('https://schema.org/studySubject');
 
   /// IRI for schema:subEvents [Expects: https://schema.org/Event]
   ///
@@ -22913,7 +21776,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const subEvents = IriTerm.prevalidated('https://schema.org/subEvents');
+  static const subEvents = const IriTerm('https://schema.org/subEvents');
 
   /// IRI for schema:subReservation [Expects: https://schema.org/Reservation]
   ///
@@ -22921,7 +21784,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ReservationPackage
   ///
-  static const subReservation = IriTerm.prevalidated(
+  static const subReservation = const IriTerm(
     'https://schema.org/subReservation',
   );
 
@@ -22931,7 +21794,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalConditionStage
   ///
-  static const subStageSuffix = IriTerm.prevalidated(
+  static const subStageSuffix = const IriTerm(
     'https://schema.org/subStageSuffix',
   );
 
@@ -22941,9 +21804,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AnatomicalStructure
   ///
-  static const subStructure = IriTerm.prevalidated(
-    'https://schema.org/subStructure',
-  );
+  static const subStructure = const IriTerm('https://schema.org/subStructure');
 
   /// IRI for schema:subTest [Expects: https://schema.org/MedicalTest]
   ///
@@ -22951,7 +21812,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalTestPanel
   ///
-  static const subTest = IriTerm.prevalidated('https://schema.org/subTest');
+  static const subTest = const IriTerm('https://schema.org/subTest');
 
   /// IRI for schema:subtitleLanguage [Expects: https://schema.org/Language, https://schema.org/Text]
   ///
@@ -22959,7 +21820,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastEvent, https://schema.org/Movie, https://schema.org/ScreeningEvent, https://schema.org/TVEpisode
   ///
-  static const subtitleLanguage = IriTerm.prevalidated(
+  static const subtitleLanguage = const IriTerm(
     'https://schema.org/subtitleLanguage',
   );
 
@@ -22969,9 +21830,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ProductModel
   ///
-  static const successorOf = IriTerm.prevalidated(
-    'https://schema.org/successorOf',
-  );
+  static const successorOf = const IriTerm('https://schema.org/successorOf');
 
   /// IRI for schema:sugarContent [Expects: https://schema.org/Mass]
   ///
@@ -22979,9 +21838,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const sugarContent = IriTerm.prevalidated(
-    'https://schema.org/sugarContent',
-  );
+  static const sugarContent = const IriTerm('https://schema.org/sugarContent');
 
   /// IRI for schema:suggestedAge [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -22989,9 +21846,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PeopleAudience, https://schema.org/SizeSpecification
   ///
-  static const suggestedAge = IriTerm.prevalidated(
-    'https://schema.org/suggestedAge',
-  );
+  static const suggestedAge = const IriTerm('https://schema.org/suggestedAge');
 
   /// IRI for schema:suggestedGender [Expects: https://schema.org/GenderType, https://schema.org/Text]
   ///
@@ -22999,7 +21854,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PeopleAudience, https://schema.org/SizeSpecification
   ///
-  static const suggestedGender = IriTerm.prevalidated(
+  static const suggestedGender = const IriTerm(
     'https://schema.org/suggestedGender',
   );
 
@@ -23009,7 +21864,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PeopleAudience
   ///
-  static const suggestedMaxAge = IriTerm.prevalidated(
+  static const suggestedMaxAge = const IriTerm(
     'https://schema.org/suggestedMaxAge',
   );
 
@@ -23019,7 +21874,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PeopleAudience, https://schema.org/SizeSpecification
   ///
-  static const suggestedMeasurement = IriTerm.prevalidated(
+  static const suggestedMeasurement = const IriTerm(
     'https://schema.org/suggestedMeasurement',
   );
 
@@ -23029,7 +21884,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PeopleAudience
   ///
-  static const suggestedMinAge = IriTerm.prevalidated(
+  static const suggestedMinAge = const IriTerm(
     'https://schema.org/suggestedMinAge',
   );
 
@@ -23039,7 +21894,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MenuItem, https://schema.org/Recipe
   ///
-  static const suitableForDiet = IriTerm.prevalidated(
+  static const suitableForDiet = const IriTerm(
     'https://schema.org/suitableForDiet',
   );
 
@@ -23049,9 +21904,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Class, https://schema.org/Enumeration, https://schema.org/Property
   ///
-  static const supersededBy = IriTerm.prevalidated(
-    'https://schema.org/supersededBy',
-  );
+  static const supersededBy = const IriTerm('https://schema.org/supersededBy');
 
   /// IRI for schema:supplyTo [Expects: https://schema.org/AnatomicalStructure]
   ///
@@ -23059,7 +21912,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Artery
   ///
-  static const supplyTo = IriTerm.prevalidated('https://schema.org/supplyTo');
+  static const supplyTo = const IriTerm('https://schema.org/supplyTo');
 
   /// IRI for schema:supportingData [Expects: https://schema.org/DataFeed]
   ///
@@ -23067,7 +21920,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const supportingData = IriTerm.prevalidated(
+  static const supportingData = const IriTerm(
     'https://schema.org/supportingData',
   );
 
@@ -23077,7 +21930,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VisualArtwork
   ///
-  static const surface = IriTerm.prevalidated('https://schema.org/surface');
+  static const surface = const IriTerm('https://schema.org/surface');
 
   /// IRI for schema:syllabusSections [Expects: https://schema.org/Syllabus]
   ///
@@ -23085,7 +21938,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Course
   ///
-  static const syllabusSections = IriTerm.prevalidated(
+  static const syllabusSections = const IriTerm(
     'https://schema.org/syllabusSections',
   );
 
@@ -23095,7 +21948,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Action
   ///
-  static const target = IriTerm.prevalidated('https://schema.org/target');
+  static const target = const IriTerm('https://schema.org/target');
 
   /// IRI for schema:targetDescription [Expects: https://schema.org/Text]
   ///
@@ -23103,7 +21956,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AlignmentObject
   ///
-  static const targetDescription = IriTerm.prevalidated(
+  static const targetDescription = const IriTerm(
     'https://schema.org/targetDescription',
   );
 
@@ -23113,9 +21966,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AlignmentObject
   ///
-  static const targetName = IriTerm.prevalidated(
-    'https://schema.org/targetName',
-  );
+  static const targetName = const IriTerm('https://schema.org/targetName');
 
   /// IRI for schema:targetPlatform [Expects: https://schema.org/Text]
   ///
@@ -23123,7 +21974,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/APIReference
   ///
-  static const targetPlatform = IriTerm.prevalidated(
+  static const targetPlatform = const IriTerm(
     'https://schema.org/targetPlatform',
   );
 
@@ -23133,7 +21984,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DietarySupplement, https://schema.org/DoseSchedule
   ///
-  static const targetPopulation = IriTerm.prevalidated(
+  static const targetPopulation = const IriTerm(
     'https://schema.org/targetPopulation',
   );
 
@@ -23143,7 +21994,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareSourceCode
   ///
-  static const targetProduct = IriTerm.prevalidated(
+  static const targetProduct = const IriTerm(
     'https://schema.org/targetProduct',
   );
 
@@ -23153,7 +22004,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AlignmentObject
   ///
-  static const targetUrl = IriTerm.prevalidated('https://schema.org/targetUrl');
+  static const targetUrl = const IriTerm('https://schema.org/targetUrl');
 
   /// IRI for schema:taxID [Expects: https://schema.org/Text]
   ///
@@ -23161,7 +22012,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const taxID = IriTerm.prevalidated('https://schema.org/taxID');
+  static const taxID = const IriTerm('https://schema.org/taxID');
 
   /// IRI for schema:taxonRank [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -23169,7 +22020,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Taxon
   ///
-  static const taxonRank = IriTerm.prevalidated('https://schema.org/taxonRank');
+  static const taxonRank = const IriTerm('https://schema.org/taxonRank');
 
   /// IRI for schema:taxonomicRange [Expects: https://schema.org/DefinedTerm, https://schema.org/Taxon, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -23177,7 +22028,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BioChemEntity
   ///
-  static const taxonomicRange = IriTerm.prevalidated(
+  static const taxonomicRange = const IriTerm(
     'https://schema.org/taxonomicRange',
   );
 
@@ -23187,7 +22038,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/EducationEvent, https://schema.org/LearningResource
   ///
-  static const teaches = IriTerm.prevalidated('https://schema.org/teaches');
+  static const teaches = const IriTerm('https://schema.org/teaches');
 
   /// IRI for schema:telephone [Expects: https://schema.org/Text]
   ///
@@ -23195,7 +22046,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Place
   ///
-  static const telephone = IriTerm.prevalidated('https://schema.org/telephone');
+  static const telephone = const IriTerm('https://schema.org/telephone');
 
   /// IRI for schema:temporal [Expects: https://schema.org/DateTime, https://schema.org/Text]
   ///
@@ -23204,7 +22055,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const temporal = IriTerm.prevalidated('https://schema.org/temporal');
+  static const temporal = const IriTerm('https://schema.org/temporal');
 
   /// IRI for schema:termDuration [Expects: https://schema.org/Duration]
   ///
@@ -23212,9 +22063,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const termDuration = IriTerm.prevalidated(
-    'https://schema.org/termDuration',
-  );
+  static const termDuration = const IriTerm('https://schema.org/termDuration');
 
   /// IRI for schema:termsOfService [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -23222,7 +22071,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const termsOfService = IriTerm.prevalidated(
+  static const termsOfService = const IriTerm(
     'https://schema.org/termsOfService',
   );
 
@@ -23232,9 +22081,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const termsPerYear = IriTerm.prevalidated(
-    'https://schema.org/termsPerYear',
-  );
+  static const termsPerYear = const IriTerm('https://schema.org/termsPerYear');
 
   /// IRI for schema:text [Expects: https://schema.org/Text]
   ///
@@ -23242,7 +22089,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const text = IriTerm.prevalidated('https://schema.org/text');
+  static const text = const IriTerm('https://schema.org/text');
 
   /// IRI for schema:textValue [Expects: https://schema.org/Text]
   ///
@@ -23250,7 +22097,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PronounceableText
   ///
-  static const textValue = IriTerm.prevalidated('https://schema.org/textValue');
+  static const textValue = const IriTerm('https://schema.org/textValue');
 
   /// IRI for schema:thumbnail [Expects: https://schema.org/ImageObject]
   ///
@@ -23258,7 +22105,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const thumbnail = IriTerm.prevalidated('https://schema.org/thumbnail');
+  static const thumbnail = const IriTerm('https://schema.org/thumbnail');
 
   /// IRI for schema:thumbnailUrl [Expects: https://schema.org/URL]
   ///
@@ -23266,9 +22113,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const thumbnailUrl = IriTerm.prevalidated(
-    'https://schema.org/thumbnailUrl',
-  );
+  static const thumbnailUrl = const IriTerm('https://schema.org/thumbnailUrl');
 
   /// IRI for schema:tickerSymbol [Expects: https://schema.org/Text]
   ///
@@ -23276,9 +22121,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Corporation
   ///
-  static const tickerSymbol = IriTerm.prevalidated(
-    'https://schema.org/tickerSymbol',
-  );
+  static const tickerSymbol = const IriTerm('https://schema.org/tickerSymbol');
 
   /// IRI for schema:ticketNumber [Expects: https://schema.org/Text]
   ///
@@ -23286,9 +22129,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Ticket
   ///
-  static const ticketNumber = IriTerm.prevalidated(
-    'https://schema.org/ticketNumber',
-  );
+  static const ticketNumber = const IriTerm('https://schema.org/ticketNumber');
 
   /// IRI for schema:ticketToken [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -23296,9 +22137,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Ticket
   ///
-  static const ticketToken = IriTerm.prevalidated(
-    'https://schema.org/ticketToken',
-  );
+  static const ticketToken = const IriTerm('https://schema.org/ticketToken');
 
   /// IRI for schema:ticketedSeat [Expects: https://schema.org/Seat]
   ///
@@ -23306,9 +22145,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Ticket
   ///
-  static const ticketedSeat = IriTerm.prevalidated(
-    'https://schema.org/ticketedSeat',
-  );
+  static const ticketedSeat = const IriTerm('https://schema.org/ticketedSeat');
 
   /// IRI for schema:timeOfDay [Expects: https://schema.org/Text]
   ///
@@ -23316,7 +22153,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const timeOfDay = IriTerm.prevalidated('https://schema.org/timeOfDay');
+  static const timeOfDay = const IriTerm('https://schema.org/timeOfDay');
 
   /// IRI for schema:timeRequired [Expects: https://schema.org/Duration]
   ///
@@ -23324,9 +22161,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const timeRequired = IriTerm.prevalidated(
-    'https://schema.org/timeRequired',
-  );
+  static const timeRequired = const IriTerm('https://schema.org/timeRequired');
 
   /// IRI for schema:timeToComplete [Expects: https://schema.org/Duration]
   ///
@@ -23334,7 +22169,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const timeToComplete = IriTerm.prevalidated(
+  static const timeToComplete = const IriTerm(
     'https://schema.org/timeToComplete',
   );
 
@@ -23344,9 +22179,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PathologyTest
   ///
-  static const tissueSample = IriTerm.prevalidated(
-    'https://schema.org/tissueSample',
-  );
+  static const tissueSample = const IriTerm('https://schema.org/tissueSample');
 
   /// IRI for schema:title [Expects: https://schema.org/Text]
   ///
@@ -23354,7 +22187,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const title = IriTerm.prevalidated('https://schema.org/title');
+  static const title = const IriTerm('https://schema.org/title');
 
   /// IRI for schema:titleEIDR [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -23367,7 +22200,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Movie, https://schema.org/TVEpisode, https://schema.org/TVSeason, https://schema.org/TVSeries
   ///
-  static const titleEIDR = IriTerm.prevalidated('https://schema.org/titleEIDR');
+  static const titleEIDR = const IriTerm('https://schema.org/titleEIDR');
 
   /// IRI for schema:toLocation [Expects: https://schema.org/Place]
   ///
@@ -23375,9 +22208,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExerciseAction, https://schema.org/InsertAction, https://schema.org/MoveAction, https://schema.org/TransferAction
   ///
-  static const toLocation = IriTerm.prevalidated(
-    'https://schema.org/toLocation',
-  );
+  static const toLocation = const IriTerm('https://schema.org/toLocation');
 
   /// IRI for schema:toRecipient [Expects: https://schema.org/Audience, https://schema.org/ContactPoint, https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -23385,9 +22216,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Message
   ///
-  static const toRecipient = IriTerm.prevalidated(
-    'https://schema.org/toRecipient',
-  );
+  static const toRecipient = const IriTerm('https://schema.org/toRecipient');
 
   /// IRI for schema:tocContinuation [Expects: https://schema.org/HyperTocEntry]
   ///
@@ -23395,7 +22224,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HyperTocEntry
   ///
-  static const tocContinuation = IriTerm.prevalidated(
+  static const tocContinuation = const IriTerm(
     'https://schema.org/tocContinuation',
   );
 
@@ -23405,7 +22234,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HyperToc
   ///
-  static const tocEntry = IriTerm.prevalidated('https://schema.org/tocEntry');
+  static const tocEntry = const IriTerm('https://schema.org/tocEntry');
 
   /// IRI for schema:tongueWeight [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -23413,9 +22242,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const tongueWeight = IriTerm.prevalidated(
-    'https://schema.org/tongueWeight',
-  );
+  static const tongueWeight = const IriTerm('https://schema.org/tongueWeight');
 
   /// IRI for schema:tool [Expects: https://schema.org/HowToTool, https://schema.org/Text]
   ///
@@ -23423,7 +22250,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HowTo, https://schema.org/HowToDirection
   ///
-  static const tool = IriTerm.prevalidated('https://schema.org/tool');
+  static const tool = const IriTerm('https://schema.org/tool');
 
   /// IRI for schema:torque [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -23431,7 +22258,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EngineSpecification
   ///
-  static const torque = IriTerm.prevalidated('https://schema.org/torque');
+  static const torque = const IriTerm('https://schema.org/torque');
 
   /// IRI for schema:totalHistoricalEnrollment [Expects: https://schema.org/Integer]
   ///
@@ -23439,7 +22266,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Course
   ///
-  static const totalHistoricalEnrollment = IriTerm.prevalidated(
+  static const totalHistoricalEnrollment = const IriTerm(
     'https://schema.org/totalHistoricalEnrollment',
   );
 
@@ -23449,7 +22276,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const totalJobOpenings = IriTerm.prevalidated(
+  static const totalJobOpenings = const IriTerm(
     'https://schema.org/totalJobOpenings',
   );
 
@@ -23459,7 +22286,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice
   ///
-  static const totalPaymentDue = IriTerm.prevalidated(
+  static const totalPaymentDue = const IriTerm(
     'https://schema.org/totalPaymentDue',
   );
 
@@ -23469,9 +22296,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Reservation, https://schema.org/Ticket
   ///
-  static const totalPrice = IriTerm.prevalidated(
-    'https://schema.org/totalPrice',
-  );
+  static const totalPrice = const IriTerm('https://schema.org/totalPrice');
 
   /// IRI for schema:totalTime [Expects: https://schema.org/Duration]
   ///
@@ -23479,7 +22304,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HowTo, https://schema.org/HowToDirection
   ///
-  static const totalTime = IriTerm.prevalidated('https://schema.org/totalTime');
+  static const totalTime = const IriTerm('https://schema.org/totalTime');
 
   /// IRI for schema:tourBookingPage [Expects: https://schema.org/URL]
   ///
@@ -23487,7 +22312,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation, https://schema.org/ApartmentComplex, https://schema.org/Place
   ///
-  static const tourBookingPage = IriTerm.prevalidated(
+  static const tourBookingPage = const IriTerm(
     'https://schema.org/tourBookingPage',
   );
 
@@ -23497,9 +22322,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/TouristAttraction, https://schema.org/TouristDestination, https://schema.org/TouristTrip
   ///
-  static const touristType = IriTerm.prevalidated(
-    'https://schema.org/touristType',
-  );
+  static const touristType = const IriTerm('https://schema.org/touristType');
 
   /// IRI for schema:trackingNumber [Expects: https://schema.org/Text]
   ///
@@ -23507,7 +22330,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ParcelDelivery
   ///
-  static const trackingNumber = IriTerm.prevalidated(
+  static const trackingNumber = const IriTerm(
     'https://schema.org/trackingNumber',
   );
 
@@ -23517,9 +22340,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ParcelDelivery
   ///
-  static const trackingUrl = IriTerm.prevalidated(
-    'https://schema.org/trackingUrl',
-  );
+  static const trackingUrl = const IriTerm('https://schema.org/trackingUrl');
 
   /// IRI for schema:tracks [Expects: https://schema.org/MusicRecording]
   ///
@@ -23527,7 +22348,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicGroup, https://schema.org/MusicPlaylist
   ///
-  static const tracks = IriTerm.prevalidated('https://schema.org/tracks');
+  static const tracks = const IriTerm('https://schema.org/tracks');
 
   /// IRI for schema:trailer [Expects: https://schema.org/VideoObject]
   ///
@@ -23535,7 +22356,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWorkSeason, https://schema.org/Episode, https://schema.org/Movie, https://schema.org/MovieSeries, https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGame, https://schema.org/VideoGameSeries
   ///
-  static const trailer = IriTerm.prevalidated('https://schema.org/trailer');
+  static const trailer = const IriTerm('https://schema.org/trailer');
 
   /// IRI for schema:trailerWeight [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -23543,7 +22364,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const trailerWeight = IriTerm.prevalidated(
+  static const trailerWeight = const IriTerm(
     'https://schema.org/trailerWeight',
   );
 
@@ -23553,7 +22374,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/TrainTrip
   ///
-  static const trainName = IriTerm.prevalidated('https://schema.org/trainName');
+  static const trainName = const IriTerm('https://schema.org/trainName');
 
   /// IRI for schema:trainNumber [Expects: https://schema.org/Text]
   ///
@@ -23561,9 +22382,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/TrainTrip
   ///
-  static const trainNumber = IriTerm.prevalidated(
-    'https://schema.org/trainNumber',
-  );
+  static const trainNumber = const IriTerm('https://schema.org/trainNumber');
 
   /// IRI for schema:trainingSalary [Expects: https://schema.org/MonetaryAmountDistribution]
   ///
@@ -23571,7 +22390,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram, https://schema.org/WorkBasedProgram
   ///
-  static const trainingSalary = IriTerm.prevalidated(
+  static const trainingSalary = const IriTerm(
     'https://schema.org/trainingSalary',
   );
 
@@ -23581,7 +22400,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const transFatContent = IriTerm.prevalidated(
+  static const transFatContent = const IriTerm(
     'https://schema.org/transFatContent',
   );
 
@@ -23591,9 +22410,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AudioObject, https://schema.org/VideoObject
   ///
-  static const transcript = IriTerm.prevalidated(
-    'https://schema.org/transcript',
-  );
+  static const transcript = const IriTerm('https://schema.org/transcript');
 
   /// IRI for schema:transitTime [Expects: https://schema.org/QuantitativeValue, https://schema.org/ServicePeriod]
   ///
@@ -23606,9 +22423,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ShippingConditions, https://schema.org/ShippingDeliveryTime
   ///
-  static const transitTime = IriTerm.prevalidated(
-    'https://schema.org/transitTime',
-  );
+  static const transitTime = const IriTerm('https://schema.org/transitTime');
 
   /// IRI for schema:translator [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -23616,9 +22431,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event
   ///
-  static const translator = IriTerm.prevalidated(
-    'https://schema.org/translator',
-  );
+  static const translator = const IriTerm('https://schema.org/translator');
 
   /// IRI for schema:transmissionMethod [Expects: https://schema.org/Text]
   ///
@@ -23626,7 +22439,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/InfectiousDisease
   ///
-  static const transmissionMethod = IriTerm.prevalidated(
+  static const transmissionMethod = const IriTerm(
     'https://schema.org/transmissionMethod',
   );
 
@@ -23636,9 +22449,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SpecialAnnouncement
   ///
-  static const travelBans = IriTerm.prevalidated(
-    'https://schema.org/travelBans',
-  );
+  static const travelBans = const IriTerm('https://schema.org/travelBans');
 
   /// IRI for schema:trialDesign [Expects: https://schema.org/MedicalTrialDesign]
   ///
@@ -23646,9 +22457,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalTrial
   ///
-  static const trialDesign = IriTerm.prevalidated(
-    'https://schema.org/trialDesign',
-  );
+  static const trialDesign = const IriTerm('https://schema.org/trialDesign');
 
   /// IRI for schema:tributary [Expects: https://schema.org/AnatomicalStructure]
   ///
@@ -23656,7 +22465,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vein
   ///
-  static const tributary = IriTerm.prevalidated('https://schema.org/tributary');
+  static const tributary = const IriTerm('https://schema.org/tributary');
 
   /// IRI for schema:tripOrigin [Expects: https://schema.org/Place]
   ///
@@ -23664,9 +22473,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Trip
   ///
-  static const tripOrigin = IriTerm.prevalidated(
-    'https://schema.org/tripOrigin',
-  );
+  static const tripOrigin = const IriTerm('https://schema.org/tripOrigin');
 
   /// IRI for schema:typeOfBed [Expects: https://schema.org/BedType, https://schema.org/Text]
   ///
@@ -23674,7 +22481,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BedDetails
   ///
-  static const typeOfBed = IriTerm.prevalidated('https://schema.org/typeOfBed');
+  static const typeOfBed = const IriTerm('https://schema.org/typeOfBed');
 
   /// IRI for schema:typeOfGood [Expects: https://schema.org/Product, https://schema.org/Service]
   ///
@@ -23682,9 +22489,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OwnershipInfo, https://schema.org/TypeAndQuantityNode
   ///
-  static const typeOfGood = IriTerm.prevalidated(
-    'https://schema.org/typeOfGood',
-  );
+  static const typeOfGood = const IriTerm('https://schema.org/typeOfGood');
 
   /// IRI for schema:typicalAgeRange [Expects: https://schema.org/Text]
   ///
@@ -23692,7 +22497,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event
   ///
-  static const typicalAgeRange = IriTerm.prevalidated(
+  static const typicalAgeRange = const IriTerm(
     'https://schema.org/typicalAgeRange',
   );
 
@@ -23702,7 +22507,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalProgram
   ///
-  static const typicalCreditsPerTerm = IriTerm.prevalidated(
+  static const typicalCreditsPerTerm = const IriTerm(
     'https://schema.org/typicalCreditsPerTerm',
   );
 
@@ -23712,9 +22517,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalCondition
   ///
-  static const typicalTest = IriTerm.prevalidated(
-    'https://schema.org/typicalTest',
-  );
+  static const typicalTest = const IriTerm('https://schema.org/typicalTest');
 
   /// IRI for schema:underName [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -23722,7 +22525,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Reservation, https://schema.org/Ticket
   ///
-  static const underName = IriTerm.prevalidated('https://schema.org/underName');
+  static const underName = const IriTerm('https://schema.org/underName');
 
   /// IRI for schema:unitCode [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -23730,7 +22533,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PropertyValue, https://schema.org/QuantitativeValue, https://schema.org/TypeAndQuantityNode, https://schema.org/UnitPriceSpecification
   ///
-  static const unitCode = IriTerm.prevalidated('https://schema.org/unitCode');
+  static const unitCode = const IriTerm('https://schema.org/unitCode');
 
   /// IRI for schema:unitText [Expects: https://schema.org/Text]
   ///
@@ -23739,7 +22542,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PropertyValue, https://schema.org/QuantitativeValue, https://schema.org/TypeAndQuantityNode, https://schema.org/UnitPriceSpecification
   ///
-  static const unitText = IriTerm.prevalidated('https://schema.org/unitText');
+  static const unitText = const IriTerm('https://schema.org/unitText');
 
   /// IRI for schema:unnamedSourcesPolicy [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -23747,7 +22550,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsMediaOrganization, https://schema.org/Organization
   ///
-  static const unnamedSourcesPolicy = IriTerm.prevalidated(
+  static const unnamedSourcesPolicy = const IriTerm(
     'https://schema.org/unnamedSourcesPolicy',
   );
 
@@ -23757,7 +22560,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NutritionInformation
   ///
-  static const unsaturatedFatContent = IriTerm.prevalidated(
+  static const unsaturatedFatContent = const IriTerm(
     'https://schema.org/unsaturatedFatContent',
   );
 
@@ -23767,9 +22570,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaObject
   ///
-  static const uploadDate = IriTerm.prevalidated(
-    'https://schema.org/uploadDate',
-  );
+  static const uploadDate = const IriTerm('https://schema.org/uploadDate');
 
   /// IRI for schema:upvoteCount [Expects: https://schema.org/Integer]
   ///
@@ -23777,9 +22578,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Comment
   ///
-  static const upvoteCount = IriTerm.prevalidated(
-    'https://schema.org/upvoteCount',
-  );
+  static const upvoteCount = const IriTerm('https://schema.org/upvoteCount');
 
   /// IRI for schema:url [Expects: https://schema.org/URL]
   ///
@@ -23787,7 +22586,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const url = IriTerm.prevalidated('https://schema.org/url');
+  static const url = const IriTerm('https://schema.org/url');
 
   /// IRI for schema:urlTemplate [Expects: https://schema.org/Text]
   ///
@@ -23795,9 +22594,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EntryPoint
   ///
-  static const urlTemplate = IriTerm.prevalidated(
-    'https://schema.org/urlTemplate',
-  );
+  static const urlTemplate = const IriTerm('https://schema.org/urlTemplate');
 
   /// IRI for schema:usNPI [Expects: https://schema.org/Text]
   ///
@@ -23806,7 +22603,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Physician
   ///
-  static const usNPI = IriTerm.prevalidated('https://schema.org/usNPI');
+  static const usNPI = const IriTerm('https://schema.org/usNPI');
 
   /// IRI for schema:usedToDiagnose [Expects: https://schema.org/MedicalCondition]
   ///
@@ -23814,7 +22611,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalTest
   ///
-  static const usedToDiagnose = IriTerm.prevalidated(
+  static const usedToDiagnose = const IriTerm(
     'https://schema.org/usedToDiagnose',
   );
 
@@ -23824,7 +22621,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/InteractionCounter
   ///
-  static const userInteractionCount = IriTerm.prevalidated(
+  static const userInteractionCount = const IriTerm(
     'https://schema.org/userInteractionCount',
   );
 
@@ -23834,9 +22631,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MedicalTest
   ///
-  static const usesDevice = IriTerm.prevalidated(
-    'https://schema.org/usesDevice',
-  );
+  static const usesDevice = const IriTerm('https://schema.org/usesDevice');
 
   /// IRI for schema:usesHealthPlanIdStandard [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -23844,7 +22639,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthInsurancePlan
   ///
-  static const usesHealthPlanIdStandard = IriTerm.prevalidated(
+  static const usesHealthPlanIdStandard = const IriTerm(
     'https://schema.org/usesHealthPlanIdStandard',
   );
 
@@ -23854,9 +22649,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HyperTocEntry
   ///
-  static const utterances = IriTerm.prevalidated(
-    'https://schema.org/utterances',
-  );
+  static const utterances = const IriTerm('https://schema.org/utterances');
 
   /// IRI for schema:validFor [Expects: https://schema.org/Duration]
   ///
@@ -23864,7 +22657,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOccupationalCredential, https://schema.org/Permit
   ///
-  static const validFor = IriTerm.prevalidated('https://schema.org/validFor');
+  static const validFor = const IriTerm('https://schema.org/validFor');
 
   /// IRI for schema:validForMemberTier [Expects: https://schema.org/MemberProgramTier]
   ///
@@ -23872,7 +22665,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MerchantReturnPolicy, https://schema.org/Offer, https://schema.org/OfferShippingDetails, https://schema.org/PriceSpecification, https://schema.org/ShippingService
   ///
-  static const validForMemberTier = IriTerm.prevalidated(
+  static const validForMemberTier = const IriTerm(
     'https://schema.org/validForMemberTier',
   );
 
@@ -23882,7 +22675,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Certification, https://schema.org/Demand, https://schema.org/FinancialIncentive, https://schema.org/LocationFeatureSpecification, https://schema.org/MonetaryAmount, https://schema.org/Offer, https://schema.org/OpeningHoursSpecification, https://schema.org/Permit, https://schema.org/PriceSpecification
   ///
-  static const validFrom = IriTerm.prevalidated('https://schema.org/validFrom');
+  static const validFrom = const IriTerm('https://schema.org/validFrom');
 
   /// IRI for schema:validIn [Expects: https://schema.org/AdministrativeArea]
   ///
@@ -23890,7 +22683,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Certification, https://schema.org/EducationalOccupationalCredential, https://schema.org/Permit
   ///
-  static const validIn = IriTerm.prevalidated('https://schema.org/validIn');
+  static const validIn = const IriTerm('https://schema.org/validIn');
 
   /// IRI for schema:validThrough [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -23898,9 +22691,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/FinancialIncentive, https://schema.org/JobPosting, https://schema.org/LocationFeatureSpecification, https://schema.org/MonetaryAmount, https://schema.org/Offer, https://schema.org/OpeningHoursSpecification, https://schema.org/PriceSpecification
   ///
-  static const validThrough = IriTerm.prevalidated(
-    'https://schema.org/validThrough',
-  );
+  static const validThrough = const IriTerm('https://schema.org/validThrough');
 
   /// IRI for schema:validUntil [Expects: https://schema.org/Date]
   ///
@@ -23908,9 +22699,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Permit
   ///
-  static const validUntil = IriTerm.prevalidated(
-    'https://schema.org/validUntil',
-  );
+  static const validUntil = const IriTerm('https://schema.org/validUntil');
 
   /// IRI for schema:value [Expects: https://schema.org/Boolean, https://schema.org/Number, https://schema.org/StructuredValue, https://schema.org/Text]
   ///
@@ -23918,7 +22707,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MonetaryAmount, https://schema.org/PropertyValue, https://schema.org/QuantitativeValue
   ///
-  static const value = IriTerm.prevalidated('https://schema.org/value');
+  static const value = const IriTerm('https://schema.org/value');
 
   /// IRI for schema:valueAddedTaxIncluded [Expects: https://schema.org/Boolean]
   ///
@@ -23926,7 +22715,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PriceSpecification
   ///
-  static const valueAddedTaxIncluded = IriTerm.prevalidated(
+  static const valueAddedTaxIncluded = const IriTerm(
     'https://schema.org/valueAddedTaxIncluded',
   );
 
@@ -23936,7 +22725,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PropertyValueSpecification
   ///
-  static const valueMaxLength = IriTerm.prevalidated(
+  static const valueMaxLength = const IriTerm(
     'https://schema.org/valueMaxLength',
   );
 
@@ -23946,7 +22735,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PropertyValueSpecification
   ///
-  static const valueMinLength = IriTerm.prevalidated(
+  static const valueMinLength = const IriTerm(
     'https://schema.org/valueMinLength',
   );
 
@@ -23956,7 +22745,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PropertyValueSpecification
   ///
-  static const valueName = IriTerm.prevalidated('https://schema.org/valueName');
+  static const valueName = const IriTerm('https://schema.org/valueName');
 
   /// IRI for schema:valuePattern [Expects: https://schema.org/Text]
   ///
@@ -23964,9 +22753,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PropertyValueSpecification
   ///
-  static const valuePattern = IriTerm.prevalidated(
-    'https://schema.org/valuePattern',
-  );
+  static const valuePattern = const IriTerm('https://schema.org/valuePattern');
 
   /// IRI for schema:valueReference [Expects: https://schema.org/DefinedTerm, https://schema.org/Enumeration, https://schema.org/MeasurementTypeEnumeration, https://schema.org/PropertyValue, https://schema.org/QualitativeValue, https://schema.org/QuantitativeValue, https://schema.org/StructuredValue, https://schema.org/Text]
   ///
@@ -23974,7 +22761,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PropertyValue, https://schema.org/QualitativeValue, https://schema.org/QuantitativeValue
   ///
-  static const valueReference = IriTerm.prevalidated(
+  static const valueReference = const IriTerm(
     'https://schema.org/valueReference',
   );
 
@@ -23984,7 +22771,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PropertyValueSpecification
   ///
-  static const valueRequired = IriTerm.prevalidated(
+  static const valueRequired = const IriTerm(
     'https://schema.org/valueRequired',
   );
 
@@ -23994,7 +22781,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Dataset, https://schema.org/Observation
   ///
-  static const variableMeasured = IriTerm.prevalidated(
+  static const variableMeasured = const IriTerm(
     'https://schema.org/variableMeasured',
   );
 
@@ -24006,9 +22793,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ComicIssue
   ///
-  static const variantCover = IriTerm.prevalidated(
-    'https://schema.org/variantCover',
-  );
+  static const variantCover = const IriTerm('https://schema.org/variantCover');
 
   /// IRI for schema:variesBy [Expects: https://schema.org/DefinedTerm, https://schema.org/Text]
   ///
@@ -24016,7 +22801,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ProductGroup
   ///
-  static const variesBy = IriTerm.prevalidated('https://schema.org/variesBy');
+  static const variesBy = const IriTerm('https://schema.org/variesBy');
 
   /// IRI for schema:vatID [Expects: https://schema.org/Text]
   ///
@@ -24024,7 +22809,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const vatID = IriTerm.prevalidated('https://schema.org/vatID');
+  static const vatID = const IriTerm('https://schema.org/vatID');
 
   /// IRI for schema:vehicleConfiguration [Expects: https://schema.org/Text]
   ///
@@ -24032,7 +22817,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const vehicleConfiguration = IriTerm.prevalidated(
+  static const vehicleConfiguration = const IriTerm(
     'https://schema.org/vehicleConfiguration',
   );
 
@@ -24042,7 +22827,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const vehicleEngine = IriTerm.prevalidated(
+  static const vehicleEngine = const IriTerm(
     'https://schema.org/vehicleEngine',
   );
 
@@ -24052,7 +22837,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const vehicleIdentificationNumber = IriTerm.prevalidated(
+  static const vehicleIdentificationNumber = const IriTerm(
     'https://schema.org/vehicleIdentificationNumber',
   );
 
@@ -24062,7 +22847,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const vehicleInteriorColor = IriTerm.prevalidated(
+  static const vehicleInteriorColor = const IriTerm(
     'https://schema.org/vehicleInteriorColor',
   );
 
@@ -24072,7 +22857,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const vehicleInteriorType = IriTerm.prevalidated(
+  static const vehicleInteriorType = const IriTerm(
     'https://schema.org/vehicleInteriorType',
   );
 
@@ -24082,7 +22867,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const vehicleModelDate = IriTerm.prevalidated(
+  static const vehicleModelDate = const IriTerm(
     'https://schema.org/vehicleModelDate',
   );
 
@@ -24092,7 +22877,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const vehicleSeatingCapacity = IriTerm.prevalidated(
+  static const vehicleSeatingCapacity = const IriTerm(
     'https://schema.org/vehicleSeatingCapacity',
   );
 
@@ -24102,7 +22887,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const vehicleSpecialUsage = IriTerm.prevalidated(
+  static const vehicleSpecialUsage = const IriTerm(
     'https://schema.org/vehicleSpecialUsage',
   );
 
@@ -24112,7 +22897,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const vehicleTransmission = IriTerm.prevalidated(
+  static const vehicleTransmission = const IriTerm(
     'https://schema.org/vehicleTransmission',
   );
 
@@ -24122,7 +22907,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BuyAction
   ///
-  static const vendor = IriTerm.prevalidated('https://schema.org/vendor');
+  static const vendor = const IriTerm('https://schema.org/vendor');
 
   /// IRI for schema:verificationFactCheckingPolicy [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -24130,7 +22915,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/NewsMediaOrganization
   ///
-  static const verificationFactCheckingPolicy = IriTerm.prevalidated(
+  static const verificationFactCheckingPolicy = const IriTerm(
     'https://schema.org/verificationFactCheckingPolicy',
   );
 
@@ -24140,7 +22925,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const version = IriTerm.prevalidated('https://schema.org/version');
+  static const version = const IriTerm('https://schema.org/version');
 
   /// IRI for schema:video [Expects: https://schema.org/Clip, https://schema.org/VideoObject]
   ///
@@ -24148,7 +22933,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const video = IriTerm.prevalidated('https://schema.org/video');
+  static const video = const IriTerm('https://schema.org/video');
 
   /// IRI for schema:videoFormat [Expects: https://schema.org/Text]
   ///
@@ -24156,9 +22941,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastEvent, https://schema.org/BroadcastService, https://schema.org/ScreeningEvent
   ///
-  static const videoFormat = IriTerm.prevalidated(
-    'https://schema.org/videoFormat',
-  );
+  static const videoFormat = const IriTerm('https://schema.org/videoFormat');
 
   /// IRI for schema:videoFrameSize [Expects: https://schema.org/Text]
   ///
@@ -24166,7 +22949,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VideoObject
   ///
-  static const videoFrameSize = IriTerm.prevalidated(
+  static const videoFrameSize = const IriTerm(
     'https://schema.org/videoFrameSize',
   );
 
@@ -24176,9 +22959,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VideoObject
   ///
-  static const videoQuality = IriTerm.prevalidated(
-    'https://schema.org/videoQuality',
-  );
+  static const videoQuality = const IriTerm('https://schema.org/videoQuality');
 
   /// IRI for schema:volumeNumber [Expects: https://schema.org/Integer, https://schema.org/Text]
   ///
@@ -24186,9 +22967,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PublicationVolume
   ///
-  static const volumeNumber = IriTerm.prevalidated(
-    'https://schema.org/volumeNumber',
-  );
+  static const volumeNumber = const IriTerm('https://schema.org/volumeNumber');
 
   /// IRI for schema:warning [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -24196,7 +22975,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const warning = IriTerm.prevalidated('https://schema.org/warning');
+  static const warning = const IriTerm('https://schema.org/warning');
 
   /// IRI for schema:warrantyPromise [Expects: https://schema.org/WarrantyPromise]
   ///
@@ -24204,7 +22983,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BuyAction, https://schema.org/SellAction
   ///
-  static const warrantyPromise = IriTerm.prevalidated(
+  static const warrantyPromise = const IriTerm(
     'https://schema.org/warrantyPromise',
   );
 
@@ -24214,7 +22993,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WarrantyPromise
   ///
-  static const warrantyScope = IriTerm.prevalidated(
+  static const warrantyScope = const IriTerm(
     'https://schema.org/warrantyScope',
   );
 
@@ -24224,7 +23003,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Flight
   ///
-  static const webCheckinTime = IriTerm.prevalidated(
+  static const webCheckinTime = const IriTerm(
     'https://schema.org/webCheckinTime',
   );
 
@@ -24234,7 +23013,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/PodcastSeries, https://schema.org/SpecialAnnouncement
   ///
-  static const webFeed = IriTerm.prevalidated('https://schema.org/webFeed');
+  static const webFeed = const IriTerm('https://schema.org/webFeed');
 
   /// IRI for schema:weight [Expects: https://schema.org/Mass, https://schema.org/QuantitativeValue]
   ///
@@ -24242,7 +23021,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/OfferShippingDetails, https://schema.org/Person, https://schema.org/Product, https://schema.org/ShippingConditions, https://schema.org/VisualArtwork
   ///
-  static const weight = IriTerm.prevalidated('https://schema.org/weight');
+  static const weight = const IriTerm('https://schema.org/weight');
 
   /// IRI for schema:weightPercentage [Expects: https://schema.org/Number]
   ///
@@ -24250,7 +23029,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ShippingRateSettings
   ///
-  static const weightPercentage = IriTerm.prevalidated(
+  static const weightPercentage = const IriTerm(
     'https://schema.org/weightPercentage',
   );
 
@@ -24260,9 +23039,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const weightTotal = IriTerm.prevalidated(
-    'https://schema.org/weightTotal',
-  );
+  static const weightTotal = const IriTerm('https://schema.org/weightTotal');
 
   /// IRI for schema:wheelbase [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -24270,7 +23047,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Vehicle
   ///
-  static const wheelbase = IriTerm.prevalidated('https://schema.org/wheelbase');
+  static const wheelbase = const IriTerm('https://schema.org/wheelbase');
 
   /// IRI for schema:width [Expects: https://schema.org/Distance, https://schema.org/QuantitativeValue]
   ///
@@ -24278,7 +23055,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaObject, https://schema.org/OfferShippingDetails, https://schema.org/Product, https://schema.org/ShippingConditions, https://schema.org/VisualArtwork
   ///
-  static const width = IriTerm.prevalidated('https://schema.org/width');
+  static const width = const IriTerm('https://schema.org/width');
 
   /// IRI for schema:winner [Expects: https://schema.org/Person]
   ///
@@ -24286,7 +23063,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/LoseAction
   ///
-  static const winner = IriTerm.prevalidated('https://schema.org/winner');
+  static const winner = const IriTerm('https://schema.org/winner');
 
   /// IRI for schema:wordCount [Expects: https://schema.org/Integer]
   ///
@@ -24294,7 +23071,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Article, https://schema.org/CreativeWork
   ///
-  static const wordCount = IriTerm.prevalidated('https://schema.org/wordCount');
+  static const wordCount = const IriTerm('https://schema.org/wordCount');
 
   /// IRI for schema:workHours [Expects: https://schema.org/Text]
   ///
@@ -24302,7 +23079,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const workHours = IriTerm.prevalidated('https://schema.org/workHours');
+  static const workHours = const IriTerm('https://schema.org/workHours');
 
   /// IRI for schema:workLocation [Expects: https://schema.org/ContactPoint, https://schema.org/Place]
   ///
@@ -24310,9 +23087,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const workLocation = IriTerm.prevalidated(
-    'https://schema.org/workLocation',
-  );
+  static const workLocation = const IriTerm('https://schema.org/workLocation');
 
   /// IRI for schema:workPerformed [Expects: https://schema.org/CreativeWork]
   ///
@@ -24320,7 +23095,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const workPerformed = IriTerm.prevalidated(
+  static const workPerformed = const IriTerm(
     'https://schema.org/workPerformed',
   );
 
@@ -24330,7 +23105,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ScreeningEvent
   ///
-  static const workPresented = IriTerm.prevalidated(
+  static const workPresented = const IriTerm(
     'https://schema.org/workPresented',
   );
 
@@ -24340,7 +23115,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExercisePlan
   ///
-  static const workload = IriTerm.prevalidated('https://schema.org/workload');
+  static const workload = const IriTerm('https://schema.org/workload');
 
   /// IRI for schema:worksFor [Expects: https://schema.org/Organization]
   ///
@@ -24348,7 +23123,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const worksFor = IriTerm.prevalidated('https://schema.org/worksFor');
+  static const worksFor = const IriTerm('https://schema.org/worksFor');
 
   /// IRI for schema:worstRating [Expects: https://schema.org/Number, https://schema.org/Text]
   ///
@@ -24356,9 +23131,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Rating
   ///
-  static const worstRating = IriTerm.prevalidated(
-    'https://schema.org/worstRating',
-  );
+  static const worstRating = const IriTerm('https://schema.org/worstRating');
 
   /// IRI for schema:xpath [Expects: https://schema.org/XPathType]
   ///
@@ -24366,7 +23139,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SpeakableSpecification, https://schema.org/WebPageElement
   ///
-  static const xpath = IriTerm.prevalidated('https://schema.org/xpath');
+  static const xpath = const IriTerm('https://schema.org/xpath');
 
   /// IRI for schema:yearBuilt [Expects: https://schema.org/Number]
   ///
@@ -24374,7 +23147,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Accommodation
   ///
-  static const yearBuilt = IriTerm.prevalidated('https://schema.org/yearBuilt');
+  static const yearBuilt = const IriTerm('https://schema.org/yearBuilt');
 
   /// IRI for schema:yearlyRevenue [Expects: https://schema.org/QuantitativeValue]
   ///
@@ -24382,7 +23155,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BusinessAudience
   ///
-  static const yearlyRevenue = IriTerm.prevalidated(
+  static const yearlyRevenue = const IriTerm(
     'https://schema.org/yearlyRevenue',
   );
 
@@ -24392,7 +23165,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BusinessAudience
   ///
-  static const yearsInOperation = IriTerm.prevalidated(
+  static const yearsInOperation = const IriTerm(
     'https://schema.org/yearsInOperation',
   );
 
@@ -24402,7 +23175,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EntryPoint
   ///
-  static const actionApplication = IriTerm.prevalidated(
+  static const actionApplication = const IriTerm(
     'https://schema.org/actionApplication',
   );
 
@@ -24412,9 +23185,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ChooseAction
   ///
-  static const actionOption = IriTerm.prevalidated(
-    'https://schema.org/actionOption',
-  );
+  static const actionOption = const IriTerm('https://schema.org/actionOption');
 
   /// IRI for schema:album [Expects: https://schema.org/MusicAlbum]
   ///
@@ -24422,7 +23193,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicGroup
   ///
-  static const album = IriTerm.prevalidated('https://schema.org/album');
+  static const album = const IriTerm('https://schema.org/album');
 
   /// IRI for schema:albumRelease [Expects: https://schema.org/MusicRelease]
   ///
@@ -24430,9 +23201,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicAlbum
   ///
-  static const albumRelease = IriTerm.prevalidated(
-    'https://schema.org/albumRelease',
-  );
+  static const albumRelease = const IriTerm('https://schema.org/albumRelease');
 
   /// IRI for schema:alternateName [Expects: https://schema.org/Text]
   ///
@@ -24440,7 +23209,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const alternateName = IriTerm.prevalidated(
+  static const alternateName = const IriTerm(
     'https://schema.org/alternateName',
   );
 
@@ -24450,7 +23219,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/EducationalOrganization, https://schema.org/Organization
   ///
-  static const alumni = IriTerm.prevalidated('https://schema.org/alumni');
+  static const alumni = const IriTerm('https://schema.org/alumni');
 
   /// IRI for schema:alumniOf [Expects: https://schema.org/EducationalOrganization, https://schema.org/Organization]
   ///
@@ -24458,7 +23227,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const alumniOf = IriTerm.prevalidated('https://schema.org/alumniOf');
+  static const alumniOf = const IriTerm('https://schema.org/alumniOf');
 
   /// IRI for schema:archiveHeld [Expects: https://schema.org/ArchiveComponent]
   ///
@@ -24466,9 +23235,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ArchiveOrganization
   ///
-  static const archiveHeld = IriTerm.prevalidated(
-    'https://schema.org/archiveHeld',
-  );
+  static const archiveHeld = const IriTerm('https://schema.org/archiveHeld');
 
   /// IRI for schema:arterialBranch [Expects: https://schema.org/AnatomicalStructure]
   ///
@@ -24476,7 +23243,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Artery
   ///
-  static const arterialBranch = IriTerm.prevalidated(
+  static const arterialBranch = const IriTerm(
     'https://schema.org/arterialBranch',
   );
 
@@ -24486,7 +23253,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VisualArtwork
   ///
-  static const artworkSurface = IriTerm.prevalidated(
+  static const artworkSurface = const IriTerm(
     'https://schema.org/artworkSurface',
   );
 
@@ -24496,7 +23263,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const attendee = IriTerm.prevalidated('https://schema.org/attendee');
+  static const attendee = const IriTerm('https://schema.org/attendee');
 
   /// IRI for schema:audience [Expects: https://schema.org/Audience]
   ///
@@ -24504,7 +23271,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/LodgingBusiness, https://schema.org/PlayAction, https://schema.org/Product, https://schema.org/Service
   ///
-  static const audience = IriTerm.prevalidated('https://schema.org/audience');
+  static const audience = const IriTerm('https://schema.org/audience');
 
   /// IRI for schema:availableOnDevice [Expects: https://schema.org/Text]
   ///
@@ -24512,7 +23279,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const availableOnDevice = IriTerm.prevalidated(
+  static const availableOnDevice = const IriTerm(
     'https://schema.org/availableOnDevice',
   );
 
@@ -24522,7 +23289,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product, https://schema.org/Service
   ///
-  static const award = IriTerm.prevalidated('https://schema.org/award');
+  static const award = const IriTerm('https://schema.org/award');
 
   /// IRI for schema:blogPost [Expects: https://schema.org/BlogPosting]
   ///
@@ -24530,7 +23297,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Blog
   ///
-  static const blogPost = IriTerm.prevalidated('https://schema.org/blogPost');
+  static const blogPost = const IriTerm('https://schema.org/blogPost');
 
   /// IRI for schema:broker [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -24538,7 +23305,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice, https://schema.org/Order, https://schema.org/Reservation, https://schema.org/Service
   ///
-  static const broker = IriTerm.prevalidated('https://schema.org/broker');
+  static const broker = const IriTerm('https://schema.org/broker');
 
   /// IRI for schema:caption [Expects: https://schema.org/MediaObject, https://schema.org/Text]
   ///
@@ -24546,7 +23313,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AudioObject, https://schema.org/ImageObject, https://schema.org/VideoObject
   ///
-  static const caption = IriTerm.prevalidated('https://schema.org/caption');
+  static const caption = const IriTerm('https://schema.org/caption');
 
   /// IRI for schema:category [Expects: https://schema.org/CategoryCode, https://schema.org/PhysicalActivityCategory, https://schema.org/Text, https://schema.org/Thing, https://schema.org/URL]
   ///
@@ -24554,7 +23321,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ActionAccessSpecification, https://schema.org/Invoice, https://schema.org/Offer, https://schema.org/PhysicalActivity, https://schema.org/Product, https://schema.org/Recommendation, https://schema.org/Service, https://schema.org/SpecialAnnouncement
   ///
-  static const category = IriTerm.prevalidated('https://schema.org/category');
+  static const category = const IriTerm('https://schema.org/category');
 
   /// IRI for schema:childTaxon [Expects: https://schema.org/Taxon, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -24562,9 +23329,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Taxon
   ///
-  static const childTaxon = IriTerm.prevalidated(
-    'https://schema.org/childTaxon',
-  );
+  static const childTaxon = const IriTerm('https://schema.org/childTaxon');
 
   /// IRI for schema:clinicalPharmacology [Expects: https://schema.org/Text]
   ///
@@ -24572,7 +23337,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Drug
   ///
-  static const clinicalPharmacology = IriTerm.prevalidated(
+  static const clinicalPharmacology = const IriTerm(
     'https://schema.org/clinicalPharmacology',
   );
 
@@ -24582,7 +23347,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareSourceCode
   ///
-  static const codeSampleType = IriTerm.prevalidated(
+  static const codeSampleType = const IriTerm(
     'https://schema.org/codeSampleType',
   );
 
@@ -24592,7 +23357,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const colleague = IriTerm.prevalidated('https://schema.org/colleague');
+  static const colleague = const IriTerm('https://schema.org/colleague');
 
   /// IRI for schema:contactPoint [Expects: https://schema.org/ContactPoint]
   ///
@@ -24600,9 +23365,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HealthInsurancePlan, https://schema.org/Organization, https://schema.org/Person
   ///
-  static const contactPoint = IriTerm.prevalidated(
-    'https://schema.org/contactPoint',
-  );
+  static const contactPoint = const IriTerm('https://schema.org/contactPoint');
 
   /// IRI for schema:containsPlace [Expects: https://schema.org/Place]
   ///
@@ -24610,7 +23373,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const containsPlace = IriTerm.prevalidated(
+  static const containsPlace = const IriTerm(
     'https://schema.org/containsPlace',
   );
 
@@ -24620,7 +23383,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGameSeries
   ///
-  static const containsSeason = IriTerm.prevalidated(
+  static const containsSeason = const IriTerm(
     'https://schema.org/containsSeason',
   );
 
@@ -24630,7 +23393,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const contentLocation = IriTerm.prevalidated(
+  static const contentLocation = const IriTerm(
     'https://schema.org/contentLocation',
   );
 
@@ -24640,7 +23403,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/UserComments
   ///
-  static const creator = IriTerm.prevalidated('https://schema.org/creator');
+  static const creator = const IriTerm('https://schema.org/creator');
 
   /// IRI for schema:dataset [Expects: https://schema.org/Dataset]
   ///
@@ -24648,7 +23411,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DataCatalog
   ///
-  static const dataset = IriTerm.prevalidated('https://schema.org/dataset');
+  static const dataset = const IriTerm('https://schema.org/dataset');
 
   /// IRI for schema:dateCreated [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -24656,9 +23419,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/DataFeedItem
   ///
-  static const dateCreated = IriTerm.prevalidated(
-    'https://schema.org/dateCreated',
-  );
+  static const dateCreated = const IriTerm('https://schema.org/dateCreated');
 
   /// IRI for schema:director [Expects: https://schema.org/Person]
   ///
@@ -24666,7 +23427,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Clip, https://schema.org/CreativeWorkSeason, https://schema.org/Episode, https://schema.org/Event, https://schema.org/Movie, https://schema.org/MovieSeries, https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGame, https://schema.org/VideoGameSeries, https://schema.org/VideoObject
   ///
-  static const director = IriTerm.prevalidated('https://schema.org/director');
+  static const director = const IriTerm('https://schema.org/director');
 
   /// IRI for schema:duration [Expects: https://schema.org/Duration, https://schema.org/QuantitativeValue]
   ///
@@ -24674,7 +23435,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Audiobook, https://schema.org/Episode, https://schema.org/Event, https://schema.org/MediaObject, https://schema.org/Movie, https://schema.org/MusicRecording, https://schema.org/MusicRelease, https://schema.org/QuantitativeValueDistribution, https://schema.org/Schedule, https://schema.org/ServicePeriod
   ///
-  static const duration = IriTerm.prevalidated('https://schema.org/duration');
+  static const duration = const IriTerm('https://schema.org/duration');
 
   /// IRI for schema:employee [Expects: https://schema.org/Person]
   ///
@@ -24682,7 +23443,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const employee = IriTerm.prevalidated('https://schema.org/employee');
+  static const employee = const IriTerm('https://schema.org/employee');
 
   /// IRI for schema:encodesBioChemEntity [Expects: https://schema.org/BioChemEntity]
   ///
@@ -24690,7 +23451,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Gene
   ///
-  static const encodesBioChemEntity = IriTerm.prevalidated(
+  static const encodesBioChemEntity = const IriTerm(
     'https://schema.org/encodesBioChemEntity',
   );
 
@@ -24700,7 +23461,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MediaObject
   ///
-  static const encodesCreativeWork = IriTerm.prevalidated(
+  static const encodesCreativeWork = const IriTerm(
     'https://schema.org/encodesCreativeWork',
   );
 
@@ -24714,7 +23475,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/MediaObject
   ///
-  static const encodingFormat = IriTerm.prevalidated(
+  static const encodingFormat = const IriTerm(
     'https://schema.org/encodingFormat',
   );
 
@@ -24724,7 +23485,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWorkSeason, https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGameSeries
   ///
-  static const episode = IriTerm.prevalidated('https://schema.org/episode');
+  static const episode = const IriTerm('https://schema.org/episode');
 
   /// IRI for schema:event [Expects: https://schema.org/Event]
   ///
@@ -24732,7 +23493,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/InformAction, https://schema.org/InviteAction, https://schema.org/JoinAction, https://schema.org/LeaveAction, https://schema.org/Organization, https://schema.org/Place, https://schema.org/PlayAction
   ///
-  static const event = IriTerm.prevalidated('https://schema.org/event');
+  static const event = const IriTerm('https://schema.org/event');
 
   /// IRI for schema:exampleOfWork [Expects: https://schema.org/CreativeWork]
   ///
@@ -24740,7 +23501,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const exampleOfWork = IriTerm.prevalidated(
+  static const exampleOfWork = const IriTerm(
     'https://schema.org/exampleOfWork',
   );
 
@@ -24750,7 +23511,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/APIReference
   ///
-  static const executableLibraryName = IriTerm.prevalidated(
+  static const executableLibraryName = const IriTerm(
     'https://schema.org/executableLibraryName',
   );
 
@@ -24760,7 +23521,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ExerciseAction
   ///
-  static const exerciseCourse = IriTerm.prevalidated(
+  static const exerciseCourse = const IriTerm(
     'https://schema.org/exerciseCourse',
   );
 
@@ -24770,7 +23531,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const founder = IriTerm.prevalidated('https://schema.org/founder');
+  static const founder = const IriTerm('https://schema.org/founder');
 
   /// IRI for schema:frequency [Expects: https://schema.org/Text]
   ///
@@ -24778,7 +23539,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DoseSchedule
   ///
-  static const frequency = IriTerm.prevalidated('https://schema.org/frequency');
+  static const frequency = const IriTerm('https://schema.org/frequency');
 
   /// IRI for schema:fundedItem [Expects: https://schema.org/BioChemEntity, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/MedicalEntity, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product]
   ///
@@ -24786,9 +23547,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Grant
   ///
-  static const fundedItem = IriTerm.prevalidated(
-    'https://schema.org/fundedItem',
-  );
+  static const fundedItem = const IriTerm('https://schema.org/fundedItem');
 
   /// IRI for schema:funding [Expects: https://schema.org/Grant]
   ///
@@ -24796,7 +23555,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BioChemEntity, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/MedicalEntity, https://schema.org/Organization, https://schema.org/Person, https://schema.org/Product
   ///
-  static const funding = IriTerm.prevalidated('https://schema.org/funding');
+  static const funding = const IriTerm('https://schema.org/funding');
 
   /// IRI for schema:game [Expects: https://schema.org/VideoGame]
   ///
@@ -24804,7 +23563,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GameServer
   ///
-  static const game = IriTerm.prevalidated('https://schema.org/game');
+  static const game = const IriTerm('https://schema.org/game');
 
   /// IRI for schema:gameServer [Expects: https://schema.org/GameServer]
   ///
@@ -24812,9 +23571,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/VideoGame
   ///
-  static const gameServer = IriTerm.prevalidated(
-    'https://schema.org/gameServer',
-  );
+  static const gameServer = const IriTerm('https://schema.org/gameServer');
 
   /// IRI for schema:genre [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -24822,7 +23579,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastChannel, https://schema.org/CreativeWork, https://schema.org/MusicGroup
   ///
-  static const genre = IriTerm.prevalidated('https://schema.org/genre');
+  static const genre = const IriTerm('https://schema.org/genre');
 
   /// IRI for schema:hasBioChemEntityPart [Expects: https://schema.org/BioChemEntity]
   ///
@@ -24830,7 +23587,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BioChemEntity
   ///
-  static const hasBioChemEntityPart = IriTerm.prevalidated(
+  static const hasBioChemEntityPart = const IriTerm(
     'https://schema.org/hasBioChemEntityPart',
   );
 
@@ -24840,7 +23597,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastService
   ///
-  static const hasBroadcastChannel = IriTerm.prevalidated(
+  static const hasBroadcastChannel = const IriTerm(
     'https://schema.org/hasBroadcastChannel',
   );
 
@@ -24850,7 +23607,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DefinedTermSet, https://schema.org/Taxon
   ///
-  static const hasDefinedTerm = IriTerm.prevalidated(
+  static const hasDefinedTerm = const IriTerm(
     'https://schema.org/hasDefinedTerm',
   );
 
@@ -24860,7 +23617,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/FoodEstablishment
   ///
-  static const hasMenu = IriTerm.prevalidated('https://schema.org/hasMenu');
+  static const hasMenu = const IriTerm('https://schema.org/hasMenu');
 
   /// IRI for schema:hasTiers [Expects: https://schema.org/MemberProgramTier]
   ///
@@ -24868,7 +23625,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MemberProgram
   ///
-  static const hasTiers = IriTerm.prevalidated('https://schema.org/hasTiers');
+  static const hasTiers = const IriTerm('https://schema.org/hasTiers');
 
   /// IRI for schema:hasVariant [Expects: https://schema.org/Product]
   ///
@@ -24876,9 +23633,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ProductGroup
   ///
-  static const hasVariant = IriTerm.prevalidated(
-    'https://schema.org/hasVariant',
-  );
+  static const hasVariant = const IriTerm('https://schema.org/hasVariant');
 
   /// IRI for schema:holdingArchive [Expects: https://schema.org/ArchiveOrganization]
   ///
@@ -24886,7 +23641,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ArchiveComponent
   ///
-  static const holdingArchive = IriTerm.prevalidated(
+  static const holdingArchive = const IriTerm(
     'https://schema.org/holdingArchive',
   );
 
@@ -24896,7 +23651,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DefinedTerm
   ///
-  static const inDefinedTermSet = IriTerm.prevalidated(
+  static const inDefinedTermSet = const IriTerm(
     'https://schema.org/inDefinedTermSet',
   );
 
@@ -24906,9 +23661,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastService, https://schema.org/CommunicateAction, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/LinkRole, https://schema.org/PronounceableText, https://schema.org/WriteAction
   ///
-  static const inLanguage = IriTerm.prevalidated(
-    'https://schema.org/inLanguage',
-  );
+  static const inLanguage = const IriTerm('https://schema.org/inLanguage');
 
   /// IRI for schema:incentiveCompensation [Expects: https://schema.org/Text]
   ///
@@ -24916,7 +23669,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const incentiveCompensation = IriTerm.prevalidated(
+  static const incentiveCompensation = const IriTerm(
     'https://schema.org/incentiveCompensation',
   );
 
@@ -24926,7 +23679,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Organization, https://schema.org/Person
   ///
-  static const interactionStatistic = IriTerm.prevalidated(
+  static const interactionStatistic = const IriTerm(
     'https://schema.org/interactionStatistic',
   );
 
@@ -24936,7 +23689,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Place
   ///
-  static const isAccessibleForFree = IriTerm.prevalidated(
+  static const isAccessibleForFree = const IriTerm(
     'https://schema.org/isAccessibleForFree',
   );
 
@@ -24946,7 +23699,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const isBasedOn = IriTerm.prevalidated('https://schema.org/isBasedOn');
+  static const isBasedOn = const IriTerm('https://schema.org/isBasedOn');
 
   /// IRI for schema:isEncodedByBioChemEntity [Expects: https://schema.org/Gene]
   ///
@@ -24954,7 +23707,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BioChemEntity
   ///
-  static const isEncodedByBioChemEntity = IriTerm.prevalidated(
+  static const isEncodedByBioChemEntity = const IriTerm(
     'https://schema.org/isEncodedByBioChemEntity',
   );
 
@@ -24964,7 +23717,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BioChemEntity
   ///
-  static const isPartOfBioChemEntity = IriTerm.prevalidated(
+  static const isPartOfBioChemEntity = const IriTerm(
     'https://schema.org/isPartOfBioChemEntity',
   );
 
@@ -24974,7 +23727,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MemberProgramTier
   ///
-  static const isTierOf = IriTerm.prevalidated('https://schema.org/isTierOf');
+  static const isTierOf = const IriTerm('https://schema.org/isTierOf');
 
   /// IRI for schema:isVariantOf [Expects: https://schema.org/ProductGroup, https://schema.org/ProductModel]
   ///
@@ -24982,9 +23735,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Product, https://schema.org/ProductModel
   ///
-  static const isVariantOf = IriTerm.prevalidated(
-    'https://schema.org/isVariantOf',
-  );
+  static const isVariantOf = const IriTerm('https://schema.org/isVariantOf');
 
   /// IRI for schema:itemOffered [Expects: https://schema.org/AggregateOffer, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/MenuItem, https://schema.org/Product, https://schema.org/Service, https://schema.org/Trip]
   ///
@@ -24992,9 +23743,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer
   ///
-  static const itemOffered = IriTerm.prevalidated(
-    'https://schema.org/itemOffered',
-  );
+  static const itemOffered = const IriTerm('https://schema.org/itemOffered');
 
   /// IRI for schema:jobBenefits [Expects: https://schema.org/Text]
   ///
@@ -25002,9 +23751,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/JobPosting
   ///
-  static const jobBenefits = IriTerm.prevalidated(
-    'https://schema.org/jobBenefits',
-  );
+  static const jobBenefits = const IriTerm('https://schema.org/jobBenefits');
 
   /// IRI for schema:jurisdiction [Expects: https://schema.org/AdministrativeArea, https://schema.org/Text]
   ///
@@ -25012,9 +23759,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/GovernmentService, https://schema.org/Legislation
   ///
-  static const jurisdiction = IriTerm.prevalidated(
-    'https://schema.org/jurisdiction',
-  );
+  static const jurisdiction = const IriTerm('https://schema.org/jurisdiction');
 
   /// IRI for schema:mainContentOfPage [Expects: https://schema.org/WebPageElement]
   ///
@@ -25022,7 +23767,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WebPage
   ///
-  static const mainContentOfPage = IriTerm.prevalidated(
+  static const mainContentOfPage = const IriTerm(
     'https://schema.org/mainContentOfPage',
   );
 
@@ -25032,9 +23777,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const mainEntity = IriTerm.prevalidated(
-    'https://schema.org/mainEntity',
-  );
+  static const mainEntity = const IriTerm('https://schema.org/mainEntity');
 
   /// IRI for schema:mainEntityOfPage [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -25042,7 +23785,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const mainEntityOfPage = IriTerm.prevalidated(
+  static const mainEntityOfPage = const IriTerm(
     'https://schema.org/mainEntityOfPage',
   );
 
@@ -25052,9 +23795,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const makesOffer = IriTerm.prevalidated(
-    'https://schema.org/makesOffer',
-  );
+  static const makesOffer = const IriTerm('https://schema.org/makesOffer');
 
   /// IRI for schema:measurementTechnique [Expects: https://schema.org/DefinedTerm, https://schema.org/MeasurementMethodEnum, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -25068,7 +23809,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DataCatalog, https://schema.org/DataDownload, https://schema.org/Dataset, https://schema.org/Observation, https://schema.org/PropertyValue, https://schema.org/StatisticalVariable
   ///
-  static const measurementTechnique = IriTerm.prevalidated(
+  static const measurementTechnique = const IriTerm(
     'https://schema.org/measurementTechnique',
   );
 
@@ -25078,7 +23819,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Offer
   ///
-  static const offeredBy = IriTerm.prevalidated('https://schema.org/offeredBy');
+  static const offeredBy = const IriTerm('https://schema.org/offeredBy');
 
   /// IRI for schema:offers [Expects: https://schema.org/Demand, https://schema.org/Offer]
   ///
@@ -25087,7 +23828,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AggregateOffer, https://schema.org/CreativeWork, https://schema.org/EducationalOccupationalProgram, https://schema.org/Event, https://schema.org/MenuItem, https://schema.org/Product, https://schema.org/Service, https://schema.org/Trip
   ///
-  static const offers = IriTerm.prevalidated('https://schema.org/offers');
+  static const offers = const IriTerm('https://schema.org/offers');
 
   /// IRI for schema:parent [Expects: https://schema.org/Person]
   ///
@@ -25095,7 +23836,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const parent = IriTerm.prevalidated('https://schema.org/parent');
+  static const parent = const IriTerm('https://schema.org/parent');
 
   /// IRI for schema:parentTaxon [Expects: https://schema.org/Taxon, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -25103,9 +23844,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Taxon
   ///
-  static const parentTaxon = IriTerm.prevalidated(
-    'https://schema.org/parentTaxon',
-  );
+  static const parentTaxon = const IriTerm('https://schema.org/parentTaxon');
 
   /// IRI for schema:partOfSeries [Expects: https://schema.org/CreativeWorkSeries]
   ///
@@ -25113,9 +23852,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Clip, https://schema.org/CreativeWorkSeason, https://schema.org/Episode
   ///
-  static const partOfSeries = IriTerm.prevalidated(
-    'https://schema.org/partOfSeries',
-  );
+  static const partOfSeries = const IriTerm('https://schema.org/partOfSeries');
 
   /// IRI for schema:partOfTrip [Expects: https://schema.org/Trip]
   ///
@@ -25123,9 +23860,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Trip
   ///
-  static const partOfTrip = IriTerm.prevalidated(
-    'https://schema.org/partOfTrip',
-  );
+  static const partOfTrip = const IriTerm('https://schema.org/partOfTrip');
 
   /// IRI for schema:paymentDueDate [Expects: https://schema.org/Date, https://schema.org/DateTime]
   ///
@@ -25133,7 +23868,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Invoice, https://schema.org/Order
   ///
-  static const paymentDueDate = IriTerm.prevalidated(
+  static const paymentDueDate = const IriTerm(
     'https://schema.org/paymentDueDate',
   );
 
@@ -25143,9 +23878,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HowTo, https://schema.org/HowToDirection
   ///
-  static const performTime = IriTerm.prevalidated(
-    'https://schema.org/performTime',
-  );
+  static const performTime = const IriTerm('https://schema.org/performTime');
 
   /// IRI for schema:performer [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -25153,7 +23886,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const performer = IriTerm.prevalidated('https://schema.org/performer');
+  static const performer = const IriTerm('https://schema.org/performer');
 
   /// IRI for schema:photo [Expects: https://schema.org/ImageObject, https://schema.org/Photograph]
   ///
@@ -25161,7 +23894,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const photo = IriTerm.prevalidated('https://schema.org/photo');
+  static const photo = const IriTerm('https://schema.org/photo');
 
   /// IRI for schema:provider [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -25169,7 +23902,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Action, https://schema.org/CreativeWork, https://schema.org/EducationalOccupationalProgram, https://schema.org/FinancialIncentive, https://schema.org/Invoice, https://schema.org/ParcelDelivery, https://schema.org/Reservation, https://schema.org/Service, https://schema.org/Trip
   ///
-  static const provider = IriTerm.prevalidated('https://schema.org/provider');
+  static const provider = const IriTerm('https://schema.org/provider');
 
   /// IRI for schema:providesBroadcastService [Expects: https://schema.org/BroadcastService]
   ///
@@ -25177,17 +23910,17 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BroadcastChannel
   ///
-  static const providesBroadcastService = IriTerm.prevalidated(
+  static const providesBroadcastService = const IriTerm(
     'https://schema.org/providesBroadcastService',
   );
 
-  /// IRI for schema:recipeIngredient [Expects: https://schema.org/Text]
+  /// IRI for schema:recipeIngredient [Expects: https://schema.org/ItemList, https://schema.org/PropertyValue, https://schema.org/Text]
   ///
-  /// A single ingredient used in the recipe, e.g. sugar, flour or garlic.
+  /// An ingredient or ordered list of ingredients and potentially quantities used in the recipe, e.g. 1 cup of sugar, flour or garlic.  The ingredients can be represented as free text or more structured values.
   ///
   /// Can be used on: https://schema.org/Recipe
   ///
-  static const recipeIngredient = IriTerm.prevalidated(
+  static const recipeIngredient = const IriTerm(
     'https://schema.org/recipeIngredient',
   );
 
@@ -25197,9 +23930,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicComposition
   ///
-  static const recordedAs = IriTerm.prevalidated(
-    'https://schema.org/recordedAs',
-  );
+  static const recordedAs = const IriTerm('https://schema.org/recordedAs');
 
   /// IRI for schema:recordedAt [Expects: https://schema.org/Event]
   ///
@@ -25207,9 +23938,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const recordedAt = IriTerm.prevalidated(
-    'https://schema.org/recordedAt',
-  );
+  static const recordedAt = const IriTerm('https://schema.org/recordedAt');
 
   /// IRI for schema:recordedIn [Expects: https://schema.org/CreativeWork]
   ///
@@ -25217,9 +23946,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const recordedIn = IriTerm.prevalidated(
-    'https://schema.org/recordedIn',
-  );
+  static const recordedIn = const IriTerm('https://schema.org/recordedIn');
 
   /// IRI for schema:recordingOf [Expects: https://schema.org/MusicComposition]
   ///
@@ -25227,9 +23954,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicRecording
   ///
-  static const recordingOf = IriTerm.prevalidated(
-    'https://schema.org/recordingOf',
-  );
+  static const recordingOf = const IriTerm('https://schema.org/recordingOf');
 
   /// IRI for schema:releaseOf [Expects: https://schema.org/MusicAlbum]
   ///
@@ -25237,7 +23962,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicRelease
   ///
-  static const releaseOf = IriTerm.prevalidated('https://schema.org/releaseOf');
+  static const releaseOf = const IriTerm('https://schema.org/releaseOf');
 
   /// IRI for schema:review [Expects: https://schema.org/Review]
   ///
@@ -25245,7 +23970,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Brand, https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Place, https://schema.org/Product, https://schema.org/Service
   ///
-  static const review = IriTerm.prevalidated('https://schema.org/review');
+  static const review = const IriTerm('https://schema.org/review');
 
   /// IRI for schema:roleName [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -25253,7 +23978,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Role
   ///
-  static const roleName = IriTerm.prevalidated('https://schema.org/roleName');
+  static const roleName = const IriTerm('https://schema.org/roleName');
 
   /// IRI for schema:runtimePlatform [Expects: https://schema.org/Text]
   ///
@@ -25261,7 +23986,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareSourceCode
   ///
-  static const runtimePlatform = IriTerm.prevalidated(
+  static const runtimePlatform = const IriTerm(
     'https://schema.org/runtimePlatform',
   );
 
@@ -25271,7 +23996,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGameSeries
   ///
-  static const season = IriTerm.prevalidated('https://schema.org/season');
+  static const season = const IriTerm('https://schema.org/season');
 
   /// IRI for schema:serialNumber [Expects: https://schema.org/Text]
   ///
@@ -25279,9 +24004,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/IndividualProduct, https://schema.org/Offer
   ///
-  static const serialNumber = IriTerm.prevalidated(
-    'https://schema.org/serialNumber',
-  );
+  static const serialNumber = const IriTerm('https://schema.org/serialNumber');
 
   /// IRI for schema:serviceArea [Expects: https://schema.org/AdministrativeArea, https://schema.org/GeoShape, https://schema.org/Place]
   ///
@@ -25289,9 +24012,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/Organization, https://schema.org/Service
   ///
-  static const serviceArea = IriTerm.prevalidated(
-    'https://schema.org/serviceArea',
-  );
+  static const serviceArea = const IriTerm('https://schema.org/serviceArea');
 
   /// IRI for schema:serviceOutput [Expects: https://schema.org/Thing]
   ///
@@ -25299,7 +24020,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Service
   ///
-  static const serviceOutput = IriTerm.prevalidated(
+  static const serviceOutput = const IriTerm(
     'https://schema.org/serviceOutput',
   );
 
@@ -25309,7 +24030,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Person
   ///
-  static const sibling = IriTerm.prevalidated('https://schema.org/sibling');
+  static const sibling = const IriTerm('https://schema.org/sibling');
 
   /// IRI for schema:significantLink [Expects: https://schema.org/URL]
   ///
@@ -25317,7 +24038,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/WebPage
   ///
-  static const significantLink = IriTerm.prevalidated(
+  static const significantLink = const IriTerm(
     'https://schema.org/significantLink',
   );
 
@@ -25327,7 +24048,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SoftwareApplication
   ///
-  static const softwareRequirements = IriTerm.prevalidated(
+  static const softwareRequirements = const IriTerm(
     'https://schema.org/softwareRequirements',
   );
 
@@ -25337,7 +24058,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Event, https://schema.org/Grant, https://schema.org/MedicalStudy, https://schema.org/Organization, https://schema.org/Person
   ///
-  static const sponsor = IriTerm.prevalidated('https://schema.org/sponsor');
+  static const sponsor = const IriTerm('https://schema.org/sponsor');
 
   /// IRI for schema:subOrganization [Expects: https://schema.org/Organization]
   ///
@@ -25345,7 +24066,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const subOrganization = IriTerm.prevalidated(
+  static const subOrganization = const IriTerm(
     'https://schema.org/subOrganization',
   );
 
@@ -25355,7 +24076,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Trip
   ///
-  static const subTrip = IriTerm.prevalidated('https://schema.org/subTrip');
+  static const subTrip = const IriTerm('https://schema.org/subTrip');
 
   /// IRI for schema:subjectOf [Expects: https://schema.org/CreativeWork, https://schema.org/Event]
   ///
@@ -25363,7 +24084,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const subjectOf = IriTerm.prevalidated('https://schema.org/subjectOf');
+  static const subjectOf = const IriTerm('https://schema.org/subjectOf');
 
   /// IRI for schema:suggestedAnswer [Expects: https://schema.org/Answer, https://schema.org/ItemList]
   ///
@@ -25371,7 +24092,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Question
   ///
-  static const suggestedAnswer = IriTerm.prevalidated(
+  static const suggestedAnswer = const IriTerm(
     'https://schema.org/suggestedAnswer',
   );
 
@@ -25381,9 +24102,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const superEvent = IriTerm.prevalidated(
-    'https://schema.org/superEvent',
-  );
+  static const superEvent = const IriTerm('https://schema.org/superEvent');
 
   /// IRI for schema:targetCollection [Expects: https://schema.org/Thing]
   ///
@@ -25391,7 +24110,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/UpdateAction
   ///
-  static const targetCollection = IriTerm.prevalidated(
+  static const targetCollection = const IriTerm(
     'https://schema.org/targetCollection',
   );
 
@@ -25405,7 +24124,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const temporalCoverage = IriTerm.prevalidated(
+  static const temporalCoverage = const IriTerm(
     'https://schema.org/temporalCoverage',
   );
 
@@ -25415,7 +24134,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/DefinedTerm
   ///
-  static const termCode = IriTerm.prevalidated('https://schema.org/termCode');
+  static const termCode = const IriTerm('https://schema.org/termCode');
 
   /// IRI for schema:track [Expects: https://schema.org/ItemList, https://schema.org/MusicRecording]
   ///
@@ -25423,7 +24142,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/MusicGroup, https://schema.org/MusicPlaylist
   ///
-  static const track = IriTerm.prevalidated('https://schema.org/track');
+  static const track = const IriTerm('https://schema.org/track');
 
   /// IRI for schema:translationOfWork [Expects: https://schema.org/CreativeWork]
   ///
@@ -25431,7 +24150,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const translationOfWork = IriTerm.prevalidated(
+  static const translationOfWork = const IriTerm(
     'https://schema.org/translationOfWork',
   );
 
@@ -25443,7 +24162,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const usageInfo = IriTerm.prevalidated('https://schema.org/usageInfo');
+  static const usageInfo = const IriTerm('https://schema.org/usageInfo');
 
   /// IRI for schema:warranty [Expects: https://schema.org/WarrantyPromise]
   ///
@@ -25451,7 +24170,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer
   ///
-  static const warranty = IriTerm.prevalidated('https://schema.org/warranty');
+  static const warranty = const IriTerm('https://schema.org/warranty');
 
   /// IRI for schema:workTranslation [Expects: https://schema.org/CreativeWork]
   ///
@@ -25459,7 +24178,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const workTranslation = IriTerm.prevalidated(
+  static const workTranslation = const IriTerm(
     'https://schema.org/workTranslation',
   );
 
@@ -25469,7 +24188,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HowTo
   ///
-  static const yield_ = IriTerm.prevalidated('https://schema.org/yield');
+  static const yield_ = const IriTerm('https://schema.org/yield');
 
   /// IRI for schema:about [Expects: https://schema.org/Thing]
   ///
@@ -25477,7 +24196,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Certification, https://schema.org/CommunicateAction, https://schema.org/CreativeWork, https://schema.org/Event
   ///
-  static const about = IriTerm.prevalidated('https://schema.org/about');
+  static const about = const IriTerm('https://schema.org/about');
 
   /// IRI for schema:actor [Expects: https://schema.org/PerformingGroup, https://schema.org/Person]
   ///
@@ -25485,7 +24204,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Clip, https://schema.org/CreativeWorkSeason, https://schema.org/Episode, https://schema.org/Event, https://schema.org/Movie, https://schema.org/MovieSeries, https://schema.org/PodcastSeries, https://schema.org/RadioSeries, https://schema.org/TVSeries, https://schema.org/VideoGame, https://schema.org/VideoGameSeries, https://schema.org/VideoObject
   ///
-  static const actor = IriTerm.prevalidated('https://schema.org/actor');
+  static const actor = const IriTerm('https://schema.org/actor');
 
   /// IRI for schema:associatedReview [Expects: https://schema.org/Review]
   ///
@@ -25493,7 +24212,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Review
   ///
-  static const associatedReview = IriTerm.prevalidated(
+  static const associatedReview = const IriTerm(
     'https://schema.org/associatedReview',
   );
 
@@ -25503,9 +24222,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/SportsEvent
   ///
-  static const competitor = IriTerm.prevalidated(
-    'https://schema.org/competitor',
-  );
+  static const competitor = const IriTerm('https://schema.org/competitor');
 
   /// IRI for schema:containedInPlace [Expects: https://schema.org/Place]
   ///
@@ -25513,7 +24230,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const containedInPlace = IriTerm.prevalidated(
+  static const containedInPlace = const IriTerm(
     'https://schema.org/containedInPlace',
   );
 
@@ -25523,7 +24240,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const encoding = IriTerm.prevalidated('https://schema.org/encoding');
+  static const encoding = const IriTerm('https://schema.org/encoding');
 
   /// IRI for schema:hasMap [Expects: https://schema.org/Map, https://schema.org/URL]
   ///
@@ -25531,7 +24248,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Place
   ///
-  static const hasMap = IriTerm.prevalidated('https://schema.org/hasMap');
+  static const hasMap = const IriTerm('https://schema.org/hasMap');
 
   /// IRI for schema:legislationApplies [Expects: https://schema.org/Legislation]
   ///
@@ -25539,7 +24256,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationApplies = IriTerm.prevalidated(
+  static const legislationApplies = const IriTerm(
     'https://schema.org/legislationApplies',
   );
 
@@ -25549,7 +24266,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Product
   ///
-  static const material = IriTerm.prevalidated('https://schema.org/material');
+  static const material = const IriTerm('https://schema.org/material');
 
   /// IRI for schema:memberOf [Expects: https://schema.org/MemberProgramTier, https://schema.org/Organization, https://schema.org/ProgramMembership]
   ///
@@ -25557,7 +24274,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/Person
   ///
-  static const memberOf = IriTerm.prevalidated('https://schema.org/memberOf');
+  static const memberOf = const IriTerm('https://schema.org/memberOf');
 
   /// IRI for schema:parentOrganization [Expects: https://schema.org/Organization]
   ///
@@ -25565,7 +24282,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization
   ///
-  static const parentOrganization = IriTerm.prevalidated(
+  static const parentOrganization = const IriTerm(
     'https://schema.org/parentOrganization',
   );
 
@@ -25575,7 +24292,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Action
   ///
-  static const result = IriTerm.prevalidated('https://schema.org/result');
+  static const result = const IriTerm('https://schema.org/result');
 
   /// IRI for schema:seller [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -25583,7 +24300,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BuyAction, https://schema.org/Demand, https://schema.org/Flight, https://schema.org/Offer, https://schema.org/Order
   ///
-  static const seller = IriTerm.prevalidated('https://schema.org/seller');
+  static const seller = const IriTerm('https://schema.org/seller');
 
   /// IRI for schema:spatialCoverage [Expects: https://schema.org/Place]
   ///
@@ -25593,7 +24310,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const spatialCoverage = IriTerm.prevalidated(
+  static const spatialCoverage = const IriTerm(
     'https://schema.org/spatialCoverage',
   );
 
@@ -25603,7 +24320,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HowTo
   ///
-  static const step = IriTerm.prevalidated('https://schema.org/step');
+  static const step = const IriTerm('https://schema.org/step');
 
   /// IRI for schema:subEvent [Expects: https://schema.org/Event]
   ///
@@ -25611,7 +24328,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const subEvent = IriTerm.prevalidated('https://schema.org/subEvent');
+  static const subEvent = const IriTerm('https://schema.org/subEvent');
 
   /// IRI for schema:supply [Expects: https://schema.org/HowToSupply, https://schema.org/Text]
   ///
@@ -25619,7 +24336,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/HowTo, https://schema.org/HowToDirection
   ///
-  static const supply = IriTerm.prevalidated('https://schema.org/supply');
+  static const supply = const IriTerm('https://schema.org/supply');
 
   /// IRI for schema:workFeatured [Expects: https://schema.org/CreativeWork]
   ///
@@ -25628,9 +24345,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Event
   ///
-  static const workFeatured = IriTerm.prevalidated(
-    'https://schema.org/workFeatured',
-  );
+  static const workFeatured = const IriTerm('https://schema.org/workFeatured');
 
   /// IRI for schema:areaServed [Expects: https://schema.org/AdministrativeArea, https://schema.org/GeoShape, https://schema.org/Place, https://schema.org/Text]
   ///
@@ -25638,9 +24353,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/ContactPoint, https://schema.org/DeliveryChargeSpecification, https://schema.org/Demand, https://schema.org/FinancialIncentive, https://schema.org/Offer, https://schema.org/Organization, https://schema.org/Service
   ///
-  static const areaServed = IriTerm.prevalidated(
-    'https://schema.org/areaServed',
-  );
+  static const areaServed = const IriTerm('https://schema.org/areaServed');
 
   /// IRI for schema:includedInDataCatalog [Expects: https://schema.org/DataCatalog]
   ///
@@ -25648,7 +24361,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Dataset
   ///
-  static const includedInDataCatalog = IriTerm.prevalidated(
+  static const includedInDataCatalog = const IriTerm(
     'https://schema.org/includedInDataCatalog',
   );
 
@@ -25658,7 +24371,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Legislation
   ///
-  static const legislationChanges = IriTerm.prevalidated(
+  static const legislationChanges = const IriTerm(
     'https://schema.org/legislationChanges',
   );
 
@@ -25668,7 +24381,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Organization, https://schema.org/ProgramMembership
   ///
-  static const member = IriTerm.prevalidated('https://schema.org/member');
+  static const member = const IriTerm('https://schema.org/member');
 
   /// IRI for schema:recipient [Expects: https://schema.org/Audience, https://schema.org/ContactPoint, https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -25676,7 +24389,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/AuthorizeAction, https://schema.org/CommunicateAction, https://schema.org/DonateAction, https://schema.org/GiveAction, https://schema.org/Message, https://schema.org/PayAction, https://schema.org/ReturnAction, https://schema.org/SendAction, https://schema.org/TipAction
   ///
-  static const recipient = IriTerm.prevalidated('https://schema.org/recipient');
+  static const recipient = const IriTerm('https://schema.org/recipient');
 
   /// IRI for schema:workExample [Expects: https://schema.org/CreativeWork]
   ///
@@ -25684,9 +24397,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const workExample = IriTerm.prevalidated(
-    'https://schema.org/workExample',
-  );
+  static const workExample = const IriTerm('https://schema.org/workExample');
 
   /// IRI for schema:description [Expects: https://schema.org/Text, https://schema.org/TextObject]
   ///
@@ -25694,9 +24405,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const description = IriTerm.prevalidated(
-    'https://schema.org/description',
-  );
+  static const description = const IriTerm('https://schema.org/description');
 
   /// IRI for schema:gtin [Expects: https://schema.org/Text, https://schema.org/URL]
   ///
@@ -25711,7 +24420,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Demand, https://schema.org/Offer, https://schema.org/Product
   ///
-  static const gtin = IriTerm.prevalidated('https://schema.org/gtin');
+  static const gtin = const IriTerm('https://schema.org/gtin');
 
   /// IRI for schema:hasRepresentation [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -25719,7 +24428,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/BioChemEntity
   ///
-  static const hasRepresentation = IriTerm.prevalidated(
+  static const hasRepresentation = const IriTerm(
     'https://schema.org/hasRepresentation',
   );
 
@@ -25729,7 +24438,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const image = IriTerm.prevalidated('https://schema.org/image');
+  static const image = const IriTerm('https://schema.org/image');
 
   /// IRI for schema:hasPart [Expects: https://schema.org/CreativeWork]
   ///
@@ -25737,7 +24446,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const hasPart = IriTerm.prevalidated('https://schema.org/hasPart');
+  static const hasPart = const IriTerm('https://schema.org/hasPart');
 
   /// IRI for schema:position [Expects: https://schema.org/Integer, https://schema.org/Text]
   ///
@@ -25745,7 +24454,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/ListItem
   ///
-  static const position = IriTerm.prevalidated('https://schema.org/position');
+  static const position = const IriTerm('https://schema.org/position');
 
   /// IRI for schema:isPartOf [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -25753,7 +24462,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork
   ///
-  static const isPartOf = IriTerm.prevalidated('https://schema.org/isPartOf');
+  static const isPartOf = const IriTerm('https://schema.org/isPartOf');
 
   /// IRI for schema:instrument [Expects: https://schema.org/Thing]
   ///
@@ -25761,9 +24470,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Action
   ///
-  static const instrument = IriTerm.prevalidated(
-    'https://schema.org/instrument',
-  );
+  static const instrument = const IriTerm('https://schema.org/instrument');
 
   /// IRI for schema:object [Expects: https://schema.org/Thing]
   ///
@@ -25771,7 +24478,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Action
   ///
-  static const object = IriTerm.prevalidated('https://schema.org/object');
+  static const object = const IriTerm('https://schema.org/object');
 
   /// IRI for schema:publishingPrinciples [Expects: https://schema.org/CreativeWork, https://schema.org/URL]
   ///
@@ -25782,7 +24489,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/CreativeWork, https://schema.org/Organization, https://schema.org/Person
   ///
-  static const publishingPrinciples = IriTerm.prevalidated(
+  static const publishingPrinciples = const IriTerm(
     'https://schema.org/publishingPrinciples',
   );
 
@@ -25792,7 +24499,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Action, https://schema.org/Event, https://schema.org/InteractionCounter, https://schema.org/Organization
   ///
-  static const location = IriTerm.prevalidated('https://schema.org/location');
+  static const location = const IriTerm('https://schema.org/location');
 
   /// IRI for schema:participant [Expects: https://schema.org/Organization, https://schema.org/Person]
   ///
@@ -25800,9 +24507,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Action
   ///
-  static const participant = IriTerm.prevalidated(
-    'https://schema.org/participant',
-  );
+  static const participant = const IriTerm('https://schema.org/participant');
 
   /// IRI for schema:identifier [Expects: https://schema.org/PropertyValue, https://schema.org/Text, https://schema.org/URL]
   ///
@@ -25811,9 +24516,7 @@ class Schema {
   ///
   /// Can be used on: https://schema.org/Thing
   ///
-  static const identifier = IriTerm.prevalidated(
-    'https://schema.org/identifier',
-  );
+  static const identifier = const IriTerm('https://schema.org/identifier');
 
   /// IRI for schema:source
   ///
@@ -25821,5 +24524,5 @@ class Schema {
   ///
   /// Can be used on all classes in this vocabulary
   ///
-  static const source = IriTerm.prevalidated('https://schema.org/source');
+  static const source = const IriTerm('https://schema.org/source');
 }

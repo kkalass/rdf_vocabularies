@@ -25,7 +25,7 @@ class VsUniversalProperties {
   ///
   /// the status of a vocabulary term, expressed as a short symbolic string; known values include 'unstable','testing', 'stable' and 'archaic'
   ///
-  static const term_status = IriTerm.prevalidated(
+  static const term_status = const IriTerm(
     'http://www.w3.org/2003/06/sw-vocab-status/ns#term_status',
   );
 }
