@@ -1,3 +1,17 @@
+> # ⚠️ DEPRECATED - This package has been split and moved!
+> 
+> **This package is no longer maintained.** It has been split into two packages and moved to the [locorda](https://github.com/locorda) project:
+> 
+> 1. **[`locorda_rdf_terms_core`](https://pub.dev/packages/locorda_rdf_terms_core)** - Core vocabularies only (RDF, RDFS, OWL, XSD)
+> 2. **[`locorda_rdf_terms_common`](https://pub.dev/packages/locorda_rdf_terms_common)** - All other common vocabularies (FOAF, Dublin Core, SKOS, etc.)
+> 
+> **Migration:** 
+> - For most use cases, use **both** new packages together
+> - Replace `rdf_vocabularies_core` with `locorda_rdf_terms_core` and `locorda_rdf_terms_common` in your `pubspec.yaml`
+> - Update your imports accordingly
+> 
+> The split allows more granular dependency management. This repository will be archived.
+
 # RDF Vocabularies Core - Essential RDF Vocabularies
 
 [![pub package](https://img.shields.io/pub/v/rdf_vocabularies_core.svg)](https://pub.dev/packages/rdf_vocabularies_core)

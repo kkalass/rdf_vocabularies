@@ -1,3 +1,15 @@
+> # ⚠️ DEPRECATED - This package has moved!
+> 
+> **This package is no longer maintained.** It has been integrated into the [locorda](https://github.com/locorda) project and rebranded.
+> 
+> **Please migrate to:** [`locorda_rdf_terms`](https://pub.dev/packages/locorda_rdf_terms)
+> 
+> All future development and support will happen in the new package. This repository will be archived.
+> 
+> **Migration:** Replace `rdf_vocabularies` with `locorda_rdf_terms` in your `pubspec.yaml` and update your imports.
+> 
+> **⚠️ Important:** All rdf_vocabularies_* packages have been moved and renamed to locorda_rdf_terms_*. See the new package documentation for the complete migration guide.
+
 # RDF Vocabularies (Meta-Package) - All RDF Vocabularies
 
 [![pub package](https://img.shields.io/pub/v/rdf_vocabularies.svg)](https://pub.dev/packages/rdf_vocabularies)

@@ -1,6 +1,6 @@
 name: rdf_vocabularies_schema_http
-description: Schema.org vocabulary (HTTP variant) as Dart constants for legacy system compatibility
-version: 0.4.5
+description: "DEPRECATED: Moved to locorda_rdf_terms_schema_http. This package is no longer maintained."
+version: 0.4.6
 homepage: https://kkalass.github.io/rdf_vocabularies/
 repository: https://github.com/kkalass/rdf_vocabularies
 issue_tracker: https://github.com/kkalass/rdf_vocabularies/issues

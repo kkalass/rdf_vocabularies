@@ -1,3 +1,13 @@
+> # ⚠️ DEPRECATED - This package has moved!
+> 
+> **This package is no longer maintained.** It has been integrated into the [locorda](https://github.com/locorda) project and rebranded.
+> 
+> **Please migrate to:** [`locorda_rdf_terms_schema_http`](https://pub.dev/packages/locorda_rdf_terms_schema_http)
+> 
+> All future development and support will happen in the new package. This repository will be archived.
+> 
+> **Migration:** Replace `rdf_vocabularies_schema_http` with `locorda_rdf_terms_schema_http` in your `pubspec.yaml` and update your imports.
+
 # RDF Vocabularies Schema HTTP - Schema.org HTTP Vocabulary
 
 [![pub package](https://img.shields.io/pub/v/rdf_vocabularies_schema_http.svg)](https://pub.dev/packages/rdf_vocabularies_schema_http)

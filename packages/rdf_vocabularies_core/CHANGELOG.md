@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.6] - 2026-01-19
+
+### Deprecated
+
+- **This package is deprecated and no longer maintained.**
+- This package has been **split into two packages**:
+  - [`locorda_rdf_terms_core`](https://pub.dev/packages/locorda_rdf_terms_core) - Core vocabularies (RDF, RDFS, OWL, XSD) in the [`locorda/rdf`](https://github.com/locorda/rdf) repository
+  - [`locorda_rdf_terms_common`](https://pub.dev/packages/locorda_rdf_terms_common) - Common vocabularies (FOAF, Dublin Core, SKOS, etc.) in the [`locorda/rdf-vocabularies`](https://github.com/locorda/rdf-vocabularies) repository
+- For most use cases, you'll want **both** new packages.
+- Please migrate by replacing `rdf_vocabularies_core` with both `locorda_rdf_terms_core` and `locorda_rdf_terms_common` in your `pubspec.yaml`.
+- This repository will be archived.
+
 ## [0.4.5] - 2025-09-23
 
 ### Changed

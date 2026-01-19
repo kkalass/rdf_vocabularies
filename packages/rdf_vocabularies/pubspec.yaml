@@ -1,6 +1,6 @@
 name: rdf_vocabularies
-description: A collection of well known RDF vocabularies as Dart constants, grouped in classes.
-version: 0.4.5
+description: "DEPRECATED: Moved to locorda_rdf_terms. This package is no longer maintained."
+version: 0.4.6
 homepage: https://kkalass.github.io/rdf_vocabularies/
 repository: https://github.com/kkalass/rdf_vocabularies
 issue_tracker: https://github.com/kkalass/rdf_vocabularies/issues
